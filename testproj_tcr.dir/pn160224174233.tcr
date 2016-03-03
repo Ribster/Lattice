@@ -1,5 +1,0 @@
-#Start recording tcl command: 2/24/2016 14:51:22
-#Project Location: Z:/GITHUB/Lattice; Project name: testproj
-prj_project new -name "testproj" -impl "impl1" -dev LCMXO2-7000HE-4TG144C -synthesis "lse"
-prj_project save
-#Stop recording: 2/24/2016 17:42:33
