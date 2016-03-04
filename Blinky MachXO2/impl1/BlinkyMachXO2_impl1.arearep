@@ -1,0 +1,15 @@
+----------------------------------------------------------------------
+Report for cell blinking_led.TECH
+Register bits:  28 of 7209 (0.388%)
+I/O cells:      9
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        13          100.0
+                            FD1P3AX         2          100.0
+                            FD1S3AX         1          100.0
+                            FD1S3IX        25          100.0
+                                GSR         1          100.0
+                               LUT4         9          100.0
+                                 OB         9          100.0
+                               OSCH         1          100.0
+                              TOTAL        61
