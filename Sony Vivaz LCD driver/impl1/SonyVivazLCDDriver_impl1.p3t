@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "SonyVivazLCDDriver_impl1.log"
+-o "SonyVivazLCDDriver_impl1.csv"
+-pr "SonyVivazLCDDriver_impl1.prf"
