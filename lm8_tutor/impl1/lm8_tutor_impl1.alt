@@ -1,0 +1,15 @@
+NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
+NOTE All Rights Reserved *
+NOTE DATE CREATED: Fri Mar 25 11:04:09 2016 *
+NOTE DESIGN NAME: platform1_top *
+NOTE DEVICE NAME: LCMXO2-7000HE-5TQFP144 *
+NOTE PIN ASSIGNMENTS *
+NOTE PINS uartSOUT : 54 : out *
+NOTE PINS reset_n : 1 : in *
+NOTE PINS LEDPIO_OUT_3_ : 56 : out *
+NOTE PINS LEDPIO_OUT_2_ : 55 : out *
+NOTE PINS LEDPIO_OUT_1_ : 57 : out *
+NOTE PINS LEDPIO_OUT_0_ : 58 : out *
+NOTE PINS uartSIN : 52 : in *
+NOTE CONFIGURATION MODE: NONE *
+NOTE COMPRESSION: on *

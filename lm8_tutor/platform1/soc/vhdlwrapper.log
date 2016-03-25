@@ -1,0 +1,50 @@
+Program: C:\lscc\diamond\3.7_x64\micosystem\utilities\tclscript\vhdlwrapper.tcl
+Number of arguments: 9
+Argument: 0: D:\Github\Lattice\lm8_tutor\platform1\soc
+Argument: 1: platform1
+Argument: 2: ngo
+Argument: 3: 2.1
+Argument: 4: C:\lscc\diamond\3.7_x64
+Argument: 5: C:\lscc\diamond\3.7_x64\bin\nt64
+Argument: 6: C:\lscc\diamond\3.7_x64\ispfpga\bin\nt64
+Argument: 7: C:\lscc\diamond\3.7_x64\tcltk\lib
+Argument: 8: true
+
+install_dir: C:/lscc/diamond/3.7_x64
+cpld_bin: C:/lscc/diamond/3.7_x64/bin/nt64
+fpga_bin: C:/lscc/diamond/3.7_x64/ispfpga/bin/nt64
+fpga_dir: C:/lscc/diamond/3.7_x64/ispfpga
+tcl_lib: C:/lscc/diamond/3.7_x64/tcltk/lib
+bali_app: true
+
+Verilog Filename: D:/Github/Lattice/lm8_tutor/platform1/soc/platform1.v
+VHDL Filename: D:/Github/Lattice/lm8_tutor/platform1/soc/platform1_vhd.vhd
+MSB Filename: D:/Github/Lattice/lm8_tutor/platform1/soc/platform1.msb
+
+open D:/Github/Lattice/lm8_tutor/platform1/soc/platform1.msb
+tech: MachXO2
+cpu: LM8
+comp: lm8
+comp: gpio
+comp: uart_core
+close D:/Github/Lattice/lm8_tutor/platform1/soc/platform1.msb
+
+open D:/Github/Lattice/lm8_tutor/platform1/soc/platform1.v
+
+
+list top module port type width bus
+LEDPIO_OUT out 4-1 1
+uartSIN in 1 0
+uartSOUT out 1 0
+open D:/Github/Lattice/lm8_tutor/platform1/soc/platform1_vhd.vhd
+close D:/Github/Lattice/lm8_tutor/platform1/soc/platform1_vhd.vhd
+
+Tech: MachXO2
+device: MachXO2
+Arch: MachXO2
+
+D:/Github/Lattice/lm8_tutor/platform1/soc/ngo
+C:/lscc/diamond/3.7_x64/bin/nt64
+C:/lscc/diamond/3.7_x64/ispfpga/bin/nt64
+synpwrap command:synpwrap -rem -e platform1 -target MachXO2
+ngo generate command:C:/lscc/diamond/3.7_x64/ispfpga/bin/nt64/edif2ngd  -l MachXO2 -nopropwarn "platform1.edi" "platform1.ngo"

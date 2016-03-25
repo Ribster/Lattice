@@ -1,0 +1,89 @@
+[ START MERGED ]
+platform1_u.counter_i[2] platform1_u/counter[2]
+reset_n_c_i reset_n_c
+platform1_u/uart/u_txmitt/tx_state_i[0] platform1_u/uart/u_txmitt/tx_state[0]
+platform1_u/LM8/rst_n_i platform1_u/LM8/rst_n
+platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/genblk3.u1_lm8_stkmem/dec0_wre3 platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/stack_ptr_nxt9
+platform1_u/LM8/u1_isp8_core/u1_lm8_alu/u1_addsub8/add_sub_inv platform1_u/LM8/u1_isp8_core/u1_lm8_alu/add_sel_i
+platform1_u/LM8/genblk1.u1_isp8_prom/wren_inv_g platform1_u/LM8/prom_enable
+[ END MERGED ]
+[ START CLIPPED ]
+GND
+platform1_u/LM8/VCC
+platform1_u/LM8/GND
+platform1_u/LM8/genblk1.u1_isp8_prom/wren_inv
+platform1_u/LM8/genblk3.u1_scratchpad/scuba_vlo
+platform1_u/LM8/genblk3.u1_scratchpad/scuba_vhi
+platform1_u/LM8/genblk1.u1_isp8_prom/scuba_vlo
+platform1_u/LM8/genblk1.u1_isp8_prom/scuba_vhi
+platform1_u/LM8/u1_isp8_core/VCC
+platform1_u/LM8/u1_isp8_core/genblk6.genblk1.u2_lm8_rfmem/scuba_vhi
+platform1_u/LM8/u1_isp8_core/genblk6.genblk1.u1_lm8_rfmem/scuba_vhi
+platform1_u/LM8/u1_isp8_core/u1_lm8_alu/u1_addsub8/scuba_vlo
+platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/VCC
+platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/GND
+platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/genblk3.u1_lm8_stkmem/scuba_vhi
+platform1_u/uart/u_rxcver/GND
+platform1_u/uart/u_txmitt/GND
+VCC
+platform1_u/LM8/u1_isp8_core/GND
+platform1_u/LM8/u1_isp8_core/u1_lm8_alu/u1_addsub8/scuba_vhi
+platform1_u/LM8/u1_isp8_core/u1_lm8_alu/u1_addsub8/addsub_0/S0
+platform1_u/LM8/u1_isp8_core/u1_lm8_alu/u1_addsub8/precin_inst30/S1
+platform1_u/LM8/u1_isp8_core/u1_lm8_alu/u1_addsub8/precin_inst30/S0
+platform1_u/LM8/u1_isp8_core/u1_lm8_alu/u1_addsub8/addsubd/S1
+platform1_u/LM8/u1_isp8_core/u1_lm8_alu/u1_addsub8/co4d
+platform1_u/LM8/u1_isp8_core/u1_lm8_alu/u1_addsub8/addsubd/COUT
+platform1_u/LM8/u1_isp8_core/u1_lm8_alu/u1_addsub8/co4
+platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/un1_stack_ptr_cry_0_0_S1
+platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/un1_stack_ptr_cry_0_0_S0
+platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/N_11
+platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/un1_stack_ptr_s_3_0_S1
+platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/un1_stack_ptr_s_3_0_COUT
+platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/potential_address_cry_0_0_S1
+platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/potential_address_cry_0_0_S0
+platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/N_12
+platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/potential_address_cry_9_0_COUT
+platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/genblk3.u1_lm8_stkmem/mem_0_0/DO2
+platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/genblk3.u1_lm8_stkmem/mem_0_0/DO3
+platform1_u/LM8/u1_isp8_core/u1_lm8_flow_cntl/genblk3.u1_lm8_stkmem/mem_0_0/DO1
+platform1_u/uart/u_rxcver/counter_11_s_15_0_S1
+platform1_u/uart/u_rxcver/counter_11_s_15_0_COUT
+platform1_u/uart/u_rxcver/cs_state12_0_N_37
+platform1_u/uart/u_rxcver/cs_state12_0_I_1_0_S0
+platform1_u/uart/u_rxcver/N_2
+platform1_u/uart/u_rxcver/cs_state12_0_I_9_0_S1
+platform1_u/uart/u_rxcver/cs_state12_0_I_9_0_S0
+platform1_u/uart/u_rxcver/cs_state12_0_I_27_0_S1
+platform1_u/uart/u_rxcver/cs_state12_0_I_27_0_S0
+platform1_u/uart/u_rxcver/cs_state12_0_I_33_0_S1
+platform1_u/uart/u_rxcver/cs_state12_0_I_33_0_S0
+platform1_u/uart/u_rxcver/cs_state12_0_I_21_0_S0
+platform1_u/uart/u_rxcver/cs_state12_0_I_21_0_COUT
+platform1_u/uart/u_rxcver/counter_11_cry_0_0_S1
+platform1_u/uart/u_rxcver/counter_11_cry_0_0_S0
+platform1_u/uart/u_rxcver/N_1
+platform1_u/uart/u_txmitt/counter_cry_0_S0[0]
+platform1_u/uart/u_txmitt/N_1
+platform1_u/uart/u_txmitt/counter_s_0_S1[15]
+platform1_u/uart/u_txmitt/counter_s_0_COUT[15]
+OSCH_inst_SEDSTDBY
+[ END CLIPPED ]
+[ START OSC ]
+clk_in 24.18
+[ END OSC ]
+[ START DESIGN PREFS ]
+SCHEMATIC START ;
+# map:  version Diamond (64-bit) 3.7.0.96.1 -- WARNING: Map write only section -- Fri Mar 25 11:03:35 2016
+
+SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=DISABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE BACKGROUND_RECONFIG=OFF ;
+LOCATE COMP "uartSOUT" SITE "H3" ;
+LOCATE COMP "reset_n" SITE "K2" ;
+LOCATE COMP "LEDPIO_OUT_3_" SITE "H2" ;
+LOCATE COMP "LEDPIO_OUT_2_" SITE "F3" ;
+LOCATE COMP "LEDPIO_OUT_1_" SITE "F2" ;
+LOCATE COMP "LEDPIO_OUT_0_" SITE "F1" ;
+LOCATE COMP "uartSIN" SITE "H1" ;
+FREQUENCY NET "clk_in" 24.180000 MHz ;
+SCHEMATIC END ;
+[ END DESIGN PREFS ]

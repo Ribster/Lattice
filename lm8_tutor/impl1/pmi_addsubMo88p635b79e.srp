@@ -1,0 +1,29 @@
+SCUBA, Version Diamond (64-bit) 3.7.0.96.1
+Fri Mar 25 11:03:30 2016
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
+
+    Issued command   : C:/lscc/diamond/3.7_x64/ispfpga/bin/nt64/scuba -w -arch xo2c00 -n pmi_addsubMo88p635b79e -bb -bus_exp 7 -type addsub -width 8 -unsigned -port ci -port co -pmi 
+    Circuit name     : pmi_addsubMo88p635b79e
+    Module type      : addsub
+    Module Version   : 3.5
+    Width            : 8
+    Ports            : 
+	Inputs       : DataA[7:0], DataB[7:0], Cin, Add_Sub
+	Outputs      : Result[7:0], Cout, Overflow
+    I/O buffer       : not inserted
+    Representation   : unsigned number
+    EDIF output      : pmi_addsubMo88p635b79e.edn
+    Bus notation     : big endian
+    Report output    : pmi_addsubMo88p635b79e.srp
+    Element Usage    :
+         FADD2B : 2
+         FADSU2 : 5
+            INV : 1
+          XNOR2 : 1
+    Estimated Resource Usage:
+            LUT : 15

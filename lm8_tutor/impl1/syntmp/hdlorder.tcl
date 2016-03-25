@@ -1,0 +1,1 @@
+project -fileorder "D:/Github/Lattice/lm8_tutor/platform1/soc/platform1_vhd.vhd" 

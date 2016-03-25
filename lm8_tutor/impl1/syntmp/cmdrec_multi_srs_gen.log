@@ -1,0 +1,7 @@
+C:\lscc\diamond\3.7_x64\synpbase\bin64\syn_nfilter.exe  -link  -top  platform1_top  -incremental_debug  -multisrs  D:\Github\Lattice\lm8_tutor\impl1\synwork\lm8_tutor_impl1_comp.srs  -osyn  D:\Github\Lattice\lm8_tutor\impl1\synwork\lm8_tutor_impl1_mult.srs  -log  D:\Github\Lattice\lm8_tutor\impl1\synlog\lm8_tutor_impl1_multi_srs_gen.srr 
+rc:0 success:1 runtime:1
+D:\Github\Lattice\lm8_tutor\impl1\synwork\lm8_tutor_impl1_comp.srs|i|1458900195|74092
+D:\Github\Lattice\lm8_tutor\impl1\synwork\lm8_tutor_impl1_mult.srs|o|1458900197|3479
+D:\Github\Lattice\lm8_tutor\impl1\synlog\lm8_tutor_impl1_multi_srs_gen.srr|o|1458900197|409
+C:\lscc\diamond\3.7_x64\synpbase\bin\syn_nfilter.exe|i|1449712674|3110400
+C:\lscc\diamond\3.7_x64\synpbase\bin64\syn_nfilter.exe|i|1449712876|4182528
