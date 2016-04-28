@@ -14,10 +14,10 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
-Wed Mar 09 10:36:06 2016
+Wed Mar 09 11:24:32 2016
 
 
-Command Line:  synthesis -f SonyVivazLCDDriver_impl1_lattice.synproj -gui 
+Command Line:  synthesis -f SonyVivazLCDDriver_impl1_lattice.synproj -gui -msgset Z:/GITHUB/Lattice/Sony Vivaz LCD driver/promote.xml 
 
 Synthesis options:
 The -a option is MachXO2.
@@ -70,12 +70,12 @@ RAM style = auto
 The -comp option is FALSE.
 The -syn option is FALSE.
 -p C:/lscc/diamond/3.7_x64/ispfpga/xo2c00/data (searchpath added)
--p D:/Github/Lattice/Sony Vivaz LCD driver/impl1 (searchpath added)
--p D:/Github/Lattice/Sony Vivaz LCD driver (searchpath added)
+-p Z:/GITHUB/Lattice/Sony Vivaz LCD driver/impl1 (searchpath added)
+-p Z:/GITHUB/Lattice/Sony Vivaz LCD driver (searchpath added)
 VHDL library = work
-VHDL design file = D:/Github/Lattice/Sony Vivaz LCD driver/constants.vhd
-VHDL design file = D:/Github/Lattice/Sony Vivaz LCD driver/main.vhd
-VHDL design file = D:/Github/Lattice/Sony Vivaz LCD driver/functions.vhd
+VHDL design file = Z:/GITHUB/Lattice/Sony Vivaz LCD driver/constants.vhd
+VHDL design file = Z:/GITHUB/Lattice/Sony Vivaz LCD driver/main.vhd
+VHDL design file = Z:/GITHUB/Lattice/Sony Vivaz LCD driver/functions.vhd
 NGD file = SonyVivazLCDDriver_impl1.ngd
 -sdc option: SDC file input not used.
 -lpf option: Output file option is ON.
@@ -86,23 +86,23 @@ Technology check ok...
 Analyzing Verilog file C:/lscc/diamond/3.7_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
 Compile design.
 Compile Design Begin
-INFO - synthesis: The default VHDL library search path is now "D:/Github/Lattice/Sony Vivaz LCD driver/impl1". VHDL-1504
-Analyzing VHDL file d:/github/lattice/sony vivaz lcd driver/constants.vhd. VHDL-1481
-INFO - synthesis: d:/github/lattice/sony vivaz lcd driver/constants.vhd(5): analyzing package constants. VHDL-1014
-INFO - synthesis: d:/github/lattice/sony vivaz lcd driver/constants.vhd(21): analyzing package body constants. VHDL-1013
-Analyzing VHDL file d:/github/lattice/sony vivaz lcd driver/main.vhd. VHDL-1481
-WARNING - synthesis: d:/github/lattice/sony vivaz lcd driver/main.vhd(6): 'components' is not compiled in library lattice. VHDL-1240
-INFO - synthesis: d:/github/lattice/sony vivaz lcd driver/main.vhd(8): analyzing entity main. VHDL-1012
-INFO - synthesis: d:/github/lattice/sony vivaz lcd driver/main.vhd(29): analyzing architecture behavioral. VHDL-1010
-INFO - synthesis: d:/github/lattice/sony vivaz lcd driver/main.vhd(62): input pin size has no actual or default value. VHDL-9000
+INFO - synthesis: The default VHDL library search path is now "Z:/GITHUB/Lattice/Sony Vivaz LCD driver/impl1". VHDL-1504
+Analyzing VHDL file z:/github/lattice/sony vivaz lcd driver/constants.vhd. VHDL-1481
+INFO - synthesis: z:/github/lattice/sony vivaz lcd driver/constants.vhd(5): analyzing package constants. VHDL-1014
+INFO - synthesis: z:/github/lattice/sony vivaz lcd driver/constants.vhd(21): analyzing package body constants. VHDL-1013
+Analyzing VHDL file z:/github/lattice/sony vivaz lcd driver/main.vhd. VHDL-1481
+WARNING - synthesis: z:/github/lattice/sony vivaz lcd driver/main.vhd(6): 'components' is not compiled in library lattice. VHDL-1240
+INFO - synthesis: z:/github/lattice/sony vivaz lcd driver/main.vhd(8): analyzing entity main. VHDL-1012
+INFO - synthesis: z:/github/lattice/sony vivaz lcd driver/main.vhd(29): analyzing architecture behavioral. VHDL-1010
+INFO - synthesis: z:/github/lattice/sony vivaz lcd driver/main.vhd(62): input pin size has no actual or default value. VHDL-9000
 INFO - synthesis: C:/lscc/diamond/3.7_x64/ispfpga/vhdl_packages/numeric_std.vhd(712): size is declared here. VHDL-1259
-Analyzing VHDL file d:/github/lattice/sony vivaz lcd driver/functions.vhd. VHDL-1481
-INFO - synthesis: d:/github/lattice/sony vivaz lcd driver/functions.vhd(6): analyzing package functions. VHDL-1014
-INFO - synthesis: d:/github/lattice/sony vivaz lcd driver/functions.vhd(10): analyzing package body functions. VHDL-1013
+Analyzing VHDL file z:/github/lattice/sony vivaz lcd driver/functions.vhd. VHDL-1481
+INFO - synthesis: z:/github/lattice/sony vivaz lcd driver/functions.vhd(6): analyzing package functions. VHDL-1014
+INFO - synthesis: z:/github/lattice/sony vivaz lcd driver/functions.vhd(10): analyzing package body functions. VHDL-1013
 unit main is not yet analyzed. VHDL-1485
-d:/github/lattice/sony vivaz lcd driver/main.vhd(8): executing main(behavioral)
+z:/github/lattice/sony vivaz lcd driver/main.vhd(8): executing main(behavioral)
 
-WARNING - synthesis: d:/github/lattice/sony vivaz lcd driver/main.vhd(27): replacing existing netlist main(behavioral). VHDL-1205
+WARNING - synthesis: z:/github/lattice/sony vivaz lcd driver/main.vhd(27): replacing existing netlist main(behavioral). VHDL-1205
 Top module name (VHDL): main
 Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
@@ -223,10 +223,10 @@ clk0 [get_nets clk133]                  |    1.000 MHz|  114.194 MHz|     6
 All constraints were met.
 
 
-Peak Memory Usage: 73.840  MB
+Peak Memory Usage: 71.816  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 0.594  secs
+Elapsed CPU time for LSE flow : 1.123  secs
 --------------------------------------------------------------
 
 

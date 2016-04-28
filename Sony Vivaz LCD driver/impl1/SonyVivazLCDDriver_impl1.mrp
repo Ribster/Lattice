@@ -8,14 +8,14 @@ Design Information
 Command line:   map -a MachXO2 -p LCMXO2-7000HE -t TQFP144 -s 5 -oc Commercial
      SonyVivazLCDDriver_impl1.ngd -o SonyVivazLCDDriver_impl1_map.ncd -pr
      SonyVivazLCDDriver_impl1.prf -mp SonyVivazLCDDriver_impl1.mrp -lpf
-     D:/Github/Lattice/Sony Vivaz LCD driver/impl1/SonyVivazLCDDriver_impl1.lpf
-     -lpf D:/Github/Lattice/Sony Vivaz LCD driver/SonyVivazLCDDriver.lpf -c 0
-     -gui 
+     Z:/GITHUB/Lattice/Sony Vivaz LCD driver/impl1/SonyVivazLCDDriver_impl1.lpf
+     -lpf Z:/GITHUB/Lattice/Sony Vivaz LCD driver/SonyVivazLCDDriver.lpf -c 0
+     -gui -msgset Z:/GITHUB/Lattice/Sony Vivaz LCD driver/promote.xml 
 Target Vendor:  LATTICE
 Target Device:  LCMXO2-7000HETQFP144
 Target Performance:   5
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.7.0.96.1
-Mapped on:  03/09/16  10:22:15
+Mapped on:  03/09/16  11:24:48
 
 Design Summary
 --------------
@@ -32,7 +32,7 @@ Design Summary
       Number used as distributed RAM:     0
       Number used as ripple logic:       34
       Number used as shift registers:     0
-   Number of PIO sites used: 27 + 4(JTAG) out of 115 (27%)
+   Number of PIO sites used: 29 + 4(JTAG) out of 115 (29%)
    Number of block RAMs:  0 out of 26 (0%)
    Number of GSRs:  0 out of 1 (0%)
    EFB used :       No
@@ -66,7 +66,7 @@ Design Summary
 
 
 
-Design:  main                                          Date:  03/09/16  10:22:15
+Design:  main                                          Date:  03/09/16  11:24:48
 
 Design Summary (cont)
 ---------------------
@@ -89,7 +89,7 @@ Design Summary (cont)
 
 
 
-   Number of warnings:  6
+   Number of warnings:  4
    Number of errors:    0
      
 
@@ -98,12 +98,9 @@ Design Errors/Warnings
 
 WARNING - map: input pad net 'clk' has no legal load.
 WARNING - map: input pad net 'reset' has no legal load.
-WARNING - map: input pad net 'lcd_te' has no legal load.
 WARNING - map: IO buffer missing for top level port clk...logic will be
      discarded.
 WARNING - map: IO buffer missing for top level port reset...logic will be
-     discarded.
-WARNING - map: IO buffer missing for top level port lcd_te...logic will be
      discarded.
 
 IO (PIO) Attributes
@@ -126,19 +123,19 @@ IO (PIO) Attributes
 | lcd_db[12]          | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | lcd_db[11]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| lcd_db[10]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
 
                                     Page 2
 
 
 
 
-Design:  main                                          Date:  03/09/16  10:22:15
+Design:  main                                          Date:  03/09/16  11:24:48
 
 IO (PIO) Attributes (cont)
 --------------------------
-+---------------------+-----------+-----------+------------+
-| lcd_db[10]          | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
 | lcd_db[9]           | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | lcd_db[8]           | OUTPUT    | LVCMOS25  |            |
@@ -159,6 +156,8 @@ IO (PIO) Attributes (cont)
 +---------------------+-----------+-----------+------------+
 | lcd_db[0]           | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
+| lcd_reset           | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
 | debug               | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | leds[7]             | OUTPUT    | LVCMOS25  |            |
@@ -177,6 +176,8 @@ IO (PIO) Attributes (cont)
 +---------------------+-----------+-----------+------------+
 | leds[0]             | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
+| lcd_te              | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
 
 Removed logic
 -------------
@@ -192,13 +193,13 @@ Signal counter_45_add_4_1/S0 undriven or does not drive anything - clipped.
 Signal counter_45_add_4_1/CI undriven or does not drive anything - clipped.
 Block i2 was optimized away.
 
-
                                     Page 3
 
 
 
 
-Design:  main                                          Date:  03/09/16  10:22:15
+Design:  main                                          Date:  03/09/16  11:24:48
+
 
 Memory Usage
 ------------
@@ -227,9 +228,8 @@ Run Time and Memory Usage
 
    Total CPU Time: 0 secs  
    Total REAL Time: 0 secs  
-   Peak Memory Usage: 57 MB
+   Peak Memory Usage: 54 MB
         
-
 
 
 

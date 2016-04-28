@@ -2,7 +2,7 @@
 <BaliProject version="3.2" title="SonyVivazLCDDriver" device="LCMXO2-7000HE-5TG144C" default_implementation="impl1">
     <Options/>
     <Implementation title="impl1" dir="impl1" description="impl1" synthesis="lse" default_strategy="Strategy1">
-        <Options def_top="main"/>
+        <Options def_top="lcd_sender"/>
         <Source name="constants.vhd" type="VHDL" type_short="VHDL">
             <Options/>
         </Source>
@@ -11,6 +11,9 @@
         </Source>
         <Source name="functions.vhd" type="VHDL" type_short="VHDL">
             <Options/>
+        </Source>
+        <Source name="lcd_sender.vhd" type="VHDL" type_short="VHDL">
+            <Options top_module="lcd_sender"/>
         </Source>
         <Source name="impl1/impl1.xcf" type="Programming Project File" type_short="Programming">
             <Options/>

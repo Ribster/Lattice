@@ -1,28 +1,29 @@
 NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
 NOTE All Rights Reserved *
-NOTE DATE CREATED: Wed Mar 09 10:22:31 2016 *
+NOTE DATE CREATED: Wed Mar 09 11:25:02 2016 *
 NOTE DESIGN NAME: main *
 NOTE DEVICE NAME: LCMXO2-7000HE-5TQFP144 *
 NOTE PIN ASSIGNMENTS *
-NOTE PINS lcd_rs : 17 : out *
-NOTE PINS lcd_wr : 23 : out *
-NOTE PINS lcd_db[15] : 19 : out *
-NOTE PINS lcd_db[14] : 32 : out *
-NOTE PINS lcd_db[13] : 26 : out *
-NOTE PINS lcd_db[12] : 28 : out *
-NOTE PINS lcd_db[11] : 12 : out *
-NOTE PINS lcd_db[10] : 13 : out *
-NOTE PINS lcd_db[9] : 21 : out *
-NOTE PINS lcd_db[8] : 31 : out *
-NOTE PINS lcd_db[7] : 22 : out *
-NOTE PINS lcd_db[6] : 24 : out *
-NOTE PINS lcd_db[5] : 14 : out *
-NOTE PINS lcd_db[4] : 15 : out *
-NOTE PINS lcd_db[3] : 33 : out *
-NOTE PINS lcd_db[2] : 11 : out *
-NOTE PINS lcd_db[1] : 20 : out *
-NOTE PINS lcd_db[0] : 27 : out *
-NOTE PINS debug : 25 : out *
+NOTE PINS lcd_rs : 57 : out *
+NOTE PINS lcd_wr : 58 : out *
+NOTE PINS lcd_db[15] : 69 : out *
+NOTE PINS lcd_db[14] : 47 : out *
+NOTE PINS lcd_db[13] : 71 : out *
+NOTE PINS lcd_db[12] : 50 : out *
+NOTE PINS lcd_db[11] : 68 : out *
+NOTE PINS lcd_db[10] : 48 : out *
+NOTE PINS lcd_db[9] : 70 : out *
+NOTE PINS lcd_db[8] : 55 : out *
+NOTE PINS lcd_db[7] : 62 : out *
+NOTE PINS lcd_db[6] : 52 : out *
+NOTE PINS lcd_db[5] : 67 : out *
+NOTE PINS lcd_db[4] : 56 : out *
+NOTE PINS lcd_db[3] : 61 : out *
+NOTE PINS lcd_db[2] : 54 : out *
+NOTE PINS lcd_db[1] : 65 : out *
+NOTE PINS lcd_db[0] : 59 : out *
+NOTE PINS lcd_reset : 60 : out *
+NOTE PINS debug : 45 : out *
 NOTE PINS leds[7] : 107 : out *
 NOTE PINS leds[6] : 106 : out *
 NOTE PINS leds[5] : 105 : out *
@@ -31,5 +32,6 @@ NOTE PINS leds[3] : 100 : out *
 NOTE PINS leds[2] : 99 : out *
 NOTE PINS leds[1] : 98 : out *
 NOTE PINS leds[0] : 97 : out *
+NOTE PINS lcd_te : 49 : in *
 NOTE CONFIGURATION MODE: NONE *
 NOTE COMPRESSION: on *

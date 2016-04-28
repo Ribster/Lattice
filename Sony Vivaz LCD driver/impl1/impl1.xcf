@@ -19,8 +19,9 @@
 				<BScanLen>1</BScanLen>
 				<BScanVal>0</BScanVal>
 			</Bypass>
-			<File>D:/Github/Lattice/Sony Vivaz LCD driver/impl1/SonyVivazLCDDriver_impl1.bit</File>
-			<FileTime>03/09/16 08:54:50</FileTime>
+			<File>Z:/GITHUB/Lattice/Sony Vivaz LCD driver/impl1/SonyVivazLCDDriver_impl1.bit</File>
+			<FileTime>03/09/16 11:25:02</FileTime>
+			<JedecChecksum>N/A</JedecChecksum>
 			<Operation>SRAM Erase,Program,Verify</Operation>
 			<Option>
 				<SVFVendor>JTAG STANDARD</SVFVendor>
@@ -28,6 +29,7 @@
 				<PreloadLength>664</PreloadLength>
 				<IOVectorData>0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</IOVectorData>
 				<TCKFrequency>1.000000 MHz</TCKFrequency>
+				<SVFProcessor>SVF Processor</SVFProcessor>
 				<Usercode>0x00000000</Usercode>
 				<AccessMode>SRAM</AccessMode>
 			</Option>
@@ -46,9 +48,5 @@
 		<CableName>USB2</CableName>
 		<PortAdd>FTUSB-0</PortAdd>
 		<USBID>Lattice FTUSB Interface Cable A Location 0000 Serial A</USBID>
-		<JTAGPinSetting>
-			TRST	ABSENT;
-			ISPEN	ABSENT;
-		</JTAGPinSetting>
 	</CableOptions>
 </ispXCF>

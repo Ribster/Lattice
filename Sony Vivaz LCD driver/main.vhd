@@ -3,7 +3,6 @@ USE ieee.std_logic_1164.all;
 USE ieee.numeric_std.all;
 LIBRARY lattice;
 USE work.constants.all;
-USE lattice.components.all;
 
 entity main is
 	port(
@@ -28,6 +27,7 @@ end main;
 
 architecture behavioral of main is
 	signal clk133	: std_logic;
+	signal lcd_init : lcd_init_state_t := undefined;
 	
    -- internal oscillator
    component osch
@@ -40,9 +40,27 @@ architecture behavioral of main is
 		SEDSTDBY	:	out	std_logic
 	);
    end component;
+   
+   component lcd_sender is
+	port(
+		-- input
+		clk		: in	std_logic;	-- clock
+		reset	: in	std_logic;	-- synchronous reset
+		data	: in	lcd_bus_t;	-- input data
+		go		: in	std_logic;	-- toggle trigger
+		-- output
+		data_out	: out	lcd_bus_t;	-- output data
+		wr			: out	std_logic;	-- write signal
+		busy		: out	boolean;	-- busy signal
+		-- signal
+		state_out_sim : out lcd_sender_state_t	-- state of lcd sender
+	);
+	end component;
+   
+   
 begin
 	-- internal oscillator
-	clk_inst: osch
+	inst_clk: osch
 		generic map (nom_freq => "133.00")
 		port map (STDBY => '0', OSC => clk133, SEDSTDBY => OPEN);
 

@@ -14,12 +14,6 @@
             <Dynamic>reset</Dynamic>
         </Message>
         <Message>
-            <ID>1166064</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>input</Dynamic>
-            <Dynamic>lcd_te</Dynamic>
-        </Message>
-        <Message>
             <ID>51001046</ID>
             <Severity>Warning</Severity>
             <Dynamic>clk</Dynamic>
@@ -28,11 +22,6 @@
             <ID>51001046</ID>
             <Severity>Warning</Severity>
             <Dynamic>reset</Dynamic>
-        </Message>
-        <Message>
-            <ID>51001046</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>lcd_te</Dynamic>
         </Message>
     </Task>
     <Task name="Lattice_Synthesis">
@@ -44,55 +33,55 @@
             <ID>35921504</ID>
             <Severity>Info</Severity>
             <Dynamic></Dynamic>
-            <Dynamic>D:/Github/Lattice/Sony Vivaz LCD driver/impl1</Dynamic>
+            <Dynamic>Z:/GITHUB/Lattice/Sony Vivaz LCD driver/impl1</Dynamic>
         </Message>
         <Message>
             <ID>35921014</ID>
             <Severity>Info</Severity>
-            <Dynamic>d:/github/lattice/sony vivaz lcd driver/constants.vhd(5): </Dynamic>
+            <Dynamic>z:/github/lattice/sony vivaz lcd driver/constants.vhd(5): </Dynamic>
             <Dynamic>constants</Dynamic>
-            <Navigation>d:/github/lattice/sony vivaz lcd driver/constants.vhd</Navigation>
+            <Navigation>z:/github/lattice/sony vivaz lcd driver/constants.vhd</Navigation>
             <Navigation>5</Navigation>
         </Message>
         <Message>
             <ID>35921013</ID>
             <Severity>Info</Severity>
-            <Dynamic>d:/github/lattice/sony vivaz lcd driver/constants.vhd(21): </Dynamic>
+            <Dynamic>z:/github/lattice/sony vivaz lcd driver/constants.vhd(21): </Dynamic>
             <Dynamic>constants</Dynamic>
-            <Navigation>d:/github/lattice/sony vivaz lcd driver/constants.vhd</Navigation>
+            <Navigation>z:/github/lattice/sony vivaz lcd driver/constants.vhd</Navigation>
             <Navigation>21</Navigation>
         </Message>
         <Message>
             <ID>35921240</ID>
             <Severity>Warning</Severity>
-            <Dynamic>d:/github/lattice/sony vivaz lcd driver/main.vhd(6): </Dynamic>
+            <Dynamic>z:/github/lattice/sony vivaz lcd driver/main.vhd(6): </Dynamic>
             <Dynamic>components</Dynamic>
             <Dynamic>lattice</Dynamic>
-            <Navigation>d:/github/lattice/sony vivaz lcd driver/main.vhd</Navigation>
+            <Navigation>z:/github/lattice/sony vivaz lcd driver/main.vhd</Navigation>
             <Navigation>6</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
             <Severity>Info</Severity>
-            <Dynamic>d:/github/lattice/sony vivaz lcd driver/main.vhd(8): </Dynamic>
+            <Dynamic>z:/github/lattice/sony vivaz lcd driver/main.vhd(8): </Dynamic>
             <Dynamic>main</Dynamic>
-            <Navigation>d:/github/lattice/sony vivaz lcd driver/main.vhd</Navigation>
+            <Navigation>z:/github/lattice/sony vivaz lcd driver/main.vhd</Navigation>
             <Navigation>8</Navigation>
         </Message>
         <Message>
             <ID>35921010</ID>
             <Severity>Info</Severity>
-            <Dynamic>d:/github/lattice/sony vivaz lcd driver/main.vhd(29): </Dynamic>
+            <Dynamic>z:/github/lattice/sony vivaz lcd driver/main.vhd(29): </Dynamic>
             <Dynamic>behavioral</Dynamic>
-            <Navigation>d:/github/lattice/sony vivaz lcd driver/main.vhd</Navigation>
+            <Navigation>z:/github/lattice/sony vivaz lcd driver/main.vhd</Navigation>
             <Navigation>29</Navigation>
         </Message>
         <Message>
             <ID>35929000</ID>
             <Severity>Info</Severity>
-            <Dynamic>d:/github/lattice/sony vivaz lcd driver/main.vhd(62): </Dynamic>
+            <Dynamic>z:/github/lattice/sony vivaz lcd driver/main.vhd(62): </Dynamic>
             <Dynamic>size</Dynamic>
-            <Navigation>d:/github/lattice/sony vivaz lcd driver/main.vhd</Navigation>
+            <Navigation>z:/github/lattice/sony vivaz lcd driver/main.vhd</Navigation>
             <Navigation>62</Navigation>
         </Message>
         <Message>
@@ -106,26 +95,26 @@
         <Message>
             <ID>35921014</ID>
             <Severity>Info</Severity>
-            <Dynamic>d:/github/lattice/sony vivaz lcd driver/functions.vhd(6): </Dynamic>
+            <Dynamic>z:/github/lattice/sony vivaz lcd driver/functions.vhd(6): </Dynamic>
             <Dynamic>functions</Dynamic>
-            <Navigation>d:/github/lattice/sony vivaz lcd driver/functions.vhd</Navigation>
+            <Navigation>z:/github/lattice/sony vivaz lcd driver/functions.vhd</Navigation>
             <Navigation>6</Navigation>
         </Message>
         <Message>
             <ID>35921013</ID>
             <Severity>Info</Severity>
-            <Dynamic>d:/github/lattice/sony vivaz lcd driver/functions.vhd(10): </Dynamic>
+            <Dynamic>z:/github/lattice/sony vivaz lcd driver/functions.vhd(10): </Dynamic>
             <Dynamic>functions</Dynamic>
-            <Navigation>d:/github/lattice/sony vivaz lcd driver/functions.vhd</Navigation>
+            <Navigation>z:/github/lattice/sony vivaz lcd driver/functions.vhd</Navigation>
             <Navigation>10</Navigation>
         </Message>
         <Message>
             <ID>35921205</ID>
             <Severity>Warning</Severity>
-            <Dynamic>d:/github/lattice/sony vivaz lcd driver/main.vhd(27): </Dynamic>
+            <Dynamic>z:/github/lattice/sony vivaz lcd driver/main.vhd(27): </Dynamic>
             <Dynamic>main</Dynamic>
             <Dynamic>behavioral</Dynamic>
-            <Navigation>d:/github/lattice/sony vivaz lcd driver/main.vhd</Navigation>
+            <Navigation>z:/github/lattice/sony vivaz lcd driver/main.vhd</Navigation>
             <Navigation>27</Navigation>
         </Message>
         <Message>

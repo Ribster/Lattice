@@ -30,13 +30,13 @@
 
 
 -lpf 1
--lib "work" -vhd "D:/Github/Lattice/Sony Vivaz LCD driver/constants.vhd"
-"D:/Github/Lattice/Sony Vivaz LCD driver/main.vhd"
-"D:/Github/Lattice/Sony Vivaz LCD driver/functions.vhd"
+-lib "work" -vhd "Z:/GITHUB/Lattice/Sony Vivaz LCD driver/constants.vhd"
+"Z:/GITHUB/Lattice/Sony Vivaz LCD driver/main.vhd"
+"Z:/GITHUB/Lattice/Sony Vivaz LCD driver/functions.vhd"
 -top main
 
 
--p "C:/lscc/diamond/3.7_x64/ispfpga/xo2c00/data" "D:/Github/Lattice/Sony Vivaz LCD driver/impl1" "D:/Github/Lattice/Sony Vivaz LCD driver"
+-p "C:/lscc/diamond/3.7_x64/ispfpga/xo2c00/data" "Z:/GITHUB/Lattice/Sony Vivaz LCD driver/impl1" "Z:/GITHUB/Lattice/Sony Vivaz LCD driver"
 
 -ngd "SonyVivazLCDDriver_impl1.ngd"
 
