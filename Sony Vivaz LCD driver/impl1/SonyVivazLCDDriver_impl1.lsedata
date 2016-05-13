@@ -19,7 +19,7 @@
 <unit name = "main">
 
     <!--
-        Top Level Pins: 31
+        Top Level Pins: 15
     -->
 
     <pins>
@@ -28,22 +28,6 @@
         <pitem  name = "lcd_wr"  direction = "out"  />
         <pitem  name = "lcd_rs"  direction = "out"  />
         <pitem  name = "lcd_te"  direction = "in"  />
-        <pitem  name = "lcd_db[15]"  direction = "out"  />
-        <pitem  name = "lcd_db[14]"  direction = "out"  />
-        <pitem  name = "lcd_db[13]"  direction = "out"  />
-        <pitem  name = "lcd_db[12]"  direction = "out"  />
-        <pitem  name = "lcd_db[11]"  direction = "out"  />
-        <pitem  name = "lcd_db[10]"  direction = "out"  />
-        <pitem  name = "lcd_db[9]"  direction = "out"  />
-        <pitem  name = "lcd_db[8]"  direction = "out"  />
-        <pitem  name = "lcd_db[7]"  direction = "out"  />
-        <pitem  name = "lcd_db[6]"  direction = "out"  />
-        <pitem  name = "lcd_db[5]"  direction = "out"  />
-        <pitem  name = "lcd_db[4]"  direction = "out"  />
-        <pitem  name = "lcd_db[3]"  direction = "out"  />
-        <pitem  name = "lcd_db[2]"  direction = "out"  />
-        <pitem  name = "lcd_db[1]"  direction = "out"  />
-        <pitem  name = "lcd_db[0]"  direction = "out"  />
         <pitem  name = "lcd_reset"  direction = "out"  />
         <pitem  name = "debug"  direction = "out"  />
         <pitem  name = "leds[7]"  direction = "out"  />
@@ -60,7 +44,7 @@
         Instances in netlist: 9
     -->
 
-    <instance  name = "clk_inst"  library = "work"  arch = "RTL"  type = "comb">
+    <instance  name = "inst_clk"  library = "work"  arch = "RTL"  type = "comb">
         <pins>
         <pitem  name = "STDBY"  direction = "in"  />
         <pitem  name = "OSC"  direction = "out"  />

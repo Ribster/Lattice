@@ -9,40 +9,40 @@
             <ID>35921504</ID>
             <Severity>Info</Severity>
             <Dynamic></Dynamic>
-            <Dynamic>D:/Github/Lattice/Blinky MachXO2/impl1</Dynamic>
+            <Dynamic>Z:/GITHUB/Lattice/Blinky MachXO2/impl1</Dynamic>
         </Message>
         <Message>
             <ID>35921240</ID>
             <Severity>Warning</Severity>
-            <Dynamic>d:/github/lattice/blinky machxo2/blinking_led.vhd(5): </Dynamic>
+            <Dynamic>z:/github/lattice/blinky machxo2/blinking_led.vhd(5): </Dynamic>
             <Dynamic>components</Dynamic>
             <Dynamic>lattice</Dynamic>
-            <Navigation>d:/github/lattice/blinky machxo2/blinking_led.vhd</Navigation>
+            <Navigation>z:/github/lattice/blinky machxo2/blinking_led.vhd</Navigation>
             <Navigation>5</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
             <Severity>Info</Severity>
-            <Dynamic>d:/github/lattice/blinky machxo2/blinking_led.vhd(7): </Dynamic>
+            <Dynamic>z:/github/lattice/blinky machxo2/blinking_led.vhd(7): </Dynamic>
             <Dynamic>blinking_led</Dynamic>
-            <Navigation>d:/github/lattice/blinky machxo2/blinking_led.vhd</Navigation>
+            <Navigation>z:/github/lattice/blinky machxo2/blinking_led.vhd</Navigation>
             <Navigation>7</Navigation>
         </Message>
         <Message>
             <ID>35921010</ID>
             <Severity>Info</Severity>
-            <Dynamic>d:/github/lattice/blinky machxo2/blinking_led.vhd(14): </Dynamic>
+            <Dynamic>z:/github/lattice/blinky machxo2/blinking_led.vhd(14): </Dynamic>
             <Dynamic>behavior</Dynamic>
-            <Navigation>d:/github/lattice/blinky machxo2/blinking_led.vhd</Navigation>
+            <Navigation>z:/github/lattice/blinky machxo2/blinking_led.vhd</Navigation>
             <Navigation>14</Navigation>
         </Message>
         <Message>
             <ID>35921205</ID>
             <Severity>Warning</Severity>
-            <Dynamic>d:/github/lattice/blinky machxo2/blinking_led.vhd(12): </Dynamic>
+            <Dynamic>z:/github/lattice/blinky machxo2/blinking_led.vhd(12): </Dynamic>
             <Dynamic>blinking_led</Dynamic>
             <Dynamic>behavior</Dynamic>
-            <Navigation>d:/github/lattice/blinky machxo2/blinking_led.vhd</Navigation>
+            <Navigation>z:/github/lattice/blinky machxo2/blinking_led.vhd</Navigation>
             <Navigation>12</Navigation>
         </Message>
         <Message>

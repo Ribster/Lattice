@@ -1,7 +1,7 @@
 ----------------------------------------------------------------------
 Report for cell main.TECH
 Register bits:  31 of 7209 (0.430%)
-I/O cells:      29
+I/O cells:      13
                                   Cell usage:
                                cell     count   Res Usage(%)
                               CCU2D        17          100.0
@@ -11,6 +11,6 @@ I/O cells:      29
                                  IB         1          100.0
                                LUT4        14          100.0
                                  OB         9          100.0
-                                OBZ        19          100.0
+                                OBZ         3          100.0
                                OSCH         1          100.0
-                              TOTAL        93
+                              TOTAL        77

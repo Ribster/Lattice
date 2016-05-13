@@ -4,11 +4,11 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
-Fri Mar 04 12:31:18 2016
+Fri May 13 10:07:07 2016
 
 C:/lscc/diamond/3.7_x64/ispfpga\bin\nt64\par -f BlinkyMachXO2_impl1.p2t
 BlinkyMachXO2_impl1_map.ncd BlinkyMachXO2_impl1.dir BlinkyMachXO2_impl1.prf
--gui
+-gui -msgset Z:/GITHUB/Lattice/Blinky MachXO2/promote.xml
 
 
 Preference file: BlinkyMachXO2_impl1.prf.

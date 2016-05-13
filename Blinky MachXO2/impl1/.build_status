@@ -5,23 +5,23 @@
             <Task name="IBIS" build_result="0" update_result="3" update_time="0"/>
             <Task name="TimingSimFileVlg" build_result="0" update_result="3" update_time="0"/>
             <Task name="TimingSimFileVHD" build_result="0" update_result="3" update_time="0"/>
-            <Task name="Jedecgen" build_result="2" update_result="0" update_time="1457091086"/>
-            <Task name="Bitgen" build_result="2" update_result="0" update_time="1457091090"/>
+            <Task name="Jedecgen" build_result="2" update_result="0" update_time="1463126836"/>
+            <Task name="Bitgen" build_result="2" update_result="0" update_time="1463126839"/>
         </Milestone>
-        <Milestone name="Map" build_result="2" build_time="1457091078">
-            <Task name="Map" build_result="2" update_result="0" update_time="1457091078"/>
+        <Milestone name="Map" build_result="2" build_time="1463126827">
+            <Task name="Map" build_result="2" update_result="0" update_time="1463126827"/>
             <Task name="MapTrace" build_result="0" update_result="3" update_time="0"/>
             <Task name="MapVerilogSimFile" build_result="0" update_result="3" update_time="0"/>
             <Task name="MapVHDLSimFile" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="PAR" build_result="2" build_time="1457091083">
-            <Task name="PAR" build_result="2" update_result="0" update_time="1457091083"/>
+        <Milestone name="PAR" build_result="2" build_time="1463126832">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1463126832"/>
             <Task name="PARTrace" build_result="0" update_result="3" update_time="0"/>
             <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="2" build_time="1457090839">
-            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1457090839"/>
-            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1457090839"/>
+        <Milestone name="Synthesis" build_result="2" build_time="1463126826">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1463126826"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1463126839"/>
         </Milestone>
         <Milestone name="TOOL_Report" build_result="0" build_time="0">
             <Task name="HDLE" build_result="2" update_result="0" update_time="1457090831"/>
@@ -30,13 +30,13 @@
             <Task name="BKM" build_result="0" update_result="2" update_time="0"/>
             <Task name="DEC" build_result="0" update_result="2" update_time="0"/>
         </Milestone>
-        <Report name=".vdbs/BlinkyMachXO2_impl1_map.vdb" last_build_time="1457091078" last_build_size="34287"/>
-        <Report name="BlinkyMachXO2_impl1.bgn" last_build_time="1457091090" last_build_size="3788"/>
-        <Report name="BlinkyMachXO2_impl1.bit" last_build_time="1457091090" last_build_size="25451"/>
-        <Report name="BlinkyMachXO2_impl1.jed" last_build_time="1457091086" last_build_size="1464695"/>
-        <Report name="BlinkyMachXO2_impl1.lsedata" last_build_time="1457090839" last_build_size="33577"/>
-        <Report name="BlinkyMachXO2_impl1.ncd" last_build_time="1457091083" last_build_size="41344"/>
-        <Report name="BlinkyMachXO2_impl1.ngd" last_build_time="1457090839" last_build_size="37493"/>
-        <Report name="BlinkyMachXO2_impl1_map.ncd" last_build_time="1457091078" last_build_size="30184"/>
+        <Report name=".vdbs/BlinkyMachXO2_impl1_map.vdb" last_build_time="1463126827" last_build_size="34287"/>
+        <Report name="BlinkyMachXO2_impl1.bgn" last_build_time="1463126839" last_build_size="3841"/>
+        <Report name="BlinkyMachXO2_impl1.bit" last_build_time="1463126839" last_build_size="25451"/>
+        <Report name="BlinkyMachXO2_impl1.jed" last_build_time="1463126836" last_build_size="1464695"/>
+        <Report name="BlinkyMachXO2_impl1.lsedata" last_build_time="1463126825" last_build_size="33577"/>
+        <Report name="BlinkyMachXO2_impl1.ncd" last_build_time="1463126832" last_build_size="41344"/>
+        <Report name="BlinkyMachXO2_impl1.ngd" last_build_time="1463126826" last_build_size="37493"/>
+        <Report name="BlinkyMachXO2_impl1_map.ncd" last_build_time="1463126827" last_build_size="30184"/>
     </Strategy>
 </BuildStatus>

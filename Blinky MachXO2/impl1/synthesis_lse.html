@@ -14,10 +14,10 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
-Fri Mar 04 12:27:18 2016
+Fri May 13 10:07:05 2016
 
 
-Command Line:  synthesis -f BlinkyMachXO2_impl1_lattice.synproj -gui 
+Command Line:  synthesis -f BlinkyMachXO2_impl1_lattice.synproj -gui -msgset Z:/GITHUB/Lattice/Blinky MachXO2/promote.xml 
 
 Synthesis options:
 The -a option is MachXO2.
@@ -70,10 +70,10 @@ RAM style = auto
 The -comp option is FALSE.
 The -syn option is FALSE.
 -p C:/lscc/diamond/3.7_x64/ispfpga/xo2c00/data (searchpath added)
--p D:/Github/Lattice/Blinky MachXO2/impl1 (searchpath added)
--p D:/Github/Lattice/Blinky MachXO2 (searchpath added)
+-p Z:/GITHUB/Lattice/Blinky MachXO2/impl1 (searchpath added)
+-p Z:/GITHUB/Lattice/Blinky MachXO2 (searchpath added)
 VHDL library = work
-VHDL design file = D:/Github/Lattice/Blinky MachXO2/blinking_led.vhd
+VHDL design file = Z:/GITHUB/Lattice/Blinky MachXO2/blinking_led.vhd
 NGD file = BlinkyMachXO2_impl1.ngd
 -sdc option: SDC file input not used.
 -lpf option: Output file option is ON.
@@ -84,15 +84,15 @@ Technology check ok...
 Analyzing Verilog file C:/lscc/diamond/3.7_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
 Compile design.
 Compile Design Begin
-INFO - synthesis: The default VHDL library search path is now "D:/Github/Lattice/Blinky MachXO2/impl1". VHDL-1504
-Analyzing VHDL file d:/github/lattice/blinky machxo2/blinking_led.vhd. VHDL-1481
-WARNING - synthesis: d:/github/lattice/blinky machxo2/blinking_led.vhd(5): 'components' is not compiled in library lattice. VHDL-1240
-INFO - synthesis: d:/github/lattice/blinky machxo2/blinking_led.vhd(7): analyzing entity blinking_led. VHDL-1012
-INFO - synthesis: d:/github/lattice/blinky machxo2/blinking_led.vhd(14): analyzing architecture behavior. VHDL-1010
+INFO - synthesis: The default VHDL library search path is now "Z:/GITHUB/Lattice/Blinky MachXO2/impl1". VHDL-1504
+Analyzing VHDL file z:/github/lattice/blinky machxo2/blinking_led.vhd. VHDL-1481
+WARNING - synthesis: z:/github/lattice/blinky machxo2/blinking_led.vhd(5): 'components' is not compiled in library lattice. VHDL-1240
+INFO - synthesis: z:/github/lattice/blinky machxo2/blinking_led.vhd(7): analyzing entity blinking_led. VHDL-1012
+INFO - synthesis: z:/github/lattice/blinky machxo2/blinking_led.vhd(14): analyzing architecture behavior. VHDL-1010
 unit blinking_led is not yet analyzed. VHDL-1485
-d:/github/lattice/blinky machxo2/blinking_led.vhd(7): executing blinking_led(behavior)
+z:/github/lattice/blinky machxo2/blinking_led.vhd(7): executing blinking_led(behavior)
 
-WARNING - synthesis: d:/github/lattice/blinky machxo2/blinking_led.vhd(12): replacing existing netlist blinking_led(behavior). VHDL-1205
+WARNING - synthesis: z:/github/lattice/blinky machxo2/blinking_led.vhd(12): replacing existing netlist blinking_led(behavior). VHDL-1205
 Top module name (VHDL): blinking_led
 Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
@@ -169,10 +169,10 @@ clk0 [get_nets clk]                     |    1.000 MHz|   77.334 MHz|     8
 All constraints were met.
 
 
-Peak Memory Usage: 73.664  MB
+Peak Memory Usage: 71.813  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 0.516  secs
+Elapsed CPU time for LSE flow : 0.920  secs
 --------------------------------------------------------------
 
 

@@ -23,7 +23,7 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO2-7000HETQFP144
 Target Performance:   5
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.7.0.96.1
-Mapped on:  03/09/16  11:24:48
+Mapped on:  05/13/16  10:13:00
 
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
@@ -39,7 +39,7 @@ Mapped on:  03/09/16  11:24:48
       Number used as distributed RAM:     0
       Number used as ripple logic:       34
       Number used as shift registers:     0
-   Number of PIO sites used: 29 + 4(JTAG) out of 115 (29%)
+   Number of PIO sites used: 13 + 4(JTAG) out of 115 (15%)
    Number of block RAMs:  0 out of 26 (0%)
    Number of GSRs:  0 out of 1 (0%)
    EFB used :       No
@@ -65,7 +65,7 @@ Mapped on:  03/09/16  11:24:48
       2. Number of logic LUT4s does not include count of distributed RAM and
      ripple logic.
    Number of clocks:  1
-     Net clk133: 17 loads, 17 rising, 0 falling (Driver: clk_inst )
+     Net clk133: 17 loads, 17 rising, 0 falling (Driver: inst_clk )
    Number of Clock Enables:  1
 
      Net clk133_enable_8: 5 loads, 5 LSLICEs
@@ -87,7 +87,7 @@ Mapped on:  03/09/16  11:24:48
 
 
 
-   Number of warnings:  4
+   Number of warnings:  22
    Number of errors:    0
      
 
@@ -96,12 +96,80 @@ Mapped on:  03/09/16  11:24:48
 
 <A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
 
+WARNING - map: Z:/GITHUB/Lattice/Sony Vivaz LCD
+     driver/SonyVivazLCDDriver.lpf(11): Semantic error in "LOCATE COMP
+     "lcd_db[14]" SITE "47" ;": COMP "lcd_db[14]" cannot be found in design.
+     This preference has been disabled.
+WARNING - map: Z:/GITHUB/Lattice/Sony Vivaz LCD
+     driver/SonyVivazLCDDriver.lpf(12): Semantic error in "LOCATE COMP
+     "lcd_db[12]" SITE "50" ;": COMP "lcd_db[12]" cannot be found in design.
+     This preference has been disabled.
+WARNING - map: Z:/GITHUB/Lattice/Sony Vivaz LCD
+     driver/SonyVivazLCDDriver.lpf(13): Semantic error in "LOCATE COMP
+     "lcd_db[10]" SITE "48" ;": COMP "lcd_db[10]" cannot be found in design.
+     This preference has been disabled.
+WARNING - map: Z:/GITHUB/Lattice/Sony Vivaz LCD
+     driver/SonyVivazLCDDriver.lpf(14): Semantic error in "LOCATE COMP
+     "lcd_db[8]" SITE "55" ;": COMP "lcd_db[8]" cannot be found in design. This
+     preference has been disabled.
+WARNING - map: Z:/GITHUB/Lattice/Sony Vivaz LCD
+     driver/SonyVivazLCDDriver.lpf(15): Semantic error in "LOCATE COMP
+     "lcd_db[6]" SITE "52" ;": COMP "lcd_db[6]" cannot be found in design. This
+     preference has been disabled.
+WARNING - map: Z:/GITHUB/Lattice/Sony Vivaz LCD
+     driver/SonyVivazLCDDriver.lpf(16): Semantic error in "LOCATE COMP
+     "lcd_db[4]" SITE "56" ;": COMP "lcd_db[4]" cannot be found in design. This
+     preference has been disabled.
+WARNING - map: Z:/GITHUB/Lattice/Sony Vivaz LCD
+     driver/SonyVivazLCDDriver.lpf(17): Semantic error in "LOCATE COMP
+     "lcd_db[2]" SITE "54" ;": COMP "lcd_db[2]" cannot be found in design. This
+     preference has been disabled.
+WARNING - map: Z:/GITHUB/Lattice/Sony Vivaz LCD
+     driver/SonyVivazLCDDriver.lpf(18): Semantic error in "LOCATE COMP
+
+     "lcd_db[0]" SITE "59" ;": COMP "lcd_db[0]" cannot be found in design. This
+     preference has been disabled.
+WARNING - map: Z:/GITHUB/Lattice/Sony Vivaz LCD
+     driver/SonyVivazLCDDriver.lpf(20): Semantic error in "LOCATE COMP
+     "lcd_db[15]" SITE "69" ;": COMP "lcd_db[15]" cannot be found in design.
+     This preference has been disabled.
+WARNING - map: Z:/GITHUB/Lattice/Sony Vivaz LCD
+     driver/SonyVivazLCDDriver.lpf(21): Semantic error in "LOCATE COMP
+     "lcd_db[13]" SITE "71" ;": COMP "lcd_db[13]" cannot be found in design.
+     This preference has been disabled.
+WARNING - map: Z:/GITHUB/Lattice/Sony Vivaz LCD
+     driver/SonyVivazLCDDriver.lpf(22): Semantic error in "LOCATE COMP
+     "lcd_db[11]" SITE "68" ;": COMP "lcd_db[11]" cannot be found in design.
+     This preference has been disabled.
+WARNING - map: Z:/GITHUB/Lattice/Sony Vivaz LCD
+     driver/SonyVivazLCDDriver.lpf(23): Semantic error in "LOCATE COMP
+     "lcd_db[9]" SITE "70" ;": COMP "lcd_db[9]" cannot be found in design. This
+     preference has been disabled.
+WARNING - map: Z:/GITHUB/Lattice/Sony Vivaz LCD
+     driver/SonyVivazLCDDriver.lpf(24): Semantic error in "LOCATE COMP
+     "lcd_db[7]" SITE "62" ;": COMP "lcd_db[7]" cannot be found in design. This
+     preference has been disabled.
+WARNING - map: Z:/GITHUB/Lattice/Sony Vivaz LCD
+     driver/SonyVivazLCDDriver.lpf(25): Semantic error in "LOCATE COMP
+     "lcd_db[5]" SITE "67" ;": COMP "lcd_db[5]" cannot be found in design. This
+     preference has been disabled.
+WARNING - map: Z:/GITHUB/Lattice/Sony Vivaz LCD
+     driver/SonyVivazLCDDriver.lpf(26): Semantic error in "LOCATE COMP
+     "lcd_db[1]" SITE "65" ;": COMP "lcd_db[1]" cannot be found in design. This
+     preference has been disabled.
+WARNING - map: Z:/GITHUB/Lattice/Sony Vivaz LCD
+     driver/SonyVivazLCDDriver.lpf(30): Semantic error in "LOCATE COMP
+     "lcd_db[3]" SITE "61" ;": COMP "lcd_db[3]" cannot be found in design. This
+     preference has been disabled.
+WARNING - map: Preference parsing results:  16 semantic errors detected.
 WARNING - map: input pad net 'clk' has no legal load.
 WARNING - map: input pad net 'reset' has no legal load.
 WARNING - map: IO buffer missing for top level port clk...logic will be
      discarded.
 WARNING - map: IO buffer missing for top level port reset...logic will be
      discarded.
+WARNING - map: There are semantic errors in the preference file
+     Z:/GITHUB/Lattice/Sony Vivaz LCD driver/SonyVivazLCDDriver.lpf.
 
 
 
@@ -115,40 +183,8 @@ WARNING - map: IO buffer missing for top level port reset...logic will be
 +---------------------+-----------+-----------+------------+
 | lcd_wr              | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
-| lcd_db[15]          | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| lcd_db[14]          | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| lcd_db[13]          | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| lcd_db[12]          | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| lcd_db[11]          | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| lcd_db[10]          | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-
-| lcd_db[9]           | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| lcd_db[8]           | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| lcd_db[7]           | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| lcd_db[6]           | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| lcd_db[5]           | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| lcd_db[4]           | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| lcd_db[3]           | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| lcd_db[2]           | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| lcd_db[1]           | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| lcd_db[0]           | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
 | lcd_reset           | OUTPUT    | LVCMOS25  |            |
+
 +---------------------+-----------+-----------+------------+
 | debug               | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
@@ -177,15 +213,14 @@ WARNING - map: IO buffer missing for top level port reset...logic will be
 
 Block GSR_INST undriven or does not drive anything - clipped.
 Signal VCC_net undriven or does not drive anything - clipped.
-Signal count_44_add_4_23/CO undriven or does not drive anything - clipped.
-Signal counter_45_add_4_9/S1 undriven or does not drive anything - clipped.
-Signal counter_45_add_4_9/CO undriven or does not drive anything - clipped.
-Signal count_44_add_4_1/S0 undriven or does not drive anything - clipped.
-Signal count_44_add_4_1/CI undriven or does not drive anything - clipped.
-Signal counter_45_add_4_1/S0 undriven or does not drive anything - clipped.
-Signal counter_45_add_4_1/CI undriven or does not drive anything - clipped.
+Signal count_28_add_4_23/CO undriven or does not drive anything - clipped.
+Signal counter_29_add_4_9/S1 undriven or does not drive anything - clipped.
+Signal counter_29_add_4_9/CO undriven or does not drive anything - clipped.
+Signal count_28_add_4_1/S0 undriven or does not drive anything - clipped.
+Signal count_28_add_4_1/CI undriven or does not drive anything - clipped.
+Signal counter_29_add_4_1/S0 undriven or does not drive anything - clipped.
+Signal counter_29_add_4_1/CI undriven or does not drive anything - clipped.
 Block i2 was optimized away.
-
 
 
 
@@ -198,7 +233,7 @@ OSC Summary
 -----------
 
 OSC 1:                                     Pin/Node Value
-  OSC Instance Name:                                clk_inst
+  OSC Instance Name:                                inst_clk
   OSC Type:                                         OSCH
   STDBY Input:                                      NONE
   OSC Output:                              NODE     clk133
@@ -209,7 +244,8 @@ OSC 1:                                     Pin/Node Value
 <A name="mrp_asic"></A><B><U><big>ASIC Components</big></U></B>
 ---------------
 
-Instance Name: clk_inst
+Instance Name: inst_clk
+
          Type: OSCH
 
 
@@ -221,6 +257,25 @@ Instance Name: clk_inst
    Total REAL Time: 0 secs  
    Peak Memory Usage: 54 MB
         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -5,7 +5,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
-Wed Mar 09 11:24:32 2016
+Fri May 13 10:12:59 2016
 
 
 Command Line:  synthesis -f SonyVivazLCDDriver_impl1_lattice.synproj -gui -msgset Z:/GITHUB/Lattice/Sony Vivaz LCD driver/promote.xml 
@@ -64,9 +64,7 @@ The -syn option is FALSE.
 -p Z:/GITHUB/Lattice/Sony Vivaz LCD driver/impl1 (searchpath added)
 -p Z:/GITHUB/Lattice/Sony Vivaz LCD driver (searchpath added)
 VHDL library = work
-VHDL design file = Z:/GITHUB/Lattice/Sony Vivaz LCD driver/constants.vhd
 VHDL design file = Z:/GITHUB/Lattice/Sony Vivaz LCD driver/main.vhd
-VHDL design file = Z:/GITHUB/Lattice/Sony Vivaz LCD driver/functions.vhd
 NGD file = SonyVivazLCDDriver_impl1.ngd
 -sdc option: SDC file input not used.
 -lpf option: Output file option is ON.
@@ -78,22 +76,15 @@ Analyzing Verilog file C:/lscc/diamond/3.7_x64/ispfpga/userware/NT/SYNTHESIS_HEA
 Compile design.
 Compile Design Begin
 INFO - synthesis: The default VHDL library search path is now "Z:/GITHUB/Lattice/Sony Vivaz LCD driver/impl1". VHDL-1504
-Analyzing VHDL file z:/github/lattice/sony vivaz lcd driver/constants.vhd. VHDL-1481
-INFO - synthesis: z:/github/lattice/sony vivaz lcd driver/constants.vhd(5): analyzing package constants. VHDL-1014
-INFO - synthesis: z:/github/lattice/sony vivaz lcd driver/constants.vhd(21): analyzing package body constants. VHDL-1013
 Analyzing VHDL file z:/github/lattice/sony vivaz lcd driver/main.vhd. VHDL-1481
-WARNING - synthesis: z:/github/lattice/sony vivaz lcd driver/main.vhd(6): 'components' is not compiled in library lattice. VHDL-1240
-INFO - synthesis: z:/github/lattice/sony vivaz lcd driver/main.vhd(8): analyzing entity main. VHDL-1012
-INFO - synthesis: z:/github/lattice/sony vivaz lcd driver/main.vhd(29): analyzing architecture behavioral. VHDL-1010
-INFO - synthesis: z:/github/lattice/sony vivaz lcd driver/main.vhd(62): input pin size has no actual or default value. VHDL-9000
+INFO - synthesis: z:/github/lattice/sony vivaz lcd driver/main.vhd(6): analyzing entity main. VHDL-1012
+INFO - synthesis: z:/github/lattice/sony vivaz lcd driver/main.vhd(26): analyzing architecture behavioral. VHDL-1010
+INFO - synthesis: z:/github/lattice/sony vivaz lcd driver/main.vhd(60): input pin size has no actual or default value. VHDL-9000
 INFO - synthesis: C:/lscc/diamond/3.7_x64/ispfpga/vhdl_packages/numeric_std.vhd(712): size is declared here. VHDL-1259
-Analyzing VHDL file z:/github/lattice/sony vivaz lcd driver/functions.vhd. VHDL-1481
-INFO - synthesis: z:/github/lattice/sony vivaz lcd driver/functions.vhd(6): analyzing package functions. VHDL-1014
-INFO - synthesis: z:/github/lattice/sony vivaz lcd driver/functions.vhd(10): analyzing package body functions. VHDL-1013
 unit main is not yet analyzed. VHDL-1485
-z:/github/lattice/sony vivaz lcd driver/main.vhd(8): executing main(behavioral)
+z:/github/lattice/sony vivaz lcd driver/main.vhd(6): executing main(behavioral)
 
-WARNING - synthesis: z:/github/lattice/sony vivaz lcd driver/main.vhd(27): replacing existing netlist main(behavioral). VHDL-1205
+WARNING - synthesis: z:/github/lattice/sony vivaz lcd driver/main.vhd(24): replacing existing netlist main(behavioral). VHDL-1205
 Top module name (VHDL): main
 Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
@@ -104,42 +95,10 @@ Package Status:                     Final          Version 1.39.
 Top-level module name = main.
 WARNING - synthesis: lcd_wr is not assigned a value (floating) -- simulation mismatch possible.
 WARNING - synthesis: lcd_rs is not assigned a value (floating) -- simulation mismatch possible.
-WARNING - synthesis: lcd_db[15] is not assigned a value (floating) -- simulation mismatch possible.
-WARNING - synthesis: lcd_db[14] is not assigned a value (floating) -- simulation mismatch possible.
-WARNING - synthesis: lcd_db[13] is not assigned a value (floating) -- simulation mismatch possible.
-WARNING - synthesis: lcd_db[12] is not assigned a value (floating) -- simulation mismatch possible.
-WARNING - synthesis: lcd_db[11] is not assigned a value (floating) -- simulation mismatch possible.
-WARNING - synthesis: lcd_db[10] is not assigned a value (floating) -- simulation mismatch possible.
-WARNING - synthesis: lcd_db[9] is not assigned a value (floating) -- simulation mismatch possible.
-WARNING - synthesis: lcd_db[8] is not assigned a value (floating) -- simulation mismatch possible.
-WARNING - synthesis: lcd_db[7] is not assigned a value (floating) -- simulation mismatch possible.
-WARNING - synthesis: lcd_db[6] is not assigned a value (floating) -- simulation mismatch possible.
-WARNING - synthesis: lcd_db[5] is not assigned a value (floating) -- simulation mismatch possible.
-WARNING - synthesis: lcd_db[4] is not assigned a value (floating) -- simulation mismatch possible.
-WARNING - synthesis: lcd_db[3] is not assigned a value (floating) -- simulation mismatch possible.
-WARNING - synthesis: lcd_db[2] is not assigned a value (floating) -- simulation mismatch possible.
-WARNING - synthesis: lcd_db[1] is not assigned a value (floating) -- simulation mismatch possible.
-WARNING - synthesis: lcd_db[0] is not assigned a value (floating) -- simulation mismatch possible.
 WARNING - synthesis: lcd_reset is not assigned a value (floating) -- simulation mismatch possible.
 ######## Missing driver on net n151. Patching with GND.
 ######## Missing driver on net n150. Patching with GND.
 ######## Missing driver on net n152. Patching with GND.
-######## Missing driver on net n153. Patching with GND.
-######## Missing driver on net n154. Patching with GND.
-######## Missing driver on net n155. Patching with GND.
-######## Missing driver on net n156. Patching with GND.
-######## Missing driver on net n157. Patching with GND.
-######## Missing driver on net n158. Patching with GND.
-######## Missing driver on net n159. Patching with GND.
-######## Missing driver on net n160. Patching with GND.
-######## Missing driver on net n161. Patching with GND.
-######## Missing driver on net n162. Patching with GND.
-######## Missing driver on net n163. Patching with GND.
-######## Missing driver on net n164. Patching with GND.
-######## Missing driver on net n165. Patching with GND.
-######## Missing driver on net n166. Patching with GND.
-######## Missing driver on net n167. Patching with GND.
-######## Missing driver on net n168. Patching with GND.
 
 
 
@@ -169,7 +128,7 @@ GSR => 1
 IB => 1
 LUT4 => 14
 OB => 9
-OBZ => 19
+OBZ => 3
 OSCH => 1
 ################### End Area Report ##################
 
@@ -214,8 +173,8 @@ clk0 [get_nets clk133]                  |    1.000 MHz|  114.194 MHz|     6
 All constraints were met.
 
 
-Peak Memory Usage: 71.816  MB
+Peak Memory Usage: 71.656  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 1.123  secs
+Elapsed CPU time for LSE flow : 0.780  secs
 --------------------------------------------------------------

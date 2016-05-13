@@ -16,13 +16,14 @@
 Command line:   map -a MachXO2 -p LCMXO2-7000HE -t TQFP144 -s 4 -oc Commercial
      BlinkyMachXO2_impl1.ngd -o BlinkyMachXO2_impl1_map.ncd -pr
      BlinkyMachXO2_impl1.prf -mp BlinkyMachXO2_impl1.mrp -lpf
-     D:/Github/Lattice/Blinky MachXO2/impl1/BlinkyMachXO2_impl1.lpf -lpf
-     D:/Github/Lattice/Blinky MachXO2/BlinkyMachXO2.lpf -c 0 -gui 
+     Z:/GITHUB/Lattice/Blinky MachXO2/impl1/BlinkyMachXO2_impl1.lpf -lpf
+     Z:/GITHUB/Lattice/Blinky MachXO2/BlinkyMachXO2.lpf -c 0 -gui -msgset
+     Z:/GITHUB/Lattice/Blinky MachXO2/promote.xml 
 Target Vendor:  LATTICE
 Target Device:  LCMXO2-7000HETQFP144
 Target Performance:   4
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.7.0.96.1
-Mapped on:  03/04/16  12:31:17
+Mapped on:  05/13/16  10:07:06
 
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
@@ -66,8 +67,8 @@ Mapped on:  03/04/16  12:31:17
    Number of clocks:  1
      Net clk: 15 loads, 15 rising, 0 falling (Driver: OSCInst0 )
    Number of Clock Enables:  1
-     Net clk_enable_2: 1 loads, 1 LSLICEs
 
+     Net clk_enable_2: 1 loads, 1 LSLICEs
    Number of LSRs:  1
      Net clk_enable_2: 13 loads, 13 LSLICEs
    Number of nets driven by tri-state buffers:  0
@@ -129,7 +130,6 @@ Mapped on:  03/04/16  12:31:17
 
 
 
-
 <A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
 
 Block i2 undriven or does not drive anything - clipped.
@@ -173,7 +173,7 @@ Instance Name: OSCInst0
 
    Total CPU Time: 0 secs  
    Total REAL Time: 0 secs  
-   Peak Memory Usage: 56 MB
+   Peak Memory Usage: 54 MB
         
 
 

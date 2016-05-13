@@ -2,6 +2,140 @@
 <BaliMessageLog>
     <Task name="Map">
         <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>Z:/GITHUB/Lattice/Sony Vivaz LCD driver/SonyVivazLCDDriver.lpf(11): Semantic error in &quot;LOCATE COMP &quot;lcd_db[14]&quot; SITE &quot;47&quot; ;&quot;: </Dynamic>
+            <Dynamic>lcd_db[14]</Dynamic>
+            <Navigation>Z:/GITHUB/Lattice/Sony Vivaz LCD driver/SonyVivazLCDDriver.lpf</Navigation>
+            <Navigation>11</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>Z:/GITHUB/Lattice/Sony Vivaz LCD driver/SonyVivazLCDDriver.lpf(12): Semantic error in &quot;LOCATE COMP &quot;lcd_db[12]&quot; SITE &quot;50&quot; ;&quot;: </Dynamic>
+            <Dynamic>lcd_db[12]</Dynamic>
+            <Navigation>Z:/GITHUB/Lattice/Sony Vivaz LCD driver/SonyVivazLCDDriver.lpf</Navigation>
+            <Navigation>12</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>Z:/GITHUB/Lattice/Sony Vivaz LCD driver/SonyVivazLCDDriver.lpf(13): Semantic error in &quot;LOCATE COMP &quot;lcd_db[10]&quot; SITE &quot;48&quot; ;&quot;: </Dynamic>
+            <Dynamic>lcd_db[10]</Dynamic>
+            <Navigation>Z:/GITHUB/Lattice/Sony Vivaz LCD driver/SonyVivazLCDDriver.lpf</Navigation>
+            <Navigation>13</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>Z:/GITHUB/Lattice/Sony Vivaz LCD driver/SonyVivazLCDDriver.lpf(14): Semantic error in &quot;LOCATE COMP &quot;lcd_db[8]&quot; SITE &quot;55&quot; ;&quot;: </Dynamic>
+            <Dynamic>lcd_db[8]</Dynamic>
+            <Navigation>Z:/GITHUB/Lattice/Sony Vivaz LCD driver/SonyVivazLCDDriver.lpf</Navigation>
+            <Navigation>14</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>Z:/GITHUB/Lattice/Sony Vivaz LCD driver/SonyVivazLCDDriver.lpf(15): Semantic error in &quot;LOCATE COMP &quot;lcd_db[6]&quot; SITE &quot;52&quot; ;&quot;: </Dynamic>
+            <Dynamic>lcd_db[6]</Dynamic>
+            <Navigation>Z:/GITHUB/Lattice/Sony Vivaz LCD driver/SonyVivazLCDDriver.lpf</Navigation>
+            <Navigation>15</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>Z:/GITHUB/Lattice/Sony Vivaz LCD driver/SonyVivazLCDDriver.lpf(16): Semantic error in &quot;LOCATE COMP &quot;lcd_db[4]&quot; SITE &quot;56&quot; ;&quot;: </Dynamic>
+            <Dynamic>lcd_db[4]</Dynamic>
+            <Navigation>Z:/GITHUB/Lattice/Sony Vivaz LCD driver/SonyVivazLCDDriver.lpf</Navigation>
+            <Navigation>16</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>Z:/GITHUB/Lattice/Sony Vivaz LCD driver/SonyVivazLCDDriver.lpf(17): Semantic error in &quot;LOCATE COMP &quot;lcd_db[2]&quot; SITE &quot;54&quot; ;&quot;: </Dynamic>
+            <Dynamic>lcd_db[2]</Dynamic>
+            <Navigation>Z:/GITHUB/Lattice/Sony Vivaz LCD driver/SonyVivazLCDDriver.lpf</Navigation>
+            <Navigation>17</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>Z:/GITHUB/Lattice/Sony Vivaz LCD driver/SonyVivazLCDDriver.lpf(18): Semantic error in &quot;LOCATE COMP &quot;lcd_db[0]&quot; SITE &quot;59&quot; ;&quot;: </Dynamic>
+            <Dynamic>lcd_db[0]</Dynamic>
+            <Navigation>Z:/GITHUB/Lattice/Sony Vivaz LCD driver/SonyVivazLCDDriver.lpf</Navigation>
+            <Navigation>18</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>Z:/GITHUB/Lattice/Sony Vivaz LCD driver/SonyVivazLCDDriver.lpf(20): Semantic error in &quot;LOCATE COMP &quot;lcd_db[15]&quot; SITE &quot;69&quot; ;&quot;: </Dynamic>
+            <Dynamic>lcd_db[15]</Dynamic>
+            <Navigation>Z:/GITHUB/Lattice/Sony Vivaz LCD driver/SonyVivazLCDDriver.lpf</Navigation>
+            <Navigation>20</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>Z:/GITHUB/Lattice/Sony Vivaz LCD driver/SonyVivazLCDDriver.lpf(21): Semantic error in &quot;LOCATE COMP &quot;lcd_db[13]&quot; SITE &quot;71&quot; ;&quot;: </Dynamic>
+            <Dynamic>lcd_db[13]</Dynamic>
+            <Navigation>Z:/GITHUB/Lattice/Sony Vivaz LCD driver/SonyVivazLCDDriver.lpf</Navigation>
+            <Navigation>21</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>Z:/GITHUB/Lattice/Sony Vivaz LCD driver/SonyVivazLCDDriver.lpf(22): Semantic error in &quot;LOCATE COMP &quot;lcd_db[11]&quot; SITE &quot;68&quot; ;&quot;: </Dynamic>
+            <Dynamic>lcd_db[11]</Dynamic>
+            <Navigation>Z:/GITHUB/Lattice/Sony Vivaz LCD driver/SonyVivazLCDDriver.lpf</Navigation>
+            <Navigation>22</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>Z:/GITHUB/Lattice/Sony Vivaz LCD driver/SonyVivazLCDDriver.lpf(23): Semantic error in &quot;LOCATE COMP &quot;lcd_db[9]&quot; SITE &quot;70&quot; ;&quot;: </Dynamic>
+            <Dynamic>lcd_db[9]</Dynamic>
+            <Navigation>Z:/GITHUB/Lattice/Sony Vivaz LCD driver/SonyVivazLCDDriver.lpf</Navigation>
+            <Navigation>23</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>Z:/GITHUB/Lattice/Sony Vivaz LCD driver/SonyVivazLCDDriver.lpf(24): Semantic error in &quot;LOCATE COMP &quot;lcd_db[7]&quot; SITE &quot;62&quot; ;&quot;: </Dynamic>
+            <Dynamic>lcd_db[7]</Dynamic>
+            <Navigation>Z:/GITHUB/Lattice/Sony Vivaz LCD driver/SonyVivazLCDDriver.lpf</Navigation>
+            <Navigation>24</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>Z:/GITHUB/Lattice/Sony Vivaz LCD driver/SonyVivazLCDDriver.lpf(25): Semantic error in &quot;LOCATE COMP &quot;lcd_db[5]&quot; SITE &quot;67&quot; ;&quot;: </Dynamic>
+            <Dynamic>lcd_db[5]</Dynamic>
+            <Navigation>Z:/GITHUB/Lattice/Sony Vivaz LCD driver/SonyVivazLCDDriver.lpf</Navigation>
+            <Navigation>25</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>Z:/GITHUB/Lattice/Sony Vivaz LCD driver/SonyVivazLCDDriver.lpf(26): Semantic error in &quot;LOCATE COMP &quot;lcd_db[1]&quot; SITE &quot;65&quot; ;&quot;: </Dynamic>
+            <Dynamic>lcd_db[1]</Dynamic>
+            <Navigation>Z:/GITHUB/Lattice/Sony Vivaz LCD driver/SonyVivazLCDDriver.lpf</Navigation>
+            <Navigation>26</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>Z:/GITHUB/Lattice/Sony Vivaz LCD driver/SonyVivazLCDDriver.lpf(30): Semantic error in &quot;LOCATE COMP &quot;lcd_db[3]&quot; SITE &quot;61&quot; ;&quot;: </Dynamic>
+            <Dynamic>lcd_db[3]</Dynamic>
+            <Navigation>Z:/GITHUB/Lattice/Sony Vivaz LCD driver/SonyVivazLCDDriver.lpf</Navigation>
+            <Navigation>30</Navigation>
+        </Message>
+        <Message>
+            <ID>1104062</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>16 semantic errors</Dynamic>
+        </Message>
+        <Message>
             <ID>1166064</ID>
             <Severity>Warning</Severity>
             <Dynamic>input</Dynamic>
@@ -22,6 +156,11 @@
             <ID>51001046</ID>
             <Severity>Warning</Severity>
             <Dynamic>reset</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001230</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>Z:/GITHUB/Lattice/Sony Vivaz LCD driver/SonyVivazLCDDriver.lpf</Dynamic>
         </Message>
     </Task>
     <Task name="Lattice_Synthesis">
@@ -36,53 +175,28 @@
             <Dynamic>Z:/GITHUB/Lattice/Sony Vivaz LCD driver/impl1</Dynamic>
         </Message>
         <Message>
-            <ID>35921014</ID>
+            <ID>35921012</ID>
             <Severity>Info</Severity>
-            <Dynamic>z:/github/lattice/sony vivaz lcd driver/constants.vhd(5): </Dynamic>
-            <Dynamic>constants</Dynamic>
-            <Navigation>z:/github/lattice/sony vivaz lcd driver/constants.vhd</Navigation>
-            <Navigation>5</Navigation>
-        </Message>
-        <Message>
-            <ID>35921013</ID>
-            <Severity>Info</Severity>
-            <Dynamic>z:/github/lattice/sony vivaz lcd driver/constants.vhd(21): </Dynamic>
-            <Dynamic>constants</Dynamic>
-            <Navigation>z:/github/lattice/sony vivaz lcd driver/constants.vhd</Navigation>
-            <Navigation>21</Navigation>
-        </Message>
-        <Message>
-            <ID>35921240</ID>
-            <Severity>Warning</Severity>
             <Dynamic>z:/github/lattice/sony vivaz lcd driver/main.vhd(6): </Dynamic>
-            <Dynamic>components</Dynamic>
-            <Dynamic>lattice</Dynamic>
+            <Dynamic>main</Dynamic>
             <Navigation>z:/github/lattice/sony vivaz lcd driver/main.vhd</Navigation>
             <Navigation>6</Navigation>
         </Message>
         <Message>
-            <ID>35921012</ID>
-            <Severity>Info</Severity>
-            <Dynamic>z:/github/lattice/sony vivaz lcd driver/main.vhd(8): </Dynamic>
-            <Dynamic>main</Dynamic>
-            <Navigation>z:/github/lattice/sony vivaz lcd driver/main.vhd</Navigation>
-            <Navigation>8</Navigation>
-        </Message>
-        <Message>
             <ID>35921010</ID>
             <Severity>Info</Severity>
-            <Dynamic>z:/github/lattice/sony vivaz lcd driver/main.vhd(29): </Dynamic>
+            <Dynamic>z:/github/lattice/sony vivaz lcd driver/main.vhd(26): </Dynamic>
             <Dynamic>behavioral</Dynamic>
             <Navigation>z:/github/lattice/sony vivaz lcd driver/main.vhd</Navigation>
-            <Navigation>29</Navigation>
+            <Navigation>26</Navigation>
         </Message>
         <Message>
             <ID>35929000</ID>
             <Severity>Info</Severity>
-            <Dynamic>z:/github/lattice/sony vivaz lcd driver/main.vhd(62): </Dynamic>
+            <Dynamic>z:/github/lattice/sony vivaz lcd driver/main.vhd(60): </Dynamic>
             <Dynamic>size</Dynamic>
             <Navigation>z:/github/lattice/sony vivaz lcd driver/main.vhd</Navigation>
-            <Navigation>62</Navigation>
+            <Navigation>60</Navigation>
         </Message>
         <Message>
             <ID>35921259</ID>
@@ -93,29 +207,13 @@
             <Navigation>712</Navigation>
         </Message>
         <Message>
-            <ID>35921014</ID>
-            <Severity>Info</Severity>
-            <Dynamic>z:/github/lattice/sony vivaz lcd driver/functions.vhd(6): </Dynamic>
-            <Dynamic>functions</Dynamic>
-            <Navigation>z:/github/lattice/sony vivaz lcd driver/functions.vhd</Navigation>
-            <Navigation>6</Navigation>
-        </Message>
-        <Message>
-            <ID>35921013</ID>
-            <Severity>Info</Severity>
-            <Dynamic>z:/github/lattice/sony vivaz lcd driver/functions.vhd(10): </Dynamic>
-            <Dynamic>functions</Dynamic>
-            <Navigation>z:/github/lattice/sony vivaz lcd driver/functions.vhd</Navigation>
-            <Navigation>10</Navigation>
-        </Message>
-        <Message>
             <ID>35921205</ID>
             <Severity>Warning</Severity>
-            <Dynamic>z:/github/lattice/sony vivaz lcd driver/main.vhd(27): </Dynamic>
+            <Dynamic>z:/github/lattice/sony vivaz lcd driver/main.vhd(24): </Dynamic>
             <Dynamic>main</Dynamic>
             <Dynamic>behavioral</Dynamic>
             <Navigation>z:/github/lattice/sony vivaz lcd driver/main.vhd</Navigation>
-            <Navigation>27</Navigation>
+            <Navigation>24</Navigation>
         </Message>
         <Message>
             <ID>35001757</ID>
@@ -126,86 +224,6 @@
             <ID>35001757</ID>
             <Severity>Warning</Severity>
             <Dynamic>lcd_rs</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001757</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>lcd_db[15]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001757</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>lcd_db[14]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001757</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>lcd_db[13]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001757</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>lcd_db[12]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001757</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>lcd_db[11]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001757</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>lcd_db[10]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001757</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>lcd_db[9]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001757</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>lcd_db[8]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001757</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>lcd_db[7]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001757</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>lcd_db[6]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001757</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>lcd_db[5]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001757</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>lcd_db[4]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001757</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>lcd_db[3]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001757</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>lcd_db[2]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001757</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>lcd_db[1]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001757</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>lcd_db[0]</Dynamic>
         </Message>
         <Message>
             <ID>35001757</ID>
