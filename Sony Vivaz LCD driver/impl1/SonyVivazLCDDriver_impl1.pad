@@ -6,26 +6,40 @@ Performance Grade:      5
 PACKAGE:          TQFP144
 Package Status:                     Final          Version 1.39
 
-Fri May 13 10:13:03 2016
+Fri May 13 22:17:39 2016
 
 Pinout by Port Name:
-+-----------+----------+--------------+-------+-----------+-----------+--------------------------------------+
-| Port Name | Pin/Bank | Buffer Type  | Site  | PG Enable | BC Enable | Properties                           |
-+-----------+----------+--------------+-------+-----------+-----------+--------------------------------------+
-| debug     | 45/2     | LVCMOS25_OUT | PB12B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| lcd_reset | 60/2     | LVCMOS25_OUT | PB29B |           |           | DRIVE:8mA SLEW:SLOW                  |
-| lcd_rs    | 57/2     | LVCMOS25_OUT | PB26A |           |           | DRIVE:8mA SLEW:SLOW                  |
-| lcd_te    | 49/2     | LVCMOS25_IN  | PB16A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
-| lcd_wr    | 58/2     | LVCMOS25_OUT | PB26B |           |           | DRIVE:8mA SLEW:SLOW                  |
-| leds[0]   | 97/1     | LVCMOS25_OUT | PR7B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| leds[1]   | 98/1     | LVCMOS25_OUT | PR7A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| leds[2]   | 99/1     | LVCMOS25_OUT | PR5B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| leds[3]   | 100/1    | LVCMOS25_OUT | PR5A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| leds[4]   | 104/1    | LVCMOS25_OUT | PR3B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| leds[5]   | 105/1    | LVCMOS25_OUT | PR3A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| leds[6]   | 106/1    | LVCMOS25_OUT | PR2B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| leds[7]   | 107/1    | LVCMOS25_OUT | PR2A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-+-----------+----------+--------------+-------+-----------+-----------+--------------------------------------+
++----------------+----------+--------------+-------+-----------+-----------+--------------------------------+
+| Port Name      | Pin/Bank | Buffer Type  | Site  | PG Enable | BC Enable | Properties                     |
++----------------+----------+--------------+-------+-----------+-----------+--------------------------------+
+| lcd_LCDBus[0]  | 49/2     | LVCMOS25_OUT | PB16A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
+| lcd_LCDBus[10] | 60/2     | LVCMOS25_OUT | PB29B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
+| lcd_LCDBus[11] | 58/2     | LVCMOS25_OUT | PB26B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
+| lcd_LCDBus[12] | 65/2     | LVCMOS25_OUT | PB35A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
+| lcd_LCDBus[13] | 61/2     | LVCMOS25_OUT | PB31A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
+| lcd_LCDBus[14] | 67/2     | LVCMOS25_OUT | PB35B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
+| lcd_LCDBus[15] | 62/2     | LVCMOS25_OUT | PB31B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
+| lcd_LCDBus[1]  | 47/2     | LVCMOS25_OUT | PB13A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
+| lcd_LCDBus[2]  | 50/2     | LVCMOS25_OUT | PB16B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
+| lcd_LCDBus[3]  | 48/2     | LVCMOS25_OUT | PB13B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
+| lcd_LCDBus[4]  | 55/2     | LVCMOS25_OUT | PB23A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
+| lcd_LCDBus[5]  | 52/2     | LVCMOS25_OUT | PB18A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
+| lcd_LCDBus[6]  | 56/2     | LVCMOS25_OUT | PB23B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
+| lcd_LCDBus[7]  | 54/2     | LVCMOS25_OUT | PB18B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
+| lcd_LCDBus[8]  | 59/2     | LVCMOS25_OUT | PB29A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
+| lcd_LCDBus[9]  | 57/2     | LVCMOS25_OUT | PB26A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
+| lcd_reset      | 68/2     | LVCMOS25_OUT | PB37A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
+| lcd_rs         | 70/2     | LVCMOS25_OUT | PB38A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
+| lcd_wr         | 71/2     | LVCMOS25_OUT | PB38B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
+| leds[0]        | 97/1     | LVCMOS25_OUT | PR7B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
+| leds[1]        | 98/1     | LVCMOS25_OUT | PR7A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
+| leds[2]        | 99/1     | LVCMOS25_OUT | PR5B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
+| leds[3]        | 100/1    | LVCMOS25_OUT | PR5A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
+| leds[4]        | 104/1    | LVCMOS25_OUT | PR3B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
+| leds[5]        | 105/1    | LVCMOS25_OUT | PR3A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
+| leds[6]        | 106/1    | LVCMOS25_OUT | PR2B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
+| leds[7]        | 107/1    | LVCMOS25_OUT | PR2A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
++----------------+----------+--------------+-------+-----------+-----------+--------------------------------+
 
 Vccio by Bank:
 +------+-------+
@@ -81,28 +95,28 @@ Pinout by Pin Number:
 | 42/2     |     unused, PULL:DOWN |            |              | PB9A  |                |           |           |
 | 43/2     |     unused, PULL:DOWN |            |              | PB9B  |                |           |           |
 | 44/2     |     unused, PULL:DOWN |            |              | PB12A | MCLK/CCLK      |           |           |
-| 45/2     | debug                 | LOCATED    | LVCMOS25_OUT | PB12B | SO/SPISO       |           |           |
-| 47/2     |     unused, PULL:DOWN |            |              | PB13A |                |           |           |
-| 48/2     |     unused, PULL:DOWN |            |              | PB13B |                |           |           |
-| 49/2     | lcd_te                | LOCATED    | LVCMOS25_IN  | PB16A | PCLKT2_0       |           |           |
-| 50/2     |     unused, PULL:DOWN |            |              | PB16B | PCLKC2_0       |           |           |
-| 52/2     |     unused, PULL:DOWN |            |              | PB18A |                |           |           |
-| 54/2     |     unused, PULL:DOWN |            |              | PB18B |                |           |           |
-| 55/2     |     unused, PULL:DOWN |            |              | PB23A | PCLKT2_1       |           |           |
-| 56/2     |     unused, PULL:DOWN |            |              | PB23B | PCLKC2_1       |           |           |
-| 57/2     | lcd_rs                | LOCATED    | LVCMOS25_OUT | PB26A |                |           |           |
-| 58/2     | lcd_wr                | LOCATED    | LVCMOS25_OUT | PB26B |                |           |           |
-| 59/2     |     unused, PULL:DOWN |            |              | PB29A |                |           |           |
-| 60/2     | lcd_reset             | LOCATED    | LVCMOS25_OUT | PB29B |                |           |           |
-| 61/2     |     unused, PULL:DOWN |            |              | PB31A |                |           |           |
-| 62/2     |     unused, PULL:DOWN |            |              | PB31B |                |           |           |
+| 45/2     |     unused, PULL:DOWN |            |              | PB12B | SO/SPISO       |           |           |
+| 47/2     | lcd_LCDBus[1]         | LOCATED    | LVCMOS25_OUT | PB13A |                |           |           |
+| 48/2     | lcd_LCDBus[3]         | LOCATED    | LVCMOS25_OUT | PB13B |                |           |           |
+| 49/2     | lcd_LCDBus[0]         | LOCATED    | LVCMOS25_OUT | PB16A | PCLKT2_0       |           |           |
+| 50/2     | lcd_LCDBus[2]         | LOCATED    | LVCMOS25_OUT | PB16B | PCLKC2_0       |           |           |
+| 52/2     | lcd_LCDBus[5]         | LOCATED    | LVCMOS25_OUT | PB18A |                |           |           |
+| 54/2     | lcd_LCDBus[7]         | LOCATED    | LVCMOS25_OUT | PB18B |                |           |           |
+| 55/2     | lcd_LCDBus[4]         | LOCATED    | LVCMOS25_OUT | PB23A | PCLKT2_1       |           |           |
+| 56/2     | lcd_LCDBus[6]         | LOCATED    | LVCMOS25_OUT | PB23B | PCLKC2_1       |           |           |
+| 57/2     | lcd_LCDBus[9]         | LOCATED    | LVCMOS25_OUT | PB26A |                |           |           |
+| 58/2     | lcd_LCDBus[11]        | LOCATED    | LVCMOS25_OUT | PB26B |                |           |           |
+| 59/2     | lcd_LCDBus[8]         | LOCATED    | LVCMOS25_OUT | PB29A |                |           |           |
+| 60/2     | lcd_LCDBus[10]        | LOCATED    | LVCMOS25_OUT | PB29B |                |           |           |
+| 61/2     | lcd_LCDBus[13]        | LOCATED    | LVCMOS25_OUT | PB31A |                |           |           |
+| 62/2     | lcd_LCDBus[15]        | LOCATED    | LVCMOS25_OUT | PB31B |                |           |           |
 | 63/2     |     unused, PULL:DOWN |            |              | PB31D |                |           |           |
-| 65/2     |     unused, PULL:DOWN |            |              | PB35A |                |           |           |
-| 67/2     |     unused, PULL:DOWN |            |              | PB35B |                |           |           |
-| 68/2     |     unused, PULL:DOWN |            |              | PB37A |                |           |           |
+| 65/2     | lcd_LCDBus[12]        | LOCATED    | LVCMOS25_OUT | PB35A |                |           |           |
+| 67/2     | lcd_LCDBus[14]        | LOCATED    | LVCMOS25_OUT | PB35B |                |           |           |
+| 68/2     | lcd_reset             | LOCATED    | LVCMOS25_OUT | PB37A |                |           |           |
 | 69/2     |     unused, PULL:DOWN |            |              | PB37B |                |           |           |
-| 70/2     |     unused, PULL:DOWN |            |              | PB38A | SN             |           |           |
-| 71/2     |     unused, PULL:DOWN |            |              | PB38B | SI/SISPI       |           |           |
+| 70/2     | lcd_rs                | LOCATED    | LVCMOS25_OUT | PB38A | SN             |           |           |
+| 71/2     | lcd_wr                | LOCATED    | LVCMOS25_OUT | PB38B | SI/SISPI       |           |           |
 | 73/1     |     unused, PULL:DOWN |            |              | PR24B | DQ1            |           |           |
 | 74/1     |     unused, PULL:DOWN |            |              | PR24A | DQ1            |           |           |
 | 75/1     |     unused, PULL:DOWN |            |              | PR23B | DQ1            |           |           |
@@ -398,11 +412,25 @@ Dedicated sysCONFIG Pins:
 
 Locate Preferences for each Pin: 
 
-LOCATE  COMP  "debug"  SITE  "45";
-LOCATE  COMP  "lcd_reset"  SITE  "60";
-LOCATE  COMP  "lcd_rs"  SITE  "57";
-LOCATE  COMP  "lcd_te"  SITE  "49";
-LOCATE  COMP  "lcd_wr"  SITE  "58";
+LOCATE  COMP  "lcd_LCDBus[0]"  SITE  "49";
+LOCATE  COMP  "lcd_LCDBus[10]"  SITE  "60";
+LOCATE  COMP  "lcd_LCDBus[11]"  SITE  "58";
+LOCATE  COMP  "lcd_LCDBus[12]"  SITE  "65";
+LOCATE  COMP  "lcd_LCDBus[13]"  SITE  "61";
+LOCATE  COMP  "lcd_LCDBus[14]"  SITE  "67";
+LOCATE  COMP  "lcd_LCDBus[15]"  SITE  "62";
+LOCATE  COMP  "lcd_LCDBus[1]"  SITE  "47";
+LOCATE  COMP  "lcd_LCDBus[2]"  SITE  "50";
+LOCATE  COMP  "lcd_LCDBus[3]"  SITE  "48";
+LOCATE  COMP  "lcd_LCDBus[4]"  SITE  "55";
+LOCATE  COMP  "lcd_LCDBus[5]"  SITE  "52";
+LOCATE  COMP  "lcd_LCDBus[6]"  SITE  "56";
+LOCATE  COMP  "lcd_LCDBus[7]"  SITE  "54";
+LOCATE  COMP  "lcd_LCDBus[8]"  SITE  "59";
+LOCATE  COMP  "lcd_LCDBus[9]"  SITE  "57";
+LOCATE  COMP  "lcd_reset"  SITE  "68";
+LOCATE  COMP  "lcd_rs"  SITE  "70";
+LOCATE  COMP  "lcd_wr"  SITE  "71";
 LOCATE  COMP  "leds[0]"  SITE  "97";
 LOCATE  COMP  "leds[1]"  SITE  "98";
 LOCATE  COMP  "leds[2]"  SITE  "99";
@@ -416,11 +444,11 @@ LOCATE  COMP  "leds[7]"  SITE  "107";
 
 
 
-PAR: Place And Route Diamond (64-bit) 3.7.0.96.1.
+PAR: Place And Route Diamond (64-bit) 3.7.1.502.
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
-Fri May 13 10:13:03 2016
+Fri May 13 22:17:39 2016
 

@@ -1,11 +1,11 @@
-synthesis:  version Diamond (64-bit) 3.7.0.96.1
+synthesis:  version Diamond (64-bit) 3.7.1.502
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
-Fri May 13 10:12:59 2016
+Fri May 13 22:13:10 2016
 
 
 Command Line:  synthesis -f SonyVivazLCDDriver_impl1_lattice.synproj -gui -msgset Z:/GITHUB/Lattice/Sony Vivaz LCD driver/promote.xml 
@@ -65,6 +65,8 @@ The -syn option is FALSE.
 -p Z:/GITHUB/Lattice/Sony Vivaz LCD driver (searchpath added)
 VHDL library = work
 VHDL design file = Z:/GITHUB/Lattice/Sony Vivaz LCD driver/main.vhd
+VHDL design file = Z:/GITHUB/Lattice/Sony Vivaz LCD driver/constants.vhd
+VHDL design file = Z:/GITHUB/Lattice/Sony Vivaz LCD driver/lcd_sender.vhd
 NGD file = SonyVivazLCDDriver_impl1.ngd
 -sdc option: SDC file input not used.
 -lpf option: Output file option is ON.
@@ -76,15 +78,25 @@ Analyzing Verilog file C:/lscc/diamond/3.7_x64/ispfpga/userware/NT/SYNTHESIS_HEA
 Compile design.
 Compile Design Begin
 INFO - synthesis: The default VHDL library search path is now "Z:/GITHUB/Lattice/Sony Vivaz LCD driver/impl1". VHDL-1504
+Analyzing VHDL file z:/github/lattice/sony vivaz lcd driver/constants.vhd. VHDL-1481
+INFO - synthesis: z:/github/lattice/sony vivaz lcd driver/constants.vhd(6): analyzing package constants. VHDL-1014
+INFO - synthesis: z:/github/lattice/sony vivaz lcd driver/constants.vhd(14): analyzing package body constants. VHDL-1013
 Analyzing VHDL file z:/github/lattice/sony vivaz lcd driver/main.vhd. VHDL-1481
-INFO - synthesis: z:/github/lattice/sony vivaz lcd driver/main.vhd(6): analyzing entity main. VHDL-1012
-INFO - synthesis: z:/github/lattice/sony vivaz lcd driver/main.vhd(26): analyzing architecture behavioral. VHDL-1010
-INFO - synthesis: z:/github/lattice/sony vivaz lcd driver/main.vhd(60): input pin size has no actual or default value. VHDL-9000
+INFO - synthesis: z:/github/lattice/sony vivaz lcd driver/main.vhd(8): analyzing entity main. VHDL-1012
+INFO - synthesis: z:/github/lattice/sony vivaz lcd driver/main.vhd(19): analyzing architecture behavioral. VHDL-1010
+INFO - synthesis: z:/github/lattice/sony vivaz lcd driver/main.vhd(90): input pin size has no actual or default value. VHDL-9000
 INFO - synthesis: C:/lscc/diamond/3.7_x64/ispfpga/vhdl_packages/numeric_std.vhd(712): size is declared here. VHDL-1259
+Analyzing VHDL file z:/github/lattice/sony vivaz lcd driver/lcd_sender.vhd. VHDL-1481
+INFO - synthesis: z:/github/lattice/sony vivaz lcd driver/lcd_sender.vhd(6): analyzing entity lcd_sender. VHDL-1012
+INFO - synthesis: z:/github/lattice/sony vivaz lcd driver/lcd_sender.vhd(26): analyzing architecture behavioral. VHDL-1010
 unit main is not yet analyzed. VHDL-1485
-z:/github/lattice/sony vivaz lcd driver/main.vhd(6): executing main(behavioral)
+z:/github/lattice/sony vivaz lcd driver/main.vhd(8): executing main(behavioral)
 
-WARNING - synthesis: z:/github/lattice/sony vivaz lcd driver/main.vhd(24): replacing existing netlist main(behavioral). VHDL-1205
+WARNING - synthesis: z:/github/lattice/sony vivaz lcd driver/main.vhd(50): using initial value "UUUUUUUUUUUUUUUU" for lcd_sender_payload_i since it is never assigned. VHDL-1303
+WARNING - synthesis: z:/github/lattice/sony vivaz lcd driver/main.vhd(51): using initial value '0' for lcd_sender_go_i since it is never assigned. VHDL-1303
+WARNING - synthesis: z:/github/lattice/sony vivaz lcd driver/main.vhd(52): using initial value '0' for lcd_sender_data_i since it is never assigned. VHDL-1303
+WARNING - synthesis: z:/github/lattice/sony vivaz lcd driver/main.vhd(53): using initial value '0' for lcd_sender_resetin_i since it is never assigned. VHDL-1303
+WARNING - synthesis: z:/github/lattice/sony vivaz lcd driver/main.vhd(17): replacing existing netlist main(behavioral). VHDL-1205
 Top module name (VHDL): main
 Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
@@ -93,15 +105,10 @@ Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/or5g00/data/orc5glib.ngl'..
 Loading device for application map from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.7_x64/ispfpga.
 Package Status:                     Final          Version 1.39.
 Top-level module name = main.
-WARNING - synthesis: lcd_wr is not assigned a value (floating) -- simulation mismatch possible.
-WARNING - synthesis: lcd_rs is not assigned a value (floating) -- simulation mismatch possible.
-WARNING - synthesis: lcd_reset is not assigned a value (floating) -- simulation mismatch possible.
-######## Missing driver on net n151. Patching with GND.
-######## Missing driver on net n150. Patching with GND.
-######## Missing driver on net n152. Patching with GND.
 
 
 
+WARNING - synthesis: z:/github/lattice/sony vivaz lcd driver/lcd_sender.vhd(90): Register \inst_lcd_sender/LCDBus_i_i16 is stuck at Zero. VDB-5013
 GSR will not be inferred because no asynchronous signal was found in the netlist.
 Applying 1.000000 MHz constraint to all clocks
 
@@ -111,24 +118,19 @@ Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/xo2c00a/data/xo2alib.ngl'..
 Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/or5g00/data/orc5glib.ngl'...
-WARNING - synthesis: logical net 'clk' has no load.
-WARNING - synthesis: input pad net 'clk' has no legal load.
-WARNING - synthesis: logical net 'reset' has no load.
-WARNING - synthesis: input pad net 'reset' has no legal load.
-WARNING - synthesis: DRC complete with 4 warnings.
 All blocks are expanded and NGD expansion is successful.
 Writing NGD file SonyVivazLCDDriver_impl1.ngd.
 
 ################### Begin Area Report (main)######################
-Number of register bits => 31 of 7209 (0 % )
+Number of register bits => 35 of 7209 (0 % )
 CCU2D => 17
-FD1P3AX => 8
+FD1P3AX => 9
+FD1S3AX => 2
+FD1S3AY => 1
 FD1S3IX => 23
 GSR => 1
-IB => 1
-LUT4 => 14
-OB => 9
-OBZ => 3
+LUT4 => 18
+OB => 27
 OSCH => 1
 ################### End Area Report ##################
 
@@ -139,23 +141,24 @@ TSALL => 1
 ################### Begin Clock Report ######################
 Clock Nets
 Number of Clocks: 1
-  Net : clk133, loads : 31
+  Net : clk133, loads : 35
 Clock Enable Nets
-Number of Clock Enables: 1
-Top 1 highest fanout Clock Enables:
-  Net : clk133_enable_8, loads : 31
+Number of Clock Enables: 2
+Top 2 highest fanout Clock Enables:
+  Net : clk133_enable_9, loads : 31
+  Net : inst_lcd_sender/clk133_enable_1, loads : 1
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : clk133_enable_8, loads : 31
+  Net : clk133_enable_9, loads : 31
+  Net : inst_lcd_sender/wr_N_89, loads : 5
+  Net : inst_lcd_sender/state_i_0, loads : 4
+  Net : inst_lcd_sender/state_i_1, loads : 4
   Net : count_22, loads : 2
   Net : count_21, loads : 2
   Net : count_20, loads : 2
   Net : count_19, loads : 2
   Net : count_18, loads : 2
   Net : count_17, loads : 2
-  Net : count_16, loads : 2
-  Net : count_15, loads : 2
-  Net : count_14, loads : 2
 ################### End Clock Report ##################
 
 Timing Report Summary
@@ -173,8 +176,8 @@ clk0 [get_nets clk133]                  |    1.000 MHz|  114.194 MHz|     6
 All constraints were met.
 
 
-Peak Memory Usage: 71.656  MB
+Peak Memory Usage: 73.113  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 0.780  secs
+Elapsed CPU time for LSE flow : 1.279  secs
 --------------------------------------------------------------
