@@ -53,8 +53,22 @@
     </pins>
 
     <!--
-        Instances in netlist: 23
+        Instances in netlist: 36
     -->
+
+    <instance  name = "lcd_sender_go_i_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "lcd_sender_go_i"  />
+        <nitem  name = "lcd_sender_busy_i_N_99"  />
+        <nitem  name = "lcd_sender_go_i_N_97"  />
+        </nets>
+    </instance>
 
     <instance  name = "inst_clk"  library = "work"  arch = "RTL"  type = "comb">
         <pins>
@@ -146,7 +160,7 @@
         <nitem  name = "count[1]"  />
         <nitem  name = "count[0]"  />
         <nitem  name = "pwr"  />
-        <nitem  name = "count_22__N_55"  />
+        <nitem  name = "count_22__N_71"  />
         </nets>
     </instance>
 
@@ -250,33 +264,176 @@
         <nitem  name = "count[1]"  />
         <nitem  name = "count[0]"  />
         <nitem  name = "pwr"  />
-        <nitem  name = "count_22__N_32[22]"  />
-        <nitem  name = "count_22__N_32[21]"  />
-        <nitem  name = "count_22__N_32[20]"  />
-        <nitem  name = "count_22__N_32[19]"  />
-        <nitem  name = "count_22__N_32[18]"  />
-        <nitem  name = "count_22__N_32[17]"  />
-        <nitem  name = "count_22__N_32[16]"  />
-        <nitem  name = "count_22__N_32[15]"  />
-        <nitem  name = "count_22__N_32[14]"  />
-        <nitem  name = "count_22__N_32[13]"  />
-        <nitem  name = "count_22__N_32[12]"  />
-        <nitem  name = "count_22__N_32[11]"  />
-        <nitem  name = "count_22__N_32[10]"  />
-        <nitem  name = "count_22__N_32[9]"  />
-        <nitem  name = "count_22__N_32[8]"  />
-        <nitem  name = "count_22__N_32[7]"  />
-        <nitem  name = "count_22__N_32[6]"  />
-        <nitem  name = "count_22__N_32[5]"  />
-        <nitem  name = "count_22__N_32[4]"  />
-        <nitem  name = "count_22__N_32[3]"  />
-        <nitem  name = "count_22__N_32[2]"  />
-        <nitem  name = "count_22__N_32[1]"  />
-        <nitem  name = "count_22__N_32[0]"  />
+        <nitem  name = "count_22__N_48[22]"  />
+        <nitem  name = "count_22__N_48[21]"  />
+        <nitem  name = "count_22__N_48[20]"  />
+        <nitem  name = "count_22__N_48[19]"  />
+        <nitem  name = "count_22__N_48[18]"  />
+        <nitem  name = "count_22__N_48[17]"  />
+        <nitem  name = "count_22__N_48[16]"  />
+        <nitem  name = "count_22__N_48[15]"  />
+        <nitem  name = "count_22__N_48[14]"  />
+        <nitem  name = "count_22__N_48[13]"  />
+        <nitem  name = "count_22__N_48[12]"  />
+        <nitem  name = "count_22__N_48[11]"  />
+        <nitem  name = "count_22__N_48[10]"  />
+        <nitem  name = "count_22__N_48[9]"  />
+        <nitem  name = "count_22__N_48[8]"  />
+        <nitem  name = "count_22__N_48[7]"  />
+        <nitem  name = "count_22__N_48[6]"  />
+        <nitem  name = "count_22__N_48[5]"  />
+        <nitem  name = "count_22__N_48[4]"  />
+        <nitem  name = "count_22__N_48[3]"  />
+        <nitem  name = "count_22__N_48[2]"  />
+        <nitem  name = "count_22__N_48[1]"  />
+        <nitem  name = "count_22__N_48[0]"  />
         </nets>
     </instance>
 
-    <instance  name = "add_5"  library = "work"  arch = "RTL"  type = "comb">
+    <instance  name = "lcd_sender_busy_i_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "i"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "lcd_sender_busy_i"  />
+        <nitem  name = "lcd_sender_busy_i_N_99"  />
+        </nets>
+    </instance>
+
+    <instance  name = "mux_7"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "d0[15]"  direction = "in"  />
+        <pitem  name = "d0[14]"  direction = "in"  />
+        <pitem  name = "d0[13]"  direction = "in"  />
+        <pitem  name = "d0[12]"  direction = "in"  />
+        <pitem  name = "d0[11]"  direction = "in"  />
+        <pitem  name = "d0[10]"  direction = "in"  />
+        <pitem  name = "d0[9]"  direction = "in"  />
+        <pitem  name = "d0[8]"  direction = "in"  />
+        <pitem  name = "d0[7]"  direction = "in"  />
+        <pitem  name = "d0[6]"  direction = "in"  />
+        <pitem  name = "d0[5]"  direction = "in"  />
+        <pitem  name = "d0[4]"  direction = "in"  />
+        <pitem  name = "d0[3]"  direction = "in"  />
+        <pitem  name = "d0[2]"  direction = "in"  />
+        <pitem  name = "d0[1]"  direction = "in"  />
+        <pitem  name = "d0[0]"  direction = "in"  />
+        <pitem  name = "d1[15]"  direction = "in"  />
+        <pitem  name = "d1[14]"  direction = "in"  />
+        <pitem  name = "d1[13]"  direction = "in"  />
+        <pitem  name = "d1[12]"  direction = "in"  />
+        <pitem  name = "d1[11]"  direction = "in"  />
+        <pitem  name = "d1[10]"  direction = "in"  />
+        <pitem  name = "d1[9]"  direction = "in"  />
+        <pitem  name = "d1[8]"  direction = "in"  />
+        <pitem  name = "d1[7]"  direction = "in"  />
+        <pitem  name = "d1[6]"  direction = "in"  />
+        <pitem  name = "d1[5]"  direction = "in"  />
+        <pitem  name = "d1[4]"  direction = "in"  />
+        <pitem  name = "d1[3]"  direction = "in"  />
+        <pitem  name = "d1[2]"  direction = "in"  />
+        <pitem  name = "d1[1]"  direction = "in"  />
+        <pitem  name = "d1[0]"  direction = "in"  />
+        <pitem  name = "cond"  direction = "in"  />
+        <pitem  name = "o[15]"  direction = "out"  />
+        <pitem  name = "o[14]"  direction = "out"  />
+        <pitem  name = "o[13]"  direction = "out"  />
+        <pitem  name = "o[12]"  direction = "out"  />
+        <pitem  name = "o[11]"  direction = "out"  />
+        <pitem  name = "o[10]"  direction = "out"  />
+        <pitem  name = "o[9]"  direction = "out"  />
+        <pitem  name = "o[8]"  direction = "out"  />
+        <pitem  name = "o[7]"  direction = "out"  />
+        <pitem  name = "o[6]"  direction = "out"  />
+        <pitem  name = "o[5]"  direction = "out"  />
+        <pitem  name = "o[4]"  direction = "out"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "lcd_sender_payload_i[15]"  />
+        <nitem  name = "lcd_sender_payload_i[14]"  />
+        <nitem  name = "lcd_sender_payload_i[13]"  />
+        <nitem  name = "lcd_sender_payload_i[12]"  />
+        <nitem  name = "lcd_sender_payload_i[11]"  />
+        <nitem  name = "lcd_sender_payload_i[10]"  />
+        <nitem  name = "lcd_sender_payload_i[9]"  />
+        <nitem  name = "lcd_sender_payload_i[8]"  />
+        <nitem  name = "lcd_sender_payload_i[7]"  />
+        <nitem  name = "lcd_sender_payload_i[6]"  />
+        <nitem  name = "lcd_sender_payload_i[5]"  />
+        <nitem  name = "lcd_sender_payload_i[4]"  />
+        <nitem  name = "lcd_sender_payload_i[3]"  />
+        <nitem  name = "lcd_sender_payload_i[2]"  />
+        <nitem  name = "lcd_sender_payload_i[1]"  />
+        <nitem  name = "lcd_sender_payload_i[0]"  />
+        <nitem  name = "gnd"  />
+        <nitem  name = "counter[7]"  />
+        <nitem  name = "counter[6]"  />
+        <nitem  name = "counter[5]"  />
+        <nitem  name = "counter[4]"  />
+        <nitem  name = "counter[3]"  />
+        <nitem  name = "counter[2]"  />
+        <nitem  name = "counter[1]"  />
+        <nitem  name = "counter[0]"  />
+        <nitem  name = "lcd_sender_busy_i_N_99"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_72[15]"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_72[14]"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_72[13]"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_72[12]"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_72[11]"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_72[10]"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_72[9]"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_72[8]"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_72[7]"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_72[6]"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_72[5]"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_72[4]"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_72[3]"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_72[2]"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_72[1]"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_72[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "lcd_sender_data_i_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "c"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "lcd_sender_data_i"  />
+        <nitem  name = "pwr"  />
+        <nitem  name = "lcd_sender_busy_i_N_99"  />
+        <nitem  name = "lcd_sender_data_i_N_101"  />
+        </nets>
+    </instance>
+
+    <instance  name = "lcd_sender_resetin_i_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "c"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "lcd_sender_resetin_i"  />
+        <nitem  name = "gnd"  />
+        <nitem  name = "lcd_sender_busy_i_N_99"  />
+        <nitem  name = "lcd_sender_resetin_i_N_103"  />
+        </nets>
+    </instance>
+
+    <instance  name = "add_11"  library = "work"  arch = "RTL"  type = "comb">
         <pins>
         <pitem  name = "cin"  direction = "in"  />
         <pitem  name = "a[7]"  direction = "in"  />
@@ -316,18 +473,18 @@
         <nitem  name = "counter[1]"  />
         <nitem  name = "counter[0]"  />
         <nitem  name = "pwr"  />
-        <nitem  name = "counter_7__N_56[7]"  />
-        <nitem  name = "counter_7__N_56[6]"  />
-        <nitem  name = "counter_7__N_56[5]"  />
-        <nitem  name = "counter_7__N_56[4]"  />
-        <nitem  name = "counter_7__N_56[3]"  />
-        <nitem  name = "counter_7__N_56[2]"  />
-        <nitem  name = "counter_7__N_56[1]"  />
-        <nitem  name = "counter_7__N_56[0]"  />
+        <nitem  name = "counter_7__N_88[7]"  />
+        <nitem  name = "counter_7__N_88[6]"  />
+        <nitem  name = "counter_7__N_88[5]"  />
+        <nitem  name = "counter_7__N_88[4]"  />
+        <nitem  name = "counter_7__N_88[3]"  />
+        <nitem  name = "counter_7__N_88[2]"  />
+        <nitem  name = "counter_7__N_88[1]"  />
+        <nitem  name = "counter_7__N_88[0]"  />
         </nets>
     </instance>
 
-    <instance  name = "count_22__I_0_14"  library = "work"  arch = "RTL"  type = "comb">
+    <instance  name = "count_22__I_0_33"  library = "work"  arch = "RTL"  type = "comb">
         <pins>
         <pitem  name = "d0[22]"  direction = "in"  />
         <pitem  name = "d0[21]"  direction = "in"  />
@@ -403,53 +560,207 @@
 
         <nets>
         <nitem  name = "gnd"  />
-        <nitem  name = "count_22__N_32[22]"  />
-        <nitem  name = "count_22__N_32[21]"  />
-        <nitem  name = "count_22__N_32[20]"  />
-        <nitem  name = "count_22__N_32[19]"  />
-        <nitem  name = "count_22__N_32[18]"  />
-        <nitem  name = "count_22__N_32[17]"  />
-        <nitem  name = "count_22__N_32[16]"  />
-        <nitem  name = "count_22__N_32[15]"  />
-        <nitem  name = "count_22__N_32[14]"  />
-        <nitem  name = "count_22__N_32[13]"  />
-        <nitem  name = "count_22__N_32[12]"  />
-        <nitem  name = "count_22__N_32[11]"  />
-        <nitem  name = "count_22__N_32[10]"  />
-        <nitem  name = "count_22__N_32[9]"  />
-        <nitem  name = "count_22__N_32[8]"  />
-        <nitem  name = "count_22__N_32[7]"  />
-        <nitem  name = "count_22__N_32[6]"  />
-        <nitem  name = "count_22__N_32[5]"  />
-        <nitem  name = "count_22__N_32[4]"  />
-        <nitem  name = "count_22__N_32[3]"  />
-        <nitem  name = "count_22__N_32[2]"  />
-        <nitem  name = "count_22__N_32[1]"  />
-        <nitem  name = "count_22__N_32[0]"  />
-        <nitem  name = "count_22__N_55"  />
-        <nitem  name = "count_22__N_1[22]"  />
-        <nitem  name = "count_22__N_1[21]"  />
-        <nitem  name = "count_22__N_1[20]"  />
-        <nitem  name = "count_22__N_1[19]"  />
-        <nitem  name = "count_22__N_1[18]"  />
-        <nitem  name = "count_22__N_1[17]"  />
-        <nitem  name = "count_22__N_1[16]"  />
-        <nitem  name = "count_22__N_1[15]"  />
-        <nitem  name = "count_22__N_1[14]"  />
-        <nitem  name = "count_22__N_1[13]"  />
-        <nitem  name = "count_22__N_1[12]"  />
-        <nitem  name = "count_22__N_1[11]"  />
-        <nitem  name = "count_22__N_1[10]"  />
-        <nitem  name = "count_22__N_1[9]"  />
-        <nitem  name = "count_22__N_1[8]"  />
-        <nitem  name = "count_22__N_1[7]"  />
-        <nitem  name = "count_22__N_1[6]"  />
-        <nitem  name = "count_22__N_1[5]"  />
-        <nitem  name = "count_22__N_1[4]"  />
-        <nitem  name = "count_22__N_1[3]"  />
-        <nitem  name = "count_22__N_1[2]"  />
-        <nitem  name = "count_22__N_1[1]"  />
-        <nitem  name = "count_22__N_1[0]"  />
+        <nitem  name = "count_22__N_48[22]"  />
+        <nitem  name = "count_22__N_48[21]"  />
+        <nitem  name = "count_22__N_48[20]"  />
+        <nitem  name = "count_22__N_48[19]"  />
+        <nitem  name = "count_22__N_48[18]"  />
+        <nitem  name = "count_22__N_48[17]"  />
+        <nitem  name = "count_22__N_48[16]"  />
+        <nitem  name = "count_22__N_48[15]"  />
+        <nitem  name = "count_22__N_48[14]"  />
+        <nitem  name = "count_22__N_48[13]"  />
+        <nitem  name = "count_22__N_48[12]"  />
+        <nitem  name = "count_22__N_48[11]"  />
+        <nitem  name = "count_22__N_48[10]"  />
+        <nitem  name = "count_22__N_48[9]"  />
+        <nitem  name = "count_22__N_48[8]"  />
+        <nitem  name = "count_22__N_48[7]"  />
+        <nitem  name = "count_22__N_48[6]"  />
+        <nitem  name = "count_22__N_48[5]"  />
+        <nitem  name = "count_22__N_48[4]"  />
+        <nitem  name = "count_22__N_48[3]"  />
+        <nitem  name = "count_22__N_48[2]"  />
+        <nitem  name = "count_22__N_48[1]"  />
+        <nitem  name = "count_22__N_48[0]"  />
+        <nitem  name = "count_22__N_71"  />
+        <nitem  name = "count_22__N_17[22]"  />
+        <nitem  name = "count_22__N_17[21]"  />
+        <nitem  name = "count_22__N_17[20]"  />
+        <nitem  name = "count_22__N_17[19]"  />
+        <nitem  name = "count_22__N_17[18]"  />
+        <nitem  name = "count_22__N_17[17]"  />
+        <nitem  name = "count_22__N_17[16]"  />
+        <nitem  name = "count_22__N_17[15]"  />
+        <nitem  name = "count_22__N_17[14]"  />
+        <nitem  name = "count_22__N_17[13]"  />
+        <nitem  name = "count_22__N_17[12]"  />
+        <nitem  name = "count_22__N_17[11]"  />
+        <nitem  name = "count_22__N_17[10]"  />
+        <nitem  name = "count_22__N_17[9]"  />
+        <nitem  name = "count_22__N_17[8]"  />
+        <nitem  name = "count_22__N_17[7]"  />
+        <nitem  name = "count_22__N_17[6]"  />
+        <nitem  name = "count_22__N_17[5]"  />
+        <nitem  name = "count_22__N_17[4]"  />
+        <nitem  name = "count_22__N_17[3]"  />
+        <nitem  name = "count_22__N_17[2]"  />
+        <nitem  name = "count_22__N_17[1]"  />
+        <nitem  name = "count_22__N_17[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "lcd_sender_payload_i_15__I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "d0[15]"  direction = "in"  />
+        <pitem  name = "d0[14]"  direction = "in"  />
+        <pitem  name = "d0[13]"  direction = "in"  />
+        <pitem  name = "d0[12]"  direction = "in"  />
+        <pitem  name = "d0[11]"  direction = "in"  />
+        <pitem  name = "d0[10]"  direction = "in"  />
+        <pitem  name = "d0[9]"  direction = "in"  />
+        <pitem  name = "d0[8]"  direction = "in"  />
+        <pitem  name = "d0[7]"  direction = "in"  />
+        <pitem  name = "d0[6]"  direction = "in"  />
+        <pitem  name = "d0[5]"  direction = "in"  />
+        <pitem  name = "d0[4]"  direction = "in"  />
+        <pitem  name = "d0[3]"  direction = "in"  />
+        <pitem  name = "d0[2]"  direction = "in"  />
+        <pitem  name = "d0[1]"  direction = "in"  />
+        <pitem  name = "d0[0]"  direction = "in"  />
+        <pitem  name = "d1[15]"  direction = "in"  />
+        <pitem  name = "d1[14]"  direction = "in"  />
+        <pitem  name = "d1[13]"  direction = "in"  />
+        <pitem  name = "d1[12]"  direction = "in"  />
+        <pitem  name = "d1[11]"  direction = "in"  />
+        <pitem  name = "d1[10]"  direction = "in"  />
+        <pitem  name = "d1[9]"  direction = "in"  />
+        <pitem  name = "d1[8]"  direction = "in"  />
+        <pitem  name = "d1[7]"  direction = "in"  />
+        <pitem  name = "d1[6]"  direction = "in"  />
+        <pitem  name = "d1[5]"  direction = "in"  />
+        <pitem  name = "d1[4]"  direction = "in"  />
+        <pitem  name = "d1[3]"  direction = "in"  />
+        <pitem  name = "d1[2]"  direction = "in"  />
+        <pitem  name = "d1[1]"  direction = "in"  />
+        <pitem  name = "d1[0]"  direction = "in"  />
+        <pitem  name = "cond"  direction = "in"  />
+        <pitem  name = "o[15]"  direction = "out"  />
+        <pitem  name = "o[14]"  direction = "out"  />
+        <pitem  name = "o[13]"  direction = "out"  />
+        <pitem  name = "o[12]"  direction = "out"  />
+        <pitem  name = "o[11]"  direction = "out"  />
+        <pitem  name = "o[10]"  direction = "out"  />
+        <pitem  name = "o[9]"  direction = "out"  />
+        <pitem  name = "o[8]"  direction = "out"  />
+        <pitem  name = "o[7]"  direction = "out"  />
+        <pitem  name = "o[6]"  direction = "out"  />
+        <pitem  name = "o[5]"  direction = "out"  />
+        <pitem  name = "o[4]"  direction = "out"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "lcd_sender_payload_i[15]"  />
+        <nitem  name = "lcd_sender_payload_i[14]"  />
+        <nitem  name = "lcd_sender_payload_i[13]"  />
+        <nitem  name = "lcd_sender_payload_i[12]"  />
+        <nitem  name = "lcd_sender_payload_i[11]"  />
+        <nitem  name = "lcd_sender_payload_i[10]"  />
+        <nitem  name = "lcd_sender_payload_i[9]"  />
+        <nitem  name = "lcd_sender_payload_i[8]"  />
+        <nitem  name = "lcd_sender_payload_i[7]"  />
+        <nitem  name = "lcd_sender_payload_i[6]"  />
+        <nitem  name = "lcd_sender_payload_i[5]"  />
+        <nitem  name = "lcd_sender_payload_i[4]"  />
+        <nitem  name = "lcd_sender_payload_i[3]"  />
+        <nitem  name = "lcd_sender_payload_i[2]"  />
+        <nitem  name = "lcd_sender_payload_i[1]"  />
+        <nitem  name = "lcd_sender_payload_i[0]"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_72[15]"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_72[14]"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_72[13]"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_72[12]"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_72[11]"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_72[10]"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_72[9]"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_72[8]"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_72[7]"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_72[6]"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_72[5]"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_72[4]"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_72[3]"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_72[2]"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_72[1]"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_72[0]"  />
+        <nitem  name = "count_22__N_71"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_1[15]"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_1[14]"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_1[13]"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_1[12]"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_1[11]"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_1[10]"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_1[9]"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_1[8]"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_1[7]"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_1[6]"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_1[5]"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_1[4]"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_1[3]"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_1[2]"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_1[1]"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_1[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "lcd_sender_go_i_I_0_34"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "c"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "lcd_sender_go_i"  />
+        <nitem  name = "lcd_sender_go_i_N_97"  />
+        <nitem  name = "count_22__N_71"  />
+        <nitem  name = "lcd_sender_go_i_N_96"  />
+        </nets>
+    </instance>
+
+    <instance  name = "lcd_sender_data_i_I_0_35"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "c"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "lcd_sender_data_i"  />
+        <nitem  name = "lcd_sender_data_i_N_101"  />
+        <nitem  name = "count_22__N_71"  />
+        <nitem  name = "lcd_sender_data_i_N_100"  />
+        </nets>
+    </instance>
+
+    <instance  name = "lcd_sender_resetin_i_I_0_36"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "c"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "lcd_sender_resetin_i"  />
+        <nitem  name = "lcd_sender_resetin_i_N_103"  />
+        <nitem  name = "count_22__N_71"  />
+        <nitem  name = "lcd_sender_resetin_i_N_102"  />
         </nets>
     </instance>
 
@@ -483,14 +794,14 @@
         </pins>
 
         <nets>
-        <nitem  name = "counter_7__N_56[7]"  />
-        <nitem  name = "counter_7__N_56[6]"  />
-        <nitem  name = "counter_7__N_56[5]"  />
-        <nitem  name = "counter_7__N_56[4]"  />
-        <nitem  name = "counter_7__N_56[3]"  />
-        <nitem  name = "counter_7__N_56[2]"  />
-        <nitem  name = "counter_7__N_56[1]"  />
-        <nitem  name = "counter_7__N_56[0]"  />
+        <nitem  name = "counter_7__N_88[7]"  />
+        <nitem  name = "counter_7__N_88[6]"  />
+        <nitem  name = "counter_7__N_88[5]"  />
+        <nitem  name = "counter_7__N_88[4]"  />
+        <nitem  name = "counter_7__N_88[3]"  />
+        <nitem  name = "counter_7__N_88[2]"  />
+        <nitem  name = "counter_7__N_88[1]"  />
+        <nitem  name = "counter_7__N_88[0]"  />
         <nitem  name = "counter[7]"  />
         <nitem  name = "counter[6]"  />
         <nitem  name = "counter[5]"  />
@@ -499,15 +810,173 @@
         <nitem  name = "counter[2]"  />
         <nitem  name = "counter[1]"  />
         <nitem  name = "counter[0]"  />
-        <nitem  name = "count_22__N_55"  />
-        <nitem  name = "counter_7__N_24[7]"  />
-        <nitem  name = "counter_7__N_24[6]"  />
-        <nitem  name = "counter_7__N_24[5]"  />
-        <nitem  name = "counter_7__N_24[4]"  />
-        <nitem  name = "counter_7__N_24[3]"  />
-        <nitem  name = "counter_7__N_24[2]"  />
-        <nitem  name = "counter_7__N_24[1]"  />
-        <nitem  name = "counter_7__N_24[0]"  />
+        <nitem  name = "count_22__N_71"  />
+        <nitem  name = "counter_7__N_40[7]"  />
+        <nitem  name = "counter_7__N_40[6]"  />
+        <nitem  name = "counter_7__N_40[5]"  />
+        <nitem  name = "counter_7__N_40[4]"  />
+        <nitem  name = "counter_7__N_40[3]"  />
+        <nitem  name = "counter_7__N_40[2]"  />
+        <nitem  name = "counter_7__N_40[1]"  />
+        <nitem  name = "counter_7__N_40[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "lcd_sender_payload_i"  library = "work"  arch = "RTL"  type = "reg">
+        <pins>
+        <pitem  name = "d[15]"  direction = "in"  />
+        <pitem  name = "d[14]"  direction = "in"  />
+        <pitem  name = "d[13]"  direction = "in"  />
+        <pitem  name = "d[12]"  direction = "in"  />
+        <pitem  name = "d[11]"  direction = "in"  />
+        <pitem  name = "d[10]"  direction = "in"  />
+        <pitem  name = "d[9]"  direction = "in"  />
+        <pitem  name = "d[8]"  direction = "in"  />
+        <pitem  name = "d[7]"  direction = "in"  />
+        <pitem  name = "d[6]"  direction = "in"  />
+        <pitem  name = "d[5]"  direction = "in"  />
+        <pitem  name = "d[4]"  direction = "in"  />
+        <pitem  name = "d[3]"  direction = "in"  />
+        <pitem  name = "d[2]"  direction = "in"  />
+        <pitem  name = "d[1]"  direction = "in"  />
+        <pitem  name = "d[0]"  direction = "in"  />
+        <pitem  name = "set[15]"  direction = "in"  />
+        <pitem  name = "set[14]"  direction = "in"  />
+        <pitem  name = "set[13]"  direction = "in"  />
+        <pitem  name = "set[12]"  direction = "in"  />
+        <pitem  name = "set[11]"  direction = "in"  />
+        <pitem  name = "set[10]"  direction = "in"  />
+        <pitem  name = "set[9]"  direction = "in"  />
+        <pitem  name = "set[8]"  direction = "in"  />
+        <pitem  name = "set[7]"  direction = "in"  />
+        <pitem  name = "set[6]"  direction = "in"  />
+        <pitem  name = "set[5]"  direction = "in"  />
+        <pitem  name = "set[4]"  direction = "in"  />
+        <pitem  name = "set[3]"  direction = "in"  />
+        <pitem  name = "set[2]"  direction = "in"  />
+        <pitem  name = "set[1]"  direction = "in"  />
+        <pitem  name = "set[0]"  direction = "in"  />
+        <pitem  name = "reset[15]"  direction = "in"  />
+        <pitem  name = "reset[14]"  direction = "in"  />
+        <pitem  name = "reset[13]"  direction = "in"  />
+        <pitem  name = "reset[12]"  direction = "in"  />
+        <pitem  name = "reset[11]"  direction = "in"  />
+        <pitem  name = "reset[10]"  direction = "in"  />
+        <pitem  name = "reset[9]"  direction = "in"  />
+        <pitem  name = "reset[8]"  direction = "in"  />
+        <pitem  name = "reset[7]"  direction = "in"  />
+        <pitem  name = "reset[6]"  direction = "in"  />
+        <pitem  name = "reset[5]"  direction = "in"  />
+        <pitem  name = "reset[4]"  direction = "in"  />
+        <pitem  name = "reset[3]"  direction = "in"  />
+        <pitem  name = "reset[2]"  direction = "in"  />
+        <pitem  name = "reset[1]"  direction = "in"  />
+        <pitem  name = "reset[0]"  direction = "in"  />
+        <pitem  name = "clock"  direction = "in"  />
+        <pitem  name = "q[15]"  direction = "out"  />
+        <pitem  name = "q[14]"  direction = "out"  />
+        <pitem  name = "q[13]"  direction = "out"  />
+        <pitem  name = "q[12]"  direction = "out"  />
+        <pitem  name = "q[11]"  direction = "out"  />
+        <pitem  name = "q[10]"  direction = "out"  />
+        <pitem  name = "q[9]"  direction = "out"  />
+        <pitem  name = "q[8]"  direction = "out"  />
+        <pitem  name = "q[7]"  direction = "out"  />
+        <pitem  name = "q[6]"  direction = "out"  />
+        <pitem  name = "q[5]"  direction = "out"  />
+        <pitem  name = "q[4]"  direction = "out"  />
+        <pitem  name = "q[3]"  direction = "out"  />
+        <pitem  name = "q[2]"  direction = "out"  />
+        <pitem  name = "q[1]"  direction = "out"  />
+        <pitem  name = "q[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "lcd_sender_payload_i_15__N_1[15]"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_1[14]"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_1[13]"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_1[12]"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_1[11]"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_1[10]"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_1[9]"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_1[8]"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_1[7]"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_1[6]"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_1[5]"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_1[4]"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_1[3]"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_1[2]"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_1[1]"  />
+        <nitem  name = "lcd_sender_payload_i_15__N_1[0]"  />
+        <nitem  name = "gnd"  />
+        <nitem  name = "clk133"  />
+        <nitem  name = "lcd_sender_payload_i[15]"  />
+        <nitem  name = "lcd_sender_payload_i[14]"  />
+        <nitem  name = "lcd_sender_payload_i[13]"  />
+        <nitem  name = "lcd_sender_payload_i[12]"  />
+        <nitem  name = "lcd_sender_payload_i[11]"  />
+        <nitem  name = "lcd_sender_payload_i[10]"  />
+        <nitem  name = "lcd_sender_payload_i[9]"  />
+        <nitem  name = "lcd_sender_payload_i[8]"  />
+        <nitem  name = "lcd_sender_payload_i[7]"  />
+        <nitem  name = "lcd_sender_payload_i[6]"  />
+        <nitem  name = "lcd_sender_payload_i[5]"  />
+        <nitem  name = "lcd_sender_payload_i[4]"  />
+        <nitem  name = "lcd_sender_payload_i[3]"  />
+        <nitem  name = "lcd_sender_payload_i[2]"  />
+        <nitem  name = "lcd_sender_payload_i[1]"  />
+        <nitem  name = "lcd_sender_payload_i[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "lcd_sender_go_i_28"  library = "work"  arch = "RTL"  type = "reg">
+        <pins>
+        <pitem  name = "d"  direction = "in"  />
+        <pitem  name = "clk"  direction = "in"  />
+        <pitem  name = "s"  direction = "in"  />
+        <pitem  name = "r"  direction = "in"  />
+        <pitem  name = "q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "lcd_sender_go_i_N_96"  />
+        <nitem  name = "clk133"  />
+        <nitem  name = "gnd"  />
+        <nitem  name = "lcd_sender_go_i"  />
+        </nets>
+    </instance>
+
+    <instance  name = "lcd_sender_data_i_29"  library = "work"  arch = "RTL"  type = "reg">
+        <pins>
+        <pitem  name = "d"  direction = "in"  />
+        <pitem  name = "clk"  direction = "in"  />
+        <pitem  name = "s"  direction = "in"  />
+        <pitem  name = "r"  direction = "in"  />
+        <pitem  name = "q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "lcd_sender_data_i_N_100"  />
+        <nitem  name = "clk133"  />
+        <nitem  name = "gnd"  />
+        <nitem  name = "lcd_sender_data_i"  />
+        </nets>
+    </instance>
+
+    <instance  name = "lcd_sender_resetin_i_30"  library = "work"  arch = "RTL"  type = "reg">
+        <pins>
+        <pitem  name = "d"  direction = "in"  />
+        <pitem  name = "clk"  direction = "in"  />
+        <pitem  name = "s"  direction = "in"  />
+        <pitem  name = "r"  direction = "in"  />
+        <pitem  name = "q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "lcd_sender_resetin_i_N_102"  />
+        <nitem  name = "clk133"  />
+        <nitem  name = "gnd"  />
+        <nitem  name = "lcd_sender_resetin_i"  />
         </nets>
     </instance>
 
@@ -549,14 +1018,14 @@
         </pins>
 
         <nets>
-        <nitem  name = "counter_7__N_24[7]"  />
-        <nitem  name = "counter_7__N_24[6]"  />
-        <nitem  name = "counter_7__N_24[5]"  />
-        <nitem  name = "counter_7__N_24[4]"  />
-        <nitem  name = "counter_7__N_24[3]"  />
-        <nitem  name = "counter_7__N_24[2]"  />
-        <nitem  name = "counter_7__N_24[1]"  />
-        <nitem  name = "counter_7__N_24[0]"  />
+        <nitem  name = "counter_7__N_40[7]"  />
+        <nitem  name = "counter_7__N_40[6]"  />
+        <nitem  name = "counter_7__N_40[5]"  />
+        <nitem  name = "counter_7__N_40[4]"  />
+        <nitem  name = "counter_7__N_40[3]"  />
+        <nitem  name = "counter_7__N_40[2]"  />
+        <nitem  name = "counter_7__N_40[1]"  />
+        <nitem  name = "counter_7__N_40[0]"  />
         <nitem  name = "gnd"  />
         <nitem  name = "clk133"  />
         <nitem  name = "counter[7]"  />
@@ -567,6 +1036,20 @@
         <nitem  name = "counter[2]"  />
         <nitem  name = "counter[1]"  />
         <nitem  name = "counter[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "inst_lcd_sender/last_go_i_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "lcd_sender_go_i"  />
+        <nitem  name = "inst_lcd_sender/last_go_i"  />
+        <nitem  name = "inst_lcd_sender/busy_N_128"  />
         </nets>
     </instance>
 
@@ -708,29 +1191,29 @@
         </pins>
 
         <nets>
-        <nitem  name = "count_22__N_1[22]"  />
-        <nitem  name = "count_22__N_1[21]"  />
-        <nitem  name = "count_22__N_1[20]"  />
-        <nitem  name = "count_22__N_1[19]"  />
-        <nitem  name = "count_22__N_1[18]"  />
-        <nitem  name = "count_22__N_1[17]"  />
-        <nitem  name = "count_22__N_1[16]"  />
-        <nitem  name = "count_22__N_1[15]"  />
-        <nitem  name = "count_22__N_1[14]"  />
-        <nitem  name = "count_22__N_1[13]"  />
-        <nitem  name = "count_22__N_1[12]"  />
-        <nitem  name = "count_22__N_1[11]"  />
-        <nitem  name = "count_22__N_1[10]"  />
-        <nitem  name = "count_22__N_1[9]"  />
-        <nitem  name = "count_22__N_1[8]"  />
-        <nitem  name = "count_22__N_1[7]"  />
-        <nitem  name = "count_22__N_1[6]"  />
-        <nitem  name = "count_22__N_1[5]"  />
-        <nitem  name = "count_22__N_1[4]"  />
-        <nitem  name = "count_22__N_1[3]"  />
-        <nitem  name = "count_22__N_1[2]"  />
-        <nitem  name = "count_22__N_1[1]"  />
-        <nitem  name = "count_22__N_1[0]"  />
+        <nitem  name = "count_22__N_17[22]"  />
+        <nitem  name = "count_22__N_17[21]"  />
+        <nitem  name = "count_22__N_17[20]"  />
+        <nitem  name = "count_22__N_17[19]"  />
+        <nitem  name = "count_22__N_17[18]"  />
+        <nitem  name = "count_22__N_17[17]"  />
+        <nitem  name = "count_22__N_17[16]"  />
+        <nitem  name = "count_22__N_17[15]"  />
+        <nitem  name = "count_22__N_17[14]"  />
+        <nitem  name = "count_22__N_17[13]"  />
+        <nitem  name = "count_22__N_17[12]"  />
+        <nitem  name = "count_22__N_17[11]"  />
+        <nitem  name = "count_22__N_17[10]"  />
+        <nitem  name = "count_22__N_17[9]"  />
+        <nitem  name = "count_22__N_17[8]"  />
+        <nitem  name = "count_22__N_17[7]"  />
+        <nitem  name = "count_22__N_17[6]"  />
+        <nitem  name = "count_22__N_17[5]"  />
+        <nitem  name = "count_22__N_17[4]"  />
+        <nitem  name = "count_22__N_17[3]"  />
+        <nitem  name = "count_22__N_17[2]"  />
+        <nitem  name = "count_22__N_17[1]"  />
+        <nitem  name = "count_22__N_17[0]"  />
         <nitem  name = "gnd"  />
         <nitem  name = "clk133"  />
         <nitem  name = "count[22]"  />
@@ -759,20 +1242,6 @@
         </nets>
     </instance>
 
-    <instance  name = "inst_lcd_sender/last_go_i_I_0"  library = "work"  arch = "RTL"  type = "comb">
-        <pins>
-        <pitem  name = "a1"  direction = "in"  />
-        <pitem  name = "a0"  direction = "in"  />
-        <pitem  name = "o"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "gnd"  />
-        <nitem  name = "inst_lcd_sender/last_go_i"  />
-        <nitem  name = "inst_lcd_sender/busy_N_88"  />
-        </nets>
-    </instance>
-
     <instance  name = "inst_lcd_sender/busy_I_0"  library = "work"  arch = "RTL"  type = "comb">
         <pins>
         <pitem  name = "a1"  direction = "in"  />
@@ -783,13 +1252,13 @@
 
         <nets>
         <nitem  name = "inst_lcd_sender/pwr"  />
-        <nitem  name = "inst_lcd_sender/busy"  />
-        <nitem  name = "inst_lcd_sender/busy_N_88"  />
-        <nitem  name = "inst_lcd_sender/busy_N_87"  />
+        <nitem  name = "lcd_sender_busy_i"  />
+        <nitem  name = "inst_lcd_sender/busy_N_128"  />
+        <nitem  name = "inst_lcd_sender/busy_N_127"  />
         </nets>
     </instance>
 
-    <instance  name = "inst_lcd_sender/mux_8"  library = "work"  arch = "RTL"  type = "comb">
+    <instance  name = "inst_lcd_sender/mux_5"  library = "work"  arch = "RTL"  type = "comb">
         <pins>
         <pitem  name = "d1[2]"  direction = "in"  />
         <pitem  name = "d1[0]"  direction = "in"  />
@@ -804,19 +1273,19 @@
         </pins>
 
         <nets>
-        <nitem  name = "lcd_rs"  />
+        <nitem  name = "inst_lcd_sender/gnd"  />
         <nitem  name = "inst_lcd_sender/pwr"  />
         <nitem  name = "inst_lcd_sender/state_i[2]"  />
         <nitem  name = "inst_lcd_sender/state_i[1]"  />
         <nitem  name = "inst_lcd_sender/state_i[0]"  />
-        <nitem  name = "inst_lcd_sender/busy_N_88"  />
-        <nitem  name = "inst_lcd_sender/state_i_2__N_83[2]"  />
-        <nitem  name = "inst_lcd_sender/state_i_2__N_83[1]"  />
-        <nitem  name = "inst_lcd_sender/state_i_2__N_83[0]"  />
+        <nitem  name = "inst_lcd_sender/busy_N_128"  />
+        <nitem  name = "inst_lcd_sender/state_i_2__N_123[2]"  />
+        <nitem  name = "inst_lcd_sender/state_i_2__N_123[1]"  />
+        <nitem  name = "inst_lcd_sender/state_i_2__N_123[0]"  />
         </nets>
     </instance>
 
-    <instance  name = "inst_lcd_sender/state_i_2__I_0_27"  library = "work"  arch = "RTL"  type = "comb">
+    <instance  name = "inst_lcd_sender/state_i_2__I_0_24"  library = "work"  arch = "RTL"  type = "comb">
         <pins>
         <pitem  name = "data[7]"  direction = "in"  />
         <pitem  name = "data[6]"  direction = "in"  />
@@ -833,17 +1302,17 @@
         </pins>
 
         <nets>
-        <nitem  name = "lcd_rs"  />
-        <nitem  name = "inst_lcd_sender/busy"  />
+        <nitem  name = "inst_lcd_sender/gnd"  />
+        <nitem  name = "lcd_sender_busy_i"  />
         <nitem  name = "inst_lcd_sender/state_i[2]"  />
         <nitem  name = "inst_lcd_sender/state_i[1]"  />
         <nitem  name = "inst_lcd_sender/state_i[0]"  />
-        <nitem  name = "inst_lcd_sender/busy_N_87"  />
-        <nitem  name = "inst_lcd_sender/busy_N_86"  />
+        <nitem  name = "inst_lcd_sender/busy_N_127"  />
+        <nitem  name = "inst_lcd_sender/busy_N_126"  />
         </nets>
     </instance>
 
-    <instance  name = "inst_lcd_sender/state_i_2__I_0_25"  library = "work"  arch = "RTL"  type = "comb">
+    <instance  name = "inst_lcd_sender/state_i_2__I_0_22"  library = "work"  arch = "RTL"  type = "comb">
         <pins>
         <pitem  name = "data[23]"  direction = "in"  />
         <pitem  name = "data[22]"  direction = "in"  />
@@ -878,21 +1347,21 @@
         </pins>
 
         <nets>
-        <nitem  name = "lcd_rs"  />
+        <nitem  name = "inst_lcd_sender/gnd"  />
         <nitem  name = "inst_lcd_sender/pwr"  />
         <nitem  name = "inst_lcd_sender/state_i[2]"  />
         <nitem  name = "inst_lcd_sender/state_i[1]"  />
         <nitem  name = "inst_lcd_sender/state_i[0]"  />
-        <nitem  name = "inst_lcd_sender/state_i_2__N_83[2]"  />
-        <nitem  name = "inst_lcd_sender/state_i_2__N_83[1]"  />
-        <nitem  name = "inst_lcd_sender/state_i_2__N_83[0]"  />
-        <nitem  name = "inst_lcd_sender/state_i_2__N_80[2]"  />
-        <nitem  name = "inst_lcd_sender/state_i_2__N_80[1]"  />
-        <nitem  name = "inst_lcd_sender/state_i_2__N_80[0]"  />
+        <nitem  name = "inst_lcd_sender/state_i_2__N_123[2]"  />
+        <nitem  name = "inst_lcd_sender/state_i_2__N_123[1]"  />
+        <nitem  name = "inst_lcd_sender/state_i_2__N_123[0]"  />
+        <nitem  name = "inst_lcd_sender/state_i_2__N_120[2]"  />
+        <nitem  name = "inst_lcd_sender/state_i_2__N_120[1]"  />
+        <nitem  name = "inst_lcd_sender/state_i_2__N_120[0]"  />
         </nets>
     </instance>
 
-    <instance  name = "inst_lcd_sender/state_i_2__I_0_28"  library = "work"  arch = "RTL"  type = "comb">
+    <instance  name = "inst_lcd_sender/state_i_2__I_0_25"  library = "work"  arch = "RTL"  type = "comb">
         <pins>
         <pitem  name = "data[2]"  direction = "in"  />
         <pitem  name = "data[4]"  direction = "in"  />
@@ -909,17 +1378,17 @@
         </pins>
 
         <nets>
-        <nitem  name = "lcd_rs"  />
+        <nitem  name = "inst_lcd_sender/gnd"  />
         <nitem  name = "inst_lcd_sender/pwr"  />
         <nitem  name = "lcd_wr"  />
         <nitem  name = "inst_lcd_sender/state_i[2]"  />
         <nitem  name = "inst_lcd_sender/state_i[1]"  />
         <nitem  name = "inst_lcd_sender/state_i[0]"  />
-        <nitem  name = "inst_lcd_sender/wr_N_89"  />
+        <nitem  name = "inst_lcd_sender/wr_N_129"  />
         </nets>
     </instance>
 
-    <instance  name = "inst_lcd_sender/state_i_2__I_0_26"  library = "work"  arch = "RTL"  type = "comb">
+    <instance  name = "inst_lcd_sender/state_i_2__I_0_23"  library = "work"  arch = "RTL"  type = "comb">
         <pins>
         <pitem  name = "data[63]"  direction = "in"  />
         <pitem  name = "data[62]"  direction = "in"  />
@@ -1071,7 +1540,22 @@
         </pins>
 
         <nets>
-        <nitem  name = "n1"  />
+        <nitem  name = "lcd_sender_payload_i[15]"  />
+        <nitem  name = "lcd_sender_payload_i[14]"  />
+        <nitem  name = "lcd_sender_payload_i[13]"  />
+        <nitem  name = "lcd_sender_payload_i[12]"  />
+        <nitem  name = "lcd_sender_payload_i[11]"  />
+        <nitem  name = "lcd_sender_payload_i[10]"  />
+        <nitem  name = "lcd_sender_payload_i[9]"  />
+        <nitem  name = "lcd_sender_payload_i[8]"  />
+        <nitem  name = "lcd_sender_payload_i[7]"  />
+        <nitem  name = "lcd_sender_payload_i[6]"  />
+        <nitem  name = "lcd_sender_payload_i[5]"  />
+        <nitem  name = "lcd_sender_payload_i[4]"  />
+        <nitem  name = "lcd_sender_payload_i[3]"  />
+        <nitem  name = "lcd_sender_payload_i[2]"  />
+        <nitem  name = "lcd_sender_payload_i[1]"  />
+        <nitem  name = "lcd_sender_payload_i[0]"  />
         <nitem  name = "lcd_LCDBus[15]"  />
         <nitem  name = "lcd_LCDBus[14]"  />
         <nitem  name = "lcd_LCDBus[13]"  />
@@ -1091,22 +1575,22 @@
         <nitem  name = "inst_lcd_sender/state_i[2]"  />
         <nitem  name = "inst_lcd_sender/state_i[1]"  />
         <nitem  name = "inst_lcd_sender/state_i[0]"  />
-        <nitem  name = "inst_lcd_sender/LCDBus_15__N_64[15]"  />
-        <nitem  name = "inst_lcd_sender/LCDBus_15__N_64[14]"  />
-        <nitem  name = "inst_lcd_sender/LCDBus_15__N_64[13]"  />
-        <nitem  name = "inst_lcd_sender/LCDBus_15__N_64[12]"  />
-        <nitem  name = "inst_lcd_sender/LCDBus_15__N_64[11]"  />
-        <nitem  name = "inst_lcd_sender/LCDBus_15__N_64[10]"  />
-        <nitem  name = "inst_lcd_sender/LCDBus_15__N_64[9]"  />
-        <nitem  name = "inst_lcd_sender/LCDBus_15__N_64[8]"  />
-        <nitem  name = "inst_lcd_sender/LCDBus_15__N_64[7]"  />
-        <nitem  name = "inst_lcd_sender/LCDBus_15__N_64[6]"  />
-        <nitem  name = "inst_lcd_sender/LCDBus_15__N_64[5]"  />
-        <nitem  name = "inst_lcd_sender/LCDBus_15__N_64[4]"  />
-        <nitem  name = "inst_lcd_sender/LCDBus_15__N_64[3]"  />
-        <nitem  name = "inst_lcd_sender/LCDBus_15__N_64[2]"  />
-        <nitem  name = "inst_lcd_sender/LCDBus_15__N_64[1]"  />
-        <nitem  name = "inst_lcd_sender/LCDBus_15__N_64[0]"  />
+        <nitem  name = "inst_lcd_sender/LCDBus_15__N_104[15]"  />
+        <nitem  name = "inst_lcd_sender/LCDBus_15__N_104[14]"  />
+        <nitem  name = "inst_lcd_sender/LCDBus_15__N_104[13]"  />
+        <nitem  name = "inst_lcd_sender/LCDBus_15__N_104[12]"  />
+        <nitem  name = "inst_lcd_sender/LCDBus_15__N_104[11]"  />
+        <nitem  name = "inst_lcd_sender/LCDBus_15__N_104[10]"  />
+        <nitem  name = "inst_lcd_sender/LCDBus_15__N_104[9]"  />
+        <nitem  name = "inst_lcd_sender/LCDBus_15__N_104[8]"  />
+        <nitem  name = "inst_lcd_sender/LCDBus_15__N_104[7]"  />
+        <nitem  name = "inst_lcd_sender/LCDBus_15__N_104[6]"  />
+        <nitem  name = "inst_lcd_sender/LCDBus_15__N_104[5]"  />
+        <nitem  name = "inst_lcd_sender/LCDBus_15__N_104[4]"  />
+        <nitem  name = "inst_lcd_sender/LCDBus_15__N_104[3]"  />
+        <nitem  name = "inst_lcd_sender/LCDBus_15__N_104[2]"  />
+        <nitem  name = "inst_lcd_sender/LCDBus_15__N_104[1]"  />
+        <nitem  name = "inst_lcd_sender/LCDBus_15__N_104[0]"  />
         </nets>
     </instance>
 
@@ -1127,12 +1611,12 @@
         </pins>
 
         <nets>
-        <nitem  name = "gnd"  />
+        <nitem  name = "lcd_sender_go_i"  />
         <nitem  name = "inst_lcd_sender/last_go_i"  />
         <nitem  name = "inst_lcd_sender/state_i[2]"  />
         <nitem  name = "inst_lcd_sender/state_i[1]"  />
         <nitem  name = "inst_lcd_sender/state_i[0]"  />
-        <nitem  name = "inst_lcd_sender/last_go_i_N_90"  />
+        <nitem  name = "inst_lcd_sender/last_go_i_N_130"  />
         </nets>
     </instance>
 
@@ -1154,18 +1638,18 @@
         </pins>
 
         <nets>
-        <nitem  name = "lcd_rs"  />
+        <nitem  name = "inst_lcd_sender/gnd"  />
         <nitem  name = "clk133"  />
         <nitem  name = "inst_lcd_sender/state_i[2]"  />
         <nitem  name = "inst_lcd_sender/state_i[1]"  />
         <nitem  name = "inst_lcd_sender/state_i[0]"  />
-        <nitem  name = "inst_lcd_sender/state_i_2__N_80[2]"  />
-        <nitem  name = "inst_lcd_sender/state_i_2__N_80[1]"  />
-        <nitem  name = "inst_lcd_sender/state_i_2__N_80[0]"  />
+        <nitem  name = "inst_lcd_sender/state_i_2__N_120[2]"  />
+        <nitem  name = "inst_lcd_sender/state_i_2__N_120[1]"  />
+        <nitem  name = "inst_lcd_sender/state_i_2__N_120[0]"  />
         </nets>
     </instance>
 
-    <instance  name = "inst_lcd_sender/wr_i_22"  library = "work"  arch = "RTL"  type = "reg">
+    <instance  name = "inst_lcd_sender/wr_i_19"  library = "work"  arch = "RTL"  type = "reg">
         <pins>
         <pitem  name = "r"  direction = "in"  />
         <pitem  name = "s"  direction = "in"  />
@@ -1175,10 +1659,10 @@
         </pins>
 
         <nets>
-        <nitem  name = "lcd_rs"  />
+        <nitem  name = "inst_lcd_sender/gnd"  />
         <nitem  name = "clk133"  />
         <nitem  name = "lcd_wr"  />
-        <nitem  name = "inst_lcd_sender/wr_N_89"  />
+        <nitem  name = "inst_lcd_sender/wr_N_129"  />
         </nets>
     </instance>
 
@@ -1252,7 +1736,7 @@
         </pins>
 
         <nets>
-        <nitem  name = "lcd_rs"  />
+        <nitem  name = "inst_lcd_sender/gnd"  />
         <nitem  name = "clk133"  />
         <nitem  name = "lcd_LCDBus[15]"  />
         <nitem  name = "lcd_LCDBus[14]"  />
@@ -1270,26 +1754,26 @@
         <nitem  name = "lcd_LCDBus[2]"  />
         <nitem  name = "lcd_LCDBus[1]"  />
         <nitem  name = "lcd_LCDBus[0]"  />
-        <nitem  name = "inst_lcd_sender/LCDBus_15__N_64[15]"  />
-        <nitem  name = "inst_lcd_sender/LCDBus_15__N_64[14]"  />
-        <nitem  name = "inst_lcd_sender/LCDBus_15__N_64[13]"  />
-        <nitem  name = "inst_lcd_sender/LCDBus_15__N_64[12]"  />
-        <nitem  name = "inst_lcd_sender/LCDBus_15__N_64[11]"  />
-        <nitem  name = "inst_lcd_sender/LCDBus_15__N_64[10]"  />
-        <nitem  name = "inst_lcd_sender/LCDBus_15__N_64[9]"  />
-        <nitem  name = "inst_lcd_sender/LCDBus_15__N_64[8]"  />
-        <nitem  name = "inst_lcd_sender/LCDBus_15__N_64[7]"  />
-        <nitem  name = "inst_lcd_sender/LCDBus_15__N_64[6]"  />
-        <nitem  name = "inst_lcd_sender/LCDBus_15__N_64[5]"  />
-        <nitem  name = "inst_lcd_sender/LCDBus_15__N_64[4]"  />
-        <nitem  name = "inst_lcd_sender/LCDBus_15__N_64[3]"  />
-        <nitem  name = "inst_lcd_sender/LCDBus_15__N_64[2]"  />
-        <nitem  name = "inst_lcd_sender/LCDBus_15__N_64[1]"  />
-        <nitem  name = "inst_lcd_sender/LCDBus_15__N_64[0]"  />
+        <nitem  name = "inst_lcd_sender/LCDBus_15__N_104[15]"  />
+        <nitem  name = "inst_lcd_sender/LCDBus_15__N_104[14]"  />
+        <nitem  name = "inst_lcd_sender/LCDBus_15__N_104[13]"  />
+        <nitem  name = "inst_lcd_sender/LCDBus_15__N_104[12]"  />
+        <nitem  name = "inst_lcd_sender/LCDBus_15__N_104[11]"  />
+        <nitem  name = "inst_lcd_sender/LCDBus_15__N_104[10]"  />
+        <nitem  name = "inst_lcd_sender/LCDBus_15__N_104[9]"  />
+        <nitem  name = "inst_lcd_sender/LCDBus_15__N_104[8]"  />
+        <nitem  name = "inst_lcd_sender/LCDBus_15__N_104[7]"  />
+        <nitem  name = "inst_lcd_sender/LCDBus_15__N_104[6]"  />
+        <nitem  name = "inst_lcd_sender/LCDBus_15__N_104[5]"  />
+        <nitem  name = "inst_lcd_sender/LCDBus_15__N_104[4]"  />
+        <nitem  name = "inst_lcd_sender/LCDBus_15__N_104[3]"  />
+        <nitem  name = "inst_lcd_sender/LCDBus_15__N_104[2]"  />
+        <nitem  name = "inst_lcd_sender/LCDBus_15__N_104[1]"  />
+        <nitem  name = "inst_lcd_sender/LCDBus_15__N_104[0]"  />
         </nets>
     </instance>
 
-    <instance  name = "inst_lcd_sender/last_go_i_24"  library = "work"  arch = "RTL"  type = "reg">
+    <instance  name = "inst_lcd_sender/last_go_i_21"  library = "work"  arch = "RTL"  type = "reg">
         <pins>
         <pitem  name = "r"  direction = "in"  />
         <pitem  name = "s"  direction = "in"  />
@@ -1299,14 +1783,14 @@
         </pins>
 
         <nets>
-        <nitem  name = "lcd_rs"  />
+        <nitem  name = "inst_lcd_sender/gnd"  />
         <nitem  name = "clk133"  />
         <nitem  name = "inst_lcd_sender/last_go_i"  />
-        <nitem  name = "inst_lcd_sender/last_go_i_N_90"  />
+        <nitem  name = "inst_lcd_sender/last_go_i_N_130"  />
         </nets>
     </instance>
 
-    <instance  name = "inst_lcd_sender/busy_i_20"  library = "work"  arch = "RTL"  type = "reg">
+    <instance  name = "inst_lcd_sender/busy_i_17"  library = "work"  arch = "RTL"  type = "reg">
         <pins>
         <pitem  name = "s"  direction = "in"  />
         <pitem  name = "r"  direction = "in"  />
@@ -1316,26 +1800,30 @@
         </pins>
 
         <nets>
-        <nitem  name = "lcd_rs"  />
+        <nitem  name = "inst_lcd_sender/gnd"  />
         <nitem  name = "clk133"  />
-        <nitem  name = "inst_lcd_sender/busy"  />
-        <nitem  name = "inst_lcd_sender/busy_N_86"  />
+        <nitem  name = "lcd_sender_busy_i"  />
+        <nitem  name = "inst_lcd_sender/busy_N_126"  />
         </nets>
     </instance>
 
     <instance  name = "inst_lcd_sender"  />
     <!--
-        REG instances in netlist: 7
+        REG instances in netlist: 11
     -->
 
     <regs>
+        <reg  name = "lcd_sender_payload_i"  />
+        <reg  name = "lcd_sender_go_i_28"  />
+        <reg  name = "lcd_sender_data_i_29"  />
+        <reg  name = "lcd_sender_resetin_i_30"  />
         <reg  name = "counter"  />
         <reg  name = "count"  />
         <reg  name = "inst_lcd_sender/state_i"  />
-        <reg  name = "inst_lcd_sender/wr_i_22"  />
+        <reg  name = "inst_lcd_sender/wr_i_19"  />
         <reg  name = "inst_lcd_sender/LCDBus_i"  />
-        <reg  name = "inst_lcd_sender/last_go_i_24"  />
-        <reg  name = "inst_lcd_sender/busy_i_20"  />
+        <reg  name = "inst_lcd_sender/last_go_i_21"  />
+        <reg  name = "inst_lcd_sender/busy_i_17"  />
     </regs>
 
     <!--

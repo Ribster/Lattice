@@ -2,20 +2,20 @@
 [ END MERGED ]
 [ START CLIPPED ]
 VCC_net
-count_45_add_4_1/S0
-count_45_add_4_1/CI
-counter_46_add_4_1/S0
-counter_46_add_4_1/CI
-counter_46_add_4_9/S1
-counter_46_add_4_9/CO
-count_45_add_4_23/CO
+count_77_add_4_23/CO
+counter_78_add_4_9/S1
+counter_78_add_4_9/CO
+counter_78_add_4_1/S0
+counter_78_add_4_1/CI
+count_77_add_4_1/S0
+count_77_add_4_1/CI
 [ END CLIPPED ]
 [ START OSC ]
 clk133 53.20
 [ END OSC ]
 [ START DESIGN PREFS ]
 SCHEMATIC START ;
-# map:  version Diamond (64-bit) 3.7.1.502 -- WARNING: Map write only section -- Fri May 13 22:17:35 2016
+# map:  version Diamond (64-bit) 3.7.1.502 -- WARNING: Map write only section -- Fri May 13 23:02:05 2016
 
 SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=DISABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE BACKGROUND_RECONFIG=OFF ;
 LOCATE COMP "leds[6]" SITE "106" ;

@@ -1,5 +1,6 @@
 LIBRARY ieee;
 USE ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
 USE ieee.numeric_std.all;
 LIBRARY lattice;
 
@@ -77,14 +78,24 @@ begin
 	process(clk133)
 		variable count	:	integer range 0 TO 5_000_000;
 		variable counter :	integer range 0 TO 255;
+		
+		
 	begin
 		if(clk133'EVENT and clk133='1') then
 			if(count < 5_000_000) then
 				count := count + 1;
+				if(lcd_sender_busy_i /= true) then 
+					lcd_sender_payload_i <= std_logic_vector(to_unsigned(counter, 16));
+					lcd_sender_go_i <= NOT lcd_sender_go_i;
+					lcd_sender_data_i <= '1';
+					lcd_sender_resetin_i <= '0';
+				end if;
 			else
 				count := 0;
 				counter := counter + 1;
 			end if;
+			
+			
 		end if;
 		
 		leds <= NOT std_logic_vector(to_unsigned(counter));

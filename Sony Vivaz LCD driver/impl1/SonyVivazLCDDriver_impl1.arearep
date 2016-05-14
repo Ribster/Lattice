@@ -1,28 +1,28 @@
 ----------------------------------------------------------------------
 Report for cell main.TECH
-Register bits:  35 of 7209 (0.486%)
+Register bits:  54 of 7209 (0.749%)
 I/O cells:      27
                                   Cell usage:
                                cell     count   Res Usage(%)
                               CCU2D        17          100.0
-                            FD1P3AX         9          100.0
+                            FD1P3AX        28          100.0
                             FD1S3AX         2          100.0
                             FD1S3AY         1          100.0
                             FD1S3IX        23          100.0
                                 GSR         1          100.0
-                               LUT4        18          100.0
+                               LUT4        26          100.0
                                  OB        27          100.0
                                OSCH         1          100.0
 SUB MODULES
                          lcd_sender         1
-                              TOTAL       100
+                              TOTAL       127
 ----------------------------------------------------------------------
 Report for cell lcd_sender.v1
 Instance Path : inst_lcd_sender
                                   Cell usage:
                                cell     count   Res Usage(%)
-                            FD1P3AX         1           11.1
+                            FD1P3AX        11           39.3
                             FD1S3AX         2          100.0
                             FD1S3AY         1          100.0
-                               LUT4         4           22.2
-                              TOTAL         8
+                               LUT4        10           38.5
+                              TOTAL        24

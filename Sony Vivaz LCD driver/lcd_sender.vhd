@@ -30,8 +30,8 @@ architecture behavioral of lcd_sender is
   
   signal LCDBus_i : std_logic_vector(15 downto 0);
   signal busy_i : boolean := false;
-  signal wr_i : std_logic := '0';
-  signal rs_i : std_logic := '0';  
+  signal wr_i : std_logic;
+  signal rs_i : std_logic;  
   signal last_go_i : std_logic := '0';
   signal state_i : lcd_sender_state_t := idle;
  
@@ -45,7 +45,7 @@ begin
 
 	process (clk100)
 	begin
-		if rising_edge(clk100) then
+		if(clk100'EVENT and clk100='1') then
 		
 			case state_i is
 				when idle =>
