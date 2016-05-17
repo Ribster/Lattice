@@ -14,7 +14,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
-Fri May 13 23:02:03 2016
+Tue May 17 22:45:20 2016
 
 
 Command Line:  synthesis -f SonyVivazLCDDriver_impl1_lattice.synproj -gui -msgset Z:/GITHUB/Lattice/Sony Vivaz LCD driver/promote.xml 
@@ -75,7 +75,6 @@ The -syn option is FALSE.
 VHDL library = work
 VHDL design file = Z:/GITHUB/Lattice/Sony Vivaz LCD driver/main.vhd
 VHDL design file = Z:/GITHUB/Lattice/Sony Vivaz LCD driver/constants.vhd
-VHDL design file = Z:/GITHUB/Lattice/Sony Vivaz LCD driver/lcd_sender.vhd
 NGD file = SonyVivazLCDDriver_impl1.ngd
 -sdc option: SDC file input not used.
 -lpf option: Output file option is ON.
@@ -91,17 +90,12 @@ Analyzing VHDL file z:/github/lattice/sony vivaz lcd driver/constants.vhd. VHDL-
 INFO - synthesis: z:/github/lattice/sony vivaz lcd driver/constants.vhd(6): analyzing package constants. VHDL-1014
 INFO - synthesis: z:/github/lattice/sony vivaz lcd driver/constants.vhd(14): analyzing package body constants. VHDL-1013
 Analyzing VHDL file z:/github/lattice/sony vivaz lcd driver/main.vhd. VHDL-1481
-INFO - synthesis: z:/github/lattice/sony vivaz lcd driver/main.vhd(9): analyzing entity main. VHDL-1012
-INFO - synthesis: z:/github/lattice/sony vivaz lcd driver/main.vhd(20): analyzing architecture behavioral. VHDL-1010
-INFO - synthesis: z:/github/lattice/sony vivaz lcd driver/main.vhd(101): input pin size has no actual or default value. VHDL-9000
-INFO - synthesis: C:/lscc/diamond/3.7_x64/ispfpga/vhdl_packages/numeric_std.vhd(712): size is declared here. VHDL-1259
-Analyzing VHDL file z:/github/lattice/sony vivaz lcd driver/lcd_sender.vhd. VHDL-1481
-INFO - synthesis: z:/github/lattice/sony vivaz lcd driver/lcd_sender.vhd(6): analyzing entity lcd_sender. VHDL-1012
-INFO - synthesis: z:/github/lattice/sony vivaz lcd driver/lcd_sender.vhd(26): analyzing architecture behavioral. VHDL-1010
+INFO - synthesis: z:/github/lattice/sony vivaz lcd driver/main.vhd(10): analyzing entity main. VHDL-1012
+INFO - synthesis: z:/github/lattice/sony vivaz lcd driver/main.vhd(22): analyzing architecture behavioral. VHDL-1010
 unit main is not yet analyzed. VHDL-1485
-z:/github/lattice/sony vivaz lcd driver/main.vhd(9): executing main(behavioral)
+z:/github/lattice/sony vivaz lcd driver/main.vhd(10): executing main(behavioral)
 
-WARNING - synthesis: z:/github/lattice/sony vivaz lcd driver/main.vhd(18): replacing existing netlist main(behavioral). VHDL-1205
+WARNING - synthesis: z:/github/lattice/sony vivaz lcd driver/main.vhd(20): replacing existing netlist main(behavioral). VHDL-1205
 Top module name (VHDL): main
 Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
@@ -110,20 +104,1171 @@ Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/or5g00/data/orc5glib.ngl'..
 Loading device for application map from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.7_x64/ispfpga.
 Package Status:                     Final          Version 1.39.
 Top-level module name = main.
+WARNING - synthesis: Initial value found on net NS_vivaz_state[2] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net NS_vivaz_state[1] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net NS_vivaz_state[0] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net lcd_go_i will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net lcd_busy_i will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net lcd_dataTrue_commandFalse_i will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net NS_lcd_state[3] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net NS_lcd_state[2] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net NS_lcd_state[1] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net NS_lcd_state[0] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net waitcounter[23] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net waitcounter[22] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net waitcounter[21] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net waitcounter[20] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net waitcounter[19] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net waitcounter[18] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net waitcounter[17] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net waitcounter[16] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net waitcounter[15] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net waitcounter[14] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net waitcounter[13] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net waitcounter[12] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net waitcounter[11] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net waitcounter[10] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net waitcounter[9] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net waitcounter[8] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net waitcounter[7] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net waitcounter[6] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net waitcounter[5] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net waitcounter[4] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net waitcounter[3] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net waitcounter[2] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net waitcounter[1] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net waitcounter[0] will be ignored due to unrecognized driver type
+######## Converting I/O port leds[7] to output.
+######## Converting I/O port leds[6] to output.
+######## Converting I/O port leds[5] to output.
+######## Converting I/O port leds[4] to output.
+######## Converting I/O port leds[3] to output.
+######## Converting I/O port leds[2] to output.
+######## Converting I/O port leds[1] to output.
+######## Converting I/O port leds[0] to output.
+######## Converting I/O port lcd_LCDBus[15] to output.
+######## Converting I/O port lcd_LCDBus[14] to output.
+######## Converting I/O port lcd_LCDBus[13] to output.
+######## Converting I/O port lcd_LCDBus[12] to output.
+######## Converting I/O port lcd_LCDBus[11] to output.
+######## Converting I/O port lcd_LCDBus[10] to output.
+######## Converting I/O port lcd_LCDBus[9] to output.
+######## Converting I/O port lcd_LCDBus[8] to output.
+######## Converting I/O port lcd_LCDBus[7] to output.
+######## Converting I/O port lcd_LCDBus[6] to output.
+######## Converting I/O port lcd_LCDBus[5] to output.
+######## Converting I/O port lcd_LCDBus[4] to output.
+######## Converting I/O port lcd_LCDBus[3] to output.
+######## Converting I/O port lcd_LCDBus[2] to output.
+######## Converting I/O port lcd_LCDBus[1] to output.
+######## Converting I/O port lcd_LCDBus[0] to output.
+######## Converting I/O port lcd_wr to output.
+######## Converting I/O port lcd_reset to output.
+######## Converting I/O port lcd_rs to output.
 
 
 
-WARNING - synthesis: Bit 0 of Register lcd_sender_payload_i is stuck at Zero
-WARNING - synthesis: Bit 1 of Register lcd_sender_payload_i is stuck at Zero
-WARNING - synthesis: Bit 2 of Register lcd_sender_payload_i is stuck at Zero
-WARNING - synthesis: Bit 3 of Register lcd_sender_payload_i is stuck at Zero
-WARNING - synthesis: Bit 4 of Register lcd_sender_payload_i is stuck at Zero
-WARNING - synthesis: Bit 5 of Register lcd_sender_payload_i is stuck at Zero
-WARNING - synthesis: Bit 6 of Register lcd_sender_payload_i is stuck at Zero
-WARNING - synthesis: Bit 7 of Register lcd_sender_payload_i is stuck at Zero
-WARNING - synthesis: z:/github/lattice/sony vivaz lcd driver/main.vhd(99): Register lcd_sender_resetin_i_30 is stuck at Zero. VDB-5013
-WARNING - synthesis: z:/github/lattice/sony vivaz lcd driver/lcd_sender.vhd(90): Register \inst_lcd_sender/LCDBus_i_i16 is stuck at Zero. VDB-5013
-GSR will not be inferred because no asynchronous signal was found in the netlist.
+Combinational loop found : 1
+
+	Net NS_vivaz_state[0] 
+
+	Instance NS_vivaz_state_2__I_0_i1 
+
+	Net NS_vivaz_state_2__N_35[0] 
+
+	Instance PS_vivaz_state_2__I_0_79_Mux_0_i7 
+
+	Net \PS_vivaz_state_2__I_0_79_Mux_0/n3 
+
+	Instance PS_vivaz_state_2__I_0_79_Mux_0_i3 
+
+	Net \PS_vivaz_state_2__I_0_79_Mux_0/n1 
+
+	Instance PS_vivaz_state_2__I_0_79_Mux_0_i1 
+
+	Net NS_vivaz_state_2__N_110[0] 
+
+	Instance mux_12_i1 
+
+Combinational loop found : 2
+
+	Net lcd_busy_i 
+
+	Instance lcd_busy_i_I_0_76 
+
+	Net lcd_busy_i_N_16 
+
+	Instance PS_vivaz_state_2__I_0_78_i7 
+
+	Net \PS_vivaz_state_2__I_0_78/n3 
+
+	Instance PS_vivaz_state_2__I_0_78_i3 
+
+	Net \PS_vivaz_state_2__I_0_78/n1 
+
+	Instance PS_vivaz_state_2__I_0_78_i1 
+
+	Net lcd_busy_i_N_17 
+
+	Instance lcd_busy_i_I_2 
+
+Combinational loop found : 3
+
+	Net lcd_wr_N_9 
+
+	Instance lcd_go_i_I_0 
+
+	Net NS_vivaz_state_2__N_35[0] 
+
+	Instance PS_vivaz_state_2__I_0_79_Mux_0_i7 
+
+	Net \PS_vivaz_state_2__I_0_79_Mux_0/n3 
+
+	Instance PS_vivaz_state_2__I_0_79_Mux_0_i3 
+
+	Net \PS_vivaz_state_2__I_0_79_Mux_0/n1 
+
+	Instance PS_vivaz_state_2__I_0_79_Mux_0_i1 
+
+	Net NS_vivaz_state_2__N_110[0] 
+
+	Instance mux_12_i1 
+
+	Net leds_c_0 
+
+	Instance lcd_busy_i_I_0 
+
+	Net lcd_busy_i_N_18 
+
+	Instance lcd_busy_i_I_0_77 
+
+	Net lcd_busy_i_N_16 
+
+	Instance PS_vivaz_state_2__I_0_78_i7 
+
+	Net \PS_vivaz_state_2__I_0_78/n3 
+
+	Instance PS_vivaz_state_2__I_0_78_i3 
+
+	Net \PS_vivaz_state_2__I_0_78/n1 
+
+	Instance PS_vivaz_state_2__I_0_78_i1 
+
+	Net lcd_busy_i_N_17 
+
+	Instance lcd_busy_i_I_2 
+
+Combinational loop found : 4
+
+	Net lcd_go_i 
+
+	Instance lcd_go_i_I_0_65 
+
+	Net \PS_lcd_state_3__I_0_73/n1 
+
+	Instance PS_lcd_state_3__I_0_73_i1 
+
+	Net lcd_go_i_N_4 
+
+	Instance lcd_go_i_I_1 
+
+	Net lcd_go_i_N_5 
+
+	Instance PS_lcd_state_3__I_0_73_i15 
+
+	Net \PS_lcd_state_3__I_0_73/n7 
+
+	Instance PS_lcd_state_3__I_0_73_i7 
+
+	Net \PS_lcd_state_3__I_0_73/n3 
+
+	Instance PS_lcd_state_3__I_0_73_i3 
+
+Combinational loop found : 5
+
+	Net waitcounter[23] 
+
+	Instance waitcounter_23__I_0_i24 
+
+	Net waitcounter_23__N_86[23] 
+
+	Instance PS_lcd_state_3__I_0_83_Mux_23_i15 
+
+	Net \PS_lcd_state_3__I_0_83_Mux_23/n7 
+
+	Instance PS_lcd_state_3__I_0_83_Mux_23_i7 
+
+	Net \PS_lcd_state_3__I_0_83_Mux_23/n3 
+
+	Instance PS_lcd_state_3__I_0_83_Mux_23_i3 
+
+	Net \PS_lcd_state_3__I_0_83_Mux_23/n1 
+
+	Instance PS_lcd_state_3__I_0_83_Mux_23_i1 
+
+Combinational loop found : 6
+
+	Net waitcounter[22] 
+
+	Instance waitcounter_23__I_0_i23 
+
+	Net waitcounter_23__N_86[22] 
+
+	Instance PS_lcd_state_3__I_0_83_Mux_22_i15 
+
+	Net \PS_lcd_state_3__I_0_83_Mux_22/n7 
+
+	Instance PS_lcd_state_3__I_0_83_Mux_22_i7 
+
+	Net \PS_lcd_state_3__I_0_83_Mux_22/n3 
+
+	Instance PS_lcd_state_3__I_0_83_Mux_22_i3 
+
+Combinational loop found : 7
+
+	Net waitcounter[21] 
+
+	Instance waitcounter_23__I_0_i22 
+
+	Net waitcounter_23__N_86[21] 
+
+	Instance PS_lcd_state_3__I_0_83_Mux_21_i15 
+
+	Net \PS_lcd_state_3__I_0_83_Mux_21/n7 
+
+	Instance PS_lcd_state_3__I_0_83_Mux_21_i7 
+
+Combinational loop found : 8
+
+	Net waitcounter[20] 
+
+	Instance waitcounter_23__I_0_i21 
+
+	Net waitcounter_23__N_86[20] 
+
+	Instance PS_lcd_state_3__I_0_83_Mux_20_i15 
+
+Combinational loop found : 9
+
+	Net waitcounter[19] 
+
+	Instance waitcounter_23__I_0_i20 
+
+Combinational loop found : 10
+
+	Net waitcounter[18] 
+
+	Instance waitcounter_23__I_0_i19 
+
+	Net waitcounter_23__N_86[18] 
+
+	Instance PS_lcd_state_3__I_0_83_Mux_18_i15 
+
+	Net \PS_lcd_state_3__I_0_83_Mux_18/n7 
+
+	Instance PS_lcd_state_3__I_0_83_Mux_18_i7 
+
+	Net \PS_lcd_state_3__I_0_83_Mux_18/n3 
+
+	Instance PS_lcd_state_3__I_0_83_Mux_18_i3 
+
+	Net \PS_lcd_state_3__I_0_83_Mux_18/n1 
+
+	Instance PS_lcd_state_3__I_0_83_Mux_18_i1 
+
+Combinational loop found : 11
+
+	Net waitcounter[17] 
+
+	Instance waitcounter_23__I_0_i18 
+
+	Net waitcounter_23__N_86[17] 
+
+	Instance PS_lcd_state_3__I_0_83_Mux_17_i15 
+
+	Net \PS_lcd_state_3__I_0_83_Mux_17/n7 
+
+	Instance PS_lcd_state_3__I_0_83_Mux_17_i7 
+
+	Net \PS_lcd_state_3__I_0_83_Mux_17/n3 
+
+	Instance PS_lcd_state_3__I_0_83_Mux_17_i3 
+
+Combinational loop found : 12
+
+	Net waitcounter[16] 
+
+	Instance waitcounter_23__I_0_i17 
+
+	Net waitcounter_23__N_86[16] 
+
+	Instance PS_lcd_state_3__I_0_83_Mux_16_i15 
+
+	Net \PS_lcd_state_3__I_0_83_Mux_16/n7 
+
+	Instance PS_lcd_state_3__I_0_83_Mux_16_i7 
+
+Combinational loop found : 13
+
+	Net waitcounter[15] 
+
+	Instance waitcounter_23__I_0_i16 
+
+	Net waitcounter_23__N_86[15] 
+
+	Instance PS_lcd_state_3__I_0_83_Mux_15_i15 
+
+Combinational loop found : 14
+
+	Net waitcounter[14] 
+
+	Instance waitcounter_23__I_0_i15 
+
+Combinational loop found : 15
+
+	Net waitcounter[13] 
+
+	Instance waitcounter_23__I_0_i14 
+
+	Net waitcounter_23__N_86[13] 
+
+	Instance PS_lcd_state_3__I_0_83_Mux_13_i15 
+
+	Net \PS_lcd_state_3__I_0_83_Mux_13/n7 
+
+	Instance PS_lcd_state_3__I_0_83_Mux_13_i7 
+
+	Net \PS_lcd_state_3__I_0_83_Mux_13/n3 
+
+	Instance PS_lcd_state_3__I_0_83_Mux_13_i3 
+
+	Net \PS_lcd_state_3__I_0_83_Mux_13/n1 
+
+	Instance PS_lcd_state_3__I_0_83_Mux_13_i1 
+
+Combinational loop found : 16
+
+	Net waitcounter[12] 
+
+	Instance waitcounter_23__I_0_i13 
+
+	Net waitcounter_23__N_86[12] 
+
+	Instance PS_lcd_state_3__I_0_83_Mux_12_i15 
+
+	Net \PS_lcd_state_3__I_0_83_Mux_12/n7 
+
+	Instance PS_lcd_state_3__I_0_83_Mux_12_i7 
+
+	Net \PS_lcd_state_3__I_0_83_Mux_12/n3 
+
+	Instance PS_lcd_state_3__I_0_83_Mux_12_i3 
+
+Combinational loop found : 17
+
+	Net waitcounter[11] 
+
+	Instance waitcounter_23__I_0_i12 
+
+	Net waitcounter_23__N_86[11] 
+
+	Instance PS_lcd_state_3__I_0_83_Mux_11_i15 
+
+	Net \PS_lcd_state_3__I_0_83_Mux_11/n7 
+
+	Instance PS_lcd_state_3__I_0_83_Mux_11_i7 
+
+Combinational loop found : 18
+
+	Net waitcounter[10] 
+
+	Instance waitcounter_23__I_0_i11 
+
+	Net waitcounter_23__N_86[10] 
+
+	Instance PS_lcd_state_3__I_0_83_Mux_10_i15 
+
+Combinational loop found : 19
+
+	Net waitcounter[9] 
+
+	Instance waitcounter_23__I_0_i10 
+
+Combinational loop found : 20
+
+	Net waitcounter[8] 
+
+	Instance waitcounter_23__I_0_i9 
+
+	Net waitcounter_23__N_86[8] 
+
+	Instance PS_lcd_state_3__I_0_83_Mux_8_i15 
+
+	Net \PS_lcd_state_3__I_0_83_Mux_8/n7 
+
+	Instance PS_lcd_state_3__I_0_83_Mux_8_i7 
+
+	Net \PS_lcd_state_3__I_0_83_Mux_8/n3 
+
+	Instance PS_lcd_state_3__I_0_83_Mux_8_i3 
+
+	Net \PS_lcd_state_3__I_0_83_Mux_8/n1 
+
+	Instance PS_lcd_state_3__I_0_83_Mux_8_i1 
+
+Combinational loop found : 21
+
+	Net waitcounter[7] 
+
+	Instance waitcounter_23__I_0_i8 
+
+	Net waitcounter_23__N_86[7] 
+
+	Instance PS_lcd_state_3__I_0_83_Mux_7_i15 
+
+	Net \PS_lcd_state_3__I_0_83_Mux_7/n7 
+
+	Instance PS_lcd_state_3__I_0_83_Mux_7_i7 
+
+	Net \PS_lcd_state_3__I_0_83_Mux_7/n3 
+
+	Instance PS_lcd_state_3__I_0_83_Mux_7_i3 
+
+Combinational loop found : 22
+
+	Net waitcounter[6] 
+
+	Instance waitcounter_23__I_0_i7 
+
+	Net waitcounter_23__N_86[6] 
+
+	Instance PS_lcd_state_3__I_0_83_Mux_6_i15 
+
+	Net \PS_lcd_state_3__I_0_83_Mux_6/n7 
+
+	Instance PS_lcd_state_3__I_0_83_Mux_6_i7 
+
+Combinational loop found : 23
+
+	Net waitcounter[5] 
+
+	Instance waitcounter_23__I_0_i6 
+
+	Net waitcounter_23__N_86[5] 
+
+	Instance PS_lcd_state_3__I_0_83_Mux_5_i15 
+
+Combinational loop found : 24
+
+	Net waitcounter[4] 
+
+	Instance waitcounter_23__I_0_i5 
+
+Combinational loop found : 25
+
+	Net waitcounter[3] 
+
+	Instance waitcounter_23__I_0_i4 
+
+	Net waitcounter_23__N_86[3] 
+
+	Instance PS_lcd_state_3__I_0_83_Mux_3_i15 
+
+	Net \PS_lcd_state_3__I_0_83_Mux_3/n7 
+
+	Instance PS_lcd_state_3__I_0_83_Mux_3_i7 
+
+	Net \PS_lcd_state_3__I_0_83_Mux_3/n3 
+
+	Instance PS_lcd_state_3__I_0_83_Mux_3_i3 
+
+	Net \PS_lcd_state_3__I_0_83_Mux_3/n1 
+
+	Instance PS_lcd_state_3__I_0_83_Mux_3_i1 
+
+Combinational loop found : 26
+
+	Net waitcounter[2] 
+
+	Instance waitcounter_23__I_0_i3 
+
+	Net waitcounter_23__N_86[2] 
+
+	Instance PS_lcd_state_3__I_0_83_Mux_2_i15 
+
+	Net \PS_lcd_state_3__I_0_83_Mux_2/n7 
+
+	Instance PS_lcd_state_3__I_0_83_Mux_2_i7 
+
+	Net \PS_lcd_state_3__I_0_83_Mux_2/n3 
+
+	Instance PS_lcd_state_3__I_0_83_Mux_2_i3 
+
+Combinational loop found : 27
+
+	Net waitcounter[1] 
+
+	Instance waitcounter_23__I_0_i2 
+
+	Net waitcounter_23__N_86[1] 
+
+	Instance PS_lcd_state_3__I_0_83_Mux_1_i15 
+
+	Net \PS_lcd_state_3__I_0_83_Mux_1/n7 
+
+	Instance PS_lcd_state_3__I_0_83_Mux_1_i7 
+
+Combinational loop found : 28
+
+	Net waitcounter[0] 
+
+	Instance waitcounter_23__I_0_i1 
+
+	Net waitcounter_23__N_86[0] 
+
+	Instance PS_lcd_state_3__I_0_83_Mux_0_i15 
+
+Combinational loop found : 29
+
+	Net lcd_rs_c 
+
+	Instance lcd_rs_I_0_71 
+
+	Net lcd_rs_N_11 
+
+	Instance PS_vivaz_state_2__I_0_75_i7 
+
+	Net \PS_vivaz_state_2__I_0_75/n3 
+
+	Instance PS_vivaz_state_2__I_0_75_i3 
+
+	Net \PS_vivaz_state_2__I_0_75/n1 
+
+	Instance PS_vivaz_state_2__I_0_75_i1 
+
+	Net lcd_rs_N_12 
+
+	Instance lcd_rs_I_0_72 
+
+Combinational loop found : 30
+
+	Net lcd_dataTrue_commandFalse_i 
+
+	Instance lcd_dataTrue_commandFalse_i_I_0 
+
+	Net lcd_rs_N_11 
+
+	Instance PS_vivaz_state_2__I_0_75_i7 
+
+	Net \PS_vivaz_state_2__I_0_75/n3 
+
+	Instance PS_vivaz_state_2__I_0_75_i3 
+
+	Net \PS_vivaz_state_2__I_0_75/n1 
+
+	Instance PS_vivaz_state_2__I_0_75_i1 
+
+	Net lcd_rs_N_12 
+
+	Instance lcd_rs_I_0_72 
+
+	Net lcd_dataTrue_commandFalse_i_N_146 
+
+	Instance PS_lcd_state_3__I_0_i15 
+
+	Net \PS_lcd_state_3__I_0/n7 
+
+	Instance PS_lcd_state_3__I_0_i7 
+
+Combinational loop found : 31
+
+	Net lcd_reset_c 
+
+	Instance lcd_reset_I_0_74 
+
+	Net lcd_reset_N_14 
+
+	Instance PS_lcd_state_3__I_0_82_i15 
+
+	Net \PS_lcd_state_3__I_0_82/n7 
+
+	Instance PS_lcd_state_3__I_0_82_i7 
+
+	Net \PS_lcd_state_3__I_0_82/n3 
+
+	Instance PS_lcd_state_3__I_0_82_i3 
+
+Combinational loop found : 32
+
+	Net lcd_wr_c 
+
+	Instance lcd_wr_I_0_67 
+
+	Net lcd_wr_N_7 
+
+	Instance PS_vivaz_state_2__I_0_70_i7 
+
+	Net \PS_vivaz_state_2__I_0_70/n3 
+
+	Instance PS_vivaz_state_2__I_0_70_i3 
+
+	Net \PS_vivaz_state_2__I_0_70/n1 
+
+	Instance PS_vivaz_state_2__I_0_70_i1 
+
+	Net lcd_wr_N_8 
+
+	Instance lcd_wr_I_0_69 
+
+Combinational loop found : 33
+
+	Net lcd_LCDBus_c_0 
+
+	Instance mux_706_i1 
+
+	Net n1304 
+
+	Instance mux_704_i1 
+
+Combinational loop found : 34
+
+	Net lcd_payload_i[0] 
+
+	Instance mux_690_i1 
+
+	Net n1304 
+
+	Instance mux_704_i1 
+
+	Net n1237 
+
+	Instance mux_685_i1 
+
+Combinational loop found : 35
+
+	Net lcd_LCDBus_c_1 
+
+	Instance mux_706_i2 
+
+	Net n1303 
+
+	Instance mux_704_i2 
+
+Combinational loop found : 36
+
+	Net lcd_payload_i[1] 
+
+	Instance mux_690_i2 
+
+	Net n1303 
+
+	Instance mux_704_i2 
+
+	Net n1236 
+
+	Instance mux_685_i2 
+
+Combinational loop found : 37
+
+	Net lcd_LCDBus_c_2 
+
+	Instance mux_706_i3 
+
+	Net n1302 
+
+	Instance mux_704_i3 
+
+Combinational loop found : 38
+
+	Net lcd_payload_i[2] 
+
+	Instance mux_690_i3 
+
+	Net n1302 
+
+	Instance mux_704_i3 
+
+	Net n1235 
+
+	Instance mux_685_i3 
+
+Combinational loop found : 39
+
+	Net lcd_LCDBus_c_3 
+
+	Instance mux_706_i4 
+
+	Net n1301 
+
+	Instance mux_704_i4 
+
+Combinational loop found : 40
+
+	Net lcd_payload_i[3] 
+
+	Instance mux_690_i4 
+
+	Net n1301 
+
+	Instance mux_704_i4 
+
+	Net n1234 
+
+	Instance mux_685_i4 
+
+Combinational loop found : 41
+
+	Net lcd_LCDBus_c_4 
+
+	Instance mux_706_i5 
+
+	Net n1300 
+
+	Instance mux_704_i5 
+
+Combinational loop found : 42
+
+	Net lcd_payload_i[4] 
+
+	Instance mux_690_i5 
+
+	Net n1300 
+
+	Instance mux_704_i5 
+
+	Net n1233 
+
+	Instance mux_685_i5 
+
+Combinational loop found : 43
+
+	Net lcd_LCDBus_c_5 
+
+	Instance mux_706_i6 
+
+	Net n1299 
+
+	Instance mux_704_i6 
+
+Combinational loop found : 44
+
+	Net lcd_payload_i[5] 
+
+	Instance mux_690_i6 
+
+	Net n1299 
+
+	Instance mux_704_i6 
+
+	Net n1232 
+
+	Instance mux_685_i6 
+
+Combinational loop found : 45
+
+	Net lcd_LCDBus_c_6 
+
+	Instance mux_706_i7 
+
+	Net n1298 
+
+	Instance mux_704_i7 
+
+Combinational loop found : 46
+
+	Net lcd_payload_i[6] 
+
+	Instance mux_690_i7 
+
+	Net n1298 
+
+	Instance mux_704_i7 
+
+	Net n1231 
+
+	Instance mux_685_i7 
+
+Combinational loop found : 47
+
+	Net lcd_LCDBus_c_7 
+
+	Instance mux_706_i8 
+
+	Net n1297 
+
+	Instance mux_704_i8 
+
+Combinational loop found : 48
+
+	Net lcd_payload_i[7] 
+
+	Instance mux_690_i8 
+
+	Net n1297 
+
+	Instance mux_704_i8 
+
+	Net n1230 
+
+	Instance mux_685_i8 
+
+Combinational loop found : 49
+
+	Net lcd_LCDBus_c_8 
+
+	Instance mux_706_i9 
+
+	Net n1296 
+
+	Instance mux_704_i9 
+
+Combinational loop found : 50
+
+	Net lcd_payload_i[8] 
+
+	Instance mux_690_i9 
+
+	Net n1296 
+
+	Instance mux_704_i9 
+
+	Net n1229 
+
+	Instance mux_685_i9 
+
+Combinational loop found : 51
+
+	Net lcd_LCDBus_c_9 
+
+	Instance mux_706_i10 
+
+	Net n1295 
+
+	Instance mux_704_i10 
+
+Combinational loop found : 52
+
+	Net lcd_payload_i[9] 
+
+	Instance mux_690_i10 
+
+	Net n1295 
+
+	Instance mux_704_i10 
+
+	Net n1228 
+
+	Instance mux_685_i10 
+
+Combinational loop found : 53
+
+	Net lcd_LCDBus_c_10 
+
+	Instance mux_706_i11 
+
+	Net n1294 
+
+	Instance mux_704_i11 
+
+Combinational loop found : 54
+
+	Net lcd_payload_i[10] 
+
+	Instance mux_690_i11 
+
+	Net n1294 
+
+	Instance mux_704_i11 
+
+	Net n1227 
+
+	Instance mux_685_i11 
+
+Combinational loop found : 55
+
+	Net lcd_LCDBus_c_11 
+
+	Instance mux_706_i12 
+
+	Net n1293 
+
+	Instance mux_704_i12 
+
+Combinational loop found : 56
+
+	Net lcd_payload_i[11] 
+
+	Instance mux_690_i12 
+
+	Net n1293 
+
+	Instance mux_704_i12 
+
+	Net n1226 
+
+	Instance mux_685_i12 
+
+Combinational loop found : 57
+
+	Net lcd_LCDBus_c_12 
+
+	Instance mux_706_i13 
+
+	Net n1292 
+
+	Instance mux_704_i13 
+
+Combinational loop found : 58
+
+	Net lcd_payload_i[12] 
+
+	Instance mux_690_i13 
+
+	Net n1292 
+
+	Instance mux_704_i13 
+
+	Net n1225 
+
+	Instance mux_685_i13 
+
+Combinational loop found : 59
+
+	Net lcd_LCDBus_c_13 
+
+	Instance mux_706_i14 
+
+	Net n1291 
+
+	Instance mux_704_i14 
+
+Combinational loop found : 60
+
+	Net lcd_payload_i[13] 
+
+	Instance mux_690_i14 
+
+	Net n1291 
+
+	Instance mux_704_i14 
+
+	Net n1224 
+
+	Instance mux_685_i14 
+
+Combinational loop found : 61
+
+	Net lcd_LCDBus_c_14 
+
+	Instance mux_706_i15 
+
+	Net n1290 
+
+	Instance mux_704_i15 
+
+Combinational loop found : 62
+
+	Net lcd_payload_i[14] 
+
+	Instance mux_690_i15 
+
+	Net n1290 
+
+	Instance mux_704_i15 
+
+	Net n1223 
+
+	Instance mux_685_i15 
+
+Combinational loop found : 63
+
+	Net lcd_LCDBus_c_15 
+
+	Instance mux_706_i16 
+
+	Net n1289 
+
+	Instance mux_704_i16 
+
+Combinational loop found : 64
+
+	Net lcd_payload_i[15] 
+
+	Instance mux_690_i16 
+
+	Net n1289 
+
+	Instance mux_704_i16 
+
+	Net n1222 
+
+	Instance mux_685_i16 
+
+Combinational loop found : 65
+
+	Net NS_vivaz_state[2] 
+
+	Instance NS_vivaz_state_2__I_0_i3 
+
+	Net NS_vivaz_state_2__N_35[2] 
+
+	Instance PS_vivaz_state_2__I_0_79_Mux_2_i7 
+
+	Net \PS_vivaz_state_2__I_0_79_Mux_2/n3 
+
+	Instance PS_vivaz_state_2__I_0_79_Mux_2_i3 
+
+	Net \PS_vivaz_state_2__I_0_79_Mux_2/n1 
+
+	Instance PS_vivaz_state_2__I_0_79_Mux_2_i1 
+
+	Net NS_vivaz_state_2__N_110[2] 
+
+	Instance mux_12_i3 
+
+Combinational loop found : 66
+
+	Net NS_vivaz_state[1] 
+
+	Instance NS_vivaz_state_2__I_0_i2 
+
+	Net NS_vivaz_state_2__N_35[1] 
+
+	Instance PS_vivaz_state_2__I_0_79_Mux_1_i7 
+
+	Net \PS_vivaz_state_2__I_0_79_Mux_1/n3 
+
+	Instance PS_vivaz_state_2__I_0_79_Mux_1_i3 
+
+	Net \PS_vivaz_state_2__I_0_79_Mux_1/n1 
+
+	Instance PS_vivaz_state_2__I_0_79_Mux_1_i1 
+
+	Net NS_vivaz_state_2__N_110[1] 
+
+	Instance mux_12_i2 
+
+Combinational loop found : 67
+
+	Net NS_lcd_state[0] 
+
+	Instance NS_lcd_state_3__I_0_81_i1 
+
+	Net NS_lcd_state_3__N_54[0] 
+
+	Instance PS_lcd_state_3__I_0_84_Mux_0_i15 
+
+	Net \PS_lcd_state_3__I_0_84_Mux_0/n14 
+
+	Instance PS_lcd_state_3__I_0_84_Mux_0_i14 
+
+	Net \PS_lcd_state_3__I_0_84_Mux_0/n10 
+
+	Instance PS_lcd_state_3__I_0_84_Mux_0_i10 
+
+	Net \PS_lcd_state_3__I_0_84_Mux_0/n8 
+
+	Instance PS_lcd_state_3__I_0_84_Mux_0_i8 
+
+	Net NS_lcd_state_3__N_142[0] 
+
+	Instance mux_34_i1 
+
+Combinational loop found : 68
+
+	Net NS_lcd_state[1] 
+
+	Instance NS_lcd_state_3__I_0_81_i2 
+
+	Net NS_lcd_state_3__N_54[1] 
+
+	Instance PS_lcd_state_3__I_0_84_Mux_1_i15 
+
+	Net \PS_lcd_state_3__I_0_84_Mux_1/n14 
+
+	Instance PS_lcd_state_3__I_0_84_Mux_1_i14 
+
+	Net \PS_lcd_state_3__I_0_84_Mux_1/n10 
+
+	Instance PS_lcd_state_3__I_0_84_Mux_1_i10 
+
+	Net \PS_lcd_state_3__I_0_84_Mux_1/n8 
+
+	Instance PS_lcd_state_3__I_0_84_Mux_1_i8 
+
+	Net NS_lcd_state_3__N_142[1] 
+
+	Instance mux_34_i2 
+
+Combinational loop found : 69
+
+	Net NS_lcd_state[2] 
+
+	Instance NS_lcd_state_3__I_0_81_i3 
+
+	Net NS_lcd_state_3__N_54[2] 
+
+	Instance PS_lcd_state_3__I_0_84_Mux_2_i15 
+
+	Net \PS_lcd_state_3__I_0_84_Mux_2/n14 
+
+	Instance PS_lcd_state_3__I_0_84_Mux_2_i14 
+
+	Net \PS_lcd_state_3__I_0_84_Mux_2/n10 
+
+	Instance PS_lcd_state_3__I_0_84_Mux_2_i10 
+
+	Net \PS_lcd_state_3__I_0_84_Mux_2/n8 
+
+	Instance PS_lcd_state_3__I_0_84_Mux_2_i8 
+
+	Net NS_lcd_state_3__N_142[2] 
+
+	Instance mux_34_i3 
+
+Combinational loop found : 70
+
+	Net NS_lcd_state[3] 
+
+	Instance NS_lcd_state_3__I_0_81_i4 
+
+	Net NS_lcd_state_3__N_54[3] 
+
+	Instance PS_lcd_state_3__I_0_84_Mux_3_i15 
+
+	Net \PS_lcd_state_3__I_0_84_Mux_3/n14 
+
+	Instance PS_lcd_state_3__I_0_84_Mux_3_i14 
+
+	Net \PS_lcd_state_3__I_0_84_Mux_3/n10 
+
+	Instance PS_lcd_state_3__I_0_84_Mux_3_i10 
+
+	Net \PS_lcd_state_3__I_0_84_Mux_3/n8 
+
+	Instance PS_lcd_state_3__I_0_84_Mux_3_i8 
+
+	Net NS_lcd_state_3__N_142[3] 
+
+	Instance mux_34_i4 
+
+GSR instance connected to net n1281.
+WARNING - synthesis: Initial value found on instance PS_vivaz_state_i0 will be ignored.
+WARNING - synthesis: Initial value found on instance PS_lcd_state_i0_i0 will be ignored.
+Duplicate register/latch removal. i2827 is a one-to-one match with i2824.
+Duplicate register/latch removal. i2836 is a one-to-one match with i2812.
+Duplicate register/latch removal. i2800 is a one-to-one match with i2797.
+Duplicate register/latch removal. i2818 is a one-to-one match with i2800.
+Duplicate register/latch removal. i2815 is a one-to-one match with i2833.
+Duplicate register/latch removal. i2848 is a one-to-one match with i2836.
+Duplicate register/latch removal. i2842 is a one-to-one match with i2815.
+Duplicate register/latch removal. i2806 is a one-to-one match with i2848.
+Duplicate register/latch removal. i2791 is a one-to-one match with i2767.
+Duplicate register/latch removal. i2785 is a one-to-one match with i2791.
+Duplicate register/latch removal. i2782 is a one-to-one match with i2785.
+Duplicate register/latch removal. i2776 is a one-to-one match with i2806.
+Duplicate register/latch removal. i2839 is a one-to-one match with i2845.
+Duplicate register/latch removal. i2821 is a one-to-one match with i2839.
 Applying 1.000000 MHz constraint to all clocks
 
 WARNING - synthesis: No user .sdc file.
@@ -136,16 +1281,22 @@ All blocks are expanded and NGD expansion is successful.
 Writing NGD file SonyVivazLCDDriver_impl1.ngd.
 
 ################### Begin Area Report (main)######################
-Number of register bits => 54 of 7209 (0 % )
-CCU2D => 17
-FD1P3AX => 28
+Number of register bits => 60 of 7209 (0 % )
+CCU2D => 26
+FD1P3AX => 3
+FD1P3AY => 1
+FD1S1A => 5
+FD1S1I => 22
+FD1S1J => 2
 FD1S3AX => 2
 FD1S3AY => 1
-FD1S3IX => 23
+FD1S3IX => 24
 GSR => 1
-LUT4 => 26
+IB => 1
+LUT4 => 88
 OB => 27
 OSCH => 1
+PFUMX => 5
 ################### End Area Report ##################
 
 ################### Begin BlackBox Report ######################
@@ -154,30 +1305,35 @@ TSALL => 1
 
 ################### Begin Clock Report ######################
 Clock Nets
-Number of Clocks: 1
-  Net : clk133, loads : 54
+Number of Clocks: 12
+  Net : clk133, loads : 31
+  Net : lcd_dataTrue_commandFalse_i_N_146_derived_3, loads : 16
+  Net : synch_rst_c_derived_17, loads : 14
+  Net : PS_lcd_state_1_derived_3, loads : 3
+  Net : PS_lcd_state_1_derived_5, loads : 2
+  Net : lcd_busy_i_derived_1, loads : 1
+  Net : lcd_busy_i_derived_2, loads : 1
+  Net : lcd_dataTrue_commandFalse_i_N_146_derived_4, loads : 1
+  Net : synch_rst_c_derived_15, loads : 1
+  Net : synch_rst_c_derived_4, loads : 1
+  Net : synch_rst_c_derived_9, loads : 1
+  Net : PS_vivaz_state_0_derived_1, loads : 1
 Clock Enable Nets
-Number of Clock Enables: 7
-Top 7 highest fanout Clock Enables:
-  Net : clk133_enable_20, loads : 32
-  Net : inst_lcd_sender/clk133_enable_13, loads : 8
-  Net : clk133_enable_27, loads : 8
-  Net : inst_lcd_sender/clk133_enable_2, loads : 1
-  Net : inst_lcd_sender/clk133_enable_3, loads : 1
-  Net : count_22__N_71, loads : 1
-  Net : inst_lcd_sender/clk133_enable_4, loads : 1
+Number of Clock Enables: 1
+Top 1 highest fanout Clock Enables:
+  Net : clk133_enable_4, loads : 28
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : clk133_enable_20, loads : 32
-  Net : inst_lcd_sender/wr_N_129, loads : 9
-  Net : clk133_enable_27, loads : 8
-  Net : inst_lcd_sender/clk133_enable_13, loads : 8
-  Net : inst_lcd_sender/state_i_0, loads : 7
-  Net : inst_lcd_sender/state_i_1, loads : 7
-  Net : lcd_sender_go_i, loads : 3
-  Net : count_22, loads : 3
-  Net : count_21, loads : 3
-  Net : count_20, loads : 3
+  Net : synch_rst_c, loads : 57
+  Net : PS_lcd_state_0, loads : 31
+  Net : clk133_enable_4, loads : 28
+  Net : PS_lcd_state_2, loads : 27
+  Net : PS_lcd_state_1, loads : 27
+  Net : lcd_dataTrue_commandFalse_i_N_146, loads : 22
+  Net : lcd_busy_i, loads : 13
+  Net : PS_vivaz_state_2, loads : 11
+  Net : PS_vivaz_state_1, loads : 10
+  Net : PS_vivaz_state_0, loads : 9
 ################### End Clock Report ##################
 
 <A name="lse_trs"></A><B><U><big>Timing Report Summary</big></U></B>
@@ -187,7 +1343,19 @@ Constraint                              |   Constraint|       Actual|Levels
 --------------------------------------------------------------------------------
                                         |             |             |
 create_clock -period 1000.000000 -name  |             |             |
-clk0 [get_nets clk133]                  |    1.000 MHz|   93.809 MHz|     7  
+clk3 [get_nets synch_rst_c_derived_9]   |            -|            -|     0  
+                                        |             |             |
+create_clock -period 1000.000000 -name  |             |             |
+clk2 [get_nets                          |             |             |
+lcd_dataTrue_commandFalse_i_N_146_derive|             |             |
+d_3]                                    |    1.000 MHz|  346.741 MHz|     2  
+                                        |             |             |
+create_clock -period 1000.000000 -name  |             |             |
+clk1 [get_nets                          |             |             |
+PS_lcd_state[1]_derived_3]              |            -|            -|     0  
+                                        |             |             |
+create_clock -period 1000.000000 -name  |             |             |
+clk0 [get_nets clk133]                  |    1.000 MHz|   94.029 MHz|    16  
                                         |             |             |
 --------------------------------------------------------------------------------
 
@@ -195,10 +1363,10 @@ clk0 [get_nets clk133]                  |    1.000 MHz|   93.809 MHz|     7
 All constraints were met.
 
 
-Peak Memory Usage: 73.566  MB
+Peak Memory Usage: 77.734  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 1.310  secs
+Elapsed CPU time for LSE flow : 1.139  secs
 --------------------------------------------------------------
 
 

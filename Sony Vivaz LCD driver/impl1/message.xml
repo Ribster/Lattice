@@ -30,127 +30,248 @@
         <Message>
             <ID>35921012</ID>
             <Severity>Info</Severity>
-            <Dynamic>z:/github/lattice/sony vivaz lcd driver/main.vhd(9): </Dynamic>
+            <Dynamic>z:/github/lattice/sony vivaz lcd driver/main.vhd(10): </Dynamic>
             <Dynamic>main</Dynamic>
             <Navigation>z:/github/lattice/sony vivaz lcd driver/main.vhd</Navigation>
-            <Navigation>9</Navigation>
+            <Navigation>10</Navigation>
         </Message>
         <Message>
             <ID>35921010</ID>
             <Severity>Info</Severity>
+            <Dynamic>z:/github/lattice/sony vivaz lcd driver/main.vhd(22): </Dynamic>
+            <Dynamic>behavioral</Dynamic>
+            <Navigation>z:/github/lattice/sony vivaz lcd driver/main.vhd</Navigation>
+            <Navigation>22</Navigation>
+        </Message>
+        <Message>
+            <ID>35921205</ID>
+            <Severity>Warning</Severity>
             <Dynamic>z:/github/lattice/sony vivaz lcd driver/main.vhd(20): </Dynamic>
+            <Dynamic>main</Dynamic>
             <Dynamic>behavioral</Dynamic>
             <Navigation>z:/github/lattice/sony vivaz lcd driver/main.vhd</Navigation>
             <Navigation>20</Navigation>
         </Message>
         <Message>
-            <ID>35929000</ID>
-            <Severity>Info</Severity>
-            <Dynamic>z:/github/lattice/sony vivaz lcd driver/main.vhd(101): </Dynamic>
-            <Dynamic>size</Dynamic>
-            <Navigation>z:/github/lattice/sony vivaz lcd driver/main.vhd</Navigation>
-            <Navigation>101</Navigation>
-        </Message>
-        <Message>
-            <ID>35921259</ID>
-            <Severity>Info</Severity>
-            <Dynamic>C:/lscc/diamond/3.7_x64/ispfpga/vhdl_packages/numeric_std.vhd(712): </Dynamic>
-            <Dynamic>size</Dynamic>
-            <Navigation>C:/lscc/diamond/3.7_x64/ispfpga/vhdl_packages/numeric_std.vhd</Navigation>
-            <Navigation>712</Navigation>
-        </Message>
-        <Message>
-            <ID>35921012</ID>
-            <Severity>Info</Severity>
-            <Dynamic>z:/github/lattice/sony vivaz lcd driver/lcd_sender.vhd(6): </Dynamic>
-            <Dynamic>lcd_sender</Dynamic>
-            <Navigation>z:/github/lattice/sony vivaz lcd driver/lcd_sender.vhd</Navigation>
-            <Navigation>6</Navigation>
-        </Message>
-        <Message>
-            <ID>35921010</ID>
-            <Severity>Info</Severity>
-            <Dynamic>z:/github/lattice/sony vivaz lcd driver/lcd_sender.vhd(26): </Dynamic>
-            <Dynamic>behavioral</Dynamic>
-            <Navigation>z:/github/lattice/sony vivaz lcd driver/lcd_sender.vhd</Navigation>
-            <Navigation>26</Navigation>
-        </Message>
-        <Message>
-            <ID>35921205</ID>
+            <ID>35001771</ID>
             <Severity>Warning</Severity>
-            <Dynamic>z:/github/lattice/sony vivaz lcd driver/main.vhd(18): </Dynamic>
-            <Dynamic>main</Dynamic>
-            <Dynamic>behavioral</Dynamic>
-            <Navigation>z:/github/lattice/sony vivaz lcd driver/main.vhd</Navigation>
-            <Navigation>18</Navigation>
+            <Dynamic>NS_vivaz_state[2]</Dynamic>
         </Message>
         <Message>
-            <ID>35001747</ID>
+            <ID>35001771</ID>
             <Severity>Warning</Severity>
-            <Dynamic>0</Dynamic>
-            <Dynamic>lcd_sender_payload_i</Dynamic>
+            <Dynamic>NS_vivaz_state[1]</Dynamic>
         </Message>
         <Message>
-            <ID>35001747</ID>
+            <ID>35001771</ID>
             <Severity>Warning</Severity>
-            <Dynamic>1</Dynamic>
-            <Dynamic>lcd_sender_payload_i</Dynamic>
+            <Dynamic>NS_vivaz_state[0]</Dynamic>
         </Message>
         <Message>
-            <ID>35001747</ID>
+            <ID>35001771</ID>
             <Severity>Warning</Severity>
-            <Dynamic>2</Dynamic>
-            <Dynamic>lcd_sender_payload_i</Dynamic>
+            <Dynamic>lcd_go_i</Dynamic>
         </Message>
         <Message>
-            <ID>35001747</ID>
+            <ID>35001771</ID>
             <Severity>Warning</Severity>
-            <Dynamic>3</Dynamic>
-            <Dynamic>lcd_sender_payload_i</Dynamic>
+            <Dynamic>lcd_busy_i</Dynamic>
         </Message>
         <Message>
-            <ID>35001747</ID>
+            <ID>35001771</ID>
             <Severity>Warning</Severity>
-            <Dynamic>4</Dynamic>
-            <Dynamic>lcd_sender_payload_i</Dynamic>
+            <Dynamic>lcd_dataTrue_commandFalse_i</Dynamic>
         </Message>
         <Message>
-            <ID>35001747</ID>
+            <ID>35001771</ID>
             <Severity>Warning</Severity>
-            <Dynamic>5</Dynamic>
-            <Dynamic>lcd_sender_payload_i</Dynamic>
+            <Dynamic>NS_lcd_state[3]</Dynamic>
         </Message>
         <Message>
-            <ID>35001747</ID>
+            <ID>35001771</ID>
             <Severity>Warning</Severity>
-            <Dynamic>6</Dynamic>
-            <Dynamic>lcd_sender_payload_i</Dynamic>
+            <Dynamic>NS_lcd_state[2]</Dynamic>
         </Message>
         <Message>
-            <ID>35001747</ID>
+            <ID>35001771</ID>
             <Severity>Warning</Severity>
-            <Dynamic>7</Dynamic>
-            <Dynamic>lcd_sender_payload_i</Dynamic>
+            <Dynamic>NS_lcd_state[1]</Dynamic>
         </Message>
         <Message>
-            <ID>35935013</ID>
+            <ID>35001771</ID>
             <Severity>Warning</Severity>
-            <Dynamic>z:/github/lattice/sony vivaz lcd driver/main.vhd(99): </Dynamic>
-            <Dynamic>lcd_sender_resetin_i_30</Dynamic>
-            <Navigation>z:/github/lattice/sony vivaz lcd driver/main.vhd</Navigation>
-            <Navigation>99</Navigation>
+            <Dynamic>NS_lcd_state[0]</Dynamic>
         </Message>
         <Message>
-            <ID>35935013</ID>
+            <ID>35001771</ID>
             <Severity>Warning</Severity>
-            <Dynamic>z:/github/lattice/sony vivaz lcd driver/lcd_sender.vhd(90): </Dynamic>
-            <Dynamic>\inst_lcd_sender/LCDBus_i_i16</Dynamic>
-            <Navigation>z:/github/lattice/sony vivaz lcd driver/lcd_sender.vhd</Navigation>
-            <Navigation>90</Navigation>
+            <Dynamic>waitcounter[23]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>waitcounter[22]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>waitcounter[21]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>waitcounter[20]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>waitcounter[19]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>waitcounter[18]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>waitcounter[17]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>waitcounter[16]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>waitcounter[15]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>waitcounter[14]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>waitcounter[13]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>waitcounter[12]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>waitcounter[11]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>waitcounter[10]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>waitcounter[9]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>waitcounter[8]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>waitcounter[7]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>waitcounter[6]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>waitcounter[5]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>waitcounter[4]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>waitcounter[3]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>waitcounter[2]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>waitcounter[1]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>waitcounter[0]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001779</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>PS_vivaz_state_i0</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001779</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>PS_lcd_state_i0_i0</Dynamic>
         </Message>
         <Message>
             <ID>35001611</ID>
             <Severity>Warning</Severity>
+        </Message>
+    </Task>
+    <Task name="PAR">
+        <Message>
+            <ID>61061008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>synch_rst_c</Dynamic>
+            <Dynamic>Secondary</Dynamic>
+            <Dynamic>synch_rst</Dynamic>
+            <Dynamic>69</Dynamic>
+            <Dynamic>Secondary</Dynamic>
+        </Message>
+        <Message>
+            <ID>66011008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>
+   Signal=lcd_dataTrue_commandFalse_i_N_146_derived_3 loads=15 clock_loads=2
+   Signal=PS_lcd_state[1]_derived_3 loads=2 clock_loads=2
+   Signal=synch_rst_c_derived_4 loads=1 clock_loads=1
+   Signal=lcd_busy_i_derived_1 loads=1 clock_loads=1
+   Signal=synch_rst_c_derived_9 loads=1 clock_loads=1
+   Signal=PS_lcd_state_1_der   ....   _commandFalse_i_N_146_derived_4 loads=1 clock_loads=1
+   Signal=lcd_busy_i_derived_2 loads=1 clock_loads=1
+   Signal=PS_vivaz_state_0_derived_1 loads=1 clock_loads=1</Dynamic>
+        </Message>
+        <Message>
+            <ID>66011008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>
+   Signal=lcd_dataTrue_commandFalse_i_N_146_derived_3 loads=15 clock_loads=2
+   Signal=PS_lcd_state[1]_derived_3 loads=2 clock_loads=2
+   Signal=synch_rst_c_derived_4 loads=1 clock_loads=1
+   Signal=lcd_busy_i_derived_1 loads=1 clock_loads=1
+   Signal=synch_rst_c_derived_9 loads=1 clock_loads=1
+   Signal=PS_lcd_state_1_der   ....   _commandFalse_i_N_146_derived_4 loads=1 clock_loads=1
+   Signal=lcd_busy_i_derived_2 loads=1 clock_loads=1
+   Signal=PS_vivaz_state_0_derived_1 loads=1 clock_loads=1</Dynamic>
         </Message>
     </Task>
 </BaliMessageLog>

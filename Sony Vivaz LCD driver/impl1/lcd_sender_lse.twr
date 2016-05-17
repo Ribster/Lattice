@@ -1,6 +1,6 @@
 --------------------------------------------------------------------------------
 Lattice Synthesis Timing Report, Version  
-Fri May 13 21:57:22 2016
+Tue May 17 11:14:44 2016
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -27,21 +27,21 @@ Passed:  The following path meets requirements by 995.815ns
 
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
-   Source:         FD1P3AX    CK             last_go_i_24  (from clk100_c +)
-   Destination:    FD1P3AX    SP             busy_i_20  (to clk100_c +)
+   Source:         FD1P3AX    CK             last_go_i_21  (from clk100_c +)
+   Destination:    FD1P3AX    SP             busy_i_17  (to clk100_c +)
 
    Delay:                   3.926ns  (33.1% logic, 66.9% route), 3 logic levels.
 
  Constraint Details:
 
-      3.926ns data_path last_go_i_24 to busy_i_20 meets
+      3.926ns data_path last_go_i_21 to busy_i_17 meets
     1000.000ns delay constraint less
       0.259ns LCE_S requirement (totaling 999.741ns) by 995.815ns
 
- Path Details: last_go_i_24 to busy_i_20
+ Path Details: last_go_i_21 to busy_i_17
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.403             CK to Q              last_go_i_24 (from clk100_c)
+L_CO        ---     0.403             CK to Q              last_go_i_21 (from clk100_c)
 Route         1   e 0.788                                  last_go_i
 LUT4        ---     0.448              A to Z              last_go_i_I_0_2_lut
 Route         3   e 1.051                                  busy_N_25
@@ -55,26 +55,26 @@ Passed:  The following path meets requirements by 995.928ns
 
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
-   Source:         FD1P3AX    CK             last_go_i_24  (from clk100_c +)
+   Source:         FD1P3AX    CK             last_go_i_21  (from clk100_c +)
    Destination:    FD1S3AX    D              state_i_i1  (to clk100_c +)
 
    Delay:                   3.926ns  (33.1% logic, 66.9% route), 3 logic levels.
 
  Constraint Details:
 
-      3.926ns data_path last_go_i_24 to state_i_i1 meets
+      3.926ns data_path last_go_i_21 to state_i_i1 meets
     1000.000ns delay constraint less
       0.146ns L_S requirement (totaling 999.854ns) by 995.928ns
 
- Path Details: last_go_i_24 to state_i_i1
+ Path Details: last_go_i_21 to state_i_i1
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.403             CK to Q              last_go_i_24 (from clk100_c)
+L_CO        ---     0.403             CK to Q              last_go_i_21 (from clk100_c)
 Route         1   e 0.788                                  last_go_i
 LUT4        ---     0.448              A to Z              last_go_i_I_0_2_lut
 Route         3   e 1.051                                  busy_N_25
 LUT4        ---     0.448              D to Z              i25_4_lut
-Route         1   e 0.788                                  n268
+Route         1   e 0.788                                  n265
                   --------
                     3.926  (33.1% logic, 66.9% route), 3 logic levels.
 
@@ -83,25 +83,25 @@ Passed:  The following path meets requirements by 995.928ns
 
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
-   Source:         FD1P3AX    CK             last_go_i_24  (from clk100_c +)
+   Source:         FD1P3AX    CK             last_go_i_21  (from clk100_c +)
    Destination:    FD1S3AY    D              state_i_i0  (to clk100_c +)
 
    Delay:                   3.926ns  (33.1% logic, 66.9% route), 3 logic levels.
 
  Constraint Details:
 
-      3.926ns data_path last_go_i_24 to state_i_i0 meets
+      3.926ns data_path last_go_i_21 to state_i_i0 meets
     1000.000ns delay constraint less
       0.146ns L_S requirement (totaling 999.854ns) by 995.928ns
 
- Path Details: last_go_i_24 to state_i_i0
+ Path Details: last_go_i_21 to state_i_i0
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.403             CK to Q              last_go_i_24 (from clk100_c)
+L_CO        ---     0.403             CK to Q              last_go_i_21 (from clk100_c)
 Route         1   e 0.788                                  last_go_i
 LUT4        ---     0.448              A to Z              last_go_i_I_0_2_lut
 Route         3   e 1.051                                  busy_N_25
-LUT4        ---     0.448              D to Z              state_i_2__I_0_25_Mux_0_i7_4_lut
+LUT4        ---     0.448              D to Z              state_i_2__I_0_22_Mux_0_i7_4_lut
 Route         1   e 0.788                                  state_i_2__N_17[0]
                   --------
                     3.926  (33.1% logic, 66.9% route), 3 logic levels.
@@ -133,5 +133,5 @@ Timing errors: 0  Score: 0
 Constraints cover  71 paths, 14 nets, and 72 connections (66.1% coverage)
 
 
-Peak memory: 74833920 bytes, TRCE: 1253376 bytes, DLYMAN: 0 bytes
+Peak memory: 75038720 bytes, TRCE: 1269760 bytes, DLYMAN: 0 bytes
 CPU_TIME_REPORT: 0 secs 

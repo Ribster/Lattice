@@ -1,5 +1,5 @@
 // Verilog netlist produced by program LSE :  version Diamond (64-bit) 3.7.1.502
-// Netlist written on Fri May 13 21:57:22 2016
+// Netlist written on Tue May 17 11:14:44 2016
 //
 // Verilog Description of module lcd_sender
 //
@@ -32,32 +32,35 @@ module lcd_sender (clk100, payload, go, data, resetin, LCDBus, busy,
     wire busy_N_25;
     wire [2:0]state_i_2__N_17;
     
-    wire wr_N_26, n272, clk100_c_enable_3, clk100_c_enable_1, clk100_c_enable_19, 
-        clk100_c_enable_2, n268, n295;
+    wire wr_N_26, n269, clk100_c_enable_3, clk100_c_enable_1, clk100_c_enable_2, 
+        clk100_c_enable_19, n265, n292;
     
     VHI i2 (.Z(VCC_net));
     OB LCDBus_pad_15 (.I(LCDBus_c_15), .O(LCDBus[15]));   // z:/github/lattice/sony vivaz lcd driver/lcd_sender.vhd(18[5:11])
-    FD1P3AX wr_i_22 (.D(wr_N_26), .SP(clk100_c_enable_1), .CK(clk100_c), 
-            .Q(wr_c)) /* synthesis lse_init_val=0 */ ;   // z:/github/lattice/sony vivaz lcd driver/lcd_sender.vhd(48[3] 90[10])
-    defparam wr_i_22.GSR = "ENABLED";
-    FD1P3AX last_go_i_24 (.D(go_c), .SP(clk100_c_enable_2), .CK(clk100_c), 
+    FD1P3AX wr_i_19 (.D(wr_N_26), .SP(clk100_c_enable_1), .CK(clk100_c), 
+            .Q(wr_c));   // z:/github/lattice/sony vivaz lcd driver/lcd_sender.vhd(48[3] 90[10])
+    defparam wr_i_19.GSR = "ENABLED";
+    FD1P3AX last_go_i_21 (.D(go_c), .SP(clk100_c_enable_2), .CK(clk100_c), 
             .Q(last_go_i)) /* synthesis lse_init_val=0 */ ;   // z:/github/lattice/sony vivaz lcd driver/lcd_sender.vhd(48[3] 90[10])
-    defparam last_go_i_24.GSR = "ENABLED";
-    FD1P3AX busy_i_20 (.D(n295), .SP(clk100_c_enable_3), .CK(clk100_c), 
+    defparam last_go_i_21.GSR = "ENABLED";
+    FD1P3AX busy_i_17 (.D(n292), .SP(clk100_c_enable_3), .CK(clk100_c), 
             .Q(busy_c)) /* synthesis lse_init_val=0 */ ;   // z:/github/lattice/sony vivaz lcd driver/lcd_sender.vhd(48[3] 90[10])
-    defparam busy_i_20.GSR = "ENABLED";
+    defparam busy_i_17.GSR = "ENABLED";
     FD1S3AY state_i_i0 (.D(state_i_2__N_17[0]), .CK(clk100_c), .Q(state_i[0])) /* synthesis lse_init_val=1 */ ;   // z:/github/lattice/sony vivaz lcd driver/lcd_sender.vhd(48[3] 90[10])
     defparam state_i_i0.GSR = "ENABLED";
-    FD1S3AX state_i_i1 (.D(n268), .CK(clk100_c), .Q(state_i[1])) /* synthesis lse_init_val=0 */ ;   // z:/github/lattice/sony vivaz lcd driver/lcd_sender.vhd(48[3] 90[10])
+    FD1S3AX state_i_i1 (.D(n265), .CK(clk100_c), .Q(state_i[1])) /* synthesis lse_init_val=0 */ ;   // z:/github/lattice/sony vivaz lcd driver/lcd_sender.vhd(48[3] 90[10])
     defparam state_i_i1.GSR = "ENABLED";
-    FD1S3AX state_i_i2 (.D(n272), .CK(clk100_c), .Q(wr_N_26)) /* synthesis lse_init_val=0 */ ;   // z:/github/lattice/sony vivaz lcd driver/lcd_sender.vhd(48[3] 90[10])
+    FD1S3AX state_i_i2 (.D(n269), .CK(clk100_c), .Q(wr_N_26)) /* synthesis lse_init_val=0 */ ;   // z:/github/lattice/sony vivaz lcd driver/lcd_sender.vhd(48[3] 90[10])
     defparam state_i_i2.GSR = "ENABLED";
     FD1P3AX LCDBus_i_i2 (.D(payload_c_1), .SP(clk100_c_enable_19), .CK(clk100_c), 
             .Q(LCDBus_c_1));   // z:/github/lattice/sony vivaz lcd driver/lcd_sender.vhd(48[3] 90[10])
     defparam LCDBus_i_i2.GSR = "ENABLED";
-    LUT4 state_i_2__I_0_25_Mux_0_i7_4_lut (.A(state_i[0]), .B(wr_N_26), 
+    LUT4 state_i_2__I_0_22_Mux_0_i7_4_lut (.A(state_i[0]), .B(wr_N_26), 
          .C(state_i[1]), .D(busy_N_25), .Z(state_i_2__N_17[0])) /* synthesis lut_function=(A (B (C)+!B !(C+(D)))+!A (B+(C))) */ ;   // z:/github/lattice/sony vivaz lcd driver/lcd_sender.vhd(50[4] 88[13])
-    defparam state_i_2__I_0_25_Mux_0_i7_4_lut.init = 16'hd4d6;
+    defparam state_i_2__I_0_22_Mux_0_i7_4_lut.init = 16'hd4d6;
+    LUT4 i25_4_lut (.A(state_i[1]), .B(state_i[0]), .C(wr_N_26), .D(busy_N_25), 
+         .Z(n265)) /* synthesis lut_function=(!(A (B)+!A !(B (C+(D))))) */ ;   // z:/github/lattice/sony vivaz lcd driver/lcd_sender.vhd(48[3] 90[10])
+    defparam i25_4_lut.init = 16'h6662;
     OB LCDBus_pad_14 (.I(LCDBus_c_14), .O(LCDBus[14]));   // z:/github/lattice/sony vivaz lcd driver/lcd_sender.vhd(18[5:11])
     OB LCDBus_pad_13 (.I(LCDBus_c_13), .O(LCDBus[13]));   // z:/github/lattice/sony vivaz lcd driver/lcd_sender.vhd(18[5:11])
     OB LCDBus_pad_12 (.I(LCDBus_c_12), .O(LCDBus[12]));   // z:/github/lattice/sony vivaz lcd driver/lcd_sender.vhd(18[5:11])
@@ -96,14 +99,9 @@ module lcd_sender (clk100, payload, go, data, resetin, LCDBus, busy,
     IB payload_pad_0 (.I(payload[0]), .O(payload_c_0));   // z:/github/lattice/sony vivaz lcd driver/lcd_sender.vhd(12[5:12])
     IB go_pad (.I(go), .O(go_c));   // z:/github/lattice/sony vivaz lcd driver/lcd_sender.vhd(13[5:7])
     IB reset_c_pad (.I(resetin), .O(reset_c_c));   // z:/github/lattice/sony vivaz lcd driver/lcd_sender.vhd(15[2:9])
-    LUT4 i25_4_lut (.A(state_i[1]), .B(state_i[0]), .C(wr_N_26), .D(busy_N_25), 
-         .Z(n268)) /* synthesis lut_function=(!(A (B)+!A !(B (C+(D))))) */ ;   // z:/github/lattice/sony vivaz lcd driver/lcd_sender.vhd(48[3] 90[10])
-    defparam i25_4_lut.init = 16'h6662;
     LUT4 i1_3_lut (.A(state_i[0]), .B(wr_N_26), .C(state_i[1]), .Z(clk100_c_enable_1)) /* synthesis lut_function=(!(A+(B (C)+!B !(C)))) */ ;
     defparam i1_3_lut.init = 16'h1414;
     VLO i1 (.Z(GND_net));
-    LUT4 last_go_i_I_0_2_lut (.A(last_go_i), .B(go_c), .Z(busy_N_25)) /* synthesis lut_function=(!(A (B)+!A !(B))) */ ;   // z:/github/lattice/sony vivaz lcd driver/lcd_sender.vhd(52[9:24])
-    defparam last_go_i_I_0_2_lut.init = 16'h6666;
     FD1P3AX LCDBus_i_i3 (.D(payload_c_2), .SP(clk100_c_enable_19), .CK(clk100_c), 
             .Q(LCDBus_c_2));   // z:/github/lattice/sony vivaz lcd driver/lcd_sender.vhd(48[3] 90[10])
     defparam LCDBus_i_i3.GSR = "ENABLED";
@@ -146,19 +144,21 @@ module lcd_sender (clk100, payload, go, data, resetin, LCDBus, busy,
     FD1P3AX LCDBus_i_i16 (.D(payload_c_15), .SP(clk100_c_enable_19), .CK(clk100_c), 
             .Q(LCDBus_c_15));   // z:/github/lattice/sony vivaz lcd driver/lcd_sender.vhd(48[3] 90[10])
     defparam LCDBus_i_i16.GSR = "ENABLED";
-    LUT4 i71_1_lut_rep_5 (.A(wr_N_26), .Z(n295)) /* synthesis lut_function=(!(A)) */ ;   // z:/github/lattice/sony vivaz lcd driver/lcd_sender.vhd(48[3] 90[10])
-    defparam i71_1_lut_rep_5.init = 16'h5555;
+    LUT4 last_go_i_I_0_2_lut (.A(last_go_i), .B(go_c), .Z(busy_N_25)) /* synthesis lut_function=(!(A (B)+!A !(B))) */ ;   // z:/github/lattice/sony vivaz lcd driver/lcd_sender.vhd(52[9:24])
+    defparam last_go_i_I_0_2_lut.init = 16'h6666;
+    LUT4 i187_1_lut_rep_5 (.A(wr_N_26), .Z(n292)) /* synthesis lut_function=(!(A)) */ ;   // z:/github/lattice/sony vivaz lcd driver/lcd_sender.vhd(50[4] 88[13])
+    defparam i187_1_lut_rep_5.init = 16'h5555;
     LUT4 i1_2_lut_3_lut_3_lut (.A(wr_N_26), .B(state_i[0]), .C(state_i[1]), 
-         .Z(clk100_c_enable_19)) /* synthesis lut_function=(!(A+!(B (C)))) */ ;   // z:/github/lattice/sony vivaz lcd driver/lcd_sender.vhd(48[3] 90[10])
+         .Z(clk100_c_enable_19)) /* synthesis lut_function=(!(A+!(B (C)))) */ ;   // z:/github/lattice/sony vivaz lcd driver/lcd_sender.vhd(50[4] 88[13])
     defparam i1_2_lut_3_lut_3_lut.init = 16'h4040;
-    FD1P3AX LCDBus_i_i1 (.D(payload_c_0), .SP(clk100_c_enable_19), .CK(clk100_c), 
-            .Q(LCDBus_c_0));   // z:/github/lattice/sony vivaz lcd driver/lcd_sender.vhd(48[3] 90[10])
-    defparam LCDBus_i_i1.GSR = "ENABLED";
     LUT4 i1_2_lut_3_lut (.A(state_i[1]), .B(state_i[0]), .C(wr_N_26), 
          .Z(clk100_c_enable_2)) /* synthesis lut_function=(A (B (C))) */ ;   // z:/github/lattice/sony vivaz lcd driver/lcd_sender.vhd(50[4] 88[13])
     defparam i1_2_lut_3_lut.init = 16'h8080;
+    FD1P3AX LCDBus_i_i1 (.D(payload_c_0), .SP(clk100_c_enable_19), .CK(clk100_c), 
+            .Q(LCDBus_c_0));   // z:/github/lattice/sony vivaz lcd driver/lcd_sender.vhd(48[3] 90[10])
+    defparam LCDBus_i_i1.GSR = "ENABLED";
     LUT4 i19_2_lut_3_lut (.A(state_i[1]), .B(state_i[0]), .C(wr_N_26), 
-         .Z(n272)) /* synthesis lut_function=(!(A (B (C)+!B !(C))+!A !(C))) */ ;   // z:/github/lattice/sony vivaz lcd driver/lcd_sender.vhd(50[4] 88[13])
+         .Z(n269)) /* synthesis lut_function=(!(A (B (C)+!B !(C))+!A !(C))) */ ;   // z:/github/lattice/sony vivaz lcd driver/lcd_sender.vhd(50[4] 88[13])
     defparam i19_2_lut_3_lut.init = 16'h7878;
     PUR PUR_INST (.PUR(VCC_net));
     defparam PUR_INST.RST_PULSE = 1;

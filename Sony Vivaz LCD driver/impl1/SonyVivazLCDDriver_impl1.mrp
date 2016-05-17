@@ -15,26 +15,26 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO2-7000HETQFP144
 Target Performance:   5
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.7.1.502
-Mapped on:  05/13/16  23:02:05
+Mapped on:  05/17/16  22:45:22
 
 Design Summary
 --------------
 
-   Number of registers:     54 out of  7209 (1%)
-      PFU registers:           54 out of  6864 (1%)
+   Number of registers:     60 out of  7209 (1%)
+      PFU registers:           60 out of  6864 (1%)
       PIO registers:            0 out of   345 (0%)
-   Number of SLICEs:        32 out of  3432 (1%)
-      SLICEs as Logic/ROM:     32 out of  3432 (1%)
+   Number of SLICEs:        71 out of  3432 (2%)
+      SLICEs as Logic/ROM:     71 out of  3432 (2%)
       SLICEs as RAM:            0 out of  2574 (0%)
-      SLICEs as Carry:         17 out of  3432 (0%)
-   Number of LUT4s:         61 out of  6864 (1%)
-      Number used as logic LUTs:         27
+      SLICEs as Carry:         26 out of  3432 (1%)
+   Number of LUT4s:        140 out of  6864 (2%)
+      Number used as logic LUTs:         88
       Number used as distributed RAM:     0
-      Number used as ripple logic:       34
+      Number used as ripple logic:       52
       Number used as shift registers:     0
-   Number of PIO sites used: 27 + 4(JTAG) out of 115 (27%)
+   Number of PIO sites used: 28 + 4(JTAG) out of 115 (28%)
    Number of block RAMs:  0 out of 26 (0%)
-   Number of GSRs:  0 out of 1 (0%)
+   Number of GSRs:  1 out of 1 (100%)
    EFB used :       No
    JTAG used :      No
    Readback used :  No
@@ -57,40 +57,57 @@ Design Summary
      distributed RAMs) + 2*(Number of ripple logic)
       2. Number of logic LUT4s does not include count of distributed RAM and
      ripple logic.
-   Number of clocks:  1
-     Net clk133: 31 loads, 31 rising, 0 falling (Driver: inst_clk )
-   Number of Clock Enables:  7
+   Number of clocks:  12
+     Net clk133: 18 loads, 18 rising, 0 falling (Driver: inst_clk )
+     Net lcd_dataTrue_commandFalse_i_N_146_derived_3: 2 loads, 2 rising, 0
 
                                     Page 1
 
 
 
 
-Design:  main                                          Date:  05/13/16  23:02:05
+Design:  main                                          Date:  05/17/16  22:45:22
 
 Design Summary (cont)
 ---------------------
-     Net inst_lcd_sender/clk133_enable_13: 4 loads, 4 LSLICEs
-     Net inst_lcd_sender/clk133_enable_2: 1 loads, 1 LSLICEs
-     Net inst_lcd_sender/clk133_enable_3: 1 loads, 1 LSLICEs
-     Net inst_lcd_sender/clk133_enable_4: 1 loads, 1 LSLICEs
-     Net count_22__N_71: 1 loads, 1 LSLICEs
-     Net clk133_enable_27: 4 loads, 4 LSLICEs
-     Net clk133_enable_20: 5 loads, 5 LSLICEs
-   Number of LSRs:  1
-     Net clk133_enable_20: 12 loads, 12 LSLICEs
+     falling (Driver: i4713/GATE )
+     Net synch_rst_c_derived_17: 7 loads, 7 rising, 0 falling (Driver:
+     i1_4_lut_adj_22 )
+     Net PS_lcd_state[1]_derived_3: 2 loads, 2 rising, 0 falling (Driver:
+     i2_3_lut_4_lut_adj_5 )
+     Net synch_rst_c_derived_4: 1 loads, 1 rising, 0 falling (Driver:
+     i1_2_lut_3_lut )
+     Net lcd_busy_i_derived_1: 1 loads, 1 rising, 0 falling (Driver: i2_4_lut )
+     Net synch_rst_c_derived_9: 1 loads, 1 rising, 0 falling (Driver:
+     i2_3_lut_rep_28_4_lut )
+     Net PS_lcd_state_1_derived_5: 1 loads, 1 rising, 0 falling (Driver:
+     i2_2_lut_4_lut )
+     Net synch_rst_c_derived_15: 1 loads, 1 rising, 0 falling (Driver:
+     i1_4_lut_adj_7 )
+     Net lcd_dataTrue_commandFalse_i_N_146_derived_4: 1 loads, 1 rising, 0
+     falling (Driver: i2_4_lut_adj_15 )
+     Net lcd_busy_i_derived_2: 1 loads, 1 rising, 0 falling (Driver:
+     i2_3_lut_4_lut_4_lut_adj_17 )
+     Net PS_vivaz_state_0_derived_1: 1 loads, 1 rising, 0 falling (Driver:
+     i1_4_lut_adj_24 )
+   Number of Clock Enables:  1
+     Net clk133_enable_4: 3 loads, 3 LSLICEs
+   Number of LSRs:  3
+     Net synch_rst_c: 14 loads, 14 LSLICEs
+     Net clk133_enable_4: 13 loads, 13 LSLICEs
+     Net n3293: 1 loads, 1 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net clk133_enable_20: 18 loads
-     Net inst_lcd_sender/wr_N_129: 9 loads
-     Net inst_lcd_sender/state_i_0: 7 loads
-     Net inst_lcd_sender/state_i_1: 7 loads
-     Net clk133_enable_27: 4 loads
-     Net inst_lcd_sender/clk133_enable_13: 4 loads
-     Net counter_0: 3 loads
-     Net counter_7: 3 loads
-     Net inst_lcd_sender/n570: 3 loads
-     Net lcd_sender_go_i: 3 loads
+     Net synch_rst_c: 48 loads
+     Net PS_lcd_state_0: 31 loads
+     Net PS_lcd_state_1: 27 loads
+     Net PS_lcd_state_2: 27 loads
+     Net lcd_dataTrue_commandFalse_i_N_146: 22 loads
+     Net clk133_enable_4: 16 loads
+     Net lcd_busy_i: 13 loads
+     Net PS_vivaz_state_2: 11 loads
+     Net PS_vivaz_state_1: 10 loads
+     Net PS_vivaz_state_0: 9 loads
 
 
 
@@ -109,96 +126,123 @@ IO (PIO) Attributes
 
 +---------------------+-----------+-----------+------------+
 | IO Name             | Direction | Levelmode | IO         |
-|                     |           |  IO_TYPE  | Register   |
-+---------------------+-----------+-----------+------------+
-| leds[6]             | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| leds[5]             | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| leds[7]             | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| leds[4]             | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| leds[3]             | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| leds[2]             | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| leds[1]             | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| leds[0]             | OUTPUT    | LVCMOS25  |            |
 
                                     Page 2
 
 
 
 
-Design:  main                                          Date:  05/13/16  23:02:05
+Design:  main                                          Date:  05/17/16  22:45:22
 
 IO (PIO) Attributes (cont)
 --------------------------
+|                     |           |  IO_TYPE  | Register   |
 +---------------------+-----------+-----------+------------+
-| lcd_LCDBus[15]      | OUTPUT    | LVCMOS25  |            |
+| leds[7]             | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
-| lcd_LCDBus[14]      | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| lcd_LCDBus[13]      | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| lcd_LCDBus[12]      | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| lcd_LCDBus[11]      | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| lcd_LCDBus[10]      | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| lcd_LCDBus[9]       | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| lcd_LCDBus[8]       | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| lcd_LCDBus[7]       | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| lcd_LCDBus[6]       | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| lcd_LCDBus[5]       | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| lcd_LCDBus[4]       | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| lcd_LCDBus[3]       | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| lcd_LCDBus[2]       | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| lcd_LCDBus[1]       | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| lcd_LCDBus[0]       | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| lcd_wr              | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| lcd_reset           | OUTPUT    | LVCMOS25  |            |
+| synch_rst           | INPUT     | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | lcd_rs              | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
-
-Removed logic
--------------
-
-Block i2 undriven or does not drive anything - clipped.
-Block GSR_INST undriven or does not drive anything - clipped.
-Signal VCC_net undriven or does not drive anything - clipped.
-Signal count_77_add_4_23/CO undriven or does not drive anything - clipped.
-Signal counter_78_add_4_9/S1 undriven or does not drive anything - clipped.
-Signal counter_78_add_4_9/CO undriven or does not drive anything - clipped.
-Signal counter_78_add_4_1/S0 undriven or does not drive anything - clipped.
-Signal counter_78_add_4_1/CI undriven or does not drive anything - clipped.
-Signal count_77_add_4_1/S0 undriven or does not drive anything - clipped.
-Signal count_77_add_4_1/CI undriven or does not drive anything - clipped.
-
-
-
+| lcd_reset           | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| lcd_wr              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| lcd_LCDBus[0]       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| lcd_LCDBus[1]       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| lcd_LCDBus[2]       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| lcd_LCDBus[3]       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| lcd_LCDBus[4]       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| lcd_LCDBus[5]       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| lcd_LCDBus[6]       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| lcd_LCDBus[7]       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| lcd_LCDBus[8]       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| lcd_LCDBus[9]       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| lcd_LCDBus[10]      | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| lcd_LCDBus[11]      | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| lcd_LCDBus[12]      | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| lcd_LCDBus[13]      | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| lcd_LCDBus[14]      | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| lcd_LCDBus[15]      | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| leds[0]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| leds[1]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| leds[2]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| leds[3]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| leds[4]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| leds[5]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
 
                                     Page 3
 
 
 
 
-Design:  main                                          Date:  05/13/16  23:02:05
+Design:  main                                          Date:  05/17/16  22:45:22
+
+IO (PIO) Attributes (cont)
+--------------------------
+| leds[6]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+Removed logic
+-------------
+
+Signal n5295 was merged into signal synch_rst_c
+Signal GND_net undriven or does not drive anything - clipped.
+Signal sub_713_add_2_1/S1 undriven or does not drive anything - clipped.
+Signal sub_713_add_2_1/S0 undriven or does not drive anything - clipped.
+Signal sub_713_add_2_1/CI undriven or does not drive anything - clipped.
+Signal sub_713_add_2_3/S1 undriven or does not drive anything - clipped.
+Signal sub_713_add_2_3/S0 undriven or does not drive anything - clipped.
+Signal sub_713_add_2_5/S1 undriven or does not drive anything - clipped.
+Signal sub_713_add_2_5/S0 undriven or does not drive anything - clipped.
+Signal sub_713_add_2_7/S1 undriven or does not drive anything - clipped.
+Signal sub_713_add_2_7/S0 undriven or does not drive anything - clipped.
+Signal sub_713_add_2_9/S1 undriven or does not drive anything - clipped.
+Signal sub_713_add_2_9/S0 undriven or does not drive anything - clipped.
+Signal sub_713_add_2_11/S1 undriven or does not drive anything - clipped.
+Signal sub_713_add_2_11/S0 undriven or does not drive anything - clipped.
+Signal sub_713_add_2_13/S1 undriven or does not drive anything - clipped.
+Signal sub_713_add_2_13/S0 undriven or does not drive anything - clipped.
+Signal sub_713_add_2_15/S1 undriven or does not drive anything - clipped.
+Signal sub_713_add_2_15/S0 undriven or does not drive anything - clipped.
+Signal sub_713_add_2_17/S1 undriven or does not drive anything - clipped.
+Signal sub_713_add_2_17/S0 undriven or does not drive anything - clipped.
+Signal sub_713_add_2_19/S1 undriven or does not drive anything - clipped.
+Signal sub_713_add_2_19/S0 undriven or does not drive anything - clipped.
+Signal sub_713_add_2_21/S1 undriven or does not drive anything - clipped.
+Signal sub_713_add_2_21/S0 undriven or does not drive anything - clipped.
+Signal sub_713_add_2_23/S1 undriven or does not drive anything - clipped.
+Signal sub_713_add_2_23/S0 undriven or does not drive anything - clipped.
+Signal sub_713_add_2_25/S0 undriven or does not drive anything - clipped.
+Signal sub_713_add_2_25/CO undriven or does not drive anything - clipped.
+Signal count_728_add_4_1/S0 undriven or does not drive anything - clipped.
+Signal count_728_add_4_1/CI undriven or does not drive anything - clipped.
+Signal count_728_add_4_25/S1 undriven or does not drive anything - clipped.
+Signal count_728_add_4_25/CO undriven or does not drive anything - clipped.
+Block i3_1_lut was optimized away.
+Block i1 was optimized away.
 
 Memory Usage
 ------------
@@ -214,7 +258,17 @@ OSC 1:                                     Pin/Node Value
   OSC Type:                                         OSCH
   STDBY Input:                                      NONE
   OSC Output:                              NODE     clk133
-  OSC Nominal Frequency (MHz):                      53.20
+
+                                    Page 4
+
+
+
+
+Design:  main                                          Date:  05/17/16  22:45:22
+
+OSC Summary (cont)
+------------------
+  OSC Nominal Frequency (MHz):                      20.46
 
 ASIC Components
 ---------------
@@ -222,12 +276,113 @@ ASIC Components
 Instance Name: inst_clk
          Type: OSCH
 
+GSR Usage
+---------
+
+GSR Component:
+   The Global Set Reset (GSR) resource has been used to implement a global reset
+        of the design. The reset signal used for GSR control is 'synch_rst_c'.
+        
+
+     GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+        set reset while the components with GSR property set to DISABLED will
+        not.
+        
+
+     Components with disabled GSR Property
+-------------------------------------
+
+     These components have the GSR property set to DISABLED. The components will
+     not respond to the reset signal 'synch_rst_c' via the GSR component.
+
+     Type and number of components of the type: 
+   Register = 29 
+
+     Type and instance name of component: 
+   Register : i2830
+   Register : i2827
+   Register : i2866
+   Register : i2821
+   Register : i2863
+   Register : i2818
+   Register : i2794
+   Register : i2860
+   Register : i2857
+   Register : i2854
+   Register : i2842
+   Register : i2809
+   Register : i2788
+   Register : i2782
+   Register : i2779
+   Register : i2776
+   Register : i2773
+   Register : i2770
+   Register : i2803
+   Register : i2764
+   Register : i2761
+   Register : i2758
+   Register : i2752
+   Register : i2749
+
+                                    Page 5
+
+
+
+
+Design:  main                                          Date:  05/17/16  22:45:22
+
+GSR Usage (cont)
+----------------
+   Register : i2743
+   Register : i2740
+   Register : i2735
+   Register : i2728
+   Register : i2732
+
+     Components with synchronous local reset also reset by asynchronous GSR
+----------------------------------------------------------------------
+
+     These components have the GSR property set to ENABLED and the local reset
+     is synchronous. The components will respond to the synchronous local reset
+     and to the unrelated asynchronous reset signal 'synch_rst_c' via the GSR
+     component.
+
+     Type and number of components of the type: 
+   Register = 24 
+
+     Type and instance name of component: 
+   Register : count_728__i0
+   Register : count_728__i23
+   Register : count_728__i22
+   Register : count_728__i21
+   Register : count_728__i20
+   Register : count_728__i19
+   Register : count_728__i18
+   Register : count_728__i17
+   Register : count_728__i16
+   Register : count_728__i15
+   Register : count_728__i14
+   Register : count_728__i13
+   Register : count_728__i12
+   Register : count_728__i11
+   Register : count_728__i10
+   Register : count_728__i9
+   Register : count_728__i8
+   Register : count_728__i7
+   Register : count_728__i6
+   Register : count_728__i5
+   Register : count_728__i4
+   Register : count_728__i3
+   Register : count_728__i2
+   Register : count_728__i1
+
 Run Time and Memory Usage
 -------------------------
 
    Total CPU Time: 0 secs  
    Total REAL Time: 0 secs  
-   Peak Memory Usage: 55 MB
+   Peak Memory Usage: 54 MB
         
 
 
@@ -236,30 +391,7 @@ Run Time and Memory Usage
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                    Page 4
+                                    Page 6
 
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.

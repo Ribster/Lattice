@@ -5,38 +5,38 @@
             <Task name="IBIS" build_result="0" update_result="3" update_time="0"/>
             <Task name="TimingSimFileVlg" build_result="0" update_result="3" update_time="0"/>
             <Task name="TimingSimFileVHD" build_result="0" update_result="3" update_time="0"/>
-            <Task name="Jedecgen" build_result="2" update_result="0" update_time="1463173339"/>
-            <Task name="Bitgen" build_result="2" update_result="0" update_time="1463173343"/>
+            <Task name="Jedecgen" build_result="0" update_result="2" update_time="1463498447"/>
+            <Task name="Bitgen" build_result="2" update_result="0" update_time="1463517932"/>
         </Milestone>
-        <Milestone name="Map" build_result="2" build_time="1463173326">
-            <Task name="Map" build_result="2" update_result="0" update_time="1463173326"/>
+        <Milestone name="Map" build_result="2" build_time="1463517923">
+            <Task name="Map" build_result="2" update_result="0" update_time="1463517923"/>
             <Task name="MapTrace" build_result="0" update_result="3" update_time="0"/>
             <Task name="MapVerilogSimFile" build_result="0" update_result="3" update_time="0"/>
             <Task name="MapVHDLSimFile" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="PAR" build_result="2" build_time="1463173334">
-            <Task name="PAR" build_result="2" update_result="0" update_time="1463173334"/>
+        <Milestone name="PAR" build_result="2" build_time="1463517929">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1463517929"/>
             <Task name="PARTrace" build_result="0" update_result="3" update_time="0"/>
             <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="2" build_time="1463173325">
-            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1463173325"/>
-            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1463173343"/>
+        <Milestone name="Synthesis" build_result="2" build_time="1463517921">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1463517921"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1463517932"/>
         </Milestone>
         <Milestone name="TOOL_Report" build_result="0" build_time="0">
-            <Task name="HDLE" build_result="2" update_result="0" update_time="1463173288"/>
+            <Task name="HDLE" build_result="2" update_result="0" update_time="1463517917"/>
             <Task name="SSO" build_result="0" update_result="2" update_time="0"/>
             <Task name="PIODRC" build_result="0" update_result="2" update_time="0"/>
             <Task name="BKM" build_result="0" update_result="2" update_time="0"/>
             <Task name="DEC" build_result="0" update_result="2" update_time="0"/>
         </Milestone>
-        <Report name=".vdbs/SonyVivazLCDDriver_impl1_map.vdb" last_build_time="1463173326" last_build_size="45955"/>
-        <Report name="SonyVivazLCDDriver_impl1.bgn" last_build_time="1463173342" last_build_size="3871"/>
-        <Report name="SonyVivazLCDDriver_impl1.bit" last_build_time="1463173342" last_build_size="25835"/>
-        <Report name="SonyVivazLCDDriver_impl1.jed" last_build_time="1463173338" last_build_size="1465363"/>
-        <Report name="SonyVivazLCDDriver_impl1.lsedata" last_build_time="1463173324" last_build_size="87350"/>
-        <Report name="SonyVivazLCDDriver_impl1.ncd" last_build_time="1463173334" last_build_size="84155"/>
-        <Report name="SonyVivazLCDDriver_impl1.ngd" last_build_time="1463173325" last_build_size="73783"/>
-        <Report name="SonyVivazLCDDriver_impl1_map.ncd" last_build_time="1463173325" last_build_size="61848"/>
+        <Report name=".vdbs/SonyVivazLCDDriver_impl1_map.vdb" last_build_time="1463517922" last_build_size="53736"/>
+        <Report name="SonyVivazLCDDriver_impl1.bgn" last_build_time="1463517931" last_build_size="3871"/>
+        <Report name="SonyVivazLCDDriver_impl1.bit" last_build_time="1463517931" last_build_size="26683"/>
+        <Report name="SonyVivazLCDDriver_impl1.jed" last_build_time="1463498447" last_build_size="1465363"/>
+        <Report name="SonyVivazLCDDriver_impl1.lsedata" last_build_time="1463517920" last_build_size="137554"/>
+        <Report name="SonyVivazLCDDriver_impl1.ncd" last_build_time="1463517928" last_build_size="147274"/>
+        <Report name="SonyVivazLCDDriver_impl1.ngd" last_build_time="1463517921" last_build_size="118176"/>
+        <Report name="SonyVivazLCDDriver_impl1_map.ncd" last_build_time="1463517922" last_build_size="104613"/>
     </Strategy>
 </BuildStatus>
