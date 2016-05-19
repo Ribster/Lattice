@@ -1,0 +1,1 @@
+-w -s "Z:\GITHUB\Lattice\Vivaz driver Rev A\simulation_reva\library.cfg"  -j "Z:\GITHUB\Lattice\Vivaz driver Rev A\simulation_reva\projlib.cfg"  -d "Z:\GITHUB\Lattice\Vivaz driver Rev A\simulation_reva\compile"   -work work  -O3 -e 100 -2002 "Z:/GITHUB/Lattice/Vivaz driver Rev A/clk_div2_tb.vhd"

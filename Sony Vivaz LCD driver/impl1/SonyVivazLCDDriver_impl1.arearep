@@ -1,22 +1,30 @@
 ----------------------------------------------------------------------
 Report for cell main.TECH
-Register bits:  60 of 7209 (0.832%)
-I/O cells:      28
+Register bits:  21 of 7209 (0.291%)
+I/O cells:      20
                                   Cell usage:
                                cell     count   Res Usage(%)
-                              CCU2D        26          100.0
-                            FD1P3AX         3          100.0
-                            FD1P3AY         1          100.0
-                             FD1S1A         5          100.0
-                             FD1S1I        22          100.0
-                             FD1S1J         2          100.0
+                              CCU2D         9          100.0
+                            FD1P3AX         9          100.0
+                             FD1S1I         3          100.0
                             FD1S3AX         2          100.0
                             FD1S3AY         1          100.0
-                            FD1S3IX        24          100.0
+                            FD1S3IX         6          100.0
                                 GSR         1          100.0
-                                 IB         1          100.0
-                               LUT4        88          100.0
-                                 OB        27          100.0
+                               LUT4        40          100.0
+                                 OB        19          100.0
+                                OBZ         1          100.0
                                OSCH         1          100.0
-                              PFUMX         5          100.0
-                              TOTAL       209
+SUB MODULES
+                         lcd_sender         1
+                              TOTAL        93
+----------------------------------------------------------------------
+Report for cell lcd_sender.v1
+Instance Path : inst_lcd_sender
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                             FD1S1I         1           33.3
+                            FD1S3AX         2          100.0
+                            FD1S3AY         1          100.0
+                               LUT4        25           62.5
+                              TOTAL        29

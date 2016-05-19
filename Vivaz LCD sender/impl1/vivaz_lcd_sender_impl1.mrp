@@ -1,0 +1,402 @@
+
+             Lattice Mapping Report File for Design Module 'main'
+
+
+Design Information
+------------------
+
+Command line:   map -a MachXO2 -p LCMXO2-7000HE -t TQFP144 -s 4 -oc Commercial
+     vivaz_lcd_sender_impl1.ngd -o vivaz_lcd_sender_impl1_map.ncd -pr
+     vivaz_lcd_sender_impl1.prf -mp vivaz_lcd_sender_impl1.mrp -lpf
+     Z:/GITHUB/Lattice/Vivaz LCD sender/impl1/vivaz_lcd_sender_impl1.lpf -lpf
+     Z:/GITHUB/Lattice/Vivaz LCD sender/vivaz_lcd_sender.lpf -c 0 -gui 
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-7000HETQFP144
+Target Performance:   4
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.7.1.502
+Mapped on:  05/18/16  18:49:35
+
+Design Summary
+--------------
+
+   Number of registers:     73 out of  7209 (1%)
+      PFU registers:           73 out of  6864 (1%)
+      PIO registers:            0 out of   345 (0%)
+   Number of SLICEs:        44 out of  3432 (1%)
+      SLICEs as Logic/ROM:     44 out of  3432 (1%)
+      SLICEs as RAM:            0 out of  2574 (0%)
+      SLICEs as Carry:         26 out of  3432 (1%)
+   Number of LUT4s:         67 out of  6864 (1%)
+      Number used as logic LUTs:         15
+      Number used as distributed RAM:     0
+      Number used as ripple logic:       52
+      Number used as shift registers:     0
+   Number of PIO sites used: 19 + 4(JTAG) out of 115 (20%)
+   Number of block RAMs:  0 out of 26 (0%)
+   Number of GSRs:  1 out of 1 (100%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  Yes
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  1
+     Net clk133: 44 loads, 44 rising, 0 falling (Driver: inst_clk )
+   Number of Clock Enables:  5
+     Net clk133_enable_21: 2 loads, 2 LSLICEs
+
+                                    Page 1
+
+
+
+
+Design:  main                                          Date:  05/18/16  18:49:35
+
+Design Summary (cont)
+---------------------
+     Net clk133_enable_38: 10 loads, 10 LSLICEs
+     Net clk133_enable_44: 5 loads, 5 LSLICEs
+     Net clk133_enable_3: 1 loads, 1 LSLICEs
+     Net clk133_enable_20: 8 loads, 8 LSLICEs
+   Number of LSRs:  4
+     Net n469: 2 loads, 2 LSLICEs
+     Net clk133_enable_38: 8 loads, 8 LSLICEs
+     Net clk133_enable_3: 4 loads, 4 LSLICEs
+     Net busy: 1 loads, 1 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net clk133_enable_38: 19 loads
+     Net clk133_enable_20: 9 loads
+     Net clk133_enable_3: 6 loads
+     Net clk133_enable_44: 5 loads
+     Net clk133_enable_21: 4 loads
+     Net synch_rst_c: 4 loads
+     Net n469: 3 loads
+     Net tmp_0: 3 loads
+     Net count_i_4: 2 loads
+     Net count_i_7: 2 loads
+
+
+
+
+   Number of warnings:  18
+   Number of errors:    0
+     
+
+Design Errors/Warnings
+----------------------
+
+WARNING - map: input pad net 'leds[7]' has no legal load.
+WARNING - map: input pad net 'leds[6]' has no legal load.
+WARNING - map: input pad net 'leds[5]' has no legal load.
+WARNING - map: input pad net 'leds[4]' has no legal load.
+WARNING - map: input pad net 'leds[3]' has no legal load.
+WARNING - map: input pad net 'leds[2]' has no legal load.
+WARNING - map: input pad net 'leds[1]' has no legal load.
+WARNING - map: input pad net 'leds[0]' has no legal load.
+WARNING - map: input pad net 'lcd_reset' has no legal load.
+WARNING - map: IO buffer missing for top level port leds[7:0](7)...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port leds[7:0](6)...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port leds[7:0](5)...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port leds[7:0](4)...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port leds[7:0](3)...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port leds[7:0](2)...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port leds[7:0](1)...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port leds[7:0](0)...logic will be
+
+                                    Page 2
+
+
+
+
+Design:  main                                          Date:  05/18/16  18:49:35
+
+Design Errors/Warnings (cont)
+-----------------------------
+     discarded.
+WARNING - map: IO buffer missing for top level port lcd_reset...logic will be
+     discarded.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| lcd_LCDBus[11]      | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| lcd_LCDBus[12]      | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| lcd_LCDBus[13]      | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| lcd_LCDBus[14]      | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| lcd_LCDBus[15]      | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| lcd_LCDBus[10]      | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| lcd_LCDBus[9]       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| lcd_LCDBus[8]       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| lcd_LCDBus[7]       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| lcd_LCDBus[6]       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| lcd_LCDBus[5]       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| lcd_LCDBus[4]       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| lcd_LCDBus[3]       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| lcd_LCDBus[2]       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| lcd_LCDBus[1]       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| lcd_LCDBus[0]       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| lcd_wr              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| lcd_rs              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| synch_rst           | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+Removed logic
+-------------
+
+Block i393 undriven or does not drive anything - clipped.
+Signal synch_rst_N_176 was merged into signal synch_rst_c
+Signal GND_net undriven or does not drive anything - clipped.
+
+                                    Page 3
+
+
+
+
+Design:  main                                          Date:  05/18/16  18:49:35
+
+Removed logic (cont)
+--------------------
+Signal VCC_net undriven or does not drive anything - clipped.
+Signal count_i_162_163_add_4_15/S1 undriven or does not drive anything -
+     clipped.
+Signal count_i_162_163_add_4_15/CO undriven or does not drive anything -
+     clipped.
+Signal payload_164_add_4_1/S0 undriven or does not drive anything - clipped.
+Signal payload_164_add_4_1/CI undriven or does not drive anything - clipped.
+Signal count_i_162_163_add_4_1/S0 undriven or does not drive anything - clipped.
+     
+Signal count_i_162_163_add_4_1/CI undriven or does not drive anything - clipped.
+     
+Signal payload_164_add_4_17/S1 undriven or does not drive anything - clipped.
+Signal payload_164_add_4_17/CO undriven or does not drive anything - clipped.
+Signal count_165_166_add_4_1/S0 undriven or does not drive anything - clipped.
+Signal count_165_166_add_4_1/CI undriven or does not drive anything - clipped.
+Signal count_165_166_add_4_7/S1 undriven or does not drive anything - clipped.
+Signal count_165_166_add_4_7/CO undriven or does not drive anything - clipped.
+Signal tmp_167_add_4_9/S1 undriven or does not drive anything - clipped.
+Signal tmp_167_add_4_9/CO undriven or does not drive anything - clipped.
+Signal tmp_167_add_4_1/S0 undriven or does not drive anything - clipped.
+Signal tmp_167_add_4_1/CI undriven or does not drive anything - clipped.
+Block synch_rst_I_0_1_lut was optimized away.
+Block i1 was optimized away.
+
+Memory Usage
+------------
+
+
+     
+
+OSC Summary
+-----------
+
+OSC 1:                                     Pin/Node Value
+  OSC Instance Name:                                inst_clk
+  OSC Type:                                         OSCH
+  STDBY Input:                                      NONE
+  OSC Output:                              NODE     clk133
+  OSC Nominal Frequency (MHz):                      20.46
+
+ASIC Components
+---------------
+
+Instance Name: inst_clk
+         Type: OSCH
+
+GSR Usage
+---------
+
+GSR Component:
+   The Global Set Reset (GSR) resource has been used to implement a global reset
+        of the design. The reset signal used for GSR control is 'synch_rst_c'.
+        
+
+     GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+
+                                    Page 4
+
+
+
+
+Design:  main                                          Date:  05/18/16  18:49:35
+
+GSR Usage (cont)
+----------------
+        set reset while the components with GSR property set to DISABLED will
+        not.
+        
+
+     Components with disabled GSR Property
+-------------------------------------
+
+     These components have the GSR property set to DISABLED. The components will
+     not respond to the reset signal 'synch_rst_c' via the GSR component.
+
+     Type and number of components of the type: 
+   Register = 47 
+
+     Type and instance name of component: 
+   Register : data1command0_64
+   Register : count_i_162_163__i0
+   Register : tmp_167__i0
+   Register : reset_startup_66
+   Register : payload_164__i0
+   Register : count_165_166__i0
+   Register : count_165_166__i5
+   Register : count_165_166__i4
+   Register : count_165_166__i3
+   Register : count_165_166__i2
+   Register : count_165_166__i1
+   Register : go_62
+   Register : tmp_167__i1
+   Register : payload_164__i15
+   Register : payload_164__i14
+   Register : payload_164__i13
+   Register : payload_164__i12
+   Register : payload_164__i11
+   Register : payload_164__i10
+   Register : payload_164__i9
+   Register : payload_164__i8
+   Register : payload_164__i7
+   Register : payload_164__i6
+   Register : payload_164__i5
+   Register : payload_164__i4
+   Register : payload_164__i3
+   Register : payload_164__i2
+   Register : payload_164__i1
+   Register : count_i_162_163__i13
+   Register : count_i_162_163__i12
+   Register : count_i_162_163__i11
+   Register : count_i_162_163__i10
+   Register : count_i_162_163__i9
+   Register : count_i_162_163__i8
+   Register : count_i_162_163__i7
+   Register : count_i_162_163__i6
+   Register : count_i_162_163__i5
+   Register : count_i_162_163__i4
+   Register : count_i_162_163__i3
+   Register : count_i_162_163__i2
+   Register : count_i_162_163__i1
+   Register : tmp_167__i7
+
+                                    Page 5
+
+
+
+
+Design:  main                                          Date:  05/18/16  18:49:35
+
+GSR Usage (cont)
+----------------
+   Register : tmp_167__i6
+   Register : tmp_167__i5
+   Register : tmp_167__i4
+   Register : tmp_167__i3
+   Register : tmp_167__i2
+
+     Components with synchronous local reset also reset by asynchronous GSR
+----------------------------------------------------------------------
+
+     These components have the GSR property set to ENABLED and the local reset
+     is synchronous. The components will respond to the synchronous local reset
+     and to the unrelated asynchronous reset signal 'synch_rst_c' via the GSR
+     component.
+
+     Type and number of components of the type: 
+   Register = 2 
+
+     Type and instance name of component: 
+   Register : PS_vivaz_state_FSM_i1
+   Register : busy_70
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 0 secs  
+   Total REAL Time: 0 secs  
+   Peak Memory Usage: 55 MB
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    Page 6
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights
+     reserved.

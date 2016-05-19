@@ -1,0 +1,1069 @@
+
+Loading design for application trce from file sonyvivazlcddriver_impl1.ncd.
+Design name: main
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-7000HE
+Package:     TQFP144
+Performance: 5
+Loading device for application trce from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.7_x64/ispfpga.
+Package Status:                     Final          Version 1.39.
+Performance Hardware Data Status:   Final          Version 33.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.7.1.502
+Wed May 18 17:13:04 2016
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 5 -sphld m -o SonyVivazLCDDriver_impl1.twr -gui -msgset Z:/GITHUB/Lattice/Sony Vivaz LCD driver/promote.xml SonyVivazLCDDriver_impl1.ncd SonyVivazLCDDriver_impl1.prf 
+Design file:     sonyvivazlcddriver_impl1.ncd
+Preference file: sonyvivazlcddriver_impl1.prf
+Device,speed:    LCMXO2-7000HE,5
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY NET "clk133" 20.460000 MHz ;
+            54 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 44.449ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              reset_startup  (from clk133 +)
+   Destination:    FF         Data in        inst_lcd_sender/PS_vivaz_state[3]  (to clk133 +)
+
+   Delay:               4.312ns  (20.0% logic, 80.0% route), 2 logic levels.
+
+ Constraint Details:
+
+      4.312ns physical path delay SLICE_12 to inst_lcd_sender/SLICE_4 meets
+     48.876ns delay constraint less
+     -0.035ns skew and
+      0.150ns DIN_SET requirement (totaling 48.761ns) by 44.449ns
+
+ Physical Path Details:
+
+      Data path SLICE_12 to inst_lcd_sender/SLICE_4:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.409    R23C34A.CLK to     R23C34A.Q0 SLICE_12 (from clk133)
+ROUTE        12     3.443     R23C34A.Q0 to      R7C39A.B1 synch_rst_c
+CTOF_DEL    ---     0.452      R7C39A.B1 to      R7C39A.F1 inst_lcd_sender/SLICE_4
+ROUTE         2     0.008      R7C39A.F1 to     R7C39A.DI1 inst_lcd_sender/NS_vivaz_state[3] (to clk133)
+                  --------
+                    4.312   (20.0% logic, 80.0% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path inst_clk to SLICE_12:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     3.406        OSC.OSC to    R23C34A.CLK clk133
+                  --------
+                    3.406   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path inst_clk to inst_lcd_sender/SLICE_4:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     3.441        OSC.OSC to     R7C39A.CLK clk133
+                  --------
+                    3.441   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 44.457ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              reset_startup  (from clk133 +)
+   Destination:    FF         Data in        inst_lcd_sender/PS_vivaz_state[2]  (to clk133 +)
+
+   Delay:               4.304ns  (20.0% logic, 80.0% route), 2 logic levels.
+
+ Constraint Details:
+
+      4.304ns physical path delay SLICE_12 to inst_lcd_sender/SLICE_4 meets
+     48.876ns delay constraint less
+     -0.035ns skew and
+      0.150ns DIN_SET requirement (totaling 48.761ns) by 44.457ns
+
+ Physical Path Details:
+
+      Data path SLICE_12 to inst_lcd_sender/SLICE_4:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.409    R23C34A.CLK to     R23C34A.Q0 SLICE_12 (from clk133)
+ROUTE        12     3.443     R23C34A.Q0 to      R7C39A.B0 synch_rst_c
+CTOF_DEL    ---     0.452      R7C39A.B0 to      R7C39A.F0 inst_lcd_sender/SLICE_4
+ROUTE         1     0.000      R7C39A.F0 to     R7C39A.DI0 inst_lcd_sender/NS_vivaz_state[2] (to clk133)
+                  --------
+                    4.304   (20.0% logic, 80.0% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path inst_clk to SLICE_12:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     3.406        OSC.OSC to    R23C34A.CLK clk133
+                  --------
+                    3.406   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path inst_clk to inst_lcd_sender/SLICE_4:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     3.441        OSC.OSC to     R7C39A.CLK clk133
+                  --------
+                    3.441   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 44.488ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              reset_startup  (from clk133 +)
+   Destination:    FF         Data in        inst_lcd_sender/PS_vivaz_state[1]  (to clk133 +)
+
+   Delay:               4.273ns  (20.1% logic, 79.9% route), 2 logic levels.
+
+ Constraint Details:
+
+      4.273ns physical path delay SLICE_12 to inst_lcd_sender/SLICE_3 meets
+     48.876ns delay constraint less
+     -0.035ns skew and
+      0.150ns DIN_SET requirement (totaling 48.761ns) by 44.488ns
+
+ Physical Path Details:
+
+      Data path SLICE_12 to inst_lcd_sender/SLICE_3:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.409    R23C34A.CLK to     R23C34A.Q0 SLICE_12 (from clk133)
+ROUTE        12     3.412     R23C34A.Q0 to      R7C39B.A1 synch_rst_c
+CTOF_DEL    ---     0.452      R7C39B.A1 to      R7C39B.F1 inst_lcd_sender/SLICE_3
+ROUTE         1     0.000      R7C39B.F1 to     R7C39B.DI1 inst_lcd_sender/NS_vivaz_state[1] (to clk133)
+                  --------
+                    4.273   (20.1% logic, 79.9% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path inst_clk to SLICE_12:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     3.406        OSC.OSC to    R23C34A.CLK clk133
+                  --------
+                    3.406   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path inst_clk to inst_lcd_sender/SLICE_3:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     3.441        OSC.OSC to     R7C39B.CLK clk133
+                  --------
+                    3.441   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 44.488ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              reset_startup  (from clk133 +)
+   Destination:    FF         Data in        inst_lcd_sender/PS_vivaz_state_0[0]  (to clk133 +)
+
+   Delay:               4.273ns  (20.1% logic, 79.9% route), 2 logic levels.
+
+ Constraint Details:
+
+      4.273ns physical path delay SLICE_12 to inst_lcd_sender/SLICE_3 meets
+     48.876ns delay constraint less
+     -0.035ns skew and
+      0.150ns DIN_SET requirement (totaling 48.761ns) by 44.488ns
+
+ Physical Path Details:
+
+      Data path SLICE_12 to inst_lcd_sender/SLICE_3:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.409    R23C34A.CLK to     R23C34A.Q0 SLICE_12 (from clk133)
+ROUTE        12     3.412     R23C34A.Q0 to      R7C39B.A0 synch_rst_c
+CTOF_DEL    ---     0.452      R7C39B.A0 to      R7C39B.F0 inst_lcd_sender/SLICE_3
+ROUTE         1     0.000      R7C39B.F0 to     R7C39B.DI0 inst_lcd_sender/NS_vivaz_state[0] (to clk133)
+                  --------
+                    4.273   (20.1% logic, 79.9% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path inst_clk to SLICE_12:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     3.406        OSC.OSC to    R23C34A.CLK clk133
+                  --------
+                    3.406   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path inst_clk to inst_lcd_sender/SLICE_3:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     3.441        OSC.OSC to     R7C39B.CLK clk133
+                  --------
+                    3.441   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 44.683ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              reset_startup  (from clk133 +)
+   Destination:    FF         Data in        inst_lcd_sender/PS_vivaz_state_ret  (to clk133 +)
+
+   Delay:               4.078ns  (21.1% logic, 78.9% route), 2 logic levels.
+
+ Constraint Details:
+
+      4.078ns physical path delay SLICE_12 to inst_lcd_sender/SLICE_11 meets
+     48.876ns delay constraint less
+     -0.035ns skew and
+      0.150ns DIN_SET requirement (totaling 48.761ns) by 44.683ns
+
+ Physical Path Details:
+
+      Data path SLICE_12 to inst_lcd_sender/SLICE_11:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.409    R23C34A.CLK to     R23C34A.Q0 SLICE_12 (from clk133)
+ROUTE        12     3.217     R23C34A.Q0 to      R7C39D.C0 synch_rst_c
+CTOF_DEL    ---     0.452      R7C39D.C0 to      R7C39D.F0 inst_lcd_sender/SLICE_11
+ROUTE         1     0.000      R7C39D.F0 to     R7C39D.DI0 inst_lcd_sender/un1_PS_vivaz_state_1_reti (to clk133)
+                  --------
+                    4.078   (21.1% logic, 78.9% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path inst_clk to SLICE_12:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     3.406        OSC.OSC to    R23C34A.CLK clk133
+                  --------
+                    3.406   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path inst_clk to inst_lcd_sender/SLICE_11:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     3.441        OSC.OSC to     R7C39D.CLK clk133
+                  --------
+                    3.441   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 45.081ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              count[1]  (from clk133 +)
+   Destination:    FF         Data in        reset_startup  (to clk133 +)
+
+   Delay:               3.645ns  (48.4% logic, 51.6% route), 4 logic levels.
+
+ Constraint Details:
+
+      3.645ns physical path delay SLICE_0 to SLICE_12 meets
+     48.876ns delay constraint less
+      0.000ns skew and
+      0.150ns DIN_SET requirement (totaling 48.726ns) by 45.081ns
+
+ Physical Path Details:
+
+      Data path SLICE_0 to SLICE_12:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.409    R22C34C.CLK to     R22C34C.Q1 SLICE_0 (from clk133)
+ROUTE         5     0.930     R22C34C.Q1 to     R23C34D.B0 count[1]
+CTOF_DEL    ---     0.452     R23C34D.B0 to     R23C34D.F0 SLICE_13
+ROUTE         1     0.384     R23C34D.F0 to     R23C34D.C1 un2_countlto3_0
+CTOF_DEL    ---     0.452     R23C34D.C1 to     R23C34D.F1 SLICE_13
+ROUTE         3     0.566     R23C34D.F1 to     R23C34A.D0 un2_count_i
+CTOF_DEL    ---     0.452     R23C34A.D0 to     R23C34A.F0 SLICE_12
+ROUTE         1     0.000     R23C34A.F0 to    R23C34A.DI0 reset_startup_0 (to clk133)
+                  --------
+                    3.645   (48.4% logic, 51.6% route), 4 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path inst_clk to SLICE_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     3.406        OSC.OSC to    R22C34C.CLK clk133
+                  --------
+                    3.406   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path inst_clk to SLICE_12:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     3.406        OSC.OSC to    R23C34A.CLK clk133
+                  --------
+                    3.406   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 45.200ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              reset_startup  (from clk133 +)
+   Destination:    FF         Data in        inst_lcd_sender/PS_vivaz_state_0[6]  (to clk133 +)
+
+   Delay:               3.561ns  (24.2% logic, 75.8% route), 2 logic levels.
+
+ Constraint Details:
+
+      3.561ns physical path delay SLICE_12 to inst_lcd_sender/SLICE_5 meets
+     48.876ns delay constraint less
+     -0.035ns skew and
+      0.150ns DIN_SET requirement (totaling 48.761ns) by 45.200ns
+
+ Physical Path Details:
+
+      Data path SLICE_12 to inst_lcd_sender/SLICE_5:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.409    R23C34A.CLK to     R23C34A.Q0 SLICE_12 (from clk133)
+ROUTE        12     2.692     R23C34A.Q0 to      R6C39C.D1 synch_rst_c
+CTOF_DEL    ---     0.452      R6C39C.D1 to      R6C39C.F1 inst_lcd_sender/SLICE_5
+ROUTE         2     0.008      R6C39C.F1 to     R6C39C.DI1 inst_lcd_sender/un1_rst (to clk133)
+                  --------
+                    3.561   (24.2% logic, 75.8% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path inst_clk to SLICE_12:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     3.406        OSC.OSC to    R23C34A.CLK clk133
+                  --------
+                    3.406   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path inst_clk to inst_lcd_sender/SLICE_5:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     3.441        OSC.OSC to     R6C39C.CLK clk133
+                  --------
+                    3.441   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 45.200ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              reset_startup  (from clk133 +)
+   Destination:    FF         Data in        inst_lcd_sender/PS_vivaz_state[5]  (to clk133 +)
+
+   Delay:               3.561ns  (24.2% logic, 75.8% route), 2 logic levels.
+
+ Constraint Details:
+
+      3.561ns physical path delay SLICE_12 to inst_lcd_sender/SLICE_6 meets
+     48.876ns delay constraint less
+     -0.035ns skew and
+      0.150ns DIN_SET requirement (totaling 48.761ns) by 45.200ns
+
+ Physical Path Details:
+
+      Data path SLICE_12 to inst_lcd_sender/SLICE_6:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.409    R23C34A.CLK to     R23C34A.Q0 SLICE_12 (from clk133)
+ROUTE        12     2.692     R23C34A.Q0 to      R6C39D.D0 synch_rst_c
+CTOF_DEL    ---     0.452      R6C39D.D0 to      R6C39D.F0 inst_lcd_sender/SLICE_6
+ROUTE         3     0.008      R6C39D.F0 to     R6C39D.DI0 inst_lcd_sender/lcd_rs_0_sqmuxa (to clk133)
+                  --------
+                    3.561   (24.2% logic, 75.8% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path inst_clk to SLICE_12:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     3.406        OSC.OSC to    R23C34A.CLK clk133
+                  --------
+                    3.406   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path inst_clk to inst_lcd_sender/SLICE_6:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     3.441        OSC.OSC to     R6C39D.CLK clk133
+                  --------
+                    3.441   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 45.208ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              reset_startup  (from clk133 +)
+   Destination:    FF         Data in        inst_lcd_sender/PS_vivaz_state[4]  (to clk133 +)
+
+   Delay:               3.553ns  (24.2% logic, 75.8% route), 2 logic levels.
+
+ Constraint Details:
+
+      3.553ns physical path delay SLICE_12 to inst_lcd_sender/SLICE_5 meets
+     48.876ns delay constraint less
+     -0.035ns skew and
+      0.150ns DIN_SET requirement (totaling 48.761ns) by 45.208ns
+
+ Physical Path Details:
+
+      Data path SLICE_12 to inst_lcd_sender/SLICE_5:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.409    R23C34A.CLK to     R23C34A.Q0 SLICE_12 (from clk133)
+ROUTE        12     2.692     R23C34A.Q0 to      R6C39C.D0 synch_rst_c
+CTOF_DEL    ---     0.452      R6C39C.D0 to      R6C39C.F0 inst_lcd_sender/SLICE_5
+ROUTE         1     0.000      R6C39C.F0 to     R6C39C.DI0 inst_lcd_sender/lcd_bus_1_sqmuxa (to clk133)
+                  --------
+                    3.553   (24.2% logic, 75.8% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path inst_clk to SLICE_12:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     3.406        OSC.OSC to    R23C34A.CLK clk133
+                  --------
+                    3.406   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path inst_clk to inst_lcd_sender/SLICE_5:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     3.441        OSC.OSC to     R6C39C.CLK clk133
+                  --------
+                    3.441   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 45.318ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              count[3]  (from clk133 +)
+   Destination:    FF         Data in        reset_startup  (to clk133 +)
+
+   Delay:               3.408ns  (51.8% logic, 48.2% route), 4 logic levels.
+
+ Constraint Details:
+
+      3.408ns physical path delay SLICE_1 to SLICE_12 meets
+     48.876ns delay constraint less
+      0.000ns skew and
+      0.150ns DIN_SET requirement (totaling 48.726ns) by 45.318ns
+
+ Physical Path Details:
+
+      Data path SLICE_1 to SLICE_12:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.409    R23C34B.CLK to     R23C34B.Q1 SLICE_1 (from clk133)
+ROUTE         4     0.693     R23C34B.Q1 to     R23C34D.C0 count[3]
+CTOF_DEL    ---     0.452     R23C34D.C0 to     R23C34D.F0 SLICE_13
+ROUTE         1     0.384     R23C34D.F0 to     R23C34D.C1 un2_countlto3_0
+CTOF_DEL    ---     0.452     R23C34D.C1 to     R23C34D.F1 SLICE_13
+ROUTE         3     0.566     R23C34D.F1 to     R23C34A.D0 un2_count_i
+CTOF_DEL    ---     0.452     R23C34A.D0 to     R23C34A.F0 SLICE_12
+ROUTE         1     0.000     R23C34A.F0 to    R23C34A.DI0 reset_startup_0 (to clk133)
+                  --------
+                    3.408   (51.8% logic, 48.2% route), 4 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path inst_clk to SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     3.406        OSC.OSC to    R23C34B.CLK clk133
+                  --------
+                    3.406   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path inst_clk to SLICE_12:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     3.406        OSC.OSC to    R23C34A.CLK clk133
+                  --------
+                    3.406   (0.0% logic, 100.0% route), 0 logic levels.
+
+Report:  225.887MHz is the maximum frequency for this preference.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "clk133" 20.460000 MHz ;  |   20.460 MHz|  225.887 MHz|   2  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 3 clocks:
+
+Clock Domain: inst_lcd_sender/lcd_rs_0_sqmuxa   Source: inst_lcd_sender/SLICE_6.F0   Loads: 3
+   No transfer within this clock domain is found
+
+Clock Domain: inst_lcd_sender/PS_vivaz_state[6]   Source: inst_lcd_sender/SLICE_5.Q1   Loads: 3
+   No transfer within this clock domain is found
+
+Clock Domain: clk133   Source: inst_clk.OSC   Loads: 9
+   Covered under: FREQUENCY NET "clk133" 20.460000 MHz ;
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 54 paths, 1 nets, and 120 connections (100.00% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.7.1.502
+Wed May 18 17:13:04 2016
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 5 -sphld m -o SonyVivazLCDDriver_impl1.twr -gui -msgset Z:/GITHUB/Lattice/Sony Vivaz LCD driver/promote.xml SonyVivazLCDDriver_impl1.ncd SonyVivazLCDDriver_impl1.prf 
+Design file:     sonyvivazlcddriver_impl1.ncd
+Preference file: sonyvivazlcddriver_impl1.prf
+Device,speed:    LCMXO2-7000HE,m
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY NET "clk133" 20.460000 MHz ;
+            54 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.379ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              count[1]  (from clk133 +)
+   Destination:    FF         Data in        count[1]  (to clk133 +)
+
+   Delay:               0.366ns  (63.9% logic, 36.1% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.366ns physical path delay SLICE_0 to SLICE_0 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.379ns
+
+ Physical Path Details:
+
+      Data path SLICE_0 to SLICE_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R22C34C.CLK to     R22C34C.Q1 SLICE_0 (from clk133)
+ROUTE         5     0.132     R22C34C.Q1 to     R22C34C.A1 count[1]
+CTOF_DEL    ---     0.101     R22C34C.A1 to     R22C34C.F1 SLICE_0
+ROUTE         1     0.000     R22C34C.F1 to    R22C34C.DI1 un4_count[31] (to clk133)
+                  --------
+                    0.366   (63.9% logic, 36.1% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path inst_clk to SLICE_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     1.238        OSC.OSC to    R22C34C.CLK clk133
+                  --------
+                    1.238   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path inst_clk to SLICE_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     1.238        OSC.OSC to    R22C34C.CLK clk133
+                  --------
+                    1.238   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.379ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              count[3]  (from clk133 +)
+   Destination:    FF         Data in        count[3]  (to clk133 +)
+
+   Delay:               0.366ns  (63.9% logic, 36.1% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.366ns physical path delay SLICE_1 to SLICE_1 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.379ns
+
+ Physical Path Details:
+
+      Data path SLICE_1 to SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R23C34B.CLK to     R23C34B.Q1 SLICE_1 (from clk133)
+ROUTE         4     0.132     R23C34B.Q1 to     R23C34B.A1 count[3]
+CTOF_DEL    ---     0.101     R23C34B.A1 to     R23C34B.F1 SLICE_1
+ROUTE         1     0.000     R23C34B.F1 to    R23C34B.DI1 un4_count[29] (to clk133)
+                  --------
+                    0.366   (63.9% logic, 36.1% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path inst_clk to SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     1.238        OSC.OSC to    R23C34B.CLK clk133
+                  --------
+                    1.238   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path inst_clk to SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     1.238        OSC.OSC to    R23C34B.CLK clk133
+                  --------
+                    1.238   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.379ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              count[2]  (from clk133 +)
+   Destination:    FF         Data in        count[2]  (to clk133 +)
+
+   Delay:               0.366ns  (63.9% logic, 36.1% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.366ns physical path delay SLICE_1 to SLICE_1 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.379ns
+
+ Physical Path Details:
+
+      Data path SLICE_1 to SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R23C34B.CLK to     R23C34B.Q0 SLICE_1 (from clk133)
+ROUTE         4     0.132     R23C34B.Q0 to     R23C34B.A0 count[2]
+CTOF_DEL    ---     0.101     R23C34B.A0 to     R23C34B.F0 SLICE_1
+ROUTE         1     0.000     R23C34B.F0 to    R23C34B.DI0 un4_count[30] (to clk133)
+                  --------
+                    0.366   (63.9% logic, 36.1% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path inst_clk to SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     1.238        OSC.OSC to    R23C34B.CLK clk133
+                  --------
+                    1.238   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path inst_clk to SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     1.238        OSC.OSC to    R23C34B.CLK clk133
+                  --------
+                    1.238   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.379ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              reset_startup  (from clk133 +)
+   Destination:    FF         Data in        reset_startup  (to clk133 +)
+
+   Delay:               0.366ns  (63.9% logic, 36.1% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.366ns physical path delay SLICE_12 to SLICE_12 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.379ns
+
+ Physical Path Details:
+
+      Data path SLICE_12 to SLICE_12:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R23C34A.CLK to     R23C34A.Q0 SLICE_12 (from clk133)
+ROUTE        12     0.132     R23C34A.Q0 to     R23C34A.A0 synch_rst_c
+CTOF_DEL    ---     0.101     R23C34A.A0 to     R23C34A.F0 SLICE_12
+ROUTE         1     0.000     R23C34A.F0 to    R23C34A.DI0 reset_startup_0 (to clk133)
+                  --------
+                    0.366   (63.9% logic, 36.1% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path inst_clk to SLICE_12:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     1.238        OSC.OSC to    R23C34A.CLK clk133
+                  --------
+                    1.238   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path inst_clk to SLICE_12:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     1.238        OSC.OSC to    R23C34A.CLK clk133
+                  --------
+                    1.238   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.379ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              count[4]  (from clk133 +)
+   Destination:    FF         Data in        count[4]  (to clk133 +)
+
+   Delay:               0.366ns  (63.9% logic, 36.1% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.366ns physical path delay SLICE_2 to SLICE_2 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.379ns
+
+ Physical Path Details:
+
+      Data path SLICE_2 to SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R23C34C.CLK to     R23C34C.Q0 SLICE_2 (from clk133)
+ROUTE         3     0.132     R23C34C.Q0 to     R23C34C.A0 count[4]
+CTOF_DEL    ---     0.101     R23C34C.A0 to     R23C34C.F0 SLICE_2
+ROUTE         1     0.000     R23C34C.F0 to    R23C34C.DI0 un4_count[28] (to clk133)
+                  --------
+                    0.366   (63.9% logic, 36.1% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path inst_clk to SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     1.238        OSC.OSC to    R23C34C.CLK clk133
+                  --------
+                    1.238   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path inst_clk to SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     1.238        OSC.OSC to    R23C34C.CLK clk133
+                  --------
+                    1.238   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.380ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              inst_lcd_sender/PS_vivaz_state[3]  (from clk133 +)
+   Destination:    FF         Data in        inst_lcd_sender/PS_vivaz_state[2]  (to clk133 +)
+
+   Delay:               0.367ns  (63.8% logic, 36.2% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.367ns physical path delay inst_lcd_sender/SLICE_4 to inst_lcd_sender/SLICE_4 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.380ns
+
+ Physical Path Details:
+
+      Data path inst_lcd_sender/SLICE_4 to inst_lcd_sender/SLICE_4:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133     R7C39A.CLK to      R7C39A.Q1 inst_lcd_sender/SLICE_4 (from clk133)
+ROUTE         1     0.133      R7C39A.Q1 to      R7C39A.D0 inst_lcd_sender/PS_vivaz_state[3]
+CTOF_DEL    ---     0.101      R7C39A.D0 to      R7C39A.F0 inst_lcd_sender/SLICE_4
+ROUTE         1     0.000      R7C39A.F0 to     R7C39A.DI0 inst_lcd_sender/NS_vivaz_state[2] (to clk133)
+                  --------
+                    0.367   (63.8% logic, 36.2% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path inst_clk to inst_lcd_sender/SLICE_4:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     1.252        OSC.OSC to     R7C39A.CLK clk133
+                  --------
+                    1.252   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path inst_clk to inst_lcd_sender/SLICE_4:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     1.252        OSC.OSC to     R7C39A.CLK clk133
+                  --------
+                    1.252   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.380ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              inst_lcd_sender/PS_vivaz_state[2]  (from clk133 +)
+   Destination:    FF         Data in        inst_lcd_sender/PS_vivaz_state[1]  (to clk133 +)
+
+   Delay:               0.367ns  (63.8% logic, 36.2% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.367ns physical path delay inst_lcd_sender/SLICE_4 to inst_lcd_sender/SLICE_3 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.380ns
+
+ Physical Path Details:
+
+      Data path inst_lcd_sender/SLICE_4 to inst_lcd_sender/SLICE_3:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133     R7C39A.CLK to      R7C39A.Q0 inst_lcd_sender/SLICE_4 (from clk133)
+ROUTE         1     0.133      R7C39A.Q0 to      R7C39B.D1 inst_lcd_sender/PS_vivaz_state[2]
+CTOF_DEL    ---     0.101      R7C39B.D1 to      R7C39B.F1 inst_lcd_sender/SLICE_3
+ROUTE         1     0.000      R7C39B.F1 to     R7C39B.DI1 inst_lcd_sender/NS_vivaz_state[1] (to clk133)
+                  --------
+                    0.367   (63.8% logic, 36.2% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path inst_clk to inst_lcd_sender/SLICE_4:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     1.252        OSC.OSC to     R7C39A.CLK clk133
+                  --------
+                    1.252   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path inst_clk to inst_lcd_sender/SLICE_3:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     1.252        OSC.OSC to     R7C39B.CLK clk133
+                  --------
+                    1.252   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.381ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              count[0]  (from clk133 +)
+   Destination:    FF         Data in        count[0]  (to clk133 +)
+
+   Delay:               0.368ns  (63.6% logic, 36.4% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.368ns physical path delay SLICE_0 to SLICE_0 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.381ns
+
+ Physical Path Details:
+
+      Data path SLICE_0 to SLICE_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R22C34C.CLK to     R22C34C.Q0 SLICE_0 (from clk133)
+ROUTE         5     0.134     R22C34C.Q0 to     R22C34C.A0 count[0]
+CTOF_DEL    ---     0.101     R22C34C.A0 to     R22C34C.F0 SLICE_0
+ROUTE         1     0.000     R22C34C.F0 to    R22C34C.DI0 count_i[0] (to clk133)
+                  --------
+                    0.368   (63.6% logic, 36.4% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path inst_clk to SLICE_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     1.238        OSC.OSC to    R22C34C.CLK clk133
+                  --------
+                    1.238   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path inst_clk to SLICE_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     1.238        OSC.OSC to    R22C34C.CLK clk133
+                  --------
+                    1.238   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.383ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              inst_lcd_sender/PS_vivaz_state[4]  (from clk133 +)
+   Destination:    FF         Data in        inst_lcd_sender/PS_vivaz_state[3]  (to clk133 +)
+
+   Delay:               0.370ns  (63.2% logic, 36.8% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.370ns physical path delay inst_lcd_sender/SLICE_5 to inst_lcd_sender/SLICE_4 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.383ns
+
+ Physical Path Details:
+
+      Data path inst_lcd_sender/SLICE_5 to inst_lcd_sender/SLICE_4:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133     R6C39C.CLK to      R6C39C.Q0 inst_lcd_sender/SLICE_5 (from clk133)
+ROUTE         1     0.134      R6C39C.Q0 to      R7C39A.D1 inst_lcd_sender/PS_vivaz_state[4]
+CTOF_DEL    ---     0.101      R7C39A.D1 to      R7C39A.F1 inst_lcd_sender/SLICE_4
+ROUTE         2     0.002      R7C39A.F1 to     R7C39A.DI1 inst_lcd_sender/NS_vivaz_state[3] (to clk133)
+                  --------
+                    0.370   (63.2% logic, 36.8% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path inst_clk to inst_lcd_sender/SLICE_5:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     1.252        OSC.OSC to     R6C39C.CLK clk133
+                  --------
+                    1.252   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path inst_clk to inst_lcd_sender/SLICE_4:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     1.252        OSC.OSC to     R7C39A.CLK clk133
+                  --------
+                    1.252   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.385ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              count[5]  (from clk133 +)
+   Destination:    FF         Data in        count[5]  (to clk133 +)
+
+   Delay:               0.372ns  (62.9% logic, 37.1% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.372ns physical path delay SLICE_2 to SLICE_2 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.385ns
+
+ Physical Path Details:
+
+      Data path SLICE_2 to SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R23C34C.CLK to     R23C34C.Q1 SLICE_2 (from clk133)
+ROUTE         2     0.138     R23C34C.Q1 to     R23C34C.C1 count[5]
+CTOF_DEL    ---     0.101     R23C34C.C1 to     R23C34C.F1 SLICE_2
+ROUTE         1     0.000     R23C34C.F1 to    R23C34C.DI1 un4_count[27] (to clk133)
+                  --------
+                    0.372   (62.9% logic, 37.1% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path inst_clk to SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     1.238        OSC.OSC to    R23C34C.CLK clk133
+                  --------
+                    1.238   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path inst_clk to SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     1.238        OSC.OSC to    R23C34C.CLK clk133
+                  --------
+                    1.238   (0.0% logic, 100.0% route), 0 logic levels.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference(MIN Delays)                  |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "clk133" 20.460000 MHz ;  |     0.000 ns|     0.379 ns|   2  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 3 clocks:
+
+Clock Domain: inst_lcd_sender/lcd_rs_0_sqmuxa   Source: inst_lcd_sender/SLICE_6.F0   Loads: 3
+   No transfer within this clock domain is found
+
+Clock Domain: inst_lcd_sender/PS_vivaz_state[6]   Source: inst_lcd_sender/SLICE_5.Q1   Loads: 3
+   No transfer within this clock domain is found
+
+Clock Domain: clk133   Source: inst_clk.OSC   Loads: 9
+   Covered under: FREQUENCY NET "clk133" 20.460000 MHz ;
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 54 paths, 1 nets, and 120 connections (100.00% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 0 (setup), 0 (hold)
+Score: 0 (setup), 0 (hold)
+Cumulative negative slack: 0 (0+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+

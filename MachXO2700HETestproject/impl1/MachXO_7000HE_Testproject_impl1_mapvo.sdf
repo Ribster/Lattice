@@ -1,0 +1,729 @@
+(DELAYFILE
+  (SDFVERSION "3.0")
+  (DESIGN "lcd_wrapper")
+  (DATE "Wed May 18 13:57:38 2016")
+  (VENDOR "Lattice")
+  (PROGRAM "ldbanno")
+  (VERSION "Diamond (64-bit) 3.7.1.502")
+  (DIVIDER /)
+  (VOLTAGE 1.26:1.20:1.14)
+  (PROCESS "default")
+  (TEMPERATURE -40:25:85)
+  (TIMESCALE 1ps)
+  (CELL
+    (CELLTYPE "sender_SLICE_1")
+    (INSTANCE sender\/SLICE_1)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH CLK Q0 (356:382:409)(356:382:409))
+        (IOPATH CLK Q1 (356:382:409)(356:382:409))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD M1 (posedge CLK) (229:266:303)(-104:-87:-71))
+      (SETUPHOLD M0 (posedge CLK) (229:266:303)(-104:-87:-71))
+      (SETUPHOLD CE (posedge CLK) (203:226:249)(-87:-78:-70))
+    )
+    (TIMINGCHECK
+      (WIDTH (posedge CLK) (1125:1125:1125))
+      (WIDTH (negedge CLK) (1125:1125:1125))
+    )
+  )
+  (CELL
+    (CELLTYPE "sender_SLICE_2")
+    (INSTANCE sender\/SLICE_2)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH CLK Q0 (356:382:409)(356:382:409))
+        (IOPATH CLK Q1 (356:382:409)(356:382:409))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD M1 (posedge CLK) (229:266:303)(-104:-87:-71))
+      (SETUPHOLD M0 (posedge CLK) (229:266:303)(-104:-87:-71))
+      (SETUPHOLD CE (posedge CLK) (203:226:249)(-87:-78:-70))
+    )
+    (TIMINGCHECK
+      (WIDTH (posedge CLK) (1125:1125:1125))
+      (WIDTH (negedge CLK) (1125:1125:1125))
+    )
+  )
+  (CELL
+    (CELLTYPE "sender_SLICE_3")
+    (INSTANCE sender\/SLICE_3)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH CLK Q0 (356:382:409)(356:382:409))
+        (IOPATH CLK Q1 (356:382:409)(356:382:409))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD M1 (posedge CLK) (229:266:303)(-104:-87:-71))
+      (SETUPHOLD M0 (posedge CLK) (229:266:303)(-104:-87:-71))
+      (SETUPHOLD CE (posedge CLK) (203:226:249)(-87:-78:-70))
+    )
+    (TIMINGCHECK
+      (WIDTH (posedge CLK) (1125:1125:1125))
+      (WIDTH (negedge CLK) (1125:1125:1125))
+    )
+  )
+  (CELL
+    (CELLTYPE "sender_SLICE_4")
+    (INSTANCE sender\/SLICE_4)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH CLK Q0 (356:382:409)(356:382:409))
+        (IOPATH CLK Q1 (356:382:409)(356:382:409))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD M1 (posedge CLK) (229:266:303)(-104:-87:-71))
+      (SETUPHOLD M0 (posedge CLK) (229:266:303)(-104:-87:-71))
+      (SETUPHOLD CE (posedge CLK) (203:226:249)(-87:-78:-70))
+    )
+    (TIMINGCHECK
+      (WIDTH (posedge CLK) (1125:1125:1125))
+      (WIDTH (negedge CLK) (1125:1125:1125))
+    )
+  )
+  (CELL
+    (CELLTYPE "SLICE_7")
+    (INSTANCE SLICE_7)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH CLK Q0 (356:382:409)(356:382:409))
+        (IOPATH CLK Q1 (356:382:409)(356:382:409))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD M1 (posedge CLK) (229:266:303)(-104:-87:-71))
+      (SETUPHOLD M0 (posedge CLK) (229:266:303)(-104:-87:-71))
+      (SETUPHOLD CE (posedge CLK) (203:226:249)(-87:-78:-70))
+    )
+    (TIMINGCHECK
+      (WIDTH (posedge CLK) (1125:1125:1125))
+      (WIDTH (negedge CLK) (1125:1125:1125))
+    )
+  )
+  (CELL
+    (CELLTYPE "sender_SLICE_8")
+    (INSTANCE sender\/SLICE_8)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH B1 F1 (324:388:452)(324:388:452))
+        (IOPATH A1 F1 (324:388:452)(324:388:452))
+        (IOPATH A0 F0 (324:388:452)(324:388:452))
+        (IOPATH CLK Q0 (356:382:409)(356:382:409))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD DI0 (posedge CLK) (117:133:150)(-35:-24:-13))
+      (SETUPHOLD CE (posedge CLK) (203:226:249)(-87:-78:-70))
+    )
+    (TIMINGCHECK
+      (WIDTH (posedge CLK) (1125:1125:1125))
+      (WIDTH (negedge CLK) (1125:1125:1125))
+    )
+  )
+  (CELL
+    (CELLTYPE "sender_SLICE_9")
+    (INSTANCE sender\/SLICE_9)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH C1 F1 (324:388:452)(324:388:452))
+        (IOPATH B1 F1 (324:388:452)(324:388:452))
+        (IOPATH A1 F1 (324:388:452)(324:388:452))
+        (IOPATH C0 F0 (324:388:452)(324:388:452))
+        (IOPATH B0 F0 (324:388:452)(324:388:452))
+        (IOPATH A0 F0 (324:388:452)(324:388:452))
+        (IOPATH CLK Q0 (356:382:409)(356:382:409))
+        (IOPATH CLK Q1 (356:382:409)(356:382:409))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD DI1 (posedge CLK) (117:133:150)(-35:-24:-13))
+      (SETUPHOLD DI0 (posedge CLK) (117:133:150)(-35:-24:-13))
+    )
+    (TIMINGCHECK
+      (WIDTH (posedge CLK) (1125:1125:1125))
+      (WIDTH (negedge CLK) (1125:1125:1125))
+    )
+  )
+  (CELL
+    (CELLTYPE "sender_SLICE_10")
+    (INSTANCE sender\/SLICE_10)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH C1 F1 (324:388:452)(324:388:452))
+        (IOPATH B1 F1 (324:388:452)(324:388:452))
+        (IOPATH A1 F1 (324:388:452)(324:388:452))
+        (IOPATH C0 F0 (324:388:452)(324:388:452))
+        (IOPATH B0 F0 (324:388:452)(324:388:452))
+        (IOPATH A0 F0 (324:388:452)(324:388:452))
+        (IOPATH CLK Q0 (356:382:409)(356:382:409))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD DI0 (posedge CLK) (117:133:150)(-35:-24:-13))
+    )
+    (TIMINGCHECK
+      (WIDTH (posedge CLK) (1125:1125:1125))
+      (WIDTH (negedge CLK) (1125:1125:1125))
+    )
+  )
+  (CELL
+    (CELLTYPE "sender_SLICE_15")
+    (INSTANCE sender\/SLICE_15)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH CLK Q0 (356:382:409)(356:382:409))
+        (IOPATH CLK Q1 (356:382:409)(356:382:409))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD M1 (posedge CLK) (229:266:303)(-104:-87:-71))
+      (SETUPHOLD M0 (posedge CLK) (229:266:303)(-104:-87:-71))
+      (SETUPHOLD CE (posedge CLK) (203:226:249)(-87:-78:-70))
+    )
+    (TIMINGCHECK
+      (WIDTH (posedge CLK) (1125:1125:1125))
+      (WIDTH (negedge CLK) (1125:1125:1125))
+    )
+  )
+  (CELL
+    (CELLTYPE "sender_SLICE_16")
+    (INSTANCE sender\/SLICE_16)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH CLK Q0 (356:382:409)(356:382:409))
+        (IOPATH CLK Q1 (356:382:409)(356:382:409))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD M1 (posedge CLK) (229:266:303)(-104:-87:-71))
+      (SETUPHOLD M0 (posedge CLK) (229:266:303)(-104:-87:-71))
+      (SETUPHOLD CE (posedge CLK) (203:226:249)(-87:-78:-70))
+    )
+    (TIMINGCHECK
+      (WIDTH (posedge CLK) (1125:1125:1125))
+      (WIDTH (negedge CLK) (1125:1125:1125))
+    )
+  )
+  (CELL
+    (CELLTYPE "sender_SLICE_17")
+    (INSTANCE sender\/SLICE_17)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH CLK Q0 (356:382:409)(356:382:409))
+        (IOPATH CLK Q1 (356:382:409)(356:382:409))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD M1 (posedge CLK) (229:266:303)(-104:-87:-71))
+      (SETUPHOLD M0 (posedge CLK) (229:266:303)(-104:-87:-71))
+      (SETUPHOLD CE (posedge CLK) (203:226:249)(-87:-78:-70))
+    )
+    (TIMINGCHECK
+      (WIDTH (posedge CLK) (1125:1125:1125))
+      (WIDTH (negedge CLK) (1125:1125:1125))
+    )
+  )
+  (CELL
+    (CELLTYPE "lcd_bus_13_")
+    (INSTANCE lcd_bus\[13\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO lcdbus13 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "lcd_bus_14_")
+    (INSTANCE lcd_bus\[14\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO lcdbus14 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "lcd_bus_15_")
+    (INSTANCE lcd_bus\[15\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO lcdbus15 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "lcd_bus_12_")
+    (INSTANCE lcd_bus\[12\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO lcdbus12 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "lcd_bus_11_")
+    (INSTANCE lcd_bus\[11\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO lcdbus11 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "lcd_bus_10_")
+    (INSTANCE lcd_bus\[10\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO lcdbus10 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "lcd_bus_9_")
+    (INSTANCE lcd_bus\[9\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO lcdbus9 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "lcd_bus_8_")
+    (INSTANCE lcd_bus\[8\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO lcdbus8 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "lcd_bus_7_")
+    (INSTANCE lcd_bus\[7\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO lcdbus7 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "lcd_bus_6_")
+    (INSTANCE lcd_bus\[6\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO lcdbus6 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "lcd_bus_5_")
+    (INSTANCE lcd_bus\[5\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO lcdbus5 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "lcd_bus_4_")
+    (INSTANCE lcd_bus\[4\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO lcdbus4 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "lcd_bus_3_")
+    (INSTANCE lcd_bus\[3\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO lcdbus3 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "lcd_bus_2_")
+    (INSTANCE lcd_bus\[2\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO lcdbus2 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "lcd_bus_1_")
+    (INSTANCE lcd_bus\[1\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO lcdbus1 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "lcd_bus_0_")
+    (INSTANCE lcd_bus\[0\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO lcdbus0 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "lcd_write")
+    (INSTANCE lcd_write_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO lcd_write (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "lcd_reset")
+    (INSTANCE lcd_reset_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO lcd_reset (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "lcd_rs")
+    (INSTANCE lcd_rs_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO lcd_rs (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "busy")
+    (INSTANCE busy_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO busy (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "clk")
+    (INSTANCE clk_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH clk PADDI (1223:1297:1372)(1223:1297:1372))
+      )
+    )
+    (TIMINGCHECK
+      (WIDTH (posedge clk) (3330:3330:3330))
+      (WIDTH (negedge clk) (3330:3330:3330))
+    )
+  )
+  (CELL
+    (CELLTYPE "rst")
+    (INSTANCE rst_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH rst PADDI (1223:1297:1372)(1223:1297:1372))
+      )
+    )
+    (TIMINGCHECK
+      (WIDTH (posedge rst) (3330:3330:3330))
+      (WIDTH (negedge rst) (3330:3330:3330))
+    )
+  )
+  (CELL
+    (CELLTYPE "payload_15_")
+    (INSTANCE payload\[15\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH payload15 PADDI (1223:1297:1372)(1223:1297:1372))
+      )
+    )
+    (TIMINGCHECK
+      (WIDTH (posedge payload15) (3330:3330:3330))
+      (WIDTH (negedge payload15) (3330:3330:3330))
+    )
+  )
+  (CELL
+    (CELLTYPE "payload_14_")
+    (INSTANCE payload\[14\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH payload14 PADDI (1223:1297:1372)(1223:1297:1372))
+      )
+    )
+    (TIMINGCHECK
+      (WIDTH (posedge payload14) (3330:3330:3330))
+      (WIDTH (negedge payload14) (3330:3330:3330))
+    )
+  )
+  (CELL
+    (CELLTYPE "payload_13_")
+    (INSTANCE payload\[13\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH payload13 PADDI (1223:1297:1372)(1223:1297:1372))
+      )
+    )
+    (TIMINGCHECK
+      (WIDTH (posedge payload13) (3330:3330:3330))
+      (WIDTH (negedge payload13) (3330:3330:3330))
+    )
+  )
+  (CELL
+    (CELLTYPE "payload_12_")
+    (INSTANCE payload\[12\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH payload12 PADDI (1223:1297:1372)(1223:1297:1372))
+      )
+    )
+    (TIMINGCHECK
+      (WIDTH (posedge payload12) (3330:3330:3330))
+      (WIDTH (negedge payload12) (3330:3330:3330))
+    )
+  )
+  (CELL
+    (CELLTYPE "payload_11_")
+    (INSTANCE payload\[11\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH payload11 PADDI (1223:1297:1372)(1223:1297:1372))
+      )
+    )
+    (TIMINGCHECK
+      (WIDTH (posedge payload11) (3330:3330:3330))
+      (WIDTH (negedge payload11) (3330:3330:3330))
+    )
+  )
+  (CELL
+    (CELLTYPE "payload_10_")
+    (INSTANCE payload\[10\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH payload10 PADDI (1223:1297:1372)(1223:1297:1372))
+      )
+    )
+    (TIMINGCHECK
+      (WIDTH (posedge payload10) (3330:3330:3330))
+      (WIDTH (negedge payload10) (3330:3330:3330))
+    )
+  )
+  (CELL
+    (CELLTYPE "payload_9_")
+    (INSTANCE payload\[9\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH payload9 PADDI (1223:1297:1372)(1223:1297:1372))
+      )
+    )
+    (TIMINGCHECK
+      (WIDTH (posedge payload9) (3330:3330:3330))
+      (WIDTH (negedge payload9) (3330:3330:3330))
+    )
+  )
+  (CELL
+    (CELLTYPE "payload_8_")
+    (INSTANCE payload\[8\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH payload8 PADDI (1223:1297:1372)(1223:1297:1372))
+      )
+    )
+    (TIMINGCHECK
+      (WIDTH (posedge payload8) (3330:3330:3330))
+      (WIDTH (negedge payload8) (3330:3330:3330))
+    )
+  )
+  (CELL
+    (CELLTYPE "payload_7_")
+    (INSTANCE payload\[7\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH payload7 PADDI (1223:1297:1372)(1223:1297:1372))
+      )
+    )
+    (TIMINGCHECK
+      (WIDTH (posedge payload7) (3330:3330:3330))
+      (WIDTH (negedge payload7) (3330:3330:3330))
+    )
+  )
+  (CELL
+    (CELLTYPE "payload_6_")
+    (INSTANCE payload\[6\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH payload6 PADDI (1223:1297:1372)(1223:1297:1372))
+      )
+    )
+    (TIMINGCHECK
+      (WIDTH (posedge payload6) (3330:3330:3330))
+      (WIDTH (negedge payload6) (3330:3330:3330))
+    )
+  )
+  (CELL
+    (CELLTYPE "payload_5_")
+    (INSTANCE payload\[5\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH payload5 PADDI (1223:1297:1372)(1223:1297:1372))
+      )
+    )
+    (TIMINGCHECK
+      (WIDTH (posedge payload5) (3330:3330:3330))
+      (WIDTH (negedge payload5) (3330:3330:3330))
+    )
+  )
+  (CELL
+    (CELLTYPE "payload_4_")
+    (INSTANCE payload\[4\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH payload4 PADDI (1223:1297:1372)(1223:1297:1372))
+      )
+    )
+    (TIMINGCHECK
+      (WIDTH (posedge payload4) (3330:3330:3330))
+      (WIDTH (negedge payload4) (3330:3330:3330))
+    )
+  )
+  (CELL
+    (CELLTYPE "payload_3_")
+    (INSTANCE payload\[3\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH payload3 PADDI (1223:1297:1372)(1223:1297:1372))
+      )
+    )
+    (TIMINGCHECK
+      (WIDTH (posedge payload3) (3330:3330:3330))
+      (WIDTH (negedge payload3) (3330:3330:3330))
+    )
+  )
+  (CELL
+    (CELLTYPE "payload_2_")
+    (INSTANCE payload\[2\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH payload2 PADDI (1223:1297:1372)(1223:1297:1372))
+      )
+    )
+    (TIMINGCHECK
+      (WIDTH (posedge payload2) (3330:3330:3330))
+      (WIDTH (negedge payload2) (3330:3330:3330))
+    )
+  )
+  (CELL
+    (CELLTYPE "payload_1_")
+    (INSTANCE payload\[1\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH payload1 PADDI (1223:1297:1372)(1223:1297:1372))
+      )
+    )
+    (TIMINGCHECK
+      (WIDTH (posedge payload1) (3330:3330:3330))
+      (WIDTH (negedge payload1) (3330:3330:3330))
+    )
+  )
+  (CELL
+    (CELLTYPE "payload_0_")
+    (INSTANCE payload\[0\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH payload0 PADDI (1223:1297:1372)(1223:1297:1372))
+      )
+    )
+    (TIMINGCHECK
+      (WIDTH (posedge payload0) (3330:3330:3330))
+      (WIDTH (negedge payload0) (3330:3330:3330))
+    )
+  )
+  (CELL
+    (CELLTYPE "lcd_wrapper")
+    (INSTANCE )
+    (DELAY
+      (ABSOLUTE
+        (INTERCONNECT payload\[1\]_I/PADDI sender\/SLICE_1/M1 (0:0:0)(0:0:0))
+        (INTERCONNECT payload\[2\]_I/PADDI sender\/SLICE_1/M0 (0:0:0)(0:0:0))
+        (INTERCONNECT sender\/SLICE_10/F1 sender\/SLICE_1/CE (0:0:0)(0:0:0))
+        (INTERCONNECT sender\/SLICE_10/F1 sender\/SLICE_2/CE (0:0:0)(0:0:0))
+        (INTERCONNECT sender\/SLICE_10/F1 sender\/SLICE_3/CE (0:0:0)(0:0:0))
+        (INTERCONNECT sender\/SLICE_10/F1 sender\/SLICE_4/CE (0:0:0)(0:0:0))
+        (INTERCONNECT sender\/SLICE_10/F1 SLICE_7/CE (0:0:0)(0:0:0))
+        (INTERCONNECT sender\/SLICE_10/F1 sender\/SLICE_15/CE (0:0:0)(0:0:0))
+        (INTERCONNECT sender\/SLICE_10/F1 sender\/SLICE_16/CE (0:0:0)(0:0:0))
+        (INTERCONNECT sender\/SLICE_10/F1 sender\/SLICE_17/CE (0:0:0)(0:0:0))
+        (INTERCONNECT clk_I/PADDI sender\/SLICE_1/CLK (0:0:0)(0:0:0))
+        (INTERCONNECT clk_I/PADDI sender\/SLICE_2/CLK (0:0:0)(0:0:0))
+        (INTERCONNECT clk_I/PADDI sender\/SLICE_3/CLK (0:0:0)(0:0:0))
+        (INTERCONNECT clk_I/PADDI sender\/SLICE_4/CLK (0:0:0)(0:0:0))
+        (INTERCONNECT clk_I/PADDI SLICE_7/CLK (0:0:0)(0:0:0))
+        (INTERCONNECT clk_I/PADDI sender\/SLICE_8/CLK (0:0:0)(0:0:0))
+        (INTERCONNECT clk_I/PADDI sender\/SLICE_9/CLK (0:0:0)(0:0:0))
+        (INTERCONNECT clk_I/PADDI sender\/SLICE_10/CLK (0:0:0)(0:0:0))
+        (INTERCONNECT clk_I/PADDI sender\/SLICE_15/CLK (0:0:0)(0:0:0))
+        (INTERCONNECT clk_I/PADDI sender\/SLICE_16/CLK (0:0:0)(0:0:0))
+        (INTERCONNECT clk_I/PADDI sender\/SLICE_17/CLK (0:0:0)(0:0:0))
+        (INTERCONNECT sender\/SLICE_1/Q0 lcd_bus\[2\]_I/PADDO (0:0:0)(0:0:0))
+        (INTERCONNECT sender\/SLICE_1/Q1 lcd_bus\[1\]_I/PADDO (0:0:0)(0:0:0))
+        (INTERCONNECT payload\[3\]_I/PADDI sender\/SLICE_2/M1 (0:0:0)(0:0:0))
+        (INTERCONNECT payload\[4\]_I/PADDI sender\/SLICE_2/M0 (0:0:0)(0:0:0))
+        (INTERCONNECT sender\/SLICE_2/Q0 lcd_bus\[4\]_I/PADDO (0:0:0)(0:0:0))
+        (INTERCONNECT sender\/SLICE_2/Q1 lcd_bus\[3\]_I/PADDO (0:0:0)(0:0:0))
+        (INTERCONNECT payload\[5\]_I/PADDI sender\/SLICE_3/M1 (0:0:0)(0:0:0))
+        (INTERCONNECT payload\[6\]_I/PADDI sender\/SLICE_3/M0 (0:0:0)(0:0:0))
+        (INTERCONNECT sender\/SLICE_3/Q0 lcd_bus\[6\]_I/PADDO (0:0:0)(0:0:0))
+        (INTERCONNECT sender\/SLICE_3/Q1 lcd_bus\[5\]_I/PADDO (0:0:0)(0:0:0))
+        (INTERCONNECT payload\[7\]_I/PADDI sender\/SLICE_4/M1 (0:0:0)(0:0:0))
+        (INTERCONNECT payload\[8\]_I/PADDI sender\/SLICE_4/M0 (0:0:0)(0:0:0))
+        (INTERCONNECT sender\/SLICE_4/Q0 lcd_bus\[8\]_I/PADDO (0:0:0)(0:0:0))
+        (INTERCONNECT sender\/SLICE_4/Q1 lcd_bus\[7\]_I/PADDO (0:0:0)(0:0:0))
+        (INTERCONNECT payload\[15\]_I/PADDI SLICE_7/M1 (0:0:0)(0:0:0))
+        (INTERCONNECT payload\[14\]_I/PADDI SLICE_7/M0 (0:0:0)(0:0:0))
+        (INTERCONNECT SLICE_7/F0 lcd_reset_I/PADDO (0:0:0)(0:0:0))
+        (INTERCONNECT SLICE_7/F0 lcd_rs_I/PADDO (0:0:0)(0:0:0))
+        (INTERCONNECT SLICE_7/F0 busy_I/PADDO (0:0:0)(0:0:0))
+        (INTERCONNECT SLICE_7/Q0 lcd_bus\[14\]_I/PADDO (0:0:0)(0:0:0))
+        (INTERCONNECT SLICE_7/Q1 lcd_bus\[15\]_I/PADDO (0:0:0)(0:0:0))
+        (INTERCONNECT sender\/SLICE_9/Q0 sender\/SLICE_8/B1 (0:0:0)(0:0:0))
+        (INTERCONNECT sender\/SLICE_9/Q0 sender\/SLICE_9/A1 (0:0:0)(0:0:0))
+        (INTERCONNECT sender\/SLICE_9/Q0 sender\/SLICE_9/A0 (0:0:0)(0:0:0))
+        (INTERCONNECT sender\/SLICE_9/Q0 sender\/SLICE_10/C1 (0:0:0)(0:0:0))
+        (INTERCONNECT sender\/SLICE_9/Q0 sender\/SLICE_10/B0 (0:0:0)(0:0:0))
+        (INTERCONNECT sender\/SLICE_9/Q1 sender\/SLICE_8/A1 (0:0:0)(0:0:0))
+        (INTERCONNECT sender\/SLICE_9/Q1 sender\/SLICE_9/C1 (0:0:0)(0:0:0))
+        (INTERCONNECT sender\/SLICE_9/Q1 sender\/SLICE_9/C0 (0:0:0)(0:0:0))
+        (INTERCONNECT sender\/SLICE_9/Q1 sender\/SLICE_10/B1 (0:0:0)(0:0:0))
+        (INTERCONNECT sender\/SLICE_9/Q1 sender\/SLICE_10/A0 (0:0:0)(0:0:0))
+        (INTERCONNECT sender\/SLICE_10/Q0 sender\/SLICE_8/A0 (0:0:0)(0:0:0))
+        (INTERCONNECT sender\/SLICE_10/Q0 sender\/SLICE_9/B1 (0:0:0)(0:0:0))
+        (INTERCONNECT sender\/SLICE_10/Q0 sender\/SLICE_9/B0 (0:0:0)(0:0:0))
+        (INTERCONNECT sender\/SLICE_10/Q0 sender\/SLICE_10/A1 (0:0:0)(0:0:0))
+        (INTERCONNECT sender\/SLICE_10/Q0 sender\/SLICE_10/C0 (0:0:0)(0:0:0))
+        (INTERCONNECT sender\/SLICE_8/F0 sender\/SLICE_8/DI0 (0:0:0)(0:0:0))
+        (INTERCONNECT sender\/SLICE_8/F1 sender\/SLICE_8/CE (0:0:0)(0:0:0))
+        (INTERCONNECT sender\/SLICE_8/Q0 lcd_write_I/PADDO (0:0:0)(0:0:0))
+        (INTERCONNECT sender\/SLICE_9/F1 sender\/SLICE_9/DI1 (0:0:0)(0:0:0))
+        (INTERCONNECT sender\/SLICE_9/F0 sender\/SLICE_9/DI0 (0:0:0)(0:0:0))
+        (INTERCONNECT sender\/SLICE_10/F0 sender\/SLICE_10/DI0 (0:0:0)(0:0:0))
+        (INTERCONNECT payload\[0\]_I/PADDI sender\/SLICE_15/M1 (0:0:0)(0:0:0))
+        (INTERCONNECT payload\[9\]_I/PADDI sender\/SLICE_15/M0 (0:0:0)(0:0:0))
+        (INTERCONNECT sender\/SLICE_15/Q0 lcd_bus\[9\]_I/PADDO (0:0:0)(0:0:0))
+        (INTERCONNECT sender\/SLICE_15/Q1 lcd_bus\[0\]_I/PADDO (0:0:0)(0:0:0))
+        (INTERCONNECT payload\[10\]_I/PADDI sender\/SLICE_16/M1 (0:0:0)(0:0:0))
+        (INTERCONNECT payload\[11\]_I/PADDI sender\/SLICE_16/M0 (0:0:0)(0:0:0))
+        (INTERCONNECT sender\/SLICE_16/Q0 lcd_bus\[11\]_I/PADDO (0:0:0)(0:0:0))
+        (INTERCONNECT sender\/SLICE_16/Q1 lcd_bus\[10\]_I/PADDO (0:0:0)(0:0:0))
+        (INTERCONNECT payload\[12\]_I/PADDI sender\/SLICE_17/M1 (0:0:0)(0:0:0))
+        (INTERCONNECT payload\[13\]_I/PADDI sender\/SLICE_17/M0 (0:0:0)(0:0:0))
+        (INTERCONNECT sender\/SLICE_17/Q0 lcd_bus\[13\]_I/PADDO (0:0:0)(0:0:0))
+        (INTERCONNECT sender\/SLICE_17/Q1 lcd_bus\[12\]_I/PADDO (0:0:0)(0:0:0))
+        (INTERCONNECT rst_I/PADDI GSR_INST/GSRNET (0:0:0)(0:0:0))
+      )
+    )
+  )
+)

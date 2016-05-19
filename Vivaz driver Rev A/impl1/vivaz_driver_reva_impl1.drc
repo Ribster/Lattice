@@ -1,0 +1,14 @@
+WARNING - blockcheck: in SLICE SLICE_31, REG0 is used but there is no active clock in the slice.
+WARNING - blockcheck: in SLICE SLICE_33, REG0 is used but there is no active clock in the slice.
+WARNING - blockcheck: in SLICE SLICE_35, REG0 is used but there is no active clock in the slice.
+WARNING - blockcheck: in SLICE SLICE_37, REG0 is used but there is no active clock in the slice.
+WARNING - blockcheck: in SLICE SLICE_38, REG0 is used but there is no active clock in the slice.
+WARNING - blockcheck: in SLICE SLICE_40, REG0 is used but there is no active clock in the slice.
+WARNING - blockcheck: in SLICE SLICE_41, REG0 is used but there is no active clock in the slice.
+WARNING - blockcheck: in SLICE SLICE_42, REG0 is used but there is no active clock in the slice.
+WARNING - blockcheck: in SLICE SLICE_43, REG0 is used but there is no active clock in the slice.
+WARNING - blockcheck: in SLICE SLICE_47, REG0 is used but there is no active clock in the slice.
+WARNING - blockcheck: in SLICE SLICE_48, REG0 is used but there is no active clock in the slice.
+WARNING - blockcheck: in SLICE SLICE_49, REG0 is used but there is no active clock in the slice.
+WARNING - blockcheck: in SLICE SLICE_51, REG0 is used but there is no active clock in the slice.
+DRC detected 0 errors and 13 warnings.

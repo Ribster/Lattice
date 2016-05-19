@@ -1,0 +1,93 @@
+Synopsys Lattice Technology Mapper, Version maplat, Build 1368R, Built Jan  8 2016 09:37:50
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version K-2015.09L-2
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 110MB peak: 111MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 113MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 139MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+While running 64-bit - Windows build
+
+@E::Signal 004 error in m_gen_lattice.exe
+Stack trace
+===========
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x1B6EE54D0
+0x1B6EC56F0
+0x1B6EFFE1A
+0x1B6EFFE1A
+0x1B6EFFE1A
+0x1B6EFFE1A
+0x1B6EFFE1A
+0x1B6EFFE1A
+0x1B6EFFE1A
+0x1B6EFFE1A
+0x1B6EFFE1A
+0x1B6EFFE1A
+0x1B6EFFE1A
+0x1B6EFFE1A
+0x1B6EFFE1A
+0x1B6EFFE1A
+0x1B6EFFE1A
+0x1B6CAF560
+0x1B6EE3260
+Please open a web case about this problem. A Synopsys CAE will then contact you.
+
+Instructions to open a web-case:
+1.  Go to the Synopsys support web site, https://solvnet.synopsys.com. 
+2.  Login with your user name and password. If you do not have an account, please register and set one up.
+3.  Click the `Enter A Call' link.
+4.  Provide a detailed description of the problem, and fill in all required fields.
+5.  Attach any test cases or archived project files required to reproduce the problem. 
+Stack trace
+===========
+0x1B6EE3260
+0x1B6EE3260
+0x1B6EE3260
+0x1B6EE3260
+0x1B6EE3260
+0x1B6EE3260
+0x1B6EE54D0
+0x1B6EC56F0
+0x1B6EFFE1A
+0x1B6EFFE1A
+0x1B6EFFE1A
+0x1B6EFFE1A
+0x1B6EFFE1A
+0x1B6EFFE1A
+0x1B6EFFE1A
+0x1B6EFFE1A
+0x1B6EFFE1A
+0x1B6EFFE1A
+0x1B6EFFE1A
+0x1B6EFFE1A
+0x1B6EFFE1A
+0x1B6EFFE1A
+0x1B6EFFE1A
+0x1B6CAF560
+0x1B6EE3260

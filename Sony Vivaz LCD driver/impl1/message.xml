@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BaliMessageLog>
+    <Task name="Map">
+        <Message>
+            <ID>51001030</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>synch_rst_c</Dynamic>
+        </Message>
+    </Task>
     <Task name="Lattice_Synthesis">
         <Message>
             <ID>35002000</ID>
@@ -12,266 +19,588 @@
             <Dynamic>Z:/GITHUB/Lattice/Sony Vivaz LCD driver/impl1</Dynamic>
         </Message>
         <Message>
-            <ID>35921014</ID>
-            <Severity>Info</Severity>
-            <Dynamic>z:/github/lattice/sony vivaz lcd driver/constants.vhd(6): </Dynamic>
-            <Dynamic>constants</Dynamic>
-            <Navigation>z:/github/lattice/sony vivaz lcd driver/constants.vhd</Navigation>
-            <Navigation>6</Navigation>
-        </Message>
-        <Message>
-            <ID>35921013</ID>
-            <Severity>Info</Severity>
-            <Dynamic>z:/github/lattice/sony vivaz lcd driver/constants.vhd(14): </Dynamic>
-            <Dynamic>constants</Dynamic>
-            <Navigation>z:/github/lattice/sony vivaz lcd driver/constants.vhd</Navigation>
-            <Navigation>14</Navigation>
-        </Message>
-        <Message>
             <ID>35921012</ID>
             <Severity>Info</Severity>
-            <Dynamic>z:/github/lattice/sony vivaz lcd driver/main.vhd(10): </Dynamic>
+            <Dynamic>z:/github/lattice/sony vivaz lcd driver/main.vhd(9): </Dynamic>
             <Dynamic>main</Dynamic>
             <Navigation>z:/github/lattice/sony vivaz lcd driver/main.vhd</Navigation>
-            <Navigation>10</Navigation>
+            <Navigation>9</Navigation>
         </Message>
         <Message>
             <ID>35921010</ID>
             <Severity>Info</Severity>
-            <Dynamic>z:/github/lattice/sony vivaz lcd driver/main.vhd(22): </Dynamic>
+            <Dynamic>z:/github/lattice/sony vivaz lcd driver/main.vhd(21): </Dynamic>
             <Dynamic>behavioral</Dynamic>
             <Navigation>z:/github/lattice/sony vivaz lcd driver/main.vhd</Navigation>
+            <Navigation>21</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>z:/github/lattice/sony vivaz lcd driver/lcd_sender.vhd(8): </Dynamic>
+            <Dynamic>lcd_sender</Dynamic>
+            <Navigation>z:/github/lattice/sony vivaz lcd driver/lcd_sender.vhd</Navigation>
+            <Navigation>8</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>z:/github/lattice/sony vivaz lcd driver/lcd_sender.vhd(22): </Dynamic>
+            <Dynamic>beh_lcd_sender</Dynamic>
+            <Navigation>z:/github/lattice/sony vivaz lcd driver/lcd_sender.vhd</Navigation>
             <Navigation>22</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>z:/github/lattice/sony vivaz lcd driver/lcd_arbiter.vhd(8): </Dynamic>
+            <Dynamic>lcd_arbiter</Dynamic>
+            <Navigation>z:/github/lattice/sony vivaz lcd driver/lcd_arbiter.vhd</Navigation>
+            <Navigation>8</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>z:/github/lattice/sony vivaz lcd driver/lcd_arbiter.vhd(18): </Dynamic>
+            <Dynamic>beh_lcd_arbiter</Dynamic>
+            <Navigation>z:/github/lattice/sony vivaz lcd driver/lcd_arbiter.vhd</Navigation>
+            <Navigation>18</Navigation>
         </Message>
         <Message>
             <ID>35921205</ID>
             <Severity>Warning</Severity>
-            <Dynamic>z:/github/lattice/sony vivaz lcd driver/main.vhd(20): </Dynamic>
+            <Dynamic>z:/github/lattice/sony vivaz lcd driver/main.vhd(19): </Dynamic>
             <Dynamic>main</Dynamic>
             <Dynamic>behavioral</Dynamic>
             <Navigation>z:/github/lattice/sony vivaz lcd driver/main.vhd</Navigation>
-            <Navigation>20</Navigation>
+            <Navigation>19</Navigation>
         </Message>
         <Message>
-            <ID>35001771</ID>
+            <ID>35001747</ID>
             <Severity>Warning</Severity>
-            <Dynamic>NS_vivaz_state[2]</Dynamic>
+            <Dynamic>0</Dynamic>
+            <Dynamic>payload_i</Dynamic>
         </Message>
         <Message>
-            <ID>35001771</ID>
+            <ID>35001747</ID>
             <Severity>Warning</Severity>
-            <Dynamic>NS_vivaz_state[1]</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Dynamic>payload_i</Dynamic>
         </Message>
         <Message>
-            <ID>35001771</ID>
+            <ID>35001747</ID>
             <Severity>Warning</Severity>
-            <Dynamic>NS_vivaz_state[0]</Dynamic>
+            <Dynamic>2</Dynamic>
+            <Dynamic>payload_i</Dynamic>
         </Message>
         <Message>
-            <ID>35001771</ID>
+            <ID>35001747</ID>
             <Severity>Warning</Severity>
-            <Dynamic>lcd_go_i</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Dynamic>payload_i</Dynamic>
         </Message>
         <Message>
-            <ID>35001771</ID>
+            <ID>35001747</ID>
             <Severity>Warning</Severity>
-            <Dynamic>lcd_busy_i</Dynamic>
+            <Dynamic>4</Dynamic>
+            <Dynamic>payload_i</Dynamic>
         </Message>
         <Message>
-            <ID>35001771</ID>
+            <ID>35001747</ID>
             <Severity>Warning</Severity>
-            <Dynamic>lcd_dataTrue_commandFalse_i</Dynamic>
+            <Dynamic>5</Dynamic>
+            <Dynamic>payload_i</Dynamic>
         </Message>
         <Message>
-            <ID>35001771</ID>
+            <ID>35001747</ID>
             <Severity>Warning</Severity>
-            <Dynamic>NS_lcd_state[3]</Dynamic>
+            <Dynamic>6</Dynamic>
+            <Dynamic>payload_i</Dynamic>
         </Message>
         <Message>
-            <ID>35001771</ID>
+            <ID>35001747</ID>
             <Severity>Warning</Severity>
-            <Dynamic>NS_lcd_state[2]</Dynamic>
+            <Dynamic>7</Dynamic>
+            <Dynamic>payload_i</Dynamic>
         </Message>
         <Message>
-            <ID>35001771</ID>
+            <ID>35001747</ID>
             <Severity>Warning</Severity>
-            <Dynamic>NS_lcd_state[1]</Dynamic>
+            <Dynamic>8</Dynamic>
+            <Dynamic>payload_i</Dynamic>
         </Message>
         <Message>
-            <ID>35001771</ID>
+            <ID>35001747</ID>
             <Severity>Warning</Severity>
-            <Dynamic>NS_lcd_state[0]</Dynamic>
+            <Dynamic>9</Dynamic>
+            <Dynamic>payload_i</Dynamic>
         </Message>
         <Message>
-            <ID>35001771</ID>
+            <ID>35001747</ID>
             <Severity>Warning</Severity>
-            <Dynamic>waitcounter[23]</Dynamic>
+            <Dynamic>10</Dynamic>
+            <Dynamic>payload_i</Dynamic>
         </Message>
         <Message>
-            <ID>35001771</ID>
+            <ID>35001747</ID>
             <Severity>Warning</Severity>
-            <Dynamic>waitcounter[22]</Dynamic>
+            <Dynamic>11</Dynamic>
+            <Dynamic>payload_i</Dynamic>
         </Message>
         <Message>
-            <ID>35001771</ID>
+            <ID>35001747</ID>
             <Severity>Warning</Severity>
-            <Dynamic>waitcounter[21]</Dynamic>
+            <Dynamic>12</Dynamic>
+            <Dynamic>payload_i</Dynamic>
         </Message>
         <Message>
-            <ID>35001771</ID>
+            <ID>35001747</ID>
             <Severity>Warning</Severity>
-            <Dynamic>waitcounter[20]</Dynamic>
+            <Dynamic>13</Dynamic>
+            <Dynamic>payload_i</Dynamic>
         </Message>
         <Message>
-            <ID>35001771</ID>
+            <ID>35001747</ID>
             <Severity>Warning</Severity>
-            <Dynamic>waitcounter[19]</Dynamic>
+            <Dynamic>14</Dynamic>
+            <Dynamic>payload_i</Dynamic>
         </Message>
         <Message>
-            <ID>35001771</ID>
+            <ID>35001747</ID>
             <Severity>Warning</Severity>
-            <Dynamic>waitcounter[18]</Dynamic>
+            <Dynamic>15</Dynamic>
+            <Dynamic>payload_i</Dynamic>
         </Message>
         <Message>
-            <ID>35001771</ID>
+            <ID>1009991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>waitcounter[17]</Dynamic>
+            <Dynamic>z:/github/lattice/sony vivaz lcd driver/lcd_arbiter.vhd(61): Latch \inst_lcd_arbiter/dlatchrs_19_i3 input is stuck at Zero
+</Dynamic>
         </Message>
         <Message>
-            <ID>35001771</ID>
+            <ID>35001747</ID>
             <Severity>Warning</Severity>
-            <Dynamic>waitcounter[16]</Dynamic>
+            <Dynamic>0</Dynamic>
+            <Dynamic>\inst_lcd_arbiter/PS_arbiter_state</Dynamic>
         </Message>
         <Message>
-            <ID>35001771</ID>
+            <ID>35935013</ID>
             <Severity>Warning</Severity>
-            <Dynamic>waitcounter[15]</Dynamic>
+            <Dynamic>z:/github/lattice/sony vivaz lcd driver/main.vhd(139): </Dynamic>
+            <Dynamic>data1Command0_i_46</Dynamic>
+            <Navigation>z:/github/lattice/sony vivaz lcd driver/main.vhd</Navigation>
+            <Navigation>139</Navigation>
         </Message>
         <Message>
-            <ID>35001771</ID>
+            <ID>35935014</ID>
             <Severity>Warning</Severity>
-            <Dynamic>waitcounter[14]</Dynamic>
+            <Dynamic>z:/github/lattice/sony vivaz lcd driver/main.vhd(139): </Dynamic>
+            <Dynamic>reset_done_48</Dynamic>
+            <Navigation>z:/github/lattice/sony vivaz lcd driver/main.vhd</Navigation>
+            <Navigation>139</Navigation>
         </Message>
         <Message>
-            <ID>35001771</ID>
+            <ID>1009991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>waitcounter[13]</Dynamic>
+            <Dynamic>z:/github/lattice/sony vivaz lcd driver/lcd_arbiter.vhd(61): Transparent Latch \inst_lcd_arbiter/dlatchrs_19_i1 gate is stuck at One
+</Dynamic>
         </Message>
         <Message>
-            <ID>35001771</ID>
+            <ID>1009991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>waitcounter[12]</Dynamic>
+            <Dynamic>z:/github/lattice/sony vivaz lcd driver/lcd_arbiter.vhd(61): Transparent Latch \inst_lcd_arbiter/i21 gate is stuck at One
+</Dynamic>
         </Message>
         <Message>
-            <ID>35001771</ID>
+            <ID>1009991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>waitcounter[11]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001771</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>waitcounter[10]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001771</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>waitcounter[9]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001771</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>waitcounter[8]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001771</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>waitcounter[7]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001771</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>waitcounter[6]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001771</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>waitcounter[5]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001771</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>waitcounter[4]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001771</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>waitcounter[3]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001771</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>waitcounter[2]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001771</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>waitcounter[1]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001771</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>waitcounter[0]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001779</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>PS_vivaz_state_i0</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001779</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>PS_lcd_state_i0_i0</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001611</ID>
-            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/sony vivaz lcd driver/lcd_arbiter.vhd(61): Transparent Latch \inst_lcd_arbiter/dlatchrs_19_i2 gate is stuck at One
+</Dynamic>
         </Message>
     </Task>
     <Task name="PAR">
         <Message>
-            <ID>61061008</ID>
+            <ID>66011008</ID>
             <Severity>Warning</Severity>
-            <Dynamic>synch_rst_c</Dynamic>
-            <Dynamic>Secondary</Dynamic>
-            <Dynamic>synch_rst</Dynamic>
-            <Dynamic>69</Dynamic>
-            <Dynamic>Secondary</Dynamic>
+            <Dynamic>
+   Signal=inst_lcd_sender/lcd_rs_0_sqmuxa loads=3 clock_loads=1
+   Signal=inst_lcd_sender/PS_vivaz_state[6] loads=3 clock_loads=1
+   Signal=inst_lcd_sender/un1_PS_vivaz_state_1keep loads=1 clock_loads=1
+   Signal=inst_lcd_sender/NS_vivaz_state[3] loads=2 clock_loads=1</Dynamic>
         </Message>
         <Message>
             <ID>66011008</ID>
             <Severity>Warning</Severity>
             <Dynamic>
-   Signal=lcd_dataTrue_commandFalse_i_N_146_derived_3 loads=15 clock_loads=2
-   Signal=PS_lcd_state[1]_derived_3 loads=2 clock_loads=2
-   Signal=synch_rst_c_derived_4 loads=1 clock_loads=1
-   Signal=lcd_busy_i_derived_1 loads=1 clock_loads=1
-   Signal=synch_rst_c_derived_9 loads=1 clock_loads=1
-   Signal=PS_lcd_state_1_der   ....   _commandFalse_i_N_146_derived_4 loads=1 clock_loads=1
-   Signal=lcd_busy_i_derived_2 loads=1 clock_loads=1
-   Signal=PS_vivaz_state_0_derived_1 loads=1 clock_loads=1</Dynamic>
+   Signal=inst_lcd_sender/lcd_rs_0_sqmuxa loads=3 clock_loads=1
+   Signal=inst_lcd_sender/PS_vivaz_state[6] loads=3 clock_loads=1
+   Signal=inst_lcd_sender/un1_PS_vivaz_state_1keep loads=1 clock_loads=1
+   Signal=inst_lcd_sender/NS_vivaz_state[3] loads=2 clock_loads=1</Dynamic>
+        </Message>
+    </Task>
+    <Task name="TimingSimFileVHD">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Translate">
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>inst_clk_SEDSTDBY</Dynamic>
+            <Navigation>inst_clk_SEDSTDBY</Navigation>
         </Message>
         <Message>
-            <ID>66011008</ID>
+            <ID>1163101</ID>
             <Severity>Warning</Severity>
-            <Dynamic>
-   Signal=lcd_dataTrue_commandFalse_i_N_146_derived_3 loads=15 clock_loads=2
-   Signal=PS_lcd_state[1]_derived_3 loads=2 clock_loads=2
-   Signal=synch_rst_c_derived_4 loads=1 clock_loads=1
-   Signal=lcd_busy_i_derived_1 loads=1 clock_loads=1
-   Signal=synch_rst_c_derived_9 loads=1 clock_loads=1
-   Signal=PS_lcd_state_1_der   ....   _commandFalse_i_N_146_derived_4 loads=1 clock_loads=1
-   Signal=lcd_busy_i_derived_2 loads=1 clock_loads=1
-   Signal=PS_vivaz_state_0_derived_1 loads=1 clock_loads=1</Dynamic>
+            <Dynamic>1</Dynamic>
+        </Message>
+    </Task>
+    <Task name="TimingSimFileVlg">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Synplify_Synthesis">
+        <Message>
+            <ID>2011000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CD638 :&quot;Z:\GITHUB\Lattice\Sony Vivaz LCD driver\main.vhd&quot;:68:8:68:19|Signal ns_lcd_state is undriven. Either assign the signal a value or remove the signal declaration.</Dynamic>
+            <Navigation>CD638</Navigation>
+            <Navigation>Z:\GITHUB\Lattice\Sony Vivaz LCD driver\main.vhd</Navigation>
+            <Navigation>68</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>68</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>Signal ns_lcd_state is undriven. Either assign the signal a value or remove the signal declaration.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CD638 :&quot;Z:\GITHUB\Lattice\Sony Vivaz LCD driver\main.vhd&quot;:69:8:69:19|Signal ps_lcd_state is undriven. Either assign the signal a value or remove the signal declaration.</Dynamic>
+            <Navigation>CD638</Navigation>
+            <Navigation>Z:\GITHUB\Lattice\Sony Vivaz LCD driver\main.vhd</Navigation>
+            <Navigation>69</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>69</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>Signal ps_lcd_state is undriven. Either assign the signal a value or remove the signal declaration.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL240 :&quot;Z:\GITHUB\Lattice\Sony Vivaz LCD driver\lcd_arbiter.vhd&quot;:13:2:13:10|lcd_reset is not assigned a value (floating) -- simulation mismatch possible.</Dynamic>
+            <Navigation>CL240</Navigation>
+            <Navigation>Z:\GITHUB\Lattice\Sony Vivaz LCD driver\lcd_arbiter.vhd</Navigation>
+            <Navigation>13</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>13</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>lcd_reset is not assigned a value (floating) -- simulation mismatch possible. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL117 :&quot;Z:\GITHUB\Lattice\Sony Vivaz LCD driver\lcd_arbiter.vhd&quot;:38:2:38:3|Latch generated from process for signal NS_arbiter_state(0 to 6); possible missing assignment in an if or case statement.</Dynamic>
+            <Navigation>CL117</Navigation>
+            <Navigation>Z:\GITHUB\Lattice\Sony Vivaz LCD driver\lcd_arbiter.vhd</Navigation>
+            <Navigation>38</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>38</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>Latch generated from process for signal NS_arbiter_state(0 to 6); possible missing assignment in an if or case statement.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL113 :&quot;Z:\GITHUB\Lattice\Sony Vivaz LCD driver\lcd_arbiter.vhd&quot;:25:2:25:3|Feedback mux created for signal PS_arbiter_state[0:6]. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.</Dynamic>
+            <Navigation>CL113</Navigation>
+            <Navigation>Z:\GITHUB\Lattice\Sony Vivaz LCD driver\lcd_arbiter.vhd</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>Feedback mux created for signal PS_arbiter_state[0:6]. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL111 :&quot;Z:\GITHUB\Lattice\Sony Vivaz LCD driver\lcd_arbiter.vhd&quot;:38:2:38:3|All reachable assignments to go are '1'; removing register. To preserve a constant register, use the syn_preserve attribute.</Dynamic>
+            <Navigation>CL111</Navigation>
+            <Navigation>Z:\GITHUB\Lattice\Sony Vivaz LCD driver\lcd_arbiter.vhd</Navigation>
+            <Navigation>38</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>38</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>All reachable assignments to go are '1'; removing register. To preserve a constant register, use the syn_preserve attribute.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;Z:\GITHUB\Lattice\Sony Vivaz LCD driver\lcd_arbiter.vhd&quot;:25:2:25:3|Pruning unused register PS_arbiter_state(0 to 5). Make sure that there are no unused intermediate registers.</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>Z:\GITHUB\Lattice\Sony Vivaz LCD driver\lcd_arbiter.vhd</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>Pruning unused register PS_arbiter_state(0 to 5). Make sure that there are no unused intermediate registers.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;Z:\GITHUB\Lattice\Sony Vivaz LCD driver\lcd_arbiter.vhd&quot;:25:2:25:3|Pruning unused register PS_arbiter_state(idle). Make sure that there are no unused intermediate registers.</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>Z:\GITHUB\Lattice\Sony Vivaz LCD driver\lcd_arbiter.vhd</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>Pruning unused register PS_arbiter_state(idle). Make sure that there are no unused intermediate registers.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;Z:\GITHUB\Lattice\Sony Vivaz LCD driver\lcd_arbiter.vhd&quot;:38:2:38:3|Pruning unused register NS_arbiter_state(0 to 6). Make sure that there are no unused intermediate registers.</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>Z:\GITHUB\Lattice\Sony Vivaz LCD driver\lcd_arbiter.vhd</Navigation>
+            <Navigation>38</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>38</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>Pruning unused register NS_arbiter_state(0 to 6). Make sure that there are no unused intermediate registers.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CD434 :&quot;Z:\GITHUB\Lattice\Sony Vivaz LCD driver\lcd_sender.vhd&quot;:39:9:39:11|Signal clk in the sensitivity list is not used in the process</Dynamic>
+            <Navigation>CD434</Navigation>
+            <Navigation>Z:\GITHUB\Lattice\Sony Vivaz LCD driver\lcd_sender.vhd</Navigation>
+            <Navigation>39</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>39</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>Signal clk in the sensitivity list is not used in the process</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL117 :&quot;Z:\GITHUB\Lattice\Sony Vivaz LCD driver\lcd_sender.vhd&quot;:73:2:73:3|Latch generated from process for signal lcd_rs; possible missing assignment in an if or case statement.</Dynamic>
+            <Navigation>CL117</Navigation>
+            <Navigation>Z:\GITHUB\Lattice\Sony Vivaz LCD driver\lcd_sender.vhd</Navigation>
+            <Navigation>73</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>73</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>Latch generated from process for signal lcd_rs; possible missing assignment in an if or case statement.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL117 :&quot;Z:\GITHUB\Lattice\Sony Vivaz LCD driver\lcd_sender.vhd&quot;:73:2:73:3|Latch generated from process for signal lcd_write; possible missing assignment in an if or case statement.</Dynamic>
+            <Navigation>CL117</Navigation>
+            <Navigation>Z:\GITHUB\Lattice\Sony Vivaz LCD driver\lcd_sender.vhd</Navigation>
+            <Navigation>73</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>73</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>Latch generated from process for signal lcd_write; possible missing assignment in an if or case statement.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL117 :&quot;Z:\GITHUB\Lattice\Sony Vivaz LCD driver\lcd_sender.vhd&quot;:73:2:73:3|Latch generated from process for signal busy; possible missing assignment in an if or case statement.</Dynamic>
+            <Navigation>CL117</Navigation>
+            <Navigation>Z:\GITHUB\Lattice\Sony Vivaz LCD driver\lcd_sender.vhd</Navigation>
+            <Navigation>73</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>73</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>Latch generated from process for signal busy; possible missing assignment in an if or case statement.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL117 :&quot;Z:\GITHUB\Lattice\Sony Vivaz LCD driver\lcd_sender.vhd&quot;:73:2:73:3|Latch generated from process for signal lcd_bus(15 downto 0); possible missing assignment in an if or case statement.</Dynamic>
+            <Navigation>CL117</Navigation>
+            <Navigation>Z:\GITHUB\Lattice\Sony Vivaz LCD driver\lcd_sender.vhd</Navigation>
+            <Navigation>73</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>73</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>Latch generated from process for signal lcd_bus(15 downto 0); possible missing assignment in an if or case statement.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL138 :&quot;Z:\GITHUB\Lattice\Sony Vivaz LCD driver\main.vhd&quot;:119:2:119:3|Removing register 'data1Command0_i' because it is only assigned 0 or its original value.</Dynamic>
+            <Navigation>CL138</Navigation>
+            <Navigation>Z:\GITHUB\Lattice\Sony Vivaz LCD driver\main.vhd</Navigation>
+            <Navigation>119</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>119</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>Removing register 'data1Command0_i' because it is only assigned 0 or its original value.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL138 :&quot;Z:\GITHUB\Lattice\Sony Vivaz LCD driver\main.vhd&quot;:119:2:119:3|Removing register 'payload_i' because it is only assigned 0 or its original value.</Dynamic>
+            <Navigation>CL138</Navigation>
+            <Navigation>Z:\GITHUB\Lattice\Sony Vivaz LCD driver\main.vhd</Navigation>
+            <Navigation>119</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>119</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>Removing register 'payload_i' because it is only assigned 0 or its original value.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;Z:\GITHUB\Lattice\Sony Vivaz LCD driver\main.vhd&quot;:119:2:119:3|Pruning register bit 1 of tmp(7 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>Z:\GITHUB\Lattice\Sony Vivaz LCD driver\main.vhd</Navigation>
+            <Navigation>119</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>119</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>Pruning register bit 1 of tmp(7 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;Z:\GITHUB\Lattice\Sony Vivaz LCD driver\main.vhd&quot;:119:2:119:3|Pruning register bits 23 to 6 of count(23 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>Z:\GITHUB\Lattice\Sony Vivaz LCD driver\main.vhd</Navigation>
+            <Navigation>119</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>119</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>Pruning register bits 23 to 6 of count(23 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019993</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved.</Dynamic>
+            <Navigation>FX474</Navigation>
+            <Navigation>User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT462 :&quot;z:\github\lattice\sony vivaz lcd driver\lcd_sender.vhd&quot;:43:8:43:15|Net inst_lcd_sender.NS_vivaz_state_0_sqmuxa appears to be an unidentified clock source. Assuming default frequency.</Dynamic>
+            <Navigation>MT462</Navigation>
+            <Navigation>z:\github\lattice\sony vivaz lcd driver\lcd_sender.vhd</Navigation>
+            <Navigation>43</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>43</Navigation>
+            <Navigation>15</Navigation>
+            <Navigation>Net inst_lcd_sender.NS_vivaz_state_0_sqmuxa appears to be an unidentified clock source. Assuming default frequency. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT462 :&quot;z:\github\lattice\sony vivaz lcd driver\lcd_sender.vhd&quot;:73:2:73:3|Net inst_lcd_sender.un1_PS_vivaz_state appears to be an unidentified clock source. Assuming default frequency.</Dynamic>
+            <Navigation>MT462</Navigation>
+            <Navigation>z:\github\lattice\sony vivaz lcd driver\lcd_sender.vhd</Navigation>
+            <Navigation>73</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>73</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>Net inst_lcd_sender.un1_PS_vivaz_state appears to be an unidentified clock source. Assuming default frequency. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT531 :&quot;z:\github\lattice\sony vivaz lcd driver\lcd_sender.vhd&quot;:73:2:73:3|Found signal identified as System clock which controls 3 sequential elements including inst_lcd_sender.lcd_write.  Using this clock, which has no specified timing constraint, can prevent conversion of gated or generated clocks and can adversely impact design performance.</Dynamic>
+            <Navigation>MT531</Navigation>
+            <Navigation>z:\github\lattice\sony vivaz lcd driver\lcd_sender.vhd</Navigation>
+            <Navigation>73</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>73</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>Found signal identified as System clock which controls 3 sequential elements including inst_lcd_sender.lcd_write.  Using this clock, which has no specified timing constraint, can prevent conversion of gated or generated clocks and can adversely impact design performance. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT529 :&quot;z:\github\lattice\sony vivaz lcd driver\lcd_sender.vhd&quot;:34:2:34:3|Found inferred clock main|clk133_inferred_clock which controls 15 sequential elements including inst_lcd_sender.PS_vivaz_state[0:6]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
+            <Navigation>MT529</Navigation>
+            <Navigation>z:\github\lattice\sony vivaz lcd driver\lcd_sender.vhd</Navigation>
+            <Navigation>34</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>34</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>Found inferred clock main|clk133_inferred_clock which controls 15 sequential elements including inst_lcd_sender.PS_vivaz_state[0:6]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO171 :&quot;z:\github\lattice\sony vivaz lcd driver\lcd_sender.vhd&quot;:73:2:73:3|Sequential instance inst_lcd_sender.lcd_rs reduced to a combinational gate by constant propagation</Dynamic>
+            <Navigation>MO171</Navigation>
+            <Navigation>z:\github\lattice\sony vivaz lcd driver\lcd_sender.vhd</Navigation>
+            <Navigation>73</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>73</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>Sequential instance inst_lcd_sender.lcd_rs reduced to a combinational gate by constant propagation </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT462 :&quot;z:\github\lattice\sony vivaz lcd driver\lcd_sender.vhd&quot;:34:2:34:3|Net inst_lcd_sender.PS_vivaz_state_d[6] appears to be an unidentified clock source. Assuming default frequency.</Dynamic>
+            <Navigation>MT462</Navigation>
+            <Navigation>z:\github\lattice\sony vivaz lcd driver\lcd_sender.vhd</Navigation>
+            <Navigation>34</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>34</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>Net inst_lcd_sender.PS_vivaz_state_d[6] appears to be an unidentified clock source. Assuming default frequency. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT462 :&quot;z:\github\lattice\sony vivaz lcd driver\lcd_sender.vhd&quot;:73:2:73:3|Net inst_lcd_sender.un1_PS_vivaz_state appears to be an unidentified clock source. Assuming default frequency.</Dynamic>
+            <Navigation>MT462</Navigation>
+            <Navigation>z:\github\lattice\sony vivaz lcd driver\lcd_sender.vhd</Navigation>
+            <Navigation>73</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>73</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>Net inst_lcd_sender.un1_PS_vivaz_state appears to be an unidentified clock source. Assuming default frequency. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO171 :&quot;z:\github\lattice\sony vivaz lcd driver\lcd_sender.vhd&quot;:73:2:73:3|Sequential instance inst_lcd_sender.lcd_rs reduced to a combinational gate by constant propagation</Dynamic>
+            <Navigation>MO171</Navigation>
+            <Navigation>z:\github\lattice\sony vivaz lcd driver\lcd_sender.vhd</Navigation>
+            <Navigation>73</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>73</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>Sequential instance inst_lcd_sender.lcd_rs reduced to a combinational gate by constant propagation </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT462 :&quot;z:\github\lattice\sony vivaz lcd driver\lcd_sender.vhd&quot;:73:2:73:3|Net inst_lcd_sender.un1_PS_vivaz_state appears to be an unidentified clock source. Assuming default frequency.</Dynamic>
+            <Navigation>MT462</Navigation>
+            <Navigation>z:\github\lattice\sony vivaz lcd driver\lcd_sender.vhd</Navigation>
+            <Navigation>73</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>73</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>Net inst_lcd_sender.un1_PS_vivaz_state appears to be an unidentified clock source. Assuming default frequency. </Navigation>
         </Message>
     </Task>
 </BaliMessageLog>

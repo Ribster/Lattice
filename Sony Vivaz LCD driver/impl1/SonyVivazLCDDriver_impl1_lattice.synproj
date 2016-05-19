@@ -31,7 +31,8 @@
 
 -lpf 1
 -lib "work" -vhd "Z:/GITHUB/Lattice/Sony Vivaz LCD driver/main.vhd"
-"Z:/GITHUB/Lattice/Sony Vivaz LCD driver/constants.vhd"
+"Z:/GITHUB/Lattice/Sony Vivaz LCD driver/lcd_sender.vhd"
+"Z:/GITHUB/Lattice/Sony Vivaz LCD driver/lcd_arbiter.vhd"
 -top main
 
 

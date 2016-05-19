@@ -1,0 +1,487 @@
+<HTML>
+<HEAD><TITLE>Project Summary</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Mrp"></A>
+             Lattice Mapping Report File for Design Module 'main'
+
+
+
+<A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
+
+Command line:   map -a MachXO2 -p LCMXO2-7000HE -t TQFP144 -s 5 -oc Commercial
+     vivaz_driver_reva_impl1.ngd -o vivaz_driver_reva_impl1_map.ncd -pr
+     vivaz_driver_reva_impl1.prf -mp vivaz_driver_reva_impl1.mrp -lpf
+     Z:/GITHUB/Lattice/Vivaz driver Rev A/impl1/vivaz_driver_reva_impl1.lpf -lpf
+     Z:/GITHUB/Lattice/Vivaz driver Rev A/vivaz_driver_reva.lpf -c 0 -gui 
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-7000HETQFP144
+Target Performance:   5
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.7.1.502
+Mapped on:  05/19/16  10:33:46
+
+
+<A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
+   Number of registers:     41 out of  7209 (1%)
+      PFU registers:           41 out of  6864 (1%)
+      PIO registers:            0 out of   345 (0%)
+   Number of SLICEs:        45 out of  3432 (1%)
+      SLICEs as Logic/ROM:     45 out of  3432 (1%)
+      SLICEs as RAM:            0 out of  2574 (0%)
+      SLICEs as Carry:          9 out of  3432 (0%)
+   Number of LUT4s:         78 out of  6864 (1%)
+      Number used as logic LUTs:         60
+      Number used as distributed RAM:     0
+      Number used as ripple logic:       18
+      Number used as shift registers:     0
+   Number of PIO sites used: 28 + 4(JTAG) out of 115 (28%)
+   Number of block RAMs:  0 out of 26 (0%)
+   Number of GSRs:  1 out of 1 (100%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  Yes
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  14
+     Net n272_generated_3: 1 loads, 1 rising, 0 falling (Driver:
+     i512_3_lut_rep_11_4_lut_4_lut )
+     Net clk133: 10 loads, 10 rising, 0 falling (Driver: inst_clk )
+
+     Net FSM_lcd_arbiter_3_N_82_0: 1 loads, 1 rising, 0 falling (Driver:
+     i524_1_lut_3_lut_4_lut )
+     Net n272_generated_1: 1 loads, 1 rising, 0 falling (Driver:
+     i487_2_lut_rep_14_2_lut_3_lut )
+     Net lcd_reset_N_167: 1 loads, 1 rising, 0 falling (Driver: i695/GATE )
+     Net n272_generated_9: 1 loads, 1 rising, 0 falling (Driver:
+     FSM_lcd_arbiter_2__bdd_4_lut_rep_20 )
+     Net n272_generated_2: 1 loads, 1 rising, 0 falling (Driver:
+     i508_2_lut_rep_13_2_lut_3_lut )
+     Net n272_generated_4: 1 loads, 1 rising, 0 falling (Driver:
+     i510_3_lut_rep_9_4_lut_4_lut )
+     Net n272_generated_5: 1 loads, 1 rising, 0 falling (Driver:
+     i506_2_lut_rep_12_2_lut_3_lut )
+     Net lcd_sender_payload_15__N_2[6]: 1 loads, 1 rising, 0 falling (Driver:
+     i519_3_lut_4_lut_4_lut )
+     Net n272_generated_6: 1 loads, 1 rising, 0 falling (Driver:
+     i507_2_lut_rep_19_2_lut_3_lut )
+     Net n272_generated_7: 1 loads, 1 rising, 0 falling (Driver:
+     FSM_lcd_arbiter_3__I_0_164_Mux_1_i15_4_lut_rep_18_4_lut )
+     Net n272_generated_8: 1 loads, 1 rising, 0 falling (Driver:
+     i502_3_lut_rep_16_4_lut )
+     Net n272_generated_10: 1 loads, 1 rising, 0 falling (Driver:
+     i511_3_lut_rep_10_4_lut_4_lut )
+   Number of Clock Enables:  2
+     Net clk133_enable_9: 5 loads, 5 LSLICEs
+     Net clk133_enable_8: 1 loads, 1 LSLICEs
+   Number of LSRs:  25
+     Net n272_generated_3: 1 loads, 1 LSLICEs
+     Net FSM_lcd_arbiter_3_N_82_0: 1 loads, 1 LSLICEs
+     Net n1052: 1 loads, 1 LSLICEs
+     Net n272_generated_1: 1 loads, 1 LSLICEs
+     Net lcd_sender_payload_15__N_77: 1 loads, 1 LSLICEs
+     Net lcd_reset_N_167: 2 loads, 2 LSLICEs
+     Net clk133_enable_8: 4 loads, 4 LSLICEs
+     Net n272_generated_9: 1 loads, 1 LSLICEs
+     Net n272_generated_2: 1 loads, 1 LSLICEs
+     Net lcd_sender_payload_15__N_74: 1 loads, 1 LSLICEs
+     Net lcd_sender_payload_15__N_71: 1 loads, 1 LSLICEs
+     Net n272_generated_4: 1 loads, 1 LSLICEs
+     Net lcd_sender_payload_15__N_68: 1 loads, 1 LSLICEs
+     Net n272_generated_5: 1 loads, 1 LSLICEs
+     Net lcd_sender_payload_15__N_65: 1 loads, 1 LSLICEs
+     Net lcd_sender_payload_15__N_2[6]: 1 loads, 1 LSLICEs
+     Net n272_generated_6: 1 loads, 1 LSLICEs
+     Net lcd_sender_payload_15__N_59: 1 loads, 1 LSLICEs
+     Net n272_generated_7: 1 loads, 1 LSLICEs
+     Net FSM_lcd_arbiter_3__N_97: 1 loads, 1 LSLICEs
+     Net n272_generated_8: 1 loads, 1 LSLICEs
+     Net FSM_lcd_arbiter_3__N_94: 1 loads, 1 LSLICEs
+     Net FSM_lcd_arbiter_3__N_91: 1 loads, 1 LSLICEs
+     Net n272_generated_10: 1 loads, 1 LSLICEs
+     Net lcd_sender_payload_15__N_80: 1 loads, 1 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net n1062: 17 loads
+     Net n703: 15 loads
+
+     Net n1061: 11 loads
+     Net n1063: 11 loads
+     Net n1060: 10 loads
+     Net n1050: 7 loads
+     Net clk133_enable_8: 6 loads
+     Net clk133_enable_9: 5 loads
+     Net n1059: 3 loads
+     Net n1065: 3 loads
+
+
+
+
+   Number of warnings:  0
+   Number of errors:    0
+     
+
+
+
+
+<A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
+
+   No errors or warnings present.
+
+
+
+<A name="mrp_ioa"></A><B><U><big>IO (PIO) Attributes</big></U></B>
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| leds[7]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| leds[0]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| leds[1]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| leds[2]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| lcd_te              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| leds[3]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| lcd_bus[14]         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| lcd_reset           | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| lcd_wr              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| lcd_rs              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| lcd_bus[0]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| lcd_bus[1]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| leds[5]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| leds[6]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+| lcd_bus[2]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| lcd_bus[3]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| lcd_bus[4]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| lcd_bus[5]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| lcd_bus[6]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| lcd_bus[7]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| lcd_bus[8]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| lcd_bus[9]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| lcd_bus[13]         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| lcd_bus[15]         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| lcd_bus[10]         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| lcd_bus[11]         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| lcd_bus[12]         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| leds[4]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+
+
+<A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
+
+Signal lcd_reset_N_170 was merged into signal lcd_reset_N_167
+Signal n1073\000/BUF0 undriven or does not drive anything - clipped.
+Signal n1073\000/BUF0 undriven or does not drive anything - clipped.
+Signal n1073\000/BUF0 undriven or does not drive anything - clipped.
+Signal n1073\000/BUF0 undriven or does not drive anything - clipped.
+Signal n1073\000/BUF0 undriven or does not drive anything - clipped.
+Signal n1073\000/BUF0 undriven or does not drive anything - clipped.
+Signal n1073\000/BUF0 undriven or does not drive anything - clipped.
+Signal n1073\000/BUF0 undriven or does not drive anything - clipped.
+Signal n1073\000/BUF0 undriven or does not drive anything - clipped.
+Signal n1073\000/BUF0 undriven or does not drive anything - clipped.
+Signal n1073\000/BUF0 undriven or does not drive anything - clipped.
+Signal n1073\000/BUF0 undriven or does not drive anything - clipped.
+Signal n1073\000/BUF0 undriven or does not drive anything - clipped.
+Signal VCC_net undriven or does not drive anything - clipped.
+Signal n1073 undriven or does not drive anything - clipped.
+Signal count_311_312_add_4_1/S0 undriven or does not drive anything - clipped.
+Signal count_311_312_add_4_1/CI undriven or does not drive anything - clipped.
+Signal tmp_313_add_4_9/S1 undriven or does not drive anything - clipped.
+Signal tmp_313_add_4_9/CO undriven or does not drive anything - clipped.
+Signal count_311_312_add_4_7/S1 undriven or does not drive anything - clipped.
+Signal count_311_312_add_4_7/CO undriven or does not drive anything - clipped.
+Signal tmp_313_add_4_1/S0 undriven or does not drive anything - clipped.
+Signal tmp_313_add_4_1/CI undriven or does not drive anything - clipped.
+
+Block lcd_reset_N_167_I_0_1_lut was optimized away.
+Block n1073\000/BUF0/BUF0 was optimized away.
+Block n1073\000/BUF0/BUF0 was optimized away.
+Block n1073\000/BUF0/BUF0 was optimized away.
+Block n1073\000/BUF0/BUF0 was optimized away.
+Block n1073\000/BUF0/BUF0 was optimized away.
+Block n1073\000/BUF0/BUF0 was optimized away.
+Block n1073\000/BUF0/BUF0 was optimized away.
+Block n1073\000/BUF0/BUF0 was optimized away.
+Block n1073\000/BUF0/BUF0 was optimized away.
+Block n1073\000/BUF0/BUF0 was optimized away.
+Block n1073\000/BUF0/BUF0 was optimized away.
+Block n1073\000/BUF0/BUF0 was optimized away.
+Block n1073\000/BUF0/BUF0 was optimized away.
+Block i2 was optimized away.
+Block m0_lut was optimized away.
+
+
+
+<A name="mrp_mem"></A><B><U><big>Memory Usage</big></U></B>
+
+
+     
+
+OSC Summary
+-----------
+
+OSC 1:                                     Pin/Node Value
+  OSC Instance Name:                                inst_clk
+  OSC Type:                                         OSCH
+  STDBY Input:                                      NONE
+  OSC Output:                              NODE     clk133
+  OSC Nominal Frequency (MHz):                      20.46
+
+
+
+<A name="mrp_asic"></A><B><U><big>ASIC Components</big></U></B>
+---------------
+
+Instance Name: inst_clk
+         Type: OSCH
+
+
+
+<A name="mrp_gsr"></A><B><U><big>GSR Usage</big></U></B>
+---------
+
+GSR Component:
+   The Global Set Reset (GSR) resource has been used to implement a global reset
+        of the design. The reset signal used for GSR control is
+        'lcd_sender_payload_15__N_2[6]'.
+        
+
+     GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+        set reset while the components with GSR property set to DISABLED will
+        not.
+        
+
+     Components with disabled GSR Property
+-------------------------------------
+
+
+     These components have the GSR property set to DISABLED. The components will
+     not respond to the reset signal 'lcd_sender_payload_15__N_2[6]' via the GSR
+     component.
+
+     Type and number of components of the type: 
+   Register = 40 
+
+     Type and instance name of component: 
+   Register : tmp_313__i7
+   Register : tmp_313__i6
+   Register : i433
+   Register : lcd_sender_payload_i3_446_447_set
+   Register : lcd_sender_payload_i1_438_439_set
+   Register : i437
+   Register : i429
+   Register : tmp_313__i5
+   Register : tmp_313__i4
+   Register : tmp_313__i3
+   Register : tmp_313__i2
+   Register : tmp_313__i1
+   Register : count_311_312__i0
+   Register : FSM_lcd_arbiter_i3_474_475_set
+   Register : i441
+   Register : i445
+   Register : i449
+   Register : i453
+   Register : i461
+   Register : i465
+   Register : i469
+   Register : i473
+   Register : reset_startup_119
+   Register : count_311_312__i5
+   Register : count_311_312__i4
+   Register : count_311_312__i3
+   Register : count_311_312__i2
+   Register : tmp_313__i0
+   Register : count_311_312__i1
+   Register : FSM_lcd_arbiter_i2_470_471_set
+   Register : FSM_lcd_arbiter_i1_466_467_set
+   Register : lcd_sender_payload_i4_450_451_set
+   Register : lcd_sender_payload_i7_462_463_set
+   Register : FSM_lcd_arbiter_i0_434_435_set
+   Register : lcd_sender_payload_i6_458_459_set
+   Register : lcd_sender_payload_i2_442_443_set
+   Register : i425
+   Register : lcd_sender_payload_i5_454_455_set
+   Register : lcd_sender_payload_i0_426_427_set
+   Register : lcd_reset_53_430_431_set
+
+
+
+<A name="mrp_runtime"></A><B><U><big>Run Time and Memory Usage</big></U></B>
+-------------------------
+
+   Total CPU Time: 0 secs  
+   Total REAL Time: 0 secs  
+   Peak Memory Usage: 54 MB
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights
+     reserved.
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

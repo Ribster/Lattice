@@ -1,0 +1,14 @@
+[Version]
+Version=10.2
+[Designs]
+vivaz_rev_a=vivaz_rev_a.adf
+[Settings]
+Active=vivaz_rev_a
+[Expand]
+vivaz_rev_a=1
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=

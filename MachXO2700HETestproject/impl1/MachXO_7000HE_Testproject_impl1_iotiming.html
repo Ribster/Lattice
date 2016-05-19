@@ -1,0 +1,141 @@
+<HTML>
+<HEAD><TITLE>I/O Timing Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Top"></A><B><U><big>I/O Timing Report</big></U></B>
+Loading design for application iotiming from file machxo_7000he_testproject_impl1.ncd.
+Design name: lcd_wrapper
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-7000HE
+Package:     TQFP144
+Performance: 6
+Package Status:                     Final          Version 1.39.
+Performance Hardware Data Status:   Final          Version 33.4.
+Loading design for application iotiming from file machxo_7000he_testproject_impl1.ncd.
+Design name: lcd_wrapper
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-7000HE
+Package:     TQFP144
+Performance: M
+Package Status:                     Final          Version 1.39.
+Performance Hardware Data Status:   Final          Version 33.4.
+// Design: lcd_wrapper
+// Package: TQFP144
+// ncd File: machxo_7000he_testproject_impl1.ncd
+// Version: Diamond (64-bit) 3.7.1.502
+// Written on Wed May 18 13:57:56 2016
+// M: Minimum Performance Grade
+// iotiming MachXO_7000HE_Testproject_impl1.ncd MachXO_7000HE_Testproject_impl1.prf -gui -msgset Z:/GITHUB/Lattice/MachXO2700HETestproject/promote.xml
+
+I/O Timing Report (All units are in ns)
+
+Worst Case Results across Performance Grades (M, 6, 5):
+
+// Input Setup and Hold Times
+
+Port        Clock Edge  Setup Performance_Grade  Hold Performance_Grade
+----------------------------------------------------------------------
+payload[0]  clk   R     0.665      5       0.315     6
+payload[10] clk   R     0.851      5       0.137     5
+payload[11] clk   R     0.293      5       0.634     5
+payload[12] clk   R    -0.137      M       1.037     5
+payload[13] clk   R    -0.137      M       1.037     5
+payload[14] clk   R     0.407      5       0.506     5
+payload[15] clk   R     0.281      5       0.616     5
+payload[1]  clk   R     0.769      5       0.219     6
+payload[2]  clk   R     0.740      5       0.243     6
+payload[3]  clk   R     1.036      5       0.026     M
+payload[4]  clk   R    -0.047      5       0.911     5
+payload[5]  clk   R     0.665      5       0.315     6
+payload[6]  clk   R     0.669      5       0.296     5
+payload[7]  clk   R    -0.061      5       0.922     5
+payload[8]  clk   R     0.932      5       0.118     6
+payload[9]  clk   R    -0.127      M       0.997     5
+
+
+// Clock to Output Delay
+
+Port        Clock Edge  Max_Delay Performance_Grade  Min_Delay Performance_Grade
+------------------------------------------------------------------------
+lcd_bus[0]  clk   R     8.442         5        2.731          M
+lcd_bus[10] clk   R     9.147         5        2.922          M
+lcd_bus[11] clk   R     9.343         5        2.955          M
+lcd_bus[12] clk   R     8.886         5        2.865          M
+lcd_bus[13] clk   R     8.989         5        2.888          M
+lcd_bus[14] clk   R     8.898         5        2.870          M
+lcd_bus[15] clk   R     9.566         5        3.054          M
+lcd_bus[1]  clk   R     9.798         5        3.144          M
+lcd_bus[2]  clk   R     9.348         5        3.001          M
+lcd_bus[3]  clk   R     9.463         5        2.992          M
+lcd_bus[4]  clk   R     9.351         5        2.968          M
+lcd_bus[5]  clk   R     8.639         5        2.777          M
+lcd_bus[6]  clk   R     8.906         5        2.858          M
+lcd_bus[7]  clk   R     8.821         5        2.836          M
+lcd_bus[8]  clk   R     8.895         5        2.865          M
+lcd_bus[9]  clk   R     8.166         5        2.648          M
+lcd_write   clk   R     9.377         5        2.994          M
+WARNING: you must also run trce with hold speed: 5
+WARNING: you must also run trce with hold speed: 6
+WARNING: you must also run trce with setup speed: M
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

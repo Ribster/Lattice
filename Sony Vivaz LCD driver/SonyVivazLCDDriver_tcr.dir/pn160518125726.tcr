@@ -1,0 +1,7 @@
+#Start recording tcl command: 5/18/2016 12:52:59
+#Project Location: Z:/GITHUB/Lattice/Sony Vivaz LCD driver; Project name: SonyVivazLCDDriver
+prj_project open "Z:/GITHUB/Lattice/Sony Vivaz LCD driver/SonyVivazLCDDriver.ldf"
+prj_src remove "Z:/GITHUB/Lattice/Sony Vivaz LCD driver/constants.vhd"
+prj_project save
+prj_project close
+#Stop recording: 5/18/2016 12:57:26

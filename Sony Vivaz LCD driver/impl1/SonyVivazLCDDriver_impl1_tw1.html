@@ -1,0 +1,295 @@
+<HTML>
+<HEAD><TITLE>Lattice Map TRACE Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Map_Twr"></A><B><U><big>Map TRACE Report</big></U></B>
+
+Loading design for application trce from file sonyvivazlcddriver_impl1_map.ncd.
+Design name: main
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-7000HE
+Package:     TQFP144
+Performance: 5
+Loading device for application trce from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.7_x64/ispfpga.
+Package Status:                     Final          Version 1.39.
+Performance Hardware Data Status:   Final          Version 33.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+<A name="Map_Twr_setup"></A><B><U><big>Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.7.1.502</big></U></B>
+Wed May 18 17:12:59 2016
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
+
+<A name="mtw1_set_ri"></A><B><U><big>Report Information</big></U></B>
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o SonyVivazLCDDriver_impl1.tw1 -gui -msgset Z:/GITHUB/Lattice/Sony Vivaz LCD driver/promote.xml SonyVivazLCDDriver_impl1_map.ncd SonyVivazLCDDriver_impl1.prf 
+Design file:     sonyvivazlcddriver_impl1_map.ncd
+Preference file: sonyvivazlcddriver_impl1.prf
+Device,speed:    LCMXO2-7000HE,5
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+<A name="mtw1_set_ps"></A><B><U><big>Preference Summary</big></U></B>
+
+<LI><A href='#map_twr_pref_0_0' Target='right'>FREQUENCY NET "clk133" 20.460000 MHz (0 errors)</A></LI>            54 items scored, 0 timing errors detected.
+Report:  228.467MHz is the maximum frequency for this preference.
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+<A name="map_twr_pref_0_0"></A>Preference: FREQUENCY NET "clk133" 20.460000 MHz ;
+            54 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 44.499ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              count[1]  (from clk133 +)
+   Destination:    FF         Data in        reset_startup  (to clk133 +)
+
+   Delay:               4.227ns  (41.8% logic, 58.2% route), 4 logic levels.
+
+ Constraint Details:
+
+      4.227ns physical path delay SLICE_0 to SLICE_12 meets
+     48.876ns delay constraint less
+      0.150ns DIN_SET requirement (totaling 48.726ns) by 44.499ns
+
+ Physical Path Details:
+
+      Data path SLICE_0 to SLICE_12:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.409    SLICE_0.CLK to     SLICE_0.Q1 SLICE_0 (from clk133)
+ROUTE         5   e 1.030     SLICE_0.Q1 to    SLICE_13.A0 count[1]
+CTOF_DEL    ---     0.452    SLICE_13.A0 to    SLICE_13.F0 SLICE_13
+ROUTE         1   e 0.401    SLICE_13.F0 to    SLICE_13.D1 un2_countlto3_0
+CTOF_DEL    ---     0.452    SLICE_13.D1 to    SLICE_13.F1 SLICE_13
+ROUTE         3   e 1.030    SLICE_13.F1 to    SLICE_12.B0 un2_count_i
+CTOF_DEL    ---     0.452    SLICE_12.B0 to    SLICE_12.F0 SLICE_12
+ROUTE         1   e 0.001    SLICE_12.F0 to   SLICE_12.DI0 reset_startup_0 (to clk133)
+                  --------
+                    4.227   (41.8% logic, 58.2% route), 4 logic levels.
+
+Report:  228.467MHz is the maximum frequency for this preference.
+
+<A name="mtw1_set_rs"></A><B><U><big>Report Summary</big></U></B>
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "clk133" 20.460000 MHz ;  |   20.460 MHz|  228.467 MHz|   4  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+<A name="mtw1_set_clkda"></A><B><U><big>Clock Domains Analysis</big></U></B>
+------------------------
+
+Found 3 clocks:
+
+Clock Domain: inst_lcd_sender/lcd_rs_0_sqmuxa   Source: inst_lcd_sender/SLICE_6.F0   Loads: 3
+   No transfer within this clock domain is found
+
+Clock Domain: inst_lcd_sender/PS_vivaz_state[6]   Source: inst_lcd_sender/SLICE_5.Q1   Loads: 3
+   No transfer within this clock domain is found
+
+Clock Domain: clk133   Source: inst_clk.OSC   Loads: 9
+   Covered under: FREQUENCY NET "clk133" 20.460000 MHz ;
+
+
+<A name="mtw1_set_ts"></A><B><U><big>Timing summary (Setup):</big></U></B>
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 54 paths, 1 nets, and 120 connections (100.00% coverage)
+
+--------------------------------------------------------------------------------
+<A name="Map_Twr_hold"></A><B><U><big>Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.7.1.502</big></U></B>
+Wed May 18 17:12:59 2016
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
+
+<A name="mtw1_hold_ri"></A><B><U><big>Report Information</big></U></B>
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o SonyVivazLCDDriver_impl1.tw1 -gui -msgset Z:/GITHUB/Lattice/Sony Vivaz LCD driver/promote.xml SonyVivazLCDDriver_impl1_map.ncd SonyVivazLCDDriver_impl1.prf 
+Design file:     sonyvivazlcddriver_impl1_map.ncd
+Preference file: sonyvivazlcddriver_impl1.prf
+Device,speed:    LCMXO2-7000HE,M
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+<A name="mtw1_hold_ps"></A><B><U><big>Preference Summary</big></U></B>
+
+<LI><A href='#map_twr_pref_1_0' Target='right'>FREQUENCY NET "clk133" 20.460000 MHz (0 errors)</A></LI>            54 items scored, 0 timing errors detected.
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+<A name="map_twr_pref_1_0"></A>Preference: FREQUENCY NET "clk133" 20.460000 MHz ;
+            54 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.447ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              count[1]  (from clk133 +)
+   Destination:    FF         Data in        count[1]  (to clk133 +)
+
+   Delay:               0.434ns  (53.9% logic, 46.1% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.434ns physical path delay SLICE_0 to SLICE_0 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint requirement (totaling -0.013ns) by 0.447ns
+
+ Physical Path Details:
+
+      Data path SLICE_0 to SLICE_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    SLICE_0.CLK to     SLICE_0.Q1 SLICE_0 (from clk133)
+ROUTE         5   e 0.199     SLICE_0.Q1 to     SLICE_0.B1 count[1]
+CTOF_DEL    ---     0.101     SLICE_0.B1 to     SLICE_0.F1 SLICE_0
+ROUTE         1   e 0.001     SLICE_0.F1 to    SLICE_0.DI1 un4_count[31] (to clk133)
+                  --------
+                    0.434   (53.9% logic, 46.1% route), 2 logic levels.
+
+<A name="mtw1_hold_rs"></A><B><U><big>Report Summary</big></U></B>
+--------------
+----------------------------------------------------------------------------
+Preference(MIN Delays)                  |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "clk133" 20.460000 MHz ;  |     0.000 ns|     0.447 ns|   2  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+<A name="mtw1_hold_clkda"></A><B><U><big>Clock Domains Analysis</big></U></B>
+------------------------
+
+Found 3 clocks:
+
+Clock Domain: inst_lcd_sender/PS_vivaz_state[6]   Source: inst_lcd_sender/SLICE_5.Q1   Loads: 3
+   No transfer within this clock domain is found
+
+Clock Domain: inst_lcd_sender/lcd_rs_0_sqmuxa   Source: inst_lcd_sender/SLICE_6.F0   Loads: 3
+   No transfer within this clock domain is found
+
+Clock Domain: clk133   Source: inst_clk.OSC   Loads: 9
+   Covered under: FREQUENCY NET "clk133" 20.460000 MHz ;
+
+
+<A name="mtw1_hold_ts"></A><B><U><big>Timing summary (Hold):</big></U></B>
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 54 paths, 1 nets, and 120 connections (100.00% coverage)
+
+
+
+<A name="mtw1_ts"></A><B><U><big>Timing summary (Setup and Hold):</big></U></B>
+---------------
+
+Timing errors: 0 (setup), 0 (hold)
+Score: 0 (setup), 0 (hold)
+Cumulative negative slack: 0 (0+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

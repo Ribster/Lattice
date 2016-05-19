@@ -1,0 +1,231 @@
+(DELAYFILE
+  (SDFVERSION "3.0")
+  (DESIGN "lcd_sender")
+  (DATE "Wed May 18 10:34:21 2016")
+  (VENDOR "Lattice")
+  (PROGRAM "ldbanno")
+  (VERSION "Diamond (64-bit) 3.7.1.502")
+  (DIVIDER /)
+  (VOLTAGE 1.26:1.20:1.14)
+  (PROCESS "default")
+  (TEMPERATURE -40:25:85)
+  (TIMESCALE 1ps)
+  (CELL
+    (CELLTYPE "lcd_bus_0_B")
+    (INSTANCE lcd_bus_0_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO lcdbus0 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "busyB")
+    (INSTANCE busyI)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO busyS (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "goB")
+    (INSTANCE goI)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO goS (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "lcd_rsB")
+    (INSTANCE lcd_rsI)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO lcdrs (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "lcd_resetB")
+    (INSTANCE lcd_resetI)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO lcdreset (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "lcd_writeB")
+    (INSTANCE lcd_writeI)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO lcdwrite (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "lcd_bus_15_B")
+    (INSTANCE lcd_bus_15_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO lcdbus15 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "lcd_bus_14_B")
+    (INSTANCE lcd_bus_14_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO lcdbus14 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "lcd_bus_13_B")
+    (INSTANCE lcd_bus_13_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO lcdbus13 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "lcd_bus_12_B")
+    (INSTANCE lcd_bus_12_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO lcdbus12 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "lcd_bus_11_B")
+    (INSTANCE lcd_bus_11_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO lcdbus11 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "lcd_bus_10_B")
+    (INSTANCE lcd_bus_10_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO lcdbus10 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "lcd_bus_9_B")
+    (INSTANCE lcd_bus_9_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO lcdbus9 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "lcd_bus_8_B")
+    (INSTANCE lcd_bus_8_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO lcdbus8 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "lcd_bus_7_B")
+    (INSTANCE lcd_bus_7_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO lcdbus7 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "lcd_bus_6_B")
+    (INSTANCE lcd_bus_6_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO lcdbus6 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "lcd_bus_5_B")
+    (INSTANCE lcd_bus_5_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO lcdbus5 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "lcd_bus_4_B")
+    (INSTANCE lcd_bus_4_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO lcdbus4 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "lcd_bus_3_B")
+    (INSTANCE lcd_bus_3_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO lcdbus3 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "lcd_bus_2_B")
+    (INSTANCE lcd_bus_2_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO lcdbus2 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "lcd_bus_1_B")
+    (INSTANCE lcd_bus_1_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO lcdbus1 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "lcd_sender")
+    (INSTANCE )
+    (DELAY
+      (ABSOLUTE
+        (INTERCONNECT SLICE_0I/F0 lcd_writeI/PADDO (604:655:707)(604:655:707))
+        (INTERCONNECT SLICE_1I/F0 lcd_bus_0_I/PADDO (896:980:1064)(896:980:1064))
+        (INTERCONNECT SLICE_1I/F0 busyI/PADDO (1234:1406:1579)(1234:1406:1579))
+        (INTERCONNECT SLICE_1I/F0 goI/PADDO (896:980:1064)(896:980:1064))
+        (INTERCONNECT SLICE_1I/F0 lcd_rsI/PADDO (852:979:1106)(852:979:1106))
+        (INTERCONNECT SLICE_1I/F0 lcd_resetI/PADDO (1576:1770:1965)(1576:1770:1965))
+        (INTERCONNECT SLICE_1I/F0 lcd_bus_15_I/PADDO (1611:1796:1982)(1611:1796:1982))
+        (INTERCONNECT SLICE_1I/F0 lcd_bus_14_I/PADDO (896:980:1064)(896:980:1064))
+        (INTERCONNECT SLICE_1I/F0 lcd_bus_13_I/PADDO (1659:1819:1980)(1659:1819:1980))
+        (INTERCONNECT SLICE_1I/F0 lcd_bus_12_I/PADDO (1234:1406:1579)(1234:1406:1579))
+        (INTERCONNECT SLICE_1I/F0 lcd_bus_11_I/PADDO (1611:1796:1982)(1611:1796:1982))
+        (INTERCONNECT SLICE_1I/F0 lcd_bus_10_I/PADDO (1654:1814:1974)(1654:1814:1974))
+        (INTERCONNECT SLICE_1I/F0 lcd_bus_9_I/PADDO (852:979:1106)(852:979:1106))
+        (INTERCONNECT SLICE_1I/F0 lcd_bus_8_I/PADDO (1576:1770:1965)(1576:1770:1965))
+        (INTERCONNECT SLICE_1I/F0 lcd_bus_7_I/PADDO (896:980:1064)(896:980:1064))
+        (INTERCONNECT SLICE_1I/F0 lcd_bus_6_I/PADDO (1659:1819:1980)(1659:1819:1980))
+        (INTERCONNECT SLICE_1I/F0 lcd_bus_5_I/PADDO (1654:1814:1974)(1654:1814:1974))
+        (INTERCONNECT SLICE_1I/F0 lcd_bus_4_I/PADDO (1659:1819:1980)(1659:1819:1980))
+        (INTERCONNECT SLICE_1I/F0 lcd_bus_3_I/PADDO (1234:1406:1579)(1234:1406:1579))
+        (INTERCONNECT SLICE_1I/F0 lcd_bus_2_I/PADDO (1234:1406:1579)(1234:1406:1579))
+        (INTERCONNECT SLICE_1I/F0 lcd_bus_1_I/PADDO (1234:1406:1579)(1234:1406:1579))
+      )
+    )
+  )
+)

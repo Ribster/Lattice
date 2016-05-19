@@ -1,0 +1,1073 @@
+
+Loading design for application trce from file machxo_7000he_testproject_impl1.ncd.
+Design name: lcd_wrapper
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-7000HE
+Package:     TQFP144
+Performance: 5
+Loading device for application trce from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.7_x64/ispfpga.
+Package Status:                     Final          Version 1.39.
+Performance Hardware Data Status:   Final          Version 33.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.7.1.502
+Wed May 18 13:57:54 2016
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 5 -sphld m -o MachXO_7000HE_Testproject_impl1.twr -gui -msgset Z:/GITHUB/Lattice/MachXO2700HETestproject/promote.xml MachXO_7000HE_Testproject_impl1.ncd MachXO_7000HE_Testproject_impl1.prf 
+Design file:     machxo_7000he_testproject_impl1.ncd
+Preference file: machxo_7000he_testproject_impl1.prf
+Device,speed:    LCMXO2-7000HE,5
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+Report Type:     based on TRACE automatically generated preferences
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY NET "clk_c" 444.247000 MHz ;
+            36 items scored, 26 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error: The following path exceeds requirements by 0.740ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              sender/PS_vivaz_state_i0  (from clk_c +)
+   Destination:    FF         Data in        sender/lcd_bus_i16  (to clk_c +)
+                   FF                        sender/lcd_bus_i15
+
+   Delay:               2.742ns  (31.4% logic, 68.6% route), 2 logic levels.
+
+ Constraint Details:
+
+      2.742ns physical path delay sender/SLICE_9 to SLICE_7 exceeds
+      2.251ns delay constraint less
+      0.000ns skew and
+      0.249ns CE_SET requirement (totaling 2.002ns) by 0.740ns
+
+ Physical Path Details:
+
+      Data path sender/SLICE_9 to SLICE_7:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.409    R16C37B.CLK to     R16C37B.Q0 sender/SLICE_9 (from clk_c)
+ROUTE         5     0.924     R16C37B.Q0 to     R16C39B.B1 sender/PS_vivaz_state_0
+CTOF_DEL    ---     0.452     R16C39B.B1 to     R16C39B.F1 sender/SLICE_10
+ROUTE         8     0.957     R16C39B.F1 to     R14C39D.CE sender/clk_c_enable_16 (to clk_c)
+                  --------
+                    2.742   (31.4% logic, 68.6% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk to sender/SLICE_9:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        11     2.196       55.PADDI to    R16C37B.CLK clk_c
+                  --------
+                    2.196   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk to SLICE_7:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        11     2.196       55.PADDI to    R14C39D.CLK clk_c
+                  --------
+                    2.196   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Error: The following path exceeds requirements by 0.740ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              sender/PS_vivaz_state_i0  (from clk_c +)
+   Destination:    FF         Data in        sender/lcd_bus_i11  (to clk_c +)
+                   FF                        sender/lcd_bus_i12
+
+   Delay:               2.742ns  (31.4% logic, 68.6% route), 2 logic levels.
+
+ Constraint Details:
+
+      2.742ns physical path delay sender/SLICE_9 to sender/SLICE_16 exceeds
+      2.251ns delay constraint less
+      0.000ns skew and
+      0.249ns CE_SET requirement (totaling 2.002ns) by 0.740ns
+
+ Physical Path Details:
+
+      Data path sender/SLICE_9 to sender/SLICE_16:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.409    R16C37B.CLK to     R16C37B.Q0 sender/SLICE_9 (from clk_c)
+ROUTE         5     0.924     R16C37B.Q0 to     R16C39B.B1 sender/PS_vivaz_state_0
+CTOF_DEL    ---     0.452     R16C39B.B1 to     R16C39B.F1 sender/SLICE_10
+ROUTE         8     0.957     R16C39B.F1 to     R14C39C.CE sender/clk_c_enable_16 (to clk_c)
+                  --------
+                    2.742   (31.4% logic, 68.6% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk to sender/SLICE_9:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        11     2.196       55.PADDI to    R16C37B.CLK clk_c
+                  --------
+                    2.196   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk to sender/SLICE_16:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        11     2.196       55.PADDI to    R14C39C.CLK clk_c
+                  --------
+                    2.196   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Error: The following path exceeds requirements by 0.740ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              sender/PS_vivaz_state_i0  (from clk_c +)
+   Destination:    FF         Data in        sender/lcd_bus_i4  (to clk_c +)
+                   FF                        sender/lcd_bus_i5
+
+   Delay:               2.742ns  (31.4% logic, 68.6% route), 2 logic levels.
+
+ Constraint Details:
+
+      2.742ns physical path delay sender/SLICE_9 to sender/SLICE_2 exceeds
+      2.251ns delay constraint less
+      0.000ns skew and
+      0.249ns CE_SET requirement (totaling 2.002ns) by 0.740ns
+
+ Physical Path Details:
+
+      Data path sender/SLICE_9 to sender/SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.409    R16C37B.CLK to     R16C37B.Q0 sender/SLICE_9 (from clk_c)
+ROUTE         5     0.924     R16C37B.Q0 to     R16C39B.B1 sender/PS_vivaz_state_0
+CTOF_DEL    ---     0.452     R16C39B.B1 to     R16C39B.F1 sender/SLICE_10
+ROUTE         8     0.957     R16C39B.F1 to     R14C39A.CE sender/clk_c_enable_16 (to clk_c)
+                  --------
+                    2.742   (31.4% logic, 68.6% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk to sender/SLICE_9:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        11     2.196       55.PADDI to    R16C37B.CLK clk_c
+                  --------
+                    2.196   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk to sender/SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        11     2.196       55.PADDI to    R14C39A.CLK clk_c
+                  --------
+                    2.196   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Error: The following path exceeds requirements by 0.683ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              sender/PS_vivaz_state_i2  (from clk_c +)
+   Destination:    FF         Data in        sender/lcd_bus_i16  (to clk_c +)
+                   FF                        sender/lcd_bus_i15
+
+   Delay:               2.685ns  (32.1% logic, 67.9% route), 2 logic levels.
+
+ Constraint Details:
+
+      2.685ns physical path delay sender/SLICE_10 to SLICE_7 exceeds
+      2.251ns delay constraint less
+      0.000ns skew and
+      0.249ns CE_SET requirement (totaling 2.002ns) by 0.683ns
+
+ Physical Path Details:
+
+      Data path sender/SLICE_10 to SLICE_7:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.409    R16C39B.CLK to     R16C39B.Q0 sender/SLICE_10 (from clk_c)
+ROUTE         5     0.867     R16C39B.Q0 to     R16C39B.A1 sender/PS_vivaz_state_2
+CTOF_DEL    ---     0.452     R16C39B.A1 to     R16C39B.F1 sender/SLICE_10
+ROUTE         8     0.957     R16C39B.F1 to     R14C39D.CE sender/clk_c_enable_16 (to clk_c)
+                  --------
+                    2.685   (32.1% logic, 67.9% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk to sender/SLICE_10:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        11     2.196       55.PADDI to    R16C39B.CLK clk_c
+                  --------
+                    2.196   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk to SLICE_7:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        11     2.196       55.PADDI to    R14C39D.CLK clk_c
+                  --------
+                    2.196   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Error: The following path exceeds requirements by 0.683ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              sender/PS_vivaz_state_i2  (from clk_c +)
+   Destination:    FF         Data in        sender/lcd_bus_i4  (to clk_c +)
+                   FF                        sender/lcd_bus_i5
+
+   Delay:               2.685ns  (32.1% logic, 67.9% route), 2 logic levels.
+
+ Constraint Details:
+
+      2.685ns physical path delay sender/SLICE_10 to sender/SLICE_2 exceeds
+      2.251ns delay constraint less
+      0.000ns skew and
+      0.249ns CE_SET requirement (totaling 2.002ns) by 0.683ns
+
+ Physical Path Details:
+
+      Data path sender/SLICE_10 to sender/SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.409    R16C39B.CLK to     R16C39B.Q0 sender/SLICE_10 (from clk_c)
+ROUTE         5     0.867     R16C39B.Q0 to     R16C39B.A1 sender/PS_vivaz_state_2
+CTOF_DEL    ---     0.452     R16C39B.A1 to     R16C39B.F1 sender/SLICE_10
+ROUTE         8     0.957     R16C39B.F1 to     R14C39A.CE sender/clk_c_enable_16 (to clk_c)
+                  --------
+                    2.685   (32.1% logic, 67.9% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk to sender/SLICE_10:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        11     2.196       55.PADDI to    R16C39B.CLK clk_c
+                  --------
+                    2.196   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk to sender/SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        11     2.196       55.PADDI to    R14C39A.CLK clk_c
+                  --------
+                    2.196   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Error: The following path exceeds requirements by 0.683ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              sender/PS_vivaz_state_i2  (from clk_c +)
+   Destination:    FF         Data in        sender/lcd_bus_i11  (to clk_c +)
+                   FF                        sender/lcd_bus_i12
+
+   Delay:               2.685ns  (32.1% logic, 67.9% route), 2 logic levels.
+
+ Constraint Details:
+
+      2.685ns physical path delay sender/SLICE_10 to sender/SLICE_16 exceeds
+      2.251ns delay constraint less
+      0.000ns skew and
+      0.249ns CE_SET requirement (totaling 2.002ns) by 0.683ns
+
+ Physical Path Details:
+
+      Data path sender/SLICE_10 to sender/SLICE_16:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.409    R16C39B.CLK to     R16C39B.Q0 sender/SLICE_10 (from clk_c)
+ROUTE         5     0.867     R16C39B.Q0 to     R16C39B.A1 sender/PS_vivaz_state_2
+CTOF_DEL    ---     0.452     R16C39B.A1 to     R16C39B.F1 sender/SLICE_10
+ROUTE         8     0.957     R16C39B.F1 to     R14C39C.CE sender/clk_c_enable_16 (to clk_c)
+                  --------
+                    2.685   (32.1% logic, 67.9% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk to sender/SLICE_10:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        11     2.196       55.PADDI to    R16C39B.CLK clk_c
+                  --------
+                    2.196   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk to sender/SLICE_16:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        11     2.196       55.PADDI to    R14C39C.CLK clk_c
+                  --------
+                    2.196   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Error: The following path exceeds requirements by 0.676ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              sender/PS_vivaz_state_i0  (from clk_c +)
+   Destination:    FF         Data in        sender/lcd_bus_i2  (to clk_c +)
+                   FF                        sender/lcd_bus_i3
+
+   Delay:               2.678ns  (32.2% logic, 67.8% route), 2 logic levels.
+
+ Constraint Details:
+
+      2.678ns physical path delay sender/SLICE_9 to sender/SLICE_1 exceeds
+      2.251ns delay constraint less
+      0.000ns skew and
+      0.249ns CE_SET requirement (totaling 2.002ns) by 0.676ns
+
+ Physical Path Details:
+
+      Data path sender/SLICE_9 to sender/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.409    R16C37B.CLK to     R16C37B.Q0 sender/SLICE_9 (from clk_c)
+ROUTE         5     0.924     R16C37B.Q0 to     R16C39B.B1 sender/PS_vivaz_state_0
+CTOF_DEL    ---     0.452     R16C39B.B1 to     R16C39B.F1 sender/SLICE_10
+ROUTE         8     0.893     R16C39B.F1 to     R18C39A.CE sender/clk_c_enable_16 (to clk_c)
+                  --------
+                    2.678   (32.2% logic, 67.8% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk to sender/SLICE_9:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        11     2.196       55.PADDI to    R16C37B.CLK clk_c
+                  --------
+                    2.196   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk to sender/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        11     2.196       55.PADDI to    R18C39A.CLK clk_c
+                  --------
+                    2.196   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Error: The following path exceeds requirements by 0.676ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              sender/PS_vivaz_state_i0  (from clk_c +)
+   Destination:    FF         Data in        sender/lcd_bus_i6  (to clk_c +)
+                   FF                        sender/lcd_bus_i7
+
+   Delay:               2.678ns  (32.2% logic, 67.8% route), 2 logic levels.
+
+ Constraint Details:
+
+      2.678ns physical path delay sender/SLICE_9 to sender/SLICE_3 exceeds
+      2.251ns delay constraint less
+      0.000ns skew and
+      0.249ns CE_SET requirement (totaling 2.002ns) by 0.676ns
+
+ Physical Path Details:
+
+      Data path sender/SLICE_9 to sender/SLICE_3:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.409    R16C37B.CLK to     R16C37B.Q0 sender/SLICE_9 (from clk_c)
+ROUTE         5     0.924     R16C37B.Q0 to     R16C39B.B1 sender/PS_vivaz_state_0
+CTOF_DEL    ---     0.452     R16C39B.B1 to     R16C39B.F1 sender/SLICE_10
+ROUTE         8     0.893     R16C39B.F1 to     R18C39D.CE sender/clk_c_enable_16 (to clk_c)
+                  --------
+                    2.678   (32.2% logic, 67.8% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk to sender/SLICE_9:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        11     2.196       55.PADDI to    R16C37B.CLK clk_c
+                  --------
+                    2.196   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk to sender/SLICE_3:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        11     2.196       55.PADDI to    R18C39D.CLK clk_c
+                  --------
+                    2.196   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Error: The following path exceeds requirements by 0.676ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              sender/PS_vivaz_state_i0  (from clk_c +)
+   Destination:    FF         Data in        sender/lcd_bus_i13  (to clk_c +)
+                   FF                        sender/lcd_bus_i14
+
+   Delay:               2.678ns  (32.2% logic, 67.8% route), 2 logic levels.
+
+ Constraint Details:
+
+      2.678ns physical path delay sender/SLICE_9 to sender/SLICE_17 exceeds
+      2.251ns delay constraint less
+      0.000ns skew and
+      0.249ns CE_SET requirement (totaling 2.002ns) by 0.676ns
+
+ Physical Path Details:
+
+      Data path sender/SLICE_9 to sender/SLICE_17:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.409    R16C37B.CLK to     R16C37B.Q0 sender/SLICE_9 (from clk_c)
+ROUTE         5     0.924     R16C37B.Q0 to     R16C39B.B1 sender/PS_vivaz_state_0
+CTOF_DEL    ---     0.452     R16C39B.B1 to     R16C39B.F1 sender/SLICE_10
+ROUTE         8     0.893     R16C39B.F1 to     R18C39B.CE sender/clk_c_enable_16 (to clk_c)
+                  --------
+                    2.678   (32.2% logic, 67.8% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk to sender/SLICE_9:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        11     2.196       55.PADDI to    R16C37B.CLK clk_c
+                  --------
+                    2.196   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk to sender/SLICE_17:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        11     2.196       55.PADDI to    R18C39B.CLK clk_c
+                  --------
+                    2.196   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Error: The following path exceeds requirements by 0.675ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              sender/PS_vivaz_state_i1  (from clk_c +)
+   Destination:    FF         Data in        sender/lcd_bus_i16  (to clk_c +)
+                   FF                        sender/lcd_bus_i15
+
+   Delay:               2.677ns  (32.2% logic, 67.8% route), 2 logic levels.
+
+ Constraint Details:
+
+      2.677ns physical path delay sender/SLICE_9 to SLICE_7 exceeds
+      2.251ns delay constraint less
+      0.000ns skew and
+      0.249ns CE_SET requirement (totaling 2.002ns) by 0.675ns
+
+ Physical Path Details:
+
+      Data path sender/SLICE_9 to SLICE_7:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.409    R16C37B.CLK to     R16C37B.Q1 sender/SLICE_9 (from clk_c)
+ROUTE         5     0.859     R16C37B.Q1 to     R16C39B.D1 sender/PS_vivaz_state_1
+CTOF_DEL    ---     0.452     R16C39B.D1 to     R16C39B.F1 sender/SLICE_10
+ROUTE         8     0.957     R16C39B.F1 to     R14C39D.CE sender/clk_c_enable_16 (to clk_c)
+                  --------
+                    2.677   (32.2% logic, 67.8% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk to sender/SLICE_9:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        11     2.196       55.PADDI to    R16C37B.CLK clk_c
+                  --------
+                    2.196   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk to SLICE_7:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        11     2.196       55.PADDI to    R14C39D.CLK clk_c
+                  --------
+                    2.196   (0.0% logic, 100.0% route), 0 logic levels.
+
+Warning: 334.336MHz is the maximum frequency for this preference.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "clk_c" 444.247000 MHz ;  |  444.247 MHz|  334.336 MHz|   2 *
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+1 preference(marked by "*" above) not met.
+
+----------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+----------------------------------------------------------------------------
+sender/clk_c_enable_16                  |       8|      24|     92.31%
+                                        |        |        |
+sender/PS_vivaz_state_1                 |       5|       9|     34.62%
+                                        |        |        |
+sender/PS_vivaz_state_0                 |       5|       9|     34.62%
+                                        |        |        |
+sender/PS_vivaz_state_2                 |       5|       8|     30.77%
+                                        |        |        |
+----------------------------------------------------------------------------
+
+
+Clock Domains Analysis
+------------------------
+
+Found 1 clocks:
+
+Clock Domain: clk_c   Source: clk.PAD   Loads: 11
+   Covered under: FREQUENCY NET "clk_c" 444.247000 MHz ;
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 26  Score: 14711
+Cumulative negative slack: 14711
+
+Constraints cover 36 paths, 1 nets, and 43 connections (56.58% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.7.1.502
+Wed May 18 13:57:54 2016
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 5 -sphld m -o MachXO_7000HE_Testproject_impl1.twr -gui -msgset Z:/GITHUB/Lattice/MachXO2700HETestproject/promote.xml MachXO_7000HE_Testproject_impl1.ncd MachXO_7000HE_Testproject_impl1.prf 
+Design file:     machxo_7000he_testproject_impl1.ncd
+Preference file: machxo_7000he_testproject_impl1.prf
+Device,speed:    LCMXO2-7000HE,m
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY NET "clk_c" 444.247000 MHz ;
+            36 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.380ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              sender/PS_vivaz_state_i2  (from clk_c +)
+   Destination:    FF         Data in        sender/PS_vivaz_state_i2  (to clk_c +)
+
+   Delay:               0.367ns  (63.8% logic, 36.2% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.367ns physical path delay sender/SLICE_10 to sender/SLICE_10 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.380ns
+
+ Physical Path Details:
+
+      Data path sender/SLICE_10 to sender/SLICE_10:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R16C39B.CLK to     R16C39B.Q0 sender/SLICE_10 (from clk_c)
+ROUTE         5     0.133     R16C39B.Q0 to     R16C39B.A0 sender/PS_vivaz_state_2
+CTOF_DEL    ---     0.101     R16C39B.A0 to     R16C39B.F0 sender/SLICE_10
+ROUTE         1     0.000     R16C39B.F0 to    R16C39B.DI0 sender/n182 (to clk_c)
+                  --------
+                    0.367   (63.8% logic, 36.2% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk to sender/SLICE_10:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        11     0.866       55.PADDI to    R16C39B.CLK clk_c
+                  --------
+                    0.866   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk to sender/SLICE_10:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        11     0.866       55.PADDI to    R16C39B.CLK clk_c
+                  --------
+                    0.866   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.380ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              sender/PS_vivaz_state_i0  (from clk_c +)
+   Destination:    FF         Data in        sender/PS_vivaz_state_i0  (to clk_c +)
+
+   Delay:               0.367ns  (63.8% logic, 36.2% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.367ns physical path delay sender/SLICE_9 to sender/SLICE_9 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.380ns
+
+ Physical Path Details:
+
+      Data path sender/SLICE_9 to sender/SLICE_9:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R16C37B.CLK to     R16C37B.Q0 sender/SLICE_9 (from clk_c)
+ROUTE         5     0.133     R16C37B.Q0 to     R16C37B.A0 sender/PS_vivaz_state_0
+CTOF_DEL    ---     0.101     R16C37B.A0 to     R16C37B.F0 sender/SLICE_9
+ROUTE         1     0.000     R16C37B.F0 to    R16C37B.DI0 sender/PS_vivaz_state_2_N_17_0 (to clk_c)
+                  --------
+                    0.367   (63.8% logic, 36.2% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk to sender/SLICE_9:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        11     0.866       55.PADDI to    R16C37B.CLK clk_c
+                  --------
+                    0.866   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk to sender/SLICE_9:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        11     0.866       55.PADDI to    R16C37B.CLK clk_c
+                  --------
+                    0.866   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.380ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              sender/PS_vivaz_state_i1  (from clk_c +)
+   Destination:    FF         Data in        sender/PS_vivaz_state_i1  (to clk_c +)
+
+   Delay:               0.367ns  (63.8% logic, 36.2% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.367ns physical path delay sender/SLICE_9 to sender/SLICE_9 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.380ns
+
+ Physical Path Details:
+
+      Data path sender/SLICE_9 to sender/SLICE_9:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R16C37B.CLK to     R16C37B.Q1 sender/SLICE_9 (from clk_c)
+ROUTE         5     0.133     R16C37B.Q1 to     R16C37B.A1 sender/PS_vivaz_state_1
+CTOF_DEL    ---     0.101     R16C37B.A1 to     R16C37B.F1 sender/SLICE_9
+ROUTE         1     0.000     R16C37B.F1 to    R16C37B.DI1 sender/PS_vivaz_state_2_N_17_1 (to clk_c)
+                  --------
+                    0.367   (63.8% logic, 36.2% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk to sender/SLICE_9:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        11     0.866       55.PADDI to    R16C37B.CLK clk_c
+                  --------
+                    0.866   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk to sender/SLICE_9:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        11     0.866       55.PADDI to    R16C37B.CLK clk_c
+                  --------
+                    0.866   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.388ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              sender/PS_vivaz_state_i0  (from clk_c +)
+   Destination:    FF         Data in        sender/PS_vivaz_state_i1  (to clk_c +)
+
+   Delay:               0.375ns  (62.4% logic, 37.6% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.375ns physical path delay sender/SLICE_9 to sender/SLICE_9 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.388ns
+
+ Physical Path Details:
+
+      Data path sender/SLICE_9 to sender/SLICE_9:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R16C37B.CLK to     R16C37B.Q0 sender/SLICE_9 (from clk_c)
+ROUTE         5     0.141     R16C37B.Q0 to     R16C37B.D1 sender/PS_vivaz_state_0
+CTOF_DEL    ---     0.101     R16C37B.D1 to     R16C37B.F1 sender/SLICE_9
+ROUTE         1     0.000     R16C37B.F1 to    R16C37B.DI1 sender/PS_vivaz_state_2_N_17_1 (to clk_c)
+                  --------
+                    0.375   (62.4% logic, 37.6% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk to sender/SLICE_9:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        11     0.866       55.PADDI to    R16C37B.CLK clk_c
+                  --------
+                    0.866   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk to sender/SLICE_9:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        11     0.866       55.PADDI to    R16C37B.CLK clk_c
+                  --------
+                    0.866   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.391ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              sender/PS_vivaz_state_i1  (from clk_c +)
+   Destination:    FF         Data in        sender/PS_vivaz_state_i0  (to clk_c +)
+
+   Delay:               0.378ns  (61.9% logic, 38.1% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.378ns physical path delay sender/SLICE_9 to sender/SLICE_9 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.391ns
+
+ Physical Path Details:
+
+      Data path sender/SLICE_9 to sender/SLICE_9:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R16C37B.CLK to     R16C37B.Q1 sender/SLICE_9 (from clk_c)
+ROUTE         5     0.144     R16C37B.Q1 to     R16C37B.C0 sender/PS_vivaz_state_1
+CTOF_DEL    ---     0.101     R16C37B.C0 to     R16C37B.F0 sender/SLICE_9
+ROUTE         1     0.000     R16C37B.F0 to    R16C37B.DI0 sender/PS_vivaz_state_2_N_17_0 (to clk_c)
+                  --------
+                    0.378   (61.9% logic, 38.1% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk to sender/SLICE_9:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        11     0.866       55.PADDI to    R16C37B.CLK clk_c
+                  --------
+                    0.866   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk to sender/SLICE_9:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        11     0.866       55.PADDI to    R16C37B.CLK clk_c
+                  --------
+                    0.866   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.471ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              sender/PS_vivaz_state_i1  (from clk_c +)
+   Destination:    FF         Data in        sender/PS_vivaz_state_i2  (to clk_c +)
+
+   Delay:               0.458ns  (51.1% logic, 48.9% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.458ns physical path delay sender/SLICE_9 to sender/SLICE_10 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.471ns
+
+ Physical Path Details:
+
+      Data path sender/SLICE_9 to sender/SLICE_10:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R16C37B.CLK to     R16C37B.Q1 sender/SLICE_9 (from clk_c)
+ROUTE         5     0.224     R16C37B.Q1 to     R16C39B.D0 sender/PS_vivaz_state_1
+CTOF_DEL    ---     0.101     R16C39B.D0 to     R16C39B.F0 sender/SLICE_10
+ROUTE         1     0.000     R16C39B.F0 to    R16C39B.DI0 sender/n182 (to clk_c)
+                  --------
+                    0.458   (51.1% logic, 48.9% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk to sender/SLICE_9:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        11     0.866       55.PADDI to    R16C37B.CLK clk_c
+                  --------
+                    0.866   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk to sender/SLICE_10:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        11     0.866       55.PADDI to    R16C39B.CLK clk_c
+                  --------
+                    0.866   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.477ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              sender/PS_vivaz_state_i0  (from clk_c +)
+   Destination:    FF         Data in        sender/PS_vivaz_state_i2  (to clk_c +)
+
+   Delay:               0.464ns  (50.4% logic, 49.6% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.464ns physical path delay sender/SLICE_9 to sender/SLICE_10 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.477ns
+
+ Physical Path Details:
+
+      Data path sender/SLICE_9 to sender/SLICE_10:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R16C37B.CLK to     R16C37B.Q0 sender/SLICE_9 (from clk_c)
+ROUTE         5     0.230     R16C37B.Q0 to     R16C39B.B0 sender/PS_vivaz_state_0
+CTOF_DEL    ---     0.101     R16C39B.B0 to     R16C39B.F0 sender/SLICE_10
+ROUTE         1     0.000     R16C39B.F0 to    R16C39B.DI0 sender/n182 (to clk_c)
+                  --------
+                    0.464   (50.4% logic, 49.6% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk to sender/SLICE_9:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        11     0.866       55.PADDI to    R16C37B.CLK clk_c
+                  --------
+                    0.866   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk to sender/SLICE_10:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        11     0.866       55.PADDI to    R16C39B.CLK clk_c
+                  --------
+                    0.866   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.479ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              sender/PS_vivaz_state_i2  (from clk_c +)
+   Destination:    FF         Data in        sender/PS_vivaz_state_i0  (to clk_c +)
+
+   Delay:               0.466ns  (50.2% logic, 49.8% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.466ns physical path delay sender/SLICE_10 to sender/SLICE_9 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.479ns
+
+ Physical Path Details:
+
+      Data path sender/SLICE_10 to sender/SLICE_9:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R16C39B.CLK to     R16C39B.Q0 sender/SLICE_10 (from clk_c)
+ROUTE         5     0.232     R16C39B.Q0 to     R16C37B.B0 sender/PS_vivaz_state_2
+CTOF_DEL    ---     0.101     R16C37B.B0 to     R16C37B.F0 sender/SLICE_9
+ROUTE         1     0.000     R16C37B.F0 to    R16C37B.DI0 sender/PS_vivaz_state_2_N_17_0 (to clk_c)
+                  --------
+                    0.466   (50.2% logic, 49.8% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk to sender/SLICE_10:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        11     0.866       55.PADDI to    R16C39B.CLK clk_c
+                  --------
+                    0.866   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk to sender/SLICE_9:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        11     0.866       55.PADDI to    R16C37B.CLK clk_c
+                  --------
+                    0.866   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.479ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              sender/PS_vivaz_state_i2  (from clk_c +)
+   Destination:    FF         Data in        sender/PS_vivaz_state_i1  (to clk_c +)
+
+   Delay:               0.466ns  (50.2% logic, 49.8% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.466ns physical path delay sender/SLICE_10 to sender/SLICE_9 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.479ns
+
+ Physical Path Details:
+
+      Data path sender/SLICE_10 to sender/SLICE_9:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R16C39B.CLK to     R16C39B.Q0 sender/SLICE_10 (from clk_c)
+ROUTE         5     0.232     R16C39B.Q0 to     R16C37B.B1 sender/PS_vivaz_state_2
+CTOF_DEL    ---     0.101     R16C37B.B1 to     R16C37B.F1 sender/SLICE_9
+ROUTE         1     0.000     R16C37B.F1 to    R16C37B.DI1 sender/PS_vivaz_state_2_N_17_1 (to clk_c)
+                  --------
+                    0.466   (50.2% logic, 49.8% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk to sender/SLICE_10:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        11     0.866       55.PADDI to    R16C39B.CLK clk_c
+                  --------
+                    0.866   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk to sender/SLICE_9:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        11     0.866       55.PADDI to    R16C37B.CLK clk_c
+                  --------
+                    0.866   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.479ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              sender/PS_vivaz_state_i2  (from clk_c +)
+   Destination:    FF         Data in        sender/lcd_write_28  (to clk_c +)
+
+   Delay:               0.466ns  (50.2% logic, 49.8% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.466ns physical path delay sender/SLICE_10 to sender/SLICE_8 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.479ns
+
+ Physical Path Details:
+
+      Data path sender/SLICE_10 to sender/SLICE_8:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R16C39B.CLK to     R16C39B.Q0 sender/SLICE_10 (from clk_c)
+ROUTE         5     0.232     R16C39B.Q0 to     R16C37D.B0 sender/PS_vivaz_state_2
+CTOF_DEL    ---     0.101     R16C37D.B0 to     R16C37D.F0 sender/SLICE_8
+ROUTE         1     0.000     R16C37D.F0 to    R16C37D.DI0 sender/n159 (to clk_c)
+                  --------
+                    0.466   (50.2% logic, 49.8% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk to sender/SLICE_10:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        11     0.866       55.PADDI to    R16C39B.CLK clk_c
+                  --------
+                    0.866   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk to sender/SLICE_8:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        11     0.866       55.PADDI to    R16C37D.CLK clk_c
+                  --------
+                    0.866   (0.0% logic, 100.0% route), 0 logic levels.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference(MIN Delays)                  |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "clk_c" 444.247000 MHz ;  |     0.000 ns|     0.380 ns|   2  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 1 clocks:
+
+Clock Domain: clk_c   Source: clk.PAD   Loads: 11
+   Covered under: FREQUENCY NET "clk_c" 444.247000 MHz ;
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 36 paths, 1 nets, and 43 connections (56.58% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 26 (setup), 0 (hold)
+Score: 14711 (setup), 0 (hold)
+Cumulative negative slack: 14711 (14711+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+

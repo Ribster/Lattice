@@ -1,0 +1,5 @@
+i<>.\..\lcd_sender.vhd
+i<>.\..\clk_div2.vhd
+i<>.\..\main.vhd
+i<>.\..\lcd_sender_tb.vhd
+i<>.\..\clk_div2_tb.vhd

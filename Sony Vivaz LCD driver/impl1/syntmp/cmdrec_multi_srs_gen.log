@@ -1,0 +1,7 @@
+C:\lscc\diamond\3.7_x64\synpbase\bin64\syn_nfilter.exe  -link  -top  main  -incremental_debug  -multisrs  "Z:\GITHUB\Lattice\Sony Vivaz LCD driver\impl1\synwork\SonyVivazLCDDriver_impl1_comp.srs"  -osyn  "Z:\GITHUB\Lattice\Sony Vivaz LCD driver\impl1\synwork\SonyVivazLCDDriver_impl1_mult.srs"  -log  "Z:\GITHUB\Lattice\Sony Vivaz LCD driver\impl1\synlog\SonyVivazLCDDriver_impl1_multi_srs_gen.srr" 
+rc:0 success:1 runtime:0
+Z:\GITHUB\Lattice\Sony Vivaz LCD driver\impl1\synwork\SonyVivazLCDDriver_impl1_comp.srs|i|1463590593|6517
+Z:\GITHUB\Lattice\Sony Vivaz LCD driver\impl1\synwork\SonyVivazLCDDriver_impl1_mult.srs|o|1463590595|5264
+Z:\GITHUB\Lattice\Sony Vivaz LCD driver\impl1\synlog\SonyVivazLCDDriver_impl1_multi_srs_gen.srr|o|1463590595|525
+C:\lscc\diamond\3.7_x64\synpbase\bin\syn_nfilter.exe|i|1449712674|3110400
+C:\lscc\diamond\3.7_x64\synpbase\bin64\syn_nfilter.exe|i|1449712876|4182528

@@ -1,0 +1,19 @@
+@W: CD638 :"Z:\GITHUB\Lattice\Sony Vivaz LCD driver\main.vhd":68:8:68:19|Signal ns_lcd_state is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"Z:\GITHUB\Lattice\Sony Vivaz LCD driver\main.vhd":69:8:69:19|Signal ps_lcd_state is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CL240 :"Z:\GITHUB\Lattice\Sony Vivaz LCD driver\lcd_arbiter.vhd":13:2:13:10|lcd_reset is not assigned a value (floating) -- simulation mismatch possible. 
+@W: CL117 :"Z:\GITHUB\Lattice\Sony Vivaz LCD driver\lcd_arbiter.vhd":38:2:38:3|Latch generated from process for signal NS_arbiter_state(0 to 6); possible missing assignment in an if or case statement.
+@W: CL113 :"Z:\GITHUB\Lattice\Sony Vivaz LCD driver\lcd_arbiter.vhd":25:2:25:3|Feedback mux created for signal PS_arbiter_state[0:6]. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.
+@W: CL111 :"Z:\GITHUB\Lattice\Sony Vivaz LCD driver\lcd_arbiter.vhd":38:2:38:3|All reachable assignments to go are '1'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL169 :"Z:\GITHUB\Lattice\Sony Vivaz LCD driver\lcd_arbiter.vhd":25:2:25:3|Pruning unused register PS_arbiter_state(0 to 5). Make sure that there are no unused intermediate registers.
+@W: CL169 :"Z:\GITHUB\Lattice\Sony Vivaz LCD driver\lcd_arbiter.vhd":25:2:25:3|Pruning unused register PS_arbiter_state(idle). Make sure that there are no unused intermediate registers.
+@W: CL169 :"Z:\GITHUB\Lattice\Sony Vivaz LCD driver\lcd_arbiter.vhd":38:2:38:3|Pruning unused register NS_arbiter_state(0 to 6). Make sure that there are no unused intermediate registers.
+@W: CD434 :"Z:\GITHUB\Lattice\Sony Vivaz LCD driver\lcd_sender.vhd":39:9:39:11|Signal clk in the sensitivity list is not used in the process
+@W: CL117 :"Z:\GITHUB\Lattice\Sony Vivaz LCD driver\lcd_sender.vhd":73:2:73:3|Latch generated from process for signal lcd_rs; possible missing assignment in an if or case statement.
+@W: CL117 :"Z:\GITHUB\Lattice\Sony Vivaz LCD driver\lcd_sender.vhd":73:2:73:3|Latch generated from process for signal lcd_write; possible missing assignment in an if or case statement.
+@W: CL117 :"Z:\GITHUB\Lattice\Sony Vivaz LCD driver\lcd_sender.vhd":73:2:73:3|Latch generated from process for signal busy; possible missing assignment in an if or case statement.
+@W: CL117 :"Z:\GITHUB\Lattice\Sony Vivaz LCD driver\lcd_sender.vhd":73:2:73:3|Latch generated from process for signal lcd_bus(15 downto 0); possible missing assignment in an if or case statement.
+@W: CL138 :"Z:\GITHUB\Lattice\Sony Vivaz LCD driver\main.vhd":119:2:119:3|Removing register 'data1Command0_i' because it is only assigned 0 or its original value.
+@W: CL138 :"Z:\GITHUB\Lattice\Sony Vivaz LCD driver\main.vhd":119:2:119:3|Removing register 'payload_i' because it is only assigned 0 or its original value.
+@W: CL260 :"Z:\GITHUB\Lattice\Sony Vivaz LCD driver\main.vhd":119:2:119:3|Pruning register bit 1 of tmp(7 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL279 :"Z:\GITHUB\Lattice\Sony Vivaz LCD driver\main.vhd":119:2:119:3|Pruning register bits 23 to 6 of count(23 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+

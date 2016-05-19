@@ -3,8 +3,18 @@ Report for cell main
    Instance path: main
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      71.00        100.0
-                                  LUT4	      88.00        100.0
+                                  SLIC	      14.00        100.0
+                                  LUT4	      27.00        100.0
                                  IOBUF	         28        100.0
-                                PFUREG	         60        100.0
-                                RIPPLE	         26        100.0
+                                PFUREG	         19        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                            lcd_sender	          1        57.1
+---------------------------------------------------
+Report for cell lcd_sender
+   Instance path: main/inst_lcd_sender
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       8.00        57.1
+                                  LUT4	      13.00        48.1
+                                PFUREG	         12        63.2

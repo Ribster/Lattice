@@ -1,0 +1,9 @@
+C:\lscc\diamond\3.7_x64\synpbase\bin64\c_vhdl.exe  -osyn  Z:\GITHUB\Lattice\MachXO2700HETestproject\impl1\synwork\MachXO_7000HE_Testproject_impl1_hdl_.srs  -top  lcd_wrapper  -prodtype  synplify_pro  -dspmac -fixsmult -infer_seqShift -nram -sdff_counter -divnmod -nostructver  -encrypt  -pro  -dmgen  Z:\GITHUB\Lattice\MachXO2700HETestproject\impl1\dm  -lite -ui -fid2 -ram -sharing on -ll 2000 -autosm  -ignore_undefined_lib  -lib work C:\lscc\diamond\3.7_x64\cae_library\synthesis\vhdl\machxo2.vhd -lib work Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_sender.vhd -lib work Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_wrapper.vhd  -log  Z:\GITHUB\Lattice\MachXO2700HETestproject\impl1\syntax.log  -fileorder  Z:\GITHUB\Lattice\MachXO2700HETestproject\impl1\syntmp\hdlorder.tcl 
+rc:0 success:1 runtime:0
+Z:\GITHUB\Lattice\MachXO2700HETestproject\impl1\synwork\MachXO_7000HE_Testproject_impl1_hdl_.srs|o|0|0
+C:\lscc\diamond\3.7_x64\cae_library\synthesis\vhdl\machxo2.vhd|i|1376992808|73964
+Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_sender.vhd|i|1463567556|1590
+Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_wrapper.vhd|i|1463567876|1332
+Z:\GITHUB\Lattice\MachXO2700HETestproject\impl1\syntax.log|o|1463567884|953
+C:\lscc\diamond\3.7_x64\synpbase\bin\c_vhdl.exe|i|1449712636|2359296
+C:\lscc\diamond\3.7_x64\synpbase\bin64\c_vhdl.exe|i|1449712846|3228672

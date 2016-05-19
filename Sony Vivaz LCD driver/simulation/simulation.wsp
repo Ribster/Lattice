@@ -1,0 +1,9 @@
+[COMPILESTATUS|.\..\impl1\SonyVivazLCDDriver_impl1_vho.vho]
+FileTimeLow=30519557
+Status=Compiled
+[COMPILESTATUS|.\..\main_tb.vhd]
+FileTimeLow=30519557
+Status=Compiled
+[COMPILESTATUS|.\..\impl1\SonyVivazLCDDriver_impl1_vho.sdf]
+FileTimeLow=30519557
+Status=Modified

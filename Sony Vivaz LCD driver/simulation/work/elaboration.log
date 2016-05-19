@@ -1,0 +1,234 @@
+Active-HDL 10.2.3312.5682  2016-05-18 15:04:03
+
+Elaboration top modules:
+Architecture                  behavior(testbench)
+
+
+-------------------------------------------------------------------------------------------------------------
+Entity                   | Architecture | Library   | Info | Compiler Version          | Compilation Options
+-------------------------------------------------------------------------------------------------------------
+testbench                | behavior     | work      |      | 10.2.3312.5682  (Windows) | -dbg
+main                     | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+SLICE_0                  | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+SLICE_1                  | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+SLICE_2                  | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+SLICE_3                  | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+SLICE_4                  | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+SLICE_5                  | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+SLICE_6                  | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+SLICE_7                  | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+SLICE_8                  | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+SLICE_9                  | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+SLICE_10                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+SLICE_11                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+SLICE_12                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+SLICE_13                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+SLICE_14                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+SLICE_15                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+SLICE_16                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+SLICE_17                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+SLICE_18                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+SLICE_19                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+SLICE_20                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+SLICE_21                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+SLICE_22                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+SLICE_23                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+SLICE_24                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+SLICE_25                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+SLICE_26                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+SLICE_27                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+SLICE_28                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+SLICE_29                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+SLICE_32                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+SLICE_33                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+SLICE_34                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+SLICE_37                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+SLICE_38                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+SLICE_39                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+SLICE_40                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+SLICE_41                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+SLICE_42                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+SLICE_43                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+SLICE_44                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+SLICE_45                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+SLICE_46                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+SLICE_47                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+SLICE_48                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+SLICE_49                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+SLICE_50                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+SLICE_51                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+SLICE_52                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+SLICE_53                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+SLICE_54                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+i3392_SLICE_55           | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+SLICE_56                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+SLICE_57                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+SLICE_58                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+inst_lcd_sender_SLICE_59 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+SLICE_60                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+SLICE_61                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+inst_lcd_sender_SLICE_62 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+SLICE_63                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+leds_7_B                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+synch_rstB               | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lcd_rsB                  | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lcd_resetB               | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lcd_wrB                  | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lcd_LCDBus_0_B           | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lcd_LCDBus_1_B           | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lcd_LCDBus_2_B           | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lcd_LCDBus_3_B           | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lcd_LCDBus_4_B           | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lcd_LCDBus_5_B           | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lcd_LCDBus_6_B           | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lcd_LCDBus_7_B           | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lcd_LCDBus_8_B           | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lcd_LCDBus_9_B           | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lcd_LCDBus_10_B          | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lcd_LCDBus_11_B          | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lcd_LCDBus_12_B          | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lcd_LCDBus_13_B          | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lcd_LCDBus_14_B          | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lcd_LCDBus_15_B          | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+leds_0_B                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+leds_1_B                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+leds_2_B                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+leds_3_B                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+leds_4_B                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+leds_5_B                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+leds_6_B                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+inst_clk                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+GSR_INSTB                | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+pur                      | v            | machxo2   |      | 10.2.3312.5682  (Windows) | -vendor lattice
+vmuxregsre               | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+vcc                      | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+ccu2B0                   | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+gnd                      | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+fl1p3iy                  | v            | machxo2   |      | 10.2.3312.5682  (Windows) | -vendor lattice
+vhi                      | v            | machxo2   |      | 10.2.3312.5682  (Windows) | -vendor lattice
+ccu2d                    | bev          | machxo2   |      | 10.2.3312.5682  (Windows) | -vendor lattice
+vlo                      | v            | machxo2   |      | 10.2.3312.5682  (Windows) | -vendor lattice
+ccu20001                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+ccu20002                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+ccu20003                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+ccu20004                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+ccu20005                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+ccu20006                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+ccu20007                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+ccu20008                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lut4                     | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lut40009                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+vmuxregsre0010           | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+rom16x1a                 | v            | machxo2   |      | 10.2.3312.5682  (Windows) | -vendor lattice
+and2                     | v            | machxo2   |      | 10.2.3312.5682  (Windows) | -vendor lattice
+fl1s1d                   | v            | machxo2   |      | 10.2.3312.5682  (Windows) | -vendor lattice
+lut40011                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lut40012                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lut40013                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lut40014                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lut40015                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lut40016                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+vmuxregsre0017           | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+mux41                    | v            | machxo2   |      | 10.2.3312.5682  (Windows) | -vendor lattice
+or2                      | v            | machxo2   |      | 10.2.3312.5682  (Windows) | -vendor lattice
+fd1s1ay                  | v            | machxo2   |      | 10.2.3312.5682  (Windows) | -vendor lattice
+bufba                    | v            | machxo2   |      | 10.2.3312.5682  (Windows) | -vendor lattice
+lut40018                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lut40019                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+vmuxregsre0020           | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+vmuxregsre0021           | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+fl1p3dx                  | v            | machxo2   |      | 10.2.3312.5682  (Windows) | -vendor lattice
+fl1p3bx                  | v            | machxo2   |      | 10.2.3312.5682  (Windows) | -vendor lattice
+lut40022                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lut40023                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lut40024                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lut40025                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lut40026                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lut40027                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+vmuxregsre0028           | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+inv                      | v            | machxo2   |      | 10.2.3312.5682  (Windows) | -vendor lattice
+fd1s1a                   | v            | machxo2   |      | 10.2.3312.5682  (Windows) | -vendor lattice
+lut40029                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lut40030                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lut40031                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lut40032                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lut40033                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lut40034                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lut40035                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lut40036                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lut40037                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lut40038                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lut40039                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lut40040                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lut40041                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lut40042                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lut40043                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lut40044                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lut40045                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lut40046                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lut40047                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lut40048                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lut40049                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lut40050                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lut40051                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lut40052                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lut40053                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lut40054                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lut40055                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lut40056                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lut40057                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lut40058                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lut40059                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+selmux2                  | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+mux21                    | v            | machxo2   |      | 10.2.3312.5682  (Windows) | -vendor lattice
+lut40060                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lut40061                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lut40062                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lut40063                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lut40064                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lut40065                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lut40066                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lut40067                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lut40068                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lut40069                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lut40070                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lut40071                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lut40072                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lut40073                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lut40074                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+lut40075                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+xo2iobuf                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+obzpd                    | v            | machxo2   |      | 10.2.3312.5682  (Windows) | -vendor lattice
+xo2iobuf0076             | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+ibpd                     | v            | machxo2   |      | 10.2.3312.5682  (Windows) | -vendor lattice
+OSCHB                    | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+osch                     | v            | machxo2   |      | 10.2.3312.5682  (Windows) | -vendor lattice
+GSR5MODE                 | structure    | work      |      | 10.2.3312.5682  (Windows) | -dbg
+gsr                      | v            | machxo2   |      | 10.2.3312.5682  (Windows) | -vendor lattice
+-------------------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------------------
+VHDL Package                            | Library   | Info | Compiler Version          | Compilation Options
+-------------------------------------------------------------------------------------------------------------
+standard                                | std       |      |                           | <unavailable>
+TEXTIO                                  | std       |      | 10.2.3312.5682  (Windows) |  -2008
+std_logic_1164                          | ieee      |      | 10.2.3312.5682  (Windows) |  -2008
+NUMERIC_STD                             | ieee      |      | 10.2.3312.5682  (Windows) |  -2008
+VITAL_Timing                            | vital2000 |      | 10.2.3312.5682  (Windows) | <unavailable>
+std_logic_arith                         | ieee      |      | 10.2.3312.5682  (Windows) | <unavailable>
+components                              | machxo2   |      | 10.2.3312.5682  (Windows) | -vendor lattice
+global                                  | machxo2   |      | 10.2.3312.5682  (Windows) | -vendor lattice
+VITAL_Primitives                        | ieee      |      | 10.2.3312.5682  (Windows) | <unavailable>
+STD_LOGIC_UNSIGNED                      | ieee      |      | 10.2.3312.5682  (Windows) | <unavailable>
+mem2                                    | machxo2   |      | 10.2.3312.5682  (Windows) | -vendor lattice
+-------------------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------------------
+Library                                 | Comment
+-------------------------------------------------------------------------------------------------------------
+ieee                                    | Standard IEEE packages library
+machxo2                                 | LATTICE Diamond 3.7, MACHXO2 VHDL LIBRARY
+std                                     | Standard VHDL library
+vital2000                               | Standard IEEE packages library
+work                                    | None
+-------------------------------------------------------------------------------------------------------------

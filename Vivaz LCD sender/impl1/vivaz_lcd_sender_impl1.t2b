@@ -1,0 +1,5 @@
+
+
+-g RamCfg:Reset
+
+-path "Z:/GITHUB/Lattice/Vivaz LCD sender"  

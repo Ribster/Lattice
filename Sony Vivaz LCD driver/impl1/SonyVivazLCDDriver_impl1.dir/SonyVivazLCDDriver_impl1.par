@@ -4,7 +4,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
-Tue May 17 22:45:23 2016
+Wed May 18 17:12:59 2016
 
 C:/lscc/diamond/3.7_x64/ispfpga\bin\nt64\par -f SonyVivazLCDDriver_impl1.p2t
 SonyVivazLCDDriver_impl1_map.ncd SonyVivazLCDDriver_impl1.dir
@@ -17,11 +17,11 @@ Preference file: SonyVivazLCDDriver_impl1.prf.
 Level/       Number       Worst        Timing       Worst        Timing       Run          NCD
 Cost [ncd]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
 ----------   --------     -----        ------       -----------  -----------  ----         ------
-5_1   *      0            37.224       0            0.379        0            06           Complete
+5_1   *      0            44.449       0            0.379        0            04           Complete
 
 
 * : Design saved.
 
-Total (real) run time for 1-seed: 6 secs 
+Total (real) run time for 1-seed: 4 secs 
 
 par done!

@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BaliProject version="3.2" title="SonyVivazLCDDriver" device="LCMXO2-7000HE-5TG144C" default_implementation="impl1">
     <Options/>
-    <Implementation title="impl1" dir="impl1" description="impl1" synthesis="lse" default_strategy="Strategy1">
+    <Implementation title="impl1" dir="impl1" description="impl1" synthesis="synplify" default_strategy="Strategy1">
         <Options def_top="main"/>
         <Source name="main.vhd" type="VHDL" type_short="VHDL">
             <Options top_module="main"/>
         </Source>
+        <Source name="lcd_sender.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="lcd_arbiter.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
         <Source name="impl1/impl1.xcf" type="Programming Project File" type_short="Programming">
+            <Options/>
+        </Source>
+        <Source name="sim_lcd_sender/sim_lcd_sender.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+        <Source name="simulation/simulation.spf" type="Simulation Project File" type_short="SPF">
             <Options/>
         </Source>
         <Source name="SonyVivazLCDDriver.lpf" type="Logic Preference" type_short="LPF">

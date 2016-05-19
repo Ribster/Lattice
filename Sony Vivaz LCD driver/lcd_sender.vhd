@@ -1,93 +1,82 @@
-library ieee;
-
-use ieee.std_logic_1164.all;
-use work.constants.all;
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.math_real.all;
+USE ieee.numeric_std.all;
+LIBRARY lattice;
 
 entity lcd_sender is
-  port(
-    
-    -- inputs
-    
-    clk100  : in std_logic;                        -- 100MHz clock
-    payload : in std_logic_vector(15 downto 0);    -- input data
-    go      : in std_logic;                        -- toggle trigger
-    data    : in std_logic;                        -- data or command
-	resetin : in std_logic;					   	   -- reset the display
-	
-    -- outputs
-    LCDBus  : out std_logic_vector(15 downto 0);	-- output lcd bus
-    busy    : out boolean;                          -- busy flag
-	wr		: out std_logic;						-- write line
-	reset   : out std_logic;						-- reset line of display
-	rs		: out std_logic						-- data or command line
-    );
+	port(
+		clk		: in std_logic;
+		rst		: in std_logic;
+		lcd_bus		: inout std_logic_vector(15 downto 0);
+		lcd_write	: out std_logic;
+		lcd_rs		: out std_logic;
+		go		: in std_logic;
+		data1Command0 	: in std_logic;
+		busy		: inout std_logic;
+		payload		: in integer range 0 to 65535
+	);
 end lcd_sender;
 
-architecture behavioral of lcd_sender is
-
-
-  -- internal signals
-  
-  signal LCDBus_i : std_logic_vector(15 downto 0);
-  signal busy_i : boolean := false;
-  signal wr_i : std_logic;
-  signal rs_i : std_logic;  
-  signal last_go_i : std_logic := '0';
-  signal state_i : lcd_sender_state_t := idle;
- 
+architecture beh_lcd_sender of lcd_sender is
+	type state_type is (undefined, idle, t10, t20, t30, t40, t50, t60);
+	signal PS_vivaz_state: state_type;
+	signal NS_vivaz_state: state_type;
 begin
 
-	busy <= busy_i;
-	wr <= wr_i;
-	rs <= rs_i;
-	reset <= resetin;
-	LCDBus <= LCDBus_i;
-
-	process (clk100)
+	process(clk,rst)
 	begin
-		if(clk100'EVENT and clk100='1') then
+		if rising_edge(clk) then
+			PS_vivaz_state <= NS_vivaz_state;
+		end if;
 		
-			case state_i is
-				when idle =>
-					if last_go_i /= go then
-						busy_i <= true;
-						state_i <= t10;
-					end if;
-				when t10 =>
-					-- write low
-					wr_i <= '0'; 
-					
-					-- set data / command
-					
-					state_i <= t20;
-				when t20 =>
-					-- data set
-					LCDBus_i <= payload;
-					
-					state_i <= t30;
-				when t30 =>
-					-- write high
-					wr_i <= '1'; 
-					
-					state_i <= t40;
-				when t40 =>
-					-- write wait
-				
-					state_i <= t50;
-				when t50 =>
-					-- write wait
-				
-					state_i <= t60;
-				when t60 =>
-					-- done
-				
-					last_go_i <= go;
-					busy_i <= false;
-					state_i <= idle;
-				when others => null;
-			end case;
-		
+		if rst = '1' then
+			PS_vivaz_state <= idle;
 		end if;
 	end process;
 
-end behavioral;
+	process(clk, rst, PS_vivaz_state, go, data1Command0, payload)
+	begin
+			case PS_vivaz_state is
+				when idle =>
+					if go = '1' then
+						lcd_write <= '0';
+						busy <= '1';
+						lcd_rs <= data1Command0;
+						NS_vivaz_state <= t10;
+					else
+						NS_vivaz_state <= idle;
+					end if;
+				when t10 =>
+					lcd_bus <= std_logic_vector(to_unsigned(payload, 16));
+					NS_vivaz_state <= t20;
+				when t20 =>
+					lcd_write <= '1';
+					NS_vivaz_state <= t30;
+				when t30 =>
+					NS_vivaz_state <= t40;
+				when t40 =>
+					NS_vivaz_state <= t50;
+				when t50 =>
+					NS_vivaz_state <= t60;
+				when t60 =>
+					lcd_write <= '0';
+					busy <= '0';
+					NS_vivaz_state <= idle;
+				when others =>
+					--busy <= '0';
+					NS_vivaz_state <= idle;
+			end case;
+		
+
+		if rst = '1' then
+			busy <= '0';
+			lcd_bus <= "0000000000000000";
+			lcd_write <= '0';
+			lcd_rs <= '0';
+			NS_vivaz_state <= idle;
+		end if;
+	end process;
+	
+end beh_lcd_sender;

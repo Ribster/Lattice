@@ -1,0 +1,143 @@
+# Design Explorer: Shortcut to "Z:\GITHUB\Lattice\Vivaz driver Rev A\simulation_reva\simulation_reva.aws" design added.
+designverincludedir -clear
+designverlibrarysim -PL -clear
+designverlibrarysim -L -clear
+designverlibrarysim -PL pmi_work
+designverlibrarysim ovi_machxo2
+designverdefinemacro -clear
+addfile {Z:/GITHUB/Lattice/Vivaz driver Rev A/lcd_sender.vhd}
+# Adding file Z:\GITHUB\Lattice\Vivaz driver Rev A\lcd_sender.vhd ... Done
+addfile {Z:/GITHUB/Lattice/Vivaz driver Rev A/clk_div2.vhd}
+# Adding file Z:\GITHUB\Lattice\Vivaz driver Rev A\clk_div2.vhd ... Done
+addfile {Z:/GITHUB/Lattice/Vivaz driver Rev A/main.vhd}
+# Adding file Z:\GITHUB\Lattice\Vivaz driver Rev A\main.vhd ... Done
+addfile {Z:/GITHUB/Lattice/Vivaz driver Rev A/lcd_sender_tb.vhd}
+# Adding file Z:\GITHUB\Lattice\Vivaz driver Rev A\lcd_sender_tb.vhd ... Done
+addfile {Z:/GITHUB/Lattice/Vivaz driver Rev A/clk_div2_tb.vhd}
+# Adding file Z:\GITHUB\Lattice\Vivaz driver Rev A\clk_div2_tb.vhd ... Done
+vlib {Z:/GITHUB/Lattice/Vivaz driver Rev A/simulation_reva/work}
+# Adding library O.K.
+adel -all
+# Library contents cleared.
+vcom -dbg -work work {Z:/GITHUB/Lattice/Vivaz driver Rev A/lcd_sender.vhd}
+# Compile...
+# File: Z:\GITHUB\Lattice\Vivaz driver Rev A\lcd_sender.vhd
+# Compile Entity "lcd_sender"
+# Compile Architecture "beh_lcd_sender" of Entity "lcd_sender"
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
+vcom -dbg -work work {Z:/GITHUB/Lattice/Vivaz driver Rev A/clk_div2.vhd}
+# Compile...
+# File: Z:\GITHUB\Lattice\Vivaz driver Rev A\clk_div2.vhd
+# Compile Entity "clk_div2"
+# Compile Architecture "beh_clk_div2" of Entity "clk_div2"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+vcom -dbg -work work {Z:/GITHUB/Lattice/Vivaz driver Rev A/main.vhd}
+# Compile...
+# File: Z:\GITHUB\Lattice\Vivaz driver Rev A\main.vhd
+# Compile Entity "main"
+# Compile Architecture "behavioral" of Entity "main"
+# Warning: ELAB1_0026: main.vhd : (85, 0): There is no default binding for component "osch". (No entity named "osch" was found).
+# Compile success 0 Errors 1 Warnings  Analysis time :  46.0 [ms]
+vcom -dbg -work work {Z:/GITHUB/Lattice/Vivaz driver Rev A/lcd_sender_tb.vhd}
+# Compile...
+# File: Z:\GITHUB\Lattice\Vivaz driver Rev A\lcd_sender_tb.vhd
+# Compile Entity "testbench"
+# Compile Architecture "behavior" of Entity "testbench"
+# Compile success 0 Errors 0 Warnings  Analysis time :  46.0 [ms]
+vcom -dbg -work work {Z:/GITHUB/Lattice/Vivaz driver Rev A/clk_div2_tb.vhd}
+# Compile...
+# File: Z:\GITHUB\Lattice\Vivaz driver Rev A\clk_div2_tb.vhd
+# Compile Entity "testbench"
+# Compile Architecture "behavior" of Entity "testbench"
+# Error: COMP96_0077: clk_div2_tb.vhd : (40, 28): Undefined type of expression. Expected type 'STD_ULOGIC'.
+# Error: COMP96_0077: clk_div2_tb.vhd : (41, 28): Undefined type of expression. Expected type 'STD_ULOGIC'.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  32.0 [ms]
+entity testbench
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+vsim +access +r testbench -PL pmi_work -L ovi_machxo2
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# vsim: Stack memory: 32MB
+# vsim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5987 kB (elbread=1023 elab2=4812 kernel=150 sdf=0)
+# KERNEL: ASDB file was created in location Z:\GITHUB\Lattice\Vivaz driver Rev A\simulation_reva\src\wave.asdb
+#  8:46 PM, Wednesday, May 18, 2016
+#  Simulation has been initialized
+#  Selected Top-Level: testbench (behavior)
+add wave *
+# 10 signal(s) traced.
+run 1000ns
+# Waveform file 'untitled.awc' connected to 'Z:/GITHUB/Lattice/Vivaz driver Rev A/simulation_reva/src/wave.asdb'.
+# KERNEL: stopped at time: 1 us
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+acom -O3 -work work -2002  $dsn/../clk_div2_tb.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: Z:\GITHUB\Lattice\Vivaz driver Rev A\clk_div2_tb.vhd
+# Compile Entity "testbench"
+# Compile Architecture "behavior" of Entity "testbench"
+# Error: COMP96_0077: clk_div2_tb.vhd : (40, 28): Undefined type of expression. Expected type 'STD_ULOGIC'.
+# Error: COMP96_0077: clk_div2_tb.vhd : (41, 28): Undefined type of expression. Expected type 'STD_ULOGIC'.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -work work -2002  $dsn/../clk_div2_tb.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: Z:\GITHUB\Lattice\Vivaz driver Rev A\clk_div2_tb.vhd
+# Compile Entity "testbench"
+# Compile Architecture "behavior" of Entity "testbench"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+run 100 ns
+# KERNEL: stopped at time: 1100 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+#  Simulation has been stopped
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 -L ovi_machxo2 -PL pmi_work +access +r testbench behavior
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6878 kB (elbread=1023 elab2=5705 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location Z:\GITHUB\Lattice\Vivaz driver Rev A\simulation_reva\src\wave.asdb
+#  8:47 PM, Wednesday, May 18, 2016
+#  Simulation has been initialized
+#  Selected Top-Level: testbench (behavior)
+# Waveform file 'untitled.awc' connected to 'Z:/GITHUB/Lattice/Vivaz driver Rev A/simulation_reva/src/wave.asdb'.
+# add wave -noreg {/testbench/clkin}
+# add wave -noreg {/testbench/clkout}
+# add wave -noreg {/testbench/clk}
+# add wave -noreg {/testbench/rst}
+# 4 signal(s) traced.
+run 1us
+# KERNEL: stopped at time: 1 us

@@ -5,7 +5,6 @@ use ieee.math_real.all;
 USE ieee.numeric_std.all;
 LIBRARY lattice;
 
-use work.constants.all;
 
 entity main is
 	port(
@@ -15,7 +14,7 @@ entity main is
 		lcd_wr		: inout std_logic;						-- write line
 		lcd_reset   : inout std_logic;						-- reset line of display
 		lcd_rs		: inout std_logic;							-- data or command line
-		synch_rst	: in std_logic
+		synch_rst	: inout std_logic
 	);
 end main;
 
@@ -33,227 +32,112 @@ architecture behavioral of main is
 		SEDSTDBY	:	out	std_logic
 	);
    end component;
+   
+   -- lcd_sender
+   component lcd_sender is
+	port(
+		clk		: in std_logic;
+		rst		: in std_logic;
+		lcd_bus		: inout std_logic_vector(15 downto 0);
+		lcd_write	: out std_logic;
+		lcd_rs		: out std_logic;
+		go		: in std_logic;
+		data1Command0 	: in std_logic;
+		busy		: inout std_logic;
+		payload		: in integer range 0 to 65535
+	);
+	end component;
 	
+	-- lcd_arbiter
+	component lcd_arbiter is
+	port (
+		clk		: in std_logic;
+		rst		: in std_logic;
+		go		: out std_logic;
+		lcd_reset : out std_logic;
+		enable	: in std_logic
+	);
+	end component;
 	
-	-- state machine latch
-	type state_type is (undefined, idle, t10, t20, t30, t40, t50, t60);
-	signal PS_vivaz_state: state_type := undefined;
-	signal NS_vivaz_state: state_type := undefined;
-	
-	signal rst: std_logic;
-	
-	signal lcd_go_i: std_logic := '0';
-	signal lcd_busy_i: std_logic := '0';
-	signal lcd_payload_i: integer range 0 to 65535;
-	signal lcd_dataTrue_commandFalse_i: boolean := false;
-	signal lcd_reset_i: std_logic := '1';
-	
+	SIGNAL go_i :  std_logic;
+	SIGNAL data1Command0_i :  std_logic;
+	SIGNAL busy_i :  std_logic;
+	SIGNAL payload_i :  integer range 0 to 65535;
 	
 	type lcd_states is (undefined, idle, s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, s12, s13, s14);
-	signal NS_lcd_state: lcd_states := undefined;
-	signal PS_lcd_state: lcd_states := undefined;
-	shared variable count	:	integer range 0 TO 11_000_000 := 0;
-	shared variable waitcounter: integer range 0 to 11_000_000 := 0;
+	signal NS_lcd_state: lcd_states;
+	signal PS_lcd_state: lcd_states;
+	
+	signal reset_startup: std_logic := '1';
+	signal reset_done : std_logic := '0';
 begin
-
-	rst <= synch_rst;
-
 	-- internal oscillator
 	inst_clk: osch
 		generic map (nom_freq => "20.46")
 		port map (STDBY => '0', OSC => clk133, SEDSTDBY => OPEN);
+	
+	-- lcd_sender
+	inst_lcd_sender: lcd_sender PORT MAP(
+		clk => clk133,
+		rst => reset_startup,
+		lcd_bus => lcd_LCDBus,
+		lcd_write => lcd_wr,
+		lcd_rs => lcd_rs,
+		go => go_i,
+		data1Command0 => data1Command0_i,
+		busy => busy_i,
+		payload => payload_i
+	);
+	
+	-- lcd_arbiter
+	inst_lcd_arbiter: lcd_arbiter PORT MAP(
+		clk => clk133,
+		rst => reset_startup,
+		go => go_i,
+		lcd_reset => lcd_reset,
+		enable => reset_done
+	);
+	
+	synch_rst <= reset_startup;
+	
+	leds(0) <= NOT go_i;
+	leds(1) <= NOT lcd_reset;
+	leds(2) <= NOT reset_done;
+	leds(3) <= NOT lcd_rs;
+	leds(4) <= NOT data1Command0_i;
+	leds(5) <= NOT busy_i;
+	leds(6) <= NOT lcd_wr;
+	leds(7) <= '1';
+	
+
+	process(clk133)
+		variable count : integer range 0 to 10_000_000;
+		variable tmp : integer range 0 to 255;
+	begin
 		
-	process(clk133, rst)
-	begin
-			if rising_edge(clk133) then
-				PS_vivaz_state <= NS_vivaz_state;
-			end if;
-			if rst = '1' then
-				PS_vivaz_state <= idle;
-			end if;
-	end process;
 	
-	process(clk133, PS_vivaz_state, lcd_payload_i, lcd_dataTrue_commandFalse_i, lcd_go_i, rst, lcd_busy_i)
-	begin
-		case PS_vivaz_state is
-			when idle =>
-				if lcd_go_i = '1' then
-					lcd_wr <= '0';
-					lcd_busy_i <= '1';
-					if lcd_dataTrue_commandFalse_i then
-						lcd_rs <= '1';
-					else
-						lcd_rs <= '0';
-					end if;
-					NS_vivaz_state <= t10;
-				end if;
-				
-				if lcd_busy_i = '1' then
-					lcd_busy_i <= '0';
-				end if;
-			when t10 =>
-				lcd_LCDBus <= std_logic_vector(to_unsigned(lcd_payload_i, 16));
-				NS_vivaz_state <= t20;
-			when t20 =>
-				lcd_wr <= '1';
-				NS_vivaz_state <= t30;
-			when t30 =>
-				-- wait
-				NS_vivaz_state <= t40;
-			when t40 =>
-				-- wait
-				NS_vivaz_state <= t50;
-			when t50 =>
-				-- wait
-				NS_vivaz_state <= t60;
-			when t60 =>
-				lcd_wr <= '0';
-				lcd_busy_i <= '0';
-				NS_vivaz_state <= idle;
-			when others =>
-				lcd_busy_i <= '0';
-				NS_vivaz_state <= idle;
-		end case;
-		
-		if rst = '1' then
-			lcd_busy_i <= '1';
-			lcd_wr <= '1';
-			lcd_LCDBus <= std_logic_vector(to_unsigned(0, 16));
-			lcd_rs <= '0';
-			NS_vivaz_state <= idle;
-		end if;
-	end process;
-	
-	
-	process(clk133, rst)
-	begin
 		if rising_edge(clk133) then
-			if count < waitcounter then
-				count := count +1;
+			if count < 50 then
+				count := count + 1;
 			else
 				count := 0;
-				PS_lcd_state <= NS_lcd_state;
+				if (reset_startup = '0' and tmp < 1) then
+					reset_startup <= '1';
+					tmp := tmp + 1;
+				elsif(reset_startup = '1' and tmp <2) then
+					reset_startup <= '0';
+					
+					data1Command0_i <= '0';
+					payload_i <= 0;
+					
+					reset_done <= '1';
+					tmp := tmp + 1;
+				else
+					reset_startup <= '0';
+				end if;
 			end if;
 		end if;
-		if rst = '1' then
-			PS_lcd_state <= idle;
-			count := 0;
-		end if;
 	end process;
-
-	process(clk133, PS_vivaz_state, PS_lcd_state, lcd_busy_i, lcd_reset, lcd_rs, lcd_wr, lcd_go_i, rst)
-	begin		
-		case PS_lcd_state is
-			when idle =>
-				-- 5ms wait
-				waitcounter := 102_300;
-				lcd_go_i <= '0';
-				NS_lcd_state <= s1;
-			when s1 =>
-				-- reset high
-				waitcounter := 0;
-				lcd_reset <= '1';
-				NS_lcd_state <= s2;
-			when s2 =>
-				-- 50ms wait
-				waitcounter := 1_023_000;
-				NS_lcd_state <= s3;
-			when s3 =>
-				-- reset low	
-				waitcounter := 0;
-				lcd_reset <= '0';
-				NS_lcd_state <= s4;
-			when s4 =>
-				-- 50ms wait
-				waitcounter := 1_023_000;
-				NS_lcd_state <= s5;
-			when s5 =>
-				-- reset high
-				waitcounter := 0;
-				lcd_reset <= '1';
-				NS_lcd_state <= s6;
-			when s6 =>
-				waitcounter := 0;
-				-- write mcap command
-				lcd_dataTrue_commandFalse_i <= false;
-				lcd_payload_i <= 176;	-- MCAP command
-				-- start lcd write
-				lcd_go_i <= '1';
-				NS_lcd_state <= s7;
-			when s7 =>
-				waitcounter := 0;
-				if lcd_busy_i = '0' then
-				NS_lcd_state <= s8;
-				end if;
-			when s8 =>
-				waitcounter := 0;
-				NS_lcd_state <= s9;
-			when s9 =>
-				waitcounter := 0;
-				-- write 4 data payload
-				lcd_dataTrue_commandFalse_i <= true;
-				lcd_payload_i <= 4;	-- enable manufacturer registers
-				-- start lcd write
-				lcd_go_i <= '1';
-				NS_lcd_state <= s10;
-			when s10 =>
-				waitcounter := 0;
-				if lcd_busy_i = '0' then
-					NS_lcd_state <= s11;
-				end if;
-			when s11 =>
-				waitcounter := 0;
-				NS_lcd_state <= s12;
-			when s12 =>
-				waitcounter := 0;
-				NS_lcd_state <= s13;
-			when s13 =>
-				waitcounter := 10_023_000;
-				NS_lcd_state <= s14;
-			when s14 =>
-				waitcounter := 0;
-				lcd_reset <= '0';
-				NS_lcd_state <= idle;
-			when others =>
-				NS_lcd_state <= idle;
-		end case;
-		
-		leds(0) <= NOT lcd_busy_i;
-		leds(1) <= NOT lcd_reset;
-		leds(2) <= NOT lcd_rs;
-		leds(3) <= NOT lcd_wr;
-		
-		leds(4) <= NOT lcd_go_i;
-		leds(5) <= '1';
-		
-		
-		if PS_vivaz_state = idle then
-		leds(6) <= '0';
-		else
-		leds(6) <= '1';
-		end if;
-		
-		if PS_lcd_state = idle then
-		leds(7) <= '0';
-		else
-		leds(7) <= '1';
-		end if;
-		
-		if(lcd_busy_i = '1') then
-			lcd_go_i <= '0';
-		end if;
-		
-		if rst = '1' then
-			NS_lcd_state <= idle;
-			waitcounter := 0;
-			lcd_dataTrue_commandFalse_i <= false;
-			lcd_go_i <= '0';
-			lcd_payload_i <= 0;
-			lcd_reset <= '0';
-		end if;
-			
-	end process;
-	
 
 	
 end behavioral;

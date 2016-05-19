@@ -7,10 +7,26 @@ Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/or5g00/data/orc5glib.ngl'..
 
 Running DRC...
 
-DRC complete with no errors or warnings
+WARNING - synthesis: logical net 'leds[7]' has no load.
+WARNING - synthesis: input pad net 'leds[7]' has no legal load.
+WARNING - synthesis: logical net 'leds[6]' has no load.
+WARNING - synthesis: input pad net 'leds[6]' has no legal load.
+WARNING - synthesis: logical net 'leds[5]' has no load.
+WARNING - synthesis: input pad net 'leds[5]' has no legal load.
+WARNING - synthesis: logical net 'leds[4]' has no load.
+WARNING - synthesis: input pad net 'leds[4]' has no legal load.
+WARNING - synthesis: logical net 'leds[3]' has no load.
+WARNING - synthesis: input pad net 'leds[3]' has no legal load.
+WARNING - synthesis: logical net 'leds[2]' has no load.
+WARNING - synthesis: input pad net 'leds[2]' has no legal load.
+WARNING - synthesis: logical net 'leds[1]' has no load.
+WARNING - synthesis: input pad net 'leds[1]' has no legal load.
+WARNING - synthesis: logical net 'leds[0]' has no load.
+WARNING - synthesis: input pad net 'leds[0]' has no legal load.
+WARNING - synthesis: DRC complete with 16 warnings.
 
 Design Results:
-    212 blocks expanded
+     95 blocks expanded
 completed the first expansion
 All blocks are expanded and NGD expansion is successful.
 Writing NGD file SonyVivazLCDDriver_impl1.ngd.

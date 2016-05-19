@@ -1,0 +1,750 @@
+(DELAYFILE
+  (SDFVERSION "3.0")
+  (DESIGN "main")
+  (DATE "Wed May 18 17:13:06 2016")
+  (VENDOR "Lattice")
+  (PROGRAM "ldbanno")
+  (VERSION "Diamond (64-bit) 3.7.1.502")
+  (DIVIDER /)
+  (VOLTAGE 1.26:1.20:1.14)
+  (PROCESS "default")
+  (TEMPERATURE -40:25:85)
+  (TIMESCALE 1ps)
+  (CELL
+    (CELLTYPE "SLICE_0")
+    (INSTANCE SLICE_0)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH B1 F1 (324:388:452)(324:388:452))
+        (IOPATH A1 F1 (324:388:452)(324:388:452))
+        (IOPATH A0 F0 (324:388:452)(324:388:452))
+        (IOPATH CLK Q0 (356:382:409)(356:382:409))
+        (IOPATH CLK Q1 (356:382:409)(356:382:409))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD DI1 (posedge CLK) (117:133:150)(-35:-24:-13))
+      (SETUPHOLD DI0 (posedge CLK) (117:133:150)(-35:-24:-13))
+      (SETUPHOLD LSR (posedge CLK) (206:227:248)(-206:-168:-130))
+    )
+    (TIMINGCHECK
+      (WIDTH (posedge LSR) (3500:3500:3500))
+      (WIDTH (negedge LSR) (3500:3500:3500))
+      (WIDTH (posedge CLK) (1125:1125:1125))
+      (WIDTH (negedge CLK) (1125:1125:1125))
+    )
+  )
+  (CELL
+    (CELLTYPE "SLICE_1")
+    (INSTANCE SLICE_1)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH D1 F1 (324:388:452)(324:388:452))
+        (IOPATH C1 F1 (324:388:452)(324:388:452))
+        (IOPATH B1 F1 (324:388:452)(324:388:452))
+        (IOPATH A1 F1 (324:388:452)(324:388:452))
+        (IOPATH D0 F0 (324:388:452)(324:388:452))
+        (IOPATH B0 F0 (324:388:452)(324:388:452))
+        (IOPATH A0 F0 (324:388:452)(324:388:452))
+        (IOPATH CLK Q0 (356:382:409)(356:382:409))
+        (IOPATH CLK Q1 (356:382:409)(356:382:409))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD DI1 (posedge CLK) (117:133:150)(-35:-24:-13))
+      (SETUPHOLD DI0 (posedge CLK) (117:133:150)(-35:-24:-13))
+    )
+    (TIMINGCHECK
+      (WIDTH (posedge CLK) (1125:1125:1125))
+      (WIDTH (negedge CLK) (1125:1125:1125))
+    )
+  )
+  (CELL
+    (CELLTYPE "SLICE_2")
+    (INSTANCE SLICE_2)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH D1 F1 (324:388:452)(324:388:452))
+        (IOPATH C1 F1 (324:388:452)(324:388:452))
+        (IOPATH B1 F1 (324:388:452)(324:388:452))
+        (IOPATH A1 F1 (324:388:452)(324:388:452))
+        (IOPATH D0 F0 (324:388:452)(324:388:452))
+        (IOPATH B0 F0 (324:388:452)(324:388:452))
+        (IOPATH A0 F0 (324:388:452)(324:388:452))
+        (IOPATH CLK Q0 (356:382:409)(356:382:409))
+        (IOPATH CLK Q1 (356:382:409)(356:382:409))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD DI1 (posedge CLK) (117:133:150)(-35:-24:-13))
+      (SETUPHOLD DI0 (posedge CLK) (117:133:150)(-35:-24:-13))
+      (SETUPHOLD LSR (posedge CLK) (206:227:248)(-206:-168:-130))
+    )
+    (TIMINGCHECK
+      (WIDTH (posedge LSR) (3500:3500:3500))
+      (WIDTH (negedge LSR) (3500:3500:3500))
+      (WIDTH (posedge CLK) (1125:1125:1125))
+      (WIDTH (negedge CLK) (1125:1125:1125))
+    )
+  )
+  (CELL
+    (CELLTYPE "inst_lcd_sender_SLICE_3")
+    (INSTANCE inst_lcd_sender\/SLICE_3)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH D1 F1 (324:388:452)(324:388:452))
+        (IOPATH A1 F1 (324:388:452)(324:388:452))
+        (IOPATH D0 F0 (324:388:452)(324:388:452))
+        (IOPATH A0 F0 (324:388:452)(324:388:452))
+        (IOPATH CLK Q0 (356:382:409)(356:382:409))
+        (IOPATH CLK Q1 (356:382:409)(356:382:409))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD DI1 (posedge CLK) (117:133:150)(-35:-24:-13))
+      (SETUPHOLD DI0 (posedge CLK) (117:133:150)(-35:-24:-13))
+    )
+    (TIMINGCHECK
+      (WIDTH (posedge CLK) (1125:1125:1125))
+      (WIDTH (negedge CLK) (1125:1125:1125))
+    )
+  )
+  (CELL
+    (CELLTYPE "inst_lcd_sender_SLICE_4")
+    (INSTANCE inst_lcd_sender\/SLICE_4)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH D1 F1 (324:388:452)(324:388:452))
+        (IOPATH B1 F1 (324:388:452)(324:388:452))
+        (IOPATH D0 F0 (324:388:452)(324:388:452))
+        (IOPATH B0 F0 (324:388:452)(324:388:452))
+        (IOPATH CLK Q0 (356:382:409)(356:382:409))
+        (IOPATH CLK Q1 (356:382:409)(356:382:409))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD DI1 (posedge CLK) (117:133:150)(-35:-24:-13))
+      (SETUPHOLD DI0 (posedge CLK) (117:133:150)(-35:-24:-13))
+    )
+    (TIMINGCHECK
+      (WIDTH (posedge CLK) (1125:1125:1125))
+      (WIDTH (negedge CLK) (1125:1125:1125))
+    )
+  )
+  (CELL
+    (CELLTYPE "inst_lcd_sender_SLICE_5")
+    (INSTANCE inst_lcd_sender\/SLICE_5)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH D1 F1 (324:388:452)(324:388:452))
+        (IOPATH A1 F1 (324:388:452)(324:388:452))
+        (IOPATH D0 F0 (324:388:452)(324:388:452))
+        (IOPATH A0 F0 (324:388:452)(324:388:452))
+        (IOPATH CLK Q0 (356:382:409)(356:382:409))
+        (IOPATH CLK Q1 (356:382:409)(356:382:409))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD DI1 (posedge CLK) (117:133:150)(-35:-24:-13))
+      (SETUPHOLD DI0 (posedge CLK) (117:133:150)(-35:-24:-13))
+    )
+    (TIMINGCHECK
+      (WIDTH (posedge CLK) (1125:1125:1125))
+      (WIDTH (negedge CLK) (1125:1125:1125))
+    )
+  )
+  (CELL
+    (CELLTYPE "inst_lcd_sender_SLICE_6")
+    (INSTANCE inst_lcd_sender\/SLICE_6)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH D0 F0 (324:388:452)(324:388:452))
+        (IOPATH B0 F0 (324:388:452)(324:388:452))
+        (IOPATH CLK Q0 (356:382:409)(356:382:409))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD DI0 (posedge CLK) (117:133:150)(-35:-24:-13))
+    )
+    (TIMINGCHECK
+      (WIDTH (posedge CLK) (1125:1125:1125))
+      (WIDTH (negedge CLK) (1125:1125:1125))
+    )
+  )
+  (CELL
+    (CELLTYPE "SLICE_8")
+    (INSTANCE SLICE_8)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH LSR Q0 (698:779:861)(698:779:861))
+        (IOPATH CLK Q0 (356:382:409)(356:382:409))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD DI0 (posedge CLK) (117:133:150)(-35:-24:-13))
+      (SETUPHOLD LSR (posedge CLK) (648:648:648)(0:0:0))
+    )
+    (TIMINGCHECK
+      (WIDTH (posedge LSR) (3500:3500:3500))
+      (WIDTH (negedge LSR) (3500:3500:3500))
+      (WIDTH (posedge CLK) (1125:1125:1125))
+      (WIDTH (negedge CLK) (1125:1125:1125))
+    )
+  )
+  (CELL
+    (CELLTYPE "SLICE_9")
+    (INSTANCE SLICE_9)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH LSR Q0 (698:779:861)(698:779:861))
+        (IOPATH CLK Q0 (356:382:409)(356:382:409))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD DI0 (posedge CLK) (117:133:150)(-35:-24:-13))
+      (SETUPHOLD LSR (posedge CLK) (648:648:648)(0:0:0))
+    )
+    (TIMINGCHECK
+      (WIDTH (posedge LSR) (3500:3500:3500))
+      (WIDTH (negedge LSR) (3500:3500:3500))
+      (WIDTH (posedge CLK) (1125:1125:1125))
+      (WIDTH (negedge CLK) (1125:1125:1125))
+    )
+  )
+  (CELL
+    (CELLTYPE "inst_lcd_sender_SLICE_10")
+    (INSTANCE inst_lcd_sender\/SLICE_10)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH C1 F1 (324:388:452)(324:388:452))
+        (IOPATH B1 F1 (324:388:452)(324:388:452))
+        (IOPATH LSR Q0 (698:779:861)(698:779:861))
+        (IOPATH CLK Q0 (356:382:409)(356:382:409))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD DI0 (posedge CLK) (117:133:150)(-35:-24:-13))
+      (SETUPHOLD LSR (posedge CLK) (648:648:648)(0:0:0))
+    )
+    (TIMINGCHECK
+      (WIDTH (posedge LSR) (3500:3500:3500))
+      (WIDTH (negedge LSR) (3500:3500:3500))
+      (WIDTH (posedge CLK) (1125:1125:1125))
+      (WIDTH (negedge CLK) (1125:1125:1125))
+    )
+  )
+  (CELL
+    (CELLTYPE "inst_lcd_sender_SLICE_11")
+    (INSTANCE inst_lcd_sender\/SLICE_11)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH D1 F1 (324:388:452)(324:388:452))
+        (IOPATH C1 F1 (324:388:452)(324:388:452))
+        (IOPATH B1 F1 (324:388:452)(324:388:452))
+        (IOPATH D0 F0 (324:388:452)(324:388:452))
+        (IOPATH C0 F0 (324:388:452)(324:388:452))
+        (IOPATH B0 F0 (324:388:452)(324:388:452))
+        (IOPATH CLK Q0 (356:382:409)(356:382:409))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD DI0 (posedge CLK) (117:133:150)(-35:-24:-13))
+    )
+    (TIMINGCHECK
+      (WIDTH (posedge CLK) (1125:1125:1125))
+      (WIDTH (negedge CLK) (1125:1125:1125))
+    )
+  )
+  (CELL
+    (CELLTYPE "SLICE_12")
+    (INSTANCE SLICE_12)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH C1 F1 (324:388:452)(324:388:452))
+        (IOPATH B1 F1 (324:388:452)(324:388:452))
+        (IOPATH A1 F1 (324:388:452)(324:388:452))
+        (IOPATH D0 F0 (324:388:452)(324:388:452))
+        (IOPATH A0 F0 (324:388:452)(324:388:452))
+        (IOPATH CLK Q0 (356:382:409)(356:382:409))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD DI0 (posedge CLK) (117:133:150)(-35:-24:-13))
+    )
+    (TIMINGCHECK
+      (WIDTH (posedge CLK) (1125:1125:1125))
+      (WIDTH (negedge CLK) (1125:1125:1125))
+    )
+  )
+  (CELL
+    (CELLTYPE "SLICE_13")
+    (INSTANCE SLICE_13)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH D1 F1 (324:388:452)(324:388:452))
+        (IOPATH C1 F1 (324:388:452)(324:388:452))
+        (IOPATH B1 F1 (324:388:452)(324:388:452))
+        (IOPATH A1 F1 (324:388:452)(324:388:452))
+        (IOPATH C0 F0 (324:388:452)(324:388:452))
+        (IOPATH B0 F0 (324:388:452)(324:388:452))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "inst_lcd_sender_SLICE_14")
+    (INSTANCE inst_lcd_sender\/SLICE_14)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH D1 F1 (324:388:452)(324:388:452))
+        (IOPATH B1 F1 (324:388:452)(324:388:452))
+        (IOPATH D0 F0 (324:388:452)(324:388:452))
+        (IOPATH B0 F0 (324:388:452)(324:388:452))
+        (IOPATH LSR Q0 (698:779:861)(698:779:861))
+        (IOPATH CLK Q0 (356:382:409)(356:382:409))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD LSR (posedge CLK) (648:648:648)(0:0:0))
+    )
+    (TIMINGCHECK
+      (WIDTH (posedge LSR) (3500:3500:3500))
+      (WIDTH (negedge LSR) (3500:3500:3500))
+      (WIDTH (posedge CLK) (1125:1125:1125))
+      (WIDTH (negedge CLK) (1125:1125:1125))
+    )
+  )
+  (CELL
+    (CELLTYPE "leds_0_")
+    (INSTANCE leds\[0\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO leds0 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "synch_rst")
+    (INSTANCE synch_rst_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO synch_rst (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "lcd_rs")
+    (INSTANCE lcd_rs_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO lcd_rs (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "lcd_reset")
+    (INSTANCE lcd_reset_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO lcd_reset (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "lcd_wr")
+    (INSTANCE lcd_wr_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO lcd_wr (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "lcd_LCDBus_15_")
+    (INSTANCE lcd_LCDBus\[15\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO lcdLCDBus15 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "lcd_LCDBus_14_")
+    (INSTANCE lcd_LCDBus\[14\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO lcdLCDBus14 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "lcd_LCDBus_13_")
+    (INSTANCE lcd_LCDBus\[13\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO lcdLCDBus13 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "lcd_LCDBus_12_")
+    (INSTANCE lcd_LCDBus\[12\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO lcdLCDBus12 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "lcd_LCDBus_11_")
+    (INSTANCE lcd_LCDBus\[11\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO lcdLCDBus11 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "lcd_LCDBus_10_")
+    (INSTANCE lcd_LCDBus\[10\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO lcdLCDBus10 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "lcd_LCDBus_9_")
+    (INSTANCE lcd_LCDBus\[9\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO lcdLCDBus9 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "lcd_LCDBus_8_")
+    (INSTANCE lcd_LCDBus\[8\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO lcdLCDBus8 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "lcd_LCDBus_7_")
+    (INSTANCE lcd_LCDBus\[7\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO lcdLCDBus7 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "lcd_LCDBus_6_")
+    (INSTANCE lcd_LCDBus\[6\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO lcdLCDBus6 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "lcd_LCDBus_5_")
+    (INSTANCE lcd_LCDBus\[5\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO lcdLCDBus5 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "lcd_LCDBus_4_")
+    (INSTANCE lcd_LCDBus\[4\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO lcdLCDBus4 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "lcd_LCDBus_3_")
+    (INSTANCE lcd_LCDBus\[3\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO lcdLCDBus3 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "lcd_LCDBus_2_")
+    (INSTANCE lcd_LCDBus\[2\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO lcdLCDBus2 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "lcd_LCDBus_1_")
+    (INSTANCE lcd_LCDBus\[1\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO lcdLCDBus1 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "lcd_LCDBus_0_")
+    (INSTANCE lcd_LCDBus\[0\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO lcdLCDBus0 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "leds_7_")
+    (INSTANCE leds\[7\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO leds7 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "leds_6_")
+    (INSTANCE leds\[6\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO leds6 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "leds_5_")
+    (INSTANCE leds\[5\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO leds5 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "leds_4_")
+    (INSTANCE leds\[4\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO leds4 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "leds_3_")
+    (INSTANCE leds\[3\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO leds3 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "leds_2_")
+    (INSTANCE leds\[2\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO leds2 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "leds_1_")
+    (INSTANCE leds\[1\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO leds1 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "main")
+    (INSTANCE )
+    (DELAY
+      (ABSOLUTE
+        (INTERCONNECT SLICE_0/Q0 SLICE_0/B1 (695:799:904)(695:799:904))
+        (INTERCONNECT SLICE_0/Q0 SLICE_0/A0 (440:519:598)(440:519:598))
+        (INTERCONNECT SLICE_0/Q0 SLICE_1/C1 (484:579:675)(484:579:675))
+        (INTERCONNECT SLICE_0/Q0 SLICE_1/B0 (1019:1149:1280)(1019:1149:1280))
+        (INTERCONNECT SLICE_0/Q0 SLICE_12/B1 (1019:1149:1280)(1019:1149:1280))
+        (INTERCONNECT SLICE_0/Q1 SLICE_0/A1 (436:511:586)(436:511:586))
+        (INTERCONNECT SLICE_0/Q1 SLICE_1/D1 (503:546:589)(503:546:589))
+        (INTERCONNECT SLICE_0/Q1 SLICE_1/D0 (503:546:589)(503:546:589))
+        (INTERCONNECT SLICE_0/Q1 SLICE_12/A1 (694:796:899)(694:796:899))
+        (INTERCONNECT SLICE_0/Q1 SLICE_13/B0 (724:827:930)(724:827:930))
+        (INTERCONNECT SLICE_0/F1 SLICE_0/DI1 (0:0:0)(0:0:0))
+        (INTERCONNECT SLICE_0/F0 SLICE_0/DI0 (0:0:0)(0:0:0))
+        (INTERCONNECT SLICE_13/F1 SLICE_0/LSR (505:551:597)(505:551:597))
+        (INTERCONNECT SLICE_13/F1 SLICE_0/LSR (505:551:597)(505:551:597))
+        (INTERCONNECT SLICE_13/F1 SLICE_2/LSR (499:545:592)(499:545:592))
+        (INTERCONNECT SLICE_13/F1 SLICE_2/LSR (499:545:592)(499:545:592))
+        (INTERCONNECT SLICE_13/F1 SLICE_12/D0 (481:523:566)(481:523:566))
+        (INTERCONNECT inst_clk/OSC SLICE_0/CLK (2896:3151:3406)(2896:3151:3406))
+        (INTERCONNECT inst_clk/OSC SLICE_0/CLK (2896:3151:3406)(2896:3151:3406))
+        (INTERCONNECT inst_clk/OSC SLICE_1/CLK (2896:3151:3406)(2896:3151:3406))
+        (INTERCONNECT inst_clk/OSC SLICE_1/CLK (2896:3151:3406)(2896:3151:3406))
+        (INTERCONNECT inst_clk/OSC SLICE_2/CLK (2896:3151:3406)(2896:3151:3406))
+        (INTERCONNECT inst_clk/OSC SLICE_2/CLK (2896:3151:3406)(2896:3151:3406))
+        (INTERCONNECT inst_clk/OSC inst_lcd_sender\/SLICE_3/CLK (2925:3183:3441)
+          (2925:3183:3441))
+        (INTERCONNECT inst_clk/OSC inst_lcd_sender\/SLICE_3/CLK (2925:3183:3441)
+          (2925:3183:3441))
+        (INTERCONNECT inst_clk/OSC inst_lcd_sender\/SLICE_4/CLK (2925:3183:3441)
+          (2925:3183:3441))
+        (INTERCONNECT inst_clk/OSC inst_lcd_sender\/SLICE_4/CLK (2925:3183:3441)
+          (2925:3183:3441))
+        (INTERCONNECT inst_clk/OSC inst_lcd_sender\/SLICE_5/CLK (2925:3183:3441)
+          (2925:3183:3441))
+        (INTERCONNECT inst_clk/OSC inst_lcd_sender\/SLICE_5/CLK (2925:3183:3441)
+          (2925:3183:3441))
+        (INTERCONNECT inst_clk/OSC inst_lcd_sender\/SLICE_6/CLK (2925:3183:3441)
+          (2925:3183:3441))
+        (INTERCONNECT inst_clk/OSC inst_lcd_sender\/SLICE_11/CLK (2925:3183:3441)
+          (2925:3183:3441))
+        (INTERCONNECT inst_clk/OSC SLICE_12/CLK (2896:3151:3406)(2896:3151:3406))
+        (INTERCONNECT SLICE_1/Q0 SLICE_1/B1 (712:815:919)(712:815:919))
+        (INTERCONNECT SLICE_1/Q0 SLICE_1/A0 (436:511:586)(436:511:586))
+        (INTERCONNECT SLICE_1/Q0 SLICE_12/C1 (498:595:693)(498:595:693))
+        (INTERCONNECT SLICE_1/Q0 SLICE_13/D1 (491:534:578)(491:534:578))
+        (INTERCONNECT SLICE_1/Q1 SLICE_1/A1 (436:511:586)(436:511:586))
+        (INTERCONNECT SLICE_1/Q1 SLICE_2/D1 (491:534:578)(491:534:578))
+        (INTERCONNECT SLICE_1/Q1 SLICE_2/D0 (491:534:578)(491:534:578))
+        (INTERCONNECT SLICE_1/Q1 SLICE_13/C0 (498:595:693)(498:595:693))
+        (INTERCONNECT SLICE_1/F1 SLICE_1/DI1 (0:0:0)(0:0:0))
+        (INTERCONNECT SLICE_1/F0 SLICE_1/DI0 (0:0:0)(0:0:0))
+        (INTERCONNECT SLICE_2/Q1 SLICE_2/C1 (477:571:666)(477:571:666))
+        (INTERCONNECT SLICE_2/Q1 SLICE_13/A1 (661:761:861)(661:761:861))
+        (INTERCONNECT SLICE_2/Q0 SLICE_2/B1 (702:804:906)(702:804:906))
+        (INTERCONNECT SLICE_2/Q0 SLICE_2/A0 (436:511:586)(436:511:586))
+        (INTERCONNECT SLICE_2/Q0 SLICE_13/B1 (702:804:906)(702:804:906))
+        (INTERCONNECT SLICE_12/F1 SLICE_2/A1 (436:511:587)(436:511:587))
+        (INTERCONNECT SLICE_12/F1 SLICE_2/B0 (466:542:618)(466:542:618))
+        (INTERCONNECT SLICE_2/F1 SLICE_2/DI1 (0:0:0)(0:0:0))
+        (INTERCONNECT SLICE_2/F0 SLICE_2/DI0 (0:0:0)(0:0:0))
+        (INTERCONNECT inst_lcd_sender\/SLICE_4/Q0 inst_lcd_sender\/SLICE_3/D1 
+          (467:505:544)(467:505:544))
+        (INTERCONNECT SLICE_12/Q0 inst_lcd_sender\/SLICE_3/A1 (2880:3146:3412)
+          (2880:3146:3412))
+        (INTERCONNECT SLICE_12/Q0 inst_lcd_sender\/SLICE_3/A0 (2880:3146:3412)
+          (2880:3146:3412))
+        (INTERCONNECT SLICE_12/Q0 inst_lcd_sender\/SLICE_4/B1 (2910:3176:3443)
+          (2910:3176:3443))
+        (INTERCONNECT SLICE_12/Q0 inst_lcd_sender\/SLICE_4/B0 (2910:3176:3443)
+          (2910:3176:3443))
+        (INTERCONNECT SLICE_12/Q0 inst_lcd_sender\/SLICE_5/D1 (2327:2509:2692)
+          (2327:2509:2692))
+        (INTERCONNECT SLICE_12/Q0 inst_lcd_sender\/SLICE_5/D0 (2327:2509:2692)
+          (2327:2509:2692))
+        (INTERCONNECT SLICE_12/Q0 inst_lcd_sender\/SLICE_6/D0 (2327:2509:2692)
+          (2327:2509:2692))
+        (INTERCONNECT SLICE_12/Q0 inst_lcd_sender\/SLICE_11/C1 (2696:2956:3217)
+          (2696:2956:3217))
+        (INTERCONNECT SLICE_12/Q0 inst_lcd_sender\/SLICE_11/C0 (2696:2956:3217)
+          (2696:2956:3217))
+        (INTERCONNECT SLICE_12/Q0 SLICE_12/A0 (436:511:586)(436:511:586))
+        (INTERCONNECT SLICE_12/Q0 synch_rst_I/PADDO (1226:1347:1468)(1226:1347:1468))
+        (INTERCONNECT SLICE_12/Q0 GSR_INST/GSRNET (5086:5442:5798)(5086:5442:5798))
+        (INTERCONNECT inst_lcd_sender\/SLICE_3/Q1 inst_lcd_sender\/SLICE_3/D0 
+          (478:518:558)(478:518:558))
+        (INTERCONNECT inst_lcd_sender\/SLICE_3/Q1 inst_lcd_sender\/SLICE_11/B0 
+          (699:799:899)(699:799:899))
+        (INTERCONNECT inst_lcd_sender\/SLICE_3/F1 inst_lcd_sender\/SLICE_3/DI1 (0:0:0)
+          (0:0:0))
+        (INTERCONNECT inst_lcd_sender\/SLICE_3/F0 inst_lcd_sender\/SLICE_3/DI0 (0:0:0)
+          (0:0:0))
+        (INTERCONNECT inst_lcd_sender\/SLICE_3/Q0 inst_lcd_sender\/SLICE_5/A1 
+          (664:761:858)(664:761:858))
+        (INTERCONNECT inst_lcd_sender\/SLICE_3/Q0 inst_lcd_sender\/SLICE_11/D1 
+          (481:523:565)(481:523:565))
+        (INTERCONNECT inst_lcd_sender\/SLICE_3/Q0 inst_lcd_sender\/SLICE_11/D0 
+          (481:523:565)(481:523:565))
+        (INTERCONNECT inst_lcd_sender\/SLICE_5/Q0 inst_lcd_sender\/SLICE_4/D1 
+          (470:505:541)(470:505:541))
+        (INTERCONNECT inst_lcd_sender\/SLICE_4/Q1 inst_lcd_sender\/SLICE_4/D0 
+          (467:505:544)(467:505:544))
+        (INTERCONNECT inst_lcd_sender\/SLICE_4/F1 inst_lcd_sender\/SLICE_4/DI1 (3:5:8)
+          (3:5:8))
+        (INTERCONNECT inst_lcd_sender\/SLICE_4/F1 SLICE_9/CLK (782:849:917)(782:849:917))
+        (INTERCONNECT inst_lcd_sender\/SLICE_4/F0 inst_lcd_sender\/SLICE_4/DI0 (0:0:0)
+          (0:0:0))
+        (INTERCONNECT inst_lcd_sender\/SLICE_6/Q0 inst_lcd_sender\/SLICE_5/A0 
+          (658:756:854)(658:756:854))
+        (INTERCONNECT inst_lcd_sender\/SLICE_5/F1 inst_lcd_sender\/SLICE_5/DI1 (3:5:8)
+          (3:5:8))
+        (INTERCONNECT inst_lcd_sender\/SLICE_5/F1 inst_lcd_sender\/SLICE_10/LSR 
+          (488:533:578)(488:533:578))
+        (INTERCONNECT inst_lcd_sender\/SLICE_5/F0 inst_lcd_sender\/SLICE_5/DI0 (0:0:0)
+          (0:0:0))
+        (INTERCONNECT inst_lcd_sender\/SLICE_5/Q1 inst_lcd_sender\/SLICE_6/B0 
+          (702:804:906)(702:804:906))
+        (INTERCONNECT inst_lcd_sender\/SLICE_5/Q1 inst_lcd_sender\/SLICE_11/B1 
+          (708:809:911)(708:809:911))
+        (INTERCONNECT inst_lcd_sender\/SLICE_5/Q1 inst_lcd_sender\/SLICE_14/CLK 
+          (475:518:561)(475:518:561))
+        (INTERCONNECT inst_lcd_sender\/SLICE_6/F0 inst_lcd_sender\/SLICE_6/DI0 (3:5:8)
+          (3:5:8))
+        (INTERCONNECT inst_lcd_sender\/SLICE_6/F0 inst_lcd_sender\/SLICE_10/CLK 
+          (475:518:562)(475:518:562))
+        (INTERCONNECT inst_lcd_sender\/SLICE_6/F0 inst_lcd_sender\/SLICE_14/LSR 
+          (499:545:592)(499:545:592))
+        (INTERCONNECT SLICE_8/F0 SLICE_8/DI0 (0:0:0)(0:0:0))
+        (INTERCONNECT inst_lcd_sender\/SLICE_11/F1 SLICE_8/LSR (488:533:578)(488:533:578))
+        (INTERCONNECT inst_lcd_sender\/SLICE_11/F1 SLICE_9/LSR (505:551:597)(505:551:597))
+        (INTERCONNECT inst_lcd_sender\/SLICE_11/Q0 SLICE_8/CLK (461:500:540)(461:500:540))
+        (INTERCONNECT SLICE_8/Q0 inst_lcd_sender\/SLICE_14/B1 (693:794:896)(693:794:896))
+        (INTERCONNECT SLICE_8/Q0 inst_lcd_sender\/SLICE_14/B0 (693:794:896)(693:794:896))
+        (INTERCONNECT SLICE_8/F1 leds\[0\]_I/PADDO (619:720:822)(619:720:822))
+        (INTERCONNECT SLICE_8/F1 lcd_rs_I/PADDO (2525:2722:2920)(2525:2722:2920))
+        (INTERCONNECT SLICE_8/F1 lcd_reset_I/PADDO (2861:3080:3299)(2861:3080:3299))
+        (INTERCONNECT SLICE_8/F1 lcd_LCDBus\[15\]_I/PADDO (3240:3502:3764)(3240:3502:3764))
+        (INTERCONNECT SLICE_8/F1 lcd_LCDBus\[14\]_I/PADDO (3240:3502:3764)(3240:3502:3764))
+        (INTERCONNECT SLICE_8/F1 lcd_LCDBus\[13\]_I/PADDO (3240:3502:3764)(3240:3502:3764))
+        (INTERCONNECT SLICE_8/F1 lcd_LCDBus\[12\]_I/PADDO (3240:3502:3764)(3240:3502:3764))
+        (INTERCONNECT SLICE_8/F1 lcd_LCDBus\[11\]_I/PADDO (3642:3932:4223)(3642:3932:4223))
+        (INTERCONNECT SLICE_8/F1 lcd_LCDBus\[10\]_I/PADDO (3642:3932:4223)(3642:3932:4223))
+        (INTERCONNECT SLICE_8/F1 lcd_LCDBus\[9\]_I/PADDO (3642:3932:4223)(3642:3932:4223))
+        (INTERCONNECT SLICE_8/F1 lcd_LCDBus\[8\]_I/PADDO (3642:3932:4223)(3642:3932:4223))
+        (INTERCONNECT SLICE_8/F1 lcd_LCDBus\[7\]_I/PADDO (4044:4363:4682)(4044:4363:4682))
+        (INTERCONNECT SLICE_8/F1 lcd_LCDBus\[6\]_I/PADDO (4044:4363:4682)(4044:4363:4682))
+        (INTERCONNECT SLICE_8/F1 lcd_LCDBus\[5\]_I/PADDO (4044:4363:4682)(4044:4363:4682))
+        (INTERCONNECT SLICE_8/F1 lcd_LCDBus\[4\]_I/PADDO (4044:4363:4682)(4044:4363:4682))
+        (INTERCONNECT SLICE_8/F1 lcd_LCDBus\[3\]_I/PADDO (4443:4788:5133)(4443:4788:5133))
+        (INTERCONNECT SLICE_8/F1 lcd_LCDBus\[2\]_I/PADDO (4443:4788:5133)(4443:4788:5133))
+        (INTERCONNECT SLICE_8/F1 lcd_LCDBus\[1\]_I/PADDO (4443:4788:5133)(4443:4788:5133))
+        (INTERCONNECT SLICE_8/F1 lcd_LCDBus\[0\]_I/PADDO (4443:4788:5133)(4443:4788:5133))
+        (INTERCONNECT SLICE_9/F0 SLICE_9/DI0 (0:0:0)(0:0:0))
+        (INTERCONNECT SLICE_9/Q0 inst_lcd_sender\/SLICE_14/D1 (720:783:846)(720:783:846))
+        (INTERCONNECT SLICE_9/Q0 inst_lcd_sender\/SLICE_14/D0 (720:783:846)(720:783:846))
+        (INTERCONNECT SLICE_9/F1 leds\[7\]_I/PADDO (1334:1497:1660)(1334:1497:1660))
+        (INTERCONNECT SLICE_9/F1 leds\[4\]_I/PADDO (1340:1503:1667)(1340:1503:1667))
+        (INTERCONNECT SLICE_9/F1 leds\[3\]_I/PADDO (1682:1867:2053)(1682:1867:2053))
+        (INTERCONNECT SLICE_9/F1 leds\[2\]_I/PADDO (1682:1867:2053)(1682:1867:2053))
+        (INTERCONNECT SLICE_9/F1 leds\[1\]_I/PADDO (616:719:823)(616:719:823))
+        (INTERCONNECT inst_lcd_sender\/SLICE_14/Q0 inst_lcd_sender\/SLICE_10/C1 
+          (474:566:659)(474:566:659))
+        (INTERCONNECT inst_lcd_sender\/SLICE_10/Q0 inst_lcd_sender\/SLICE_10/B1 
+          (688:786:885)(688:786:885))
+        (INTERCONNECT inst_lcd_sender\/SLICE_10/F0 inst_lcd_sender\/SLICE_10/DI0 (0:0:0)
+          (0:0:0))
+        (INTERCONNECT inst_lcd_sender\/SLICE_10/F1 leds\[5\]_I/PADDO (1216:1374:1533)
+          (1216:1374:1533))
+        (INTERCONNECT inst_lcd_sender\/SLICE_11/F0 inst_lcd_sender\/SLICE_11/DI0 (0:0:0)
+          (0:0:0))
+        (INTERCONNECT SLICE_12/F0 SLICE_12/DI0 (0:0:0)(0:0:0))
+        (INTERCONNECT SLICE_13/F0 SLICE_13/C1 (249:316:384)(249:316:384))
+        (INTERCONNECT inst_lcd_sender\/SLICE_14/F0 lcd_wr_I/PADDO (2518:2709:2900)
+          (2518:2709:2900))
+        (INTERCONNECT inst_lcd_sender\/SLICE_14/F1 leds\[6\]_I/PADDO (1216:1374:1533)
+          (1216:1374:1533))
+      )
+    )
+  )
+)

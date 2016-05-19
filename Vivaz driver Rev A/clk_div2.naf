@@ -1,0 +1,3 @@
+clkin  i
+clkout  o
+rst  i

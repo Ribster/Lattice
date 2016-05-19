@@ -1,0 +1,137 @@
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Wed May 18 17:12:55 2016
+#
+
+
+Top view:               main
+Requested Frequency:    1.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: 1.026
+
+                   Requested     Estimated     Requested     Estimated                 Clock      Clock          
+Starting Clock     Frequency     Frequency     Period        Period        Slack       Type       Group          
+-----------------------------------------------------------------------------------------------------------------
+System             1.0 MHz       236.7 MHz     1000.000      4.224         995.776     system     system_clkgroup
+=================================================================================================================
+
+
+
+Clock Relationships
+*******************
+
+Clocks            |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+--------------------------------------------------------------------------------------------------------
+Starting  Ending  |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+--------------------------------------------------------------------------------------------------------
+System    System  |  0.000       1.026  |  No paths    -      |  No paths    -      |  No paths    -    
+========================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                        Starting                                                  Arrival          
+Instance                                Reference     Type        Pin     Net                     Time        Slack
+                                        Clock                                                                      
+-------------------------------------------------------------------------------------------------------------------
+count[5]                                System        FD1S3IX     Q       count[5]                0.731       1.026
+count[4]                                System        FD1S3IX     Q       count[4]                0.775       1.071
+count[2]                                System        FD1S3AX     Q       count[2]                0.803       1.099
+count[0]                                System        FD1S3IX     Q       count[0]                0.826       1.150
+inst_lcd_sender.PS_vivaz_state[2]       System        FD1S3DX     Q       PS_vivaz_state[2]       0.680       1.174
+inst_lcd_sender.PS_vivaz_state[3]       System        FD1S3DX     Q       PS_vivaz_state[3]       0.680       1.174
+inst_lcd_sender.PS_vivaz_state[5]       System        FD1S3DX     Q       PS_vivaz_state_i[5]     0.680       1.174
+inst_lcd_sender.PS_vivaz_state[1]       System        FD1S3DX     Q       PS_vivaz_state[1]       0.731       1.225
+inst_lcd_sender.PS_vivaz_state_0[0]     System        FD1S3DX     Q       PS_vivaz_state[0]       0.775       1.269
+count[3]                                System        FD1S3AX     Q       count[3]                0.803       1.297
+===================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                        Starting                                                        Required          
+Instance                                Reference     Type        Pin     Net                           Time         Slack
+                                        Clock                                                                             
+--------------------------------------------------------------------------------------------------------------------------
+count[0]                                System        FD1S3IX     CD      un2_count_i                   0.562        1.026
+count[1]                                System        FD1S3IX     CD      un2_count_i                   0.562        1.026
+count[4]                                System        FD1S3IX     CD      un2_count_i                   0.562        1.026
+count[5]                                System        FD1S3IX     CD      un2_count_i                   0.562        1.026
+count[0]                                System        FD1S3IX     D       count_i[0]                    0.074        1.150
+inst_lcd_sender.PS_vivaz_state[1]       System        FD1S3DX     D       NS_vivaz_state[1]             -0.062       1.174
+inst_lcd_sender.PS_vivaz_state[2]       System        FD1S3DX     D       NS_vivaz_state[2]             -0.062       1.174
+inst_lcd_sender.PS_vivaz_state[4]       System        FD1S3DX     D       lcd_bus_1_sqmuxa              -0.062       1.174
+inst_lcd_sender.PS_vivaz_state_0[0]     System        FD1S3DX     D       NS_vivaz_state[0]             -0.062       1.225
+inst_lcd_sender.PS_vivaz_state_ret      System        FD1S3BX     D       un1_PS_vivaz_state_1_reti     -0.062       1.225
+==========================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+    Propagation time:                        1.588
+    + Clock delay at starting point:         0.000 (ideal)
+-0.000
+    - Requested Period:                      0.000
+    - Hold time:                             0.562
+    - Clock delay at ending point:           0.000 (ideal)
+0.000
+    = Slack (critical) :                     1.026
+
+    Number of logic level(s):                1
+    Starting point:                          count[5] / Q
+    Ending point:                            count[0] / CD
+    The start point is clocked by            System [rising] on pin CK
+    The end   point is clocked by            System [rising] on pin CK
+
+Instance / Net                           Pin      Pin               Arrival     No. of    
+Name                        Type         Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------
+count[5]                    FD1S3IX      Q        Out     0.731     0.731       -         
+count[5]                    Net          -        -       -         -           2         
+un2_countlto3_0_RNIC6MJ     ORCALUT4     C        In      0.000     0.731       -         
+un2_countlto3_0_RNIC6MJ     ORCALUT4     Z        Out     0.857     1.588       -         
+un2_count_i                 Net          -        -       -         -           5         
+count[0]                    FD1S3IX      CD       In      0.000     1.588       -         
+==========================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+
+Constraints that could not be applied
+None

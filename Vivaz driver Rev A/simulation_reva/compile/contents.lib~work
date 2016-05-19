@@ -1,0 +1,9 @@
+6
+~E 1 "./../../clk_div2.vhd" 8 clk_div2
+~A 1 "./../../clk_div2.vhd" 15 beh_clk_div2
+~E 1 "./../../lcd_sender.vhd" 8 lcd_sender
+~A 1 "./../../lcd_sender.vhd" 23 beh_lcd_sender
+~E 1 "./../../main.vhd" 10 main
+~A 1 "./../../main.vhd" 22 behavioral
+~E 1 "./../../lcd_sender_tb.vhd" 25 testbench
+~A 1 "./../../clk_div2_tb.vhd" 28 behavior

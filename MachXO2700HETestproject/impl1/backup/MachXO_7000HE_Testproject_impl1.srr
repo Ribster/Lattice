@@ -1,0 +1,379 @@
+#Build: Synplify Pro K-2015.09L-2, Build 126R, Dec 14 2015
+#install: C:\lscc\diamond\3.7_x64\synpbase
+#OS: Windows 7 6.1
+#Hostname: WIN-GREMBOOKO88
+
+# Wed May 18 10:33:17 2016
+
+#Implementation: impl1
+
+Synopsys HDL Compiler, version comp201509p1, Build 145R, built Dec  9 2015
+@N|Running in 64-bit mode
+Copyright (C) 1994-2015 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+Synopsys VHDL Compiler, version comp201509p1, Build 145R, built Dec  9 2015
+@N|Running in 64-bit mode
+Copyright (C) 1994-2015 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@N: CD720 :"C:\lscc\diamond\3.7_x64\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"Z:\GITHUB\Lattice\MachXO2700HETestproject\main.vhd":8:7:8:16|Top entity is set to lcd_sender.
+VHDL syntax check successful!
+@N: CD630 :"Z:\GITHUB\Lattice\MachXO2700HETestproject\main.vhd":8:7:8:16|Synthesizing work.lcd_sender.beh_lcd_sender.
+@N: CD231 :"Z:\GITHUB\Lattice\MachXO2700HETestproject\main.vhd":24:17:24:18|Using onehot encoding for type state_type (undefined="10000000")
+@W: CD434 :"Z:\GITHUB\Lattice\MachXO2700HETestproject\main.vhd":39:9:39:11|Signal clk in the sensitivity list is not used in the process
+Post processing for work.lcd_sender.beh_lcd_sender
+@W: CL240 :"Z:\GITHUB\Lattice\MachXO2700HETestproject\main.vhd":14:2:14:10|lcd_reset is not assigned a value (floating) -- simulation mismatch possible. 
+@W: CL111 :"Z:\GITHUB\Lattice\MachXO2700HETestproject\main.vhd":71:2:71:3|All reachable assignments to go are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL117 :"Z:\GITHUB\Lattice\MachXO2700HETestproject\main.vhd":71:2:71:3|Latch generated from process for signal NS_vivaz_state(0 to 7); possible missing assignment in an if or case statement.
+@W: CL117 :"Z:\GITHUB\Lattice\MachXO2700HETestproject\main.vhd":71:2:71:3|Latch generated from process for signal busy; possible missing assignment in an if or case statement.
+@W: CL117 :"Z:\GITHUB\Lattice\MachXO2700HETestproject\main.vhd":41:2:41:5|Latch generated from process for signal lcd_write; possible missing assignment in an if or case statement.
+@W: CL117 :"Z:\GITHUB\Lattice\MachXO2700HETestproject\main.vhd":71:2:71:3|Latch generated from process for signal lcd_bus(15 downto 0); possible missing assignment in an if or case statement.
+@W: CL117 :"Z:\GITHUB\Lattice\MachXO2700HETestproject\main.vhd":41:2:41:5|Latch generated from process for signal lcd_rs; possible missing assignment in an if or case statement.
+@W: CL238 :"Z:\GITHUB\Lattice\MachXO2700HETestproject\main.vhd":41:2:41:5|Latch lcd_rs enable evaluates to constant 0, optimized
+@N: CL159 :"Z:\GITHUB\Lattice\MachXO2700HETestproject\main.vhd":17:2:17:14|Input data1Command0 is unused.
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 74MB peak: 76MB)
+
+Process took 0h:00m:05s realtime, 0h:00m:04s cputime
+
+Process completed successfully.
+# Wed May 18 10:33:23 2016
+
+###########################################################]
+Synopsys Netlist Linker, version comp201509p1, Build 145R, built Dec  9 2015
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 67MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Wed May 18 10:33:24 2016
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:04s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:06s realtime, 0h:00m:04s cputime
+
+Process completed successfully.
+# Wed May 18 10:33:24 2016
+
+###########################################################]
+Synopsys Netlist Linker, version comp201509p1, Build 145R, built Dec  9 2015
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Wed May 18 10:33:25 2016
+
+###########################################################]
+Pre-mapping Report
+
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1368R, Built Jan  8 2016 09:37:50
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version K-2015.09L-2
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@L: Z:\GITHUB\Lattice\MachXO2700HETestproject\impl1\MachXO_7000HE_Testproject_impl1_scck.rpt 
+Printing clock  summary report in "Z:\GITHUB\Lattice\MachXO2700HETestproject\impl1\MachXO_7000HE_Testproject_impl1_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 111MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 113MB)
+
+@W: BN287 :"z:\github\lattice\machxo2700hetestproject\main.vhd":34:2:34:3|Register PS_vivaz_state[0:7] with reset has an initial value of 1. Ignoring initial value.  
+@W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
+@W: MT462 :"z:\github\lattice\machxo2700hetestproject\main.vhd":34:5:34:13|Net go_0_sqmuxa appears to be an unidentified clock source. Assuming default frequency. 
+ICG Latch Removal Summary:
+Number of ICG latches removed:	0
+Number of ICG latches not removed:	0
+syn_allowed_resources : blockrams=26  set on top level netlist lcd_sender
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 140MB)
+
+
+
+Clock Summary
+*****************
+
+Start                                          Requested     Requested     Clock                             Clock              
+Clock                                          Frequency     Period        Type                              Group              
+--------------------------------------------------------------------------------------------------------------------------------
+System                                         1.0 MHz       1000.000      system                            system_clkgroup    
+lcd_sender|PS_vivaz_state_derived_clock[0]     1.0 MHz       1000.000      derived (from lcd_sender|clk)     Inferred_clkgroup_0
+lcd_sender|PS_vivaz_state_derived_clock[5]     1.0 MHz       1000.000      derived (from lcd_sender|clk)     Inferred_clkgroup_0
+lcd_sender|PS_vivaz_state_derived_clock[7]     1.0 MHz       1000.000      derived (from lcd_sender|clk)     Inferred_clkgroup_0
+lcd_sender|clk                                 1.0 MHz       1000.000      inferred                          Inferred_clkgroup_0
+================================================================================================================================
+
+@W: MT531 :"z:\github\lattice\machxo2700hetestproject\main.vhd":71:2:71:3|Found signal identified as System clock which controls 8 sequential elements including NS_vivaz_state[7].  Using this clock, which has no specified timing constraint, can prevent conversion of gated or generated clocks and can adversely impact design performance. 
+@W: MT529 :"z:\github\lattice\machxo2700hetestproject\main.vhd":34:2:34:3|Found inferred clock lcd_sender|clk which controls 8 sequential elements including PS_vivaz_state[0:7]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+
+Finished Pre Mapping Phase.
+
+Starting constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 138MB peak: 140MB)
+
+@W: MO129 :"z:\github\lattice\machxo2700hetestproject\main.vhd":71:2:71:3|Sequential instance busy reduced to a combinational gate by constant propagation
+@W: MO129 :"z:\github\lattice\machxo2700hetestproject\main.vhd":71:2:71:3|Sequential instance NS_vivaz_state[5] reduced to a combinational gate by constant propagation
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@W: MT462 :"z:\github\lattice\machxo2700hetestproject\main.vhd":34:5:34:13|Net go_0_sqmuxa appears to be an unidentified clock source. Assuming default frequency. 
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 138MB peak: 140MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 75MB peak: 140MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Wed May 18 10:33:27 2016
+
+###########################################################]
+Map & Optimize Report
+
+Synopsys Lattice Technology Mapper, Version maplat, Build 1368R, Built Jan  8 2016 09:37:50
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version K-2015.09L-2
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 110MB peak: 111MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 113MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 139MB)
+
+@W: MO129 :"z:\github\lattice\machxo2700hetestproject\main.vhd":71:2:71:3|Sequential instance busy reduced to a combinational gate by constant propagation
+@W: MO129 :"z:\github\lattice\machxo2700hetestproject\main.vhd":71:2:71:3|Sequential instance NS_vivaz_state[5] reduced to a combinational gate by constant propagation
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@W: MT462 :"z:\github\lattice\machxo2700hetestproject\main.vhd":34:5:34:13|Net go_0_sqmuxa appears to be an unidentified clock source. Assuming default frequency. 
+@N: FX493 |Applying initial value "00000001" on instance NS_vivaz_state[0:7] 
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 139MB)
+
+@W: MO129 :"z:\github\lattice\machxo2700hetestproject\main.vhd":34:2:34:3|Sequential instance PS_vivaz_state[5] reduced to a combinational gate by constant propagation
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 139MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 139MB)
+
+@N: MF578 :"z:\github\lattice\machxo2700hetestproject\main.vhd":41:2:41:5|Incompatible asynchronous control logic preventing generated clock conversion of lcd_write (in view: work.lcd_sender(beh_lcd_sender)).
+@W: MO129 :"z:\github\lattice\machxo2700hetestproject\main.vhd":71:2:71:3|Sequential instance NS_vivaz_state[4] reduced to a combinational gate by constant propagation
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 139MB)
+
+@W: MO129 :"z:\github\lattice\machxo2700hetestproject\main.vhd":71:2:71:3|Sequential instance lcd_bus[0] reduced to a combinational gate by constant propagation
+@W: MO129 :"z:\github\lattice\machxo2700hetestproject\main.vhd":71:2:71:3|Sequential instance lcd_bus[1] reduced to a combinational gate by constant propagation
+@W: MO129 :"z:\github\lattice\machxo2700hetestproject\main.vhd":71:2:71:3|Sequential instance lcd_bus[2] reduced to a combinational gate by constant propagation
+@W: MO129 :"z:\github\lattice\machxo2700hetestproject\main.vhd":71:2:71:3|Sequential instance lcd_bus[3] reduced to a combinational gate by constant propagation
+@W: MO129 :"z:\github\lattice\machxo2700hetestproject\main.vhd":71:2:71:3|Sequential instance lcd_bus[4] reduced to a combinational gate by constant propagation
+@W: MO129 :"z:\github\lattice\machxo2700hetestproject\main.vhd":71:2:71:3|Sequential instance lcd_bus[5] reduced to a combinational gate by constant propagation
+@W: MO129 :"z:\github\lattice\machxo2700hetestproject\main.vhd":71:2:71:3|Sequential instance lcd_bus[6] reduced to a combinational gate by constant propagation
+@W: MO129 :"z:\github\lattice\machxo2700hetestproject\main.vhd":71:2:71:3|Sequential instance lcd_bus[7] reduced to a combinational gate by constant propagation
+@W: MO129 :"z:\github\lattice\machxo2700hetestproject\main.vhd":71:2:71:3|Sequential instance lcd_bus[8] reduced to a combinational gate by constant propagation
+@W: MO129 :"z:\github\lattice\machxo2700hetestproject\main.vhd":71:2:71:3|Sequential instance lcd_bus[9] reduced to a combinational gate by constant propagation
+@W: MO129 :"z:\github\lattice\machxo2700hetestproject\main.vhd":71:2:71:3|Sequential instance lcd_bus[10] reduced to a combinational gate by constant propagation
+@W: MO129 :"z:\github\lattice\machxo2700hetestproject\main.vhd":71:2:71:3|Sequential instance lcd_bus[11] reduced to a combinational gate by constant propagation
+@W: MO129 :"z:\github\lattice\machxo2700hetestproject\main.vhd":71:2:71:3|Sequential instance lcd_bus[12] reduced to a combinational gate by constant propagation
+@W: MO129 :"z:\github\lattice\machxo2700hetestproject\main.vhd":71:2:71:3|Sequential instance lcd_bus[13] reduced to a combinational gate by constant propagation
+@W: MO129 :"z:\github\lattice\machxo2700hetestproject\main.vhd":71:2:71:3|Sequential instance lcd_bus[14] reduced to a combinational gate by constant propagation
+@W: MO129 :"z:\github\lattice\machxo2700hetestproject\main.vhd":71:2:71:3|Sequential instance lcd_bus[15] reduced to a combinational gate by constant propagation
+@W: MO129 :"z:\github\lattice\machxo2700hetestproject\main.vhd":71:2:71:3|Sequential instance NS_vivaz_state[3] reduced to a combinational gate by constant propagation
+@W: MO129 :"z:\github\lattice\machxo2700hetestproject\main.vhd":71:2:71:3|Sequential instance NS_vivaz_state[2] reduced to a combinational gate by constant propagation
+@W: MO129 :"z:\github\lattice\machxo2700hetestproject\main.vhd":71:2:71:3|Sequential instance NS_vivaz_state[1] reduced to a combinational gate by constant propagation
+@W: MO129 :"z:\github\lattice\machxo2700hetestproject\main.vhd":71:2:71:3|Sequential instance NS_vivaz_state[0] reduced to a combinational gate by constant propagation
+@N: BN362 :"z:\github\lattice\machxo2700hetestproject\main.vhd":34:2:34:3|Removing sequential instance PS_vivaz_state[0] (in view: work.lcd_sender(beh_lcd_sender)) because it does not drive other instances.
+@N: BN362 :"z:\github\lattice\machxo2700hetestproject\main.vhd":34:2:34:3|Removing sequential instance PS_vivaz_state[1] (in view: work.lcd_sender(beh_lcd_sender)) because it does not drive other instances.
+@N: BN362 :"z:\github\lattice\machxo2700hetestproject\main.vhd":34:2:34:3|Removing sequential instance PS_vivaz_state[2] (in view: work.lcd_sender(beh_lcd_sender)) because it does not drive other instances.
+@N: BN362 :"z:\github\lattice\machxo2700hetestproject\main.vhd":34:2:34:3|Removing sequential instance PS_vivaz_state[3] (in view: work.lcd_sender(beh_lcd_sender)) because it does not drive other instances.
+@N: BN362 :"z:\github\lattice\machxo2700hetestproject\main.vhd":34:2:34:3|Removing sequential instance PS_vivaz_state[4] (in view: work.lcd_sender(beh_lcd_sender)) because it does not drive other instances.
+@N: BN362 :"z:\github\lattice\machxo2700hetestproject\main.vhd":34:2:34:3|Removing sequential instance PS_vivaz_state[6] (in view: work.lcd_sender(beh_lcd_sender)) because it does not drive other instances.
+@N: BN362 :"z:\github\lattice\machxo2700hetestproject\main.vhd":34:2:34:3|Removing sequential instance PS_vivaz_state[7] (in view: work.lcd_sender(beh_lcd_sender)) because it does not drive other instances.
+@N: BN362 :"z:\github\lattice\machxo2700hetestproject\main.vhd":71:2:71:3|Removing sequential instance NS_vivaz_state[7] (in view: work.lcd_sender(beh_lcd_sender)) of type view:PrimLib.lats(prim) because it does not drive other instances.
+@N: BN362 :"z:\github\lattice\machxo2700hetestproject\main.vhd":71:2:71:3|Removing sequential instance NS_vivaz_state[6] (in view: work.lcd_sender(beh_lcd_sender)) of type view:PrimLib.latr(prim) because it does not drive other instances.
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 139MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 139MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 139MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 139MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 139MB)
+
+@W: MO129 :"z:\github\lattice\machxo2700hetestproject\main.vhd":41:2:41:5|Sequential instance lcd_write reduced to a combinational gate by constant propagation
+
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 139MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 139MB)
+
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 139MB)
+
+@N: MT611 :|Automatically generated clock lcd_sender|PS_vivaz_state_derived_clock[7] is not used and is being removed
+@N: MT611 :|Automatically generated clock lcd_sender|PS_vivaz_state_derived_clock[5] is not used and is being removed
+@N: MT611 :|Automatically generated clock lcd_sender|PS_vivaz_state_derived_clock[0] is not used and is being removed
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 106MB peak: 139MB)
+
+Writing Analyst data base Z:\GITHUB\Lattice\MachXO2700HETestproject\impl1\synwork\MachXO_7000HE_Testproject_impl1_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 139MB)
+
+Writing EDIF Netlist and constraint files
+@N: FX1056 |Writing EDF file: Z:\GITHUB\Lattice\MachXO2700HETestproject\impl1\MachXO_7000HE_Testproject_impl1.edi
+K-2015.09L-2
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 141MB peak: 142MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 141MB peak: 142MB)
+
+@W: MT420 |Found inferred clock lcd_sender|clk with period 1000.00ns. Please declare a user-defined clock on object "p:clk"
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Wed May 18 10:33:29 2016
+#
+
+
+Top view:               lcd_sender
+Requested Frequency:    1.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: NA
+
+                   Requested     Estimated     Requested     Estimated               Clock        Clock              
+Starting Clock     Frequency     Frequency     Period        Period        Slack     Type         Group              
+---------------------------------------------------------------------------------------------------------------------
+lcd_sender|clk     1.0 MHz       NA            1000.000      NA            NA        inferred     Inferred_clkgroup_0
+=====================================================================================================================
+@N: MT582 |Estimated period and frequency not reported for given clock unless the clock has at least one timing path which is not a false or a max delay path and that does not have excessive slack
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks            |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+--------------------------------------------------------------------------------------------------------
+Starting  Ending  |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+--------------------------------------------------------------------------------------------------------
+========================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+##### END OF TIMING REPORT #####]
+
+Constraints that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 142MB peak: 143MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 142MB peak: 143MB)
+
+---------------------------------------
+Resource Usage Report
+Part: lcmxo2_7000he-5
+
+Register bits: 0 of 6864 (0%)
+PIC Latch:       0
+I/O cells:       21
+
+
+Details:
+GSR:            1
+OB:             21
+PUR:            1
+VHI:            1
+VLO:            1
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 51MB peak: 143MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Wed May 18 10:33:29 2016
+
+###########################################################]

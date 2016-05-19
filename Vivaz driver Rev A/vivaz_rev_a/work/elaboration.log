@@ -1,0 +1,34 @@
+Active-HDL 10.2.3312.5682  2016-05-19 09:51:01
+
+Elaboration top modules:
+Architecture                  behavior(testbench)
+
+
+--------------------------------------------------------------------------------------------
+Entity    | Architecture | Library | Info | Compiler Version          | Compilation Options
+--------------------------------------------------------------------------------------------
+testbench | behavior     | work    |      | 10.2.3312.5682  (Windows) | -O3
+--------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------
+VHDL Package             | Library | Info | Compiler Version          | Compilation Options
+--------------------------------------------------------------------------------------------
+standard                 | std     |      |                           | <unavailable>
+TEXTIO                   | std     |      | 10.2.3312.5682  (Windows) |  -2008
+std_logic_1164           | ieee    |      | 10.2.3312.5682  (Windows) |  -2008
+NUMERIC_STD              | ieee    |      | 10.2.3312.5682  (Windows) |  -2008
+--------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------
+Library                  | Comment
+--------------------------------------------------------------------------------------------
+ieee                     | Standard IEEE packages library
+std                      | Standard VHDL library
+work                     | None
+--------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -sdfmax /testbench/=Z:\GITHUB\Lattice\Vivaz driver Rev A\vivaz_rev_a/../impl1/vivaz_driver_reva_impl1_vho.sdf +transport_path_delays +transport_int_delays -O5 -L ovi_machxo2 -PL pmi_work +access +r testbench behavior
+
+
+The performance of simulation is reduced. Version Lattice Edition

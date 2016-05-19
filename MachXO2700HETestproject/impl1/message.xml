@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="MapVerilogSimFile">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+    <Task name="MapVHDLSimFile">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35921504</ID>
+            <Severity>Info</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>Z:/GITHUB/Lattice/MachXO2700HETestproject/impl1</Dynamic>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>z:/github/lattice/machxo2700hetestproject/lcd_sender.vhd(8): </Dynamic>
+            <Dynamic>lcd_sender</Dynamic>
+            <Navigation>z:/github/lattice/machxo2700hetestproject/lcd_sender.vhd</Navigation>
+            <Navigation>8</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>z:/github/lattice/machxo2700hetestproject/lcd_sender.vhd(22): </Dynamic>
+            <Dynamic>beh_lcd_sender</Dynamic>
+            <Navigation>z:/github/lattice/machxo2700hetestproject/lcd_sender.vhd</Navigation>
+            <Navigation>22</Navigation>
+        </Message>
+        <Message>
+            <ID>35921251</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/machxo2700hetestproject/lcd_sender.vhd(67): </Dynamic>
+            <Dynamic>busy</Dynamic>
+            <Navigation>z:/github/lattice/machxo2700hetestproject/lcd_sender.vhd</Navigation>
+            <Navigation>67</Navigation>
+        </Message>
+        <Message>
+            <ID>35921613</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/machxo2700hetestproject/lcd_sender.vhd(81): </Dynamic>
+            <Navigation>z:/github/lattice/machxo2700hetestproject/lcd_sender.vhd</Navigation>
+            <Navigation>81</Navigation>
+        </Message>
+        <Message>
+            <ID>35921205</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/machxo2700hetestproject/lcd_sender.vhd(20): </Dynamic>
+            <Dynamic>lcd_sender</Dynamic>
+            <Dynamic>beh_lcd_sender</Dynamic>
+            <Navigation>z:/github/lattice/machxo2700hetestproject/lcd_sender.vhd</Navigation>
+            <Navigation>20</Navigation>
+        </Message>
+        <Message>
+            <ID>35001779</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>PS_vivaz_state_i0</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>GND_net</Dynamic>
+            <Navigation>GND_net</Navigation>
+        </Message>
+        <Message>
+            <ID>1163101</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>1</Dynamic>
+        </Message>
+    </Task>
+    <Task name="TimingSimFileVHD">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+    <Task name="TimingSimFileVlg">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Synplify_Synthesis">
+        <Message>
+            <ID>2011000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CD277 :&quot;Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_wrapper.vhd&quot;:33:2:33:3|Port direction mismatch between component and entity</Dynamic>
+            <Navigation>CD277</Navigation>
+            <Navigation>Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_wrapper.vhd</Navigation>
+            <Navigation>33</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>33</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>Port direction mismatch between component and entity</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG296 :&quot;Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_wrapper.vhd&quot;:55:1:55:7|Incomplete sensitivity list - assuming completeness</Dynamic>
+            <Navigation>CG296</Navigation>
+            <Navigation>Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_wrapper.vhd</Navigation>
+            <Navigation>55</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>55</Navigation>
+            <Navigation>7</Navigation>
+            <Navigation>Incomplete sensitivity list - assuming completeness</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG290 :&quot;Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_wrapper.vhd&quot;:60:17:60:18|Referenced variable go is not in sensitivity list</Dynamic>
+            <Navigation>CG290</Navigation>
+            <Navigation>Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_wrapper.vhd</Navigation>
+            <Navigation>60</Navigation>
+            <Navigation>17</Navigation>
+            <Navigation>60</Navigation>
+            <Navigation>18</Navigation>
+            <Navigation>Referenced variable go is not in sensitivity list</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL240 :&quot;Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_sender.vhd&quot;:14:2:14:10|lcd_reset is not assigned a value (floating) -- simulation mismatch possible.</Dynamic>
+            <Navigation>CL240</Navigation>
+            <Navigation>Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_sender.vhd</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>lcd_reset is not assigned a value (floating) -- simulation mismatch possible. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL249 :&quot;Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_sender.vhd&quot;:61:2:61:3|Initial value is not supported on state machine PS_vivaz_state</Dynamic>
+            <Navigation>CL249</Navigation>
+            <Navigation>Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_sender.vhd</Navigation>
+            <Navigation>61</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>61</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>Initial value is not supported on state machine PS_vivaz_state</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT529 :&quot;z:\github\lattice\machxo2700hetestproject\lcd_sender.vhd&quot;:61:2:61:3|Found inferred clock lcd_wrapper|clk which controls 26 sequential elements including sender.lcd_write. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
+            <Navigation>MT529</Navigation>
+            <Navigation>z:\github\lattice\machxo2700hetestproject\lcd_sender.vhd</Navigation>
+            <Navigation>61</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>61</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>Found inferred clock lcd_wrapper|clk which controls 26 sequential elements including sender.lcd_write. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
+        </Message>
+    </Task>
+</BaliMessageLog>

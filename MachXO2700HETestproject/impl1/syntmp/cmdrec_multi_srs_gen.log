@@ -1,0 +1,7 @@
+C:\lscc\diamond\3.7_x64\synpbase\bin64\syn_nfilter.exe  -link  -top  lcd_wrapper  -incremental_debug  -multisrs  Z:\GITHUB\Lattice\MachXO2700HETestproject\impl1\synwork\MachXO_7000HE_Testproject_impl1_comp.srs  -osyn  Z:\GITHUB\Lattice\MachXO2700HETestproject\impl1\synwork\MachXO_7000HE_Testproject_impl1_mult.srs  -log  Z:\GITHUB\Lattice\MachXO2700HETestproject\impl1\synlog\MachXO_7000HE_Testproject_impl1_multi_srs_gen.srr 
+rc:0 success:1 runtime:0
+Z:\GITHUB\Lattice\MachXO2700HETestproject\impl1\synwork\MachXO_7000HE_Testproject_impl1_comp.srs|i|1463567885|4174
+Z:\GITHUB\Lattice\MachXO2700HETestproject\impl1\synwork\MachXO_7000HE_Testproject_impl1_mult.srs|o|1463567887|3290
+Z:\GITHUB\Lattice\MachXO2700HETestproject\impl1\synlog\MachXO_7000HE_Testproject_impl1_multi_srs_gen.srr|o|1463567887|534
+C:\lscc\diamond\3.7_x64\synpbase\bin\syn_nfilter.exe|i|1449712674|3110400
+C:\lscc\diamond\3.7_x64\synpbase\bin64\syn_nfilter.exe|i|1449712876|4182528

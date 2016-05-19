@@ -1,0 +1,1 @@
+project -fileorder "C:/lscc/diamond/3.7_x64/cae_library/synthesis/vhdl/machxo2.vhd" "Z:/GITHUB/Lattice/Sony\ Vivaz\ LCD\ driver/lcd_sender.vhd" "Z:/GITHUB/Lattice/Sony\ Vivaz\ LCD\ driver/lcd_arbiter.vhd" "Z:/GITHUB/Lattice/Sony\ Vivaz\ LCD\ driver/main.vhd" 

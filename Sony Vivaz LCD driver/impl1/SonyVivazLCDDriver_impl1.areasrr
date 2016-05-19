@@ -1,0 +1,42 @@
+----------------------------------------------------------------------
+Report for cell main.behavioral
+
+Register bits: 15 of 6864 (0%)
+Latch bits:      4
+PIC Latch:       0
+I/O cells:       28
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                             FD1S1B        1       100.0
+                             FD1S1D        3       100.0
+                            FD1S3AX        2       100.0
+                            FD1S3AY        1       100.0
+                            FD1S3BX        2       100.0
+                            FD1S3DX        6       100.0
+                            FD1S3IX        4       100.0
+                                GSR        1       100.0
+                                INV        1       100.0
+                                 OB       28       100.0
+                           ORCALUT4       21       100.0
+                               OSCH        1       100.0
+                                PUR        1       100.0
+                                VHI        2       100.0
+                                VLO        2       100.0
+SUB MODULES 
+                         lcd_sender        1       100.0
+                            
+                         TOTAL            77           
+----------------------------------------------------------------------
+Report for cell lcd_sender.netlist
+     Instance path:  inst_lcd_sender
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                             FD1S1B        1       100.0
+                             FD1S1D        3       100.0
+                            FD1S3BX        2       100.0
+                            FD1S3DX        6       100.0
+                           ORCALUT4       12        57.1
+                                VHI        1        50.0
+                                VLO        1        50.0
+                            
+                         TOTAL            26           

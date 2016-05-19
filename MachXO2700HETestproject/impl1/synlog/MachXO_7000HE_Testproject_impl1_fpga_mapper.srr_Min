@@ -1,0 +1,128 @@
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Wed May 18 12:35:07 2016
+#
+
+
+Top view:               lcd_sender
+Requested Frequency:    1.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: 0.944
+
+                   Requested     Estimated     Requested     Estimated                 Clock        Clock              
+Starting Clock     Frequency     Frequency     Period        Period        Slack       Type         Group              
+-----------------------------------------------------------------------------------------------------------------------
+lcd_sender|clk     1.0 MHz       332.0 MHz     1000.000      3.012         996.988     inferred     Inferred_clkgroup_0
+=======================================================================================================================
+
+
+
+Clock Relationships
+*******************
+
+Clocks                          |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+----------------------------------------------------------------------------------------------------------------------
+Starting        Ending          |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+----------------------------------------------------------------------------------------------------------------------
+lcd_sender|clk  lcd_sender|clk  |  0.000       0.944  |  No paths    -      |  No paths    -      |  No paths    -    
+======================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: lcd_sender|clk
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                      Starting                                                     Arrival          
+Instance              Reference          Type        Pin     Net                   Time        Slack
+                      Clock                                                                         
+----------------------------------------------------------------------------------------------------
+PS_vivaz_state[0]     lcd_sender|clk     FD1S3DX     Q       PS_vivaz_state[0]     0.843       0.944
+PS_vivaz_state[1]     lcd_sender|clk     FD1S3DX     Q       PS_vivaz_state[1]     0.854       0.956
+PS_vivaz_state[2]     lcd_sender|clk     FD1S3DX     Q       PS_vivaz_state[2]     0.860       0.961
+====================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                      Starting                                                         Required          
+Instance              Reference          Type         Pin     Net                      Time         Slack
+                      Clock                                                                              
+---------------------------------------------------------------------------------------------------------
+busy_0io              lcd_sender|clk     OFS1P3DX     SP      N_15_i                   0.330        0.944
+lcd_rs_0io            lcd_sender|clk     IFS1P3DX     SP      lcd_rs_0_sqmuxa          0.330        0.944
+lcd_write_0io         lcd_sender|clk     OFS1P3DX     SP      N_19_i                   0.330        0.944
+busy_0io              lcd_sender|clk     OFS1P3DX     D       PS_vivaz_state_i[2]      0.074        1.183
+PS_vivaz_state[0]     lcd_sender|clk     FD1S3DX      D       N_11_i                   -0.062       1.337
+PS_vivaz_state[1]     lcd_sender|clk     FD1S3DX      D       N_18_i_i                 -0.062       1.337
+PS_vivaz_state[2]     lcd_sender|clk     FD1S3DX      D       PS_vivaz_state_ns[2]     -0.062       1.337
+lcd_write_0io         lcd_sender|clk     OFS1P3DX     D       N_17_i                   -0.062       1.348
+lcd_bus_0io[0]        lcd_sender|clk     IFS1P3DX     SP      PS_vivaz_state_d[5]      0.330        1.432
+lcd_bus_0io[1]        lcd_sender|clk     IFS1P3DX     SP      PS_vivaz_state_d[5]      0.330        1.432
+=========================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+    Propagation time:                        1.275
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Hold time:                             0.330
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (critical) :                     0.944
+
+    Number of logic level(s):                1
+    Starting point:                          PS_vivaz_state[0] / Q
+    Ending point:                            busy_0io / SP
+    The start point is clocked by            lcd_sender|clk [rising] on pin CK
+    The end   point is clocked by            lcd_sender|clk [rising] on pin SCLK
+
+Instance / Net                                 Pin      Pin               Arrival     No. of    
+Name                              Type         Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------
+PS_vivaz_state[0]                 FD1S3DX      Q        Out     0.843     0.843       -         
+PS_vivaz_state[0]                 Net          -        -       -         -           7         
+PS_vivaz_state_ns_2_0_.N_15_i     ORCALUT4     A        In      0.000     0.843       -         
+PS_vivaz_state_ns_2_0_.N_15_i     ORCALUT4     Z        Out     0.432     1.275       -         
+N_15_i                            Net          -        -       -         -           1         
+busy_0io                          OFS1P3DX     SP       In      0.000     1.275       -         
+================================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+
+Constraints that could not be applied
+None

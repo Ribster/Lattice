@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "vivaz_lcd_sender_impl1.log"
+-o "vivaz_lcd_sender_impl1.csv"
+-pr "vivaz_lcd_sender_impl1.prf"

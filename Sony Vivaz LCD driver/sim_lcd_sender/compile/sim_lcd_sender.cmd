@@ -1,0 +1,1 @@
+-w -s "z:\GITHUB\Lattice\Sony Vivaz LCD driver\sim_lcd_sender\library.cfg"  -j "z:\GITHUB\Lattice\Sony Vivaz LCD driver\sim_lcd_sender\projlib.cfg"  -d "z:\GITHUB\Lattice\Sony Vivaz LCD driver\sim_lcd_sender\compile"   -work work  -O3 -e 100 -2002 "z:/GITHUB/Lattice/Sony Vivaz LCD driver/lcd_sender_tb.vhd"

@@ -1,0 +1,8 @@
+WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
+MESSAGE "File: z:\GITHUB\Lattice\Sony Vivaz LCD driver\lcd_sender_tb.vhd" 
+MESSAGE "Compile Entity "testbench"" 
+MESSAGE "Compile Architecture "behavior" of Entity "testbench"" 
+WARNING ELAB1_0026: "There is no default binding for component "lcd_sender". (No entity named "lcd_sender" was found)." "z:\GITHUB\Lattice\Sony Vivaz LCD driver\lcd_sender_tb.vhd" 58 0
+ERROR COMP96_0078: "Unknown identifier "lcd_reset"." "z:\GITHUB\Lattice\Sony Vivaz LCD driver\lcd_sender_tb.vhd" 78 2
+ERROR COMP96_0133: "Cannot find object declaration." "z:\GITHUB\Lattice\Sony Vivaz LCD driver\lcd_sender_tb.vhd" 78 2
+FAILURE "Compile failure 2 Errors 1 Warnings  Analysis time :  62.0 [ms]" 

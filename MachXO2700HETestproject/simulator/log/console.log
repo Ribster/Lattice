@@ -1,0 +1,738 @@
+# Design Explorer: Shortcut to "Z:\GITHUB\Lattice\MachXO2700HETestproject\simulator\simulator.aws" design added.
+designverincludedir -clear
+designverlibrarysim -PL -clear
+designverlibrarysim -L -clear
+designverlibrarysim -PL pmi_work
+designverlibrarysim ovi_machxo2
+designverdefinemacro -clear
+addfile Z:/GITHUB/Lattice/MachXO2700HETestproject/impl1/MachXO_7000HE_Testproject_impl1_vho.vho
+# Adding file Z:\GITHUB\Lattice\MachXO2700HETestproject\impl1\MachXO_7000HE_Testproject_impl1_vho.vho ... Done
+addfile Z:/GITHUB/Lattice/MachXO2700HETestproject/MachXO_7000HE_Testproject_tb.vhd
+# Adding file Z:\GITHUB\Lattice\MachXO2700HETestproject\MachXO_7000HE_Testproject_tb.vhd ... Done
+addfile -sdf Z:/GITHUB/Lattice/MachXO2700HETestproject/impl1/MachXO_7000HE_Testproject_impl1_vho.sdf
+# Adding file Z:\GITHUB\Lattice\MachXO2700HETestproject\impl1\MachXO_7000HE_Testproject_impl1_vho.sdf ... Done
+vlib Z:/GITHUB/Lattice/MachXO2700HETestproject/simulator/work
+# Adding library O.K.
+adel -all
+# Library contents cleared.
+vcom -dbg Z:/GITHUB/Lattice/MachXO2700HETestproject/impl1/MachXO_7000HE_Testproject_impl1_vho.vho
+# Compile...
+# File: Z:\GITHUB\Lattice\MachXO2700HETestproject\impl1\MachXO_7000HE_Testproject_impl1_vho.vho
+# Compile Entity "lut4"
+# Compile Architecture "Structure" of Entity "lut4"
+# Compile Entity "gnd"
+# Compile Architecture "Structure" of Entity "gnd"
+# Compile Entity "vmuxregsre"
+# Compile Architecture "Structure" of Entity "vmuxregsre"
+# Compile Entity "vcc"
+# Compile Architecture "Structure" of Entity "vcc"
+# Compile Entity "sender_SLICE_0"
+# Compile Architecture "Structure" of Entity "sender_SLICE_0"
+# Compile Entity "sender_SLICE_2"
+# Compile Architecture "Structure" of Entity "sender_SLICE_2"
+# Compile Entity "sender_SLICE_3"
+# Compile Architecture "Structure" of Entity "sender_SLICE_3"
+# Compile Entity "sender_SLICE_4"
+# Compile Architecture "Structure" of Entity "sender_SLICE_4"
+# Compile Entity "sender_SLICE_5"
+# Compile Architecture "Structure" of Entity "sender_SLICE_5"
+# Compile Entity "sender_SLICE_9"
+# Compile Architecture "Structure" of Entity "sender_SLICE_9"
+# Compile Entity "lut40001"
+# Compile Architecture "Structure" of Entity "lut40001"
+# Compile Entity "lut40002"
+# Compile Architecture "Structure" of Entity "lut40002"
+# Compile Entity "SLICE_10"
+# Compile Architecture "Structure" of Entity "SLICE_10"
+# Compile Entity "lut40003"
+# Compile Architecture "Structure" of Entity "lut40003"
+# Compile Entity "lut40004"
+# Compile Architecture "Structure" of Entity "lut40004"
+# Compile Entity "vmuxregsre0005"
+# Compile Architecture "Structure" of Entity "vmuxregsre0005"
+# Compile Entity "sender_SLICE_11"
+# Compile Architecture "Structure" of Entity "sender_SLICE_11"
+# Compile Entity "lut40006"
+# Compile Architecture "Structure" of Entity "lut40006"
+# Compile Entity "lut40007"
+# Compile Architecture "Structure" of Entity "lut40007"
+# Compile Entity "sender_SLICE_12"
+# Compile Architecture "Structure" of Entity "sender_SLICE_12"
+# Compile Entity "lut40008"
+# Compile Architecture "Structure" of Entity "lut40008"
+# Compile Entity "lut40009"
+# Compile Architecture "Structure" of Entity "lut40009"
+# Compile Entity "SLICE_13"
+# Compile Architecture "Structure" of Entity "SLICE_13"
+# Compile Entity "lut40010"
+# Compile Architecture "Structure" of Entity "lut40010"
+# Compile Entity "lut40011"
+# Compile Architecture "Structure" of Entity "lut40011"
+# Compile Entity "sender_SLICE_14"
+# Compile Architecture "Structure" of Entity "sender_SLICE_14"
+# Compile Entity "sender_SLICE_21"
+# Compile Architecture "Structure" of Entity "sender_SLICE_21"
+# Compile Entity "sender_SLICE_22"
+# Compile Architecture "Structure" of Entity "sender_SLICE_22"
+# Compile Entity "xo2iobuf"
+# Compile Architecture "Structure" of Entity "xo2iobuf"
+# Compile Entity "lcd_bus_15_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_15_B"
+# Compile Entity "lcd_bus_11_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_11_B"
+# Compile Entity "lcd_bus_12_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_12_B"
+# Compile Entity "lcd_bus_13_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_13_B"
+# Compile Entity "lcd_bus_14_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_14_B"
+# Compile Entity "lcd_bus_10_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_10_B"
+# Compile Entity "lcd_bus_9_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_9_B"
+# Compile Entity "lcd_bus_8_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_8_B"
+# Compile Entity "lcd_bus_7_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_7_B"
+# Compile Entity "lcd_bus_6_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_6_B"
+# Compile Entity "lcd_bus_5_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_5_B"
+# Compile Entity "lcd_bus_4_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_4_B"
+# Compile Entity "lcd_bus_3_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_3_B"
+# Compile Entity "lcd_bus_2_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_2_B"
+# Compile Entity "lcd_bus_1_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_1_B"
+# Compile Entity "lcd_bus_0_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_0_B"
+# Compile Entity "lcd_writeB"
+# Compile Architecture "Structure" of Entity "lcd_writeB"
+# Compile Entity "lcd_resetB"
+# Compile Architecture "Structure" of Entity "lcd_resetB"
+# Compile Entity "lcd_rsB"
+# Compile Architecture "Structure" of Entity "lcd_rsB"
+# Compile Entity "busyB"
+# Compile Architecture "Structure" of Entity "busyB"
+# Compile Entity "xo2iobuf0012"
+# Compile Architecture "Structure" of Entity "xo2iobuf0012"
+# Compile Entity "clkB"
+# Compile Architecture "Structure" of Entity "clkB"
+# Compile Entity "rstB"
+# Compile Architecture "Structure" of Entity "rstB"
+# Compile Entity "goB"
+# Compile Architecture "Structure" of Entity "goB"
+# Compile Entity "data1Command0B"
+# Compile Architecture "Structure" of Entity "data1Command0B"
+# Compile Entity "payload_15_B"
+# Compile Architecture "Structure" of Entity "payload_15_B"
+# Compile Entity "payload_14_B"
+# Compile Architecture "Structure" of Entity "payload_14_B"
+# Compile Entity "payload_13_B"
+# Compile Architecture "Structure" of Entity "payload_13_B"
+# Compile Entity "payload_12_B"
+# Compile Architecture "Structure" of Entity "payload_12_B"
+# Compile Entity "payload_11_B"
+# Compile Architecture "Structure" of Entity "payload_11_B"
+# Compile Entity "payload_10_B"
+# Compile Architecture "Structure" of Entity "payload_10_B"
+# Compile Entity "payload_9_B"
+# Compile Architecture "Structure" of Entity "payload_9_B"
+# Compile Entity "payload_8_B"
+# Compile Architecture "Structure" of Entity "payload_8_B"
+# Compile Entity "payload_7_B"
+# Compile Architecture "Structure" of Entity "payload_7_B"
+# Compile Entity "payload_6_B"
+# Compile Architecture "Structure" of Entity "payload_6_B"
+# Compile Entity "payload_5_B"
+# Compile Architecture "Structure" of Entity "payload_5_B"
+# Compile Entity "payload_4_B"
+# Compile Architecture "Structure" of Entity "payload_4_B"
+# Compile Entity "payload_3_B"
+# Compile Architecture "Structure" of Entity "payload_3_B"
+# Compile Entity "payload_2_B"
+# Compile Architecture "Structure" of Entity "payload_2_B"
+# Compile Entity "payload_1_B"
+# Compile Architecture "Structure" of Entity "payload_1_B"
+# Compile Entity "payload_0_B"
+# Compile Architecture "Structure" of Entity "payload_0_B"
+# Compile Entity "GSR5MODE"
+# Compile Architecture "Structure" of Entity "GSR5MODE"
+# Compile Entity "GSR_INSTB"
+# Compile Architecture "Structure" of Entity "GSR_INSTB"
+# Compile Entity "lcd_wrapper"
+# Compile Architecture "Structure" of Entity "lcd_wrapper"
+# Compile Configuration "Structure_CON"
+# Compile success 0 Errors 0 Warnings  Analysis time :  2.0 [s]
+vcom -dbg -work work Z:/GITHUB/Lattice/MachXO2700HETestproject/MachXO_7000HE_Testproject_tb.vhd
+# Compile...
+# File: Z:\GITHUB\Lattice\MachXO2700HETestproject\MachXO_7000HE_Testproject_tb.vhd
+# Compile Entity "testbench"
+# Compile Architecture "behavior" of Entity "testbench"
+# Compile success 0 Errors 0 Warnings  Analysis time :  46.0 [ms]
+entity testbench
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+designsdffile Z:/GITHUB/Lattice/MachXO2700HETestproject/impl1/MachXO_7000HE_Testproject_impl1_vho.sdf /testbench/uut -sdfmax -load yes
+designsimaddoptions +transport_path_delays +transport_int_delays
+vsim +access +r testbench -sdfmax /testbench/uut="Z:/GITHUB/Lattice/MachXO2700HETestproject/impl1/MachXO_7000HE_Testproject_impl1_vho.sdf" -PL pmi_work -L ovi_machxo2 +transport_path_delays +transport_int_delays
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+# vsim: Stack memory: 32MB
+# vsim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.2 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# SDF: 340 generic(s) read from Z:/GITHUB/Lattice/MachXO2700HETestproject/impl1/MachXO_7000HE_Testproject_impl1_vho.sdf
+# SDF: SDF load & update time: 0.0 [s].
+# SDF: 340 SDF entries loaded while 340 entries read
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7651 kB (elbread=1028 elab2=6141 kernel=188 sdf=292)
+# KERNEL: ASDB file was created in location Z:\GITHUB\Lattice\MachXO2700HETestproject\simulator\src\wave.asdb
+#  1:47 PM, Wednesday, May 18, 2016
+#  Simulation has been initialized
+#  Selected Top-Level: testbench (behavior)
+add wave *
+# 10 signal(s) traced.
+run 1000ns
+# Waveform file 'untitled.awc' connected to 'Z:/GITHUB/Lattice/MachXO2700HETestproject/simulator/src/wave.asdb'.
+# KERNEL: stopped at time: 1 us
+# KERNEL: stopped at time: 15001 us
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.2 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# SDF: 340 generic(s) read from Z:/GITHUB/Lattice/MachXO2700HETestproject/impl1/MachXO_7000HE_Testproject_impl1_vho.sdf
+# SDF: SDF load & update time: 0.0 [s].
+# SDF: 340 SDF entries loaded while 340 entries read
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7651 kB (elbread=1028 elab2=6141 kernel=188 sdf=292)
+# KERNEL: ASDB file was created in location Z:\GITHUB\Lattice\MachXO2700HETestproject\simulator\src\wave.asdb
+#  1:47 PM, Wednesday, May 18, 2016
+#  Simulation has been initialized
+#  Selected Top-Level: testbench (behavior)
+# Waveform file 'untitled.awc' connected to 'Z:/GITHUB/Lattice/MachXO2700HETestproject/simulator/src/wave.asdb'.
+run 15ms
+# KERNEL: stopped at time: 15 ms
+run 15ms
+acom -O3 -work work -2002  $dsn/../MachXO_7000HE_Testproject_tb.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: Z:\GITHUB\Lattice\MachXO2700HETestproject\MachXO_7000HE_Testproject_tb.vhd
+# Compile Entity "testbench"
+# Compile Architecture "behavior" of Entity "testbench"
+# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.2 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# SDF: 340 generic(s) read from Z:/GITHUB/Lattice/MachXO2700HETestproject/impl1/MachXO_7000HE_Testproject_impl1_vho.sdf
+# SDF: SDF load & update time: 0.0 [s].
+# SDF: 340 SDF entries loaded while 340 entries read
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7650 kB (elbread=1028 elab2=6141 kernel=187 sdf=292)
+# KERNEL: ASDB file was created in location Z:\GITHUB\Lattice\MachXO2700HETestproject\simulator\src\wave.asdb
+#  1:48 PM, Wednesday, May 18, 2016
+#  Simulation has been initialized
+#  Selected Top-Level: testbench (behavior)
+# Waveform file 'untitled.awc' connected to 'Z:/GITHUB/Lattice/MachXO2700HETestproject/simulator/src/wave.asdb'.
+run 15ms
+# KERNEL: stopped at time: 15 ms
+run 15ms
+acom -O3 -work work -2002  $dsn/../MachXO_7000HE_Testproject_tb.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: Z:\GITHUB\Lattice\MachXO2700HETestproject\MachXO_7000HE_Testproject_tb.vhd
+# Compile Entity "testbench"
+# Compile Architecture "behavior" of Entity "testbench"
+# Compile success 0 Errors 0 Warnings  Analysis time :  94.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# SDF: 340 generic(s) read from Z:/GITHUB/Lattice/MachXO2700HETestproject/impl1/MachXO_7000HE_Testproject_impl1_vho.sdf
+# SDF: SDF load & update time: 0.0 [s].
+# SDF: 340 SDF entries loaded while 340 entries read
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7650 kB (elbread=1028 elab2=6141 kernel=187 sdf=292)
+# KERNEL: ASDB file was created in location Z:\GITHUB\Lattice\MachXO2700HETestproject\simulator\src\wave.asdb
+#  1:49 PM, Wednesday, May 18, 2016
+#  Simulation has been initialized
+#  Selected Top-Level: testbench (behavior)
+# Waveform file 'untitled.awc' connected to 'Z:/GITHUB/Lattice/MachXO2700HETestproject/simulator/src/wave.asdb'.
+run 15ms
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F0 ; Preempted Future Value := 1 @ 4500005.011 ns; Newly Scheduled Value := 0 @ 4500005.118 ns;
+# KERNEL: Time: 4500004666 ps,  Iteration: 1,  Instance: /testbench/uut/sender_SLICE_12I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F1 ; Preempted Future Value := 0 @ 4500005.006 ns; Newly Scheduled Value := 1 @ 4500005.121 ns;
+# KERNEL: Time: 4500004669 ps,  Iteration: 1,  Instance: /testbench/uut/sender_SLICE_11I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F0 ; Preempted Future Value := 0 @ 4500005.011 ns; Newly Scheduled Value := 0 @ 4500005.118 ns;
+# KERNEL: Time: 4500004878 ps,  Iteration: 0,  Instance: /testbench/uut/sender_SLICE_12I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F0 ; Preempted Future Value := 0 @ 4500005.011 ns; Newly Scheduled Value := 0 @ 4500005.118 ns;
+# KERNEL: Time: 4500004878 ps,  Iteration: 1,  Instance: /testbench/uut/sender_SLICE_12I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F0 ; Preempted Future Value := 0 @ 6500005.011 ns; Newly Scheduled Value := 1 @ 6500005.021 ns;
+# KERNEL: Time: 6500004569 ps,  Iteration: 1,  Instance: /testbench/uut/sender_SLICE_12I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F0 ; Preempted Future Value := 1 @ 6500005.011 ns; Newly Scheduled Value := 1 @ 6500005.118 ns;
+# KERNEL: Time: 6500004666 ps,  Iteration: 0,  Instance: /testbench/uut/sender_SLICE_12I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F0 ; Preempted Future Value := 1 @ 6500005.006 ns; Newly Scheduled Value := 0 @ 6500005.121 ns;
+# KERNEL: Time: 6500004669 ps,  Iteration: 1,  Instance: /testbench/uut/sender_SLICE_11I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F1 ; Preempted Future Value := 1 @ 6500005.006 ns; Newly Scheduled Value := 0 @ 6500005.121 ns;
+# KERNEL: Time: 6500004669 ps,  Iteration: 1,  Instance: /testbench/uut/sender_SLICE_11I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F0 ; Preempted Future Value := 1 @ 6500005.011 ns; Newly Scheduled Value := 1 @ 6500005.118 ns;
+# KERNEL: Time: 6500004878 ps,  Iteration: 0,  Instance: /testbench/uut/sender_SLICE_12I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F0 ; Preempted Future Value := 0 @ 6500005.006 ns; Newly Scheduled Value := 0 @ 6500005.383 ns;
+# KERNEL: Time: 6500004931 ps,  Iteration: 0,  Instance: /testbench/uut/sender_SLICE_11I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F1 ; Preempted Future Value := 0 @ 6500005.006 ns; Newly Scheduled Value := 0 @ 6500005.383 ns;
+# KERNEL: Time: 6500004931 ps,  Iteration: 0,  Instance: /testbench/uut/sender_SLICE_11I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F0 ; Preempted Future Value := 0 @ 6500005.006 ns; Newly Scheduled Value := 1 @ 6500005.383 ns;
+# KERNEL: Time: 6500004931 ps,  Iteration: 1,  Instance: /testbench/uut/sender_SLICE_11I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F1 ; Preempted Future Value := 0 @ 6500005.006 ns; Newly Scheduled Value := 0 @ 6500005.383 ns;
+# KERNEL: Time: 6500004931 ps,  Iteration: 1,  Instance: /testbench/uut/sender_SLICE_11I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F0 ; Preempted Future Value := 0 @ 8500005.011 ns; Newly Scheduled Value := 1 @ 8500005.118 ns;
+# KERNEL: Time: 8500004666 ps,  Iteration: 1,  Instance: /testbench/uut/sender_SLICE_12I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F1 ; Preempted Future Value := 0 @ 8500005.006 ns; Newly Scheduled Value := 1 @ 8500005.121 ns;
+# KERNEL: Time: 8500004669 ps,  Iteration: 1,  Instance: /testbench/uut/sender_SLICE_11I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F1 ; Preempted Future Value := 1 @ 8500005.029 ns; Newly Scheduled Value := 0 @ 8500005.313 ns;
+# KERNEL: Time: 8500004861 ps,  Iteration: 1,  Instance: /testbench/uut/SLICE_13I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F0 ; Preempted Future Value := 1 @ 8500005.011 ns; Newly Scheduled Value := 1 @ 8500005.118 ns;
+# KERNEL: Time: 8500004878 ps,  Iteration: 0,  Instance: /testbench/uut/sender_SLICE_12I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F0 ; Preempted Future Value := 1 @ 10500005.011 ns; Newly Scheduled Value := 0 @ 10500005.021 ns;
+# KERNEL: Time: 10500004569 ps,  Iteration: 1,  Instance: /testbench/uut/sender_SLICE_12I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F0 ; Preempted Future Value := 0 @ 10500005.011 ns; Newly Scheduled Value := 0 @ 10500005.021 ns;
+# KERNEL: Time: 10500004878 ps,  Iteration: 0,  Instance: /testbench/uut/sender_SLICE_12I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F0 ; Preempted Future Value := 0 @ 10500005.121 ns; Newly Scheduled Value := 1 @ 10500005.383 ns;
+# KERNEL: Time: 10500004931 ps,  Iteration: 1,  Instance: /testbench/uut/sender_SLICE_11I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F1 ; Preempted Future Value := 1 @ 10500005.121 ns; Newly Scheduled Value := 0 @ 10500005.383 ns;
+# KERNEL: Time: 10500004931 ps,  Iteration: 1,  Instance: /testbench/uut/sender_SLICE_11I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F0 ; Preempted Future Value := 1 @ 11500005.011 ns; Newly Scheduled Value := 0 @ 11500005.118 ns;
+# KERNEL: Time: 11500004666 ps,  Iteration: 1,  Instance: /testbench/uut/sender_SLICE_12I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F1 ; Preempted Future Value := 0 @ 11500005.006 ns; Newly Scheduled Value := 1 @ 11500005.121 ns;
+# KERNEL: Time: 11500004669 ps,  Iteration: 1,  Instance: /testbench/uut/sender_SLICE_11I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F0 ; Preempted Future Value := 0 @ 11500005.011 ns; Newly Scheduled Value := 0 @ 11500005.118 ns;
+# KERNEL: Time: 11500004878 ps,  Iteration: 0,  Instance: /testbench/uut/sender_SLICE_12I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F0 ; Preempted Future Value := 0 @ 11500005.011 ns; Newly Scheduled Value := 0 @ 11500005.118 ns;
+# KERNEL: Time: 11500004878 ps,  Iteration: 1,  Instance: /testbench/uut/sender_SLICE_12I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F0 ; Preempted Future Value := 0 @ 13500005.011 ns; Newly Scheduled Value := 1 @ 13500005.021 ns;
+# KERNEL: Time: 13500004569 ps,  Iteration: 1,  Instance: /testbench/uut/sender_SLICE_12I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F0 ; Preempted Future Value := 1 @ 13500005.011 ns; Newly Scheduled Value := 1 @ 13500005.118 ns;
+# KERNEL: Time: 13500004666 ps,  Iteration: 0,  Instance: /testbench/uut/sender_SLICE_12I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F0 ; Preempted Future Value := 1 @ 13500005.006 ns; Newly Scheduled Value := 0 @ 13500005.121 ns;
+# KERNEL: Time: 13500004669 ps,  Iteration: 1,  Instance: /testbench/uut/sender_SLICE_11I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F1 ; Preempted Future Value := 1 @ 13500005.006 ns; Newly Scheduled Value := 0 @ 13500005.121 ns;
+# KERNEL: Time: 13500004669 ps,  Iteration: 1,  Instance: /testbench/uut/sender_SLICE_11I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F0 ; Preempted Future Value := 1 @ 13500005.011 ns; Newly Scheduled Value := 1 @ 13500005.118 ns;
+# KERNEL: Time: 13500004878 ps,  Iteration: 0,  Instance: /testbench/uut/sender_SLICE_12I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F0 ; Preempted Future Value := 0 @ 13500005.006 ns; Newly Scheduled Value := 0 @ 13500005.383 ns;
+# KERNEL: Time: 13500004931 ps,  Iteration: 0,  Instance: /testbench/uut/sender_SLICE_11I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F1 ; Preempted Future Value := 0 @ 13500005.006 ns; Newly Scheduled Value := 0 @ 13500005.383 ns;
+# KERNEL: Time: 13500004931 ps,  Iteration: 0,  Instance: /testbench/uut/sender_SLICE_11I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F0 ; Preempted Future Value := 0 @ 13500005.006 ns; Newly Scheduled Value := 1 @ 13500005.383 ns;
+# KERNEL: Time: 13500004931 ps,  Iteration: 1,  Instance: /testbench/uut/sender_SLICE_11I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F1 ; Preempted Future Value := 0 @ 13500005.006 ns; Newly Scheduled Value := 0 @ 13500005.383 ns;
+# KERNEL: Time: 13500004931 ps,  Iteration: 1,  Instance: /testbench/uut/sender_SLICE_11I,  Process: VitalBehavior.
+# KERNEL: stopped at time: 15 ms
+# Adding file Z:\GITHUB\Lattice\MachXO2700HETestproject\untitled.asdb ... Done
+# Adding file Z:\GITHUB\Lattice\MachXO2700HETestproject\untitled.awc ... Done
+run 15ms
+acom -O3 -work work -2002  $dsn/../impl1/MachXO_7000HE_Testproject_impl1_vho.vho $dsn/../MachXO_7000HE_Testproject_tb.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: Z:\GITHUB\Lattice\MachXO2700HETestproject\impl1\MachXO_7000HE_Testproject_impl1_vho.vho
+# Compile Entity "vmuxregsre"
+# Compile Architecture "Structure" of Entity "vmuxregsre"
+# Compile Entity "vcc"
+# Compile Architecture "Structure" of Entity "vcc"
+# Compile Entity "gnd"
+# Compile Architecture "Structure" of Entity "gnd"
+# Compile Entity "sender_SLICE_1"
+# Compile Architecture "Structure" of Entity "sender_SLICE_1"
+# Compile Entity "sender_SLICE_2"
+# Compile Architecture "Structure" of Entity "sender_SLICE_2"
+# Compile Entity "sender_SLICE_3"
+# Compile Architecture "Structure" of Entity "sender_SLICE_3"
+# Compile Entity "sender_SLICE_4"
+# Compile Architecture "Structure" of Entity "sender_SLICE_4"
+# Compile Entity "lut4"
+# Compile Architecture "Structure" of Entity "lut4"
+# Compile Entity "SLICE_7"
+# Compile Architecture "Structure" of Entity "SLICE_7"
+# Compile Entity "lut40001"
+# Compile Architecture "Structure" of Entity "lut40001"
+# Compile Entity "lut40002"
+# Compile Architecture "Structure" of Entity "lut40002"
+# Compile Entity "sender_SLICE_8"
+# Compile Architecture "Structure" of Entity "sender_SLICE_8"
+# Compile Entity "lut40003"
+# Compile Architecture "Structure" of Entity "lut40003"
+# Compile Entity "lut40004"
+# Compile Architecture "Structure" of Entity "lut40004"
+# Compile Entity "vmuxregsre0005"
+# Compile Architecture "Structure" of Entity "vmuxregsre0005"
+# Compile Entity "sender_SLICE_9"
+# Compile Architecture "Structure" of Entity "sender_SLICE_9"
+# Compile Entity "lut40006"
+# Compile Architecture "Structure" of Entity "lut40006"
+# Compile Entity "lut40007"
+# Compile Architecture "Structure" of Entity "lut40007"
+# Compile Entity "sender_SLICE_10"
+# Compile Architecture "Structure" of Entity "sender_SLICE_10"
+# Compile Entity "sender_SLICE_15"
+# Compile Architecture "Structure" of Entity "sender_SLICE_15"
+# Compile Entity "sender_SLICE_16"
+# Compile Architecture "Structure" of Entity "sender_SLICE_16"
+# Compile Entity "sender_SLICE_17"
+# Compile Architecture "Structure" of Entity "sender_SLICE_17"
+# Compile Entity "xo2iobuf"
+# Compile Architecture "Structure" of Entity "xo2iobuf"
+# Compile Entity "lcd_bus_14_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_14_B"
+# Compile Entity "lcd_bus_10_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_10_B"
+# Compile Entity "lcd_bus_15_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_15_B"
+# Compile Entity "lcd_bus_11_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_11_B"
+# Compile Entity "lcd_bus_12_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_12_B"
+# Compile Entity "lcd_bus_13_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_13_B"
+# Compile Entity "lcd_bus_9_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_9_B"
+# Compile Entity "lcd_bus_8_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_8_B"
+# Compile Entity "lcd_bus_7_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_7_B"
+# Compile Entity "lcd_bus_6_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_6_B"
+# Compile Entity "lcd_bus_5_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_5_B"
+# Compile Entity "lcd_bus_4_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_4_B"
+# Compile Entity "lcd_bus_3_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_3_B"
+# Compile Entity "lcd_bus_2_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_2_B"
+# Compile Entity "lcd_bus_1_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_1_B"
+# Compile Entity "lcd_bus_0_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_0_B"
+# Compile Entity "lcd_writeB"
+# Compile Architecture "Structure" of Entity "lcd_writeB"
+# Compile Entity "lcd_resetB"
+# Compile Architecture "Structure" of Entity "lcd_resetB"
+# Compile Entity "lcd_rsB"
+# Compile Architecture "Structure" of Entity "lcd_rsB"
+# Compile Entity "goB"
+# Compile Architecture "Structure" of Entity "goB"
+# Compile Entity "busyB"
+# Compile Architecture "Structure" of Entity "busyB"
+# Compile Entity "xo2iobuf0008"
+# Compile Architecture "Structure" of Entity "xo2iobuf0008"
+# Compile Entity "clkB"
+# Compile Architecture "Structure" of Entity "clkB"
+# Compile Entity "rstB"
+# Compile Architecture "Structure" of Entity "rstB"
+# Compile Entity "payload_15_B"
+# Compile Architecture "Structure" of Entity "payload_15_B"
+# Compile Entity "payload_14_B"
+# Compile Architecture "Structure" of Entity "payload_14_B"
+# Compile Entity "payload_13_B"
+# Compile Architecture "Structure" of Entity "payload_13_B"
+# Compile Entity "payload_12_B"
+# Compile Architecture "Structure" of Entity "payload_12_B"
+# Compile Entity "payload_11_B"
+# Compile Architecture "Structure" of Entity "payload_11_B"
+# Compile Entity "payload_10_B"
+# Compile Architecture "Structure" of Entity "payload_10_B"
+# Compile Entity "payload_9_B"
+# Compile Architecture "Structure" of Entity "payload_9_B"
+# Compile Entity "payload_8_B"
+# Compile Architecture "Structure" of Entity "payload_8_B"
+# Compile Entity "payload_7_B"
+# Compile Architecture "Structure" of Entity "payload_7_B"
+# Compile Entity "payload_6_B"
+# Compile Architecture "Structure" of Entity "payload_6_B"
+# Compile Entity "payload_5_B"
+# Compile Architecture "Structure" of Entity "payload_5_B"
+# Compile Entity "payload_4_B"
+# Compile Architecture "Structure" of Entity "payload_4_B"
+# Compile Entity "payload_3_B"
+# Compile Architecture "Structure" of Entity "payload_3_B"
+# Compile Entity "payload_2_B"
+# Compile Architecture "Structure" of Entity "payload_2_B"
+# Compile Entity "payload_1_B"
+# Compile Architecture "Structure" of Entity "payload_1_B"
+# Compile Entity "payload_0_B"
+# Compile Architecture "Structure" of Entity "payload_0_B"
+# Compile Entity "GSR5MODE"
+# Compile Architecture "Structure" of Entity "GSR5MODE"
+# Compile Entity "GSR_INSTB"
+# Compile Architecture "Structure" of Entity "GSR_INSTB"
+# Compile Entity "lcd_wrapper"
+# Compile Architecture "Structure" of Entity "lcd_wrapper"
+# Compile Configuration "Structure_CON"
+# File: Z:\GITHUB\Lattice\MachXO2700HETestproject\MachXO_7000HE_Testproject_tb.vhd
+# Compile Entity "testbench"
+# Compile Architecture "behavior" of Entity "testbench"
+# Compile success 0 Errors 0 Warnings  Analysis time :  1.0 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.3 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# SDF: 284 generic(s) read from Z:/GITHUB/Lattice/MachXO2700HETestproject/impl1/MachXO_7000HE_Testproject_impl1_vho.sdf
+# SDF: SDF load & update time: 0.0 [s].
+# SDF: 284 SDF entries loaded while 284 entries read
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7570 kB (elbread=1027 elab2=6083 kernel=166 sdf=292)
+# KERNEL: ASDB file was created in location Z:\GITHUB\Lattice\MachXO2700HETestproject\simulator\src\wave.asdb
+#  1:53 PM, Wednesday, May 18, 2016
+#  Simulation has been initialized
+#  Selected Top-Level: testbench (behavior)
+# Waveform file 'Z:/GITHUB/Lattice/MachXO2700HETestproject/untitled.awc' connected to 'Z:/GITHUB/Lattice/MachXO2700HETestproject/simulator/src/wave.asdb'.
+run 15ms
+# KERNEL: stopped at time: 15 ms
+run 15ms
+acom -O3 -work work -2002  $dsn/../MachXO_7000HE_Testproject_tb.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: Z:\GITHUB\Lattice\MachXO2700HETestproject\MachXO_7000HE_Testproject_tb.vhd
+# Compile Entity "testbench"
+# Compile Architecture "behavior" of Entity "testbench"
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# SDF: 284 generic(s) read from Z:/GITHUB/Lattice/MachXO2700HETestproject/impl1/MachXO_7000HE_Testproject_impl1_vho.sdf
+# SDF: SDF load & update time: 0.0 [s].
+# SDF: 284 SDF entries loaded while 284 entries read
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7570 kB (elbread=1027 elab2=6083 kernel=166 sdf=292)
+# KERNEL: ASDB file was created in location Z:\GITHUB\Lattice\MachXO2700HETestproject\simulator\src\wave.asdb
+#  1:54 PM, Wednesday, May 18, 2016
+#  Simulation has been initialized
+#  Selected Top-Level: testbench (behavior)
+# Waveform file 'Z:/GITHUB/Lattice/MachXO2700HETestproject/untitled.awc' connected to 'Z:/GITHUB/Lattice/MachXO2700HETestproject/simulator/src/wave.asdb'.
+run 15ms
+# KERNEL: stopped at time: 15 ms
+run 15ms
+acom -O3 -work work -2002  $dsn/../impl1/MachXO_7000HE_Testproject_impl1_vho.vho
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: Z:\GITHUB\Lattice\MachXO2700HETestproject\impl1\MachXO_7000HE_Testproject_impl1_vho.vho
+# Compile Entity "vmuxregsre"
+# Compile Architecture "Structure" of Entity "vmuxregsre"
+# Compile Entity "vcc"
+# Compile Architecture "Structure" of Entity "vcc"
+# Compile Entity "gnd"
+# Compile Architecture "Structure" of Entity "gnd"
+# Compile Entity "sender_SLICE_1"
+# Compile Architecture "Structure" of Entity "sender_SLICE_1"
+# Compile Entity "sender_SLICE_2"
+# Compile Architecture "Structure" of Entity "sender_SLICE_2"
+# Compile Entity "sender_SLICE_3"
+# Compile Architecture "Structure" of Entity "sender_SLICE_3"
+# Compile Entity "sender_SLICE_4"
+# Compile Architecture "Structure" of Entity "sender_SLICE_4"
+# Compile Entity "lut4"
+# Compile Architecture "Structure" of Entity "lut4"
+# Compile Entity "SLICE_7"
+# Compile Architecture "Structure" of Entity "SLICE_7"
+# Compile Entity "lut40001"
+# Compile Architecture "Structure" of Entity "lut40001"
+# Compile Entity "lut40002"
+# Compile Architecture "Structure" of Entity "lut40002"
+# Compile Entity "sender_SLICE_8"
+# Compile Architecture "Structure" of Entity "sender_SLICE_8"
+# Compile Entity "lut40003"
+# Compile Architecture "Structure" of Entity "lut40003"
+# Compile Entity "lut40004"
+# Compile Architecture "Structure" of Entity "lut40004"
+# Compile Entity "vmuxregsre0005"
+# Compile Architecture "Structure" of Entity "vmuxregsre0005"
+# Compile Entity "sender_SLICE_9"
+# Compile Architecture "Structure" of Entity "sender_SLICE_9"
+# Compile Entity "lut40006"
+# Compile Architecture "Structure" of Entity "lut40006"
+# Compile Entity "lut40007"
+# Compile Architecture "Structure" of Entity "lut40007"
+# Compile Entity "sender_SLICE_10"
+# Compile Architecture "Structure" of Entity "sender_SLICE_10"
+# Compile Entity "sender_SLICE_15"
+# Compile Architecture "Structure" of Entity "sender_SLICE_15"
+# Compile Entity "sender_SLICE_16"
+# Compile Architecture "Structure" of Entity "sender_SLICE_16"
+# Compile Entity "sender_SLICE_17"
+# Compile Architecture "Structure" of Entity "sender_SLICE_17"
+# Compile Entity "xo2iobuf"
+# Compile Architecture "Structure" of Entity "xo2iobuf"
+# Compile Entity "lcd_bus_13_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_13_B"
+# Compile Entity "lcd_bus_14_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_14_B"
+# Compile Entity "lcd_bus_15_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_15_B"
+# Compile Entity "lcd_bus_12_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_12_B"
+# Compile Entity "lcd_bus_11_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_11_B"
+# Compile Entity "lcd_bus_10_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_10_B"
+# Compile Entity "lcd_bus_9_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_9_B"
+# Compile Entity "lcd_bus_8_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_8_B"
+# Compile Entity "lcd_bus_7_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_7_B"
+# Compile Entity "lcd_bus_6_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_6_B"
+# Compile Entity "lcd_bus_5_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_5_B"
+# Compile Entity "lcd_bus_4_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_4_B"
+# Compile Entity "lcd_bus_3_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_3_B"
+# Compile Entity "lcd_bus_2_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_2_B"
+# Compile Entity "lcd_bus_1_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_1_B"
+# Compile Entity "lcd_bus_0_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_0_B"
+# Compile Entity "lcd_writeB"
+# Compile Architecture "Structure" of Entity "lcd_writeB"
+# Compile Entity "lcd_resetB"
+# Compile Architecture "Structure" of Entity "lcd_resetB"
+# Compile Entity "lcd_rsB"
+# Compile Architecture "Structure" of Entity "lcd_rsB"
+# Compile Entity "busyB"
+# Compile Architecture "Structure" of Entity "busyB"
+# Compile Entity "xo2iobuf0008"
+# Compile Architecture "Structure" of Entity "xo2iobuf0008"
+# Compile Entity "clkB"
+# Compile Architecture "Structure" of Entity "clkB"
+# Compile Entity "rstB"
+# Compile Architecture "Structure" of Entity "rstB"
+# Compile Entity "payload_15_B"
+# Compile Architecture "Structure" of Entity "payload_15_B"
+# Compile Entity "payload_14_B"
+# Compile Architecture "Structure" of Entity "payload_14_B"
+# Compile Entity "payload_13_B"
+# Compile Architecture "Structure" of Entity "payload_13_B"
+# Compile Entity "payload_12_B"
+# Compile Architecture "Structure" of Entity "payload_12_B"
+# Compile Entity "payload_11_B"
+# Compile Architecture "Structure" of Entity "payload_11_B"
+# Compile Entity "payload_10_B"
+# Compile Architecture "Structure" of Entity "payload_10_B"
+# Compile Entity "payload_9_B"
+# Compile Architecture "Structure" of Entity "payload_9_B"
+# Compile Entity "payload_8_B"
+# Compile Architecture "Structure" of Entity "payload_8_B"
+# Compile Entity "payload_7_B"
+# Compile Architecture "Structure" of Entity "payload_7_B"
+# Compile Entity "payload_6_B"
+# Compile Architecture "Structure" of Entity "payload_6_B"
+# Compile Entity "payload_5_B"
+# Compile Architecture "Structure" of Entity "payload_5_B"
+# Compile Entity "payload_4_B"
+# Compile Architecture "Structure" of Entity "payload_4_B"
+# Compile Entity "payload_3_B"
+# Compile Architecture "Structure" of Entity "payload_3_B"
+# Compile Entity "payload_2_B"
+# Compile Architecture "Structure" of Entity "payload_2_B"
+# Compile Entity "payload_1_B"
+# Compile Architecture "Structure" of Entity "payload_1_B"
+# Compile Entity "payload_0_B"
+# Compile Architecture "Structure" of Entity "payload_0_B"
+# Compile Entity "GSR5MODE"
+# Compile Architecture "Structure" of Entity "GSR5MODE"
+# Compile Entity "GSR_INSTB"
+# Compile Architecture "Structure" of Entity "GSR_INSTB"
+# Compile Entity "lcd_wrapper"
+# Compile Architecture "Structure" of Entity "lcd_wrapper"
+# Compile Configuration "Structure_CON"
+# Compile success 0 Errors 0 Warnings  Analysis time :  1.0 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: The contents of entity 'work.lcd_wrapper' instantiated in architecture 'behavior:testbench' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# 
+# Error: Cannot initialize simulation - no top level  entity/architecture or configuration is selected
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: The contents of entity 'work.lcd_wrapper' instantiated in architecture 'behavior:testbench' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# Adding file Z:\GITHUB\Lattice\MachXO2700HETestproject\untitled.awc ... Done

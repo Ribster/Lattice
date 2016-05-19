@@ -1,0 +1,101 @@
+# Synopsys Constraint Checker, version maplat, Build 1368R, built Jan  8 2016
+# Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+# Written on Wed May 18 12:38:08 2016
+
+
+##### DESIGN INFO #######################################################
+
+Top View:                "lcd_wrapper"
+Constraint File(s):      (none)
+
+
+
+
+##### SUMMARY ############################################################
+
+Found 0 issues in 0 out of 0 constraints
+
+
+##### DETAILS ############################################################
+
+
+
+Clock Relationships
+*******************
+
+Starting            Ending              |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
+---------------------------------------------------------------------------------------------------------------------------------------------------
+lcd_wrapper|clk     lcd_wrapper|clk     |     1000.000         |     No paths         |     No paths         |     No paths                         
+===================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+Unconstrained Start/End Points
+******************************
+
+p:busy
+p:data1Command0
+p:go
+p:lcd_bus[0]
+p:lcd_bus[1]
+p:lcd_bus[2]
+p:lcd_bus[3]
+p:lcd_bus[4]
+p:lcd_bus[5]
+p:lcd_bus[6]
+p:lcd_bus[7]
+p:lcd_bus[8]
+p:lcd_bus[9]
+p:lcd_bus[10]
+p:lcd_bus[11]
+p:lcd_bus[12]
+p:lcd_bus[13]
+p:lcd_bus[14]
+p:lcd_bus[15]
+p:lcd_reset
+p:lcd_rs
+p:lcd_write
+p:payload[0]
+p:payload[1]
+p:payload[2]
+p:payload[3]
+p:payload[4]
+p:payload[5]
+p:payload[6]
+p:payload[7]
+p:payload[8]
+p:payload[9]
+p:payload[10]
+p:payload[11]
+p:payload[12]
+p:payload[13]
+p:payload[14]
+p:payload[15]
+p:rst
+
+
+Inapplicable constraints
+************************
+
+(none)
+
+
+Applicable constraints with issues
+**********************************
+
+(none)
+
+
+Constraints with matching wildcard expressions
+**********************************************
+
+(none)
+
+
+Library Report
+**************
+
+
+# End of Constraint Checker Report

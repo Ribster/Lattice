@@ -1,0 +1,5 @@
+CKID0001:@|S:inst_lcd_sender.lcd_rs_0_sqmuxa@|E:inst_lcd_sender.busy.res_lat@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001 
+CKID0002:@|S:inst_clk@|E:count[2]@|F:@syn_sample_clock_path==CKID0002@|M:ClockId0002 
+CKID0003:@|S:inst_lcd_sender.PS_vivaz_state_0[6]@|E:inst_lcd_sender.busy.res_reg_0@|F:@syn_sample_clock_path1==CKID0003@|M:ClockId0003 
+CKID0004:@|S:inst_lcd_sender.PS_vivaz_state_ret@|E:inst_lcd_sender.lcd_write.res_reg@|F:@syn_sample_clock_path==CKID0004@|M:ClockId0004 
+CKID0005:@|S:inst_lcd_sender.NS_vivaz_state_2_sqmuxa@|E:inst_lcd_sender.lcd_write.res_lat@|F:@syn_sample_clock_path==CKID0005@|M:ClockId0005 

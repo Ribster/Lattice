@@ -1,0 +1,1 @@
+@W: MT529 :"z:\github\lattice\machxo2700hetestproject\lcd_sender.vhd":61:2:61:3|Found inferred clock lcd_wrapper|clk which controls 26 sequential elements including sender.lcd_write. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 

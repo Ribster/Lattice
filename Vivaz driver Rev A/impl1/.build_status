@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BuildStatus>
+    <Strategy name="Strategy1">
+        <Milestone name="Export" build_result="0" build_time="0">
+            <Task name="IBIS" build_result="0" update_result="3" update_time="0"/>
+            <Task name="TimingSimFileVlg" build_result="0" update_result="2" update_time="1463646366"/>
+            <Task name="TimingSimFileVHD" build_result="0" update_result="2" update_time="1463646367"/>
+            <Task name="Jedecgen" build_result="0" update_result="3" update_time="0"/>
+            <Task name="Bitgen" build_result="2" update_result="0" update_time="1463646835"/>
+        </Milestone>
+        <Milestone name="Map" build_result="2" build_time="1463646827">
+            <Task name="Map" build_result="2" update_result="0" update_time="1463646827"/>
+            <Task name="MapTrace" build_result="0" update_result="3" update_time="0"/>
+            <Task name="MapVerilogSimFile" build_result="0" update_result="2" update_time="1463646197"/>
+            <Task name="MapVHDLSimFile" build_result="0" update_result="2" update_time="1463646198"/>
+        </Milestone>
+        <Milestone name="PAR" build_result="2" build_time="1463646832">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1463646832"/>
+            <Task name="PARTrace" build_result="0" update_result="3" update_time="0"/>
+            <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
+        </Milestone>
+        <Milestone name="Synthesis" build_result="2" build_time="1463646816">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1463646816"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1463646816"/>
+        </Milestone>
+        <Milestone name="TOOL_Report" build_result="0" build_time="0">
+            <Task name="HDLE" build_result="2" update_result="0" update_time="1463646813"/>
+            <Task name="BKM" build_result="0" update_result="2" update_time="0"/>
+            <Task name="SSO" build_result="0" update_result="2" update_time="0"/>
+            <Task name="PIODRC" build_result="0" update_result="2" update_time="0"/>
+            <Task name="DEC" build_result="0" update_result="2" update_time="0"/>
+        </Milestone>
+        <Report name=".vdbs/vivaz_driver_reva_impl1_map.vdb" last_build_time="1463646827" last_build_size="45388"/>
+        <Report name="vivaz_driver_reva_impl1.bgn" last_build_time="1463646835" last_build_size="5078"/>
+        <Report name="vivaz_driver_reva_impl1.bit" last_build_time="1463646835" last_build_size="25977"/>
+        <Report name="vivaz_driver_reva_impl1.lsedata" last_build_time="1463646815" last_build_size="156622"/>
+        <Report name="vivaz_driver_reva_impl1.ncd" last_build_time="1463646832" last_build_size="96611"/>
+        <Report name="vivaz_driver_reva_impl1.ngd" last_build_time="1463646816" last_build_size="71557"/>
+        <Report name="vivaz_driver_reva_impl1_map.ncd" last_build_time="1463646826" last_build_size="73206"/>
+        <Report name="vivaz_driver_reva_impl1_mapvho.sdf" last_build_time="1463646198" last_build_size="21080"/>
+        <Report name="vivaz_driver_reva_impl1_mapvho.vho" last_build_time="1463646198" last_build_size="191672"/>
+        <Report name="vivaz_driver_reva_impl1_mapvo.sdf" last_build_time="1463646197" last_build_size="21013"/>
+        <Report name="vivaz_driver_reva_impl1_mapvo.vo" last_build_time="1463646197" last_build_size="26729"/>
+        <Report name="vivaz_driver_reva_impl1_vho.sdf" last_build_time="1463646367" last_build_size="35319"/>
+        <Report name="vivaz_driver_reva_impl1_vho.vho" last_build_time="1463646367" last_build_size="287922"/>
+        <Report name="vivaz_driver_reva_impl1_vo.sdf" last_build_time="1463646366" last_build_size="35101"/>
+        <Report name="vivaz_driver_reva_impl1_vo.vo" last_build_time="1463646366" last_build_size="41298"/>
+    </Strategy>
+</BuildStatus>

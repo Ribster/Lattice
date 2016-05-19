@@ -1,76 +1,45 @@
 [ START MERGED ]
-n5295 synch_rst_c
 [ END MERGED ]
 [ START CLIPPED ]
-GND_net
-sub_713_add_2_1/S1
-sub_713_add_2_1/S0
-sub_713_add_2_1/CI
-sub_713_add_2_3/S1
-sub_713_add_2_3/S0
-sub_713_add_2_5/S1
-sub_713_add_2_5/S0
-sub_713_add_2_7/S1
-sub_713_add_2_7/S0
-sub_713_add_2_9/S1
-sub_713_add_2_9/S0
-sub_713_add_2_11/S1
-sub_713_add_2_11/S0
-sub_713_add_2_13/S1
-sub_713_add_2_13/S0
-sub_713_add_2_15/S1
-sub_713_add_2_15/S0
-sub_713_add_2_17/S1
-sub_713_add_2_17/S0
-sub_713_add_2_19/S1
-sub_713_add_2_19/S0
-sub_713_add_2_21/S1
-sub_713_add_2_21/S0
-sub_713_add_2_23/S1
-sub_713_add_2_23/S0
-sub_713_add_2_25/S0
-sub_713_add_2_25/CO
-count_728_add_4_1/S0
-count_728_add_4_1/CI
-count_728_add_4_25/S1
-count_728_add_4_25/CO
+inst_lcd_sender/GND
+inst_clk_SEDSTDBY
 [ END CLIPPED ]
 [ START OSC ]
 clk133 20.46
 [ END OSC ]
 [ START DESIGN PREFS ]
 SCHEMATIC START ;
-# map:  version Diamond (64-bit) 3.7.1.502 -- WARNING: Map write only section -- Tue May 17 22:45:22 2016
+# map:  version Diamond (64-bit) 3.7.1.502 -- WARNING: Map write only section -- Wed May 18 17:12:58 2016
 
 SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=DISABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE BACKGROUND_RECONFIG=OFF ;
-LOCATE COMP "leds[7]" SITE "107" ;
+LOCATE COMP "leds[0]" SITE "97" ;
 LOCATE COMP "synch_rst" SITE "69" ;
 LOCATE COMP "lcd_rs" SITE "70" ;
 LOCATE COMP "lcd_reset" SITE "68" ;
 LOCATE COMP "lcd_wr" SITE "71" ;
-LOCATE COMP "lcd_LCDBus[0]" SITE "49" ;
-LOCATE COMP "lcd_LCDBus[1]" SITE "47" ;
-LOCATE COMP "lcd_LCDBus[2]" SITE "50" ;
-LOCATE COMP "lcd_LCDBus[3]" SITE "48" ;
-LOCATE COMP "lcd_LCDBus[4]" SITE "55" ;
-LOCATE COMP "lcd_LCDBus[5]" SITE "52" ;
-LOCATE COMP "lcd_LCDBus[6]" SITE "56" ;
-LOCATE COMP "lcd_LCDBus[7]" SITE "54" ;
-LOCATE COMP "lcd_LCDBus[8]" SITE "59" ;
-LOCATE COMP "lcd_LCDBus[9]" SITE "57" ;
-LOCATE COMP "lcd_LCDBus[10]" SITE "60" ;
-LOCATE COMP "lcd_LCDBus[11]" SITE "58" ;
-LOCATE COMP "lcd_LCDBus[12]" SITE "65" ;
-LOCATE COMP "lcd_LCDBus[13]" SITE "61" ;
-LOCATE COMP "lcd_LCDBus[14]" SITE "67" ;
 LOCATE COMP "lcd_LCDBus[15]" SITE "62" ;
-LOCATE COMP "leds[0]" SITE "97" ;
-LOCATE COMP "leds[1]" SITE "98" ;
-LOCATE COMP "leds[2]" SITE "99" ;
-LOCATE COMP "leds[3]" SITE "100" ;
-LOCATE COMP "leds[4]" SITE "104" ;
-LOCATE COMP "leds[5]" SITE "105" ;
+LOCATE COMP "lcd_LCDBus[14]" SITE "67" ;
+LOCATE COMP "lcd_LCDBus[13]" SITE "61" ;
+LOCATE COMP "lcd_LCDBus[12]" SITE "65" ;
+LOCATE COMP "lcd_LCDBus[11]" SITE "58" ;
+LOCATE COMP "lcd_LCDBus[10]" SITE "60" ;
+LOCATE COMP "lcd_LCDBus[9]" SITE "57" ;
+LOCATE COMP "lcd_LCDBus[8]" SITE "59" ;
+LOCATE COMP "lcd_LCDBus[7]" SITE "54" ;
+LOCATE COMP "lcd_LCDBus[6]" SITE "56" ;
+LOCATE COMP "lcd_LCDBus[5]" SITE "52" ;
+LOCATE COMP "lcd_LCDBus[4]" SITE "55" ;
+LOCATE COMP "lcd_LCDBus[3]" SITE "48" ;
+LOCATE COMP "lcd_LCDBus[2]" SITE "50" ;
+LOCATE COMP "lcd_LCDBus[1]" SITE "47" ;
+LOCATE COMP "lcd_LCDBus[0]" SITE "49" ;
+LOCATE COMP "leds[7]" SITE "107" ;
 LOCATE COMP "leds[6]" SITE "106" ;
+LOCATE COMP "leds[5]" SITE "105" ;
+LOCATE COMP "leds[4]" SITE "104" ;
+LOCATE COMP "leds[3]" SITE "100" ;
+LOCATE COMP "leds[2]" SITE "99" ;
+LOCATE COMP "leds[1]" SITE "98" ;
 FREQUENCY NET "clk133" 20.460000 MHz ;
 SCHEMATIC END ;
 [ END DESIGN PREFS ]

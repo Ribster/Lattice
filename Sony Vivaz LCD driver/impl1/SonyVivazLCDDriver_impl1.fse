@@ -1,0 +1,18 @@
+
+fsm_encoding {9342341} sequential
+
+fsm_state_encoding {9342341} idle {000}
+
+fsm_state_encoding {9342341} t10 {001}
+
+fsm_state_encoding {9342341} t20 {010}
+
+fsm_state_encoding {9342341} t30 {011}
+
+fsm_state_encoding {9342341} t40 {100}
+
+fsm_state_encoding {9342341} t50 {101}
+
+fsm_state_encoding {9342341} t60 {110}
+
+fsm_registers {9342341} {PS_vivaz_state[2]}  {PS_vivaz_state[1]}  {PS_vivaz_state[0]} 

@@ -1,0 +1,10 @@
+acom -O3 -work work -2002  $dsn/../lcd_sender_tb.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: z:\GITHUB\Lattice\Sony Vivaz LCD driver\lcd_sender_tb.vhd
+# Compile Entity "testbench"
+# Compile Architecture "behavior" of Entity "testbench"
+# Warning: ELAB1_0026: ../../lcd_sender_tb.vhd : (58, 0): There is no default binding for component "lcd_sender". (No entity named "lcd_sender" was found).
+# Error: COMP96_0078: ../../lcd_sender_tb.vhd : (78, 2): Unknown identifier "lcd_reset".
+# Error: COMP96_0133: ../../lcd_sender_tb.vhd : (78, 2): Cannot find object declaration.
+# Compile failure 2 Errors 1 Warnings  Analysis time :  62.0 [ms]

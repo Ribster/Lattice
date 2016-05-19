@@ -1,0 +1,1055 @@
+
+// Verilog netlist produced by program ldbanno, Version Diamond (64-bit) 3.7.1.502
+
+// ldbanno -n Verilog -o SonyVivazLCDDriver_impl1_vo.vo -w -neg -gui -msgset Z:/GITHUB/Lattice/Sony Vivaz LCD driver/promote.xml SonyVivazLCDDriver_impl1.ncd 
+// Netlist created on Wed May 18 17:12:58 2016
+// Netlist written on Wed May 18 17:13:06 2016
+// Design is for device LCMXO2-7000HE
+// Design is for package TQFP144
+// Design is for performance grade 5
+
+`timescale 1 ns / 1 ps
+
+module main ( leds, lcd_LCDBus, lcd_wr, lcd_reset, lcd_rs, synch_rst );
+  output [7:0] leds;
+  output [15:0] lcd_LCDBus;
+  output lcd_wr, lcd_reset, lcd_rs, synch_rst;
+  wire   \count[0] , \count[1] , \un4_count[31] , \count_i[0] , un2_count_i, 
+         clk133, \count[2] , \count[3] , \un4_count[29] , \un4_count[30] , 
+         \count[5] , \count[4] , un4_count_c3, \un4_count[27] , 
+         \un4_count[28] , \inst_lcd_sender/PS_vivaz_state[2] , synch_rst_c, 
+         \inst_lcd_sender/PS_vivaz_state[1] , 
+         \inst_lcd_sender/NS_vivaz_state[1] , 
+         \inst_lcd_sender/NS_vivaz_state[0] , 
+         \inst_lcd_sender/PS_vivaz_state[0] , 
+         \inst_lcd_sender/PS_vivaz_state[4] , 
+         \inst_lcd_sender/PS_vivaz_state[3] , 
+         \inst_lcd_sender/NS_vivaz_state[3] , 
+         \inst_lcd_sender/NS_vivaz_state[2] , 
+         \inst_lcd_sender/PS_vivaz_state_i[5] , \inst_lcd_sender/un1_rst , 
+         \inst_lcd_sender/lcd_bus_1_sqmuxa , 
+         \inst_lcd_sender/PS_vivaz_state[6] , 
+         \inst_lcd_sender/lcd_rs_0_sqmuxa , \inst_lcd_sender/VCC\001/BUF1 , 
+         \inst_lcd_sender/PS_vivaz_state_0_RNI9NRD[0] , 
+         \inst_lcd_sender/un1_PS_vivaz_state_1keep , \inst_lcd_sender/o2 , GND, 
+         \inst_lcd_sender/VCC\000/BUF1 , \inst_lcd_sender/o3 , VCC, 
+         \inst_lcd_sender/o1 , \inst_lcd_sender/o3_0 , \inst_lcd_sender/VCC , 
+         busy_i, \inst_lcd_sender/un1_PS_vivaz_state_1_reti , reset_startup_0, 
+         un2_countlto3_0, \leds_c_i[6] , \leds_c[6] , VCCI;
+
+  SLICE_0 SLICE_0( .B1(\count[0] ), .A1(\count[1] ), .A0(\count[0] ), 
+    .DI1(\un4_count[31] ), .DI0(\count_i[0] ), .LSR(un2_count_i), .CLK(clk133), 
+    .F0(\count_i[0] ), .Q0(\count[0] ), .F1(\un4_count[31] ), .Q1(\count[1] ));
+  SLICE_1 SLICE_1( .D1(\count[1] ), .C1(\count[0] ), .B1(\count[2] ), 
+    .A1(\count[3] ), .D0(\count[1] ), .B0(\count[0] ), .A0(\count[2] ), 
+    .DI1(\un4_count[29] ), .DI0(\un4_count[30] ), .CLK(clk133), 
+    .F0(\un4_count[30] ), .Q0(\count[2] ), .F1(\un4_count[29] ), 
+    .Q1(\count[3] ));
+  SLICE_2 SLICE_2( .D1(\count[3] ), .C1(\count[5] ), .B1(\count[4] ), 
+    .A1(un4_count_c3), .D0(\count[3] ), .B0(un4_count_c3), .A0(\count[4] ), 
+    .DI1(\un4_count[27] ), .DI0(\un4_count[28] ), .LSR(un2_count_i), 
+    .CLK(clk133), .F0(\un4_count[28] ), .Q0(\count[4] ), .F1(\un4_count[27] ), 
+    .Q1(\count[5] ));
+  inst_lcd_sender_SLICE_3 \inst_lcd_sender/SLICE_3 ( 
+    .D1(\inst_lcd_sender/PS_vivaz_state[2] ), .A1(synch_rst_c), 
+    .D0(\inst_lcd_sender/PS_vivaz_state[1] ), .A0(synch_rst_c), 
+    .DI1(\inst_lcd_sender/NS_vivaz_state[1] ), 
+    .DI0(\inst_lcd_sender/NS_vivaz_state[0] ), .CLK(clk133), 
+    .F0(\inst_lcd_sender/NS_vivaz_state[0] ), 
+    .Q0(\inst_lcd_sender/PS_vivaz_state[0] ), 
+    .F1(\inst_lcd_sender/NS_vivaz_state[1] ), 
+    .Q1(\inst_lcd_sender/PS_vivaz_state[1] ));
+  inst_lcd_sender_SLICE_4 \inst_lcd_sender/SLICE_4 ( 
+    .D1(\inst_lcd_sender/PS_vivaz_state[4] ), .B1(synch_rst_c), 
+    .D0(\inst_lcd_sender/PS_vivaz_state[3] ), .B0(synch_rst_c), 
+    .DI1(\inst_lcd_sender/NS_vivaz_state[3] ), 
+    .DI0(\inst_lcd_sender/NS_vivaz_state[2] ), .CLK(clk133), 
+    .F0(\inst_lcd_sender/NS_vivaz_state[2] ), 
+    .Q0(\inst_lcd_sender/PS_vivaz_state[2] ), 
+    .F1(\inst_lcd_sender/NS_vivaz_state[3] ), 
+    .Q1(\inst_lcd_sender/PS_vivaz_state[3] ));
+  inst_lcd_sender_SLICE_5 \inst_lcd_sender/SLICE_5 ( .D1(synch_rst_c), 
+    .A1(\inst_lcd_sender/PS_vivaz_state[0] ), .D0(synch_rst_c), 
+    .A0(\inst_lcd_sender/PS_vivaz_state_i[5] ), 
+    .DI1(\inst_lcd_sender/un1_rst ), .DI0(\inst_lcd_sender/lcd_bus_1_sqmuxa ), 
+    .CLK(clk133), .F0(\inst_lcd_sender/lcd_bus_1_sqmuxa ), 
+    .Q0(\inst_lcd_sender/PS_vivaz_state[4] ), .F1(\inst_lcd_sender/un1_rst ), 
+    .Q1(\inst_lcd_sender/PS_vivaz_state[6] ));
+  inst_lcd_sender_SLICE_6 \inst_lcd_sender/SLICE_6 ( .D0(synch_rst_c), 
+    .B0(\inst_lcd_sender/PS_vivaz_state[6] ), 
+    .DI0(\inst_lcd_sender/lcd_rs_0_sqmuxa ), .CLK(clk133), 
+    .F0(\inst_lcd_sender/lcd_rs_0_sqmuxa ), 
+    .Q0(\inst_lcd_sender/PS_vivaz_state_i[5] ));
+  SLICE_8 SLICE_8( .DI0(\inst_lcd_sender/VCC\001/BUF1 ), 
+    .LSR(\inst_lcd_sender/PS_vivaz_state_0_RNI9NRD[0] ), 
+    .CLK(\inst_lcd_sender/un1_PS_vivaz_state_1keep ), 
+    .F0(\inst_lcd_sender/VCC\001/BUF1 ), .Q0(\inst_lcd_sender/o2 ), .F1(GND));
+  SLICE_9 SLICE_9( .DI0(\inst_lcd_sender/VCC\000/BUF1 ), 
+    .LSR(\inst_lcd_sender/PS_vivaz_state_0_RNI9NRD[0] ), 
+    .CLK(\inst_lcd_sender/NS_vivaz_state[3] ), 
+    .F0(\inst_lcd_sender/VCC\000/BUF1 ), .Q0(\inst_lcd_sender/o3 ), .F1(VCC));
+  inst_lcd_sender_SLICE_10 \inst_lcd_sender/SLICE_10 ( 
+    .C1(\inst_lcd_sender/o1 ), .B1(\inst_lcd_sender/o3_0 ), 
+    .DI0(\inst_lcd_sender/VCC ), .LSR(\inst_lcd_sender/un1_rst ), 
+    .CLK(\inst_lcd_sender/lcd_rs_0_sqmuxa ), .F0(\inst_lcd_sender/VCC ), 
+    .Q0(\inst_lcd_sender/o3_0 ), .F1(busy_i));
+  inst_lcd_sender_SLICE_11 \inst_lcd_sender/SLICE_11 ( 
+    .D1(\inst_lcd_sender/PS_vivaz_state[0] ), .C1(synch_rst_c), 
+    .B1(\inst_lcd_sender/PS_vivaz_state[6] ), 
+    .D0(\inst_lcd_sender/PS_vivaz_state[0] ), .C0(synch_rst_c), 
+    .B0(\inst_lcd_sender/PS_vivaz_state[1] ), 
+    .DI0(\inst_lcd_sender/un1_PS_vivaz_state_1_reti ), .CLK(clk133), 
+    .F0(\inst_lcd_sender/un1_PS_vivaz_state_1_reti ), 
+    .Q0(\inst_lcd_sender/un1_PS_vivaz_state_1keep ), 
+    .F1(\inst_lcd_sender/PS_vivaz_state_0_RNI9NRD[0] ));
+  SLICE_12 SLICE_12( .C1(\count[2] ), .B1(\count[0] ), .A1(\count[1] ), 
+    .D0(un2_count_i), .A0(synch_rst_c), .DI0(reset_startup_0), .CLK(clk133), 
+    .F0(reset_startup_0), .Q0(synch_rst_c), .F1(un4_count_c3));
+  SLICE_13 SLICE_13( .D1(\count[2] ), .C1(un2_countlto3_0), .B1(\count[4] ), 
+    .A1(\count[5] ), .C0(\count[3] ), .B0(\count[1] ), .F0(un2_countlto3_0), 
+    .F1(un2_count_i));
+  inst_lcd_sender_SLICE_14 \inst_lcd_sender/SLICE_14 ( 
+    .D1(\inst_lcd_sender/o3 ), .B1(\inst_lcd_sender/o2 ), 
+    .D0(\inst_lcd_sender/o3 ), .B0(\inst_lcd_sender/o2 ), 
+    .LSR(\inst_lcd_sender/lcd_rs_0_sqmuxa ), 
+    .CLK(\inst_lcd_sender/PS_vivaz_state[6] ), .F0(\leds_c_i[6] ), 
+    .Q0(\inst_lcd_sender/o1 ), .F1(\leds_c[6] ));
+  leds_0_ \leds[0]_I ( .PADDO(GND), .leds0(leds[0]));
+  synch_rst synch_rst_I( .PADDO(synch_rst_c), .synch_rst(synch_rst));
+  lcd_rs lcd_rs_I( .PADDO(GND), .lcd_rs(lcd_rs));
+  lcd_reset lcd_reset_I( .PADDO(GND), .lcd_reset(lcd_reset));
+  lcd_wr lcd_wr_I( .PADDO(\leds_c_i[6] ), .lcd_wr(lcd_wr));
+  lcd_LCDBus_15_ \lcd_LCDBus[15]_I ( .PADDO(GND), .lcdLCDBus15(lcd_LCDBus[15]));
+  lcd_LCDBus_14_ \lcd_LCDBus[14]_I ( .PADDO(GND), .lcdLCDBus14(lcd_LCDBus[14]));
+  lcd_LCDBus_13_ \lcd_LCDBus[13]_I ( .PADDO(GND), .lcdLCDBus13(lcd_LCDBus[13]));
+  lcd_LCDBus_12_ \lcd_LCDBus[12]_I ( .PADDO(GND), .lcdLCDBus12(lcd_LCDBus[12]));
+  lcd_LCDBus_11_ \lcd_LCDBus[11]_I ( .PADDO(GND), .lcdLCDBus11(lcd_LCDBus[11]));
+  lcd_LCDBus_10_ \lcd_LCDBus[10]_I ( .PADDO(GND), .lcdLCDBus10(lcd_LCDBus[10]));
+  lcd_LCDBus_9_ \lcd_LCDBus[9]_I ( .PADDO(GND), .lcdLCDBus9(lcd_LCDBus[9]));
+  lcd_LCDBus_8_ \lcd_LCDBus[8]_I ( .PADDO(GND), .lcdLCDBus8(lcd_LCDBus[8]));
+  lcd_LCDBus_7_ \lcd_LCDBus[7]_I ( .PADDO(GND), .lcdLCDBus7(lcd_LCDBus[7]));
+  lcd_LCDBus_6_ \lcd_LCDBus[6]_I ( .PADDO(GND), .lcdLCDBus6(lcd_LCDBus[6]));
+  lcd_LCDBus_5_ \lcd_LCDBus[5]_I ( .PADDO(GND), .lcdLCDBus5(lcd_LCDBus[5]));
+  lcd_LCDBus_4_ \lcd_LCDBus[4]_I ( .PADDO(GND), .lcdLCDBus4(lcd_LCDBus[4]));
+  lcd_LCDBus_3_ \lcd_LCDBus[3]_I ( .PADDO(GND), .lcdLCDBus3(lcd_LCDBus[3]));
+  lcd_LCDBus_2_ \lcd_LCDBus[2]_I ( .PADDO(GND), .lcdLCDBus2(lcd_LCDBus[2]));
+  lcd_LCDBus_1_ \lcd_LCDBus[1]_I ( .PADDO(GND), .lcdLCDBus1(lcd_LCDBus[1]));
+  lcd_LCDBus_0_ \lcd_LCDBus[0]_I ( .PADDO(GND), .lcdLCDBus0(lcd_LCDBus[0]));
+  leds_7_ \leds[7]_I ( .PADDO(VCC), .leds7(leds[7]));
+  leds_6_ \leds[6]_I ( .PADDO(\leds_c[6] ), .leds6(leds[6]));
+  leds_5_ \leds[5]_I ( .PADDO(busy_i), .leds5(leds[5]));
+  leds_4_ \leds[4]_I ( .PADDO(VCC), .leds4(leds[4]));
+  leds_3_ \leds[3]_I ( .PADDO(VCC), .leds3(leds[3]));
+  leds_2_ \leds[2]_I ( .PADDO(VCC), .leds2(leds[2]));
+  leds_1_ \leds[1]_I ( .PADDO(VCC), .leds1(leds[1]));
+  inst_clk inst_clk( .OSC(clk133));
+  GSR_INST GSR_INST( .GSRNET(~synch_rst_c));
+  VHI VHI_INST( .Z(VCCI));
+  PUR PUR_INST( .PUR(VCCI));
+endmodule
+
+module SLICE_0 ( input B1, A1, A0, DI1, DI0, LSR, CLK, output F0, Q0, F1, Q1 );
+  wire   GNDI, VCCI, DI1_dly, CLK_dly, DI0_dly, LSR_dly;
+
+  lut4 un4_count_axbxc1( .A(A1), .B(B1), .C(GNDI), .D(GNDI), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40001 \count_RNO[0] ( .A(A0), .B(GNDI), .C(GNDI), .D(GNDI), .Z(F0));
+  vmuxregsre \count[1] ( .D0(VCCI), .D1(DI1_dly), .SD(VCCI), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(LSR_dly), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  vmuxregsre \count[0] ( .D0(VCCI), .D1(DI0_dly), .SD(VCCI), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(LSR_dly), .Q(Q0));
+
+  specify
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+    $width (posedge LSR, 0:0:0);
+    $width (negedge LSR, 0:0:0);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module lut4 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h6666) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module gnd ( output PWR0 );
+
+  VLO INST1( .Z(PWR0));
+endmodule
+
+module lut40001 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h5555) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module vmuxregsre ( input D0, D1, SD, SP, CK, LSR, output Q );
+
+  FL1P3IY INST01( .D0(D0), .D1(D1), .SP(SP), .CK(CK), .SD(SD), .CD(LSR), .Q(Q));
+  defparam INST01.GSR = "DISABLED";
+endmodule
+
+module vcc ( output PWR1 );
+
+  VHI INST1( .Z(PWR1));
+endmodule
+
+module SLICE_1 ( input D1, C1, B1, A1, D0, B0, A0, DI1, DI0, CLK, output F0, 
+    Q0, F1, Q1 );
+  wire   GNDI, VCCI, DI1_dly, CLK_dly, DI0_dly;
+
+  lut40002 \count_RNO[3] ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40003 un4_count_axbxc2( .A(A0), .B(B0), .C(GNDI), .D(D0), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+  vmuxregsre0004 \count[3] ( .D0(VCCI), .D1(DI1_dly), .SD(VCCI), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(GNDI), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  vmuxregsre0004 \count[2] ( .D0(VCCI), .D1(DI0_dly), .SD(VCCI), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(GNDI), .Q(Q0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module lut40002 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h6AAA) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module lut40003 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h66AA) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module vmuxregsre0004 ( input D0, D1, SD, SP, CK, LSR, output Q );
+
+  FL1P3DX INST01( .D0(D0), .D1(D1), .SP(SP), .CK(CK), .SD(SD), .CD(LSR), .Q(Q));
+  defparam INST01.GSR = "DISABLED";
+endmodule
+
+module SLICE_2 ( input D1, C1, B1, A1, D0, B0, A0, DI1, DI0, LSR, CLK, output 
+    F0, Q0, F1, Q1 );
+  wire   GNDI, VCCI, DI1_dly, CLK_dly, DI0_dly, LSR_dly;
+
+  lut40005 un4_count_axbxc5( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40006 un4_count_axbxc4( .A(A0), .B(B0), .C(GNDI), .D(D0), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+  vmuxregsre \count[5] ( .D0(VCCI), .D1(DI1_dly), .SD(VCCI), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(LSR_dly), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  vmuxregsre \count[4] ( .D0(VCCI), .D1(DI0_dly), .SD(VCCI), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(LSR_dly), .Q(Q0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+    $width (posedge LSR, 0:0:0);
+    $width (negedge LSR, 0:0:0);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module lut40005 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h78F0) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module lut40006 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h66AA) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module inst_lcd_sender_SLICE_3 ( input D1, A1, D0, A0, DI1, DI0, CLK, output 
+    F0, Q0, F1, Q1 );
+  wire   GNDI, VCCI, DI1_dly, CLK_dly, DI0_dly;
+
+  lut40007 \inst_lcd_sender/NS_vivaz_state_4_sqmuxa ( .A(A1), .B(GNDI), 
+    .C(GNDI), .D(D1), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40007 \inst_lcd_sender/NS_vivaz_state_5_sqmuxa ( .A(A0), .B(GNDI), 
+    .C(GNDI), .D(D0), .Z(F0));
+  vmuxregsre0008 \inst_lcd_sender/PS_vivaz_state[1] ( .D0(VCCI), .D1(DI1_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(GNDI), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  vmuxregsre0008 \inst_lcd_sender/PS_vivaz_state_0[0] ( .D0(VCCI), 
+    .D1(DI0_dly), .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(GNDI), .Q(Q0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module lut40007 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h5500) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module vmuxregsre0008 ( input D0, D1, SD, SP, CK, LSR, output Q );
+
+  FL1P3DX INST01( .D0(D0), .D1(D1), .SP(SP), .CK(CK), .SD(SD), .CD(LSR), .Q(Q));
+  defparam INST01.GSR = "ENABLED";
+endmodule
+
+module inst_lcd_sender_SLICE_4 ( input D1, B1, D0, B0, DI1, DI0, CLK, output 
+    F0, Q0, F1, Q1 );
+  wire   GNDI, VCCI, DI1_dly, CLK_dly, DI0_dly;
+
+  lut40009 \inst_lcd_sender/NS_vivaz_state_2_sqmuxa ( .A(GNDI), .B(B1), 
+    .C(GNDI), .D(D1), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40009 \inst_lcd_sender/NS_vivaz_state_3_sqmuxa ( .A(GNDI), .B(B0), 
+    .C(GNDI), .D(D0), .Z(F0));
+  vmuxregsre0008 \inst_lcd_sender/PS_vivaz_state[3] ( .D0(VCCI), .D1(DI1_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(GNDI), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  vmuxregsre0008 \inst_lcd_sender/PS_vivaz_state[2] ( .D0(VCCI), .D1(DI0_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(GNDI), .Q(Q0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module lut40009 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h3300) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module inst_lcd_sender_SLICE_5 ( input D1, A1, D0, A0, DI1, DI0, CLK, output 
+    F0, Q0, F1, Q1 );
+  wire   GNDI, VCCI, DI1_dly, CLK_dly, DI0_dly;
+
+  lut40010 \inst_lcd_sender/un1_rst ( .A(A1), .B(GNDI), .C(GNDI), .D(D1), 
+    .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40011 \inst_lcd_sender/lcd_bus_1_sqmuxa ( .A(A0), .B(GNDI), .C(GNDI), 
+    .D(D0), .Z(F0));
+  vmuxregsre0012 \inst_lcd_sender/PS_vivaz_state_0[6] ( .D0(VCCI), 
+    .D1(DI1_dly), .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(GNDI), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  vmuxregsre0008 \inst_lcd_sender/PS_vivaz_state[4] ( .D0(VCCI), .D1(DI0_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(GNDI), .Q(Q0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module lut40010 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'hFFAA) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module lut40011 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h00AA) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module vmuxregsre0012 ( input D0, D1, SD, SP, CK, LSR, output Q );
+
+  FL1P3BX INST01( .D0(D0), .D1(D1), .SP(SP), .CK(CK), .SD(SD), .PD(LSR), .Q(Q));
+  defparam INST01.GSR = "ENABLED";
+endmodule
+
+module inst_lcd_sender_SLICE_6 ( input D0, B0, DI0, CLK, output F0, Q0 );
+  wire   GNDI, VCCI, DI0_dly, CLK_dly;
+
+  lut40013 \inst_lcd_sender/lcd_rs_0_sqmuxa ( .A(GNDI), .B(B0), .C(GNDI), 
+    .D(D0), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+  vmuxregsre0008 \inst_lcd_sender/PS_vivaz_state[5] ( .D0(VCCI), .D1(DI0_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(GNDI), .Q(Q0));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (D0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module lut40013 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h00CC) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module SLICE_8 ( input DI0, LSR, CLK, output F0, Q0, F1 );
+  wire   GNDI, VCCI, DI0_dly, CLK_dly, LSR_dly;
+
+  lut40014 GND_0( .A(GNDI), .B(GNDI), .C(GNDI), .D(GNDI), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40015 \inst_lcd_sender/inst_lcd_sender/VCC\001/BUF1/BUF1 ( .A(GNDI), 
+    .B(GNDI), .C(GNDI), .D(GNDI), .Z(F0));
+  vmuxregsre0016 \inst_lcd_sender/lcd_write.res_reg ( .D0(VCCI), .D1(DI0_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(LSR_dly), .Q(Q0));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (LSR => Q0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+    $width (posedge LSR, 0:0:0);
+    $width (negedge LSR, 0:0:0);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module lut40014 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h0000) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module lut40015 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'hFFFF) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module vmuxregsre0016 ( input D0, D1, SD, SP, CK, LSR, output Q );
+  wire   GATE;
+
+  AND2 INST50( .A(SP), .B(CK), .Z(GATE));
+  FL1S1D INST01( .D0(D0), .D1(D1), .CK(GATE), .SD(SD), .CD(LSR), .Q(Q));
+  defparam INST01.GSR = "DISABLED";
+endmodule
+
+module SLICE_9 ( input DI0, LSR, CLK, output F0, Q0, F1 );
+  wire   GNDI, VCCI, DI0_dly, CLK_dly, LSR_dly;
+
+  lut40015 VCC_0( .A(GNDI), .B(GNDI), .C(GNDI), .D(GNDI), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40015 \inst_lcd_sender/inst_lcd_sender/VCC\000/BUF1/BUF1 ( .A(GNDI), 
+    .B(GNDI), .C(GNDI), .D(GNDI), .Z(F0));
+  vmuxregsre0016 \inst_lcd_sender/lcd_write.res_lat ( .D0(VCCI), .D1(DI0_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(LSR_dly), .Q(Q0));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (LSR => Q0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+    $width (posedge LSR, 0:0:0);
+    $width (negedge LSR, 0:0:0);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module inst_lcd_sender_SLICE_10 ( input C1, B1, DI0, LSR, CLK, output F0, Q0, 
+    F1 );
+  wire   GNDI, VCCI, DI0_dly, CLK_dly, LSR_dly;
+
+  lut40017 \inst_lcd_sender/busy.res_lat_RNIU6B6 ( .A(GNDI), .B(B1), .C(C1), 
+    .D(GNDI), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40015 \inst_lcd_sender/VCC_0 ( .A(GNDI), .B(GNDI), .C(GNDI), .D(GNDI), 
+    .Z(F0));
+  vmuxregsre0016 \inst_lcd_sender/busy.res_lat ( .D0(VCCI), .D1(DI0_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(LSR_dly), .Q(Q0));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (LSR => Q0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+    $width (posedge LSR, 0:0:0);
+    $width (negedge LSR, 0:0:0);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module lut40017 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h3F3F) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module inst_lcd_sender_SLICE_11 ( input D1, C1, B1, D0, C0, B0, DI0, CLK, 
+    output F0, Q0, F1 );
+  wire   GNDI, VCCI, DI0_dly, CLK_dly;
+
+  lut40018 \inst_lcd_sender/PS_vivaz_state_0_RNI9NRD[0] ( .A(GNDI), .B(B1), 
+    .C(C1), .D(D1), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40018 \inst_lcd_sender/PS_vivaz_state_ret_RNO ( .A(GNDI), .B(B0), .C(C0), 
+    .D(D0), .Z(F0));
+  vmuxregsre0012 \inst_lcd_sender/PS_vivaz_state_ret ( .D0(VCCI), .D1(DI0_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(GNDI), .Q(Q0));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module lut40018 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'hFFFC) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module SLICE_12 ( input C1, B1, A1, D0, A0, DI0, CLK, output F0, Q0, F1 );
+  wire   GNDI, VCCI, DI0_dly, CLK_dly;
+
+  lut40019 un4_count_ac0_3( .A(A1), .B(B1), .C(C1), .D(GNDI), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40011 reset_startup_0( .A(A0), .B(GNDI), .C(GNDI), .D(D0), .Z(F0));
+  vmuxregsre0020 reset_startup( .D0(VCCI), .D1(DI0_dly), .SD(VCCI), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(GNDI), .Q(Q0));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module lut40019 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h8080) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module vmuxregsre0020 ( input D0, D1, SD, SP, CK, LSR, output Q );
+
+  FL1P3BX INST01( .D0(D0), .D1(D1), .SP(SP), .CK(CK), .SD(SD), .PD(LSR), .Q(Q));
+  defparam INST01.GSR = "DISABLED";
+endmodule
+
+module SLICE_13 ( input D1, C1, B1, A1, C0, B0, output F0, F1 );
+  wire   GNDI;
+
+  lut40021 un2_countlto3_0_RNIC6MJ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40022 un2_countlto3_0( .A(GNDI), .B(B0), .C(C0), .D(GNDI), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40021 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h8808) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module lut40022 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h0303) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module inst_lcd_sender_SLICE_14 ( input D1, B1, D0, B0, LSR, CLK, output F0, 
+    Q0, F1 );
+  wire   GNDI, VCCI, LSR_dly, CLK_dly;
+
+  lut40023 \inst_lcd_sender/lcd_write.res_lat_RNI3TRO_0 ( .A(GNDI), .B(B1), 
+    .C(GNDI), .D(D1), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40024 \inst_lcd_sender/lcd_write.res_lat_RNI3TRO ( .A(GNDI), .B(B0), 
+    .C(GNDI), .D(D0), .Z(F0));
+  vmuxregsre0025 \inst_lcd_sender/busy.res_reg_0 ( .D0(GNDI), .D1(VCCI), 
+    .SD(GNDI), .SP(VCCI), .CK(CLK_dly), .LSR(LSR_dly), .Q(Q0));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (LSR => Q0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+    $width (posedge LSR, 0:0:0);
+    $width (negedge LSR, 0:0:0);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module lut40023 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h0033) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module lut40024 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'hFFCC) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module vmuxregsre0025 ( input D0, D1, SD, SP, CK, LSR, output Q );
+  wire   GATE;
+
+  AND2 INST50( .A(SP), .B(CK), .Z(GATE));
+  FL1S1B INST01( .D0(D0), .D1(D1), .CK(GATE), .SD(SD), .PD(LSR), .Q(Q));
+  defparam INST01.GSR = "DISABLED";
+endmodule
+
+module leds_0_ ( input PADDO, output leds0 );
+  wire   GNDI;
+
+  xo2iobuf \leds_pad[0] ( .I(PADDO), .T(GNDI), .PAD(leds0));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => leds0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module xo2iobuf ( input I, T, output PAD );
+
+  OBZPD INST5( .I(I), .T(T), .O(PAD));
+endmodule
+
+module synch_rst ( input PADDO, output synch_rst );
+  wire   GNDI;
+
+  xo2iobuf synch_rst_pad( .I(PADDO), .T(GNDI), .PAD(synch_rst));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => synch_rst) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lcd_rs ( input PADDO, output lcd_rs );
+  wire   GNDI;
+
+  xo2iobuf lcd_rs_pad( .I(PADDO), .T(GNDI), .PAD(lcd_rs));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => lcd_rs) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lcd_reset ( input PADDO, output lcd_reset );
+  wire   GNDI;
+
+  xo2iobuf lcd_reset_pad( .I(PADDO), .T(GNDI), .PAD(lcd_reset));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => lcd_reset) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lcd_wr ( input PADDO, output lcd_wr );
+  wire   GNDI;
+
+  xo2iobuf lcd_wr_pad( .I(PADDO), .T(GNDI), .PAD(lcd_wr));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => lcd_wr) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lcd_LCDBus_15_ ( input PADDO, output lcdLCDBus15 );
+  wire   GNDI;
+
+  xo2iobuf \lcd_LCDBus_pad[15] ( .I(PADDO), .T(GNDI), .PAD(lcdLCDBus15));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => lcdLCDBus15) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lcd_LCDBus_14_ ( input PADDO, output lcdLCDBus14 );
+  wire   GNDI;
+
+  xo2iobuf \lcd_LCDBus_pad[14] ( .I(PADDO), .T(GNDI), .PAD(lcdLCDBus14));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => lcdLCDBus14) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lcd_LCDBus_13_ ( input PADDO, output lcdLCDBus13 );
+  wire   GNDI;
+
+  xo2iobuf \lcd_LCDBus_pad[13] ( .I(PADDO), .T(GNDI), .PAD(lcdLCDBus13));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => lcdLCDBus13) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lcd_LCDBus_12_ ( input PADDO, output lcdLCDBus12 );
+  wire   GNDI;
+
+  xo2iobuf \lcd_LCDBus_pad[12] ( .I(PADDO), .T(GNDI), .PAD(lcdLCDBus12));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => lcdLCDBus12) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lcd_LCDBus_11_ ( input PADDO, output lcdLCDBus11 );
+  wire   GNDI;
+
+  xo2iobuf \lcd_LCDBus_pad[11] ( .I(PADDO), .T(GNDI), .PAD(lcdLCDBus11));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => lcdLCDBus11) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lcd_LCDBus_10_ ( input PADDO, output lcdLCDBus10 );
+  wire   GNDI;
+
+  xo2iobuf \lcd_LCDBus_pad[10] ( .I(PADDO), .T(GNDI), .PAD(lcdLCDBus10));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => lcdLCDBus10) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lcd_LCDBus_9_ ( input PADDO, output lcdLCDBus9 );
+  wire   GNDI;
+
+  xo2iobuf \lcd_LCDBus_pad[9] ( .I(PADDO), .T(GNDI), .PAD(lcdLCDBus9));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => lcdLCDBus9) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lcd_LCDBus_8_ ( input PADDO, output lcdLCDBus8 );
+  wire   GNDI;
+
+  xo2iobuf \lcd_LCDBus_pad[8] ( .I(PADDO), .T(GNDI), .PAD(lcdLCDBus8));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => lcdLCDBus8) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lcd_LCDBus_7_ ( input PADDO, output lcdLCDBus7 );
+  wire   GNDI;
+
+  xo2iobuf \lcd_LCDBus_pad[7] ( .I(PADDO), .T(GNDI), .PAD(lcdLCDBus7));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => lcdLCDBus7) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lcd_LCDBus_6_ ( input PADDO, output lcdLCDBus6 );
+  wire   GNDI;
+
+  xo2iobuf \lcd_LCDBus_pad[6] ( .I(PADDO), .T(GNDI), .PAD(lcdLCDBus6));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => lcdLCDBus6) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lcd_LCDBus_5_ ( input PADDO, output lcdLCDBus5 );
+  wire   GNDI;
+
+  xo2iobuf \lcd_LCDBus_pad[5] ( .I(PADDO), .T(GNDI), .PAD(lcdLCDBus5));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => lcdLCDBus5) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lcd_LCDBus_4_ ( input PADDO, output lcdLCDBus4 );
+  wire   GNDI;
+
+  xo2iobuf \lcd_LCDBus_pad[4] ( .I(PADDO), .T(GNDI), .PAD(lcdLCDBus4));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => lcdLCDBus4) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lcd_LCDBus_3_ ( input PADDO, output lcdLCDBus3 );
+  wire   GNDI;
+
+  xo2iobuf \lcd_LCDBus_pad[3] ( .I(PADDO), .T(GNDI), .PAD(lcdLCDBus3));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => lcdLCDBus3) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lcd_LCDBus_2_ ( input PADDO, output lcdLCDBus2 );
+  wire   GNDI;
+
+  xo2iobuf \lcd_LCDBus_pad[2] ( .I(PADDO), .T(GNDI), .PAD(lcdLCDBus2));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => lcdLCDBus2) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lcd_LCDBus_1_ ( input PADDO, output lcdLCDBus1 );
+  wire   GNDI;
+
+  xo2iobuf \lcd_LCDBus_pad[1] ( .I(PADDO), .T(GNDI), .PAD(lcdLCDBus1));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => lcdLCDBus1) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lcd_LCDBus_0_ ( input PADDO, output lcdLCDBus0 );
+  wire   GNDI;
+
+  xo2iobuf \lcd_LCDBus_pad[0] ( .I(PADDO), .T(GNDI), .PAD(lcdLCDBus0));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => lcdLCDBus0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module leds_7_ ( input PADDO, output leds7 );
+  wire   GNDI;
+
+  xo2iobuf \leds_pad[7] ( .I(PADDO), .T(GNDI), .PAD(leds7));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => leds7) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module leds_6_ ( input PADDO, output leds6 );
+  wire   GNDI;
+
+  xo2iobuf \leds_pad[6] ( .I(PADDO), .T(GNDI), .PAD(leds6));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => leds6) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module leds_5_ ( input PADDO, output leds5 );
+  wire   GNDI;
+
+  xo2iobuf \leds_pad[5] ( .I(PADDO), .T(GNDI), .PAD(leds5));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => leds5) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module leds_4_ ( input PADDO, output leds4 );
+  wire   GNDI;
+
+  xo2iobuf \leds_pad[4] ( .I(PADDO), .T(GNDI), .PAD(leds4));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => leds4) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module leds_3_ ( input PADDO, output leds3 );
+  wire   GNDI;
+
+  xo2iobuf \leds_pad[3] ( .I(PADDO), .T(GNDI), .PAD(leds3));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => leds3) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module leds_2_ ( input PADDO, output leds2 );
+  wire   GNDI;
+
+  xo2iobuf \leds_pad[2] ( .I(PADDO), .T(GNDI), .PAD(leds2));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => leds2) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module leds_1_ ( input PADDO, output leds1 );
+  wire   GNDI;
+
+  xo2iobuf \leds_pad[1] ( .I(PADDO), .T(GNDI), .PAD(leds1));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => leds1) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module inst_clk ( output OSC );
+  wire   GNDI;
+
+  OSCH_B inst_clk_OSCH( .STDBY(GNDI), .OSC(OSC), .SEDSTDBY());
+  gnd DRIVEGND( .PWR0(GNDI));
+endmodule
+
+module OSCH_B ( input STDBY, output OSC, SEDSTDBY );
+
+  OSCH INST10( .STDBY(STDBY), .OSC(OSC), .SEDSTDBY(SEDSTDBY));
+  defparam INST10.NOM_FREQ = "20.46";
+endmodule
+
+module GSR_INST ( input GSRNET );
+
+  GSR5MODE GSR_INST_GSRMODE( .GSR(GSRNET));
+
+  specify
+  endspecify
+
+endmodule
+
+module GSR5MODE ( input GSR );
+  wire   GSRMODE;
+
+  INV INST10( .A(GSR), .Z(GSRMODE));
+  GSR INST20( .GSR(GSRMODE));
+endmodule

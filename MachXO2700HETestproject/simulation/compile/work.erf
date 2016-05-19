@@ -1,0 +1,249 @@
+WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
+MESSAGE "File: z:\GITHUB\Lattice\MachXO2700HETestproject\impl1\MachXO_7000HE_Testproject_impl1_vho.vho" 
+BEGINPROGRESS z:\GITHUB\Lattice\MachXO2700HETestproject\impl1\MachXO_7000HE_Testproject_impl1_vho.vho
+MESSAGE "Compile Entity "lut4"" 
+MESSAGE "Compile Architecture "Structure" of Entity "lut4"" 
+MESSAGE "Compile Entity "lut40001"" 
+MESSAGE "Compile Architecture "Structure" of Entity "lut40001"" 
+MESSAGE "Compile Entity "vmuxregsre"" 
+MESSAGE "Compile Architecture "Structure" of Entity "vmuxregsre"" 
+UPDATEPROGRESS 1
+MESSAGE "Compile Entity "vcc"" 
+MESSAGE "Compile Architecture "Structure" of Entity "vcc"" 
+MESSAGE "Compile Entity "gnd"" 
+MESSAGE "Compile Architecture "Structure" of Entity "gnd"" 
+MESSAGE "Compile Entity "vmuxregsre0002"" 
+MESSAGE "Compile Architecture "Structure" of Entity "vmuxregsre0002"" 
+MESSAGE "Compile Entity "SLICE_0"" 
+UPDATEPROGRESS 2
+MESSAGE "Compile Architecture "Structure" of Entity "SLICE_0"" 
+UPDATEPROGRESS 3
+UPDATEPROGRESS 5
+MESSAGE "Compile Entity "lut40003"" 
+UPDATEPROGRESS 6
+MESSAGE "Compile Architecture "Structure" of Entity "lut40003"" 
+MESSAGE "Compile Entity "lut40004"" 
+MESSAGE "Compile Architecture "Structure" of Entity "lut40004"" 
+MESSAGE "Compile Entity "SLICE_1"" 
+UPDATEPROGRESS 7
+MESSAGE "Compile Architecture "Structure" of Entity "SLICE_1"" 
+UPDATEPROGRESS 8
+UPDATEPROGRESS 9
+MESSAGE "Compile Entity "lut40005"" 
+MESSAGE "Compile Architecture "Structure" of Entity "lut40005"" 
+UPDATEPROGRESS 10
+MESSAGE "Compile Entity "SLICE_2"" 
+MESSAGE "Compile Architecture "Structure" of Entity "SLICE_2"" 
+UPDATEPROGRESS 11
+UPDATEPROGRESS 12
+MESSAGE "Compile Entity "SLICE_4"" 
+UPDATEPROGRESS 13
+MESSAGE "Compile Architecture "Structure" of Entity "SLICE_4"" 
+UPDATEPROGRESS 14
+UPDATEPROGRESS 15
+MESSAGE "Compile Entity "SLICE_5"" 
+UPDATEPROGRESS 16
+MESSAGE "Compile Architecture "Structure" of Entity "SLICE_5"" 
+UPDATEPROGRESS 17
+UPDATEPROGRESS 18
+MESSAGE "Compile Entity "SLICE_6"" 
+UPDATEPROGRESS 19
+MESSAGE "Compile Architecture "Structure" of Entity "SLICE_6"" 
+UPDATEPROGRESS 20
+UPDATEPROGRESS 21
+MESSAGE "Compile Entity "SLICE_7"" 
+UPDATEPROGRESS 22
+MESSAGE "Compile Architecture "Structure" of Entity "SLICE_7"" 
+UPDATEPROGRESS 23
+UPDATEPROGRESS 24
+UPDATEPROGRESS 25
+MESSAGE "Compile Entity "SLICE_11"" 
+MESSAGE "Compile Architecture "Structure" of Entity "SLICE_11"" 
+UPDATEPROGRESS 26
+UPDATEPROGRESS 27
+MESSAGE "Compile Entity "lut40006"" 
+MESSAGE "Compile Architecture "Structure" of Entity "lut40006"" 
+MESSAGE "Compile Entity "SLICE_12"" 
+UPDATEPROGRESS 28
+MESSAGE "Compile Architecture "Structure" of Entity "SLICE_12"" 
+UPDATEPROGRESS 29
+UPDATEPROGRESS 30
+MESSAGE "Compile Entity "lut40007"" 
+MESSAGE "Compile Architecture "Structure" of Entity "lut40007"" 
+UPDATEPROGRESS 31
+MESSAGE "Compile Entity "lut40008"" 
+MESSAGE "Compile Architecture "Structure" of Entity "lut40008"" 
+MESSAGE "Compile Entity "SLICE_13"" 
+UPDATEPROGRESS 32
+MESSAGE "Compile Architecture "Structure" of Entity "SLICE_13"" 
+UPDATEPROGRESS 33
+UPDATEPROGRESS 34
+UPDATEPROGRESS 35
+MESSAGE "Compile Entity "lut40009"" 
+MESSAGE "Compile Architecture "Structure" of Entity "lut40009"" 
+MESSAGE "Compile Entity "lut40010"" 
+UPDATEPROGRESS 36
+MESSAGE "Compile Architecture "Structure" of Entity "lut40010"" 
+MESSAGE "Compile Entity "SLICE_14"" 
+UPDATEPROGRESS 37
+MESSAGE "Compile Architecture "Structure" of Entity "SLICE_14"" 
+UPDATEPROGRESS 38
+UPDATEPROGRESS 39
+UPDATEPROGRESS 40
+MESSAGE "Compile Entity "SLICE_21"" 
+UPDATEPROGRESS 41
+MESSAGE "Compile Architecture "Structure" of Entity "SLICE_21"" 
+UPDATEPROGRESS 43
+MESSAGE "Compile Entity "SLICE_22"" 
+UPDATEPROGRESS 44
+MESSAGE "Compile Architecture "Structure" of Entity "SLICE_22"" 
+UPDATEPROGRESS 45
+UPDATEPROGRESS 46
+MESSAGE "Compile Entity "xo2iobuf"" 
+MESSAGE "Compile Architecture "Structure" of Entity "xo2iobuf"" 
+UPDATEPROGRESS 47
+MESSAGE "Compile Entity "lcd_bus_15_B"" 
+MESSAGE "Compile Architecture "Structure" of Entity "lcd_bus_15_B"" 
+UPDATEPROGRESS 48
+MESSAGE "Compile Entity "lcd_bus_11_B"" 
+MESSAGE "Compile Architecture "Structure" of Entity "lcd_bus_11_B"" 
+UPDATEPROGRESS 49
+MESSAGE "Compile Entity "lcd_bus_12_B"" 
+MESSAGE "Compile Architecture "Structure" of Entity "lcd_bus_12_B"" 
+UPDATEPROGRESS 50
+MESSAGE "Compile Entity "lcd_bus_13_B"" 
+MESSAGE "Compile Architecture "Structure" of Entity "lcd_bus_13_B"" 
+UPDATEPROGRESS 51
+MESSAGE "Compile Entity "lcd_bus_14_B"" 
+MESSAGE "Compile Architecture "Structure" of Entity "lcd_bus_14_B"" 
+UPDATEPROGRESS 52
+MESSAGE "Compile Entity "lcd_bus_10_B"" 
+MESSAGE "Compile Architecture "Structure" of Entity "lcd_bus_10_B"" 
+UPDATEPROGRESS 53
+MESSAGE "Compile Entity "lcd_bus_9_B"" 
+MESSAGE "Compile Architecture "Structure" of Entity "lcd_bus_9_B"" 
+UPDATEPROGRESS 54
+MESSAGE "Compile Entity "lcd_bus_8_B"" 
+MESSAGE "Compile Architecture "Structure" of Entity "lcd_bus_8_B"" 
+UPDATEPROGRESS 55
+MESSAGE "Compile Entity "lcd_bus_7_B"" 
+MESSAGE "Compile Architecture "Structure" of Entity "lcd_bus_7_B"" 
+UPDATEPROGRESS 56
+MESSAGE "Compile Entity "lcd_bus_6_B"" 
+UPDATEPROGRESS 57
+MESSAGE "Compile Architecture "Structure" of Entity "lcd_bus_6_B"" 
+MESSAGE "Compile Entity "lcd_bus_5_B"" 
+UPDATEPROGRESS 58
+MESSAGE "Compile Architecture "Structure" of Entity "lcd_bus_5_B"" 
+MESSAGE "Compile Entity "lcd_bus_4_B"" 
+UPDATEPROGRESS 59
+MESSAGE "Compile Architecture "Structure" of Entity "lcd_bus_4_B"" 
+UPDATEPROGRESS 60
+MESSAGE "Compile Entity "lcd_bus_3_B"" 
+MESSAGE "Compile Architecture "Structure" of Entity "lcd_bus_3_B"" 
+UPDATEPROGRESS 61
+MESSAGE "Compile Entity "lcd_bus_2_B"" 
+MESSAGE "Compile Architecture "Structure" of Entity "lcd_bus_2_B"" 
+UPDATEPROGRESS 62
+MESSAGE "Compile Entity "lcd_bus_1_B"" 
+MESSAGE "Compile Architecture "Structure" of Entity "lcd_bus_1_B"" 
+UPDATEPROGRESS 63
+MESSAGE "Compile Entity "lcd_bus_0_B"" 
+MESSAGE "Compile Architecture "Structure" of Entity "lcd_bus_0_B"" 
+UPDATEPROGRESS 64
+MESSAGE "Compile Entity "lcd_writeB"" 
+MESSAGE "Compile Architecture "Structure" of Entity "lcd_writeB"" 
+UPDATEPROGRESS 65
+MESSAGE "Compile Entity "lcd_rsB"" 
+MESSAGE "Compile Architecture "Structure" of Entity "lcd_rsB"" 
+UPDATEPROGRESS 66
+MESSAGE "Compile Entity "busyB"" 
+MESSAGE "Compile Architecture "Structure" of Entity "busyB"" 
+UPDATEPROGRESS 67
+MESSAGE "Compile Entity "xo2iobuf0011"" 
+MESSAGE "Compile Architecture "Structure" of Entity "xo2iobuf0011"" 
+MESSAGE "Compile Entity "clkB"" 
+UPDATEPROGRESS 68
+MESSAGE "Compile Architecture "Structure" of Entity "clkB"" 
+UPDATEPROGRESS 69
+MESSAGE "Compile Entity "rstB"" 
+MESSAGE "Compile Architecture "Structure" of Entity "rstB"" 
+UPDATEPROGRESS 70
+MESSAGE "Compile Entity "goB"" 
+MESSAGE "Compile Architecture "Structure" of Entity "goB"" 
+UPDATEPROGRESS 71
+MESSAGE "Compile Entity "data1Command0B"" 
+MESSAGE "Compile Architecture "Structure" of Entity "data1Command0B"" 
+UPDATEPROGRESS 72
+MESSAGE "Compile Entity "payload_15_B"" 
+UPDATEPROGRESS 73
+MESSAGE "Compile Architecture "Structure" of Entity "payload_15_B"" 
+UPDATEPROGRESS 74
+MESSAGE "Compile Entity "payload_14_B"" 
+MESSAGE "Compile Architecture "Structure" of Entity "payload_14_B"" 
+UPDATEPROGRESS 75
+MESSAGE "Compile Entity "payload_13_B"" 
+MESSAGE "Compile Architecture "Structure" of Entity "payload_13_B"" 
+UPDATEPROGRESS 76
+MESSAGE "Compile Entity "payload_12_B"" 
+MESSAGE "Compile Architecture "Structure" of Entity "payload_12_B"" 
+UPDATEPROGRESS 77
+MESSAGE "Compile Entity "payload_11_B"" 
+UPDATEPROGRESS 78
+MESSAGE "Compile Architecture "Structure" of Entity "payload_11_B"" 
+UPDATEPROGRESS 79
+MESSAGE "Compile Entity "payload_10_B"" 
+MESSAGE "Compile Architecture "Structure" of Entity "payload_10_B"" 
+UPDATEPROGRESS 80
+MESSAGE "Compile Entity "payload_9_B"" 
+MESSAGE "Compile Architecture "Structure" of Entity "payload_9_B"" 
+UPDATEPROGRESS 81
+MESSAGE "Compile Entity "payload_8_B"" 
+MESSAGE "Compile Architecture "Structure" of Entity "payload_8_B"" 
+UPDATEPROGRESS 82
+MESSAGE "Compile Entity "payload_7_B"" 
+UPDATEPROGRESS 83
+MESSAGE "Compile Architecture "Structure" of Entity "payload_7_B"" 
+UPDATEPROGRESS 84
+MESSAGE "Compile Entity "payload_6_B"" 
+MESSAGE "Compile Architecture "Structure" of Entity "payload_6_B"" 
+UPDATEPROGRESS 85
+MESSAGE "Compile Entity "payload_5_B"" 
+MESSAGE "Compile Architecture "Structure" of Entity "payload_5_B"" 
+UPDATEPROGRESS 86
+MESSAGE "Compile Entity "payload_4_B"" 
+MESSAGE "Compile Architecture "Structure" of Entity "payload_4_B"" 
+UPDATEPROGRESS 87
+MESSAGE "Compile Entity "payload_3_B"" 
+UPDATEPROGRESS 88
+MESSAGE "Compile Architecture "Structure" of Entity "payload_3_B"" 
+UPDATEPROGRESS 89
+MESSAGE "Compile Entity "payload_2_B"" 
+MESSAGE "Compile Architecture "Structure" of Entity "payload_2_B"" 
+UPDATEPROGRESS 90
+MESSAGE "Compile Entity "payload_1_B"" 
+MESSAGE "Compile Architecture "Structure" of Entity "payload_1_B"" 
+UPDATEPROGRESS 91
+MESSAGE "Compile Entity "payload_0_B"" 
+MESSAGE "Compile Architecture "Structure" of Entity "payload_0_B"" 
+UPDATEPROGRESS 92
+MESSAGE "Compile Entity "GSR5MODE"" 
+UPDATEPROGRESS 93
+MESSAGE "Compile Architecture "Structure" of Entity "GSR5MODE"" 
+MESSAGE "Compile Entity "GSR_INSTB"" 
+MESSAGE "Compile Architecture "Structure" of Entity "GSR_INSTB"" 
+UPDATEPROGRESS 94
+MESSAGE "Compile Entity "lcd_sender"" 
+MESSAGE "Compile Architecture "Structure" of Entity "lcd_sender"" 
+UPDATEPROGRESS 95
+UPDATEPROGRESS 96
+UPDATEPROGRESS 97
+UPDATEPROGRESS 98
+UPDATEPROGRESS 99
+MESSAGE "Compile Configuration "Structure_CON"" 
+UPDATEPROGRESS 100
+ENDPROGRESS z:\GITHUB\Lattice\MachXO2700HETestproject\impl1\MachXO_7000HE_Testproject_impl1_vho.vho
+MESSAGE "File: z:\GITHUB\Lattice\MachXO2700HETestproject\MachXO_7000HE_Testproject_tb.vhd" 
+MESSAGE "Compile Entity "testbench"" 
+MESSAGE "Compile Architecture "behavior" of Entity "testbench"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  1.0 [s]" 

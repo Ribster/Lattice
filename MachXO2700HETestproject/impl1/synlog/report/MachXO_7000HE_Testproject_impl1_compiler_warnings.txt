@@ -1,0 +1,6 @@
+@W: CD277 :"Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_wrapper.vhd":33:2:33:3|Port direction mismatch between component and entity
+@W: CG296 :"Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_wrapper.vhd":55:1:55:7|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_wrapper.vhd":60:17:60:18|Referenced variable go is not in sensitivity list
+@W: CL240 :"Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_sender.vhd":14:2:14:10|lcd_reset is not assigned a value (floating) -- simulation mismatch possible. 
+@W: CL249 :"Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_sender.vhd":61:2:61:3|Initial value is not supported on state machine PS_vivaz_state
+

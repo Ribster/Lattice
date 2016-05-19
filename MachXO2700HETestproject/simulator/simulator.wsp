@@ -1,0 +1,15 @@
+[COMPILESTATUS|.\..\impl1\MachXO_7000HE_Testproject_impl1_vho.vho]
+FileTimeLow=30519548
+Status=Compiled
+[COMPILESTATUS|.\..\MachXO_7000HE_Testproject_tb.vhd]
+FileTimeLow=30519547
+Status=Compiled
+[COMPILESTATUS|.\..\impl1\MachXO_7000HE_Testproject_impl1_vho.sdf]
+FileTimeLow=30519547
+Status=Modified
+[COMPILESTATUS|.\..\untitled.asdb]
+FileTimeLow=30519547
+Status=Modified
+[COMPILESTATUS|.\..\untitled.awc]
+FileTimeLow=30519547
+Status=Modified

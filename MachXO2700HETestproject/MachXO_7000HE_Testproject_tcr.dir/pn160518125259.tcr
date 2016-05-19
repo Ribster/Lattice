@@ -1,0 +1,49 @@
+#Start recording tcl command: 5/18/2016 10:24:21
+#Project Location: Z:/GITHUB/Lattice/MachXO2700HETestproject; Project name: MachXO_7000HE_Testproject
+prj_project new -name "MachXO_7000HE_Testproject" -impl "impl1" -dev LCMXO2-7000HE-5TG144C -synthesis "lse"
+prj_project save
+pgr_project close
+prj_src add "Z:/GITHUB/Lattice/MachXO2700HETestproject/main.vhd"
+prj_run Synthesis -impl impl1
+prj_run Export -impl impl1
+source "Z:/GITHUB/Lattice/MachXO2700HETestproject/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "lcd_sender_tb.vhd"
+prj_src remove "Z:/GITHUB/Lattice/MachXO2700HETestproject/lcd_sender_tb.vhd"
+source "Z:/GITHUB/Lattice/MachXO2700HETestproject/hdle_generate_Symbol.tcl"
+source "Z:/GITHUB/Lattice/MachXO2700HETestproject/hdle_generate_Symbol.tcl"
+prj_run Export -impl impl1
+prj_src add "Z:/GITHUB/Lattice/MachXO2700HETestproject/simulation/simulation.spf"
+source "Z:/GITHUB/Lattice/MachXO2700HETestproject/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "MachXO_7000HE_Testproject_tb.vhd"
+prj_run Export -impl impl1
+prj_src add "Z:/GITHUB/Lattice/MachXO2700HETestproject/simulation/simulation.spf"
+prj_run PAR -impl impl1
+prj_src add "Z:/GITHUB/Lattice/MachXO2700HETestproject/simulation/simulation.spf"
+prj_run Export -impl impl1
+prj_run Export -impl impl1
+prj_run Export -impl impl1
+prj_run Export -impl impl1
+prj_run Export -impl impl1
+prj_run Export -impl impl1
+prj_run Synthesis -impl impl1 -task Synplify_Synthesis
+prj_src remove "Z:/GITHUB/Lattice/MachXO2700HETestproject/MachXO_7000HE_Testproject_tb.vhd"
+prj_run Synthesis -impl impl1 -task Synplify_Synthesis
+prj_src add "Z:/GITHUB/Lattice/MachXO2700HETestproject/lcd_sender.vhd"
+prj_src add "Z:/GITHUB/Lattice/MachXO2700HETestproject/lcd_wrapper.vhd"
+prj_run Synthesis -impl impl1
+prj_run PAR -impl impl1
+prj_src remove "Z:/GITHUB/Lattice/MachXO2700HETestproject/main.vhd"
+prj_run Export -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+source "Z:/GITHUB/Lattice/MachXO2700HETestproject/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "MachXO_7000HE_Testproject_tb.vhd"
+prj_run Export -impl impl1
+prj_src add "Z:/GITHUB/Lattice/MachXO2700HETestproject/simulation/simulation.spf"
+prj_run Export -impl impl1
+prj_run Export -impl impl1
+prj_project save
+prj_project close
+#Stop recording: 5/18/2016 12:52:59

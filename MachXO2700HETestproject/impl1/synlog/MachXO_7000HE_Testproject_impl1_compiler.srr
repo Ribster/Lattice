@@ -1,0 +1,66 @@
+Synopsys HDL Compiler, version comp201509p1, Build 145R, built Dec  9 2015
+@N|Running in 64-bit mode
+Copyright (C) 1994-2015 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+Synopsys VHDL Compiler, version comp201509p1, Build 145R, built Dec  9 2015
+@N|Running in 64-bit mode
+Copyright (C) 1994-2015 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@N: CD720 :"C:\lscc\diamond\3.7_x64\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_wrapper.vhd":8:7:8:17|Top entity is set to lcd_wrapper.
+File C:\lscc\diamond\3.7_x64\synpbase\lib\vhd\math_real.vhd changed - recompiling
+File C:\lscc\diamond\3.7_x64\synpbase\lib\cpld\lattice.vhd changed - recompiling
+File Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_wrapper.vhd changed - recompiling
+VHDL syntax check successful!
+File Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_wrapper.vhd changed - recompiling
+@N: CD630 :"Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_wrapper.vhd":8:7:8:17|Synthesizing work.lcd_wrapper.beh_lcd_wrapper.
+@W: CD277 :"Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_wrapper.vhd":33:2:33:3|Port direction mismatch between component and entity
+@W: CG296 :"Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_wrapper.vhd":55:1:55:7|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_wrapper.vhd":60:17:60:18|Referenced variable go is not in sensitivity list
+@N: CD630 :"Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_sender.vhd":8:7:8:16|Synthesizing work.lcd_sender.beh_lcd_sender.
+@N: CD231 :"Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_sender.vhd":24:17:24:18|Using onehot encoding for type state_type (undefined="10000000")
+Post processing for work.lcd_sender.beh_lcd_sender
+@W: CL240 :"Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_sender.vhd":14:2:14:10|lcd_reset is not assigned a value (floating) -- simulation mismatch possible. 
+Post processing for work.lcd_wrapper.beh_lcd_wrapper
+@N: CL201 :"Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_sender.vhd":61:2:61:3|Trying to extract state machine for register PS_vivaz_state.
+Extracted state machine for register PS_vivaz_state
+State machine has 7 reachable states with original encodings of:
+   00000010
+   00000100
+   00001000
+   00010000
+   00100000
+   01000000
+   10000000
+@W: CL249 :"Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_sender.vhd":61:2:61:3|Initial value is not supported on state machine PS_vivaz_state
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 74MB peak: 76MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Wed May 18 12:38:05 2016
+
+###########################################################]
+Synopsys Netlist Linker, version comp201509p1, Build 145R, built Dec  9 2015
+@N|Running in 64-bit mode
+File Z:\GITHUB\Lattice\MachXO2700HETestproject\impl1\synwork\layer0.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Wed May 18 12:38:05 2016
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Wed May 18 12:38:05 2016
+
+###########################################################]

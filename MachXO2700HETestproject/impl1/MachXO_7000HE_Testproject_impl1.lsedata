@@ -1,0 +1,729 @@
+<top name = "lcd_sender"  library = "work"  arch = "RTL"  entry = "VHDL">
+
+<clocks>
+    <clockitem name = "clk"  type = "port" />
+</clocks>
+
+<!--
+    //=============================================================
+    //  Number of Clocks processed: 1
+    //
+    //  If a clock cannot be found in the top level pins section,
+    //  that means it is an internal clock.
+    //
+    //=============================================================
+-->
+
+<library name = "work">
+
+<unit name = "lcd_sender">
+
+    <!--
+        Top Level Pins: 39
+    -->
+
+    <pins>
+        <pitem  name = "clk"  direction = "in"  />
+        <pitem  name = "rst"  direction = "in"  />
+        <pitem  name = "lcd_bus[15]"  direction = "inout"  />
+        <pitem  name = "lcd_bus[14]"  direction = "inout"  />
+        <pitem  name = "lcd_bus[13]"  direction = "inout"  />
+        <pitem  name = "lcd_bus[12]"  direction = "inout"  />
+        <pitem  name = "lcd_bus[11]"  direction = "inout"  />
+        <pitem  name = "lcd_bus[10]"  direction = "inout"  />
+        <pitem  name = "lcd_bus[9]"  direction = "inout"  />
+        <pitem  name = "lcd_bus[8]"  direction = "inout"  />
+        <pitem  name = "lcd_bus[7]"  direction = "inout"  />
+        <pitem  name = "lcd_bus[6]"  direction = "inout"  />
+        <pitem  name = "lcd_bus[5]"  direction = "inout"  />
+        <pitem  name = "lcd_bus[4]"  direction = "inout"  />
+        <pitem  name = "lcd_bus[3]"  direction = "inout"  />
+        <pitem  name = "lcd_bus[2]"  direction = "inout"  />
+        <pitem  name = "lcd_bus[1]"  direction = "inout"  />
+        <pitem  name = "lcd_bus[0]"  direction = "inout"  />
+        <pitem  name = "lcd_write"  direction = "out"  />
+        <pitem  name = "lcd_rs"  direction = "out"  />
+        <pitem  name = "go"  direction = "in"  />
+        <pitem  name = "data1Command0"  direction = "in"  />
+        <pitem  name = "busy"  direction = "inout"  />
+        <pitem  name = "payload[15]"  direction = "in"  />
+        <pitem  name = "payload[14]"  direction = "in"  />
+        <pitem  name = "payload[13]"  direction = "in"  />
+        <pitem  name = "payload[12]"  direction = "in"  />
+        <pitem  name = "payload[11]"  direction = "in"  />
+        <pitem  name = "payload[10]"  direction = "in"  />
+        <pitem  name = "payload[9]"  direction = "in"  />
+        <pitem  name = "payload[8]"  direction = "in"  />
+        <pitem  name = "payload[7]"  direction = "in"  />
+        <pitem  name = "payload[6]"  direction = "in"  />
+        <pitem  name = "payload[5]"  direction = "in"  />
+        <pitem  name = "payload[4]"  direction = "in"  />
+        <pitem  name = "payload[3]"  direction = "in"  />
+        <pitem  name = "payload[2]"  direction = "in"  />
+        <pitem  name = "payload[1]"  direction = "in"  />
+        <pitem  name = "payload[0]"  direction = "in"  />
+    </pins>
+
+    <!--
+        Instances in netlist: 16
+    -->
+
+    <instance  name = "lcd_write_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "c"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "lcd_write"  />
+        <nitem  name = "n69"  />
+        <nitem  name = "go_managed"  />
+        <nitem  name = "lcd_write_N_24"  />
+        </nets>
+    </instance>
+
+    <instance  name = "busy_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "c"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "busy"  />
+        <nitem  name = "pwr"  />
+        <nitem  name = "go_managed"  />
+        <nitem  name = "busy_N_28"  />
+        </nets>
+    </instance>
+
+    <instance  name = "lcd_rs_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "c"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "lcd_rs"  />
+        <nitem  name = "data1Command0"  />
+        <nitem  name = "go_managed"  />
+        <nitem  name = "lcd_rs_N_26"  />
+        </nets>
+    </instance>
+
+    <instance  name = "mux_10"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "d0[2]"  direction = "in"  />
+        <pitem  name = "d0[1]"  direction = "in"  />
+        <pitem  name = "d0[0]"  direction = "in"  />
+        <pitem  name = "d1[2]"  direction = "in"  />
+        <pitem  name = "d1[1]"  direction = "in"  />
+        <pitem  name = "d1[0]"  direction = "in"  />
+        <pitem  name = "cond"  direction = "in"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "PS_vivaz_state[2]"  />
+        <nitem  name = "PS_vivaz_state[1]"  />
+        <nitem  name = "PS_vivaz_state[0]"  />
+        <nitem  name = "n69"  />
+        <nitem  name = "pwr"  />
+        <nitem  name = "go_managed"  />
+        <nitem  name = "PS_vivaz_state_2__N_20[2]"  />
+        <nitem  name = "PS_vivaz_state_2__N_20[1]"  />
+        <nitem  name = "PS_vivaz_state_2__N_20[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "PS_vivaz_state_2__I_0_35"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "sel[2]"  direction = "in"  />
+        <pitem  name = "sel[1]"  direction = "in"  />
+        <pitem  name = "sel[0]"  direction = "in"  />
+        <pitem  name = "data[7]"  direction = "in"  />
+        <pitem  name = "data[6]"  direction = "in"  />
+        <pitem  name = "data[5]"  direction = "in"  />
+        <pitem  name = "data[4]"  direction = "in"  />
+        <pitem  name = "data[3]"  direction = "in"  />
+        <pitem  name = "data[2]"  direction = "in"  />
+        <pitem  name = "data[1]"  direction = "in"  />
+        <pitem  name = "data[0]"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "PS_vivaz_state[2]"  />
+        <nitem  name = "PS_vivaz_state[1]"  />
+        <nitem  name = "PS_vivaz_state[0]"  />
+        <nitem  name = "n69"  />
+        <nitem  name = "lcd_write"  />
+        <nitem  name = "pwr"  />
+        <nitem  name = "lcd_write_N_24"  />
+        <nitem  name = "lcd_write_N_23"  />
+        </nets>
+    </instance>
+
+    <instance  name = "PS_vivaz_state_2__I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "sel[2]"  direction = "in"  />
+        <pitem  name = "sel[1]"  direction = "in"  />
+        <pitem  name = "sel[0]"  direction = "in"  />
+        <pitem  name = "data[7]"  direction = "in"  />
+        <pitem  name = "data[6]"  direction = "in"  />
+        <pitem  name = "data[5]"  direction = "in"  />
+        <pitem  name = "data[4]"  direction = "in"  />
+        <pitem  name = "data[3]"  direction = "in"  />
+        <pitem  name = "data[2]"  direction = "in"  />
+        <pitem  name = "data[1]"  direction = "in"  />
+        <pitem  name = "data[0]"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "PS_vivaz_state[2]"  />
+        <nitem  name = "PS_vivaz_state[1]"  />
+        <nitem  name = "PS_vivaz_state[0]"  />
+        <nitem  name = "n69"  />
+        <nitem  name = "busy"  />
+        <nitem  name = "busy_N_28"  />
+        <nitem  name = "busy_N_27"  />
+        </nets>
+    </instance>
+
+    <instance  name = "PS_vivaz_state_2__I_0_36"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "sel[2]"  direction = "in"  />
+        <pitem  name = "sel[1]"  direction = "in"  />
+        <pitem  name = "sel[0]"  direction = "in"  />
+        <pitem  name = "data[7]"  direction = "in"  />
+        <pitem  name = "data[6]"  direction = "in"  />
+        <pitem  name = "data[5]"  direction = "in"  />
+        <pitem  name = "data[4]"  direction = "in"  />
+        <pitem  name = "data[3]"  direction = "in"  />
+        <pitem  name = "data[2]"  direction = "in"  />
+        <pitem  name = "data[1]"  direction = "in"  />
+        <pitem  name = "data[0]"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "PS_vivaz_state[2]"  />
+        <nitem  name = "PS_vivaz_state[1]"  />
+        <nitem  name = "PS_vivaz_state[0]"  />
+        <nitem  name = "lcd_rs"  />
+        <nitem  name = "lcd_rs_N_26"  />
+        <nitem  name = "lcd_rs_N_25"  />
+        </nets>
+    </instance>
+
+    <instance  name = "PS_vivaz_state_2__I_0_33"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "sel[2]"  direction = "in"  />
+        <pitem  name = "sel[1]"  direction = "in"  />
+        <pitem  name = "sel[0]"  direction = "in"  />
+        <pitem  name = "data[23]"  direction = "in"  />
+        <pitem  name = "data[22]"  direction = "in"  />
+        <pitem  name = "data[21]"  direction = "in"  />
+        <pitem  name = "data[20]"  direction = "in"  />
+        <pitem  name = "data[19]"  direction = "in"  />
+        <pitem  name = "data[18]"  direction = "in"  />
+        <pitem  name = "data[17]"  direction = "in"  />
+        <pitem  name = "data[16]"  direction = "in"  />
+        <pitem  name = "data[15]"  direction = "in"  />
+        <pitem  name = "data[14]"  direction = "in"  />
+        <pitem  name = "data[13]"  direction = "in"  />
+        <pitem  name = "data[12]"  direction = "in"  />
+        <pitem  name = "data[11]"  direction = "in"  />
+        <pitem  name = "data[10]"  direction = "in"  />
+        <pitem  name = "data[9]"  direction = "in"  />
+        <pitem  name = "data[8]"  direction = "in"  />
+        <pitem  name = "data[7]"  direction = "in"  />
+        <pitem  name = "data[6]"  direction = "in"  />
+        <pitem  name = "data[5]"  direction = "in"  />
+        <pitem  name = "data[4]"  direction = "in"  />
+        <pitem  name = "data[3]"  direction = "in"  />
+        <pitem  name = "data[2]"  direction = "in"  />
+        <pitem  name = "data[1]"  direction = "in"  />
+        <pitem  name = "data[0]"  direction = "in"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "PS_vivaz_state[2]"  />
+        <nitem  name = "PS_vivaz_state[1]"  />
+        <nitem  name = "PS_vivaz_state[0]"  />
+        <nitem  name = "n69"  />
+        <nitem  name = "pwr"  />
+        <nitem  name = "PS_vivaz_state_2__N_20[2]"  />
+        <nitem  name = "PS_vivaz_state_2__N_20[1]"  />
+        <nitem  name = "PS_vivaz_state_2__N_20[0]"  />
+        <nitem  name = "PS_vivaz_state_2__N_17[2]"  />
+        <nitem  name = "PS_vivaz_state_2__N_17[1]"  />
+        <nitem  name = "PS_vivaz_state_2__N_17[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "PS_vivaz_state_2__I_0_34"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "sel[2]"  direction = "in"  />
+        <pitem  name = "sel[1]"  direction = "in"  />
+        <pitem  name = "sel[0]"  direction = "in"  />
+        <pitem  name = "data[127]"  direction = "in"  />
+        <pitem  name = "data[126]"  direction = "in"  />
+        <pitem  name = "data[125]"  direction = "in"  />
+        <pitem  name = "data[124]"  direction = "in"  />
+        <pitem  name = "data[123]"  direction = "in"  />
+        <pitem  name = "data[122]"  direction = "in"  />
+        <pitem  name = "data[121]"  direction = "in"  />
+        <pitem  name = "data[120]"  direction = "in"  />
+        <pitem  name = "data[119]"  direction = "in"  />
+        <pitem  name = "data[118]"  direction = "in"  />
+        <pitem  name = "data[117]"  direction = "in"  />
+        <pitem  name = "data[116]"  direction = "in"  />
+        <pitem  name = "data[115]"  direction = "in"  />
+        <pitem  name = "data[114]"  direction = "in"  />
+        <pitem  name = "data[113]"  direction = "in"  />
+        <pitem  name = "data[112]"  direction = "in"  />
+        <pitem  name = "data[111]"  direction = "in"  />
+        <pitem  name = "data[110]"  direction = "in"  />
+        <pitem  name = "data[109]"  direction = "in"  />
+        <pitem  name = "data[108]"  direction = "in"  />
+        <pitem  name = "data[107]"  direction = "in"  />
+        <pitem  name = "data[106]"  direction = "in"  />
+        <pitem  name = "data[105]"  direction = "in"  />
+        <pitem  name = "data[104]"  direction = "in"  />
+        <pitem  name = "data[103]"  direction = "in"  />
+        <pitem  name = "data[102]"  direction = "in"  />
+        <pitem  name = "data[101]"  direction = "in"  />
+        <pitem  name = "data[100]"  direction = "in"  />
+        <pitem  name = "data[99]"  direction = "in"  />
+        <pitem  name = "data[98]"  direction = "in"  />
+        <pitem  name = "data[97]"  direction = "in"  />
+        <pitem  name = "data[96]"  direction = "in"  />
+        <pitem  name = "data[95]"  direction = "in"  />
+        <pitem  name = "data[94]"  direction = "in"  />
+        <pitem  name = "data[93]"  direction = "in"  />
+        <pitem  name = "data[92]"  direction = "in"  />
+        <pitem  name = "data[91]"  direction = "in"  />
+        <pitem  name = "data[90]"  direction = "in"  />
+        <pitem  name = "data[89]"  direction = "in"  />
+        <pitem  name = "data[88]"  direction = "in"  />
+        <pitem  name = "data[87]"  direction = "in"  />
+        <pitem  name = "data[86]"  direction = "in"  />
+        <pitem  name = "data[85]"  direction = "in"  />
+        <pitem  name = "data[84]"  direction = "in"  />
+        <pitem  name = "data[83]"  direction = "in"  />
+        <pitem  name = "data[82]"  direction = "in"  />
+        <pitem  name = "data[81]"  direction = "in"  />
+        <pitem  name = "data[80]"  direction = "in"  />
+        <pitem  name = "data[79]"  direction = "in"  />
+        <pitem  name = "data[78]"  direction = "in"  />
+        <pitem  name = "data[77]"  direction = "in"  />
+        <pitem  name = "data[76]"  direction = "in"  />
+        <pitem  name = "data[75]"  direction = "in"  />
+        <pitem  name = "data[74]"  direction = "in"  />
+        <pitem  name = "data[73]"  direction = "in"  />
+        <pitem  name = "data[72]"  direction = "in"  />
+        <pitem  name = "data[71]"  direction = "in"  />
+        <pitem  name = "data[70]"  direction = "in"  />
+        <pitem  name = "data[69]"  direction = "in"  />
+        <pitem  name = "data[68]"  direction = "in"  />
+        <pitem  name = "data[67]"  direction = "in"  />
+        <pitem  name = "data[66]"  direction = "in"  />
+        <pitem  name = "data[65]"  direction = "in"  />
+        <pitem  name = "data[64]"  direction = "in"  />
+        <pitem  name = "data[63]"  direction = "in"  />
+        <pitem  name = "data[62]"  direction = "in"  />
+        <pitem  name = "data[61]"  direction = "in"  />
+        <pitem  name = "data[60]"  direction = "in"  />
+        <pitem  name = "data[59]"  direction = "in"  />
+        <pitem  name = "data[58]"  direction = "in"  />
+        <pitem  name = "data[57]"  direction = "in"  />
+        <pitem  name = "data[56]"  direction = "in"  />
+        <pitem  name = "data[55]"  direction = "in"  />
+        <pitem  name = "data[54]"  direction = "in"  />
+        <pitem  name = "data[53]"  direction = "in"  />
+        <pitem  name = "data[52]"  direction = "in"  />
+        <pitem  name = "data[51]"  direction = "in"  />
+        <pitem  name = "data[50]"  direction = "in"  />
+        <pitem  name = "data[49]"  direction = "in"  />
+        <pitem  name = "data[48]"  direction = "in"  />
+        <pitem  name = "data[47]"  direction = "in"  />
+        <pitem  name = "data[46]"  direction = "in"  />
+        <pitem  name = "data[45]"  direction = "in"  />
+        <pitem  name = "data[44]"  direction = "in"  />
+        <pitem  name = "data[43]"  direction = "in"  />
+        <pitem  name = "data[42]"  direction = "in"  />
+        <pitem  name = "data[41]"  direction = "in"  />
+        <pitem  name = "data[40]"  direction = "in"  />
+        <pitem  name = "data[39]"  direction = "in"  />
+        <pitem  name = "data[38]"  direction = "in"  />
+        <pitem  name = "data[37]"  direction = "in"  />
+        <pitem  name = "data[36]"  direction = "in"  />
+        <pitem  name = "data[35]"  direction = "in"  />
+        <pitem  name = "data[34]"  direction = "in"  />
+        <pitem  name = "data[33]"  direction = "in"  />
+        <pitem  name = "data[32]"  direction = "in"  />
+        <pitem  name = "data[31]"  direction = "in"  />
+        <pitem  name = "data[30]"  direction = "in"  />
+        <pitem  name = "data[29]"  direction = "in"  />
+        <pitem  name = "data[28]"  direction = "in"  />
+        <pitem  name = "data[27]"  direction = "in"  />
+        <pitem  name = "data[26]"  direction = "in"  />
+        <pitem  name = "data[25]"  direction = "in"  />
+        <pitem  name = "data[24]"  direction = "in"  />
+        <pitem  name = "data[23]"  direction = "in"  />
+        <pitem  name = "data[22]"  direction = "in"  />
+        <pitem  name = "data[21]"  direction = "in"  />
+        <pitem  name = "data[20]"  direction = "in"  />
+        <pitem  name = "data[19]"  direction = "in"  />
+        <pitem  name = "data[18]"  direction = "in"  />
+        <pitem  name = "data[17]"  direction = "in"  />
+        <pitem  name = "data[16]"  direction = "in"  />
+        <pitem  name = "data[15]"  direction = "in"  />
+        <pitem  name = "data[14]"  direction = "in"  />
+        <pitem  name = "data[13]"  direction = "in"  />
+        <pitem  name = "data[12]"  direction = "in"  />
+        <pitem  name = "data[11]"  direction = "in"  />
+        <pitem  name = "data[10]"  direction = "in"  />
+        <pitem  name = "data[9]"  direction = "in"  />
+        <pitem  name = "data[8]"  direction = "in"  />
+        <pitem  name = "data[7]"  direction = "in"  />
+        <pitem  name = "data[6]"  direction = "in"  />
+        <pitem  name = "data[5]"  direction = "in"  />
+        <pitem  name = "data[4]"  direction = "in"  />
+        <pitem  name = "data[3]"  direction = "in"  />
+        <pitem  name = "data[2]"  direction = "in"  />
+        <pitem  name = "data[1]"  direction = "in"  />
+        <pitem  name = "data[0]"  direction = "in"  />
+        <pitem  name = "o[15]"  direction = "out"  />
+        <pitem  name = "o[14]"  direction = "out"  />
+        <pitem  name = "o[13]"  direction = "out"  />
+        <pitem  name = "o[12]"  direction = "out"  />
+        <pitem  name = "o[11]"  direction = "out"  />
+        <pitem  name = "o[10]"  direction = "out"  />
+        <pitem  name = "o[9]"  direction = "out"  />
+        <pitem  name = "o[8]"  direction = "out"  />
+        <pitem  name = "o[7]"  direction = "out"  />
+        <pitem  name = "o[6]"  direction = "out"  />
+        <pitem  name = "o[5]"  direction = "out"  />
+        <pitem  name = "o[4]"  direction = "out"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "PS_vivaz_state[2]"  />
+        <nitem  name = "PS_vivaz_state[1]"  />
+        <nitem  name = "PS_vivaz_state[0]"  />
+        <nitem  name = "lcd_bus[15]"  />
+        <nitem  name = "lcd_bus[14]"  />
+        <nitem  name = "lcd_bus[13]"  />
+        <nitem  name = "lcd_bus[12]"  />
+        <nitem  name = "lcd_bus[11]"  />
+        <nitem  name = "lcd_bus[10]"  />
+        <nitem  name = "lcd_bus[9]"  />
+        <nitem  name = "lcd_bus[8]"  />
+        <nitem  name = "lcd_bus[7]"  />
+        <nitem  name = "lcd_bus[6]"  />
+        <nitem  name = "lcd_bus[5]"  />
+        <nitem  name = "lcd_bus[4]"  />
+        <nitem  name = "lcd_bus[3]"  />
+        <nitem  name = "lcd_bus[2]"  />
+        <nitem  name = "lcd_bus[1]"  />
+        <nitem  name = "lcd_bus[0]"  />
+        <nitem  name = "payload[15]"  />
+        <nitem  name = "payload[14]"  />
+        <nitem  name = "payload[13]"  />
+        <nitem  name = "payload[12]"  />
+        <nitem  name = "payload[11]"  />
+        <nitem  name = "payload[10]"  />
+        <nitem  name = "payload[9]"  />
+        <nitem  name = "payload[8]"  />
+        <nitem  name = "payload[7]"  />
+        <nitem  name = "payload[6]"  />
+        <nitem  name = "payload[5]"  />
+        <nitem  name = "payload[4]"  />
+        <nitem  name = "payload[3]"  />
+        <nitem  name = "payload[2]"  />
+        <nitem  name = "payload[1]"  />
+        <nitem  name = "payload[0]"  />
+        <nitem  name = "lcd_bus_15__N_1[15]"  />
+        <nitem  name = "lcd_bus_15__N_1[14]"  />
+        <nitem  name = "lcd_bus_15__N_1[13]"  />
+        <nitem  name = "lcd_bus_15__N_1[12]"  />
+        <nitem  name = "lcd_bus_15__N_1[11]"  />
+        <nitem  name = "lcd_bus_15__N_1[10]"  />
+        <nitem  name = "lcd_bus_15__N_1[9]"  />
+        <nitem  name = "lcd_bus_15__N_1[8]"  />
+        <nitem  name = "lcd_bus_15__N_1[7]"  />
+        <nitem  name = "lcd_bus_15__N_1[6]"  />
+        <nitem  name = "lcd_bus_15__N_1[5]"  />
+        <nitem  name = "lcd_bus_15__N_1[4]"  />
+        <nitem  name = "lcd_bus_15__N_1[3]"  />
+        <nitem  name = "lcd_bus_15__N_1[2]"  />
+        <nitem  name = "lcd_bus_15__N_1[1]"  />
+        <nitem  name = "lcd_bus_15__N_1[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "lcd_write_27"  library = "work"  arch = "RTL"  type = "reg">
+        <pins>
+        <pitem  name = "d"  direction = "in"  />
+        <pitem  name = "clk"  direction = "in"  />
+        <pitem  name = "s"  direction = "in"  />
+        <pitem  name = "r"  direction = "in"  />
+        <pitem  name = "q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "lcd_write_N_23"  />
+        <nitem  name = "clk"  />
+        <nitem  name = "n69"  />
+        <nitem  name = "rst"  />
+        <nitem  name = "lcd_write"  />
+        </nets>
+    </instance>
+
+    <instance  name = "busy_28"  library = "work"  arch = "RTL"  type = "reg">
+        <pins>
+        <pitem  name = "d"  direction = "in"  />
+        <pitem  name = "clk"  direction = "in"  />
+        <pitem  name = "s"  direction = "in"  />
+        <pitem  name = "r"  direction = "in"  />
+        <pitem  name = "q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "busy_N_27"  />
+        <nitem  name = "clk"  />
+        <nitem  name = "n69"  />
+        <nitem  name = "rst"  />
+        <nitem  name = "busy"  />
+        </nets>
+    </instance>
+
+    <instance  name = "lcd_rs_29"  library = "work"  arch = "RTL"  type = "reg">
+        <pins>
+        <pitem  name = "d"  direction = "in"  />
+        <pitem  name = "clk"  direction = "in"  />
+        <pitem  name = "s"  direction = "in"  />
+        <pitem  name = "r"  direction = "in"  />
+        <pitem  name = "q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "lcd_rs_N_25"  />
+        <nitem  name = "clk"  />
+        <nitem  name = "n69"  />
+        <nitem  name = "rst"  />
+        <nitem  name = "lcd_rs"  />
+        </nets>
+    </instance>
+
+    <instance  name = "lcd_bus"  library = "work"  arch = "RTL"  type = "reg">
+        <pins>
+        <pitem  name = "d[15]"  direction = "in"  />
+        <pitem  name = "d[14]"  direction = "in"  />
+        <pitem  name = "d[13]"  direction = "in"  />
+        <pitem  name = "d[12]"  direction = "in"  />
+        <pitem  name = "d[11]"  direction = "in"  />
+        <pitem  name = "d[10]"  direction = "in"  />
+        <pitem  name = "d[9]"  direction = "in"  />
+        <pitem  name = "d[8]"  direction = "in"  />
+        <pitem  name = "d[7]"  direction = "in"  />
+        <pitem  name = "d[6]"  direction = "in"  />
+        <pitem  name = "d[5]"  direction = "in"  />
+        <pitem  name = "d[4]"  direction = "in"  />
+        <pitem  name = "d[3]"  direction = "in"  />
+        <pitem  name = "d[2]"  direction = "in"  />
+        <pitem  name = "d[1]"  direction = "in"  />
+        <pitem  name = "d[0]"  direction = "in"  />
+        <pitem  name = "set[15]"  direction = "in"  />
+        <pitem  name = "set[14]"  direction = "in"  />
+        <pitem  name = "set[13]"  direction = "in"  />
+        <pitem  name = "set[12]"  direction = "in"  />
+        <pitem  name = "set[11]"  direction = "in"  />
+        <pitem  name = "set[10]"  direction = "in"  />
+        <pitem  name = "set[9]"  direction = "in"  />
+        <pitem  name = "set[8]"  direction = "in"  />
+        <pitem  name = "set[7]"  direction = "in"  />
+        <pitem  name = "set[6]"  direction = "in"  />
+        <pitem  name = "set[5]"  direction = "in"  />
+        <pitem  name = "set[4]"  direction = "in"  />
+        <pitem  name = "set[3]"  direction = "in"  />
+        <pitem  name = "set[2]"  direction = "in"  />
+        <pitem  name = "set[1]"  direction = "in"  />
+        <pitem  name = "set[0]"  direction = "in"  />
+        <pitem  name = "reset[15]"  direction = "in"  />
+        <pitem  name = "reset[14]"  direction = "in"  />
+        <pitem  name = "reset[13]"  direction = "in"  />
+        <pitem  name = "reset[12]"  direction = "in"  />
+        <pitem  name = "reset[11]"  direction = "in"  />
+        <pitem  name = "reset[10]"  direction = "in"  />
+        <pitem  name = "reset[9]"  direction = "in"  />
+        <pitem  name = "reset[8]"  direction = "in"  />
+        <pitem  name = "reset[7]"  direction = "in"  />
+        <pitem  name = "reset[6]"  direction = "in"  />
+        <pitem  name = "reset[5]"  direction = "in"  />
+        <pitem  name = "reset[4]"  direction = "in"  />
+        <pitem  name = "reset[3]"  direction = "in"  />
+        <pitem  name = "reset[2]"  direction = "in"  />
+        <pitem  name = "reset[1]"  direction = "in"  />
+        <pitem  name = "reset[0]"  direction = "in"  />
+        <pitem  name = "clock"  direction = "in"  />
+        <pitem  name = "q[15]"  direction = "out"  />
+        <pitem  name = "q[14]"  direction = "out"  />
+        <pitem  name = "q[13]"  direction = "out"  />
+        <pitem  name = "q[12]"  direction = "out"  />
+        <pitem  name = "q[11]"  direction = "out"  />
+        <pitem  name = "q[10]"  direction = "out"  />
+        <pitem  name = "q[9]"  direction = "out"  />
+        <pitem  name = "q[8]"  direction = "out"  />
+        <pitem  name = "q[7]"  direction = "out"  />
+        <pitem  name = "q[6]"  direction = "out"  />
+        <pitem  name = "q[5]"  direction = "out"  />
+        <pitem  name = "q[4]"  direction = "out"  />
+        <pitem  name = "q[3]"  direction = "out"  />
+        <pitem  name = "q[2]"  direction = "out"  />
+        <pitem  name = "q[1]"  direction = "out"  />
+        <pitem  name = "q[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "lcd_bus_15__N_1[15]"  />
+        <nitem  name = "lcd_bus_15__N_1[14]"  />
+        <nitem  name = "lcd_bus_15__N_1[13]"  />
+        <nitem  name = "lcd_bus_15__N_1[12]"  />
+        <nitem  name = "lcd_bus_15__N_1[11]"  />
+        <nitem  name = "lcd_bus_15__N_1[10]"  />
+        <nitem  name = "lcd_bus_15__N_1[9]"  />
+        <nitem  name = "lcd_bus_15__N_1[8]"  />
+        <nitem  name = "lcd_bus_15__N_1[7]"  />
+        <nitem  name = "lcd_bus_15__N_1[6]"  />
+        <nitem  name = "lcd_bus_15__N_1[5]"  />
+        <nitem  name = "lcd_bus_15__N_1[4]"  />
+        <nitem  name = "lcd_bus_15__N_1[3]"  />
+        <nitem  name = "lcd_bus_15__N_1[2]"  />
+        <nitem  name = "lcd_bus_15__N_1[1]"  />
+        <nitem  name = "lcd_bus_15__N_1[0]"  />
+        <nitem  name = "n69"  />
+        <nitem  name = "rst"  />
+        <nitem  name = "clk"  />
+        <nitem  name = "lcd_bus[15]"  />
+        <nitem  name = "lcd_bus[14]"  />
+        <nitem  name = "lcd_bus[13]"  />
+        <nitem  name = "lcd_bus[12]"  />
+        <nitem  name = "lcd_bus[11]"  />
+        <nitem  name = "lcd_bus[10]"  />
+        <nitem  name = "lcd_bus[9]"  />
+        <nitem  name = "lcd_bus[8]"  />
+        <nitem  name = "lcd_bus[7]"  />
+        <nitem  name = "lcd_bus[6]"  />
+        <nitem  name = "lcd_bus[5]"  />
+        <nitem  name = "lcd_bus[4]"  />
+        <nitem  name = "lcd_bus[3]"  />
+        <nitem  name = "lcd_bus[2]"  />
+        <nitem  name = "lcd_bus[1]"  />
+        <nitem  name = "lcd_bus[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "go_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "c"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "go"  />
+        <nitem  name = "n69"  />
+        <nitem  name = "busy"  />
+        <nitem  name = "go_managed_N_29"  />
+        </nets>
+    </instance>
+
+    <instance  name = "go_managed_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "c"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "go_managed_N_29"  />
+        <nitem  name = "n69"  />
+        <nitem  name = "rst"  />
+        <nitem  name = "go_managed"  />
+        </nets>
+    </instance>
+
+    <instance  name = "PS_vivaz_state"  library = "work"  arch = "RTL"  type = "reg">
+        <pins>
+        <pitem  name = "d[2]"  direction = "in"  />
+        <pitem  name = "d[1]"  direction = "in"  />
+        <pitem  name = "d[0]"  direction = "in"  />
+        <pitem  name = "set[2]"  direction = "in"  />
+        <pitem  name = "set[1]"  direction = "in"  />
+        <pitem  name = "set[0]"  direction = "in"  />
+        <pitem  name = "reset[2]"  direction = "in"  />
+        <pitem  name = "reset[1]"  direction = "in"  />
+        <pitem  name = "reset[0]"  direction = "in"  />
+        <pitem  name = "clock"  direction = "in"  />
+        <pitem  name = "q[2]"  direction = "out"  />
+        <pitem  name = "q[1]"  direction = "out"  />
+        <pitem  name = "q[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "PS_vivaz_state_2__N_17[2]"  />
+        <nitem  name = "PS_vivaz_state_2__N_17[1]"  />
+        <nitem  name = "PS_vivaz_state_2__N_17[0]"  />
+        <nitem  name = "n69"  />
+        <nitem  name = "rst"  />
+        <nitem  name = "clk"  />
+        <nitem  name = "PS_vivaz_state[2]"  />
+        <nitem  name = "PS_vivaz_state[1]"  />
+        <nitem  name = "PS_vivaz_state[0]"  />
+        </nets>
+    </instance>
+
+    <!--
+        REG instances in netlist: 5
+    -->
+
+    <regs>
+        <reg  name = "lcd_write_27"  />
+        <reg  name = "busy_28"  />
+        <reg  name = "lcd_rs_29"  />
+        <reg  name = "lcd_bus"  />
+        <reg  name = "PS_vivaz_state"  />
+    </regs>
+
+    <!--
+        Views in design "lcd_sender": 0
+    -->
+
+    <views>
+    </views>
+
+</unit>
+
+</library>
+
+</top>

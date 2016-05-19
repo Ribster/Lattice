@@ -1,0 +1,2 @@
+@W: MO171 :"z:\github\lattice\sony vivaz lcd driver\lcd_sender.vhd":73:2:73:3|Sequential instance inst_lcd_sender.lcd_rs reduced to a combinational gate by constant propagation 
+@W: MT462 :"z:\github\lattice\sony vivaz lcd driver\lcd_sender.vhd":73:2:73:3|Net inst_lcd_sender.un1_PS_vivaz_state appears to be an unidentified clock source. Assuming default frequency. 

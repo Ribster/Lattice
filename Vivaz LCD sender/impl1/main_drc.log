@@ -1,0 +1,34 @@
+Results of NGD DRC are available in main_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+WARNING - synthesis: logical net 'leds[7]' has no load.
+WARNING - synthesis: input pad net 'leds[7]' has no legal load.
+WARNING - synthesis: logical net 'leds[6]' has no load.
+WARNING - synthesis: input pad net 'leds[6]' has no legal load.
+WARNING - synthesis: logical net 'leds[5]' has no load.
+WARNING - synthesis: input pad net 'leds[5]' has no legal load.
+WARNING - synthesis: logical net 'leds[4]' has no load.
+WARNING - synthesis: input pad net 'leds[4]' has no legal load.
+WARNING - synthesis: logical net 'leds[3]' has no load.
+WARNING - synthesis: input pad net 'leds[3]' has no legal load.
+WARNING - synthesis: logical net 'leds[2]' has no load.
+WARNING - synthesis: input pad net 'leds[2]' has no legal load.
+WARNING - synthesis: logical net 'leds[1]' has no load.
+WARNING - synthesis: input pad net 'leds[1]' has no legal load.
+WARNING - synthesis: logical net 'leds[0]' has no load.
+WARNING - synthesis: input pad net 'leds[0]' has no legal load.
+WARNING - synthesis: logical net 'lcd_reset' has no load.
+WARNING - synthesis: input pad net 'lcd_reset' has no legal load.
+WARNING - synthesis: DRC complete with 18 warnings.
+
+Design Results:
+    138 blocks expanded
+completed the first expansion
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file vivaz_lcd_sender_impl1.ngd.

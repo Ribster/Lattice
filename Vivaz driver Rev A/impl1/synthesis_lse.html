@@ -1,0 +1,465 @@
+<HTML>
+<HEAD><TITLE>Synthesis and Ngdbuild Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Syn"></A><B><U><big>Synthesis and Ngdbuild  Report</big></U></B>
+synthesis:  version Diamond (64-bit) 3.7.1.502
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
+Thu May 19 10:33:35 2016
+
+
+Command Line:  synthesis -f vivaz_driver_reva_impl1_lattice.synproj -gui 
+
+Synthesis options:
+The -a option is MachXO2.
+The -s option is 5.
+The -t option is TQFP144.
+The -d option is LCMXO2-7000HE.
+Using package TQFP144.
+Using performance grade 5.
+                                                          
+
+##########################################################
+
+### Lattice Family : MachXO2
+
+### Device  : LCMXO2-7000HE
+
+### Package : TQFP144
+
+### Speed   : 5
+
+##########################################################
+
+                                                          
+
+Optimization goal = Balanced
+Top-level module name = main.
+Target frequency = 1.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p C:/lscc/diamond/3.7_x64/ispfpga/xo2c00/data (searchpath added)
+-p Z:/GITHUB/Lattice/Vivaz driver Rev A/impl1 (searchpath added)
+-p Z:/GITHUB/Lattice/Vivaz driver Rev A (searchpath added)
+VHDL library = work
+VHDL design file = Z:/GITHUB/Lattice/Vivaz driver Rev A/main.vhd
+VHDL design file = Z:/GITHUB/Lattice/Vivaz driver Rev A/lcd_sender.vhd
+VHDL design file = Z:/GITHUB/Lattice/Vivaz driver Rev A/clk_div2.vhd
+NGD file = vivaz_driver_reva_impl1.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file C:/lscc/diamond/3.7_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Compile design.
+Compile Design Begin
+INFO - synthesis: The default VHDL library search path is now "Z:/GITHUB/Lattice/Vivaz driver Rev A/impl1". VHDL-1504
+Analyzing VHDL file z:/github/lattice/vivaz driver rev a/main.vhd. VHDL-1481
+INFO - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(10): analyzing entity main. VHDL-1012
+INFO - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(22): analyzing architecture behavioral. VHDL-1010
+Analyzing VHDL file z:/github/lattice/vivaz driver rev a/lcd_sender.vhd. VHDL-1481
+INFO - synthesis: z:/github/lattice/vivaz driver rev a/lcd_sender.vhd(8): analyzing entity lcd_sender. VHDL-1012
+INFO - synthesis: z:/github/lattice/vivaz driver rev a/lcd_sender.vhd(23): analyzing architecture beh_lcd_sender. VHDL-1010
+Analyzing VHDL file z:/github/lattice/vivaz driver rev a/clk_div2.vhd. VHDL-1481
+INFO - synthesis: z:/github/lattice/vivaz driver rev a/clk_div2.vhd(8): analyzing entity clk_div2. VHDL-1012
+INFO - synthesis: z:/github/lattice/vivaz driver rev a/clk_div2.vhd(16): analyzing architecture beh_clk_div2. VHDL-1010
+unit main is not yet analyzed. VHDL-1485
+z:/github/lattice/vivaz driver rev a/main.vhd(10): executing main(behavioral)
+
+INFO - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(174): others clause is never selected. VHDL-1172
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(20): replacing existing netlist main(behavioral). VHDL-1205
+Top module name (VHDL): main
+Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.7_x64/ispfpga.
+Package Status:                     Final          Version 1.39.
+Top-level module name = main.
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Register lcd_sender_go_45 is stuck at Zero. VDB-5013
+######## Converting I/O port lcd_bus[15] to output.
+######## Converting I/O port lcd_bus[14] to output.
+######## Converting I/O port lcd_bus[13] to output.
+######## Converting I/O port lcd_bus[12] to output.
+######## Converting I/O port lcd_bus[11] to output.
+######## Converting I/O port lcd_bus[10] to output.
+######## Converting I/O port lcd_bus[9] to output.
+######## Converting I/O port lcd_bus[8] to output.
+######## Converting I/O port lcd_bus[7] to output.
+######## Converting I/O port lcd_bus[6] to output.
+######## Converting I/O port lcd_bus[5] to output.
+######## Converting I/O port lcd_bus[4] to output.
+######## Converting I/O port lcd_bus[3] to output.
+######## Converting I/O port lcd_bus[2] to output.
+######## Converting I/O port lcd_bus[1] to output.
+######## Converting I/O port lcd_bus[0] to output.
+######## Converting I/O port lcd_rs to output.
+######## Converting I/O port lcd_wr to output.
+######## Converting I/O port lcd_reset to output.
+######## Converting I/O port lcd_te to output.
+######## Converting I/O port leds[7] to output.
+######## Converting I/O port leds[6] to output.
+######## Converting I/O port leds[5] to output.
+######## Converting I/O port leds[4] to output.
+######## Converting I/O port leds[3] to output.
+######## Converting I/O port leds[2] to output.
+######## Converting I/O port leds[1] to output.
+######## Converting I/O port leds[0] to output.
+INFO - synthesis: Extracted state machine for register '\inst_lcd_sender/FSM_PS' with one-hot encoding
+State machine has 6 reachable states with original encodings of:
+
+ 000 
+
+ 010 
+
+ 011 
+
+ 100 
+
+ 101 
+
+ 110 
+
+original encoding -> new encoding (one-hot encoding)
+
+ 000 -> 000001
+
+ 010 -> 000010
+
+ 011 -> 000100
+
+ 100 -> 001000
+
+ 101 -> 010000
+
+ 110 -> 100000
+
+
+
+
+WARNING - synthesis: Bit 0 of Register \inst_lcd_sender/FSM_PS_FSM is stuck at Zero
+WARNING - synthesis: Bit 6 of Register \inst_lcd_sender/FSM_PS_FSM is stuck at Zero
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/lcd_sender.vhd(66): Register \inst_lcd_sender/lcd_rs_50 is stuck at Zero. VDB-5013
+WARNING - synthesis: Bit 4 of Register \inst_lcd_sender/FSM_PS_FSM is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \inst_lcd_sender/FSM_PS_FSM is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \inst_lcd_sender/FSM_PS_FSM is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \inst_lcd_sender/FSM_PS_FSM is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \inst_lcd_sender/FSM_PS_FSM is stuck at Zero
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(202): Register reset_done_121 is stuck at One. VDB-5014
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i1 is tied to a constant
+
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i2 is tied to a constant
+
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i3 is tied to a constant
+
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i4 is tied to a constant
+
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i5 is tied to a constant
+
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i6 is tied to a constant
+
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i7 is tied to a constant
+
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register FSM_lcd_arbiter_i1 is tied to a constant
+
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register FSM_lcd_arbiter_i2 is tied to a constant
+
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register FSM_lcd_arbiter_i3 is tied to a constant
+
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i0 is tied to a constant
+
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_reset_53 is tied to a constant
+
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register FSM_lcd_arbiter_i0 is tied to a constant
+
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i1 is tied to a constant
+
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i2 is tied to a constant
+
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i3 is tied to a constant
+
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i4 is tied to a constant
+
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i5 is tied to a constant
+
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i6 is tied to a constant
+
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i7 is tied to a constant
+
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register FSM_lcd_arbiter_i1 is tied to a constant
+
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register FSM_lcd_arbiter_i2 is tied to a constant
+
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register FSM_lcd_arbiter_i3 is tied to a constant
+
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i0 is tied to a constant
+
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_reset_53 is tied to a constant
+
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register FSM_lcd_arbiter_i0 is tied to a constant
+
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i1 is tied to a constant
+
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i2 is tied to a constant
+
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i3 is tied to a constant
+
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i4 is tied to a constant
+
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i5 is tied to a constant
+
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i6 is tied to a constant
+
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i7 is tied to a constant
+
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register FSM_lcd_arbiter_i1 is tied to a constant
+
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register FSM_lcd_arbiter_i2 is tied to a constant
+
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register FSM_lcd_arbiter_i3 is tied to a constant
+
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i0 is tied to a constant
+
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_reset_53 is tied to a constant
+
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register FSM_lcd_arbiter_i0 is tied to a constant
+
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i1 is tied to a constant
+
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i2 is tied to a constant
+
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i3 is tied to a constant
+
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i4 is tied to a constant
+
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i5 is tied to a constant
+
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i6 is tied to a constant
+
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i7 is tied to a constant
+
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register FSM_lcd_arbiter_i1 is tied to a constant
+
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register FSM_lcd_arbiter_i2 is tied to a constant
+
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register FSM_lcd_arbiter_i3 is tied to a constant
+
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i0 is tied to a constant
+
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_reset_53 is tied to a constant
+
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register FSM_lcd_arbiter_i0 is tied to a constant
+
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i1 is tied to a constant
+
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i2 is tied to a constant
+
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i3 is tied to a constant
+
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i4 is tied to a constant
+
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i5 is tied to a constant
+
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i6 is tied to a constant
+
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i7 is tied to a constant
+
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register FSM_lcd_arbiter_i1 is tied to a constant
+
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register FSM_lcd_arbiter_i2 is tied to a constant
+
+WARNING - synthesis: z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register FSM_lcd_arbiter_i3 is tied to a constant
+
+GSR instance connected to net lcd_sender_payload_15__N_2[6].
+WARNING - synthesis: mRegister lcd_reset_53_430_431_reset is stuck at Zero
+WARNING - synthesis: mRegister FSM_lcd_arbiter_i3_474_475_reset is stuck at Zero
+WARNING - synthesis: mRegister FSM_lcd_arbiter_i2_470_471_reset is stuck at Zero
+WARNING - synthesis: mRegister lcd_sender_payload_i2_442_443_reset is stuck at Zero
+WARNING - synthesis: mRegister lcd_sender_payload_i1_438_439_reset is stuck at Zero
+WARNING - synthesis: mRegister FSM_lcd_arbiter_i1_466_467_reset is stuck at Zero
+WARNING - synthesis: mRegister lcd_sender_payload_i4_450_451_reset is stuck at Zero
+WARNING - synthesis: mRegister FSM_lcd_arbiter_i0_434_435_reset is stuck at Zero
+WARNING - synthesis: mRegister lcd_sender_payload_i7_462_463_reset is stuck at Zero
+WARNING - synthesis: mRegister lcd_sender_payload_i6_458_459_reset is stuck at Zero
+WARNING - synthesis: mRegister lcd_sender_payload_i5_454_455_reset is stuck at Zero
+WARNING - synthesis: mRegister lcd_sender_payload_i0_426_427_reset is stuck at Zero
+WARNING - synthesis: mRegister lcd_sender_payload_i3_446_447_reset is stuck at Zero
+Applying 1.000000 MHz constraint to all clocks
+
+WARNING - synthesis: No user .sdc file.
+Results of NGD DRC are available in main_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file vivaz_driver_reva_impl1.ngd.
+
+################### Begin Area Report (main)######################
+Number of register bits => 41 of 7209 (0 % )
+CCU2D => 9
+FD1P3AX => 9
+FD1S1A => 1
+FD1S1D => 12
+FD1S3BX => 13
+FD1S3IX => 6
+GSR => 1
+LUT4 => 49
+OB => 28
+OSCH => 1
+PFUMX => 1
+################### End Area Report ##################
+
+################### Begin BlackBox Report ######################
+TSALL => 1
+################### End BlackBox Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 14
+  Net : clk133, loads : 15
+  Net : lcd_reset_N_167, loads : 3
+  Net : lcd_sender_payload_15_N_2_6, loads : 3
+  Net : n272_generated_4, loads : 2
+  Net : FSM_lcd_arbiter_3_N_82_0, loads : 2
+  Net : n272_generated_6, loads : 2
+  Net : n272_generated_3, loads : 2
+  Net : n272_generated_7, loads : 2
+  Net : n272_generated_5, loads : 2
+  Net : n272_generated_8, loads : 2
+  Net : n272_generated_1, loads : 2
+  Net : n272_generated_9, loads : 2
+  Net : n272_generated_2, loads : 2
+  Net : n272_generated_10, loads : 2
+Clock Enable Nets
+Number of Clock Enables: 2
+Top 2 highest fanout Clock Enables:
+  Net : clk133_enable_9, loads : 8
+  Net : clk133_enable_8, loads : 8
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : n1062, loads : 17
+  Net : n703, loads : 15
+  Net : n1074, loads : 13
+  Net : n1073, loads : 13
+  Net : n1063, loads : 11
+  Net : n1061, loads : 11
+  Net : n1060, loads : 10
+  Net : clk133_enable_8, loads : 8
+  Net : clk133_enable_9, loads : 8
+  Net : n1050, loads : 7
+################### End Clock Report ##################
+
+<A name="lse_trs"></A><B><U><big>Timing Report Summary</big></U></B>
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 1000.000000 -name  |             |             |
+clk1 [get_nets                          |             |             |
+lcd_sender_payload_15__N_2[6]]          |            -|            -|     0  
+                                        |             |             |
+create_clock -period 1000.000000 -name  |             |             |
+clk0 [get_nets clk133]                  |    1.000 MHz|  156.986 MHz|     4  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Peak Memory Usage: 73.648  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 0.920  secs
+--------------------------------------------------------------
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

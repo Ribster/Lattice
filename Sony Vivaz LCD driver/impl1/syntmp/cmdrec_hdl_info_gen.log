@@ -1,0 +1,10 @@
+C:\lscc\diamond\3.7_x64\synpbase\bin64\c_vhdl.exe  -osyn  "Z:\GITHUB\Lattice\Sony Vivaz LCD driver\impl1\synwork\SonyVivazLCDDriver_impl1_hdl_.srs"  -top  main  -prodtype  synplify_pro  -dspmac -fixsmult -infer_seqShift -nram -sdff_counter -divnmod -nostructver  -encrypt  -pro  -dmgen  "Z:\GITHUB\Lattice\Sony Vivaz LCD driver\impl1\dm"  -lite -ui -fid2 -ram -sharing on -ll 2000 -autosm  -ignore_undefined_lib  -lib work C:\lscc\diamond\3.7_x64\cae_library\synthesis\vhdl\machxo2.vhd -lib work "Z:\GITHUB\Lattice\Sony Vivaz LCD driver\main.vhd" -lib work "Z:\GITHUB\Lattice\Sony Vivaz LCD driver\lcd_sender.vhd" -lib work "Z:\GITHUB\Lattice\Sony Vivaz LCD driver\lcd_arbiter.vhd"  -log  "Z:\GITHUB\Lattice\Sony Vivaz LCD driver\impl1\syntax.log"  -fileorder  "Z:\GITHUB\Lattice\Sony Vivaz LCD driver\impl1\syntmp\hdlorder.tcl" 
+rc:0 success:1 runtime:1
+Z:\GITHUB\Lattice\Sony Vivaz LCD driver\impl1\synwork\SonyVivazLCDDriver_impl1_hdl_.srs|o|0|0
+C:\lscc\diamond\3.7_x64\cae_library\synthesis\vhdl\machxo2.vhd|i|1376992808|73964
+Z:\GITHUB\Lattice\Sony Vivaz LCD driver\main.vhd|i|1463584076|3173
+Z:\GITHUB\Lattice\Sony Vivaz LCD driver\lcd_sender.vhd|i|1463590583|1796
+Z:\GITHUB\Lattice\Sony Vivaz LCD driver\lcd_arbiter.vhd|i|1463584366|1327
+Z:\GITHUB\Lattice\Sony Vivaz LCD driver\impl1\syntax.log|o|1463590592|937
+C:\lscc\diamond\3.7_x64\synpbase\bin\c_vhdl.exe|i|1449712636|2359296
+C:\lscc\diamond\3.7_x64\synpbase\bin64\c_vhdl.exe|i|1449712846|3228672

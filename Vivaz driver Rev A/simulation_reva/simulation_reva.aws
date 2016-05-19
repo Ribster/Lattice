@@ -1,0 +1,8 @@
+[Version]
+Version=10.2
+[Designs]
+simulation_reva=simulation_reva.adf
+[Settings]
+Active=simulation_reva
+[Expand]
+simulation_reva=1

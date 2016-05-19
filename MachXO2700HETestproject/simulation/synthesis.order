@@ -1,0 +1,4 @@
+i<>.\src\lcd_sender_tb.vhd
+i<>.\src\main.vhd
+i<>.\..\MachXO_7000HE_Testproject_tb.vhd
+i<>.\..\impl1\MachXO_7000HE_Testproject_impl1_vho.vho

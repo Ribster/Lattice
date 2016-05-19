@@ -1,0 +1,48 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=3
+Current Config=compile
+[Configurations]
+compile=work
+[Library]
+simulation_reva=.\simulation_reva\simulation_reva.lib
+work=.\work\work.lib
+[Settings]
+AccessRead=1
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=0
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+PriorityLibNames=pmi_work
+LibNames=ovi_machxo2
+[LocalVhdlSets]
+CompileWithDebug=0
+[$LibMap$]
+simulation_reva=.
+work=.
+[LocalVerilogDirs]
+Count=0
+[DefineMacro]
+Global=
+[Files]
+/..\..\lcd_sender.vhd=-1
+/..\..\clk_div2.vhd=-1
+/..\..\main.vhd=-1
+/..\..\lcd_sender_tb.vhd=-1
+/..\..\clk_div2_tb.vhd=-1
+[Files.Data]
+.\..\lcd_sender.vhd=VHDL Source Code
+.\..\clk_div2.vhd=VHDL Source Code
+.\..\main.vhd=VHDL Source Code
+.\..\lcd_sender_tb.vhd=VHDL Source Code
+.\..\clk_div2_tb.vhd=VHDL Source Code

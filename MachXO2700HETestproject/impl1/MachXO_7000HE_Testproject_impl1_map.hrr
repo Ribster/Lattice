@@ -1,0 +1,9 @@
+---------------------------------------------------
+Report for cell lcd_sender
+   Instance path: lcd_sender
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      13.00        100.0
+                                  LUT4	      10.00        100.0
+                                 IOBUF	         39        100.0
+                                PFUREG	         22        100.0

@@ -1,0 +1,732 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Bitgen">
+        <Message>
+            <ID>71011198</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>SLICE_31</Dynamic>
+            <Dynamic>REG0</Dynamic>
+        </Message>
+        <Message>
+            <ID>71011198</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>SLICE_33</Dynamic>
+            <Dynamic>REG0</Dynamic>
+        </Message>
+        <Message>
+            <ID>71011198</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>SLICE_35</Dynamic>
+            <Dynamic>REG0</Dynamic>
+        </Message>
+        <Message>
+            <ID>71011198</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>SLICE_37</Dynamic>
+            <Dynamic>REG0</Dynamic>
+        </Message>
+        <Message>
+            <ID>71011198</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>SLICE_38</Dynamic>
+            <Dynamic>REG0</Dynamic>
+        </Message>
+        <Message>
+            <ID>71011198</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>SLICE_40</Dynamic>
+            <Dynamic>REG0</Dynamic>
+        </Message>
+        <Message>
+            <ID>71011198</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>SLICE_41</Dynamic>
+            <Dynamic>REG0</Dynamic>
+        </Message>
+        <Message>
+            <ID>71011198</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>SLICE_42</Dynamic>
+            <Dynamic>REG0</Dynamic>
+        </Message>
+        <Message>
+            <ID>71011198</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>SLICE_43</Dynamic>
+            <Dynamic>REG0</Dynamic>
+        </Message>
+        <Message>
+            <ID>71011198</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>SLICE_47</Dynamic>
+            <Dynamic>REG0</Dynamic>
+        </Message>
+        <Message>
+            <ID>71011198</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>SLICE_48</Dynamic>
+            <Dynamic>REG0</Dynamic>
+        </Message>
+        <Message>
+            <ID>71011198</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>SLICE_49</Dynamic>
+            <Dynamic>REG0</Dynamic>
+        </Message>
+        <Message>
+            <ID>71011198</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>SLICE_51</Dynamic>
+            <Dynamic>REG0</Dynamic>
+        </Message>
+    </Task>
+    <Task name="MapVerilogSimFile">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+    <Task name="MapVHDLSimFile">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35921504</ID>
+            <Severity>Info</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>Z:/GITHUB/Lattice/Vivaz driver Rev A/impl1</Dynamic>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(10): </Dynamic>
+            <Dynamic>main</Dynamic>
+            <Navigation>z:/github/lattice/vivaz driver rev a/main.vhd</Navigation>
+            <Navigation>10</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(22): </Dynamic>
+            <Dynamic>behavioral</Dynamic>
+            <Navigation>z:/github/lattice/vivaz driver rev a/main.vhd</Navigation>
+            <Navigation>22</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/lcd_sender.vhd(8): </Dynamic>
+            <Dynamic>lcd_sender</Dynamic>
+            <Navigation>z:/github/lattice/vivaz driver rev a/lcd_sender.vhd</Navigation>
+            <Navigation>8</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/lcd_sender.vhd(23): </Dynamic>
+            <Dynamic>beh_lcd_sender</Dynamic>
+            <Navigation>z:/github/lattice/vivaz driver rev a/lcd_sender.vhd</Navigation>
+            <Navigation>23</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/clk_div2.vhd(8): </Dynamic>
+            <Dynamic>clk_div2</Dynamic>
+            <Navigation>z:/github/lattice/vivaz driver rev a/clk_div2.vhd</Navigation>
+            <Navigation>8</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/clk_div2.vhd(16): </Dynamic>
+            <Dynamic>beh_clk_div2</Dynamic>
+            <Navigation>z:/github/lattice/vivaz driver rev a/clk_div2.vhd</Navigation>
+            <Navigation>16</Navigation>
+        </Message>
+        <Message>
+            <ID>35921172</ID>
+            <Severity>Info</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(174): </Dynamic>
+            <Navigation>z:/github/lattice/vivaz driver rev a/main.vhd</Navigation>
+            <Navigation>174</Navigation>
+        </Message>
+        <Message>
+            <ID>35921205</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(20): </Dynamic>
+            <Dynamic>main</Dynamic>
+            <Dynamic>behavioral</Dynamic>
+            <Navigation>z:/github/lattice/vivaz driver rev a/main.vhd</Navigation>
+            <Navigation>20</Navigation>
+        </Message>
+        <Message>
+            <ID>35935013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): </Dynamic>
+            <Dynamic>lcd_sender_go_45</Dynamic>
+            <Navigation>z:/github/lattice/vivaz driver rev a/main.vhd</Navigation>
+            <Navigation>127</Navigation>
+        </Message>
+        <Message>
+            <ID>35001774</ID>
+            <Severity>Info</Severity>
+            <Dynamic>\inst_lcd_sender/FSM_PS</Dynamic>
+            <Dynamic>one-hot</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>0</Dynamic>
+            <Dynamic>\inst_lcd_sender/FSM_PS_FSM</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>6</Dynamic>
+            <Dynamic>\inst_lcd_sender/FSM_PS_FSM</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/lcd_sender.vhd(66): </Dynamic>
+            <Dynamic>\inst_lcd_sender/lcd_rs_50</Dynamic>
+            <Navigation>z:/github/lattice/vivaz driver rev a/lcd_sender.vhd</Navigation>
+            <Navigation>66</Navigation>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>4</Dynamic>
+            <Dynamic>\inst_lcd_sender/FSM_PS_FSM</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>3</Dynamic>
+            <Dynamic>\inst_lcd_sender/FSM_PS_FSM</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>2</Dynamic>
+            <Dynamic>\inst_lcd_sender/FSM_PS_FSM</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>1</Dynamic>
+            <Dynamic>\inst_lcd_sender/FSM_PS_FSM</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>0</Dynamic>
+            <Dynamic>\inst_lcd_sender/FSM_PS_FSM</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935014</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(202): </Dynamic>
+            <Dynamic>reset_done_121</Dynamic>
+            <Navigation>z:/github/lattice/vivaz driver rev a/main.vhd</Navigation>
+            <Navigation>202</Navigation>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i1 is tied to a constant
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i2 is tied to a constant
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i3 is tied to a constant
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i4 is tied to a constant
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i5 is tied to a constant
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i6 is tied to a constant
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i7 is tied to a constant
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register FSM_lcd_arbiter_i1 is tied to a constant
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register FSM_lcd_arbiter_i2 is tied to a constant
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register FSM_lcd_arbiter_i3 is tied to a constant
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i0 is tied to a constant
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_reset_53 is tied to a constant
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register FSM_lcd_arbiter_i0 is tied to a constant
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i1 is tied to a constant
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i2 is tied to a constant
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i3 is tied to a constant
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i4 is tied to a constant
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i5 is tied to a constant
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i6 is tied to a constant
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i7 is tied to a constant
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register FSM_lcd_arbiter_i1 is tied to a constant
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register FSM_lcd_arbiter_i2 is tied to a constant
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register FSM_lcd_arbiter_i3 is tied to a constant
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i0 is tied to a constant
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_reset_53 is tied to a constant
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register FSM_lcd_arbiter_i0 is tied to a constant
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i1 is tied to a constant
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i2 is tied to a constant
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i3 is tied to a constant
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i4 is tied to a constant
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i5 is tied to a constant
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i6 is tied to a constant
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i7 is tied to a constant
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register FSM_lcd_arbiter_i1 is tied to a constant
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register FSM_lcd_arbiter_i2 is tied to a constant
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register FSM_lcd_arbiter_i3 is tied to a constant
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i0 is tied to a constant
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_reset_53 is tied to a constant
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register FSM_lcd_arbiter_i0 is tied to a constant
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i1 is tied to a constant
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i2 is tied to a constant
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i3 is tied to a constant
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i4 is tied to a constant
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i5 is tied to a constant
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i6 is tied to a constant
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i7 is tied to a constant
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register FSM_lcd_arbiter_i1 is tied to a constant
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register FSM_lcd_arbiter_i2 is tied to a constant
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register FSM_lcd_arbiter_i3 is tied to a constant
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i0 is tied to a constant
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_reset_53 is tied to a constant
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register FSM_lcd_arbiter_i0 is tied to a constant
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i1 is tied to a constant
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i2 is tied to a constant
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i3 is tied to a constant
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i4 is tied to a constant
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i5 is tied to a constant
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i6 is tied to a constant
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register lcd_sender_payload_i7 is tied to a constant
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register FSM_lcd_arbiter_i1 is tied to a constant
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register FSM_lcd_arbiter_i2 is tied to a constant
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/vivaz driver rev a/main.vhd(127): Clock on register FSM_lcd_arbiter_i3 is tied to a constant
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001752</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>lcd_reset_53_430_431_reset</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001752</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FSM_lcd_arbiter_i3_474_475_reset</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001752</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FSM_lcd_arbiter_i2_470_471_reset</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001752</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>lcd_sender_payload_i2_442_443_reset</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001752</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>lcd_sender_payload_i1_438_439_reset</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001752</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FSM_lcd_arbiter_i1_466_467_reset</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001752</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>lcd_sender_payload_i4_450_451_reset</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001752</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FSM_lcd_arbiter_i0_434_435_reset</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001752</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>lcd_sender_payload_i7_462_463_reset</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001752</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>lcd_sender_payload_i6_458_459_reset</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001752</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>lcd_sender_payload_i5_454_455_reset</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001752</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>lcd_sender_payload_i0_426_427_reset</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001752</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>lcd_sender_payload_i3_446_447_reset</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
+        </Message>
+    </Task>
+    <Task name="PAR">
+        <Message>
+            <ID>66011008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>
+   Signal=n272_generated_3 loads=2 clock_loads=1
+   Signal=FSM_lcd_arbiter_3_N_82_0 loads=2 clock_loads=1
+   Signal=n272_generated_1 loads=2 clock_loads=1
+   Signal=lcd_reset_N_167 loads=3 clock_loads=1
+   Signal=n272_generated_9 loads=2 clock_loads=1
+   Signal=n272_generated_2 loads=2 clock_loads=1
+   Signal=n272_generate   ....   s=2 clock_loads=1
+   Signal=n272_generated_7 loads=2 clock_loads=1
+   Signal=n272_generated_8 loads=2 clock_loads=1
+   Signal=n272_generated_10 loads=2 clock_loads=1</Dynamic>
+        </Message>
+        <Message>
+            <ID>66011008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>
+   Signal=n272_generated_3 loads=2 clock_loads=1
+   Signal=FSM_lcd_arbiter_3_N_82_0 loads=2 clock_loads=1
+   Signal=n272_generated_1 loads=2 clock_loads=1
+   Signal=lcd_reset_N_167 loads=3 clock_loads=1
+   Signal=n272_generated_9 loads=2 clock_loads=1
+   Signal=n272_generated_2 loads=2 clock_loads=1
+   Signal=n272_generate   ....   s=2 clock_loads=1
+   Signal=n272_generated_7 loads=2 clock_loads=1
+   Signal=n272_generated_8 loads=2 clock_loads=1
+   Signal=n272_generated_10 loads=2 clock_loads=1</Dynamic>
+        </Message>
+    </Task>
+    <Task name="TimingSimFileVHD">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+    <Task name="TimingSimFileVlg">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+</BaliMessageLog>

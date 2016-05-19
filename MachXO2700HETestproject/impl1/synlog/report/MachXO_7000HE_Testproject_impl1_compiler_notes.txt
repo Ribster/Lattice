@@ -1,0 +1,10 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N: CD720 :"C:\lscc\diamond\3.7_x64\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_wrapper.vhd":8:7:8:17|Top entity is set to lcd_wrapper.
+@N: CD630 :"Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_wrapper.vhd":8:7:8:17|Synthesizing work.lcd_wrapper.beh_lcd_wrapper.
+@N: CD630 :"Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_sender.vhd":8:7:8:16|Synthesizing work.lcd_sender.beh_lcd_sender.
+@N: CD231 :"Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_sender.vhd":24:17:24:18|Using onehot encoding for type state_type (undefined="10000000")
+@N: CL201 :"Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_sender.vhd":61:2:61:3|Trying to extract state machine for register PS_vivaz_state.
+@N|Running in 64-bit mode
+
