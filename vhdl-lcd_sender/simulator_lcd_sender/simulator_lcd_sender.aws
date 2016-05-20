@@ -1,0 +1,14 @@
+[Version]
+Version=10.2
+[Designs]
+simulator_lcd_sender=simulator_lcd_sender.adf
+[Settings]
+Active=simulator_lcd_sender
+[Expand]
+simulator_lcd_sender=1
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=

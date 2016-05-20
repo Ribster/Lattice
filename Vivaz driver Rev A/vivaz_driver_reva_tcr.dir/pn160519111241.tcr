@@ -1,0 +1,83 @@
+#Start recording tcl command: 5/18/2016 20:40:36
+#Project Location: Z:/GITHUB/Lattice/Vivaz driver Rev A; Project name: vivaz_driver_reva
+prj_project open "Z:/GITHUB/Lattice/Vivaz driver Rev A/vivaz_driver_reva.ldf"
+pgr_project open "Z:/GITHUB/Lattice/Vivaz driver Rev A/impl1/impl1.xcf"
+pgr_program run
+pgr_project save "Z:/GITHUB/Lattice/Vivaz driver Rev A/impl1/impl1.xcf"
+source "Z:/GITHUB/Lattice/Vivaz driver Rev A/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "lcd_sender_tb.vhd"
+source "Z:/GITHUB/Lattice/Vivaz driver Rev A/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "clk_div2_tb.vhd"
+prj_src add "Z:/GITHUB/Lattice/Vivaz driver Rev A/simulation_reva/simulation_reva.spf"
+prj_src remove "Z:/GITHUB/Lattice/Vivaz driver Rev A/clk_div2_tb.vhd"
+prj_run Map -impl impl1
+source "Z:/GITHUB/Lattice/Vivaz driver Rev A/hdle_generate_Symbol.tcl"
+source "Z:/GITHUB/Lattice/Vivaz driver Rev A/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "clk_div2_tb.vhd"
+prj_run PAR -impl impl1
+prj_run Export -impl impl1
+prj_run Map -impl impl1
+prj_src add "Z:/GITHUB/Lattice/Vivaz driver Rev A/vivaz_rev_a/vivaz_rev_a.spf"
+prj_run Synthesis -impl impl1 -forceAll
+prj_run Export -impl impl1
+prj_src add "Z:/GITHUB/Lattice/Vivaz driver Rev A/vivaz_rev_a/vivaz_rev_a.spf"
+prj_run Export -impl impl1
+prj_run Export -impl impl1
+prj_run Export -impl impl1
+prj_run Export -impl impl1
+prj_run Export -impl impl1
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src remove "Z:/GITHUB/Lattice/Vivaz driver Rev A/lcd_sender_tb.vhd"
+prj_src remove "Z:/GITHUB/Lattice/Vivaz driver Rev A/clk_div2_tb.vhd"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Export -impl impl1
+pgr_program run
+pgr_program run
+pgr_program run
+prj_run Export -impl impl1
+pgr_project close
+pgr_project open "Z:/GITHUB/Lattice/Vivaz driver Rev A/impl1/impl1.xcf"
+pgr_program run
+pgr_program run
+prj_run Export -impl impl1
+pgr_program run
+prj_run Export -impl impl1
+pgr_program run
+pgr_program run
+prj_run Export -impl impl1
+prj_run Export -impl impl1
+pgr_program run
+prj_run Export -impl impl1
+pgr_program run
+prj_run Export -impl impl1
+pgr_program run
+pgr_program run
+pgr_program run
+prj_run Export -impl impl1
+pgr_program run
+prj_run Export -impl impl1
+prj_run Export -impl impl1
+pgr_program run
+prj_run Export -impl impl1
+pgr_program run
+prj_run Export -impl impl1
+pgr_program run
+prj_run Export -impl impl1
+pgr_program run
+pgr_program run
+prj_run Export -impl impl1
+pgr_program run
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Export -impl impl1
+pgr_program run
+pgr_program run
+prj_project save
+prj_project close
+#Stop recording: 5/19/2016 11:12:41

@@ -1,0 +1,8 @@
+[Version]
+Version=10.2
+[Designs]
+lcd_sender_a=lcd_sender_a.adf
+[Settings]
+Active=lcd_sender_a
+[Expand]
+lcd_sender_a=1

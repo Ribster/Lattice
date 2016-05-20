@@ -31,7 +31,8 @@
 
 -lpf 1
 -lib "work" -vhd "Z:/GITHUB/Lattice/MachXO2700HETestproject/lcd_sender.vhd"
--top lcd_sender
+"Z:/GITHUB/Lattice/MachXO2700HETestproject/lcd_FSM.vhd"
+-top lcd_FSM
 
 
 -p "C:/lscc/diamond/3.7_x64/ispfpga/xo2c00/data" "Z:/GITHUB/Lattice/MachXO2700HETestproject/impl1" "Z:/GITHUB/Lattice/MachXO2700HETestproject"

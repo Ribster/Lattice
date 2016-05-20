@@ -1,0 +1,1 @@
+-w -s "z:\GITHUB\Lattice\vhdl-lcd_sender\simulator_lcd_sender\library.cfg"  -j "z:\GITHUB\Lattice\vhdl-lcd_sender\simulator_lcd_sender\projlib.cfg"  -d "z:\GITHUB\Lattice\vhdl-lcd_sender\simulator_lcd_sender\compile"   -work work  -O3 -e 100 -2002 "z:/GITHUB/Lattice/vhdl-lcd_sender/impl1/VHDL_lcd_sender_impl1_vho.vho"

@@ -4,11 +4,17 @@
         <Option name="HDL type" value="VHDL"/>
     </Options>
     <Implementation title="impl1" dir="impl1" description="impl1" synthesis="lse" default_strategy="Strategy1">
-        <Options def_top="lcd_sender" top="lcd_sender"/>
+        <Options def_top="lcd_FSM" top="lcd_FSM"/>
         <Source name="lcd_sender.vhd" type="VHDL" type_short="VHDL">
-            <Options top_module="lcd_sender"/>
+            <Options/>
         </Source>
         <Source name="MachXO_7000HE_Testproject_tb.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly">
+            <Options/>
+        </Source>
+        <Source name="lcd_FSM.vhd" type="VHDL" type_short="VHDL">
+            <Options top_module="lcd_FSM"/>
+        </Source>
+        <Source name="lcd_sender_a/lcd_sender_a.spf" type="Simulation Project File" type_short="SPF">
             <Options/>
         </Source>
         <Source name="MachXO_7000HE_Testproject.lpf" type="Logic Preference" type_short="LPF">

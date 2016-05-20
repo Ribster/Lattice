@@ -7,7 +7,7 @@
 </STYLE>
 </HEAD>
 <PRE><A name="Mrp"></A>
-          Lattice Mapping Report File for Design Module 'lcd_sender'
+           Lattice Mapping Report File for Design Module 'lcd_FSM'
 
 
 
@@ -25,23 +25,23 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO2-7000HETQFP144
 Target Performance:   5
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.7.1.502
-Mapped on:  05/18/16  19:01:14
+Mapped on:  05/19/16  22:55:59
 
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
-   Number of registers:     22 out of  7209 (0%)
-      PFU registers:           22 out of  6864 (0%)
+   Number of registers:      8 out of  7209 (0%)
+      PFU registers:            8 out of  6864 (0%)
       PIO registers:            0 out of   345 (0%)
-   Number of SLICEs:        13 out of  3432 (0%)
-      SLICEs as Logic/ROM:     13 out of  3432 (0%)
+   Number of SLICEs:         5 out of  3432 (0%)
+      SLICEs as Logic/ROM:      5 out of  3432 (0%)
       SLICEs as RAM:            0 out of  2574 (0%)
       SLICEs as Carry:          0 out of  3432 (0%)
-   Number of LUT4s:         10 out of  6864 (0%)
-      Number used as logic LUTs:         10
+   Number of LUT4s:          4 out of  6864 (0%)
+      Number used as logic LUTs:          4
       Number used as distributed RAM:     0
       Number used as ripple logic:        0
       Number used as shift registers:     0
-   Number of PIO sites used: 39 + 4(JTAG) out of 115 (37%)
+   Number of PIO sites used: 21 + 4(JTAG) out of 115 (22%)
    Number of block RAMs:  0 out of 26 (0%)
    Number of GSRs:  1 out of 1 (100%)
    EFB used :       No
@@ -68,30 +68,28 @@ Mapped on:  05/18/16  19:01:14
      ripple logic.
    Number of clocks:  1
 
-     Net clk_c: 13 loads, 13 rising, 0 falling (Driver: PIO clk )
-   Number of Clock Enables:  4
+     Net clk_c: 5 loads, 5 rising, 0 falling (Driver: PIO clk )
+   Number of Clock Enables:  1
      Net clk_c_enable_1: 1 loads, 1 LSLICEs
-     Net clk_c_enable_2: 1 loads, 1 LSLICEs
-     Net clk_c_enable_19: 8 loads, 8 LSLICEs
-     Net clk_c_enable_18: 1 loads, 1 LSLICEs
-   Number of LSRs:  0
+   Number of LSRs:  1
+     Net n141: 1 loads, 1 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net PS_vivaz_state_2: 9 loads
-     Net clk_c_enable_19: 8 loads
-     Net PS_vivaz_state_1: 8 loads
-     Net PS_vivaz_state_0: 7 loads
-     Net n324: 5 loads
-     Net busy_c: 2 loads
-     Net rst_c: 2 loads
+     Net rst_c: 3 loads
+     Net n116: 2 loads
+     Net n133: 2 loads
      Net clk_c_enable_1: 1 loads
-     Net data1Command0_c: 1 loads
-     Net lcd_bus_c_15: 1 loads
+     Net debug_c: 1 loads
+     Net n112: 1 loads
+     Net n113: 1 loads
+     Net n114: 1 loads
+     Net n141: 1 loads
+     Net n175: 1 loads
 
 
 
 
-   Number of warnings:  0
+   Number of warnings:  34
    Number of errors:    0
      
 
@@ -100,7 +98,58 @@ Mapped on:  05/18/16  19:01:14
 
 <A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
 
-   No errors or warnings present.
+WARNING - map: input pad net 'datacommand' has no legal load.
+WARNING - map: input pad net 'data[15]' has no legal load.
+WARNING - map: input pad net 'data[14]' has no legal load.
+WARNING - map: input pad net 'data[13]' has no legal load.
+WARNING - map: input pad net 'data[12]' has no legal load.
+WARNING - map: input pad net 'data[11]' has no legal load.
+WARNING - map: input pad net 'data[10]' has no legal load.
+WARNING - map: input pad net 'data[9]' has no legal load.
+WARNING - map: input pad net 'data[8]' has no legal load.
+WARNING - map: input pad net 'data[7]' has no legal load.
+WARNING - map: input pad net 'data[6]' has no legal load.
+WARNING - map: input pad net 'data[5]' has no legal load.
+WARNING - map: input pad net 'data[4]' has no legal load.
+WARNING - map: input pad net 'data[3]' has no legal load.
+WARNING - map: input pad net 'data[2]' has no legal load.
+WARNING - map: input pad net 'data[1]' has no legal load.
+WARNING - map: input pad net 'data[0]' has no legal load.
+WARNING - map: IO buffer missing for top level port datacommand...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port data[15:0](15)...logic will
+     be discarded.
+WARNING - map: IO buffer missing for top level port data[15:0](14)...logic will
+     be discarded.
+WARNING - map: IO buffer missing for top level port data[15:0](13)...logic will
+     be discarded.
+WARNING - map: IO buffer missing for top level port data[15:0](12)...logic will
+     be discarded.
+WARNING - map: IO buffer missing for top level port data[15:0](11)...logic will
+
+     be discarded.
+WARNING - map: IO buffer missing for top level port data[15:0](10)...logic will
+     be discarded.
+WARNING - map: IO buffer missing for top level port data[15:0](9)...logic will
+     be discarded.
+WARNING - map: IO buffer missing for top level port data[15:0](8)...logic will
+     be discarded.
+WARNING - map: IO buffer missing for top level port data[15:0](7)...logic will
+     be discarded.
+WARNING - map: IO buffer missing for top level port data[15:0](6)...logic will
+     be discarded.
+WARNING - map: IO buffer missing for top level port data[15:0](5)...logic will
+     be discarded.
+WARNING - map: IO buffer missing for top level port data[15:0](4)...logic will
+     be discarded.
+WARNING - map: IO buffer missing for top level port data[15:0](3)...logic will
+     be discarded.
+WARNING - map: IO buffer missing for top level port data[15:0](2)...logic will
+     be discarded.
+WARNING - map: IO buffer missing for top level port data[15:0](1)...logic will
+     be discarded.
+WARNING - map: IO buffer missing for top level port data[15:0](0)...logic will
+     be discarded.
 
 
 
@@ -110,97 +159,58 @@ Mapped on:  05/18/16  19:01:14
 | IO Name             | Direction | Levelmode | IO         |
 |                     |           |  IO_TYPE  | Register   |
 +---------------------+-----------+-----------+------------+
-| lcd_bus[15]         | OUTPUT    | LVCMOS25  |            |
+| lcd_data[13]        | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
-| lcd_bus[11]         | OUTPUT    | LVCMOS25  |            |
+| lcd_data[1]         | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
-| lcd_bus[12]         | OUTPUT    | LVCMOS25  |            |
+| lcd_data[5]         | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
-| lcd_bus[13]         | OUTPUT    | LVCMOS25  |            |
+| lcd_data[15]        | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
-| lcd_bus[14]         | OUTPUT    | LVCMOS25  |            |
+| lcd_data[14]        | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
-| lcd_bus[10]         | OUTPUT    | LVCMOS25  |            |
+| debug               | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
-| lcd_bus[9]          | OUTPUT    | LVCMOS25  |            |
+| lcd_data[8]         | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
-| lcd_bus[8]          | OUTPUT    | LVCMOS25  |            |
+| lcd_data[9]         | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
-| lcd_bus[7]          | OUTPUT    | LVCMOS25  |            |
+| lcd_data[10]        | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| lcd_data[11]        | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| lcd_data[2]         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| lcd_data[3]         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| lcd_data[4]         | OUTPUT    | LVCMOS25  |            |
 
 +---------------------+-----------+-----------+------------+
-| lcd_bus[6]          | OUTPUT    | LVCMOS25  |            |
+| lcd_data[6]         | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
-| lcd_bus[5]          | OUTPUT    | LVCMOS25  |            |
+| lcd_data[7]         | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
-| lcd_bus[4]          | OUTPUT    | LVCMOS25  |            |
+| lcd_data[12]        | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
-| lcd_bus[3]          | OUTPUT    | LVCMOS25  |            |
+| lcd_data[0]         | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
-| lcd_bus[2]          | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| lcd_bus[1]          | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| lcd_bus[0]          | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| lcd_write           | OUTPUT    | LVCMOS25  |            |
+| lcd_wr              | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | lcd_rs              | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| busy                | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | clk                 | INPUT     | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | rst                 | INPUT     | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| go                  | INPUT     | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| data1Command0       | INPUT     | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| payload[15]         | INPUT     | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| payload[14]         | INPUT     | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| payload[13]         | INPUT     | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| payload[12]         | INPUT     | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| payload[11]         | INPUT     | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| payload[10]         | INPUT     | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| payload[9]          | INPUT     | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| payload[8]          | INPUT     | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| payload[7]          | INPUT     | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| payload[6]          | INPUT     | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| payload[5]          | INPUT     | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| payload[4]          | INPUT     | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| payload[3]          | INPUT     | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| payload[2]          | INPUT     | LVCMOS25  |            |
-
-+---------------------+-----------+-----------+------------+
-| payload[1]          | INPUT     | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| payload[0]          | INPUT     | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 
 
 
 <A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
 
-Block i273 undriven or does not drive anything - clipped.
-Block i272 undriven or does not drive anything - clipped.
-Signal n273 was merged into signal rst_c
+Signal n173 was merged into signal rst_c
 Signal VCC_net undriven or does not drive anything - clipped.
-Signal GND_net undriven or does not drive anything - clipped.
-Block i220_1_lut was optimized away.
+Block i68_1_lut_rep_1 was optimized away.
+Block i2 was optimized away.
 
 
 
@@ -225,6 +235,19 @@ GSR Component:
         not.
         
 
+     Components with disabled GSR Property
+-------------------------------------
+
+     These components have the GSR property set to DISABLED. The components will
+     not respond to the reset signal 'rst_c' via the GSR component.
+
+     Type and number of components of the type: 
+   Register = 1 
+
+     Type and instance name of component: 
+
+   Register : debug_18
+
 
 
 <A name="mrp_runtime"></A><B><U><big>Run Time and Memory Usage</big></U></B>
@@ -234,6 +257,40 @@ GSR Component:
    Total REAL Time: 0 secs  
    Peak Memory Usage: 32 MB
         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

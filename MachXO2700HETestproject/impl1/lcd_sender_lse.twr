@@ -1,6 +1,6 @@
 --------------------------------------------------------------------------------
 Lattice Synthesis Timing Report, Version  
-Wed May 18 19:01:13 2016
+Thu May 19 14:00:14 2016
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -19,94 +19,88 @@ Report level:    verbose report, limited to 3 items per constraint
 
 ================================================================================
 Constraint: create_clock -period 1000.000000 -name clk0 [get_nets clk_c]
-            74 items scored, 0 timing errors detected.
+            69 items scored, 0 timing errors detected.
 --------------------------------------------------------------------------------
 
 
-Passed:  The following path meets requirements by 995.478ns
+Passed:  The following path meets requirements by 996.011ns
 
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
-   Source:         FD1P3AX    CK             busy_28  (from clk_c +)
-   Destination:    FD1P3AX    SP             lcd_write_27  (to clk_c +)
+   Source:         FD1S3AX    CK             PS_vivaz_state_i2  (from clk_c +)
+   Destination:    FD1P3AX    SP             lcd_bus_i1  (to clk_c +)
 
-   Delay:                   4.263ns  (30.5% logic, 69.5% route), 3 logic levels.
+   Delay:                   3.730ns  (22.8% logic, 77.2% route), 2 logic levels.
 
  Constraint Details:
 
-      4.263ns data_path busy_28 to lcd_write_27 meets
+      3.730ns data_path PS_vivaz_state_i2 to lcd_bus_i1 meets
     1000.000ns delay constraint less
-      0.259ns LCE_S requirement (totaling 999.741ns) by 995.478ns
+      0.259ns LCE_S requirement (totaling 999.741ns) by 996.011ns
 
- Path Details: busy_28 to lcd_write_27
+ Path Details: PS_vivaz_state_i2 to lcd_bus_i1
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.403             CK to Q              busy_28 (from clk_c)
-Route         2   e 1.002                                  busy_c
-LUT4        ---     0.448              B to Z              i1_3_lut_rep_6
-Route         5   e 1.174                                  n324
-LUT4        ---     0.448              C to Z              i1_4_lut_4_lut
-Route         1   e 0.788                                  clk_c_enable_18
+L_CO        ---     0.403             CK to Q              PS_vivaz_state_i2 (from clk_c)
+Route         9   e 1.363                                  PS_vivaz_state[2]
+LUT4        ---     0.448              A to Z              i257_3_lut
+Route        16   e 1.516                                  clk_c_enable_19
                   --------
-                    4.263  (30.5% logic, 69.5% route), 3 logic levels.
+                    3.730  (22.8% logic, 77.2% route), 2 logic levels.
 
 
-Passed:  The following path meets requirements by 995.478ns
+Passed:  The following path meets requirements by 996.011ns
 
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
-   Source:         FD1P3AX    CK             busy_28  (from clk_c +)
-   Destination:    FD1P3AX    SP             lcd_rs_29  (to clk_c +)
+   Source:         FD1S3AX    CK             PS_vivaz_state_i2  (from clk_c +)
+   Destination:    FD1P3AX    SP             lcd_bus_i16  (to clk_c +)
 
-   Delay:                   4.263ns  (30.5% logic, 69.5% route), 3 logic levels.
+   Delay:                   3.730ns  (22.8% logic, 77.2% route), 2 logic levels.
 
  Constraint Details:
 
-      4.263ns data_path busy_28 to lcd_rs_29 meets
+      3.730ns data_path PS_vivaz_state_i2 to lcd_bus_i16 meets
     1000.000ns delay constraint less
-      0.259ns LCE_S requirement (totaling 999.741ns) by 995.478ns
+      0.259ns LCE_S requirement (totaling 999.741ns) by 996.011ns
 
- Path Details: busy_28 to lcd_rs_29
+ Path Details: PS_vivaz_state_i2 to lcd_bus_i16
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.403             CK to Q              busy_28 (from clk_c)
-Route         2   e 1.002                                  busy_c
-LUT4        ---     0.448              B to Z              i1_3_lut_rep_6
-Route         5   e 1.174                                  n324
-LUT4        ---     0.448              C to Z              i2_3_lut_4_lut_4_lut
-Route         1   e 0.788                                  clk_c_enable_2
+L_CO        ---     0.403             CK to Q              PS_vivaz_state_i2 (from clk_c)
+Route         9   e 1.363                                  PS_vivaz_state[2]
+LUT4        ---     0.448              A to Z              i257_3_lut
+Route        16   e 1.516                                  clk_c_enable_19
                   --------
-                    4.263  (30.5% logic, 69.5% route), 3 logic levels.
+                    3.730  (22.8% logic, 77.2% route), 2 logic levels.
 
 
-Passed:  The following path meets requirements by 995.478ns
+Passed:  The following path meets requirements by 996.011ns
 
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
-   Source:         FD1P3AX    CK             busy_28  (from clk_c +)
-   Destination:    FD1P3AX    SP             busy_28  (to clk_c +)
+   Source:         FD1S3AX    CK             PS_vivaz_state_i2  (from clk_c +)
+   Destination:    FD1P3AX    SP             lcd_bus_i15  (to clk_c +)
 
-   Delay:                   4.263ns  (30.5% logic, 69.5% route), 3 logic levels.
+   Delay:                   3.730ns  (22.8% logic, 77.2% route), 2 logic levels.
 
  Constraint Details:
 
-      4.263ns data_path busy_28 to busy_28 meets
+      3.730ns data_path PS_vivaz_state_i2 to lcd_bus_i15 meets
     1000.000ns delay constraint less
-      0.259ns LCE_S requirement (totaling 999.741ns) by 995.478ns
+      0.259ns LCE_S requirement (totaling 999.741ns) by 996.011ns
 
- Path Details: busy_28 to busy_28
+ Path Details: PS_vivaz_state_i2 to lcd_bus_i15
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.403             CK to Q              busy_28 (from clk_c)
-Route         2   e 1.002                                  busy_c
-LUT4        ---     0.448              B to Z              i1_3_lut_rep_6
-Route         5   e 1.174                                  n324
-LUT4        ---     0.448              B to Z              i1_4_lut_4_lut_adj_1
-Route         1   e 0.788                                  clk_c_enable_1
+L_CO        ---     0.403             CK to Q              PS_vivaz_state_i2 (from clk_c)
+Route         9   e 1.363                                  PS_vivaz_state[2]
+LUT4        ---     0.448              A to Z              i257_3_lut
+Route        16   e 1.516                                  clk_c_enable_19
                   --------
-                    4.263  (30.5% logic, 69.5% route), 3 logic levels.
+                    3.730  (22.8% logic, 77.2% route), 2 logic levels.
 
-Report: 4.522 ns is the maximum delay for this constraint.
+Report: 3.989 ns is the maximum delay for this constraint.
 
 
 Timing Report Summary
@@ -116,7 +110,7 @@ Constraint                              |   Constraint|       Actual|Levels
 --------------------------------------------------------------------------------
                                         |             |             |
 create_clock -period 1000.000000 -name  |             |             |
-clk0 [get_nets clk_c]                   |  1000.000 ns|     4.522 ns|     3  
+clk0 [get_nets clk_c]                   |  1000.000 ns|     3.989 ns|     2  
                                         |             |             |
 --------------------------------------------------------------------------------
 
@@ -130,8 +124,8 @@ Timing summary:
 
 Timing errors: 0  Score: 0
 
-Constraints cover  74 paths, 15 nets, and 76 connections (65.5% coverage)
+Constraints cover  69 paths, 13 nets, and 70 connections (61.9% coverage)
 
 
-Peak memory: 73707520 bytes, TRCE: 1449984 bytes, DLYMAN: 0 bytes
+Peak memory: 73822208 bytes, TRCE: 1380352 bytes, DLYMAN: 0 bytes
 CPU_TIME_REPORT: 0 secs 

@@ -1,0 +1,51 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=3
+Current Config=compile
+[Configurations]
+compile=work
+[Library]
+lcd_sender_a=.\lcd_sender_a\lcd_sender_a.lib
+work=.\work\work.lib
+[Settings]
+AccessRead=1
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=0
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+VsimAdditionalOptions=+transport_path_delays +transport_int_delays
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+PriorityLibNames=pmi_work
+LibNames=ovi_machxo2
+[LocalVhdlSets]
+CompileWithDebug=0
+[$LibMap$]
+lcd_sender_a=.
+work=.
+[LocalVerilogDirs]
+Count=0
+[DefineMacro]
+Global=
+[Files]
+/..\..\impl1\MachXO_7000HE_Testproject_impl1_vho.vho=-1
+/..\..\MachXO_7000HE_Testproject_tb.vhd=-1
+/..\..\impl1\MachXO_7000HE_Testproject_impl1_vho.sdf=-1
+/untitled.asdb=-1
+/untitled.awc=-1
+[Files.Data]
+.\..\impl1\MachXO_7000HE_Testproject_impl1_vho.vho=VHDL Source Code
+.\..\MachXO_7000HE_Testproject_tb.vhd=VHDL Source Code
+.\..\impl1\MachXO_7000HE_Testproject_impl1_vho.sdf=SDF File
+.\src\untitled.asdb=Accelerated Waveform File
+.\src\untitled.awc=Accelerated Waveform Configuration
+[sdf.ea.testbench-behavior]
+0=..\impl1\MachXO_7000HE_Testproject_impl1_vho.sdf| /testbench/uut, Maximal, Yes

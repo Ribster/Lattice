@@ -1,0 +1,1739 @@
+acom -O3 -work work -2002  $dsn/../impl1/MachXO_7000HE_Testproject_impl1_vho.vho $dsn/../MachXO_7000HE_Testproject_tb.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: Z:\GITHUB\Lattice\MachXO2700HETestproject\impl1\MachXO_7000HE_Testproject_impl1_vho.vho
+# Compile Entity "lut4"
+# Compile Architecture "Structure" of Entity "lut4"
+# Compile Entity "lut40001"
+# Compile Architecture "Structure" of Entity "lut40001"
+# Compile Entity "vmuxregsre"
+# Compile Architecture "Structure" of Entity "vmuxregsre"
+# Compile Entity "vcc"
+# Compile Architecture "Structure" of Entity "vcc"
+# Compile Entity "gnd"
+# Compile Architecture "Structure" of Entity "gnd"
+# Compile Entity "vmuxregsre0002"
+# Compile Architecture "Structure" of Entity "vmuxregsre0002"
+# Compile Entity "SLICE_0"
+# Compile Architecture "Structure" of Entity "SLICE_0"
+# Compile Entity "lut40003"
+# Compile Architecture "Structure" of Entity "lut40003"
+# Compile Entity "lut40004"
+# Compile Architecture "Structure" of Entity "lut40004"
+# Compile Entity "SLICE_1"
+# Compile Architecture "Structure" of Entity "SLICE_1"
+# Compile Entity "lut40005"
+# Compile Architecture "Structure" of Entity "lut40005"
+# Compile Entity "SLICE_2"
+# Compile Architecture "Structure" of Entity "SLICE_2"
+# Compile Entity "SLICE_4"
+# Compile Architecture "Structure" of Entity "SLICE_4"
+# Compile Entity "SLICE_5"
+# Compile Architecture "Structure" of Entity "SLICE_5"
+# Compile Entity "SLICE_6"
+# Compile Architecture "Structure" of Entity "SLICE_6"
+# Compile Entity "SLICE_7"
+# Compile Architecture "Structure" of Entity "SLICE_7"
+# Compile Entity "SLICE_11"
+# Compile Architecture "Structure" of Entity "SLICE_11"
+# Compile Entity "lut40006"
+# Compile Architecture "Structure" of Entity "lut40006"
+# Compile Entity "lut40007"
+# Compile Architecture "Structure" of Entity "lut40007"
+# Compile Entity "SLICE_12"
+# Compile Architecture "Structure" of Entity "SLICE_12"
+# Compile Entity "lut40008"
+# Compile Architecture "Structure" of Entity "lut40008"
+# Compile Entity "lut40009"
+# Compile Architecture "Structure" of Entity "lut40009"
+# Compile Entity "SLICE_13"
+# Compile Architecture "Structure" of Entity "SLICE_13"
+# Compile Entity "SLICE_19"
+# Compile Architecture "Structure" of Entity "SLICE_19"
+# Compile Entity "SLICE_20"
+# Compile Architecture "Structure" of Entity "SLICE_20"
+# Compile Entity "SLICE_21"
+# Compile Architecture "Structure" of Entity "SLICE_21"
+# Compile Entity "xo2iobuf"
+# Compile Architecture "Structure" of Entity "xo2iobuf"
+# Compile Entity "lcd_bus_15_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_15_B"
+# Compile Entity "lcd_bus_14_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_14_B"
+# Compile Entity "lcd_bus_13_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_13_B"
+# Compile Entity "lcd_bus_12_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_12_B"
+# Compile Entity "lcd_bus_11_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_11_B"
+# Compile Entity "lcd_bus_10_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_10_B"
+# Compile Entity "lcd_bus_9_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_9_B"
+# Compile Entity "lcd_bus_8_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_8_B"
+# Compile Entity "lcd_bus_7_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_7_B"
+# Compile Entity "lcd_bus_6_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_6_B"
+# Compile Entity "lcd_bus_5_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_5_B"
+# Compile Entity "lcd_bus_4_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_4_B"
+# Compile Entity "lcd_bus_3_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_3_B"
+# Compile Entity "lcd_bus_2_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_2_B"
+# Compile Entity "lcd_bus_1_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_1_B"
+# Compile Entity "lcd_bus_0_B"
+# Compile Architecture "Structure" of Entity "lcd_bus_0_B"
+# Compile Entity "lcd_writeB"
+# Compile Architecture "Structure" of Entity "lcd_writeB"
+# Compile Entity "lcd_rsB"
+# Compile Architecture "Structure" of Entity "lcd_rsB"
+# Compile Entity "busyB"
+# Compile Architecture "Structure" of Entity "busyB"
+# Compile Entity "xo2iobuf0010"
+# Compile Architecture "Structure" of Entity "xo2iobuf0010"
+# Compile Entity "clkB"
+# Compile Architecture "Structure" of Entity "clkB"
+# Compile Entity "rstB"
+# Compile Architecture "Structure" of Entity "rstB"
+# Compile Entity "goB"
+# Compile Architecture "Structure" of Entity "goB"
+# Compile Entity "data1Command0B"
+# Compile Architecture "Structure" of Entity "data1Command0B"
+# Compile Entity "payload_15_B"
+# Compile Architecture "Structure" of Entity "payload_15_B"
+# Compile Entity "payload_14_B"
+# Compile Architecture "Structure" of Entity "payload_14_B"
+# Compile Entity "payload_13_B"
+# Compile Architecture "Structure" of Entity "payload_13_B"
+# Compile Entity "payload_12_B"
+# Compile Architecture "Structure" of Entity "payload_12_B"
+# Compile Entity "payload_11_B"
+# Compile Architecture "Structure" of Entity "payload_11_B"
+# Compile Entity "payload_10_B"
+# Compile Architecture "Structure" of Entity "payload_10_B"
+# Compile Entity "payload_9_B"
+# Compile Architecture "Structure" of Entity "payload_9_B"
+# Compile Entity "payload_8_B"
+# Compile Architecture "Structure" of Entity "payload_8_B"
+# Compile Entity "payload_7_B"
+# Compile Architecture "Structure" of Entity "payload_7_B"
+# Compile Entity "payload_6_B"
+# Compile Architecture "Structure" of Entity "payload_6_B"
+# Compile Entity "payload_5_B"
+# Compile Architecture "Structure" of Entity "payload_5_B"
+# Compile Entity "payload_4_B"
+# Compile Architecture "Structure" of Entity "payload_4_B"
+# Compile Entity "payload_3_B"
+# Compile Architecture "Structure" of Entity "payload_3_B"
+# Compile Entity "payload_2_B"
+# Compile Architecture "Structure" of Entity "payload_2_B"
+# Compile Entity "payload_1_B"
+# Compile Architecture "Structure" of Entity "payload_1_B"
+# Compile Entity "payload_0_B"
+# Compile Architecture "Structure" of Entity "payload_0_B"
+# Compile Entity "GSR5MODE"
+# Compile Architecture "Structure" of Entity "GSR5MODE"
+# Compile Entity "GSR_INSTB"
+# Compile Architecture "Structure" of Entity "GSR_INSTB"
+# Compile Entity "lcd_sender"
+# Compile Architecture "Structure" of Entity "lcd_sender"
+# Compile Configuration "Structure_CON"
+# File: Z:\GITHUB\Lattice\MachXO2700HETestproject\MachXO_7000HE_Testproject_tb.vhd
+# Compile Entity "testbench"
+# Compile Architecture "behavior" of Entity "testbench"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.9 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.3 [s].
+asim -sdfmax /testbench/uut=$dsn/../impl1/MachXO_7000HE_Testproject_impl1_vho.sdf +transport_path_delays +transport_int_delays -O5 -L ovi_machxo2 -PL pmi_work +access +r testbench behavior
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.2 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# SDF: 334 generic(s) read from Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_sender_a/../impl1/MachXO_7000HE_Testproject_impl1_vho.sdf
+# SDF: SDF load & update time: 0.0 [s].
+# SDF: 334 SDF entries loaded while 334 entries read
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7620 kB (elbread=1027 elab2=6131 kernel=168 sdf=292)
+# KERNEL: ASDB file was created in location Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_sender_a\src\wave.asdb
+#  1:50 PM, Thursday, May 19, 2016
+#  Simulation has been initialized
+#  Selected Top-Level: testbench (behavior)
+# add wave -noreg {/testbench/rst}
+# add wave -noreg {/testbench/lcd_bus}
+# add wave -noreg {/testbench/lcd_write}
+# add wave -noreg {/testbench/lcd_rs}
+# add wave -noreg {/testbench/go}
+# add wave -noreg {/testbench/data1Command0}
+# add wave -noreg {/testbench/busy}
+# add wave -noreg {/testbench/payload}
+# add wave -noreg {/testbench/clk_sig}
+# 9 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'Z:/GITHUB/Lattice/MachXO2700HETestproject/lcd_sender_a/src/wave.asdb'.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F1 ; Preempted Future Value := 0 @ 2500005.027 ns; Newly Scheduled Value := 1 @ 2500005.135 ns;
+# KERNEL: Time: 2500004683 ps,  Iteration: 1,  Instance: /testbench/uut/SLICE_0I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F0 ; Preempted Future Value := 1 @ 2500005.019 ns; Newly Scheduled Value := 0 @ 2500005.135 ns;
+# KERNEL: Time: 2500004683 ps,  Iteration: 1,  Instance: /testbench/uut/SLICE_1I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F0 ; Preempted Future Value := 0 @ 4500005.019 ns; Newly Scheduled Value := 1 @ 4500005.027 ns;
+# KERNEL: Time: 4500004575 ps,  Iteration: 1,  Instance: /testbench/uut/SLICE_1I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F0 ; Preempted Future Value := 1 @ 4500005.019 ns; Newly Scheduled Value := 1 @ 4500005.135 ns;
+# KERNEL: Time: 4500004683 ps,  Iteration: 0,  Instance: /testbench/uut/SLICE_1I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F1 ; Preempted Future Value := 1 @ 4500005.027 ns; Newly Scheduled Value := 0 @ 4500005.135 ns;
+# KERNEL: Time: 4500004683 ps,  Iteration: 1,  Instance: /testbench/uut/SLICE_0I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F0 ; Preempted Future Value := 1 @ 4500005.019 ns; Newly Scheduled Value := 1 @ 4500005.135 ns;
+# KERNEL: Time: 4500004877 ps,  Iteration: 0,  Instance: /testbench/uut/SLICE_1I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F1 ; Preempted Future Value := 0 @ 4500005.027 ns; Newly Scheduled Value := 0 @ 4500005.135 ns;
+# KERNEL: Time: 4500004877 ps,  Iteration: 0,  Instance: /testbench/uut/SLICE_0I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F1 ; Preempted Future Value := 0 @ 6500005.027 ns; Newly Scheduled Value := 1 @ 6500005.135 ns;
+# KERNEL: Time: 6500004683 ps,  Iteration: 1,  Instance: /testbench/uut/SLICE_0I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F0 ; Preempted Future Value := 0 @ 6500005.019 ns; Newly Scheduled Value := 1 @ 6500005.135 ns;
+# KERNEL: Time: 6500004683 ps,  Iteration: 1,  Instance: /testbench/uut/SLICE_1I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F1 ; Preempted Future Value := 1 @ 6500005.019 ns; Newly Scheduled Value := 0 @ 6500005.135 ns;
+# KERNEL: Time: 6500004683 ps,  Iteration: 1,  Instance: /testbench/uut/SLICE_1I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F0 ; Preempted Future Value := 1 @ 6500005.139 ns; Newly Scheduled Value := 0 @ 6500005.314 ns;
+# KERNEL: Time: 6500004862 ps,  Iteration: 1,  Instance: /testbench/uut/SLICE_13I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F0 ; Preempted Future Value := 1 @ 8500005.019 ns; Newly Scheduled Value := 0 @ 8500005.027 ns;
+# KERNEL: Time: 8500004575 ps,  Iteration: 1,  Instance: /testbench/uut/SLICE_1I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F0 ; Preempted Future Value := 0 @ 8500005.019 ns; Newly Scheduled Value := 0 @ 8500005.027 ns;
+# KERNEL: Time: 8500004877 ps,  Iteration: 0,  Instance: /testbench/uut/SLICE_1I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F0 ; Preempted Future Value := 0 @ 8500005.019 ns; Newly Scheduled Value := 1 @ 8500005.329 ns;
+# KERNEL: Time: 8500004877 ps,  Iteration: 1,  Instance: /testbench/uut/SLICE_0I,  Process: VitalBehavior.
+# KERNEL: stopped at time: 15 ms
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.2 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# SDF: 334 generic(s) read from Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_sender_a/../impl1/MachXO_7000HE_Testproject_impl1_vho.sdf
+# SDF: SDF load & update time: 0.0 [s].
+# SDF: 334 SDF entries loaded while 334 entries read
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7620 kB (elbread=1027 elab2=6131 kernel=168 sdf=292)
+# KERNEL: ASDB file was created in location Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_sender_a\src\wave.asdb
+#  1:52 PM, Thursday, May 19, 2016
+#  Simulation has been initialized
+#  Selected Top-Level: testbench (behavior)
+# Waveform file 'untitled.awc' connected to 'Z:/GITHUB/Lattice/MachXO2700HETestproject/lcd_sender_a/src/wave.asdb'.
+run 30ms
+acom -O3 -work work -2002  $dsn/../MachXO_7000HE_Testproject_tb.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: Z:\GITHUB\Lattice\MachXO2700HETestproject\MachXO_7000HE_Testproject_tb.vhd
+# Compile Entity "testbench"
+# Compile Architecture "behavior" of Entity "testbench"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.2 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# SDF: 334 generic(s) read from Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_sender_a/../impl1/MachXO_7000HE_Testproject_impl1_vho.sdf
+# SDF: SDF load & update time: 0.0 [s].
+# SDF: 334 SDF entries loaded while 334 entries read
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7620 kB (elbread=1027 elab2=6131 kernel=168 sdf=292)
+# KERNEL: ASDB file was created in location Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_sender_a\src\wave.asdb
+#  1:52 PM, Thursday, May 19, 2016
+#  Simulation has been initialized
+#  Selected Top-Level: testbench (behavior)
+# Waveform file 'untitled.awc' connected to 'Z:/GITHUB/Lattice/MachXO2700HETestproject/lcd_sender_a/src/wave.asdb'.
+run 30ms
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F1 ; Preempted Future Value := 0 @ 2500005.027 ns; Newly Scheduled Value := 1 @ 2500005.135 ns;
+# KERNEL: Time: 2500004683 ps,  Iteration: 1,  Instance: /testbench/uut/SLICE_0I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F0 ; Preempted Future Value := 1 @ 2500005.019 ns; Newly Scheduled Value := 0 @ 2500005.135 ns;
+# KERNEL: Time: 2500004683 ps,  Iteration: 1,  Instance: /testbench/uut/SLICE_1I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F0 ; Preempted Future Value := 0 @ 4500005.019 ns; Newly Scheduled Value := 1 @ 4500005.027 ns;
+# KERNEL: Time: 4500004575 ps,  Iteration: 1,  Instance: /testbench/uut/SLICE_1I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F0 ; Preempted Future Value := 1 @ 4500005.019 ns; Newly Scheduled Value := 1 @ 4500005.135 ns;
+# KERNEL: Time: 4500004683 ps,  Iteration: 0,  Instance: /testbench/uut/SLICE_1I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F1 ; Preempted Future Value := 1 @ 4500005.027 ns; Newly Scheduled Value := 0 @ 4500005.135 ns;
+# KERNEL: Time: 4500004683 ps,  Iteration: 1,  Instance: /testbench/uut/SLICE_0I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F0 ; Preempted Future Value := 1 @ 4500005.019 ns; Newly Scheduled Value := 1 @ 4500005.135 ns;
+# KERNEL: Time: 4500004877 ps,  Iteration: 0,  Instance: /testbench/uut/SLICE_1I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F1 ; Preempted Future Value := 0 @ 4500005.027 ns; Newly Scheduled Value := 0 @ 4500005.135 ns;
+# KERNEL: Time: 4500004877 ps,  Iteration: 0,  Instance: /testbench/uut/SLICE_0I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F1 ; Preempted Future Value := 0 @ 6500005.027 ns; Newly Scheduled Value := 1 @ 6500005.135 ns;
+# KERNEL: Time: 6500004683 ps,  Iteration: 1,  Instance: /testbench/uut/SLICE_0I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F0 ; Preempted Future Value := 0 @ 6500005.019 ns; Newly Scheduled Value := 1 @ 6500005.135 ns;
+# KERNEL: Time: 6500004683 ps,  Iteration: 1,  Instance: /testbench/uut/SLICE_1I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F1 ; Preempted Future Value := 1 @ 6500005.019 ns; Newly Scheduled Value := 0 @ 6500005.135 ns;
+# KERNEL: Time: 6500004683 ps,  Iteration: 1,  Instance: /testbench/uut/SLICE_1I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F0 ; Preempted Future Value := 1 @ 6500005.139 ns; Newly Scheduled Value := 0 @ 6500005.314 ns;
+# KERNEL: Time: 6500004862 ps,  Iteration: 1,  Instance: /testbench/uut/SLICE_13I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F0 ; Preempted Future Value := 1 @ 8500005.019 ns; Newly Scheduled Value := 0 @ 8500005.027 ns;
+# KERNEL: Time: 8500004575 ps,  Iteration: 1,  Instance: /testbench/uut/SLICE_1I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F0 ; Preempted Future Value := 0 @ 8500005.019 ns; Newly Scheduled Value := 0 @ 8500005.027 ns;
+# KERNEL: Time: 8500004877 ps,  Iteration: 0,  Instance: /testbench/uut/SLICE_1I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F0 ; Preempted Future Value := 0 @ 8500005.019 ns; Newly Scheduled Value := 1 @ 8500005.329 ns;
+# KERNEL: Time: 8500004877 ps,  Iteration: 1,  Instance: /testbench/uut/SLICE_0I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F1 ; Preempted Future Value := 0 @ 14500005.027 ns; Newly Scheduled Value := 1 @ 14500005.135 ns;
+# KERNEL: Time: 14500004683 ps,  Iteration: 1,  Instance: /testbench/uut/SLICE_0I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F0 ; Preempted Future Value := 1 @ 14500005.019 ns; Newly Scheduled Value := 0 @ 14500005.135 ns;
+# KERNEL: Time: 14500004683 ps,  Iteration: 1,  Instance: /testbench/uut/SLICE_1I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F0 ; Preempted Future Value := 0 @ 16500005.019 ns; Newly Scheduled Value := 1 @ 16500005.027 ns;
+# KERNEL: Time: 16500004575 ps,  Iteration: 1,  Instance: /testbench/uut/SLICE_1I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F0 ; Preempted Future Value := 1 @ 16500005.019 ns; Newly Scheduled Value := 1 @ 16500005.135 ns;
+# KERNEL: Time: 16500004683 ps,  Iteration: 0,  Instance: /testbench/uut/SLICE_1I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F1 ; Preempted Future Value := 1 @ 16500005.027 ns; Newly Scheduled Value := 0 @ 16500005.135 ns;
+# KERNEL: Time: 16500004683 ps,  Iteration: 1,  Instance: /testbench/uut/SLICE_0I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F0 ; Preempted Future Value := 1 @ 16500005.019 ns; Newly Scheduled Value := 1 @ 16500005.135 ns;
+# KERNEL: Time: 16500004877 ps,  Iteration: 0,  Instance: /testbench/uut/SLICE_1I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F1 ; Preempted Future Value := 0 @ 16500005.027 ns; Newly Scheduled Value := 0 @ 16500005.135 ns;
+# KERNEL: Time: 16500004877 ps,  Iteration: 0,  Instance: /testbench/uut/SLICE_0I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F1 ; Preempted Future Value := 0 @ 18500005.027 ns; Newly Scheduled Value := 1 @ 18500005.135 ns;
+# KERNEL: Time: 18500004683 ps,  Iteration: 1,  Instance: /testbench/uut/SLICE_0I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F0 ; Preempted Future Value := 0 @ 18500005.019 ns; Newly Scheduled Value := 1 @ 18500005.135 ns;
+# KERNEL: Time: 18500004683 ps,  Iteration: 1,  Instance: /testbench/uut/SLICE_1I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F1 ; Preempted Future Value := 1 @ 18500005.019 ns; Newly Scheduled Value := 0 @ 18500005.135 ns;
+# KERNEL: Time: 18500004683 ps,  Iteration: 1,  Instance: /testbench/uut/SLICE_1I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F0 ; Preempted Future Value := 1 @ 18500005.139 ns; Newly Scheduled Value := 0 @ 18500005.314 ns;
+# KERNEL: Time: 18500004862 ps,  Iteration: 1,  Instance: /testbench/uut/SLICE_13I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F0 ; Preempted Future Value := 1 @ 20500005.019 ns; Newly Scheduled Value := 0 @ 20500005.027 ns;
+# KERNEL: Time: 20500004575 ps,  Iteration: 1,  Instance: /testbench/uut/SLICE_1I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F0 ; Preempted Future Value := 0 @ 20500005.019 ns; Newly Scheduled Value := 0 @ 20500005.027 ns;
+# KERNEL: Time: 20500004877 ps,  Iteration: 0,  Instance: /testbench/uut/SLICE_1I,  Process: VitalBehavior.
+# KERNEL: WARNING: VitalGlitch: GLITCH Detected on port F0 ; Preempted Future Value := 0 @ 20500005.019 ns; Newly Scheduled Value := 1 @ 20500005.329 ns;
+# KERNEL: Time: 20500004877 ps,  Iteration: 1,  Instance: /testbench/uut/SLICE_0I,  Process: VitalBehavior.
+# KERNEL: stopped at time: 30 ms
+# Adding file Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_sender_a\src\untitled.asdb ... Done
+# Adding file Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_sender_a\src\untitled.awc ... Done
+#  Simulation has been stopped
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+asim -sdfmax /testbench/uut=$dsn/../impl1/MachXO_7000HE_Testproject_impl1_vho.sdf +transport_path_delays +transport_int_delays -O5 -L ovi_machxo2 -PL pmi_work +access +r testbench behavior
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+acom -O3 -work work -2002  $dsn/../impl1/MachXO_7000HE_Testproject_impl1_vho.vho $dsn/../MachXO_7000HE_Testproject_tb.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: Z:\GITHUB\Lattice\MachXO2700HETestproject\impl1\MachXO_7000HE_Testproject_impl1_vho.vho
+# Compile Entity "lut4"
+# Compile Architecture "Structure" of Entity "lut4"
+# Compile Entity "gnd"
+# Compile Architecture "Structure" of Entity "gnd"
+# Compile Entity "lut40001"
+# Compile Architecture "Structure" of Entity "lut40001"
+# Compile Entity "vmuxregsre"
+# Compile Architecture "Structure" of Entity "vmuxregsre"
+# Compile Entity "vcc"
+# Compile Architecture "Structure" of Entity "vcc"
+# Compile Entity "SLICE_0"
+# Compile Architecture "Structure" of Entity "SLICE_0"
+# Compile Entity "vmuxregsre0002"
+# Compile Architecture "Structure" of Entity "vmuxregsre0002"
+# Compile Entity "SLICE_1"
+# Compile Architecture "Structure" of Entity "SLICE_1"
+# Compile Entity "SLICE_2"
+# Compile Architecture "Structure" of Entity "SLICE_2"
+# Compile Entity "vmuxregsre0003"
+# Compile Architecture "Structure" of Entity "vmuxregsre0003"
+# Compile Entity "SLICE_3"
+# Compile Architecture "Structure" of Entity "SLICE_3"
+# Compile Entity "SLICE_4"
+# Compile Architecture "Structure" of Entity "SLICE_4"
+# Compile Entity "xo2iobuf"
+# Compile Architecture "Structure" of Entity "xo2iobuf"
+# Compile Entity "clkB"
+# Compile Architecture "Structure" of Entity "clkB"
+# Compile Entity "xo2iobuf0004"
+# Compile Architecture "Structure" of Entity "xo2iobuf0004"
+# Compile Entity "debugB"
+# Compile Architecture "Structure" of Entity "debugB"
+# Compile Entity "rstB"
+# Compile Architecture "Structure" of Entity "rstB"
+# Compile Entity "GSR5MODE"
+# Compile Architecture "Structure" of Entity "GSR5MODE"
+# Compile Entity "GSR_INSTB"
+# Compile Architecture "Structure" of Entity "GSR_INSTB"
+# Compile Entity "lcd_FSM"
+# Compile Architecture "Structure" of Entity "lcd_FSM"
+# Compile Configuration "Structure_CON"
+# File: Z:\GITHUB\Lattice\MachXO2700HETestproject\MachXO_7000HE_Testproject_tb.vhd
+# Compile Entity "testbench"
+# Compile Architecture "behavior" of Entity "testbench"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# SDF: 70 generic(s) read from Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_sender_a/../impl1/MachXO_7000HE_Testproject_impl1_vho.sdf
+# SDF: SDF load & update time: 0.0 [s].
+# SDF: 70 SDF entries loaded while 70 entries read
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7340 kB (elbread=1024 elab2=5868 kernel=153 sdf=292)
+# KERNEL: ASDB file was created in location Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_sender_a\src\wave.asdb
+#  2:14 PM, Thursday, May 19, 2016
+#  Simulation has been initialized
+#  Selected Top-Level: testbench (behavior)
+# Waveform file 'Z:/GITHUB/Lattice/MachXO2700HETestproject/lcd_sender_a/src/untitled.awc' connected to 'Z:/GITHUB/Lattice/MachXO2700HETestproject/lcd_sender_a/src/wave.asdb'.
+# add wave -noreg {/testbench/clk}
+# add wave -noreg {/testbench/rst}
+# add wave -noreg {/testbench/debug}
+# 3 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'Z:/GITHUB/Lattice/MachXO2700HETestproject/lcd_sender_a/src/wave.asdb'.
+# KERNEL: stopped at time: 15 ms
+run 15ms
+acom -O3 -work work -2002  $dsn/../MachXO_7000HE_Testproject_tb.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: Z:\GITHUB\Lattice\MachXO2700HETestproject\MachXO_7000HE_Testproject_tb.vhd
+# Compile Entity "testbench"
+# Compile Architecture "behavior" of Entity "testbench"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# SDF: 70 generic(s) read from Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_sender_a/../impl1/MachXO_7000HE_Testproject_impl1_vho.sdf
+# SDF: SDF load & update time: 0.0 [s].
+# SDF: 70 SDF entries loaded while 70 entries read
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7340 kB (elbread=1024 elab2=5868 kernel=153 sdf=292)
+# KERNEL: ASDB file was created in location Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_sender_a\src\wave.asdb
+#  2:16 PM, Thursday, May 19, 2016
+#  Simulation has been initialized
+#  Selected Top-Level: testbench (behavior)
+# Waveform file 'Z:/GITHUB/Lattice/MachXO2700HETestproject/lcd_sender_a/src/untitled.awc' connected to 'Z:/GITHUB/Lattice/MachXO2700HETestproject/lcd_sender_a/src/wave.asdb'.
+# Waveform file 'untitled.awc' connected to 'Z:/GITHUB/Lattice/MachXO2700HETestproject/lcd_sender_a/src/wave.asdb'.
+run 15ms
+# KERNEL: stopped at time: 15 ms
+run 1ms
+# KERNEL: stopped at time: 16 ms
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# SDF: 70 generic(s) read from Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_sender_a/../impl1/MachXO_7000HE_Testproject_impl1_vho.sdf
+# SDF: SDF load & update time: 0.0 [s].
+# SDF: 70 SDF entries loaded while 70 entries read
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7340 kB (elbread=1024 elab2=5868 kernel=153 sdf=292)
+# KERNEL: ASDB file was created in location Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_sender_a\src\wave.asdb
+#  2:17 PM, Thursday, May 19, 2016
+#  Simulation has been initialized
+#  Selected Top-Level: testbench (behavior)
+# Waveform file 'Z:/GITHUB/Lattice/MachXO2700HETestproject/lcd_sender_a/src/untitled.awc' connected to 'Z:/GITHUB/Lattice/MachXO2700HETestproject/lcd_sender_a/src/wave.asdb'.
+# Waveform file 'untitled.awc' connected to 'Z:/GITHUB/Lattice/MachXO2700HETestproject/lcd_sender_a/src/wave.asdb'.
+run 1ms
+# KERNEL: stopped at time: 1 ms
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# SDF: 70 generic(s) read from Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_sender_a/../impl1/MachXO_7000HE_Testproject_impl1_vho.sdf
+# SDF: SDF load & update time: 0.0 [s].
+# SDF: 70 SDF entries loaded while 70 entries read
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7340 kB (elbread=1024 elab2=5868 kernel=153 sdf=292)
+# KERNEL: ASDB file was created in location Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_sender_a\src\wave.asdb
+#  2:17 PM, Thursday, May 19, 2016
+#  Simulation has been initialized
+#  Selected Top-Level: testbench (behavior)
+# Waveform file 'Z:/GITHUB/Lattice/MachXO2700HETestproject/lcd_sender_a/src/untitled.awc' connected to 'Z:/GITHUB/Lattice/MachXO2700HETestproject/lcd_sender_a/src/wave.asdb'.
+# Waveform file 'untitled.awc' connected to 'Z:/GITHUB/Lattice/MachXO2700HETestproject/lcd_sender_a/src/wave.asdb'.
+run 5us
+# KERNEL: stopped at time: 5 us
+acom -O3 -work work -2002  $dsn/../impl1/MachXO_7000HE_Testproject_impl1_vho.vho $dsn/../MachXO_7000HE_Testproject_tb.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: Z:\GITHUB\Lattice\MachXO2700HETestproject\impl1\MachXO_7000HE_Testproject_impl1_vho.vho
+# Compile Entity "lut4"
+# Compile Architecture "Structure" of Entity "lut4"
+# Compile Entity "gnd"
+# Compile Architecture "Structure" of Entity "gnd"
+# Compile Entity "lut40001"
+# Compile Architecture "Structure" of Entity "lut40001"
+# Compile Entity "vmuxregsre"
+# Compile Architecture "Structure" of Entity "vmuxregsre"
+# Compile Entity "vcc"
+# Compile Architecture "Structure" of Entity "vcc"
+# Compile Entity "SLICE_0"
+# Compile Architecture "Structure" of Entity "SLICE_0"
+# Compile Entity "vmuxregsre0002"
+# Compile Architecture "Structure" of Entity "vmuxregsre0002"
+# Compile Entity "SLICE_1"
+# Compile Architecture "Structure" of Entity "SLICE_1"
+# Compile Entity "SLICE_2"
+# Compile Architecture "Structure" of Entity "SLICE_2"
+# Compile Entity "vmuxregsre0003"
+# Compile Architecture "Structure" of Entity "vmuxregsre0003"
+# Compile Entity "SLICE_3"
+# Compile Architecture "Structure" of Entity "SLICE_3"
+# Compile Entity "SLICE_4"
+# Compile Architecture "Structure" of Entity "SLICE_4"
+# Compile Entity "xo2iobuf"
+# Compile Architecture "Structure" of Entity "xo2iobuf"
+# Compile Entity "clkB"
+# Compile Architecture "Structure" of Entity "clkB"
+# Compile Entity "rstB"
+# Compile Architecture "Structure" of Entity "rstB"
+# Compile Entity "xo2iobuf0004"
+# Compile Architecture "Structure" of Entity "xo2iobuf0004"
+# Compile Entity "debugB"
+# Compile Architecture "Structure" of Entity "debugB"
+# Compile Entity "GSR5MODE"
+# Compile Architecture "Structure" of Entity "GSR5MODE"
+# Compile Entity "GSR_INSTB"
+# Compile Architecture "Structure" of Entity "GSR_INSTB"
+# Compile Entity "lcd_FSM"
+# Compile Architecture "Structure" of Entity "lcd_FSM"
+# Compile Configuration "Structure_CON"
+# File: Z:\GITHUB\Lattice\MachXO2700HETestproject\MachXO_7000HE_Testproject_tb.vhd
+# Compile Entity "testbench"
+# Compile Architecture "behavior" of Entity "testbench"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]
+#  Simulation has been stopped
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+asim -sdfmax /testbench/uut=$dsn/../impl1/MachXO_7000HE_Testproject_impl1_vho.sdf +transport_path_delays +transport_int_delays -O5 -L ovi_machxo2 -PL pmi_work +access +r testbench behavior
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# SDF: 70 generic(s) read from Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_sender_a/../impl1/MachXO_7000HE_Testproject_impl1_vho.sdf
+# SDF: SDF load & update time: 0.0 [s].
+# SDF: 70 SDF entries loaded while 70 entries read
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7340 kB (elbread=1024 elab2=5868 kernel=153 sdf=292)
+# KERNEL: ASDB file was created in location Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_sender_a\src\wave.asdb
+#  2:23 PM, Thursday, May 19, 2016
+#  Simulation has been initialized
+#  Selected Top-Level: testbench (behavior)
+# add wave -noreg {/testbench/clk}
+# add wave -noreg {/testbench/rst}
+# add wave -noreg {/testbench/debug}
+# 3 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'Z:/GITHUB/Lattice/MachXO2700HETestproject/lcd_sender_a/src/wave.asdb'.
+acom -O3 -work work -2002  $dsn/../impl1/MachXO_7000HE_Testproject_impl1_vho.vho $dsn/../MachXO_7000HE_Testproject_tb.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: Z:\GITHUB\Lattice\MachXO2700HETestproject\impl1\MachXO_7000HE_Testproject_impl1_vho.vho
+# Compile Entity "lut4"
+# Compile Architecture "Structure" of Entity "lut4"
+# Compile Entity "gnd"
+# Compile Architecture "Structure" of Entity "gnd"
+# Compile Entity "vmuxregsre"
+# Compile Architecture "Structure" of Entity "vmuxregsre"
+# Compile Entity "vcc"
+# Compile Architecture "Structure" of Entity "vcc"
+# Compile Entity "SLICE_0"
+# Compile Architecture "Structure" of Entity "SLICE_0"
+# Compile Entity "vmuxregsre0001"
+# Compile Architecture "Structure" of Entity "vmuxregsre0001"
+# Compile Entity "SLICE_1"
+# Compile Architecture "Structure" of Entity "SLICE_1"
+# Compile Entity "lut40002"
+# Compile Architecture "Structure" of Entity "lut40002"
+# Compile Entity "vmuxregsre0003"
+# Compile Architecture "Structure" of Entity "vmuxregsre0003"
+# Compile Entity "SLICE_4"
+# Compile Architecture "Structure" of Entity "SLICE_4"
+# Compile Entity "lut40004"
+# Compile Architecture "Structure" of Entity "lut40004"
+# Compile Entity "SLICE_5"
+# Compile Architecture "Structure" of Entity "SLICE_5"
+# Compile Entity "SLICE_6"
+# Compile Architecture "Structure" of Entity "SLICE_6"
+# Compile Entity "xo2iobuf"
+# Compile Architecture "Structure" of Entity "xo2iobuf"
+# Compile Entity "lcd_data_14_B"
+# Compile Architecture "Structure" of Entity "lcd_data_14_B"
+# Compile Entity "lcd_data_5_B"
+# Compile Architecture "Structure" of Entity "lcd_data_5_B"
+# Compile Entity "lcd_data_15_B"
+# Compile Architecture "Structure" of Entity "lcd_data_15_B"
+# Compile Entity "xo2iobuf0005"
+# Compile Architecture "Structure" of Entity "xo2iobuf0005"
+# Compile Entity "debugB"
+# Compile Architecture "Structure" of Entity "debugB"
+# Compile Entity "lcd_data_8_B"
+# Compile Architecture "Structure" of Entity "lcd_data_8_B"
+# Compile Entity "lcd_data_9_B"
+# Compile Architecture "Structure" of Entity "lcd_data_9_B"
+# Compile Entity "lcd_data_10_B"
+# Compile Architecture "Structure" of Entity "lcd_data_10_B"
+# Compile Entity "lcd_data_11_B"
+# Compile Architecture "Structure" of Entity "lcd_data_11_B"
+# Compile Entity "lcd_data_12_B"
+# Compile Architecture "Structure" of Entity "lcd_data_12_B"
+# Compile Entity "lcd_data_13_B"
+# Compile Architecture "Structure" of Entity "lcd_data_13_B"
+# Compile Entity "lcd_data_7_B"
+# Compile Architecture "Structure" of Entity "lcd_data_7_B"
+# Compile Entity "lcd_data_6_B"
+# Compile Architecture "Structure" of Entity "lcd_data_6_B"
+# Compile Entity "lcd_data_4_B"
+# Compile Architecture "Structure" of Entity "lcd_data_4_B"
+# Compile Entity "lcd_data_3_B"
+# Compile Architecture "Structure" of Entity "lcd_data_3_B"
+# Compile Entity "lcd_data_2_B"
+# Compile Architecture "Structure" of Entity "lcd_data_2_B"
+# Compile Entity "lcd_data_1_B"
+# Compile Architecture "Structure" of Entity "lcd_data_1_B"
+# Compile Entity "lcd_data_0_B"
+# Compile Architecture "Structure" of Entity "lcd_data_0_B"
+# Compile Entity "lcd_wrB"
+# Compile Architecture "Structure" of Entity "lcd_wrB"
+# Compile Entity "lcd_rsB"
+# Compile Architecture "Structure" of Entity "lcd_rsB"
+# Compile Entity "xo2iobuf0006"
+# Compile Architecture "Structure" of Entity "xo2iobuf0006"
+# Compile Entity "clkB"
+# Compile Architecture "Structure" of Entity "clkB"
+# Compile Entity "rstB"
+# Compile Architecture "Structure" of Entity "rstB"
+# Compile Entity "GSR5MODE"
+# Compile Architecture "Structure" of Entity "GSR5MODE"
+# Compile Entity "GSR_INSTB"
+# Compile Architecture "Structure" of Entity "GSR_INSTB"
+# Compile Entity "lcd_FSM"
+# Compile Architecture "Structure" of Entity "lcd_FSM"
+# Compile Configuration "Structure_CON"
+# File: Z:\GITHUB\Lattice\MachXO2700HETestproject\MachXO_7000HE_Testproject_tb.vhd
+# Compile Entity "testbench"
+# Compile Architecture "behavior" of Entity "testbench"
+# Error: ELAB1_0011: ../../MachXO_7000HE_Testproject_tb.vhd : (51, 0): Port "datacommand" is on entity "lcd_FSM" but not on the component declaration.
+# Error: ELAB1_0011: ../../MachXO_7000HE_Testproject_tb.vhd : (51, 0): Port "data" is on entity "lcd_FSM" but not on the component declaration.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.8 [s]
+acom -O3 -work work -2002  $dsn/../impl1/MachXO_7000HE_Testproject_impl1_vho.vho $dsn/../MachXO_7000HE_Testproject_tb.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: Z:\GITHUB\Lattice\MachXO2700HETestproject\impl1\MachXO_7000HE_Testproject_impl1_vho.vho
+# Compile Entity "lut4"
+# Compile Architecture "Structure" of Entity "lut4"
+# Compile Entity "gnd"
+# Compile Architecture "Structure" of Entity "gnd"
+# Compile Entity "vmuxregsre"
+# Compile Architecture "Structure" of Entity "vmuxregsre"
+# Compile Entity "vcc"
+# Compile Architecture "Structure" of Entity "vcc"
+# Compile Entity "SLICE_0"
+# Compile Architecture "Structure" of Entity "SLICE_0"
+# Compile Entity "vmuxregsre0001"
+# Compile Architecture "Structure" of Entity "vmuxregsre0001"
+# Compile Entity "SLICE_1"
+# Compile Architecture "Structure" of Entity "SLICE_1"
+# Compile Entity "lut40002"
+# Compile Architecture "Structure" of Entity "lut40002"
+# Compile Entity "vmuxregsre0003"
+# Compile Architecture "Structure" of Entity "vmuxregsre0003"
+# Compile Entity "SLICE_4"
+# Compile Architecture "Structure" of Entity "SLICE_4"
+# Compile Entity "lut40004"
+# Compile Architecture "Structure" of Entity "lut40004"
+# Compile Entity "SLICE_5"
+# Compile Architecture "Structure" of Entity "SLICE_5"
+# Compile Entity "SLICE_6"
+# Compile Architecture "Structure" of Entity "SLICE_6"
+# Compile Entity "xo2iobuf"
+# Compile Architecture "Structure" of Entity "xo2iobuf"
+# Compile Entity "lcd_data_14_B"
+# Compile Architecture "Structure" of Entity "lcd_data_14_B"
+# Compile Entity "lcd_data_5_B"
+# Compile Architecture "Structure" of Entity "lcd_data_5_B"
+# Compile Entity "lcd_data_15_B"
+# Compile Architecture "Structure" of Entity "lcd_data_15_B"
+# Compile Entity "xo2iobuf0005"
+# Compile Architecture "Structure" of Entity "xo2iobuf0005"
+# Compile Entity "debugB"
+# Compile Architecture "Structure" of Entity "debugB"
+# Compile Entity "lcd_data_8_B"
+# Compile Architecture "Structure" of Entity "lcd_data_8_B"
+# Compile Entity "lcd_data_9_B"
+# Compile Architecture "Structure" of Entity "lcd_data_9_B"
+# Compile Entity "lcd_data_10_B"
+# Compile Architecture "Structure" of Entity "lcd_data_10_B"
+# Compile Entity "lcd_data_11_B"
+# Compile Architecture "Structure" of Entity "lcd_data_11_B"
+# Compile Entity "lcd_data_12_B"
+# Compile Architecture "Structure" of Entity "lcd_data_12_B"
+# Compile Entity "lcd_data_13_B"
+# Compile Architecture "Structure" of Entity "lcd_data_13_B"
+# Compile Entity "lcd_data_7_B"
+# Compile Architecture "Structure" of Entity "lcd_data_7_B"
+# Compile Entity "lcd_data_6_B"
+# Compile Architecture "Structure" of Entity "lcd_data_6_B"
+# Compile Entity "lcd_data_4_B"
+# Compile Architecture "Structure" of Entity "lcd_data_4_B"
+# Compile Entity "lcd_data_3_B"
+# Compile Architecture "Structure" of Entity "lcd_data_3_B"
+# Compile Entity "lcd_data_2_B"
+# Compile Architecture "Structure" of Entity "lcd_data_2_B"
+# Compile Entity "lcd_data_1_B"
+# Compile Architecture "Structure" of Entity "lcd_data_1_B"
+# Compile Entity "lcd_data_0_B"
+# Compile Architecture "Structure" of Entity "lcd_data_0_B"
+# Compile Entity "lcd_wrB"
+# Compile Architecture "Structure" of Entity "lcd_wrB"
+# Compile Entity "lcd_rsB"
+# Compile Architecture "Structure" of Entity "lcd_rsB"
+# Compile Entity "xo2iobuf0006"
+# Compile Architecture "Structure" of Entity "xo2iobuf0006"
+# Compile Entity "clkB"
+# Compile Architecture "Structure" of Entity "clkB"
+# Compile Entity "rstB"
+# Compile Architecture "Structure" of Entity "rstB"
+# Compile Entity "GSR5MODE"
+# Compile Architecture "Structure" of Entity "GSR5MODE"
+# Compile Entity "GSR_INSTB"
+# Compile Architecture "Structure" of Entity "GSR_INSTB"
+# Compile Entity "lcd_FSM"
+# Compile Architecture "Structure" of Entity "lcd_FSM"
+# Compile Configuration "Structure_CON"
+# File: Z:\GITHUB\Lattice\MachXO2700HETestproject\MachXO_7000HE_Testproject_tb.vhd
+# Compile Entity "testbench"
+# Compile Architecture "behavior" of Entity "testbench"
+# Error: ELAB1_0011: ../../MachXO_7000HE_Testproject_tb.vhd : (51, 0): Port "datacommand" is on entity "lcd_FSM" but not on the component declaration.
+# Error: ELAB1_0011: ../../MachXO_7000HE_Testproject_tb.vhd : (51, 0): Port "data" is on entity "lcd_FSM" but not on the component declaration.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.8 [s]
+acom -O3 -work work -2002  $dsn/../impl1/MachXO_7000HE_Testproject_impl1_vho.vho $dsn/../MachXO_7000HE_Testproject_tb.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: Z:\GITHUB\Lattice\MachXO2700HETestproject\impl1\MachXO_7000HE_Testproject_impl1_vho.vho
+# Compile Entity "lut4"
+# Compile Architecture "Structure" of Entity "lut4"
+# Compile Entity "gnd"
+# Compile Architecture "Structure" of Entity "gnd"
+# Compile Entity "vmuxregsre"
+# Compile Architecture "Structure" of Entity "vmuxregsre"
+# Compile Entity "vcc"
+# Compile Architecture "Structure" of Entity "vcc"
+# Compile Entity "SLICE_0"
+# Compile Architecture "Structure" of Entity "SLICE_0"
+# Compile Entity "vmuxregsre0001"
+# Compile Architecture "Structure" of Entity "vmuxregsre0001"
+# Compile Entity "SLICE_1"
+# Compile Architecture "Structure" of Entity "SLICE_1"
+# Compile Entity "lut40002"
+# Compile Architecture "Structure" of Entity "lut40002"
+# Compile Entity "vmuxregsre0003"
+# Compile Architecture "Structure" of Entity "vmuxregsre0003"
+# Compile Entity "SLICE_4"
+# Compile Architecture "Structure" of Entity "SLICE_4"
+# Compile Entity "lut40004"
+# Compile Architecture "Structure" of Entity "lut40004"
+# Compile Entity "SLICE_5"
+# Compile Architecture "Structure" of Entity "SLICE_5"
+# Compile Entity "SLICE_6"
+# Compile Architecture "Structure" of Entity "SLICE_6"
+# Compile Entity "xo2iobuf"
+# Compile Architecture "Structure" of Entity "xo2iobuf"
+# Compile Entity "lcd_data_14_B"
+# Compile Architecture "Structure" of Entity "lcd_data_14_B"
+# Compile Entity "lcd_data_5_B"
+# Compile Architecture "Structure" of Entity "lcd_data_5_B"
+# Compile Entity "lcd_data_15_B"
+# Compile Architecture "Structure" of Entity "lcd_data_15_B"
+# Compile Entity "xo2iobuf0005"
+# Compile Architecture "Structure" of Entity "xo2iobuf0005"
+# Compile Entity "debugB"
+# Compile Architecture "Structure" of Entity "debugB"
+# Compile Entity "lcd_data_8_B"
+# Compile Architecture "Structure" of Entity "lcd_data_8_B"
+# Compile Entity "lcd_data_9_B"
+# Compile Architecture "Structure" of Entity "lcd_data_9_B"
+# Compile Entity "lcd_data_10_B"
+# Compile Architecture "Structure" of Entity "lcd_data_10_B"
+# Compile Entity "lcd_data_11_B"
+# Compile Architecture "Structure" of Entity "lcd_data_11_B"
+# Compile Entity "lcd_data_12_B"
+# Compile Architecture "Structure" of Entity "lcd_data_12_B"
+# Compile Entity "lcd_data_13_B"
+# Compile Architecture "Structure" of Entity "lcd_data_13_B"
+# Compile Entity "lcd_data_7_B"
+# Compile Architecture "Structure" of Entity "lcd_data_7_B"
+# Compile Entity "lcd_data_6_B"
+# Compile Architecture "Structure" of Entity "lcd_data_6_B"
+# Compile Entity "lcd_data_4_B"
+# Compile Architecture "Structure" of Entity "lcd_data_4_B"
+# Compile Entity "lcd_data_3_B"
+# Compile Architecture "Structure" of Entity "lcd_data_3_B"
+# Compile Entity "lcd_data_2_B"
+# Compile Architecture "Structure" of Entity "lcd_data_2_B"
+# Compile Entity "lcd_data_1_B"
+# Compile Architecture "Structure" of Entity "lcd_data_1_B"
+# Compile Entity "lcd_data_0_B"
+# Compile Architecture "Structure" of Entity "lcd_data_0_B"
+# Compile Entity "lcd_wrB"
+# Compile Architecture "Structure" of Entity "lcd_wrB"
+# Compile Entity "lcd_rsB"
+# Compile Architecture "Structure" of Entity "lcd_rsB"
+# Compile Entity "xo2iobuf0006"
+# Compile Architecture "Structure" of Entity "xo2iobuf0006"
+# Compile Entity "clkB"
+# Compile Architecture "Structure" of Entity "clkB"
+# Compile Entity "rstB"
+# Compile Architecture "Structure" of Entity "rstB"
+# Compile Entity "GSR5MODE"
+# Compile Architecture "Structure" of Entity "GSR5MODE"
+# Compile Entity "GSR_INSTB"
+# Compile Architecture "Structure" of Entity "GSR_INSTB"
+# Compile Entity "lcd_FSM"
+# Compile Architecture "Structure" of Entity "lcd_FSM"
+# Compile Configuration "Structure_CON"
+# File: Z:\GITHUB\Lattice\MachXO2700HETestproject\MachXO_7000HE_Testproject_tb.vhd
+# Compile Entity "testbench"
+# Compile Architecture "behavior" of Entity "testbench"
+# Error: ELAB1_0011: ../../MachXO_7000HE_Testproject_tb.vhd : (53, 0): Port "data" is on entity "lcd_FSM" but not on the component declaration.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.9 [s]
+acom -O3 -work work -2002  $dsn/../impl1/MachXO_7000HE_Testproject_impl1_vho.vho $dsn/../MachXO_7000HE_Testproject_tb.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: Z:\GITHUB\Lattice\MachXO2700HETestproject\impl1\MachXO_7000HE_Testproject_impl1_vho.vho
+# Compile Entity "lut4"
+# Compile Architecture "Structure" of Entity "lut4"
+# Compile Entity "gnd"
+# Compile Architecture "Structure" of Entity "gnd"
+# Compile Entity "vmuxregsre"
+# Compile Architecture "Structure" of Entity "vmuxregsre"
+# Compile Entity "vcc"
+# Compile Architecture "Structure" of Entity "vcc"
+# Compile Entity "SLICE_0"
+# Compile Architecture "Structure" of Entity "SLICE_0"
+# Compile Entity "vmuxregsre0001"
+# Compile Architecture "Structure" of Entity "vmuxregsre0001"
+# Compile Entity "SLICE_1"
+# Compile Architecture "Structure" of Entity "SLICE_1"
+# Compile Entity "lut40002"
+# Compile Architecture "Structure" of Entity "lut40002"
+# Compile Entity "vmuxregsre0003"
+# Compile Architecture "Structure" of Entity "vmuxregsre0003"
+# Compile Entity "SLICE_4"
+# Compile Architecture "Structure" of Entity "SLICE_4"
+# Compile Entity "lut40004"
+# Compile Architecture "Structure" of Entity "lut40004"
+# Compile Entity "SLICE_5"
+# Compile Architecture "Structure" of Entity "SLICE_5"
+# Compile Entity "SLICE_6"
+# Compile Architecture "Structure" of Entity "SLICE_6"
+# Compile Entity "xo2iobuf"
+# Compile Architecture "Structure" of Entity "xo2iobuf"
+# Compile Entity "lcd_data_14_B"
+# Compile Architecture "Structure" of Entity "lcd_data_14_B"
+# Compile Entity "lcd_data_5_B"
+# Compile Architecture "Structure" of Entity "lcd_data_5_B"
+# Compile Entity "lcd_data_15_B"
+# Compile Architecture "Structure" of Entity "lcd_data_15_B"
+# Compile Entity "xo2iobuf0005"
+# Compile Architecture "Structure" of Entity "xo2iobuf0005"
+# Compile Entity "debugB"
+# Compile Architecture "Structure" of Entity "debugB"
+# Compile Entity "lcd_data_8_B"
+# Compile Architecture "Structure" of Entity "lcd_data_8_B"
+# Compile Entity "lcd_data_9_B"
+# Compile Architecture "Structure" of Entity "lcd_data_9_B"
+# Compile Entity "lcd_data_10_B"
+# Compile Architecture "Structure" of Entity "lcd_data_10_B"
+# Compile Entity "lcd_data_11_B"
+# Compile Architecture "Structure" of Entity "lcd_data_11_B"
+# Compile Entity "lcd_data_12_B"
+# Compile Architecture "Structure" of Entity "lcd_data_12_B"
+# Compile Entity "lcd_data_13_B"
+# Compile Architecture "Structure" of Entity "lcd_data_13_B"
+# Compile Entity "lcd_data_7_B"
+# Compile Architecture "Structure" of Entity "lcd_data_7_B"
+# Compile Entity "lcd_data_6_B"
+# Compile Architecture "Structure" of Entity "lcd_data_6_B"
+# Compile Entity "lcd_data_4_B"
+# Compile Architecture "Structure" of Entity "lcd_data_4_B"
+# Compile Entity "lcd_data_3_B"
+# Compile Architecture "Structure" of Entity "lcd_data_3_B"
+# Compile Entity "lcd_data_2_B"
+# Compile Architecture "Structure" of Entity "lcd_data_2_B"
+# Compile Entity "lcd_data_1_B"
+# Compile Architecture "Structure" of Entity "lcd_data_1_B"
+# Compile Entity "lcd_data_0_B"
+# Compile Architecture "Structure" of Entity "lcd_data_0_B"
+# Compile Entity "lcd_wrB"
+# Compile Architecture "Structure" of Entity "lcd_wrB"
+# Compile Entity "lcd_rsB"
+# Compile Architecture "Structure" of Entity "lcd_rsB"
+# Compile Entity "xo2iobuf0006"
+# Compile Architecture "Structure" of Entity "xo2iobuf0006"
+# Compile Entity "clkB"
+# Compile Architecture "Structure" of Entity "clkB"
+# Compile Entity "rstB"
+# Compile Architecture "Structure" of Entity "rstB"
+# Compile Entity "GSR5MODE"
+# Compile Architecture "Structure" of Entity "GSR5MODE"
+# Compile Entity "GSR_INSTB"
+# Compile Architecture "Structure" of Entity "GSR_INSTB"
+# Compile Entity "lcd_FSM"
+# Compile Architecture "Structure" of Entity "lcd_FSM"
+# Compile Configuration "Structure_CON"
+# File: Z:\GITHUB\Lattice\MachXO2700HETestproject\MachXO_7000HE_Testproject_tb.vhd
+# Compile Entity "testbench"
+# Compile Architecture "behavior" of Entity "testbench"
+# Error: ELAB1_0021: ../../MachXO_7000HE_Testproject_tb.vhd : (55, 0): Types do not match for port "data".
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.9 [s]
+acom -O3 -work work -2002  $dsn/../impl1/MachXO_7000HE_Testproject_impl1_vho.vho $dsn/../MachXO_7000HE_Testproject_tb.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: Z:\GITHUB\Lattice\MachXO2700HETestproject\impl1\MachXO_7000HE_Testproject_impl1_vho.vho
+# Compile Entity "lut4"
+# Compile Architecture "Structure" of Entity "lut4"
+# Compile Entity "gnd"
+# Compile Architecture "Structure" of Entity "gnd"
+# Compile Entity "vmuxregsre"
+# Compile Architecture "Structure" of Entity "vmuxregsre"
+# Compile Entity "vcc"
+# Compile Architecture "Structure" of Entity "vcc"
+# Compile Entity "SLICE_0"
+# Compile Architecture "Structure" of Entity "SLICE_0"
+# Compile Entity "vmuxregsre0001"
+# Compile Architecture "Structure" of Entity "vmuxregsre0001"
+# Compile Entity "SLICE_1"
+# Compile Architecture "Structure" of Entity "SLICE_1"
+# Compile Entity "lut40002"
+# Compile Architecture "Structure" of Entity "lut40002"
+# Compile Entity "vmuxregsre0003"
+# Compile Architecture "Structure" of Entity "vmuxregsre0003"
+# Compile Entity "SLICE_4"
+# Compile Architecture "Structure" of Entity "SLICE_4"
+# Compile Entity "lut40004"
+# Compile Architecture "Structure" of Entity "lut40004"
+# Compile Entity "SLICE_5"
+# Compile Architecture "Structure" of Entity "SLICE_5"
+# Compile Entity "SLICE_6"
+# Compile Architecture "Structure" of Entity "SLICE_6"
+# Compile Entity "xo2iobuf"
+# Compile Architecture "Structure" of Entity "xo2iobuf"
+# Compile Entity "lcd_data_14_B"
+# Compile Architecture "Structure" of Entity "lcd_data_14_B"
+# Compile Entity "lcd_data_5_B"
+# Compile Architecture "Structure" of Entity "lcd_data_5_B"
+# Compile Entity "lcd_data_15_B"
+# Compile Architecture "Structure" of Entity "lcd_data_15_B"
+# Compile Entity "xo2iobuf0005"
+# Compile Architecture "Structure" of Entity "xo2iobuf0005"
+# Compile Entity "debugB"
+# Compile Architecture "Structure" of Entity "debugB"
+# Compile Entity "lcd_data_8_B"
+# Compile Architecture "Structure" of Entity "lcd_data_8_B"
+# Compile Entity "lcd_data_9_B"
+# Compile Architecture "Structure" of Entity "lcd_data_9_B"
+# Compile Entity "lcd_data_10_B"
+# Compile Architecture "Structure" of Entity "lcd_data_10_B"
+# Compile Entity "lcd_data_11_B"
+# Compile Architecture "Structure" of Entity "lcd_data_11_B"
+# Compile Entity "lcd_data_12_B"
+# Compile Architecture "Structure" of Entity "lcd_data_12_B"
+# Compile Entity "lcd_data_13_B"
+# Compile Architecture "Structure" of Entity "lcd_data_13_B"
+# Compile Entity "lcd_data_7_B"
+# Compile Architecture "Structure" of Entity "lcd_data_7_B"
+# Compile Entity "lcd_data_6_B"
+# Compile Architecture "Structure" of Entity "lcd_data_6_B"
+# Compile Entity "lcd_data_4_B"
+# Compile Architecture "Structure" of Entity "lcd_data_4_B"
+# Compile Entity "lcd_data_3_B"
+# Compile Architecture "Structure" of Entity "lcd_data_3_B"
+# Compile Entity "lcd_data_2_B"
+# Compile Architecture "Structure" of Entity "lcd_data_2_B"
+# Compile Entity "lcd_data_1_B"
+# Compile Architecture "Structure" of Entity "lcd_data_1_B"
+# Compile Entity "lcd_data_0_B"
+# Compile Architecture "Structure" of Entity "lcd_data_0_B"
+# Compile Entity "lcd_wrB"
+# Compile Architecture "Structure" of Entity "lcd_wrB"
+# Compile Entity "lcd_rsB"
+# Compile Architecture "Structure" of Entity "lcd_rsB"
+# Compile Entity "xo2iobuf0006"
+# Compile Architecture "Structure" of Entity "xo2iobuf0006"
+# Compile Entity "clkB"
+# Compile Architecture "Structure" of Entity "clkB"
+# Compile Entity "rstB"
+# Compile Architecture "Structure" of Entity "rstB"
+# Compile Entity "GSR5MODE"
+# Compile Architecture "Structure" of Entity "GSR5MODE"
+# Compile Entity "GSR_INSTB"
+# Compile Architecture "Structure" of Entity "GSR_INSTB"
+# Compile Entity "lcd_FSM"
+# Compile Architecture "Structure" of Entity "lcd_FSM"
+# Compile Configuration "Structure_CON"
+# File: Z:\GITHUB\Lattice\MachXO2700HETestproject\MachXO_7000HE_Testproject_tb.vhd
+# Compile Entity "testbench"
+# Compile Architecture "behavior" of Entity "testbench"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.9 [s]
+#  Simulation has been stopped
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+asim -sdfmax /testbench/uut=$dsn/../impl1/MachXO_7000HE_Testproject_impl1_vho.sdf +transport_path_delays +transport_int_delays -O5 -L ovi_machxo2 -PL pmi_work +access +r testbench behavior
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# SDF: 111 generic(s) read from Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_sender_a/../impl1/MachXO_7000HE_Testproject_impl1_vho.sdf
+# SDF: SDF load & update time: 0.0 [s].
+# SDF: 111 SDF entries loaded while 111 entries read
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7496 kB (elbread=1026 elab2=6020 kernel=156 sdf=292)
+# KERNEL: ASDB file was created in location Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_sender_a\src\wave.asdb
+#  2:37 PM, Thursday, May 19, 2016
+#  Simulation has been initialized
+#  Selected Top-Level: testbench (behavior)
+# Waveform file 'untitled.awc' connected to 'Z:/GITHUB/Lattice/MachXO2700HETestproject/lcd_sender_a/src/wave.asdb'.
+# add wave -noreg {/testbench/clk}
+# add wave -noreg {/testbench/rst}
+# add wave -noreg {/testbench/debug}
+# add wave -noreg {/testbench/lcd_data}
+# add wave -noreg {/testbench/lcd_wr}
+# add wave -noreg {/testbench/lcd_rs}
+# add wave -noreg {/testbench/datacommand}
+# add wave -noreg {/testbench/data}
+# 8 signal(s) traced.
+run 5us
+# KERNEL: stopped at time: 5 us
+run 5us
+acom -O3 -work work -2002  $dsn/../impl1/MachXO_7000HE_Testproject_impl1_vho.vho
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: Z:\GITHUB\Lattice\MachXO2700HETestproject\impl1\MachXO_7000HE_Testproject_impl1_vho.vho
+# Compile Entity "lut4"
+# Compile Architecture "Structure" of Entity "lut4"
+# Compile Entity "gnd"
+# Compile Architecture "Structure" of Entity "gnd"
+# Compile Entity "lut40001"
+# Compile Architecture "Structure" of Entity "lut40001"
+# Compile Entity "vmuxregsre"
+# Compile Architecture "Structure" of Entity "vmuxregsre"
+# Compile Entity "vcc"
+# Compile Architecture "Structure" of Entity "vcc"
+# Compile Entity "SLICE_0"
+# Compile Architecture "Structure" of Entity "SLICE_0"
+# Compile Entity "vmuxregsre0002"
+# Compile Architecture "Structure" of Entity "vmuxregsre0002"
+# Compile Entity "SLICE_1"
+# Compile Architecture "Structure" of Entity "SLICE_1"
+# Compile Entity "lut40003"
+# Compile Architecture "Structure" of Entity "lut40003"
+# Compile Entity "vmuxregsre0004"
+# Compile Architecture "Structure" of Entity "vmuxregsre0004"
+# Compile Entity "SLICE_4"
+# Compile Architecture "Structure" of Entity "SLICE_4"
+# Compile Entity "SLICE_5"
+# Compile Architecture "Structure" of Entity "SLICE_5"
+# Compile Entity "SLICE_6"
+# Compile Architecture "Structure" of Entity "SLICE_6"
+# Compile Entity "xo2iobuf"
+# Compile Architecture "Structure" of Entity "xo2iobuf"
+# Compile Entity "lcd_data_1_B"
+# Compile Architecture "Structure" of Entity "lcd_data_1_B"
+# Compile Entity "lcd_data_5_B"
+# Compile Architecture "Structure" of Entity "lcd_data_5_B"
+# Compile Entity "lcd_data_15_B"
+# Compile Architecture "Structure" of Entity "lcd_data_15_B"
+# Compile Entity "lcd_data_2_B"
+# Compile Architecture "Structure" of Entity "lcd_data_2_B"
+# Compile Entity "lcd_data_3_B"
+# Compile Architecture "Structure" of Entity "lcd_data_3_B"
+# Compile Entity "xo2iobuf0005"
+# Compile Architecture "Structure" of Entity "xo2iobuf0005"
+# Compile Entity "debugB"
+# Compile Architecture "Structure" of Entity "debugB"
+# Compile Entity "lcd_data_8_B"
+# Compile Architecture "Structure" of Entity "lcd_data_8_B"
+# Compile Entity "lcd_data_9_B"
+# Compile Architecture "Structure" of Entity "lcd_data_9_B"
+# Compile Entity "lcd_data_10_B"
+# Compile Architecture "Structure" of Entity "lcd_data_10_B"
+# Compile Entity "lcd_data_11_B"
+# Compile Architecture "Structure" of Entity "lcd_data_11_B"
+# Compile Entity "lcd_data_4_B"
+# Compile Architecture "Structure" of Entity "lcd_data_4_B"
+# Compile Entity "lcd_data_6_B"
+# Compile Architecture "Structure" of Entity "lcd_data_6_B"
+# Compile Entity "lcd_data_7_B"
+# Compile Architecture "Structure" of Entity "lcd_data_7_B"
+# Compile Entity "lcd_data_12_B"
+# Compile Architecture "Structure" of Entity "lcd_data_12_B"
+# Compile Entity "lcd_data_13_B"
+# Compile Architecture "Structure" of Entity "lcd_data_13_B"
+# Compile Entity "lcd_data_14_B"
+# Compile Architecture "Structure" of Entity "lcd_data_14_B"
+# Compile Entity "lcd_data_0_B"
+# Compile Architecture "Structure" of Entity "lcd_data_0_B"
+# Compile Entity "lcd_wrB"
+# Compile Architecture "Structure" of Entity "lcd_wrB"
+# Compile Entity "lcd_rsB"
+# Compile Architecture "Structure" of Entity "lcd_rsB"
+# Compile Entity "xo2iobuf0006"
+# Compile Architecture "Structure" of Entity "xo2iobuf0006"
+# Compile Entity "clkB"
+# Compile Architecture "Structure" of Entity "clkB"
+# Compile Entity "rstB"
+# Compile Architecture "Structure" of Entity "rstB"
+# Compile Entity "GSR5MODE"
+# Compile Architecture "Structure" of Entity "GSR5MODE"
+# Compile Entity "GSR_INSTB"
+# Compile Architecture "Structure" of Entity "GSR_INSTB"
+# Compile Entity "lcd_FSM"
+# Compile Architecture "Structure" of Entity "lcd_FSM"
+# Compile Configuration "Structure_CON"
+# Compile success 0 Errors 0 Warnings  Analysis time :  1.0 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# SDF: 106 generic(s) read from Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_sender_a/../impl1/MachXO_7000HE_Testproject_impl1_vho.sdf
+# SDF: SDF load & update time: 0.0 [s].
+# SDF: 106 SDF entries loaded while 106 entries read
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7493 kB (elbread=1025 elab2=6017 kernel=156 sdf=292)
+# KERNEL: ASDB file was created in location Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_sender_a\src\wave.asdb
+#  2:39 PM, Thursday, May 19, 2016
+#  Simulation has been initialized
+#  Selected Top-Level: testbench (behavior)
+# Waveform file 'untitled.awc' connected to 'Z:/GITHUB/Lattice/MachXO2700HETestproject/lcd_sender_a/src/wave.asdb'.
+run 5us
+# KERNEL: stopped at time: 5 us
+run 5us
+acom -O3 -work work -2002  $dsn/../impl1/MachXO_7000HE_Testproject_impl1_vho.vho $dsn/../MachXO_7000HE_Testproject_tb.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: Z:\GITHUB\Lattice\MachXO2700HETestproject\impl1\MachXO_7000HE_Testproject_impl1_vho.vho
+# Compile Entity "lut4"
+# Compile Architecture "Structure" of Entity "lut4"
+# Compile Entity "gnd"
+# Compile Architecture "Structure" of Entity "gnd"
+# Compile Entity "lut40001"
+# Compile Architecture "Structure" of Entity "lut40001"
+# Compile Entity "vmuxregsre"
+# Compile Architecture "Structure" of Entity "vmuxregsre"
+# Compile Entity "vcc"
+# Compile Architecture "Structure" of Entity "vcc"
+# Compile Entity "SLICE_0"
+# Compile Architecture "Structure" of Entity "SLICE_0"
+# Compile Entity "vmuxregsre0002"
+# Compile Architecture "Structure" of Entity "vmuxregsre0002"
+# Compile Entity "SLICE_1"
+# Compile Architecture "Structure" of Entity "SLICE_1"
+# Compile Entity "lut40003"
+# Compile Architecture "Structure" of Entity "lut40003"
+# Compile Entity "vmuxregsre0004"
+# Compile Architecture "Structure" of Entity "vmuxregsre0004"
+# Compile Entity "SLICE_4"
+# Compile Architecture "Structure" of Entity "SLICE_4"
+# Compile Entity "SLICE_5"
+# Compile Architecture "Structure" of Entity "SLICE_5"
+# Compile Entity "SLICE_6"
+# Compile Architecture "Structure" of Entity "SLICE_6"
+# Compile Entity "xo2iobuf"
+# Compile Architecture "Structure" of Entity "xo2iobuf"
+# Compile Entity "lcd_data_1_B"
+# Compile Architecture "Structure" of Entity "lcd_data_1_B"
+# Compile Entity "lcd_data_5_B"
+# Compile Architecture "Structure" of Entity "lcd_data_5_B"
+# Compile Entity "lcd_data_15_B"
+# Compile Architecture "Structure" of Entity "lcd_data_15_B"
+# Compile Entity "lcd_data_2_B"
+# Compile Architecture "Structure" of Entity "lcd_data_2_B"
+# Compile Entity "lcd_data_3_B"
+# Compile Architecture "Structure" of Entity "lcd_data_3_B"
+# Compile Entity "xo2iobuf0005"
+# Compile Architecture "Structure" of Entity "xo2iobuf0005"
+# Compile Entity "debugB"
+# Compile Architecture "Structure" of Entity "debugB"
+# Compile Entity "lcd_data_8_B"
+# Compile Architecture "Structure" of Entity "lcd_data_8_B"
+# Compile Entity "lcd_data_9_B"
+# Compile Architecture "Structure" of Entity "lcd_data_9_B"
+# Compile Entity "lcd_data_10_B"
+# Compile Architecture "Structure" of Entity "lcd_data_10_B"
+# Compile Entity "lcd_data_11_B"
+# Compile Architecture "Structure" of Entity "lcd_data_11_B"
+# Compile Entity "lcd_data_4_B"
+# Compile Architecture "Structure" of Entity "lcd_data_4_B"
+# Compile Entity "lcd_data_6_B"
+# Compile Architecture "Structure" of Entity "lcd_data_6_B"
+# Compile Entity "lcd_data_7_B"
+# Compile Architecture "Structure" of Entity "lcd_data_7_B"
+# Compile Entity "lcd_data_12_B"
+# Compile Architecture "Structure" of Entity "lcd_data_12_B"
+# Compile Entity "lcd_data_13_B"
+# Compile Architecture "Structure" of Entity "lcd_data_13_B"
+# Compile Entity "lcd_data_14_B"
+# Compile Architecture "Structure" of Entity "lcd_data_14_B"
+# Compile Entity "lcd_data_0_B"
+# Compile Architecture "Structure" of Entity "lcd_data_0_B"
+# Compile Entity "lcd_wrB"
+# Compile Architecture "Structure" of Entity "lcd_wrB"
+# Compile Entity "lcd_rsB"
+# Compile Architecture "Structure" of Entity "lcd_rsB"
+# Compile Entity "xo2iobuf0006"
+# Compile Architecture "Structure" of Entity "xo2iobuf0006"
+# Compile Entity "clkB"
+# Compile Architecture "Structure" of Entity "clkB"
+# Compile Entity "rstB"
+# Compile Architecture "Structure" of Entity "rstB"
+# Compile Entity "GSR5MODE"
+# Compile Architecture "Structure" of Entity "GSR5MODE"
+# Compile Entity "GSR_INSTB"
+# Compile Architecture "Structure" of Entity "GSR_INSTB"
+# Compile Entity "lcd_FSM"
+# Compile Architecture "Structure" of Entity "lcd_FSM"
+# Compile Configuration "Structure_CON"
+# File: Z:\GITHUB\Lattice\MachXO2700HETestproject\MachXO_7000HE_Testproject_tb.vhd
+# Compile Entity "testbench"
+# Compile Architecture "behavior" of Entity "testbench"
+# Error: COMP96_0077: ../../MachXO_7000HE_Testproject_tb.vhd : (73, 11): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  1.0 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# SDF: 106 generic(s) read from Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_sender_a/../impl1/MachXO_7000HE_Testproject_impl1_vho.sdf
+# SDF: SDF load & update time: 0.0 [s].
+# SDF: 106 SDF entries loaded while 106 entries read
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7493 kB (elbread=1025 elab2=6017 kernel=156 sdf=292)
+# KERNEL: ASDB file was created in location Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_sender_a\src\wave.asdb
+#  2:43 PM, Thursday, May 19, 2016
+#  Simulation has been initialized
+#  Selected Top-Level: testbench (behavior)
+# Waveform file 'untitled.awc' connected to 'Z:/GITHUB/Lattice/MachXO2700HETestproject/lcd_sender_a/src/wave.asdb'.
+acom -O3 -work work -2002  $dsn/../impl1/MachXO_7000HE_Testproject_impl1_vho.vho $dsn/../MachXO_7000HE_Testproject_tb.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: Z:\GITHUB\Lattice\MachXO2700HETestproject\impl1\MachXO_7000HE_Testproject_impl1_vho.vho
+# Compile Entity "lut4"
+# Compile Architecture "Structure" of Entity "lut4"
+# Compile Entity "gnd"
+# Compile Architecture "Structure" of Entity "gnd"
+# Compile Entity "lut40001"
+# Compile Architecture "Structure" of Entity "lut40001"
+# Compile Entity "vmuxregsre"
+# Compile Architecture "Structure" of Entity "vmuxregsre"
+# Compile Entity "vcc"
+# Compile Architecture "Structure" of Entity "vcc"
+# Compile Entity "SLICE_0"
+# Compile Architecture "Structure" of Entity "SLICE_0"
+# Compile Entity "vmuxregsre0002"
+# Compile Architecture "Structure" of Entity "vmuxregsre0002"
+# Compile Entity "SLICE_1"
+# Compile Architecture "Structure" of Entity "SLICE_1"
+# Compile Entity "lut40003"
+# Compile Architecture "Structure" of Entity "lut40003"
+# Compile Entity "vmuxregsre0004"
+# Compile Architecture "Structure" of Entity "vmuxregsre0004"
+# Compile Entity "SLICE_4"
+# Compile Architecture "Structure" of Entity "SLICE_4"
+# Compile Entity "SLICE_5"
+# Compile Architecture "Structure" of Entity "SLICE_5"
+# Compile Entity "SLICE_6"
+# Compile Architecture "Structure" of Entity "SLICE_6"
+# Compile Entity "xo2iobuf"
+# Compile Architecture "Structure" of Entity "xo2iobuf"
+# Compile Entity "lcd_data_1_B"
+# Compile Architecture "Structure" of Entity "lcd_data_1_B"
+# Compile Entity "lcd_data_5_B"
+# Compile Architecture "Structure" of Entity "lcd_data_5_B"
+# Compile Entity "lcd_data_15_B"
+# Compile Architecture "Structure" of Entity "lcd_data_15_B"
+# Compile Entity "lcd_data_2_B"
+# Compile Architecture "Structure" of Entity "lcd_data_2_B"
+# Compile Entity "lcd_data_3_B"
+# Compile Architecture "Structure" of Entity "lcd_data_3_B"
+# Compile Entity "xo2iobuf0005"
+# Compile Architecture "Structure" of Entity "xo2iobuf0005"
+# Compile Entity "debugB"
+# Compile Architecture "Structure" of Entity "debugB"
+# Compile Entity "lcd_data_8_B"
+# Compile Architecture "Structure" of Entity "lcd_data_8_B"
+# Compile Entity "lcd_data_9_B"
+# Compile Architecture "Structure" of Entity "lcd_data_9_B"
+# Compile Entity "lcd_data_10_B"
+# Compile Architecture "Structure" of Entity "lcd_data_10_B"
+# Compile Entity "lcd_data_11_B"
+# Compile Architecture "Structure" of Entity "lcd_data_11_B"
+# Compile Entity "lcd_data_4_B"
+# Compile Architecture "Structure" of Entity "lcd_data_4_B"
+# Compile Entity "lcd_data_6_B"
+# Compile Architecture "Structure" of Entity "lcd_data_6_B"
+# Compile Entity "lcd_data_7_B"
+# Compile Architecture "Structure" of Entity "lcd_data_7_B"
+# Compile Entity "lcd_data_12_B"
+# Compile Architecture "Structure" of Entity "lcd_data_12_B"
+# Compile Entity "lcd_data_13_B"
+# Compile Architecture "Structure" of Entity "lcd_data_13_B"
+# Compile Entity "lcd_data_14_B"
+# Compile Architecture "Structure" of Entity "lcd_data_14_B"
+# Compile Entity "lcd_data_0_B"
+# Compile Architecture "Structure" of Entity "lcd_data_0_B"
+# Compile Entity "lcd_wrB"
+# Compile Architecture "Structure" of Entity "lcd_wrB"
+# Compile Entity "lcd_rsB"
+# Compile Architecture "Structure" of Entity "lcd_rsB"
+# Compile Entity "xo2iobuf0006"
+# Compile Architecture "Structure" of Entity "xo2iobuf0006"
+# Compile Entity "clkB"
+# Compile Architecture "Structure" of Entity "clkB"
+# Compile Entity "rstB"
+# Compile Architecture "Structure" of Entity "rstB"
+# Compile Entity "GSR5MODE"
+# Compile Architecture "Structure" of Entity "GSR5MODE"
+# Compile Entity "GSR_INSTB"
+# Compile Architecture "Structure" of Entity "GSR_INSTB"
+# Compile Entity "lcd_FSM"
+# Compile Architecture "Structure" of Entity "lcd_FSM"
+# Compile Configuration "Structure_CON"
+# File: Z:\GITHUB\Lattice\MachXO2700HETestproject\MachXO_7000HE_Testproject_tb.vhd
+# Compile Entity "testbench"
+# Compile Architecture "behavior" of Entity "testbench"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.9 [s]
+run 5us
+# KERNEL: stopped at time: 5 us
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# SDF: 106 generic(s) read from Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_sender_a/../impl1/MachXO_7000HE_Testproject_impl1_vho.sdf
+# SDF: SDF load & update time: 0.0 [s].
+# SDF: 106 SDF entries loaded while 106 entries read
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7493 kB (elbread=1025 elab2=6018 kernel=156 sdf=292)
+# KERNEL: ASDB file was created in location Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_sender_a\src\wave.asdb
+#  2:43 PM, Thursday, May 19, 2016
+#  Simulation has been initialized
+#  Selected Top-Level: testbench (behavior)
+# Waveform file 'untitled.awc' connected to 'Z:/GITHUB/Lattice/MachXO2700HETestproject/lcd_sender_a/src/wave.asdb'.
+run 5us
+# KERNEL: stopped at time: 5 us
+acom -O3 -work work -2002  $dsn/../impl1/MachXO_7000HE_Testproject_impl1_vho.vho $dsn/../MachXO_7000HE_Testproject_tb.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: Z:\GITHUB\Lattice\MachXO2700HETestproject\impl1\MachXO_7000HE_Testproject_impl1_vho.vho
+# Compile Entity "lut4"
+# Compile Architecture "Structure" of Entity "lut4"
+# Compile Entity "gnd"
+# Compile Architecture "Structure" of Entity "gnd"
+# Compile Entity "lut40001"
+# Compile Architecture "Structure" of Entity "lut40001"
+# Compile Entity "vmuxregsre"
+# Compile Architecture "Structure" of Entity "vmuxregsre"
+# Compile Entity "vcc"
+# Compile Architecture "Structure" of Entity "vcc"
+# Compile Entity "SLICE_0"
+# Compile Architecture "Structure" of Entity "SLICE_0"
+# Compile Entity "vmuxregsre0002"
+# Compile Architecture "Structure" of Entity "vmuxregsre0002"
+# Compile Entity "SLICE_1"
+# Compile Architecture "Structure" of Entity "SLICE_1"
+# Compile Entity "lut40003"
+# Compile Architecture "Structure" of Entity "lut40003"
+# Compile Entity "vmuxregsre0004"
+# Compile Architecture "Structure" of Entity "vmuxregsre0004"
+# Compile Entity "SLICE_4"
+# Compile Architecture "Structure" of Entity "SLICE_4"
+# Compile Entity "SLICE_5"
+# Compile Architecture "Structure" of Entity "SLICE_5"
+# Compile Entity "SLICE_6"
+# Compile Architecture "Structure" of Entity "SLICE_6"
+# Compile Entity "xo2iobuf"
+# Compile Architecture "Structure" of Entity "xo2iobuf"
+# Compile Entity "lcd_data_1_B"
+# Compile Architecture "Structure" of Entity "lcd_data_1_B"
+# Compile Entity "lcd_data_5_B"
+# Compile Architecture "Structure" of Entity "lcd_data_5_B"
+# Compile Entity "lcd_data_15_B"
+# Compile Architecture "Structure" of Entity "lcd_data_15_B"
+# Compile Entity "lcd_data_2_B"
+# Compile Architecture "Structure" of Entity "lcd_data_2_B"
+# Compile Entity "lcd_data_3_B"
+# Compile Architecture "Structure" of Entity "lcd_data_3_B"
+# Compile Entity "xo2iobuf0005"
+# Compile Architecture "Structure" of Entity "xo2iobuf0005"
+# Compile Entity "debugB"
+# Compile Architecture "Structure" of Entity "debugB"
+# Compile Entity "lcd_data_8_B"
+# Compile Architecture "Structure" of Entity "lcd_data_8_B"
+# Compile Entity "lcd_data_9_B"
+# Compile Architecture "Structure" of Entity "lcd_data_9_B"
+# Compile Entity "lcd_data_10_B"
+# Compile Architecture "Structure" of Entity "lcd_data_10_B"
+# Compile Entity "lcd_data_11_B"
+# Compile Architecture "Structure" of Entity "lcd_data_11_B"
+# Compile Entity "lcd_data_4_B"
+# Compile Architecture "Structure" of Entity "lcd_data_4_B"
+# Compile Entity "lcd_data_6_B"
+# Compile Architecture "Structure" of Entity "lcd_data_6_B"
+# Compile Entity "lcd_data_7_B"
+# Compile Architecture "Structure" of Entity "lcd_data_7_B"
+# Compile Entity "lcd_data_12_B"
+# Compile Architecture "Structure" of Entity "lcd_data_12_B"
+# Compile Entity "lcd_data_13_B"
+# Compile Architecture "Structure" of Entity "lcd_data_13_B"
+# Compile Entity "lcd_data_14_B"
+# Compile Architecture "Structure" of Entity "lcd_data_14_B"
+# Compile Entity "lcd_data_0_B"
+# Compile Architecture "Structure" of Entity "lcd_data_0_B"
+# Compile Entity "lcd_wrB"
+# Compile Architecture "Structure" of Entity "lcd_wrB"
+# Compile Entity "lcd_rsB"
+# Compile Architecture "Structure" of Entity "lcd_rsB"
+# Compile Entity "xo2iobuf0006"
+# Compile Architecture "Structure" of Entity "xo2iobuf0006"
+# Compile Entity "clkB"
+# Compile Architecture "Structure" of Entity "clkB"
+# Compile Entity "rstB"
+# Compile Architecture "Structure" of Entity "rstB"
+# Compile Entity "GSR5MODE"
+# Compile Architecture "Structure" of Entity "GSR5MODE"
+# Compile Entity "GSR_INSTB"
+# Compile Architecture "Structure" of Entity "GSR_INSTB"
+# Compile Entity "lcd_FSM"
+# Compile Architecture "Structure" of Entity "lcd_FSM"
+# Compile Configuration "Structure_CON"
+# File: Z:\GITHUB\Lattice\MachXO2700HETestproject\MachXO_7000HE_Testproject_tb.vhd
+# Compile Entity "testbench"
+# Compile Architecture "behavior" of Entity "testbench"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.7 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# SDF: 106 generic(s) read from Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_sender_a/../impl1/MachXO_7000HE_Testproject_impl1_vho.sdf
+# SDF: SDF load & update time: 0.0 [s].
+# SDF: 106 SDF entries loaded while 106 entries read
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7493 kB (elbread=1025 elab2=6018 kernel=156 sdf=292)
+# KERNEL: ASDB file was created in location Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_sender_a\src\wave.asdb
+#  2:44 PM, Thursday, May 19, 2016
+#  Simulation has been initialized
+#  Selected Top-Level: testbench (behavior)
+# Waveform file 'untitled.awc' connected to 'Z:/GITHUB/Lattice/MachXO2700HETestproject/lcd_sender_a/src/wave.asdb'.
+run 5us
+# KERNEL: stopped at time: 5 us
+run 5us
+acom -O3 -work work -2002  $dsn/../impl1/MachXO_7000HE_Testproject_impl1_vho.vho
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: Z:\GITHUB\Lattice\MachXO2700HETestproject\impl1\MachXO_7000HE_Testproject_impl1_vho.vho
+# Compile Entity "lut4"
+# Compile Architecture "Structure" of Entity "lut4"
+# Compile Entity "gnd"
+# Compile Architecture "Structure" of Entity "gnd"
+# Compile Entity "vmuxregsre"
+# Compile Architecture "Structure" of Entity "vmuxregsre"
+# Compile Entity "vcc"
+# Compile Architecture "Structure" of Entity "vcc"
+# Compile Entity "SLICE_0"
+# Compile Architecture "Structure" of Entity "SLICE_0"
+# Compile Entity "vmuxregsre0001"
+# Compile Architecture "Structure" of Entity "vmuxregsre0001"
+# Compile Entity "SLICE_1"
+# Compile Architecture "Structure" of Entity "SLICE_1"
+# Compile Entity "lut40002"
+# Compile Architecture "Structure" of Entity "lut40002"
+# Compile Entity "vmuxregsre0003"
+# Compile Architecture "Structure" of Entity "vmuxregsre0003"
+# Compile Entity "SLICE_4"
+# Compile Architecture "Structure" of Entity "SLICE_4"
+# Compile Entity "lut40004"
+# Compile Architecture "Structure" of Entity "lut40004"
+# Compile Entity "SLICE_5"
+# Compile Architecture "Structure" of Entity "SLICE_5"
+# Compile Entity "SLICE_6"
+# Compile Architecture "Structure" of Entity "SLICE_6"
+# Compile Entity "xo2iobuf"
+# Compile Architecture "Structure" of Entity "xo2iobuf"
+# Compile Entity "lcd_data_13_B"
+# Compile Architecture "Structure" of Entity "lcd_data_13_B"
+# Compile Entity "lcd_data_1_B"
+# Compile Architecture "Structure" of Entity "lcd_data_1_B"
+# Compile Entity "lcd_data_5_B"
+# Compile Architecture "Structure" of Entity "lcd_data_5_B"
+# Compile Entity "lcd_data_15_B"
+# Compile Architecture "Structure" of Entity "lcd_data_15_B"
+# Compile Entity "lcd_data_14_B"
+# Compile Architecture "Structure" of Entity "lcd_data_14_B"
+# Compile Entity "xo2iobuf0005"
+# Compile Architecture "Structure" of Entity "xo2iobuf0005"
+# Compile Entity "debugB"
+# Compile Architecture "Structure" of Entity "debugB"
+# Compile Entity "lcd_data_8_B"
+# Compile Architecture "Structure" of Entity "lcd_data_8_B"
+# Compile Entity "lcd_data_9_B"
+# Compile Architecture "Structure" of Entity "lcd_data_9_B"
+# Compile Entity "lcd_data_10_B"
+# Compile Architecture "Structure" of Entity "lcd_data_10_B"
+# Compile Entity "lcd_data_11_B"
+# Compile Architecture "Structure" of Entity "lcd_data_11_B"
+# Compile Entity "lcd_data_2_B"
+# Compile Architecture "Structure" of Entity "lcd_data_2_B"
+# Compile Entity "lcd_data_3_B"
+# Compile Architecture "Structure" of Entity "lcd_data_3_B"
+# Compile Entity "lcd_data_4_B"
+# Compile Architecture "Structure" of Entity "lcd_data_4_B"
+# Compile Entity "lcd_data_6_B"
+# Compile Architecture "Structure" of Entity "lcd_data_6_B"
+# Compile Entity "lcd_data_7_B"
+# Compile Architecture "Structure" of Entity "lcd_data_7_B"
+# Compile Entity "lcd_data_12_B"
+# Compile Architecture "Structure" of Entity "lcd_data_12_B"
+# Compile Entity "lcd_data_0_B"
+# Compile Architecture "Structure" of Entity "lcd_data_0_B"
+# Compile Entity "lcd_wrB"
+# Compile Architecture "Structure" of Entity "lcd_wrB"
+# Compile Entity "lcd_rsB"
+# Compile Architecture "Structure" of Entity "lcd_rsB"
+# Compile Entity "xo2iobuf0006"
+# Compile Architecture "Structure" of Entity "xo2iobuf0006"
+# Compile Entity "clkB"
+# Compile Architecture "Structure" of Entity "clkB"
+# Compile Entity "rstB"
+# Compile Architecture "Structure" of Entity "rstB"
+# Compile Entity "GSR5MODE"
+# Compile Architecture "Structure" of Entity "GSR5MODE"
+# Compile Entity "GSR_INSTB"
+# Compile Architecture "Structure" of Entity "GSR_INSTB"
+# Compile Entity "lcd_FSM"
+# Compile Architecture "Structure" of Entity "lcd_FSM"
+# Compile Configuration "Structure_CON"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.9 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# SDF: 111 generic(s) read from Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_sender_a/../impl1/MachXO_7000HE_Testproject_impl1_vho.sdf
+# SDF: SDF load & update time: 0.0 [s].
+# SDF: 111 SDF entries loaded while 111 entries read
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7496 kB (elbread=1026 elab2=6020 kernel=156 sdf=292)
+# KERNEL: ASDB file was created in location Z:\GITHUB\Lattice\MachXO2700HETestproject\lcd_sender_a\src\wave.asdb
+#  2:47 PM, Thursday, May 19, 2016
+#  Simulation has been initialized
+#  Selected Top-Level: testbench (behavior)
+# Waveform file 'untitled.awc' connected to 'Z:/GITHUB/Lattice/MachXO2700HETestproject/lcd_sender_a/src/wave.asdb'.
+run 5us
+# KERNEL: stopped at time: 5 us
+# Conflict in C:/lscc/diamond/3.7_x64/active-hdl/bin/imageformats/qgif4.dll:
+#  Plugin cannot be queried successfully!
+# Conflict in C:/lscc/diamond/3.7_x64/active-hdl/bin/imageformats/qico4.dll:
+#  Plugin cannot be queried successfully!
+# Conflict in C:/lscc/diamond/3.7_x64/active-hdl/bin/imageformats/qjpeg4.dll:
+#  Plugin cannot be queried successfully!
+# Conflict in C:/lscc/diamond/3.7_x64/active-hdl/bin/imageformats/qmng4.dll:
+#  Plugin cannot be queried successfully!
+# Conflict in C:/lscc/diamond/3.7_x64/active-hdl/bin/imageformats/qtiff4.dll:
+#  Plugin cannot be queried successfully!
+acom -O3 -work work -2002  $dsn/../impl1/MachXO_7000HE_Testproject_impl1_vho.vho $dsn/../MachXO_7000HE_Testproject_tb.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: Z:\GITHUB\Lattice\MachXO2700HETestproject\impl1\MachXO_7000HE_Testproject_impl1_vho.vho
+# Compile Entity "lut4"
+# Compile Architecture "Structure" of Entity "lut4"
+# Compile Entity "gnd"
+# Compile Architecture "Structure" of Entity "gnd"
+# Compile Entity "vmuxregsre"
+# Compile Architecture "Structure" of Entity "vmuxregsre"
+# Compile Entity "vcc"
+# Compile Architecture "Structure" of Entity "vcc"
+# Compile Entity "SLICE_0"
+# Compile Architecture "Structure" of Entity "SLICE_0"
+# Compile Entity "vmuxregsre0001"
+# Compile Architecture "Structure" of Entity "vmuxregsre0001"
+# Compile Entity "SLICE_1"
+# Compile Architecture "Structure" of Entity "SLICE_1"
+# Compile Entity "lut40002"
+# Compile Architecture "Structure" of Entity "lut40002"
+# Compile Entity "vmuxregsre0003"
+# Compile Architecture "Structure" of Entity "vmuxregsre0003"
+# Compile Entity "SLICE_4"
+# Compile Architecture "Structure" of Entity "SLICE_4"
+# Compile Entity "lut40004"
+# Compile Architecture "Structure" of Entity "lut40004"
+# Compile Entity "SLICE_5"
+# Compile Architecture "Structure" of Entity "SLICE_5"
+# Compile Entity "SLICE_6"
+# Compile Architecture "Structure" of Entity "SLICE_6"
+# Compile Entity "xo2iobuf"
+# Compile Architecture "Structure" of Entity "xo2iobuf"
+# Compile Entity "lcd_data_13_B"
+# Compile Architecture "Structure" of Entity "lcd_data_13_B"
+# Compile Entity "lcd_data_1_B"
+# Compile Architecture "Structure" of Entity "lcd_data_1_B"
+# Compile Entity "lcd_data_5_B"

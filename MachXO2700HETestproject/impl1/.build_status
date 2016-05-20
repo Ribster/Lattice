@@ -3,51 +3,51 @@
     <Strategy name="Strategy1">
         <Milestone name="Export" build_result="0" build_time="0">
             <Task name="IBIS" build_result="0" update_result="3" update_time="0"/>
-            <Task name="TimingSimFileVlg" build_result="0" update_result="2" update_time="1463590888"/>
-            <Task name="TimingSimFileVHD" build_result="0" update_result="2" update_time="1463590888"/>
+            <Task name="TimingSimFileVlg" build_result="2" update_result="0" update_time="1463691379"/>
+            <Task name="TimingSimFileVHD" build_result="2" update_result="0" update_time="1463691380"/>
             <Task name="Jedecgen" build_result="0" update_result="3" update_time="0"/>
-            <Task name="Bitgen" build_result="0" update_result="2" update_time="1463590917"/>
+            <Task name="Bitgen" build_result="2" update_result="0" update_time="1463691390"/>
         </Milestone>
-        <Milestone name="Map" build_result="0" build_time="1463590875">
-            <Task name="Map" build_result="0" update_result="2" update_time="1463590875"/>
-            <Task name="MapTrace" build_result="0" update_result="2" update_time="1463590876"/>
-            <Task name="MapVerilogSimFile" build_result="0" update_result="2" update_time="1463572658"/>
-            <Task name="MapVHDLSimFile" build_result="0" update_result="2" update_time="1463572659"/>
+        <Milestone name="Map" build_result="2" build_time="1463691361">
+            <Task name="Map" build_result="2" update_result="0" update_time="1463691361"/>
+            <Task name="MapTrace" build_result="2" update_result="0" update_time="1463691363"/>
+            <Task name="MapVerilogSimFile" build_result="2" update_result="0" update_time="1463691364"/>
+            <Task name="MapVHDLSimFile" build_result="2" update_result="0" update_time="1463691364"/>
         </Milestone>
-        <Milestone name="PAR" build_result="0" build_time="1463590887">
-            <Task name="PAR" build_result="0" update_result="2" update_time="1463590887"/>
+        <Milestone name="PAR" build_result="2" build_time="1463691377">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1463691377"/>
             <Task name="PARTrace" build_result="0" update_result="2" update_time="1463572675"/>
             <Task name="IOTiming" build_result="0" update_result="2" update_time="1463572676"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="0" build_time="1463590874">
-            <Task name="Lattice_Synthesis" build_result="0" update_result="2" update_time="1463590874"/>
-            <Task name="LSE_Compile" build_result="0" update_result="2" update_time="1463590917"/>
+        <Milestone name="Synthesis" build_result="2" build_time="1463691358">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1463691358"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1463691390"/>
         </Milestone>
         <Milestone name="TOOL_Report" build_result="0" build_time="0">
-            <Task name="HDLE" build_result="2" update_result="0" update_time="1463590971"/>
+            <Task name="HDLE" build_result="2" update_result="0" update_time="1463691344"/>
             <Task name="BKM" build_result="0" update_result="2" update_time="0"/>
             <Task name="SSO" build_result="0" update_result="2" update_time="0"/>
             <Task name="PIODRC" build_result="0" update_result="2" update_time="0"/>
             <Task name="DEC" build_result="0" update_result="2" update_time="0"/>
         </Milestone>
-        <Report name=".vdbs/MachXO_7000HE_Testproject_impl1_map.vdb" last_build_time="1463590875" last_build_size="38940"/>
-        <Report name="MachXO_7000HE_Testproject_impl1.bgn" last_build_time="1463590917" last_build_size="3916"/>
-        <Report name="MachXO_7000HE_Testproject_impl1.bit" last_build_time="1463590917" last_build_size="25619"/>
+        <Report name=".vdbs/MachXO_7000HE_Testproject_impl1_map.vdb" last_build_time="1463691361" last_build_size="30853"/>
+        <Report name="MachXO_7000HE_Testproject_impl1.bgn" last_build_time="1463691390" last_build_size="3913"/>
+        <Report name="MachXO_7000HE_Testproject_impl1.bit" last_build_time="1463691390" last_build_size="25262"/>
         <Report name="MachXO_7000HE_Testproject_impl1.edi" last_build_time="1463567707" last_build_size="34559"/>
         <Report name="MachXO_7000HE_Testproject_impl1.ior" last_build_time="1463572676" last_build_size="3692"/>
-        <Report name="MachXO_7000HE_Testproject_impl1.lsedata" last_build_time="1463590872" last_build_size="32235"/>
-        <Report name="MachXO_7000HE_Testproject_impl1.ncd" last_build_time="1463590886" last_build_size="49248"/>
-        <Report name="MachXO_7000HE_Testproject_impl1.ngd" last_build_time="1463590873" last_build_size="37926"/>
-        <Report name="MachXO_7000HE_Testproject_impl1.tw1" last_build_time="1463590875" last_build_size="9708"/>
+        <Report name="MachXO_7000HE_Testproject_impl1.lsedata" last_build_time="1463691357" last_build_size="44605"/>
+        <Report name="MachXO_7000HE_Testproject_impl1.ncd" last_build_time="1463691377" last_build_size="23315"/>
+        <Report name="MachXO_7000HE_Testproject_impl1.ngd" last_build_time="1463691358" last_build_size="22100"/>
+        <Report name="MachXO_7000HE_Testproject_impl1.tw1" last_build_time="1463691362" last_build_size="8728"/>
         <Report name="MachXO_7000HE_Testproject_impl1.twr" last_build_time="1463572674" last_build_size="43720"/>
-        <Report name="MachXO_7000HE_Testproject_impl1_map.ncd" last_build_time="1463590874" last_build_size="38836"/>
-        <Report name="MachXO_7000HE_Testproject_impl1_mapvho.sdf" last_build_time="1463572659" last_build_size="21876"/>
-        <Report name="MachXO_7000HE_Testproject_impl1_mapvho.vho" last_build_time="1463572659" last_build_size="201477"/>
-        <Report name="MachXO_7000HE_Testproject_impl1_mapvo.sdf" last_build_time="1463572658" last_build_size="22038"/>
-        <Report name="MachXO_7000HE_Testproject_impl1_mapvo.vo" last_build_time="1463572658" last_build_size="28445"/>
-        <Report name="MachXO_7000HE_Testproject_impl1_vho.sdf" last_build_time="1463590888" last_build_size="27468"/>
-        <Report name="MachXO_7000HE_Testproject_impl1_vho.vho" last_build_time="1463590888" last_build_size="227103"/>
-        <Report name="MachXO_7000HE_Testproject_impl1_vo.sdf" last_build_time="1463590887" last_build_size="27465"/>
-        <Report name="MachXO_7000HE_Testproject_impl1_vo.vo" last_build_time="1463590887" last_build_size="30797"/>
+        <Report name="MachXO_7000HE_Testproject_impl1_map.ncd" last_build_time="1463691359" last_build_size="19771"/>
+        <Report name="MachXO_7000HE_Testproject_impl1_mapvho.sdf" last_build_time="1463691364" last_build_size="9655"/>
+        <Report name="MachXO_7000HE_Testproject_impl1_mapvho.vho" last_build_time="1463691364" last_build_size="94103"/>
+        <Report name="MachXO_7000HE_Testproject_impl1_mapvo.sdf" last_build_time="1463691363" last_build_size="9686"/>
+        <Report name="MachXO_7000HE_Testproject_impl1_mapvo.vo" last_build_time="1463691363" last_build_size="13700"/>
+        <Report name="MachXO_7000HE_Testproject_impl1_vho.sdf" last_build_time="1463691380" last_build_size="10520"/>
+        <Report name="MachXO_7000HE_Testproject_impl1_vho.vho" last_build_time="1463691380" last_build_size="94096"/>
+        <Report name="MachXO_7000HE_Testproject_impl1_vo.sdf" last_build_time="1463691378" last_build_size="10551"/>
+        <Report name="MachXO_7000HE_Testproject_impl1_vo.vo" last_build_time="1463691378" last_build_size="13693"/>
     </Strategy>
 </BuildStatus>

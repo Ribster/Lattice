@@ -4,7 +4,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
-Wed May 18 19:01:16 2016
+Thu May 19 22:56:05 2016
 
 C:/lscc/diamond/3.7_x64/ispfpga\bin\nt64\par -f
 MachXO_7000HE_Testproject_impl1.p2t MachXO_7000HE_Testproject_impl1_map.ncd
@@ -17,11 +17,11 @@ Preference file: MachXO_7000HE_Testproject_impl1.prf.
 Level/       Number       Worst        Timing       Worst        Timing       Run          NCD
 Cost [ncd]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
 ----------   --------     -----        ------       -----------  -----------  ----         ------
-5_1   *      0            -1.354       29050        0.382        0            10           Complete
+5_1   *      0            0.013        0            0.304        0            12           Complete
 
 
 * : Design saved.
 
-Total (real) run time for 1-seed: 10 secs 
+Total (real) run time for 1-seed: 12 secs 
 
 par done!

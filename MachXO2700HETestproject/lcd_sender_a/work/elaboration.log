@@ -1,0 +1,89 @@
+Active-HDL 10.2.3312.5682  2016-05-19 11:16:41 PM
+
+Elaboration top modules:
+Architecture                  behavior(testbench)
+
+
+---------------------------------------------------------------------------------------------------
+Entity         | Architecture | Library   | Info | Compiler Version          | Compilation Options
+---------------------------------------------------------------------------------------------------
+testbench      | behavior     | work      |      | 10.2.3312.5682  (Windows) | -O3
+lcd_FSM        | structure    | work      |      | 10.2.3312.5682  (Windows) | -O3
+SLICE_0        | structure    | work      |      | 10.2.3312.5682  (Windows) | -O3
+SLICE_1        | structure    | work      |      | 10.2.3312.5682  (Windows) | -O3
+SLICE_4        | structure    | work      |      | 10.2.3312.5682  (Windows) | -O3
+SLICE_5        | structure    | work      |      | 10.2.3312.5682  (Windows) | -O3
+SLICE_6        | structure    | work      |      | 10.2.3312.5682  (Windows) | -O3
+lcd_data_13_B  | structure    | work      |      | 10.2.3312.5682  (Windows) | -O3
+lcd_data_1_B   | structure    | work      |      | 10.2.3312.5682  (Windows) | -O3
+lcd_data_5_B   | structure    | work      |      | 10.2.3312.5682  (Windows) | -O3
+lcd_data_15_B  | structure    | work      |      | 10.2.3312.5682  (Windows) | -O3
+lcd_data_14_B  | structure    | work      |      | 10.2.3312.5682  (Windows) | -O3
+debugB         | structure    | work      |      | 10.2.3312.5682  (Windows) | -O3
+lcd_data_8_B   | structure    | work      |      | 10.2.3312.5682  (Windows) | -O3
+lcd_data_9_B   | structure    | work      |      | 10.2.3312.5682  (Windows) | -O3
+lcd_data_10_B  | structure    | work      |      | 10.2.3312.5682  (Windows) | -O3
+lcd_data_11_B  | structure    | work      |      | 10.2.3312.5682  (Windows) | -O3
+lcd_data_2_B   | structure    | work      |      | 10.2.3312.5682  (Windows) | -O3
+lcd_data_3_B   | structure    | work      |      | 10.2.3312.5682  (Windows) | -O3
+lcd_data_4_B   | structure    | work      |      | 10.2.3312.5682  (Windows) | -O3
+lcd_data_6_B   | structure    | work      |      | 10.2.3312.5682  (Windows) | -O3
+lcd_data_7_B   | structure    | work      |      | 10.2.3312.5682  (Windows) | -O3
+lcd_data_12_B  | structure    | work      |      | 10.2.3312.5682  (Windows) | -O3
+lcd_data_0_B   | structure    | work      |      | 10.2.3312.5682  (Windows) | -O3
+lcd_wrB        | structure    | work      |      | 10.2.3312.5682  (Windows) | -O3
+lcd_rsB        | structure    | work      |      | 10.2.3312.5682  (Windows) | -O3
+clkB           | structure    | work      |      | 10.2.3312.5682  (Windows) | -O3
+rstB           | structure    | work      |      | 10.2.3312.5682  (Windows) | -O3
+GSR_INSTB      | structure    | work      |      | 10.2.3312.5682  (Windows) | -O3
+vhi            | v            | machxo2   |      | 10.2.3312.5682  (Windows) | -vendor lattice
+pur            | v            | machxo2   |      | 10.2.3312.5682  (Windows) | -vendor lattice
+lut4           | structure    | work      |      | 10.2.3312.5682  (Windows) | -O3
+gnd            | structure    | work      |      | 10.2.3312.5682  (Windows) | -O3
+vmuxregsre     | structure    | work      |      | 10.2.3312.5682  (Windows) | -O3
+vcc            | structure    | work      |      | 10.2.3312.5682  (Windows) | -O3
+rom16x1a       | v            | machxo2   |      | 10.2.3312.5682  (Windows) | -vendor lattice
+vlo            | v            | machxo2   |      | 10.2.3312.5682  (Windows) | -vendor lattice
+fl1p3iy        | v            | machxo2   |      | 10.2.3312.5682  (Windows) | -vendor lattice
+vmuxregsre0001 | structure    | work      |      | 10.2.3312.5682  (Windows) | -O3
+fl1p3dx        | v            | machxo2   |      | 10.2.3312.5682  (Windows) | -vendor lattice
+lut40002       | structure    | work      |      | 10.2.3312.5682  (Windows) | -O3
+vmuxregsre0003 | structure    | work      |      | 10.2.3312.5682  (Windows) | -O3
+fl1p3bx        | v            | machxo2   |      | 10.2.3312.5682  (Windows) | -vendor lattice
+lut40004       | structure    | work      |      | 10.2.3312.5682  (Windows) | -O3
+xo2iobuf       | structure    | work      |      | 10.2.3312.5682  (Windows) | -O3
+obz            | v            | machxo2   |      | 10.2.3312.5682  (Windows) | -vendor lattice
+xo2iobuf0005   | structure    | work      |      | 10.2.3312.5682  (Windows) | -O3
+obzpd          | v            | machxo2   |      | 10.2.3312.5682  (Windows) | -vendor lattice
+xo2iobuf0006   | structure    | work      |      | 10.2.3312.5682  (Windows) | -O3
+ibpd           | v            | machxo2   |      | 10.2.3312.5682  (Windows) | -vendor lattice
+GSR5MODE       | structure    | work      |      | 10.2.3312.5682  (Windows) | -O3
+inv            | v            | machxo2   |      | 10.2.3312.5682  (Windows) | -vendor lattice
+gsr            | v            | machxo2   |      | 10.2.3312.5682  (Windows) | -vendor lattice
+---------------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------------
+VHDL Package                  | Library   | Info | Compiler Version          | Compilation Options
+---------------------------------------------------------------------------------------------------
+standard                      | std       |      |                           | <unavailable>
+TEXTIO                        | std       |      | 10.2.3312.5682  (Windows) |  -2008
+std_logic_1164                | ieee      |      | 10.2.3312.5682  (Windows) |  -2008
+NUMERIC_STD                   | ieee      |      | 10.2.3312.5682  (Windows) |  -2008
+VITAL_Timing                  | vital2000 |      | 10.2.3312.5682  (Windows) | <unavailable>
+std_logic_arith               | ieee      |      | 10.2.3312.5682  (Windows) | <unavailable>
+components                    | machxo2   |      | 10.2.3312.5682  (Windows) | -vendor lattice
+VITAL_Primitives              | ieee      |      | 10.2.3312.5682  (Windows) | <unavailable>
+global                        | machxo2   |      | 10.2.3312.5682  (Windows) | -vendor lattice
+mem2                          | machxo2   |      | 10.2.3312.5682  (Windows) | -vendor lattice
+STD_LOGIC_UNSIGNED            | ieee      |      | 10.2.3312.5682  (Windows) | <unavailable>
+---------------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------------
+Library                       | Comment
+---------------------------------------------------------------------------------------------------
+ieee                          | Standard IEEE packages library
+machxo2                       | LATTICE Diamond 3.7, MACHXO2 VHDL LIBRARY
+std                           | Standard VHDL library
+vital2000                     | Standard IEEE packages library
+work                          | None
+---------------------------------------------------------------------------------------------------

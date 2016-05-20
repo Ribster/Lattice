@@ -14,6 +14,195 @@
             <Dynamic>0</Dynamic>
         </Message>
     </Task>
+    <Task name="Map">
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>datacommand</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>data[15]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>data[14]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>data[13]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>data[12]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>data[11]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>data[10]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>data[9]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>data[8]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>data[7]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>data[6]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>data[5]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>data[4]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>data[3]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>data[2]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>data[1]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>data[0]</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>datacommand</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>data[15:0](15)</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>data[15:0](14)</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>data[15:0](13)</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>data[15:0](12)</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>data[15:0](11)</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>data[15:0](10)</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>data[15:0](9)</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>data[15:0](8)</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>data[15:0](7)</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>data[15:0](6)</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>data[15:0](5)</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>data[15:0](4)</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>data[15:0](3)</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>data[15:0](2)</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>data[15:0](1)</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>data[15:0](0)</Dynamic>
+        </Message>
+    </Task>
     <Task name="Lattice_Synthesis">
         <Message>
             <ID>35002000</ID>
@@ -42,33 +231,243 @@
             <Navigation>22</Navigation>
         </Message>
         <Message>
-            <ID>35921251</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>z:/github/lattice/machxo2700hetestproject/lcd_sender.vhd(67): </Dynamic>
-            <Dynamic>busy</Dynamic>
-            <Navigation>z:/github/lattice/machxo2700hetestproject/lcd_sender.vhd</Navigation>
-            <Navigation>67</Navigation>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>z:/github/lattice/machxo2700hetestproject/lcd_fsm.vhd(8): </Dynamic>
+            <Dynamic>lcd_fsm</Dynamic>
+            <Navigation>z:/github/lattice/machxo2700hetestproject/lcd_fsm.vhd</Navigation>
+            <Navigation>8</Navigation>
         </Message>
         <Message>
-            <ID>35921613</ID>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>z:/github/lattice/machxo2700hetestproject/lcd_fsm.vhd(21): </Dynamic>
+            <Dynamic>beh_lcd_fsm</Dynamic>
+            <Navigation>z:/github/lattice/machxo2700hetestproject/lcd_fsm.vhd</Navigation>
+            <Navigation>21</Navigation>
+        </Message>
+        <Message>
+            <ID>35921303</ID>
             <Severity>Warning</Severity>
-            <Dynamic>z:/github/lattice/machxo2700hetestproject/lcd_sender.vhd(81): </Dynamic>
-            <Navigation>z:/github/lattice/machxo2700hetestproject/lcd_sender.vhd</Navigation>
-            <Navigation>81</Navigation>
+            <Dynamic>z:/github/lattice/machxo2700hetestproject/lcd_fsm.vhd(44): </Dynamic>
+            <Dynamic>'U'</Dynamic>
+            <Dynamic>data1command0_i</Dynamic>
+            <Navigation>z:/github/lattice/machxo2700hetestproject/lcd_fsm.vhd</Navigation>
+            <Navigation>44</Navigation>
+        </Message>
+        <Message>
+            <ID>35921172</ID>
+            <Severity>Info</Severity>
+            <Dynamic>z:/github/lattice/machxo2700hetestproject/lcd_fsm.vhd(91): </Dynamic>
+            <Navigation>z:/github/lattice/machxo2700hetestproject/lcd_fsm.vhd</Navigation>
+            <Navigation>91</Navigation>
         </Message>
         <Message>
             <ID>35921205</ID>
             <Severity>Warning</Severity>
-            <Dynamic>z:/github/lattice/machxo2700hetestproject/lcd_sender.vhd(20): </Dynamic>
-            <Dynamic>lcd_sender</Dynamic>
-            <Dynamic>beh_lcd_sender</Dynamic>
-            <Navigation>z:/github/lattice/machxo2700hetestproject/lcd_sender.vhd</Navigation>
-            <Navigation>20</Navigation>
+            <Dynamic>z:/github/lattice/machxo2700hetestproject/lcd_fsm.vhd(19): </Dynamic>
+            <Dynamic>lcd_FSM</Dynamic>
+            <Dynamic>beh_lcd_FSM</Dynamic>
+            <Navigation>z:/github/lattice/machxo2700hetestproject/lcd_fsm.vhd</Navigation>
+            <Navigation>19</Navigation>
         </Message>
         <Message>
-            <ID>35001779</ID>
+            <ID>35001757</ID>
             <Severity>Warning</Severity>
-            <Dynamic>PS_vivaz_state_i0</Dynamic>
+            <Dynamic>lcd_data[15]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001757</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>lcd_data[14]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001757</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>lcd_data[13]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001757</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>lcd_data[12]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001757</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>lcd_data[11]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001757</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>lcd_data[10]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001757</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>lcd_data[9]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001757</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>lcd_data[8]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001757</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>lcd_data[7]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001757</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>lcd_data[6]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001757</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>lcd_data[5]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001757</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>lcd_data[4]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001757</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>lcd_data[3]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001757</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>lcd_data[2]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001757</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>lcd_data[1]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001757</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>lcd_data[0]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001757</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>lcd_wr</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001757</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>lcd_rs</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/machxo2700hetestproject/lcd_fsm.vhd(94): Latch dlatchrs_21_i1 input is stuck at Zero
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/machxo2700hetestproject/lcd_fsm.vhd(94): Latch dlatchrs_21_i2 input is stuck at Zero
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/machxo2700hetestproject/lcd_fsm.vhd(94): Latch dlatchrs_21_i3 input is stuck at Zero
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/machxo2700hetestproject/lcd_fsm.vhd(94): Latch dlatchrs_21_i4 input is stuck at Zero
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/machxo2700hetestproject/lcd_fsm.vhd(94): Latch dlatchrs_21_i5 input is stuck at Zero
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/machxo2700hetestproject/lcd_fsm.vhd(94): Latch dlatchrs_21_i6 input is stuck at Zero
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/machxo2700hetestproject/lcd_fsm.vhd(94): Latch dlatchrs_21_i7 input is stuck at Zero
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/machxo2700hetestproject/lcd_fsm.vhd(94): Latch dlatchrs_21_i8 input is stuck at Zero
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/machxo2700hetestproject/lcd_fsm.vhd(94): Latch dlatchrs_21_i9 input is stuck at Zero
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/machxo2700hetestproject/lcd_fsm.vhd(94): Latch dlatchrs_21_i10 input is stuck at Zero
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/machxo2700hetestproject/lcd_fsm.vhd(94): Latch dlatchrs_21_i11 input is stuck at Zero
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/machxo2700hetestproject/lcd_fsm.vhd(94): Latch dlatchrs_21_i12 input is stuck at Zero
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/machxo2700hetestproject/lcd_fsm.vhd(94): Latch dlatchrs_21_i13 input is stuck at Zero
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/machxo2700hetestproject/lcd_fsm.vhd(94): Latch dlatchrs_21_i14 input is stuck at Zero
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/machxo2700hetestproject/lcd_fsm.vhd(94): Latch dlatchrs_21_i15 input is stuck at Zero
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>z:/github/lattice/machxo2700hetestproject/lcd_fsm.vhd(94): Latch dlatchrs_21_i16 input is stuck at Zero
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001774</ID>
+            <Severity>Info</Severity>
+            <Dynamic>PS_FSM</Dynamic>
+            <Dynamic>one-hot</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>0</Dynamic>
+            <Dynamic>PS_FSM_FSM</Dynamic>
         </Message>
         <Message>
             <ID>35001611</ID>
@@ -78,13 +477,227 @@
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>GND_net</Dynamic>
-            <Navigation>GND_net</Navigation>
+            <Dynamic>datacommand</Dynamic>
+            <Navigation>datacommand</Navigation>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>datacommand</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>data[15]</Dynamic>
+            <Navigation>data[15]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>data[15]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>data[14]</Dynamic>
+            <Navigation>data[14]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>data[14]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>data[13]</Dynamic>
+            <Navigation>data[13]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>data[13]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>data[12]</Dynamic>
+            <Navigation>data[12]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>data[12]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>data[11]</Dynamic>
+            <Navigation>data[11]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>data[11]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>data[10]</Dynamic>
+            <Navigation>data[10]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>data[10]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>data[9]</Dynamic>
+            <Navigation>data[9]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>data[9]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>data[8]</Dynamic>
+            <Navigation>data[8]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>data[8]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>data[7]</Dynamic>
+            <Navigation>data[7]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>data[7]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>data[6]</Dynamic>
+            <Navigation>data[6]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>data[6]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>data[5]</Dynamic>
+            <Navigation>data[5]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>data[5]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>data[4]</Dynamic>
+            <Navigation>data[4]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>data[4]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>data[3]</Dynamic>
+            <Navigation>data[3]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>data[3]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>data[2]</Dynamic>
+            <Navigation>data[2]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>data[2]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>data[1]</Dynamic>
+            <Navigation>data[1]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>data[1]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>data[0]</Dynamic>
+            <Navigation>data[0]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>data[0]</Dynamic>
         </Message>
         <Message>
             <ID>1163101</ID>
             <Severity>Warning</Severity>
-            <Dynamic>1</Dynamic>
+            <Dynamic>34</Dynamic>
         </Message>
     </Task>
     <Task name="TimingSimFileVHD">

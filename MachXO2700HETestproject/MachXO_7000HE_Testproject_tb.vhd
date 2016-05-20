@@ -1,5 +1,5 @@
 
--- VHDL Test Bench Created from source file lcd_sender.vhd -- Wed May 18 14:02:54 2016
+-- VHDL Test Bench Created from source file lcd_FSM.vhd -- Thu May 19 14:09:35 2016
 
 --
 -- Notes: 
@@ -27,67 +27,53 @@ END testbench;
 
 ARCHITECTURE behavior OF testbench IS 
 
-	COMPONENT lcd_sender
+	COMPONENT lcd_FSM
 	PORT(
 		clk : IN std_logic;
-		rst : IN std_logic;
-		go : IN std_logic;
-		data1Command0 : IN std_logic;
-		payload : IN std_logic_vector(15 downto 0);    
-		lcd_bus : INOUT std_logic_vector(15 downto 0);
-		busy : INOUT std_logic;      
-		lcd_write : OUT std_logic;
-		lcd_rs : OUT std_logic
+		rst : IN std_logic;          
+		datacommand : in std_logic;
+		data : in std_logic_vector(15 downto 0);
+		debug : OUT std_logic;
+		lcd_data : out std_logic_vector(15 downto 0);
+		lcd_wr : out std_logic;
+		lcd_rs : out std_logic
 		);
 	END COMPONENT;
 
-	SIGNAL rst :  std_logic;
-	SIGNAL lcd_bus :  std_logic_vector(15 downto 0);
-	SIGNAL lcd_write :  std_logic;
-	SIGNAL lcd_rs :  std_logic;
-	SIGNAL go :  std_logic;
-	SIGNAL data1Command0 :  std_logic;
-	SIGNAL busy :  std_logic;
-	SIGNAL payload :  std_logic_vector(15 downto 0);
-	
-	
-	signal clk_sig: std_logic := '0';
+	SIGNAL clk :  std_logic := '0';
+	SIGNAL rst :  std_logic := '1';
+	SIGNAL debug :  std_logic;
+	SIGNAL lcd_data : std_logic_vector(15 downto 0);
+	SIGNAL lcd_wr : std_logic;
+	SIGNAL lcd_rs : std_logic;
+	SIGNAL datacommand : std_logic;
+	SIGNAL data : std_logic_vector(15 downto 0);
 
 BEGIN
 
 -- Please check and add your generic clause manually
-	uut: lcd_sender PORT MAP(
-		clk => clk_sig,
+	uut: lcd_FSM PORT MAP(
+		clk => clk,
 		rst => rst,
-		lcd_bus => lcd_bus,
-		lcd_write => lcd_write,
+		debug => debug,
+		lcd_data => lcd_data,
+		lcd_wr => lcd_wr,
 		lcd_rs => lcd_rs,
-		go => go,
-		data1Command0 => data1Command0,
-		busy => busy,
-		payload => payload
+		datacommand => datacommand,
+		data => data
 	);
-
-	clk_sig <= not clk_sig after 500us;
 	
+	clk <= not clk after 50ns;
+	rst <= '0' after 1us;
+
 
 -- *** Test Bench - User Defined Section ***
    tb : PROCESS
    BEGIN
-    go <= '0';
-	wait for 1ms; 
-	rst <= '1';
-	wait for 1ms;
-	rst <= '0';
-	wait for 1ms;
-	payload <= std_logic_vector(to_unsigned(5,16));
-	data1Command0 <= '1';
-	wait for 1ms;
-	go <= '1';
-	wait for 1ms;  
-	go <= '0';
-	wait for 1ms;
-	wait;
+		data <= "0000000000000000";
+		datacommand <= '0';
+		wait for 2us;
+      wait; -- will wait forever
    END PROCESS;
 -- *** End Test Bench - User Defined Section ***
 

@@ -1,0 +1,13 @@
+----------------------------------------------------------------------
+Report for cell lcd_sender.TECH
+Register bits:  22 of 7209 (0.305%)
+I/O cells:      41
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX        20          100.0
+                            FD1S3AX         2          100.0
+                                GSR         1          100.0
+                                 IB        20          100.0
+                               LUT4         7          100.0
+                                 OB        21          100.0
+                              TOTAL        71

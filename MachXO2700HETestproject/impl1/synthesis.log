@@ -5,7 +5,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
-Wed May 18 19:01:12 2016
+Thu May 19 22:55:56 2016
 
 
 Command Line:  synthesis -f MachXO_7000HE_Testproject_impl1_lattice.synproj -gui -msgset Z:/GITHUB/Lattice/MachXO2700HETestproject/promote.xml 
@@ -34,7 +34,7 @@ Using performance grade 5.
                                                           
 
 Optimization goal = Balanced
-Top-level module name = lcd_sender.
+Top-level module name = lcd_FSM.
 Target frequency = 1.000000 MHz.
 Maximum fanout = 1000.
 Timing path count = 3
@@ -65,6 +65,7 @@ The -syn option is FALSE.
 -p Z:/GITHUB/Lattice/MachXO2700HETestproject (searchpath added)
 VHDL library = work
 VHDL design file = Z:/GITHUB/Lattice/MachXO2700HETestproject/lcd_sender.vhd
+VHDL design file = Z:/GITHUB/Lattice/MachXO2700HETestproject/lcd_FSM.vhd
 NGD file = MachXO_7000HE_Testproject_impl1.ngd
 -sdc option: SDC file input not used.
 -lpf option: Output file option is ON.
@@ -79,64 +80,185 @@ INFO - synthesis: The default VHDL library search path is now "Z:/GITHUB/Lattice
 Analyzing VHDL file z:/github/lattice/machxo2700hetestproject/lcd_sender.vhd. VHDL-1481
 INFO - synthesis: z:/github/lattice/machxo2700hetestproject/lcd_sender.vhd(8): analyzing entity lcd_sender. VHDL-1012
 INFO - synthesis: z:/github/lattice/machxo2700hetestproject/lcd_sender.vhd(22): analyzing architecture beh_lcd_sender. VHDL-1010
-unit lcd_sender is not yet analyzed. VHDL-1485
-z:/github/lattice/machxo2700hetestproject/lcd_sender.vhd(8): executing lcd_sender(beh_lcd_sender)
+Analyzing VHDL file z:/github/lattice/machxo2700hetestproject/lcd_fsm.vhd. VHDL-1481
+INFO - synthesis: z:/github/lattice/machxo2700hetestproject/lcd_fsm.vhd(8): analyzing entity lcd_fsm. VHDL-1012
+INFO - synthesis: z:/github/lattice/machxo2700hetestproject/lcd_fsm.vhd(21): analyzing architecture beh_lcd_fsm. VHDL-1010
+unit lcd_FSM is not yet analyzed. VHDL-1485
+z:/github/lattice/machxo2700hetestproject/lcd_fsm.vhd(8): executing lcd_FSM(beh_lcd_FSM)
 
-WARNING - synthesis: z:/github/lattice/machxo2700hetestproject/lcd_sender.vhd(67): busy should be on the sensitivity list of the process. VHDL-1251
-WARNING - synthesis: z:/github/lattice/machxo2700hetestproject/lcd_sender.vhd(81): incomplete sensitivity list specified, assuming completeness. VHDL-1613
-WARNING - synthesis: z:/github/lattice/machxo2700hetestproject/lcd_sender.vhd(20): replacing existing netlist lcd_sender(beh_lcd_sender). VHDL-1205
-Top module name (VHDL): lcd_sender
+WARNING - synthesis: z:/github/lattice/machxo2700hetestproject/lcd_fsm.vhd(44): using initial value 'U' for data1command0_i since it is never assigned. VHDL-1303
+INFO - synthesis: z:/github/lattice/machxo2700hetestproject/lcd_fsm.vhd(91): others clause is never selected. VHDL-1172
+WARNING - synthesis: z:/github/lattice/machxo2700hetestproject/lcd_fsm.vhd(19): replacing existing netlist lcd_FSM(beh_lcd_FSM). VHDL-1205
+Top module name (VHDL): lcd_FSM
 Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/or5g00/data/orc5glib.ngl'...
 Loading device for application map from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.7_x64/ispfpga.
 Package Status:                     Final          Version 1.39.
-Top-level module name = lcd_sender.
-######## Converting I/O port lcd_bus[15] to output.
-######## Converting I/O port lcd_bus[14] to output.
-######## Converting I/O port lcd_bus[13] to output.
-######## Converting I/O port lcd_bus[12] to output.
-######## Converting I/O port lcd_bus[11] to output.
-######## Converting I/O port lcd_bus[10] to output.
-######## Converting I/O port lcd_bus[9] to output.
-######## Converting I/O port lcd_bus[8] to output.
-######## Converting I/O port lcd_bus[7] to output.
-######## Converting I/O port lcd_bus[6] to output.
-######## Converting I/O port lcd_bus[5] to output.
-######## Converting I/O port lcd_bus[4] to output.
-######## Converting I/O port lcd_bus[3] to output.
-######## Converting I/O port lcd_bus[2] to output.
-######## Converting I/O port lcd_bus[1] to output.
-######## Converting I/O port lcd_bus[0] to output.
-######## Converting I/O port busy to output.
+Top-level module name = lcd_FSM.
+WARNING - synthesis: lcd_data[15] is not assigned a value (floating) -- simulation mismatch possible.
+WARNING - synthesis: lcd_data[14] is not assigned a value (floating) -- simulation mismatch possible.
+WARNING - synthesis: lcd_data[13] is not assigned a value (floating) -- simulation mismatch possible.
+WARNING - synthesis: lcd_data[12] is not assigned a value (floating) -- simulation mismatch possible.
+WARNING - synthesis: lcd_data[11] is not assigned a value (floating) -- simulation mismatch possible.
+WARNING - synthesis: lcd_data[10] is not assigned a value (floating) -- simulation mismatch possible.
+WARNING - synthesis: lcd_data[9] is not assigned a value (floating) -- simulation mismatch possible.
+WARNING - synthesis: lcd_data[8] is not assigned a value (floating) -- simulation mismatch possible.
+WARNING - synthesis: lcd_data[7] is not assigned a value (floating) -- simulation mismatch possible.
+WARNING - synthesis: lcd_data[6] is not assigned a value (floating) -- simulation mismatch possible.
+WARNING - synthesis: lcd_data[5] is not assigned a value (floating) -- simulation mismatch possible.
+WARNING - synthesis: lcd_data[4] is not assigned a value (floating) -- simulation mismatch possible.
+WARNING - synthesis: lcd_data[3] is not assigned a value (floating) -- simulation mismatch possible.
+WARNING - synthesis: lcd_data[2] is not assigned a value (floating) -- simulation mismatch possible.
+WARNING - synthesis: lcd_data[1] is not assigned a value (floating) -- simulation mismatch possible.
+WARNING - synthesis: lcd_data[0] is not assigned a value (floating) -- simulation mismatch possible.
+WARNING - synthesis: lcd_wr is not assigned a value (floating) -- simulation mismatch possible.
+WARNING - synthesis: lcd_rs is not assigned a value (floating) -- simulation mismatch possible.
+######## Missing driver on net n83. Patching with GND.
+######## Missing driver on net n84. Patching with GND.
+######## Missing driver on net n85. Patching with GND.
+######## Missing driver on net n86. Patching with GND.
+######## Missing driver on net n87. Patching with GND.
+######## Missing driver on net n88. Patching with GND.
+######## Missing driver on net n89. Patching with GND.
+######## Missing driver on net n90. Patching with GND.
+######## Missing driver on net n91. Patching with GND.
+######## Missing driver on net n92. Patching with GND.
+######## Missing driver on net n93. Patching with GND.
+######## Missing driver on net n94. Patching with GND.
+######## Missing driver on net n95. Patching with GND.
+######## Missing driver on net n96. Patching with GND.
+######## Missing driver on net n97. Patching with GND.
+######## Missing driver on net n98. Patching with GND.
+######## Missing driver on net n99. Patching with GND.
+######## Missing driver on net n100. Patching with GND.
+WARNING - synthesis: z:/github/lattice/machxo2700hetestproject/lcd_fsm.vhd(94): Latch dlatchrs_21_i1 input is stuck at Zero
+
+WARNING - synthesis: z:/github/lattice/machxo2700hetestproject/lcd_fsm.vhd(94): Latch dlatchrs_21_i2 input is stuck at Zero
+
+WARNING - synthesis: z:/github/lattice/machxo2700hetestproject/lcd_fsm.vhd(94): Latch dlatchrs_21_i3 input is stuck at Zero
+
+WARNING - synthesis: z:/github/lattice/machxo2700hetestproject/lcd_fsm.vhd(94): Latch dlatchrs_21_i4 input is stuck at Zero
+
+WARNING - synthesis: z:/github/lattice/machxo2700hetestproject/lcd_fsm.vhd(94): Latch dlatchrs_21_i5 input is stuck at Zero
+
+WARNING - synthesis: z:/github/lattice/machxo2700hetestproject/lcd_fsm.vhd(94): Latch dlatchrs_21_i6 input is stuck at Zero
+
+WARNING - synthesis: z:/github/lattice/machxo2700hetestproject/lcd_fsm.vhd(94): Latch dlatchrs_21_i7 input is stuck at Zero
+
+WARNING - synthesis: z:/github/lattice/machxo2700hetestproject/lcd_fsm.vhd(94): Latch dlatchrs_21_i8 input is stuck at Zero
+
+WARNING - synthesis: z:/github/lattice/machxo2700hetestproject/lcd_fsm.vhd(94): Latch dlatchrs_21_i9 input is stuck at Zero
+
+WARNING - synthesis: z:/github/lattice/machxo2700hetestproject/lcd_fsm.vhd(94): Latch dlatchrs_21_i10 input is stuck at Zero
+
+WARNING - synthesis: z:/github/lattice/machxo2700hetestproject/lcd_fsm.vhd(94): Latch dlatchrs_21_i11 input is stuck at Zero
+
+WARNING - synthesis: z:/github/lattice/machxo2700hetestproject/lcd_fsm.vhd(94): Latch dlatchrs_21_i12 input is stuck at Zero
+
+WARNING - synthesis: z:/github/lattice/machxo2700hetestproject/lcd_fsm.vhd(94): Latch dlatchrs_21_i13 input is stuck at Zero
+
+WARNING - synthesis: z:/github/lattice/machxo2700hetestproject/lcd_fsm.vhd(94): Latch dlatchrs_21_i14 input is stuck at Zero
+
+WARNING - synthesis: z:/github/lattice/machxo2700hetestproject/lcd_fsm.vhd(94): Latch dlatchrs_21_i15 input is stuck at Zero
+
+WARNING - synthesis: z:/github/lattice/machxo2700hetestproject/lcd_fsm.vhd(94): Latch dlatchrs_21_i16 input is stuck at Zero
+
+INFO - synthesis: Extracted state machine for register 'PS_FSM' with one-hot encoding
+State machine has 7 reachable states with original encodings of:
+
+ 000 
+
+ 001 
+
+ 010 
+
+ 011 
+
+ 100 
+
+ 101 
+
+ 110 
+
+original encoding -> new encoding (one-hot encoding)
+
+ 000 -> 0000001
+
+ 001 -> 0000010
+
+ 010 -> 0000100
+
+ 011 -> 0001000
+
+ 100 -> 0010000
+
+ 101 -> 0100000
+
+ 110 -> 1000000
 
 
 
-GSR instance connected to net n273.
-WARNING - synthesis: Initial value found on instance PS_vivaz_state_i0 will be ignored.
+
+WARNING - synthesis: Bit 0 of Register PS_FSM_FSM is stuck at Zero
+GSR instance connected to net n139.
 Applying 1.000000 MHz constraint to all clocks
 
 WARNING - synthesis: No user .sdc file.
-Results of NGD DRC are available in lcd_sender_drc.log.
+Results of NGD DRC are available in lcd_FSM_drc.log.
 Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/or5g00/data/orc5glib.ngl'...
-WARNING - synthesis: logical net 'GND_net' has no load.
-WARNING - synthesis: DRC complete with 1 warnings.
+WARNING - synthesis: logical net 'datacommand' has no load.
+WARNING - synthesis: input pad net 'datacommand' has no legal load.
+WARNING - synthesis: logical net 'data[15]' has no load.
+WARNING - synthesis: input pad net 'data[15]' has no legal load.
+WARNING - synthesis: logical net 'data[14]' has no load.
+WARNING - synthesis: input pad net 'data[14]' has no legal load.
+WARNING - synthesis: logical net 'data[13]' has no load.
+WARNING - synthesis: input pad net 'data[13]' has no legal load.
+WARNING - synthesis: logical net 'data[12]' has no load.
+WARNING - synthesis: input pad net 'data[12]' has no legal load.
+WARNING - synthesis: logical net 'data[11]' has no load.
+WARNING - synthesis: input pad net 'data[11]' has no legal load.
+WARNING - synthesis: logical net 'data[10]' has no load.
+WARNING - synthesis: input pad net 'data[10]' has no legal load.
+WARNING - synthesis: logical net 'data[9]' has no load.
+WARNING - synthesis: input pad net 'data[9]' has no legal load.
+WARNING - synthesis: logical net 'data[8]' has no load.
+WARNING - synthesis: input pad net 'data[8]' has no legal load.
+WARNING - synthesis: logical net 'data[7]' has no load.
+WARNING - synthesis: input pad net 'data[7]' has no legal load.
+WARNING - synthesis: logical net 'data[6]' has no load.
+WARNING - synthesis: input pad net 'data[6]' has no legal load.
+WARNING - synthesis: logical net 'data[5]' has no load.
+WARNING - synthesis: input pad net 'data[5]' has no legal load.
+WARNING - synthesis: logical net 'data[4]' has no load.
+WARNING - synthesis: input pad net 'data[4]' has no legal load.
+WARNING - synthesis: logical net 'data[3]' has no load.
+WARNING - synthesis: input pad net 'data[3]' has no legal load.
+WARNING - synthesis: logical net 'data[2]' has no load.
+WARNING - synthesis: input pad net 'data[2]' has no legal load.
+WARNING - synthesis: logical net 'data[1]' has no load.
+WARNING - synthesis: input pad net 'data[1]' has no legal load.
+WARNING - synthesis: logical net 'data[0]' has no load.
+WARNING - synthesis: input pad net 'data[0]' has no legal load.
+WARNING - synthesis: DRC complete with 34 warnings.
 All blocks are expanded and NGD expansion is successful.
 Writing NGD file MachXO_7000HE_Testproject_impl1.ngd.
 
-################### Begin Area Report (lcd_sender)######################
-Number of register bits => 22 of 7209 (0 % )
-FD1P3AX => 19
-FD1S3AX => 2
+################### Begin Area Report (lcd_FSM)######################
+Number of register bits => 8 of 7209 (0 % )
+FD1P3IX => 1
+FD1S3AX => 6
 FD1S3AY => 1
 GSR => 1
-IB => 20
-LUT4 => 11
-OB => 19
+IB => 2
+LUT4 => 4
+OB => 1
+OBZ => 18
 ################### End Area Report ##################
 
 ################### Begin BlackBox Report ######################
@@ -146,26 +268,23 @@ TSALL => 1
 ################### Begin Clock Report ######################
 Clock Nets
 Number of Clocks: 1
-  Net : clk_c, loads : 22
+  Net : clk_c, loads : 8
 Clock Enable Nets
-Number of Clock Enables: 4
-Top 4 highest fanout Clock Enables:
-  Net : clk_c_enable_19, loads : 16
-  Net : clk_c_enable_2, loads : 1
+Number of Clock Enables: 1
+Top 1 highest fanout Clock Enables:
   Net : clk_c_enable_1, loads : 1
-  Net : clk_c_enable_18, loads : 1
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : clk_c_enable_19, loads : 16
-  Net : PS_vivaz_state_2, loads : 9
-  Net : PS_vivaz_state_1, loads : 8
-  Net : PS_vivaz_state_0, loads : 7
-  Net : n324, loads : 5
-  Net : rst_c, loads : 2
-  Net : busy_c, loads : 2
-  Net : lcd_bus_c_15, loads : 1
-  Net : lcd_bus_c_14, loads : 1
-  Net : lcd_bus_c_13, loads : 1
+  Net : rst_c, loads : 3
+  Net : n133, loads : 2
+  Net : n116, loads : 2
+  Net : debug_c, loads : 1
+  Net : n141, loads : 1
+  Net : clk_c_enable_1, loads : 1
+  Net : n173, loads : 1
+  Net : n175, loads : 1
+  Net : n117, loads : 1
+  Net : n115, loads : 1
 ################### End Clock Report ##################
 
 Timing Report Summary
@@ -175,7 +294,7 @@ Constraint                              |   Constraint|       Actual|Levels
 --------------------------------------------------------------------------------
                                         |             |             |
 create_clock -period 1000.000000 -name  |             |             |
-clk0 [get_nets clk_c]                   |    1.000 MHz|  221.141 MHz|     3  
+clk0 [get_nets clk_c]                   |    1.000 MHz|  344.828 MHz|     2  
                                         |             |             |
 --------------------------------------------------------------------------------
 
@@ -183,8 +302,8 @@ clk0 [get_nets clk_c]                   |    1.000 MHz|  221.141 MHz|     3
 All constraints were met.
 
 
-Peak Memory Usage: 70.543  MB
+Peak Memory Usage: 70.203  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 1.451  secs
+Elapsed CPU time for LSE flow : 1.654  secs
 --------------------------------------------------------------

@@ -9,7 +9,7 @@ entity lcd_sender is
 	port(
 		clk		: in std_logic;
 		rst		: in std_logic;
-		lcd_bus		: inout std_logic_vector(15 downto 0);
+		lcd_bus		: out std_logic_vector(15 downto 0);
 		lcd_write	: out std_logic;
 		lcd_rs		: out std_logic;
 		go		: in std_logic;
@@ -23,24 +23,25 @@ architecture beh_lcd_sender of lcd_sender is
 	type state_type is (undefined, idle, t10, t20, t30, t40, t50, t60);
 	signal PS_vivaz_state: state_type := undefined;
 	
-	signal go_managed: std_logic;
 begin
-
-	
 
 	process(clk, rst, PS_vivaz_state, go, data1Command0, payload)
 	begin
-		if rising_edge(clk) then
+		
+		if rst = '1' then
+			busy <= '0';
+			lcd_bus <= "0000000000000000";
+			lcd_write <= '0';
+			lcd_rs <= '0';
+			PS_vivaz_state <= idle;
+		elsif rising_edge(clk) then
 			case PS_vivaz_state is
 				when idle =>
-					if go_managed = '1' then
-						go_managed <= '0';
+					if go = '1' then
 						lcd_write <= '0';
 						busy <= '1';
 						lcd_rs <= data1Command0;
 						PS_vivaz_state <= t10;
-					else
-						PS_vivaz_state <= idle;
 					end if;
 				when t10 =>
 					lcd_bus <= std_logic_vector(to_unsigned(payload, 16));
@@ -59,25 +60,12 @@ begin
 					busy <= '0';
 					PS_vivaz_state <= idle;
 				when others =>
-					--busy <= '0';
-					--PS_vivaz_state <= idle;
+					PS_vivaz_state <= idle;
 			end case;
 		end if;
 		
-		if busy = '1' then 
-			go_managed <= '0';
-		else 
-			go_managed <= go; 
-		end if;
 
-		if rst = '1' then
-			busy <= '0';
-			lcd_bus <= "0000000000000000";
-			lcd_write <= '0';
-			lcd_rs <= '0';
-			PS_vivaz_state <= idle;
-			go_managed <= '0';
-		end if;
+
 	end process;
 	
 end beh_lcd_sender;

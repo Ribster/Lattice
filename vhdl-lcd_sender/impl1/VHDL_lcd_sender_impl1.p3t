@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "VHDL_lcd_sender_impl1.log"
+-o "VHDL_lcd_sender_impl1.csv"
+-pr "VHDL_lcd_sender_impl1.prf"

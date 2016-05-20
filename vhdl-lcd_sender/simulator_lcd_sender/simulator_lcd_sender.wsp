@@ -1,0 +1,15 @@
+[COMPILESTATUS|.\..\impl1\VHDL_lcd_sender_impl1_vho.vho]
+FileTimeLow=30519940
+Status=Compiled
+[COMPILESTATUS|.\..\lcd_sender_tb.vhd]
+FileTimeLow=30519940
+Status=Compiled
+[COMPILESTATUS|.\..\impl1\VHDL_lcd_sender_impl1_vho.sdf]
+FileTimeLow=30519940
+Status=Modified
+[COMPILESTATUS|.\src\untitled.asdb]
+FileTimeLow=30519940
+Status=Modified
+[COMPILESTATUS|.\src\untitled.awc]
+FileTimeLow=30519940
+Status=Modified

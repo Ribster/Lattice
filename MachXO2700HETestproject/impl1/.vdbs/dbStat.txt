@@ -1,1 +1,1 @@
-lcd_sender_rtl.vdb
+lcd_FSM_rtl.vdb

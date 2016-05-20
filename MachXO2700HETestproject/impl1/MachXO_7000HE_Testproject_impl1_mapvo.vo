@@ -2,238 +2,74 @@
 // Verilog netlist produced by program ldbanno, Version Diamond (64-bit) 3.7.1.502
 
 // ldbanno -n Verilog -o MachXO_7000HE_Testproject_impl1_mapvo.vo -w -neg -gui -msgset Z:/GITHUB/Lattice/MachXO2700HETestproject/promote.xml MachXO_7000HE_Testproject_impl1_map.ncd 
-// Netlist created on Wed May 18 13:57:34 2016
-// Netlist written on Wed May 18 13:57:38 2016
+// Netlist created on Thu May 19 22:55:59 2016
+// Netlist written on Thu May 19 22:56:03 2016
 // Design is for device LCMXO2-7000HE
 // Design is for package TQFP144
 // Design is for performance grade 5
 
 `timescale 1 ns / 1 ps
 
-module lcd_wrapper ( clk, rst, lcd_bus, lcd_write, lcd_reset, lcd_rs, go, 
-                     data1Command0, busy, payload );
-  input  clk, rst, go, data1Command0;
-  input  [15:0] payload;
-  output [15:0] lcd_bus;
-  output lcd_write, lcd_reset, lcd_rs, busy;
-  wire   payload_c_1, payload_c_2, \sender/clk_c_enable_16 , clk_c, 
-         lcd_bus_c_2, lcd_bus_c_1, payload_c_3, payload_c_4, lcd_bus_c_4, 
-         lcd_bus_c_3, payload_c_5, payload_c_6, lcd_bus_c_6, lcd_bus_c_5, 
-         payload_c_7, payload_c_8, lcd_bus_c_8, lcd_bus_c_7, payload_c_15, 
-         payload_c_14, GND_net, lcd_bus_c_14, lcd_bus_c_15, 
-         \sender/PS_vivaz_state_0 , \sender/PS_vivaz_state_1 , 
-         \sender/PS_vivaz_state_2 , \sender/n159 , \sender/clk_c_enable_17 , 
-         lcd_write_c, \sender/PS_vivaz_state_2_N_17_1 , 
-         \sender/PS_vivaz_state_2_N_17_0 , \sender/n182 , payload_c_0, 
-         payload_c_9, lcd_bus_c_9, lcd_bus_c_0, payload_c_10, payload_c_11, 
-         lcd_bus_c_11, lcd_bus_c_10, payload_c_12, payload_c_13, lcd_bus_c_13, 
-         lcd_bus_c_12, rst_c, VCCI;
+module lcd_FSM ( clk, rst, datacommand, data, debug, lcd_data, lcd_wr, lcd_rs );
+  input  clk, rst, datacommand;
+  input  [15:0] data;
+  output debug;
+  output [15:0] lcd_data;
+  output lcd_wr, lcd_rs;
+  wire   n175, clk_c_enable_1, n141, clk_c, debug_c, n113, n112, n133, GND_net, 
+         n117, n116, rst_c, n115, n114, VCCI;
 
-  sender_SLICE_1 \sender/SLICE_1 ( .M1(payload_c_1), .M0(payload_c_2), 
-    .CE(\sender/clk_c_enable_16 ), .CLK(clk_c), .Q0(lcd_bus_c_2), 
-    .Q1(lcd_bus_c_1));
-  sender_SLICE_2 \sender/SLICE_2 ( .M1(payload_c_3), .M0(payload_c_4), 
-    .CE(\sender/clk_c_enable_16 ), .CLK(clk_c), .Q0(lcd_bus_c_4), 
-    .Q1(lcd_bus_c_3));
-  sender_SLICE_3 \sender/SLICE_3 ( .M1(payload_c_5), .M0(payload_c_6), 
-    .CE(\sender/clk_c_enable_16 ), .CLK(clk_c), .Q0(lcd_bus_c_6), 
-    .Q1(lcd_bus_c_5));
-  sender_SLICE_4 \sender/SLICE_4 ( .M1(payload_c_7), .M0(payload_c_8), 
-    .CE(\sender/clk_c_enable_16 ), .CLK(clk_c), .Q0(lcd_bus_c_8), 
-    .Q1(lcd_bus_c_7));
-  SLICE_7 SLICE_7( .M1(payload_c_15), .M0(payload_c_14), 
-    .CE(\sender/clk_c_enable_16 ), .CLK(clk_c), .F0(GND_net), 
-    .Q0(lcd_bus_c_14), .Q1(lcd_bus_c_15));
-  sender_SLICE_8 \sender/SLICE_8 ( .B1(\sender/PS_vivaz_state_0 ), 
-    .A1(\sender/PS_vivaz_state_1 ), .A0(\sender/PS_vivaz_state_2 ), 
-    .DI0(\sender/n159 ), .CE(\sender/clk_c_enable_17 ), .CLK(clk_c), 
-    .F0(\sender/n159 ), .Q0(lcd_write_c), .F1(\sender/clk_c_enable_17 ));
-  sender_SLICE_9 \sender/SLICE_9 ( .C1(\sender/PS_vivaz_state_1 ), 
-    .B1(\sender/PS_vivaz_state_2 ), .A1(\sender/PS_vivaz_state_0 ), 
-    .C0(\sender/PS_vivaz_state_1 ), .B0(\sender/PS_vivaz_state_2 ), 
-    .A0(\sender/PS_vivaz_state_0 ), .DI1(\sender/PS_vivaz_state_2_N_17_1 ), 
-    .DI0(\sender/PS_vivaz_state_2_N_17_0 ), .CLK(clk_c), 
-    .F0(\sender/PS_vivaz_state_2_N_17_0 ), .Q0(\sender/PS_vivaz_state_0 ), 
-    .F1(\sender/PS_vivaz_state_2_N_17_1 ), .Q1(\sender/PS_vivaz_state_1 ));
-  sender_SLICE_10 \sender/SLICE_10 ( .C1(\sender/PS_vivaz_state_0 ), 
-    .B1(\sender/PS_vivaz_state_1 ), .A1(\sender/PS_vivaz_state_2 ), 
-    .C0(\sender/PS_vivaz_state_2 ), .B0(\sender/PS_vivaz_state_0 ), 
-    .A0(\sender/PS_vivaz_state_1 ), .DI0(\sender/n182 ), .CLK(clk_c), 
-    .F0(\sender/n182 ), .Q0(\sender/PS_vivaz_state_2 ), 
-    .F1(\sender/clk_c_enable_16 ));
-  sender_SLICE_15 \sender/SLICE_15 ( .M1(payload_c_0), .M0(payload_c_9), 
-    .CE(\sender/clk_c_enable_16 ), .CLK(clk_c), .Q0(lcd_bus_c_9), 
-    .Q1(lcd_bus_c_0));
-  sender_SLICE_16 \sender/SLICE_16 ( .M1(payload_c_10), .M0(payload_c_11), 
-    .CE(\sender/clk_c_enable_16 ), .CLK(clk_c), .Q0(lcd_bus_c_11), 
-    .Q1(lcd_bus_c_10));
-  sender_SLICE_17 \sender/SLICE_17 ( .M1(payload_c_12), .M0(payload_c_13), 
-    .CE(\sender/clk_c_enable_16 ), .CLK(clk_c), .Q0(lcd_bus_c_13), 
-    .Q1(lcd_bus_c_12));
-  lcd_bus_13_ \lcd_bus[13]_I ( .PADDO(lcd_bus_c_13), .lcdbus13(lcd_bus[13]));
-  lcd_bus_14_ \lcd_bus[14]_I ( .PADDO(lcd_bus_c_14), .lcdbus14(lcd_bus[14]));
-  lcd_bus_15_ \lcd_bus[15]_I ( .PADDO(lcd_bus_c_15), .lcdbus15(lcd_bus[15]));
-  lcd_bus_12_ \lcd_bus[12]_I ( .PADDO(lcd_bus_c_12), .lcdbus12(lcd_bus[12]));
-  lcd_bus_11_ \lcd_bus[11]_I ( .PADDO(lcd_bus_c_11), .lcdbus11(lcd_bus[11]));
-  lcd_bus_10_ \lcd_bus[10]_I ( .PADDO(lcd_bus_c_10), .lcdbus10(lcd_bus[10]));
-  lcd_bus_9_ \lcd_bus[9]_I ( .PADDO(lcd_bus_c_9), .lcdbus9(lcd_bus[9]));
-  lcd_bus_8_ \lcd_bus[8]_I ( .PADDO(lcd_bus_c_8), .lcdbus8(lcd_bus[8]));
-  lcd_bus_7_ \lcd_bus[7]_I ( .PADDO(lcd_bus_c_7), .lcdbus7(lcd_bus[7]));
-  lcd_bus_6_ \lcd_bus[6]_I ( .PADDO(lcd_bus_c_6), .lcdbus6(lcd_bus[6]));
-  lcd_bus_5_ \lcd_bus[5]_I ( .PADDO(lcd_bus_c_5), .lcdbus5(lcd_bus[5]));
-  lcd_bus_4_ \lcd_bus[4]_I ( .PADDO(lcd_bus_c_4), .lcdbus4(lcd_bus[4]));
-  lcd_bus_3_ \lcd_bus[3]_I ( .PADDO(lcd_bus_c_3), .lcdbus3(lcd_bus[3]));
-  lcd_bus_2_ \lcd_bus[2]_I ( .PADDO(lcd_bus_c_2), .lcdbus2(lcd_bus[2]));
-  lcd_bus_1_ \lcd_bus[1]_I ( .PADDO(lcd_bus_c_1), .lcdbus1(lcd_bus[1]));
-  lcd_bus_0_ \lcd_bus[0]_I ( .PADDO(lcd_bus_c_0), .lcdbus0(lcd_bus[0]));
-  lcd_write lcd_write_I( .PADDO(lcd_write_c), .lcd_write(lcd_write));
-  lcd_reset lcd_reset_I( .PADDO(GND_net), .lcd_reset(lcd_reset));
+  SLICE_0 SLICE_0( .DI0(n175), .CE(clk_c_enable_1), .LSR(n141), .CLK(clk_c), 
+    .F0(n175), .Q0(debug_c));
+  SLICE_1 SLICE_1( .M0(n113), .CLK(clk_c), .Q0(n112));
+  SLICE_4 SLICE_4( .M1(n133), .M0(n112), .CLK(clk_c), .F0(GND_net), .Q0(n133), 
+    .Q1(n117));
+  SLICE_5 SLICE_5( .B1(n116), .A1(rst_c), .B0(n133), .A0(rst_c), .M1(n116), 
+    .M0(n117), .CLK(clk_c), .F0(n141), .Q0(n116), .F1(clk_c_enable_1), 
+    .Q1(n115));
+  SLICE_6 SLICE_6( .M1(n115), .M0(n114), .CLK(clk_c), .Q0(n113), .Q1(n114));
+  lcd_data_13_ \lcd_data[13]_I ( .PADDO(GND_net), .lcddata13(lcd_data[13]));
+  lcd_data_1_ \lcd_data[1]_I ( .PADDO(GND_net), .lcddata1(lcd_data[1]));
+  lcd_data_5_ \lcd_data[5]_I ( .PADDO(GND_net), .lcddata5(lcd_data[5]));
+  lcd_data_15_ \lcd_data[15]_I ( .PADDO(GND_net), .lcddata15(lcd_data[15]));
+  lcd_data_14_ \lcd_data[14]_I ( .PADDO(GND_net), .lcddata14(lcd_data[14]));
+  debug debug_I( .PADDO(debug_c), .debug(debug));
+  lcd_data_8_ \lcd_data[8]_I ( .PADDO(GND_net), .lcddata8(lcd_data[8]));
+  lcd_data_9_ \lcd_data[9]_I ( .PADDO(GND_net), .lcddata9(lcd_data[9]));
+  lcd_data_10_ \lcd_data[10]_I ( .PADDO(GND_net), .lcddata10(lcd_data[10]));
+  lcd_data_11_ \lcd_data[11]_I ( .PADDO(GND_net), .lcddata11(lcd_data[11]));
+  lcd_data_2_ \lcd_data[2]_I ( .PADDO(GND_net), .lcddata2(lcd_data[2]));
+  lcd_data_3_ \lcd_data[3]_I ( .PADDO(GND_net), .lcddata3(lcd_data[3]));
+  lcd_data_4_ \lcd_data[4]_I ( .PADDO(GND_net), .lcddata4(lcd_data[4]));
+  lcd_data_6_ \lcd_data[6]_I ( .PADDO(GND_net), .lcddata6(lcd_data[6]));
+  lcd_data_7_ \lcd_data[7]_I ( .PADDO(GND_net), .lcddata7(lcd_data[7]));
+  lcd_data_12_ \lcd_data[12]_I ( .PADDO(GND_net), .lcddata12(lcd_data[12]));
+  lcd_data_0_ \lcd_data[0]_I ( .PADDO(GND_net), .lcddata0(lcd_data[0]));
+  lcd_wr lcd_wr_I( .PADDO(GND_net), .lcd_wr(lcd_wr));
   lcd_rs lcd_rs_I( .PADDO(GND_net), .lcd_rs(lcd_rs));
-  busy busy_I( .PADDO(GND_net), .busy(busy));
   clk clk_I( .PADDI(clk_c), .clk(clk));
   rst rst_I( .PADDI(rst_c), .rst(rst));
-  payload_15_ \payload[15]_I ( .PADDI(payload_c_15), .payload15(payload[15]));
-  payload_14_ \payload[14]_I ( .PADDI(payload_c_14), .payload14(payload[14]));
-  payload_13_ \payload[13]_I ( .PADDI(payload_c_13), .payload13(payload[13]));
-  payload_12_ \payload[12]_I ( .PADDI(payload_c_12), .payload12(payload[12]));
-  payload_11_ \payload[11]_I ( .PADDI(payload_c_11), .payload11(payload[11]));
-  payload_10_ \payload[10]_I ( .PADDI(payload_c_10), .payload10(payload[10]));
-  payload_9_ \payload[9]_I ( .PADDI(payload_c_9), .payload9(payload[9]));
-  payload_8_ \payload[8]_I ( .PADDI(payload_c_8), .payload8(payload[8]));
-  payload_7_ \payload[7]_I ( .PADDI(payload_c_7), .payload7(payload[7]));
-  payload_6_ \payload[6]_I ( .PADDI(payload_c_6), .payload6(payload[6]));
-  payload_5_ \payload[5]_I ( .PADDI(payload_c_5), .payload5(payload[5]));
-  payload_4_ \payload[4]_I ( .PADDI(payload_c_4), .payload4(payload[4]));
-  payload_3_ \payload[3]_I ( .PADDI(payload_c_3), .payload3(payload[3]));
-  payload_2_ \payload[2]_I ( .PADDI(payload_c_2), .payload2(payload[2]));
-  payload_1_ \payload[1]_I ( .PADDI(payload_c_1), .payload1(payload[1]));
-  payload_0_ \payload[0]_I ( .PADDI(payload_c_0), .payload0(payload[0]));
   GSR_INST GSR_INST( .GSRNET(~rst_c));
   VHI VHI_INST( .Z(VCCI));
   PUR PUR_INST( .PUR(VCCI));
 endmodule
 
-module sender_SLICE_1 ( input M1, M0, CE, CLK, output Q0, Q1 );
-  wire   VCCI, GNDI, M1_dly, CLK_dly, M0_dly, CE_dly;
+module SLICE_0 ( input DI0, CE, LSR, CLK, output F0, Q0 );
+  wire   GNDI, VCCI, DI0_dly, CLK_dly, CE_dly, LSR_dly;
 
-  vmuxregsre \sender/lcd_bus_i2 ( .D0(M1_dly), .D1(VCCI), .SD(GNDI), 
-    .SP(CE_dly), .CK(CLK_dly), .LSR(GNDI), .Q(Q1));
-  vcc DRIVEVCC( .PWR1(VCCI));
+  lut4 m1_lut( .A(GNDI), .B(GNDI), .C(GNDI), .D(GNDI), .Z(F0));
   gnd DRIVEGND( .PWR0(GNDI));
-  vmuxregsre \sender/lcd_bus_i3 ( .D0(M0_dly), .D1(VCCI), .SD(GNDI), 
-    .SP(CE_dly), .CK(CLK_dly), .LSR(GNDI), .Q(Q0));
+  vmuxregsre debug_18( .D0(VCCI), .D1(DI0_dly), .SD(VCCI), .SP(CE_dly), 
+    .CK(CLK_dly), .LSR(LSR_dly), .Q(Q0));
+  vcc DRIVEVCC( .PWR1(VCCI));
 
   specify
     (CLK => Q0) = (0:0:0,0:0:0);
-    (CLK => Q1) = (0:0:0,0:0:0);
-    $setuphold (posedge CLK, M1, 0:0:0, 0:0:0,,,, CLK_dly, M1_dly);
-    $setuphold (posedge CLK, M0, 0:0:0, 0:0:0,,,, CLK_dly, M0_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
     $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
-    $width (posedge CLK, 0:0:0);
-    $width (negedge CLK, 0:0:0);
-  endspecify
-
-endmodule
-
-module vmuxregsre ( input D0, D1, SD, SP, CK, LSR, output Q );
-
-  FL1P3DX INST01( .D0(D0), .D1(D1), .SP(SP), .CK(CK), .SD(SD), .CD(LSR), .Q(Q));
-  defparam INST01.GSR = "ENABLED";
-endmodule
-
-module vcc ( output PWR1 );
-
-  VHI INST1( .Z(PWR1));
-endmodule
-
-module gnd ( output PWR0 );
-
-  VLO INST1( .Z(PWR0));
-endmodule
-
-module sender_SLICE_2 ( input M1, M0, CE, CLK, output Q0, Q1 );
-  wire   VCCI, GNDI, M1_dly, CLK_dly, M0_dly, CE_dly;
-
-  vmuxregsre \sender/lcd_bus_i4 ( .D0(M1_dly), .D1(VCCI), .SD(GNDI), 
-    .SP(CE_dly), .CK(CLK_dly), .LSR(GNDI), .Q(Q1));
-  vcc DRIVEVCC( .PWR1(VCCI));
-  gnd DRIVEGND( .PWR0(GNDI));
-  vmuxregsre \sender/lcd_bus_i5 ( .D0(M0_dly), .D1(VCCI), .SD(GNDI), 
-    .SP(CE_dly), .CK(CLK_dly), .LSR(GNDI), .Q(Q0));
-
-  specify
-    (CLK => Q0) = (0:0:0,0:0:0);
-    (CLK => Q1) = (0:0:0,0:0:0);
-    $setuphold (posedge CLK, M1, 0:0:0, 0:0:0,,,, CLK_dly, M1_dly);
-    $setuphold (posedge CLK, M0, 0:0:0, 0:0:0,,,, CLK_dly, M0_dly);
-    $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
-    $width (posedge CLK, 0:0:0);
-    $width (negedge CLK, 0:0:0);
-  endspecify
-
-endmodule
-
-module sender_SLICE_3 ( input M1, M0, CE, CLK, output Q0, Q1 );
-  wire   VCCI, GNDI, M1_dly, CLK_dly, M0_dly, CE_dly;
-
-  vmuxregsre \sender/lcd_bus_i6 ( .D0(M1_dly), .D1(VCCI), .SD(GNDI), 
-    .SP(CE_dly), .CK(CLK_dly), .LSR(GNDI), .Q(Q1));
-  vcc DRIVEVCC( .PWR1(VCCI));
-  gnd DRIVEGND( .PWR0(GNDI));
-  vmuxregsre \sender/lcd_bus_i7 ( .D0(M0_dly), .D1(VCCI), .SD(GNDI), 
-    .SP(CE_dly), .CK(CLK_dly), .LSR(GNDI), .Q(Q0));
-
-  specify
-    (CLK => Q0) = (0:0:0,0:0:0);
-    (CLK => Q1) = (0:0:0,0:0:0);
-    $setuphold (posedge CLK, M1, 0:0:0, 0:0:0,,,, CLK_dly, M1_dly);
-    $setuphold (posedge CLK, M0, 0:0:0, 0:0:0,,,, CLK_dly, M0_dly);
-    $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
-    $width (posedge CLK, 0:0:0);
-    $width (negedge CLK, 0:0:0);
-  endspecify
-
-endmodule
-
-module sender_SLICE_4 ( input M1, M0, CE, CLK, output Q0, Q1 );
-  wire   VCCI, GNDI, M1_dly, CLK_dly, M0_dly, CE_dly;
-
-  vmuxregsre \sender/lcd_bus_i8 ( .D0(M1_dly), .D1(VCCI), .SD(GNDI), 
-    .SP(CE_dly), .CK(CLK_dly), .LSR(GNDI), .Q(Q1));
-  vcc DRIVEVCC( .PWR1(VCCI));
-  gnd DRIVEGND( .PWR0(GNDI));
-  vmuxregsre \sender/lcd_bus_i9 ( .D0(M0_dly), .D1(VCCI), .SD(GNDI), 
-    .SP(CE_dly), .CK(CLK_dly), .LSR(GNDI), .Q(Q0));
-
-  specify
-    (CLK => Q0) = (0:0:0,0:0:0);
-    (CLK => Q1) = (0:0:0,0:0:0);
-    $setuphold (posedge CLK, M1, 0:0:0, 0:0:0,,,, CLK_dly, M1_dly);
-    $setuphold (posedge CLK, M0, 0:0:0, 0:0:0,,,, CLK_dly, M0_dly);
-    $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
-    $width (posedge CLK, 0:0:0);
-    $width (negedge CLK, 0:0:0);
-  endspecify
-
-endmodule
-
-module SLICE_7 ( input M1, M0, CE, CLK, output F0, Q0, Q1 );
-  wire   GNDI, VCCI, M1_dly, CLK_dly, M0_dly, CE_dly;
-
-  lut4 i4( .A(GNDI), .B(GNDI), .C(GNDI), .D(GNDI), .Z(F0));
-  gnd DRIVEGND( .PWR0(GNDI));
-  vmuxregsre \sender/lcd_bus_i16 ( .D0(M1_dly), .D1(VCCI), .SD(GNDI), 
-    .SP(CE_dly), .CK(CLK_dly), .LSR(GNDI), .Q(Q1));
-  vcc DRIVEVCC( .PWR1(VCCI));
-  vmuxregsre \sender/lcd_bus_i15 ( .D0(M0_dly), .D1(VCCI), .SD(GNDI), 
-    .SP(CE_dly), .CK(CLK_dly), .LSR(GNDI), .Q(Q0));
-
-  specify
-    (CLK => Q0) = (0:0:0,0:0:0);
-    (CLK => Q1) = (0:0:0,0:0:0);
-    $setuphold (posedge CLK, M1, 0:0:0, 0:0:0,,,, CLK_dly, M1_dly);
-    $setuphold (posedge CLK, M0, 0:0:0, 0:0:0,,,, CLK_dly, M0_dly);
-    $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+    $width (posedge LSR, 0:0:0);
+    $width (negedge LSR, 0:0:0);
     $width (posedge CLK, 0:0:0);
     $width (negedge CLK, 0:0:0);
   endspecify
@@ -242,418 +78,365 @@ endmodule
 
 module lut4 ( input A, B, C, D, output Z );
 
-  ROM16X1A #(16'h0000) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+  ROM16X1A #(16'hFFFF) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
 endmodule
 
-module sender_SLICE_8 ( input B1, A1, A0, DI0, CE, CLK, output F0, Q0, F1 );
-  wire   GNDI, VCCI, DI0_dly, CLK_dly, CE_dly;
+module gnd ( output PWR0 );
 
-  lut40001 \sender/i1_2_lut_rep_3 ( .A(A1), .B(B1), .C(GNDI), .D(GNDI), .Z(F1));
-  gnd DRIVEGND( .PWR0(GNDI));
-  lut40002 \sender/i125_1_lut ( .A(A0), .B(GNDI), .C(GNDI), .D(GNDI), .Z(F0));
-  vmuxregsre \sender/lcd_write_28 ( .D0(VCCI), .D1(DI0_dly), .SD(VCCI), 
-    .SP(CE_dly), .CK(CLK_dly), .LSR(GNDI), .Q(Q0));
+  VLO INST1( .Z(PWR0));
+endmodule
+
+module vmuxregsre ( input D0, D1, SD, SP, CK, LSR, output Q );
+
+  FL1P3IY INST01( .D0(D0), .D1(D1), .SP(SP), .CK(CK), .SD(SD), .CD(LSR), .Q(Q));
+  defparam INST01.GSR = "DISABLED";
+endmodule
+
+module vcc ( output PWR1 );
+
+  VHI INST1( .Z(PWR1));
+endmodule
+
+module SLICE_1 ( input M0, CLK, output Q0 );
+  wire   VCCI, GNDI, M0_dly, CLK_dly;
+
+  vmuxregsre0001 PS_FSM_FSM_i6( .D0(M0_dly), .D1(VCCI), .SD(GNDI), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(GNDI), .Q(Q0));
   vcc DRIVEVCC( .PWR1(VCCI));
+  gnd DRIVEGND( .PWR0(GNDI));
 
   specify
-    (B1 => F1) = (0:0:0,0:0:0);
-    (A1 => F1) = (0:0:0,0:0:0);
-    (A0 => F0) = (0:0:0,0:0:0);
     (CLK => Q0) = (0:0:0,0:0:0);
-    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
-    $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
+    $setuphold (posedge CLK, M0, 0:0:0, 0:0:0,,,, CLK_dly, M0_dly);
     $width (posedge CLK, 0:0:0);
     $width (negedge CLK, 0:0:0);
   endspecify
 
 endmodule
 
-module lut40001 ( input A, B, C, D, output Z );
+module vmuxregsre0001 ( input D0, D1, SD, SP, CK, LSR, output Q );
 
-  ROM16X1A #(16'h8888) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+  FL1P3DX INST01( .D0(D0), .D1(D1), .SP(SP), .CK(CK), .SD(SD), .CD(LSR), .Q(Q));
+  defparam INST01.GSR = "ENABLED";
+endmodule
+
+module SLICE_4 ( input M1, M0, CLK, output F0, Q0, Q1 );
+  wire   GNDI, VCCI, M1_dly, CLK_dly, M0_dly;
+
+  lut40002 i1( .A(GNDI), .B(GNDI), .C(GNDI), .D(GNDI), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+  vmuxregsre0003 PS_FSM_FSM_i1( .D0(M1_dly), .D1(VCCI), .SD(GNDI), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(GNDI), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  vmuxregsre0001 PS_FSM_FSM_i7( .D0(M0_dly), .D1(VCCI), .SD(GNDI), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(GNDI), .Q(Q0));
+
+  specify
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, M1, 0:0:0, 0:0:0,,,, CLK_dly, M1_dly);
+    $setuphold (posedge CLK, M0, 0:0:0, 0:0:0,,,, CLK_dly, M0_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
 endmodule
 
 module lut40002 ( input A, B, C, D, output Z );
 
-  ROM16X1A #(16'h5555) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+  ROM16X1A #(16'h0000) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
 endmodule
 
-module sender_SLICE_9 ( input C1, B1, A1, C0, B0, A0, DI1, DI0, CLK, output F0, 
-    Q0, F1, Q1 );
-  wire   GNDI, VCCI, DI1_dly, CLK_dly, DI0_dly;
-
-  lut40003 \sender/PS_vivaz_state_2__I_0_34_Mux_1_i7_3_lut ( .A(A1), .B(B1), 
-    .C(C1), .D(GNDI), .Z(F1));
-  gnd DRIVEGND( .PWR0(GNDI));
-  lut40004 \sender/PS_vivaz_state_2__I_0_34_Mux_0_i7_3_lut ( .A(A0), .B(B0), 
-    .C(C0), .D(GNDI), .Z(F0));
-  vmuxregsre \sender/PS_vivaz_state_i1 ( .D0(VCCI), .D1(DI1_dly), .SD(VCCI), 
-    .SP(VCCI), .CK(CLK_dly), .LSR(GNDI), .Q(Q1));
-  vcc DRIVEVCC( .PWR1(VCCI));
-  vmuxregsre0005 \sender/PS_vivaz_state_i0 ( .D0(VCCI), .D1(DI0_dly), 
-    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(GNDI), .Q(Q0));
-
-  specify
-    (C1 => F1) = (0:0:0,0:0:0);
-    (B1 => F1) = (0:0:0,0:0:0);
-    (A1 => F1) = (0:0:0,0:0:0);
-    (C0 => F0) = (0:0:0,0:0:0);
-    (B0 => F0) = (0:0:0,0:0:0);
-    (A0 => F0) = (0:0:0,0:0:0);
-    (CLK => Q0) = (0:0:0,0:0:0);
-    (CLK => Q1) = (0:0:0,0:0:0);
-    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
-    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
-    $width (posedge CLK, 0:0:0);
-    $width (negedge CLK, 0:0:0);
-  endspecify
-
-endmodule
-
-module lut40003 ( input A, B, C, D, output Z );
-
-  ROM16X1A #(16'h5858) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
-endmodule
-
-module lut40004 ( input A, B, C, D, output Z );
-
-  ROM16X1A #(16'hD6D6) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
-endmodule
-
-module vmuxregsre0005 ( input D0, D1, SD, SP, CK, LSR, output Q );
+module vmuxregsre0003 ( input D0, D1, SD, SP, CK, LSR, output Q );
 
   FL1P3BX INST01( .D0(D0), .D1(D1), .SP(SP), .CK(CK), .SD(SD), .PD(LSR), .Q(Q));
   defparam INST01.GSR = "ENABLED";
 endmodule
 
-module sender_SLICE_10 ( input C1, B1, A1, C0, B0, A0, DI0, CLK, output F0, Q0, 
-    F1 );
-  wire   GNDI, VCCI, DI0_dly, CLK_dly;
+module SLICE_5 ( input B1, A1, B0, A0, M1, M0, CLK, output F0, Q0, F1, Q1 );
+  wire   GNDI, VCCI, M1_dly, CLK_dly, M0_dly;
 
-  lut40006 \sender/i162_3_lut ( .A(A1), .B(B1), .C(C1), .D(GNDI), .Z(F1));
+  lut40004 i92_2_lut_2_lut( .A(A1), .B(B1), .C(GNDI), .D(GNDI), .Z(F1));
   gnd DRIVEGND( .PWR0(GNDI));
-  lut40007 \sender/i158_2_lut_3_lut ( .A(A0), .B(B0), .C(C0), .D(GNDI), .Z(F0));
-  vmuxregsre \sender/PS_vivaz_state_i2 ( .D0(VCCI), .D1(DI0_dly), .SD(VCCI), 
-    .SP(VCCI), .CK(CLK_dly), .LSR(GNDI), .Q(Q0));
+  lut40004 i70_2_lut_2_lut( .A(A0), .B(B0), .C(GNDI), .D(GNDI), .Z(F0));
+  vmuxregsre0001 PS_FSM_FSM_i3( .D0(M1_dly), .D1(VCCI), .SD(GNDI), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(GNDI), .Q(Q1));
   vcc DRIVEVCC( .PWR1(VCCI));
+  vmuxregsre0001 PS_FSM_FSM_i2( .D0(M0_dly), .D1(VCCI), .SD(GNDI), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(GNDI), .Q(Q0));
 
   specify
-    (C1 => F1) = (0:0:0,0:0:0);
     (B1 => F1) = (0:0:0,0:0:0);
     (A1 => F1) = (0:0:0,0:0:0);
-    (C0 => F0) = (0:0:0,0:0:0);
     (B0 => F0) = (0:0:0,0:0:0);
     (A0 => F0) = (0:0:0,0:0:0);
     (CLK => Q0) = (0:0:0,0:0:0);
-    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, M1, 0:0:0, 0:0:0,,,, CLK_dly, M1_dly);
+    $setuphold (posedge CLK, M0, 0:0:0, 0:0:0,,,, CLK_dly, M0_dly);
     $width (posedge CLK, 0:0:0);
     $width (negedge CLK, 0:0:0);
   endspecify
 
 endmodule
 
-module lut40006 ( input A, B, C, D, output Z );
+module lut40004 ( input A, B, C, D, output Z );
 
-  ROM16X1A #(16'h0404) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+  ROM16X1A #(16'h4444) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
 endmodule
 
-module lut40007 ( input A, B, C, D, output Z );
+module SLICE_6 ( input M1, M0, CLK, output Q0, Q1 );
+  wire   VCCI, GNDI, M1_dly, CLK_dly, M0_dly;
 
-  ROM16X1A #(16'h7878) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
-endmodule
-
-module sender_SLICE_15 ( input M1, M0, CE, CLK, output Q0, Q1 );
-  wire   VCCI, GNDI, M1_dly, CLK_dly, M0_dly, CE_dly;
-
-  vmuxregsre \sender/lcd_bus_i1 ( .D0(M1_dly), .D1(VCCI), .SD(GNDI), 
-    .SP(CE_dly), .CK(CLK_dly), .LSR(GNDI), .Q(Q1));
+  vmuxregsre0001 PS_FSM_FSM_i4( .D0(M1_dly), .D1(VCCI), .SD(GNDI), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(GNDI), .Q(Q1));
   vcc DRIVEVCC( .PWR1(VCCI));
   gnd DRIVEGND( .PWR0(GNDI));
-  vmuxregsre \sender/lcd_bus_i10 ( .D0(M0_dly), .D1(VCCI), .SD(GNDI), 
-    .SP(CE_dly), .CK(CLK_dly), .LSR(GNDI), .Q(Q0));
+  vmuxregsre0001 PS_FSM_FSM_i5( .D0(M0_dly), .D1(VCCI), .SD(GNDI), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(GNDI), .Q(Q0));
 
   specify
     (CLK => Q0) = (0:0:0,0:0:0);
     (CLK => Q1) = (0:0:0,0:0:0);
     $setuphold (posedge CLK, M1, 0:0:0, 0:0:0,,,, CLK_dly, M1_dly);
     $setuphold (posedge CLK, M0, 0:0:0, 0:0:0,,,, CLK_dly, M0_dly);
-    $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
     $width (posedge CLK, 0:0:0);
     $width (negedge CLK, 0:0:0);
   endspecify
 
 endmodule
 
-module sender_SLICE_16 ( input M1, M0, CE, CLK, output Q0, Q1 );
-  wire   VCCI, GNDI, M1_dly, CLK_dly, M0_dly, CE_dly;
+module lcd_data_13_ ( input PADDO, output lcddata13 );
+  wire   VCCI;
 
-  vmuxregsre \sender/lcd_bus_i11 ( .D0(M1_dly), .D1(VCCI), .SD(GNDI), 
-    .SP(CE_dly), .CK(CLK_dly), .LSR(GNDI), .Q(Q1));
+  xo2iobuf lcd_data_pad_13( .I(PADDO), .T(VCCI), .PAD(lcddata13));
   vcc DRIVEVCC( .PWR1(VCCI));
-  gnd DRIVEGND( .PWR0(GNDI));
-  vmuxregsre \sender/lcd_bus_i12 ( .D0(M0_dly), .D1(VCCI), .SD(GNDI), 
-    .SP(CE_dly), .CK(CLK_dly), .LSR(GNDI), .Q(Q0));
 
   specify
-    (CLK => Q0) = (0:0:0,0:0:0);
-    (CLK => Q1) = (0:0:0,0:0:0);
-    $setuphold (posedge CLK, M1, 0:0:0, 0:0:0,,,, CLK_dly, M1_dly);
-    $setuphold (posedge CLK, M0, 0:0:0, 0:0:0,,,, CLK_dly, M0_dly);
-    $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
-    $width (posedge CLK, 0:0:0);
-    $width (negedge CLK, 0:0:0);
-  endspecify
-
-endmodule
-
-module sender_SLICE_17 ( input M1, M0, CE, CLK, output Q0, Q1 );
-  wire   VCCI, GNDI, M1_dly, CLK_dly, M0_dly, CE_dly;
-
-  vmuxregsre \sender/lcd_bus_i13 ( .D0(M1_dly), .D1(VCCI), .SD(GNDI), 
-    .SP(CE_dly), .CK(CLK_dly), .LSR(GNDI), .Q(Q1));
-  vcc DRIVEVCC( .PWR1(VCCI));
-  gnd DRIVEGND( .PWR0(GNDI));
-  vmuxregsre \sender/lcd_bus_i14 ( .D0(M0_dly), .D1(VCCI), .SD(GNDI), 
-    .SP(CE_dly), .CK(CLK_dly), .LSR(GNDI), .Q(Q0));
-
-  specify
-    (CLK => Q0) = (0:0:0,0:0:0);
-    (CLK => Q1) = (0:0:0,0:0:0);
-    $setuphold (posedge CLK, M1, 0:0:0, 0:0:0,,,, CLK_dly, M1_dly);
-    $setuphold (posedge CLK, M0, 0:0:0, 0:0:0,,,, CLK_dly, M0_dly);
-    $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
-    $width (posedge CLK, 0:0:0);
-    $width (negedge CLK, 0:0:0);
-  endspecify
-
-endmodule
-
-module lcd_bus_13_ ( input PADDO, output lcdbus13 );
-  wire   GNDI;
-
-  xo2iobuf lcd_bus_pad_13( .I(PADDO), .T(GNDI), .PAD(lcdbus13));
-  gnd DRIVEGND( .PWR0(GNDI));
-
-  specify
-    (PADDO => lcdbus13) = (0:0:0,0:0:0);
+    (PADDO => lcddata13) = (0:0:0,0:0:0);
   endspecify
 
 endmodule
 
 module xo2iobuf ( input I, T, output PAD );
 
+  OBZ INST5( .I(I), .T(T), .O(PAD));
+endmodule
+
+module lcd_data_1_ ( input PADDO, output lcddata1 );
+  wire   VCCI;
+
+  xo2iobuf lcd_data_pad_1( .I(PADDO), .T(VCCI), .PAD(lcddata1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (PADDO => lcddata1) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lcd_data_5_ ( input PADDO, output lcddata5 );
+  wire   VCCI;
+
+  xo2iobuf lcd_data_pad_5( .I(PADDO), .T(VCCI), .PAD(lcddata5));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (PADDO => lcddata5) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lcd_data_15_ ( input PADDO, output lcddata15 );
+  wire   VCCI;
+
+  xo2iobuf lcd_data_pad_15( .I(PADDO), .T(VCCI), .PAD(lcddata15));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (PADDO => lcddata15) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lcd_data_14_ ( input PADDO, output lcddata14 );
+  wire   VCCI;
+
+  xo2iobuf lcd_data_pad_14( .I(PADDO), .T(VCCI), .PAD(lcddata14));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (PADDO => lcddata14) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module debug ( input PADDO, output debug );
+  wire   GNDI;
+
+  xo2iobuf0005 debug_pad( .I(PADDO), .T(GNDI), .PAD(debug));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => debug) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module xo2iobuf0005 ( input I, T, output PAD );
+
   OBZPD INST5( .I(I), .T(T), .O(PAD));
 endmodule
 
-module lcd_bus_14_ ( input PADDO, output lcdbus14 );
-  wire   GNDI;
+module lcd_data_8_ ( input PADDO, output lcddata8 );
+  wire   VCCI;
 
-  xo2iobuf lcd_bus_pad_14( .I(PADDO), .T(GNDI), .PAD(lcdbus14));
-  gnd DRIVEGND( .PWR0(GNDI));
+  xo2iobuf lcd_data_pad_8( .I(PADDO), .T(VCCI), .PAD(lcddata8));
+  vcc DRIVEVCC( .PWR1(VCCI));
 
   specify
-    (PADDO => lcdbus14) = (0:0:0,0:0:0);
+    (PADDO => lcddata8) = (0:0:0,0:0:0);
   endspecify
 
 endmodule
 
-module lcd_bus_15_ ( input PADDO, output lcdbus15 );
-  wire   GNDI;
+module lcd_data_9_ ( input PADDO, output lcddata9 );
+  wire   VCCI;
 
-  xo2iobuf lcd_bus_pad_15( .I(PADDO), .T(GNDI), .PAD(lcdbus15));
-  gnd DRIVEGND( .PWR0(GNDI));
+  xo2iobuf lcd_data_pad_9( .I(PADDO), .T(VCCI), .PAD(lcddata9));
+  vcc DRIVEVCC( .PWR1(VCCI));
 
   specify
-    (PADDO => lcdbus15) = (0:0:0,0:0:0);
+    (PADDO => lcddata9) = (0:0:0,0:0:0);
   endspecify
 
 endmodule
 
-module lcd_bus_12_ ( input PADDO, output lcdbus12 );
-  wire   GNDI;
+module lcd_data_10_ ( input PADDO, output lcddata10 );
+  wire   VCCI;
 
-  xo2iobuf lcd_bus_pad_12( .I(PADDO), .T(GNDI), .PAD(lcdbus12));
-  gnd DRIVEGND( .PWR0(GNDI));
+  xo2iobuf lcd_data_pad_10( .I(PADDO), .T(VCCI), .PAD(lcddata10));
+  vcc DRIVEVCC( .PWR1(VCCI));
 
   specify
-    (PADDO => lcdbus12) = (0:0:0,0:0:0);
+    (PADDO => lcddata10) = (0:0:0,0:0:0);
   endspecify
 
 endmodule
 
-module lcd_bus_11_ ( input PADDO, output lcdbus11 );
-  wire   GNDI;
+module lcd_data_11_ ( input PADDO, output lcddata11 );
+  wire   VCCI;
 
-  xo2iobuf lcd_bus_pad_11( .I(PADDO), .T(GNDI), .PAD(lcdbus11));
-  gnd DRIVEGND( .PWR0(GNDI));
+  xo2iobuf lcd_data_pad_11( .I(PADDO), .T(VCCI), .PAD(lcddata11));
+  vcc DRIVEVCC( .PWR1(VCCI));
 
   specify
-    (PADDO => lcdbus11) = (0:0:0,0:0:0);
+    (PADDO => lcddata11) = (0:0:0,0:0:0);
   endspecify
 
 endmodule
 
-module lcd_bus_10_ ( input PADDO, output lcdbus10 );
-  wire   GNDI;
+module lcd_data_2_ ( input PADDO, output lcddata2 );
+  wire   VCCI;
 
-  xo2iobuf lcd_bus_pad_10( .I(PADDO), .T(GNDI), .PAD(lcdbus10));
-  gnd DRIVEGND( .PWR0(GNDI));
+  xo2iobuf lcd_data_pad_2( .I(PADDO), .T(VCCI), .PAD(lcddata2));
+  vcc DRIVEVCC( .PWR1(VCCI));
 
   specify
-    (PADDO => lcdbus10) = (0:0:0,0:0:0);
+    (PADDO => lcddata2) = (0:0:0,0:0:0);
   endspecify
 
 endmodule
 
-module lcd_bus_9_ ( input PADDO, output lcdbus9 );
-  wire   GNDI;
+module lcd_data_3_ ( input PADDO, output lcddata3 );
+  wire   VCCI;
 
-  xo2iobuf lcd_bus_pad_9( .I(PADDO), .T(GNDI), .PAD(lcdbus9));
-  gnd DRIVEGND( .PWR0(GNDI));
+  xo2iobuf lcd_data_pad_3( .I(PADDO), .T(VCCI), .PAD(lcddata3));
+  vcc DRIVEVCC( .PWR1(VCCI));
 
   specify
-    (PADDO => lcdbus9) = (0:0:0,0:0:0);
+    (PADDO => lcddata3) = (0:0:0,0:0:0);
   endspecify
 
 endmodule
 
-module lcd_bus_8_ ( input PADDO, output lcdbus8 );
-  wire   GNDI;
+module lcd_data_4_ ( input PADDO, output lcddata4 );
+  wire   VCCI;
 
-  xo2iobuf lcd_bus_pad_8( .I(PADDO), .T(GNDI), .PAD(lcdbus8));
-  gnd DRIVEGND( .PWR0(GNDI));
+  xo2iobuf lcd_data_pad_4( .I(PADDO), .T(VCCI), .PAD(lcddata4));
+  vcc DRIVEVCC( .PWR1(VCCI));
 
   specify
-    (PADDO => lcdbus8) = (0:0:0,0:0:0);
+    (PADDO => lcddata4) = (0:0:0,0:0:0);
   endspecify
 
 endmodule
 
-module lcd_bus_7_ ( input PADDO, output lcdbus7 );
-  wire   GNDI;
+module lcd_data_6_ ( input PADDO, output lcddata6 );
+  wire   VCCI;
 
-  xo2iobuf lcd_bus_pad_7( .I(PADDO), .T(GNDI), .PAD(lcdbus7));
-  gnd DRIVEGND( .PWR0(GNDI));
+  xo2iobuf lcd_data_pad_6( .I(PADDO), .T(VCCI), .PAD(lcddata6));
+  vcc DRIVEVCC( .PWR1(VCCI));
 
   specify
-    (PADDO => lcdbus7) = (0:0:0,0:0:0);
+    (PADDO => lcddata6) = (0:0:0,0:0:0);
   endspecify
 
 endmodule
 
-module lcd_bus_6_ ( input PADDO, output lcdbus6 );
-  wire   GNDI;
+module lcd_data_7_ ( input PADDO, output lcddata7 );
+  wire   VCCI;
 
-  xo2iobuf lcd_bus_pad_6( .I(PADDO), .T(GNDI), .PAD(lcdbus6));
-  gnd DRIVEGND( .PWR0(GNDI));
+  xo2iobuf lcd_data_pad_7( .I(PADDO), .T(VCCI), .PAD(lcddata7));
+  vcc DRIVEVCC( .PWR1(VCCI));
 
   specify
-    (PADDO => lcdbus6) = (0:0:0,0:0:0);
+    (PADDO => lcddata7) = (0:0:0,0:0:0);
   endspecify
 
 endmodule
 
-module lcd_bus_5_ ( input PADDO, output lcdbus5 );
-  wire   GNDI;
+module lcd_data_12_ ( input PADDO, output lcddata12 );
+  wire   VCCI;
 
-  xo2iobuf lcd_bus_pad_5( .I(PADDO), .T(GNDI), .PAD(lcdbus5));
-  gnd DRIVEGND( .PWR0(GNDI));
+  xo2iobuf lcd_data_pad_12( .I(PADDO), .T(VCCI), .PAD(lcddata12));
+  vcc DRIVEVCC( .PWR1(VCCI));
 
   specify
-    (PADDO => lcdbus5) = (0:0:0,0:0:0);
+    (PADDO => lcddata12) = (0:0:0,0:0:0);
   endspecify
 
 endmodule
 
-module lcd_bus_4_ ( input PADDO, output lcdbus4 );
-  wire   GNDI;
+module lcd_data_0_ ( input PADDO, output lcddata0 );
+  wire   VCCI;
 
-  xo2iobuf lcd_bus_pad_4( .I(PADDO), .T(GNDI), .PAD(lcdbus4));
-  gnd DRIVEGND( .PWR0(GNDI));
+  xo2iobuf lcd_data_pad_0( .I(PADDO), .T(VCCI), .PAD(lcddata0));
+  vcc DRIVEVCC( .PWR1(VCCI));
 
   specify
-    (PADDO => lcdbus4) = (0:0:0,0:0:0);
+    (PADDO => lcddata0) = (0:0:0,0:0:0);
   endspecify
 
 endmodule
 
-module lcd_bus_3_ ( input PADDO, output lcdbus3 );
-  wire   GNDI;
+module lcd_wr ( input PADDO, output lcd_wr );
+  wire   VCCI;
 
-  xo2iobuf lcd_bus_pad_3( .I(PADDO), .T(GNDI), .PAD(lcdbus3));
-  gnd DRIVEGND( .PWR0(GNDI));
-
-  specify
-    (PADDO => lcdbus3) = (0:0:0,0:0:0);
-  endspecify
-
-endmodule
-
-module lcd_bus_2_ ( input PADDO, output lcdbus2 );
-  wire   GNDI;
-
-  xo2iobuf lcd_bus_pad_2( .I(PADDO), .T(GNDI), .PAD(lcdbus2));
-  gnd DRIVEGND( .PWR0(GNDI));
+  xo2iobuf lcd_wr_pad( .I(PADDO), .T(VCCI), .PAD(lcd_wr));
+  vcc DRIVEVCC( .PWR1(VCCI));
 
   specify
-    (PADDO => lcdbus2) = (0:0:0,0:0:0);
-  endspecify
-
-endmodule
-
-module lcd_bus_1_ ( input PADDO, output lcdbus1 );
-  wire   GNDI;
-
-  xo2iobuf lcd_bus_pad_1( .I(PADDO), .T(GNDI), .PAD(lcdbus1));
-  gnd DRIVEGND( .PWR0(GNDI));
-
-  specify
-    (PADDO => lcdbus1) = (0:0:0,0:0:0);
-  endspecify
-
-endmodule
-
-module lcd_bus_0_ ( input PADDO, output lcdbus0 );
-  wire   GNDI;
-
-  xo2iobuf lcd_bus_pad_0( .I(PADDO), .T(GNDI), .PAD(lcdbus0));
-  gnd DRIVEGND( .PWR0(GNDI));
-
-  specify
-    (PADDO => lcdbus0) = (0:0:0,0:0:0);
-  endspecify
-
-endmodule
-
-module lcd_write ( input PADDO, output lcd_write );
-  wire   GNDI;
-
-  xo2iobuf lcd_write_pad( .I(PADDO), .T(GNDI), .PAD(lcd_write));
-  gnd DRIVEGND( .PWR0(GNDI));
-
-  specify
-    (PADDO => lcd_write) = (0:0:0,0:0:0);
-  endspecify
-
-endmodule
-
-module lcd_reset ( input PADDO, output lcd_reset );
-  wire   GNDI;
-
-  xo2iobuf lcd_reset_pad( .I(PADDO), .T(GNDI), .PAD(lcd_reset));
-  gnd DRIVEGND( .PWR0(GNDI));
-
-  specify
-    (PADDO => lcd_reset) = (0:0:0,0:0:0);
+    (PADDO => lcd_wr) = (0:0:0,0:0:0);
   endspecify
 
 endmodule
 
 module lcd_rs ( input PADDO, output lcd_rs );
-  wire   GNDI;
+  wire   VCCI;
 
-  xo2iobuf lcd_rs_pad( .I(PADDO), .T(GNDI), .PAD(lcd_rs));
-  gnd DRIVEGND( .PWR0(GNDI));
+  xo2iobuf lcd_rs_pad( .I(PADDO), .T(VCCI), .PAD(lcd_rs));
+  vcc DRIVEVCC( .PWR1(VCCI));
 
   specify
     (PADDO => lcd_rs) = (0:0:0,0:0:0);
@@ -661,21 +444,9 @@ module lcd_rs ( input PADDO, output lcd_rs );
 
 endmodule
 
-module busy ( input PADDO, output busy );
-  wire   GNDI;
-
-  xo2iobuf busy_pad( .I(PADDO), .T(GNDI), .PAD(busy));
-  gnd DRIVEGND( .PWR0(GNDI));
-
-  specify
-    (PADDO => busy) = (0:0:0,0:0:0);
-  endspecify
-
-endmodule
-
 module clk ( output PADDI, input clk );
 
-  xo2iobuf0008 clk_pad( .Z(PADDI), .PAD(clk));
+  xo2iobuf0006 clk_pad( .Z(PADDI), .PAD(clk));
 
   specify
     (clk => PADDI) = (0:0:0,0:0:0);
@@ -685,211 +456,19 @@ module clk ( output PADDI, input clk );
 
 endmodule
 
-module xo2iobuf0008 ( output Z, input PAD );
+module xo2iobuf0006 ( output Z, input PAD );
 
   IBPD INST1( .I(PAD), .O(Z));
 endmodule
 
 module rst ( output PADDI, input rst );
 
-  xo2iobuf0008 rst_pad( .Z(PADDI), .PAD(rst));
+  xo2iobuf0006 rst_pad( .Z(PADDI), .PAD(rst));
 
   specify
     (rst => PADDI) = (0:0:0,0:0:0);
     $width (posedge rst, 0:0:0);
     $width (negedge rst, 0:0:0);
-  endspecify
-
-endmodule
-
-module payload_15_ ( output PADDI, input payload15 );
-
-  xo2iobuf0008 payload_pad_15( .Z(PADDI), .PAD(payload15));
-
-  specify
-    (payload15 => PADDI) = (0:0:0,0:0:0);
-    $width (posedge payload15, 0:0:0);
-    $width (negedge payload15, 0:0:0);
-  endspecify
-
-endmodule
-
-module payload_14_ ( output PADDI, input payload14 );
-
-  xo2iobuf0008 payload_pad_14( .Z(PADDI), .PAD(payload14));
-
-  specify
-    (payload14 => PADDI) = (0:0:0,0:0:0);
-    $width (posedge payload14, 0:0:0);
-    $width (negedge payload14, 0:0:0);
-  endspecify
-
-endmodule
-
-module payload_13_ ( output PADDI, input payload13 );
-
-  xo2iobuf0008 payload_pad_13( .Z(PADDI), .PAD(payload13));
-
-  specify
-    (payload13 => PADDI) = (0:0:0,0:0:0);
-    $width (posedge payload13, 0:0:0);
-    $width (negedge payload13, 0:0:0);
-  endspecify
-
-endmodule
-
-module payload_12_ ( output PADDI, input payload12 );
-
-  xo2iobuf0008 payload_pad_12( .Z(PADDI), .PAD(payload12));
-
-  specify
-    (payload12 => PADDI) = (0:0:0,0:0:0);
-    $width (posedge payload12, 0:0:0);
-    $width (negedge payload12, 0:0:0);
-  endspecify
-
-endmodule
-
-module payload_11_ ( output PADDI, input payload11 );
-
-  xo2iobuf0008 payload_pad_11( .Z(PADDI), .PAD(payload11));
-
-  specify
-    (payload11 => PADDI) = (0:0:0,0:0:0);
-    $width (posedge payload11, 0:0:0);
-    $width (negedge payload11, 0:0:0);
-  endspecify
-
-endmodule
-
-module payload_10_ ( output PADDI, input payload10 );
-
-  xo2iobuf0008 payload_pad_10( .Z(PADDI), .PAD(payload10));
-
-  specify
-    (payload10 => PADDI) = (0:0:0,0:0:0);
-    $width (posedge payload10, 0:0:0);
-    $width (negedge payload10, 0:0:0);
-  endspecify
-
-endmodule
-
-module payload_9_ ( output PADDI, input payload9 );
-
-  xo2iobuf0008 payload_pad_9( .Z(PADDI), .PAD(payload9));
-
-  specify
-    (payload9 => PADDI) = (0:0:0,0:0:0);
-    $width (posedge payload9, 0:0:0);
-    $width (negedge payload9, 0:0:0);
-  endspecify
-
-endmodule
-
-module payload_8_ ( output PADDI, input payload8 );
-
-  xo2iobuf0008 payload_pad_8( .Z(PADDI), .PAD(payload8));
-
-  specify
-    (payload8 => PADDI) = (0:0:0,0:0:0);
-    $width (posedge payload8, 0:0:0);
-    $width (negedge payload8, 0:0:0);
-  endspecify
-
-endmodule
-
-module payload_7_ ( output PADDI, input payload7 );
-
-  xo2iobuf0008 payload_pad_7( .Z(PADDI), .PAD(payload7));
-
-  specify
-    (payload7 => PADDI) = (0:0:0,0:0:0);
-    $width (posedge payload7, 0:0:0);
-    $width (negedge payload7, 0:0:0);
-  endspecify
-
-endmodule
-
-module payload_6_ ( output PADDI, input payload6 );
-
-  xo2iobuf0008 payload_pad_6( .Z(PADDI), .PAD(payload6));
-
-  specify
-    (payload6 => PADDI) = (0:0:0,0:0:0);
-    $width (posedge payload6, 0:0:0);
-    $width (negedge payload6, 0:0:0);
-  endspecify
-
-endmodule
-
-module payload_5_ ( output PADDI, input payload5 );
-
-  xo2iobuf0008 payload_pad_5( .Z(PADDI), .PAD(payload5));
-
-  specify
-    (payload5 => PADDI) = (0:0:0,0:0:0);
-    $width (posedge payload5, 0:0:0);
-    $width (negedge payload5, 0:0:0);
-  endspecify
-
-endmodule
-
-module payload_4_ ( output PADDI, input payload4 );
-
-  xo2iobuf0008 payload_pad_4( .Z(PADDI), .PAD(payload4));
-
-  specify
-    (payload4 => PADDI) = (0:0:0,0:0:0);
-    $width (posedge payload4, 0:0:0);
-    $width (negedge payload4, 0:0:0);
-  endspecify
-
-endmodule
-
-module payload_3_ ( output PADDI, input payload3 );
-
-  xo2iobuf0008 payload_pad_3( .Z(PADDI), .PAD(payload3));
-
-  specify
-    (payload3 => PADDI) = (0:0:0,0:0:0);
-    $width (posedge payload3, 0:0:0);
-    $width (negedge payload3, 0:0:0);
-  endspecify
-
-endmodule
-
-module payload_2_ ( output PADDI, input payload2 );
-
-  xo2iobuf0008 payload_pad_2( .Z(PADDI), .PAD(payload2));
-
-  specify
-    (payload2 => PADDI) = (0:0:0,0:0:0);
-    $width (posedge payload2, 0:0:0);
-    $width (negedge payload2, 0:0:0);
-  endspecify
-
-endmodule
-
-module payload_1_ ( output PADDI, input payload1 );
-
-  xo2iobuf0008 payload_pad_1( .Z(PADDI), .PAD(payload1));
-
-  specify
-    (payload1 => PADDI) = (0:0:0,0:0:0);
-    $width (posedge payload1, 0:0:0);
-    $width (negedge payload1, 0:0:0);
-  endspecify
-
-endmodule
-
-module payload_0_ ( output PADDI, input payload0 );
-
-  xo2iobuf0008 payload_pad_0( .Z(PADDI), .PAD(payload0));
-
-  specify
-    (payload0 => PADDI) = (0:0:0,0:0:0);
-    $width (posedge payload0, 0:0:0);
-    $width (negedge payload0, 0:0:0);
   endspecify
 
 endmodule

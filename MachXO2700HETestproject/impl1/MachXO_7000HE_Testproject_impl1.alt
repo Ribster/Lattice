@@ -1,47 +1,29 @@
 NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
 NOTE All Rights Reserved *
-NOTE DATE CREATED: Wed May 18 19:01:57 2016 *
-NOTE DESIGN NAME: lcd_sender *
+NOTE DATE CREATED: Thu May 19 22:56:30 2016 *
+NOTE DESIGN NAME: lcd_FSM *
 NOTE DEVICE NAME: LCMXO2-7000HE-5TQFP144 *
 NOTE PIN ASSIGNMENTS *
-NOTE PINS lcd_bus[15] : 99 : out *
-NOTE PINS lcd_bus[11] : 87 : out *
-NOTE PINS lcd_bus[12] : 77 : out *
-NOTE PINS lcd_bus[13] : 69 : out *
-NOTE PINS lcd_bus[14] : 104 : out *
-NOTE PINS lcd_bus[10] : 84 : out *
-NOTE PINS lcd_bus[9] : 96 : out *
-NOTE PINS lcd_bus[8] : 75 : out *
-NOTE PINS lcd_bus[7] : 76 : out *
-NOTE PINS lcd_bus[6] : 106 : out *
-NOTE PINS lcd_bus[5] : 107 : out *
-NOTE PINS lcd_bus[4] : 95 : out *
-NOTE PINS lcd_bus[3] : 112 : out *
-NOTE PINS lcd_bus[2] : 78 : out *
-NOTE PINS lcd_bus[1] : 71 : out *
-NOTE PINS lcd_bus[0] : 93 : out *
-NOTE PINS lcd_write : 81 : out *
-NOTE PINS lcd_rs : 85 : out *
-NOTE PINS busy : 92 : out *
-NOTE PINS clk : 55 : in *
-NOTE PINS rst : 126 : in *
-NOTE PINS go : 83 : in *
-NOTE PINS data1Command0 : 89 : in *
-NOTE PINS payload[15] : 103 : in *
-NOTE PINS payload[14] : 100 : in *
-NOTE PINS payload[13] : 73 : in *
-NOTE PINS payload[12] : 67 : in *
-NOTE PINS payload[11] : 94 : in *
-NOTE PINS payload[10] : 91 : in *
-NOTE PINS payload[9] : 82 : in *
-NOTE PINS payload[8] : 65 : in *
-NOTE PINS payload[7] : 74 : in *
-NOTE PINS payload[6] : 98 : in *
-NOTE PINS payload[5] : 105 : in *
-NOTE PINS payload[4] : 97 : in *
-NOTE PINS payload[3] : 109 : in *
-NOTE PINS payload[2] : 70 : in *
-NOTE PINS payload[1] : 68 : in *
-NOTE PINS payload[0] : 86 : in *
+NOTE PINS lcd_data[13] : 22 : out *
+NOTE PINS lcd_data[1] : 12 : out *
+NOTE PINS lcd_data[5] : 9 : out *
+NOTE PINS lcd_data[15] : 5 : out *
+NOTE PINS lcd_data[14] : 24 : out *
+NOTE PINS debug : 28 : out *
+NOTE PINS lcd_data[8] : 17 : out *
+NOTE PINS lcd_data[9] : 14 : out *
+NOTE PINS lcd_data[10] : 11 : out *
+NOTE PINS lcd_data[11] : 10 : out *
+NOTE PINS lcd_data[2] : 6 : out *
+NOTE PINS lcd_data[3] : 23 : out *
+NOTE PINS lcd_data[4] : 15 : out *
+NOTE PINS lcd_data[6] : 13 : out *
+NOTE PINS lcd_data[7] : 20 : out *
+NOTE PINS lcd_data[12] : 19 : out *
+NOTE PINS lcd_data[0] : 25 : out *
+NOTE PINS lcd_wr : 21 : out *
+NOTE PINS lcd_rs : 26 : out *
+NOTE PINS clk : 27 : in *
+NOTE PINS rst : 2 : in *
 NOTE CONFIGURATION MODE: NONE *
 NOTE COMPRESSION: on *

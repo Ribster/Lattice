@@ -11,7 +11,7 @@ WARNING - synthesis: logical net 'GND_net' has no load.
 WARNING - synthesis: DRC complete with 1 warnings.
 
 Design Results:
-     76 blocks expanded
+     75 blocks expanded
 completed the first expansion
 All blocks are expanded and NGD expansion is successful.
 Writing NGD file MachXO_7000HE_Testproject_impl1.ngd.
