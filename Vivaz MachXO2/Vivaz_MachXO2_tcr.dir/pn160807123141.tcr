@@ -1,0 +1,6 @@
+#Start recording tcl command: 8/7/2016 12:30:46
+#Project Location: Z:/GITHUB/Lattice; Project name: Vivaz_MachXO2
+prj_project new -name "Vivaz_MachXO2" -impl "impl1" -dev LCMXO2-7000HE-5TG144C -synthesis "lse"
+prj_project save
+prj_src add "Z:/GITHUB/Lattice/top.vhdl"
+#Stop recording: 8/7/2016 12:31:41
