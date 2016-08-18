@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "Vivaz_MachXO2_impl1.log"
+-o "Vivaz_MachXO2_impl1.csv"
+-pr "Vivaz_MachXO2_impl1.prf"

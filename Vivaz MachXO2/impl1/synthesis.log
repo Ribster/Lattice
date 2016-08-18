@@ -1,0 +1,214 @@
+synthesis:  version Diamond (64-bit) 3.7.1.502
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
+Thu Aug 18 20:12:23 2016
+
+
+Command Line:  synthesis -f Vivaz_MachXO2_impl1_lattice.synproj -gui -msgset Z:/GITHUB/Lattice/Vivaz MachXO2/promote.xml 
+
+Synthesis options:
+The -a option is MachXO2.
+The -s option is 5.
+The -t option is TQFP144.
+The -d option is LCMXO2-7000HE.
+Using package TQFP144.
+Using performance grade 5.
+                                                          
+
+##########################################################
+
+### Lattice Family : MachXO2
+
+### Device  : LCMXO2-7000HE
+
+### Package : TQFP144
+
+### Speed   : 5
+
+##########################################################
+
+                                                          
+
+Optimization goal = Balanced
+The -top option is not used.
+Target frequency = 1.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p C:/lscc/diamond/3.7_x64/ispfpga/xo2c00/data (searchpath added)
+-p Z:/GITHUB/Lattice/Vivaz MachXO2/impl1 (searchpath added)
+-p Z:/GITHUB/Lattice/Vivaz MachXO2 (searchpath added)
+VHDL library = work
+VHDL design file = Z:/GITHUB/Lattice/Vivaz MachXO2/top.vhdl
+NGD file = Vivaz_MachXO2_impl1.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file C:/lscc/diamond/3.7_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Compile design.
+Compile Design Begin
+WARNING - synthesis: Setting top as the top-level module. To specify the top-level module explicitly, use the -top option.
+INFO - synthesis: The default VHDL library search path is now "Z:/GITHUB/Lattice/Vivaz MachXO2/impl1". VHDL-1504
+Analyzing VHDL file z:/github/lattice/vivaz machxo2/top.vhdl. VHDL-1481
+WARNING - synthesis: z:/github/lattice/vivaz machxo2/top.vhdl(43): 'components' is not compiled in library lattice. VHDL-1240
+INFO - synthesis: z:/github/lattice/vivaz machxo2/top.vhdl(45): analyzing entity top. VHDL-1012
+Analyzing VHDL file z:/github/lattice/vivaz machxo2/top.vhdl. VHDL-1481
+WARNING - synthesis: z:/github/lattice/vivaz machxo2/top.vhdl(43): 'components' is not compiled in library lattice. VHDL-1240
+INFO - synthesis: z:/github/lattice/vivaz machxo2/top.vhdl(45): analyzing entity top. VHDL-1012
+unit top is not yet analyzed. VHDL-1485
+WARNING - synthesis: z:/github/lattice/vivaz machxo2/top.vhdl(62): entity top does not have an architecture. VHDL-1404
+z:/github/lattice/vivaz machxo2/top.vhdl(45): executing top()
+
+Top module name (VHDL): top
+Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.7_x64/ispfpga.
+Package Status:                     Final          Version 1.39.
+Top-level module name = top.
+WARNING - synthesis: led30[3] is not assigned a value (floating) -- simulation mismatch possible.
+WARNING - synthesis: led30[2] is not assigned a value (floating) -- simulation mismatch possible.
+WARNING - synthesis: led30[1] is not assigned a value (floating) -- simulation mismatch possible.
+WARNING - synthesis: led30[0] is not assigned a value (floating) -- simulation mismatch possible.
+WARNING - synthesis: led67[1] is not assigned a value (floating) -- simulation mismatch possible.
+WARNING - synthesis: led67[0] is not assigned a value (floating) -- simulation mismatch possible.
+WARNING - synthesis: CH1 is not assigned a value (floating) -- simulation mismatch possible.
+WARNING - synthesis: CH2 is not assigned a value (floating) -- simulation mismatch possible.
+WARNING - synthesis: CH3 is not assigned a value (floating) -- simulation mismatch possible.
+WARNING - synthesis: CH4 is not assigned a value (floating) -- simulation mismatch possible.
+WARNING - synthesis: vivaz_RS is not assigned a value (floating) -- simulation mismatch possible.
+WARNING - synthesis: vivaz_RESET is not assigned a value (floating) -- simulation mismatch possible.
+WARNING - synthesis: vivaz_WR is not assigned a value (floating) -- simulation mismatch possible.
+WARNING - synthesis: vivaz_D015[15] is not assigned a value (floating) -- simulation mismatch possible.
+WARNING - synthesis: vivaz_D015[14] is not assigned a value (floating) -- simulation mismatch possible.
+WARNING - synthesis: vivaz_D015[13] is not assigned a value (floating) -- simulation mismatch possible.
+WARNING - synthesis: vivaz_D015[12] is not assigned a value (floating) -- simulation mismatch possible.
+WARNING - synthesis: vivaz_D015[11] is not assigned a value (floating) -- simulation mismatch possible.
+WARNING - synthesis: vivaz_D015[10] is not assigned a value (floating) -- simulation mismatch possible.
+WARNING - synthesis: vivaz_D015[9] is not assigned a value (floating) -- simulation mismatch possible.
+WARNING - synthesis: vivaz_D015[8] is not assigned a value (floating) -- simulation mismatch possible.
+WARNING - synthesis: vivaz_D015[7] is not assigned a value (floating) -- simulation mismatch possible.
+WARNING - synthesis: vivaz_D015[6] is not assigned a value (floating) -- simulation mismatch possible.
+WARNING - synthesis: vivaz_D015[5] is not assigned a value (floating) -- simulation mismatch possible.
+WARNING - synthesis: vivaz_D015[4] is not assigned a value (floating) -- simulation mismatch possible.
+WARNING - synthesis: vivaz_D015[3] is not assigned a value (floating) -- simulation mismatch possible.
+WARNING - synthesis: vivaz_D015[2] is not assigned a value (floating) -- simulation mismatch possible.
+WARNING - synthesis: vivaz_D015[1] is not assigned a value (floating) -- simulation mismatch possible.
+WARNING - synthesis: vivaz_D015[0] is not assigned a value (floating) -- simulation mismatch possible.
+######## Missing driver on net n2. Patching with GND.
+######## Missing driver on net n3. Patching with GND.
+######## Missing driver on net n4. Patching with GND.
+######## Missing driver on net n5. Patching with GND.
+######## Missing driver on net n6. Patching with GND.
+######## Missing driver on net n7. Patching with GND.
+######## Missing driver on net n8. Patching with GND.
+######## Missing driver on net n9. Patching with GND.
+######## Missing driver on net n10. Patching with GND.
+######## Missing driver on net n11. Patching with GND.
+######## Missing driver on net n12. Patching with GND.
+######## Missing driver on net n13. Patching with GND.
+######## Missing driver on net n14. Patching with GND.
+######## Missing driver on net n15. Patching with GND.
+######## Missing driver on net n16. Patching with GND.
+######## Missing driver on net n17. Patching with GND.
+######## Missing driver on net n18. Patching with GND.
+######## Missing driver on net n19. Patching with GND.
+######## Missing driver on net n20. Patching with GND.
+######## Missing driver on net n21. Patching with GND.
+######## Missing driver on net n22. Patching with GND.
+######## Missing driver on net n23. Patching with GND.
+######## Missing driver on net n24. Patching with GND.
+######## Missing driver on net n25. Patching with GND.
+######## Missing driver on net n26. Patching with GND.
+######## Missing driver on net n27. Patching with GND.
+######## Missing driver on net n28. Patching with GND.
+######## Missing driver on net n29. Patching with GND.
+######## Missing driver on net n30. Patching with GND.
+
+
+
+GSR will not be inferred because no asynchronous signal was found in the netlist.
+Applying 1.000000 MHz constraint to all clocks
+
+WARNING - synthesis: No user .sdc file.
+Results of NGD DRC are available in top_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+WARNING - synthesis: logical net 'pb1' has no load.
+WARNING - synthesis: input pad net 'pb1' has no legal load.
+WARNING - synthesis: logical net 'pb2' has no load.
+WARNING - synthesis: input pad net 'pb2' has no legal load.
+WARNING - synthesis: logical net 'main_reset' has no load.
+WARNING - synthesis: input pad net 'main_reset' has no legal load.
+WARNING - synthesis: logical net 'vivaz_TE' has no load.
+WARNING - synthesis: input pad net 'vivaz_TE' has no legal load.
+WARNING - synthesis: DRC complete with 8 warnings.
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file Vivaz_MachXO2_impl1.ngd.
+
+################### Begin Area Report (top)######################
+Number of register bits => 0 of 7209 (0 % )
+GSR => 1
+OBZ => 29
+################### End Area Report ##################
+
+################### Begin BlackBox Report ######################
+TSALL => 1
+################### End BlackBox Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 0
+Clock Enable Nets
+Number of Clock Enables: 0
+Top 0 highest fanout Clock Enables:
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : vivaz_D015[14], loads : 0
+  Net : vivaz_D015[15], loads : 0
+  Net : vivaz_WR, loads : 0
+  Net : vivaz_RESET, loads : 0
+  Net : vivaz_RS, loads : 0
+  Net : CH4, loads : 0
+  Net : CH3, loads : 0
+  Net : CH2, loads : 0
+  Net : CH1, loads : 0
+  Net : led67[0], loads : 0
+################### End Clock Report ##################
+
+Peak Memory Usage: 69.824  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 0.764  secs
+--------------------------------------------------------------

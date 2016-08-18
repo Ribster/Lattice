@@ -1,0 +1,5 @@
+#Start recording tcl command: 8/13/2016 21:19:56
+#Project Location: Z:/GITHUB/Lattice/Vivaz MachXO2; Project name: Vivaz_MachXO2
+prj_project open "Z:/GITHUB/Lattice/Vivaz MachXO2/Vivaz_MachXO2.ldf"
+prj_run Export -impl impl1
+#Stop recording: 8/18/2016 20:14:19

@@ -1,0 +1,24 @@
+Results of NGD DRC are available in top_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+WARNING - synthesis: logical net 'pb1' has no load.
+WARNING - synthesis: input pad net 'pb1' has no legal load.
+WARNING - synthesis: logical net 'pb2' has no load.
+WARNING - synthesis: input pad net 'pb2' has no legal load.
+WARNING - synthesis: logical net 'main_reset' has no load.
+WARNING - synthesis: input pad net 'main_reset' has no legal load.
+WARNING - synthesis: logical net 'vivaz_TE' has no load.
+WARNING - synthesis: input pad net 'vivaz_TE' has no legal load.
+WARNING - synthesis: DRC complete with 8 warnings.
+
+Design Results:
+     33 blocks expanded
+completed the first expansion
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file Vivaz_MachXO2_impl1.ngd.

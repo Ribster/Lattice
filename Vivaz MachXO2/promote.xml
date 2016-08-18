@@ -1,3 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<userSetting name="Z:/GITHUB/Lattice/Vivaz MachXO2/promote.xml" version="Diamond (64-bit) 3.7.1.502" date="Sun Aug 07 12:32:24 2016" vendor="Lattice Semiconductor Corporation" >
+<userSetting name="Z:/GITHUB/Lattice/Vivaz MachXO2/promote.xml" version="Diamond (64-bit) 3.7.1.502" date="Thu Aug 18 20:14:18 2016" vendor="Lattice Semiconductor Corporation" >
+  <msg mid="35921504" type="Info" />
+  <msg mid="35921404" type="Warning" />
 </userSetting>
