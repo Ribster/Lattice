@@ -1,0 +1,53 @@
+Loading design for application iotiming from file vivaz_machxo2_impl1.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-7000HE
+Package:     TQFP144
+Performance: 6
+Package Status:                     Final          Version 1.39.
+Performance Hardware Data Status:   Final          Version 33.4.
+Loading design for application iotiming from file vivaz_machxo2_impl1.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-7000HE
+Package:     TQFP144
+Performance: M
+Package Status:                     Final          Version 1.39.
+Performance Hardware Data Status:   Final          Version 33.4.
+// Design: top
+// Package: TQFP144
+// ncd File: vivaz_machxo2_impl1.ncd
+// Version: Diamond (64-bit) 3.7.0.96.1
+// Written on Fri Aug 19 00:34:21 2016
+// M: Minimum Performance Grade
+// iotiming Vivaz_MachXO2_impl1.ncd Vivaz_MachXO2_impl1.prf -gui -msgset D:/Github/Lattice/Vivaz MachXO2/promote.xml
+
+I/O Timing Report (All units are in ns)
+
+Worst Case Results across Performance Grades (M, 6, 5):
+
+// Input Setup and Hold Times
+
+Port       Clock Edge  Setup Performance_Grade  Hold Performance_Grade
+----------------------------------------------------------------------
+main_reset pb1   F     2.299      5      -0.149     M
+
+
+// Clock to Output Delay
+
+Port  Clock Edge  Max_Delay Performance_Grade  Min_Delay Performance_Grade
+------------------------------------------------------------------------
+(no clock to output min/max data)
+
+
+// Internal_Clock to Output
+
+Port        Internal_Clock
+--------------------------------------------------------
+CH1         clk1k_i       
+CH2         clk1k_i       
+CH4         clk           
+led30[0]    clk1k_i       
+vivaz_RESET clk1k_i       

@@ -1,0 +1,23 @@
+10
+~E 1 "./../../clk_divider.vhd" 7 clk_divider
+~A 1 "./../../clk_divider.vhd" 18 beh_clk_divider
+~E 1 "./../../commanddataarbiter.vhd" 7 commanddataarbiter
+~A 1 "./../../commanddataarbiter.vhd" 36 beh_commanddataarbiter
+~E 1 "./../../debounce.vhd" 7 debounce
+~A 1 "./../../debounce.vhd" 15 beh_debounce
+~E 1 "./../../fillcolor.vhd" 7 fillcolor
+~A 1 "./../../fillcolor.vhd" 23 beh_fillcolor
+~E 1 "./../../fsm_init.vhd" 7 fsm_init
+~A 1 "./../../fsm_init.vhd" 30 beh_fsm_init
+~E 1 "./../../movetopoint.vhd" 7 movetopoint
+~A 1 "./../../movetopoint.vhd" 25 beh_movetopoint
+~E 1 "./../../reset_routine.vhd" 7 reset_routine
+~A 1 "./../../reset_routine.vhd" 17 beh_reset_routine
+~E 1 "./../../setbacklight.vhd" 7 setbacklight
+~A 1 "./../../setbacklight.vhd" 22 beh_setbacklight
+~E 1 "./../../Vivaz_MachXO2_tb.vhd" 25 testbench
+~A 1 "./../../Vivaz_MachXO2_tb.vhd" 28 behavior
+~E 1 "./../../top.vhdl" 47 top
+~A 1 "./../../top.vhdl" 67 behaviour
+~E 1 "./../../write_command_data.vhd" 7 write_command_data
+~A 1 "./../../write_command_data.vhd" 22 beh_write_command_data

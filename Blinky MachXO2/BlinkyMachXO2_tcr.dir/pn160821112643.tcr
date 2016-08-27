@@ -1,0 +1,9 @@
+#Start recording tcl command: 8/21/2016 11:25:42
+#Project Location: D:/Github/Lattice/Blinky MachXO2; Project name: BlinkyMachXO2
+prj_project open "D:/Github/Lattice/Blinky MachXO2/BlinkyMachXO2.ldf"
+pgr_project close
+prj_run Export -impl impl1
+pgr_project open "D:/Github/Lattice/Blinky MachXO2/impl1/impl1.xcf"
+pgr_program run
+prj_project close
+#Stop recording: 8/21/2016 11:26:43

@@ -1,9 +1,159 @@
 ----------------------------------------------------------------------
 Report for cell top.TECH
-Register bits:  0 of 7209 (0.000%)
-I/O cells:      29
+Register bits:  260 of 7209 (3.607%)
+I/O cells:      32
                                   Cell usage:
                                cell     count   Res Usage(%)
+                              CCU2D        65          100.0
+                            FD1P3AX        48          100.0
+                            FD1P3AY         3          100.0
+                            FD1P3IX       104          100.0
+                            FD1P3JX         2          100.0
+                             FD1S1D        12          100.0
+                            FD1S3AX        25          100.0
+                            FD1S3AY         2          100.0
+                            FD1S3BX        12          100.0
+                            FD1S3DX        17          100.0
+                            FD1S3IX        35          100.0
                                 GSR         1          100.0
-                                OBZ        29          100.0
-                              TOTAL        30
+                                 IB         3          100.0
+                                INV         1          100.0
+                            L6MUX21         1          100.0
+                               LUT4       430          100.0
+                                 OB        29          100.0
+                               OSCH         1          100.0
+                              PFUMX        32          100.0
+SUB MODULES
+                        clk_divider         1
+                 commanddataarbiter         1
+                           debounce         1
+                        debounce_U0         1
+                          fillcolor         1
+                           fsm_init         1
+                        movetopoint         1
+                      reset_routine         1
+                       setbacklight         1
+                 write_command_data         1
+                              TOTAL       833
+----------------------------------------------------------------------
+Report for cell commanddataarbiter.v1
+Instance Path : inst_commanddataarbiter
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         9           13.8
+                            FD1P3AX        10           20.8
+                            FD1P3AY         2           66.7
+                            FD1P3IX         3            2.9
+                            FD1S3AX         1            4.0
+                            FD1S3AY         2          100.0
+                            FD1S3DX         1            5.9
+                            FD1S3IX        19           54.3
+                               LUT4        62           14.4
+                              PFUMX         7           21.9
+                              TOTAL       116
+----------------------------------------------------------------------
+Report for cell debounce_U0.v1
+Instance Path : inst_debounce1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        11           16.9
+                            FD1P3AX         1            2.1
+                            FD1P3IX        21           20.2
+                            FD1S3AX         2            8.0
+                                INV         1          100.0
+                               LUT4        10            2.3
+                              TOTAL        46
+----------------------------------------------------------------------
+Report for cell reset_routine.v1
+Instance Path : inst_resetroutine
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         4            6.2
+                            FD1P3AX         1            2.1
+                            FD1P3IX         8            7.7
+                            FD1P3JX         1           50.0
+                            FD1S3AX         1            4.0
+                            FD1S3DX         1            5.9
+                               LUT4        13            3.0
+                              TOTAL        29
+----------------------------------------------------------------------
+Report for cell setbacklight.v1
+Instance Path : inst_setbacklight
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX         7           14.6
+                            FD1P3AY         1           33.3
+                            FD1P3IX         2            1.9
+                            FD1S3AX         2            8.0
+                            FD1S3DX         1            5.9
+                               LUT4        31            7.2
+                              TOTAL        44
+----------------------------------------------------------------------
+Report for cell write_command_data.v1
+Instance Path : inst_writecommanddata
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         9           13.8
+                            FD1P3AX         1            2.1
+                            FD1P3IX        25           24.0
+                            FD1P3JX         1           50.0
+                            FD1S3DX         1            5.9
+                            FD1S3IX         1            2.9
+                               LUT4        18            4.2
+                              TOTAL        56
+----------------------------------------------------------------------
+Report for cell fsm_init.v1
+Instance Path : inst_fsm_init
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX        15           31.3
+                             FD1S1D        12          100.0
+                            FD1S3AX        16           64.0
+                            FD1S3BX        12          100.0
+                            FD1S3DX        13           76.5
+                            L6MUX21         1          100.0
+                               LUT4       183           42.6
+                              PFUMX        16           50.0
+                              TOTAL       268
+----------------------------------------------------------------------
+Report for cell fillcolor.v1
+Instance Path : inst_fillcolor
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         9           13.8
+                            FD1P3AX         7           14.6
+                            FD1P3IX        19           18.3
+                               LUT4        33            7.7
+                              PFUMX         4           12.5
+                              TOTAL        72
+----------------------------------------------------------------------
+Report for cell clk_divider.v1
+Instance Path : inst_clkdivider
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         8           12.3
+                            FD1S3AX         1            4.0
+                            FD1S3IX        15           42.9
+                               LUT4        30            7.0
+                              TOTAL        54
+----------------------------------------------------------------------
+Report for cell movetopoint.v1
+Instance Path : inst_movetopoint
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX         5           10.4
+                            FD1P3IX         5            4.8
+                               LUT4        36            8.4
+                              PFUMX         5           15.6
+                              TOTAL        51
+----------------------------------------------------------------------
+Report for cell debounce.v1
+Instance Path : inst_debounce3
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        11           16.9
+                            FD1P3AX         1            2.1
+                            FD1P3IX        21           20.2
+                            FD1S3AX         2            8.0
+                               LUT4        10            2.3
+                              TOTAL        45

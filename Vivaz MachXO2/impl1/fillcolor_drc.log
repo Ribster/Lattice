@@ -1,0 +1,90 @@
+Results of NGD DRC are available in fillcolor_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+WARNING - synthesis: logical net 'rst' has no load.
+WARNING - synthesis: input pad net 'rst' has no legal load.
+WARNING - synthesis: logical net 'clk' has no load.
+WARNING - synthesis: input pad net 'clk' has no legal load.
+WARNING - synthesis: logical net 'go' has no load.
+WARNING - synthesis: input pad net 'go' has no legal load.
+WARNING - synthesis: logical net 'status_execution' has no load.
+WARNING - synthesis: input pad net 'status_execution' has no legal load.
+WARNING - synthesis: logical net 'color[15]' has no load.
+WARNING - synthesis: input pad net 'color[15]' has no legal load.
+WARNING - synthesis: logical net 'color[14]' has no load.
+WARNING - synthesis: input pad net 'color[14]' has no legal load.
+WARNING - synthesis: logical net 'color[13]' has no load.
+WARNING - synthesis: input pad net 'color[13]' has no legal load.
+WARNING - synthesis: logical net 'color[12]' has no load.
+WARNING - synthesis: input pad net 'color[12]' has no legal load.
+WARNING - synthesis: logical net 'color[11]' has no load.
+WARNING - synthesis: input pad net 'color[11]' has no legal load.
+WARNING - synthesis: logical net 'color[10]' has no load.
+WARNING - synthesis: input pad net 'color[10]' has no legal load.
+WARNING - synthesis: logical net 'color[9]' has no load.
+WARNING - synthesis: input pad net 'color[9]' has no legal load.
+WARNING - synthesis: logical net 'color[8]' has no load.
+WARNING - synthesis: input pad net 'color[8]' has no legal load.
+WARNING - synthesis: logical net 'color[7]' has no load.
+WARNING - synthesis: input pad net 'color[7]' has no legal load.
+WARNING - synthesis: logical net 'color[6]' has no load.
+WARNING - synthesis: input pad net 'color[6]' has no legal load.
+WARNING - synthesis: logical net 'color[5]' has no load.
+WARNING - synthesis: input pad net 'color[5]' has no legal load.
+WARNING - synthesis: logical net 'color[4]' has no load.
+WARNING - synthesis: input pad net 'color[4]' has no legal load.
+WARNING - synthesis: logical net 'color[3]' has no load.
+WARNING - synthesis: input pad net 'color[3]' has no legal load.
+WARNING - synthesis: logical net 'color[2]' has no load.
+WARNING - synthesis: input pad net 'color[2]' has no legal load.
+WARNING - synthesis: logical net 'color[1]' has no load.
+WARNING - synthesis: input pad net 'color[1]' has no legal load.
+WARNING - synthesis: logical net 'color[0]' has no load.
+WARNING - synthesis: input pad net 'color[0]' has no legal load.
+WARNING - synthesis: logical net 'pixcount[16]' has no load.
+WARNING - synthesis: input pad net 'pixcount[16]' has no legal load.
+WARNING - synthesis: logical net 'pixcount[15]' has no load.
+WARNING - synthesis: input pad net 'pixcount[15]' has no legal load.
+WARNING - synthesis: logical net 'pixcount[14]' has no load.
+WARNING - synthesis: input pad net 'pixcount[14]' has no legal load.
+WARNING - synthesis: logical net 'pixcount[13]' has no load.
+WARNING - synthesis: input pad net 'pixcount[13]' has no legal load.
+WARNING - synthesis: logical net 'pixcount[12]' has no load.
+WARNING - synthesis: input pad net 'pixcount[12]' has no legal load.
+WARNING - synthesis: logical net 'pixcount[11]' has no load.
+WARNING - synthesis: input pad net 'pixcount[11]' has no legal load.
+WARNING - synthesis: logical net 'pixcount[10]' has no load.
+WARNING - synthesis: input pad net 'pixcount[10]' has no legal load.
+WARNING - synthesis: logical net 'pixcount[9]' has no load.
+WARNING - synthesis: input pad net 'pixcount[9]' has no legal load.
+WARNING - synthesis: logical net 'pixcount[8]' has no load.
+WARNING - synthesis: input pad net 'pixcount[8]' has no legal load.
+WARNING - synthesis: logical net 'pixcount[7]' has no load.
+WARNING - synthesis: input pad net 'pixcount[7]' has no legal load.
+WARNING - synthesis: logical net 'pixcount[6]' has no load.
+WARNING - synthesis: input pad net 'pixcount[6]' has no legal load.
+WARNING - synthesis: logical net 'pixcount[5]' has no load.
+WARNING - synthesis: input pad net 'pixcount[5]' has no legal load.
+WARNING - synthesis: logical net 'pixcount[4]' has no load.
+WARNING - synthesis: input pad net 'pixcount[4]' has no legal load.
+WARNING - synthesis: logical net 'pixcount[3]' has no load.
+WARNING - synthesis: input pad net 'pixcount[3]' has no legal load.
+WARNING - synthesis: logical net 'pixcount[2]' has no load.
+WARNING - synthesis: input pad net 'pixcount[2]' has no legal load.
+WARNING - synthesis: logical net 'pixcount[1]' has no load.
+WARNING - synthesis: input pad net 'pixcount[1]' has no legal load.
+WARNING - synthesis: logical net 'pixcount[0]' has no load.
+WARNING - synthesis: input pad net 'pixcount[0]' has no legal load.
+WARNING - synthesis: DRC complete with 74 warnings.
+
+Design Results:
+     23 blocks expanded
+completed the first expansion
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file Vivaz_MachXO2_impl1.ngd.

@@ -1,12 +1,72 @@
 [ START MERGED ]
+n6507 main_reset_i
+inst_fsm_init/n9895 fsm_state_i_4
 [ END MERGED ]
 [ START CLIPPED ]
-VCC_net
+inst_debounce3/add_5_1/S0
+inst_debounce3/add_5_1/CI
+inst_debounce3/add_5_21/CO
+inst_clkdivider/counter53000_1679_1680_add_4_15/CO
+inst_clkdivider/counter53000_1679_1680_add_4_1/S0
+inst_clkdivider/counter53000_1679_1680_add_4_1/CI
+inst_fillcolor/counter_i_1684_add_4_2/S0
+inst_fillcolor/counter_i_1684_add_4_2/CI
+inst_fillcolor/counter_i_1684_add_4_18/CO
+inst_writecommanddata/add_14_1/S0
+inst_writecommanddata/add_14_1/CI
+inst_writecommanddata/add_14_17/S1
+inst_writecommanddata/add_14_17/CO
+inst_resetroutine/counter_1682_add_4_1/S0
+inst_resetroutine/counter_1682_add_4_1/CI
+inst_resetroutine/counter_1682_add_4_7/S1
+inst_resetroutine/counter_1682_add_4_7/CO
+inst_debounce1/add_5_21/CO
+inst_debounce1/add_5_1/S0
+inst_debounce1/add_5_1/CI
+inst_commanddataarbiter/counter_1685_add_4_1/S0
+inst_commanddataarbiter/counter_1685_add_4_1/CI
+inst_commanddataarbiter/counter_1685_add_4_17/CO
+add_847_1/S0
+add_847_1/CI
+add_847_7/CO
 [ END CLIPPED ]
+[ START OSC ]
+clk 53.20
+[ END OSC ]
 [ START DESIGN PREFS ]
 SCHEMATIC START ;
-# map:  version Diamond (64-bit) 3.7.1.502 -- WARNING: Map write only section -- Thu Aug 18 20:12:25 2016
+# map:  version Diamond (64-bit) 3.7.0.96.1 -- WARNING: Map write only section -- Tue Aug 23 16:38:47 2016
 
 SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=DISABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE BACKGROUND_RECONFIG=OFF ;
+LOCATE COMP "led30[2]" SITE "99" ;
+LOCATE COMP "led30[3]" SITE "100" ;
+LOCATE COMP "led67[1]" SITE "107" ;
+LOCATE COMP "led67[0]" SITE "106" ;
+LOCATE COMP "CH1" SITE "38" ;
+LOCATE COMP "CH2" SITE "97" ;
+LOCATE COMP "CH3" SITE "98" ;
+LOCATE COMP "CH4" SITE "105" ;
+LOCATE COMP "vivaz_RS" SITE "48" ;
+LOCATE COMP "vivaz_RESET" SITE "50" ;
+LOCATE COMP "vivaz_WR" SITE "47" ;
+LOCATE COMP "vivaz_D015[15]" SITE "55" ;
+LOCATE COMP "vivaz_D015[14]" SITE "52" ;
+LOCATE COMP "vivaz_D015[13]" SITE "56" ;
+LOCATE COMP "vivaz_D015[12]" SITE "54" ;
+LOCATE COMP "vivaz_D015[11]" SITE "59" ;
+LOCATE COMP "vivaz_D015[10]" SITE "57" ;
+LOCATE COMP "vivaz_D015[9]" SITE "60" ;
+LOCATE COMP "vivaz_D015[8]" SITE "58" ;
+LOCATE COMP "vivaz_D015[7]" SITE "65" ;
+LOCATE COMP "vivaz_D015[6]" SITE "61" ;
+LOCATE COMP "vivaz_D015[5]" SITE "67" ;
+LOCATE COMP "vivaz_D015[4]" SITE "62" ;
+LOCATE COMP "vivaz_D015[3]" SITE "70" ;
+LOCATE COMP "vivaz_D015[2]" SITE "68" ;
+LOCATE COMP "vivaz_D015[1]" SITE "71" ;
+LOCATE COMP "vivaz_D015[0]" SITE "69" ;
+LOCATE COMP "pb1" SITE "74" ;
+LOCATE COMP "main_reset" SITE "78" ;
+FREQUENCY NET "clk" 53.200000 MHz ;
 SCHEMATIC END ;
 [ END DESIGN PREFS ]

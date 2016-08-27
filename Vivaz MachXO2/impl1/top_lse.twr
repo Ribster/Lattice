@@ -1,0 +1,590 @@
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Tue Aug 23 16:38:46 2016
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Design:     top
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 1000.000000 -name clk7 [get_nets \inst_commanddataarbiter/clksynth_i]
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Constraint: create_clock -period 1000.000000 -name clk6 [get_nets setbacklight_go_i]
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Constraint: create_clock -period 1000.000000 -name clk5 [get_nets CH1_c]
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Constraint: create_clock -period 1000.000000 -name clk4 [get_nets \inst_debounce1/pb1_i]
+            17 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed:  The following path meets requirements by 491.733ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3DX    CK             \inst_fsm_init/start_i_844  (from \inst_debounce1/pb1_i +)
+   Destination:    FD1S1D     CD             \inst_fsm_init/i3701  (to \inst_debounce1/pb1_i +)
+
+   Delay:                   8.121ns  (27.0% logic, 73.0% route), 5 logic levels.
+
+ Constraint Details:
+
+      8.121ns data_path \inst_fsm_init/start_i_844 to \inst_fsm_init/i3701 meets
+    500.000ns delay constraint less
+      0.146ns L_S requirement (totaling 499.854ns) by 491.733ns
+
+ Path Details: \inst_fsm_init/start_i_844 to \inst_fsm_init/i3701
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.403             CK to Q              \inst_fsm_init/start_i_844 (from \inst_debounce1/pb1_i)
+Route         8   e 1.335                                  \inst_fsm_init/start_i
+LUT4        ---     0.448              C to Z              \inst_fsm_init/i2_3_lut_rep_169_4_lut
+Route        10   e 1.340                                  \inst_fsm_init/n9787
+LUT4        ---     0.448              A to Z              \inst_fsm_init/i2_2_lut_4_lut
+Route         1   e 0.788                                  \inst_fsm_init/n6_adj_1175
+LUT4        ---     0.448              B to Z              \inst_fsm_init/i3_4_lut
+Route        14   e 1.509                                  \inst_fsm_init/counter_i_6__N_810
+LUT4        ---     0.448              C to Z              \inst_fsm_init/counter_i_6__N_810_I_0_940_2_lut_3_lut
+Route         2   e 0.954                                  \inst_fsm_init/counter_i_6__N_870
+                  --------
+                    8.121  (27.0% logic, 73.0% route), 5 logic levels.
+
+
+Passed:  The following path meets requirements by 491.733ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3DX    CK             \inst_fsm_init/start_i_844  (from \inst_debounce1/pb1_i +)
+   Destination:    FD1S1D     CD             \inst_fsm_init/i3705  (to \inst_debounce1/pb1_i +)
+
+   Delay:                   8.121ns  (27.0% logic, 73.0% route), 5 logic levels.
+
+ Constraint Details:
+
+      8.121ns data_path \inst_fsm_init/start_i_844 to \inst_fsm_init/i3705 meets
+    500.000ns delay constraint less
+      0.146ns L_S requirement (totaling 499.854ns) by 491.733ns
+
+ Path Details: \inst_fsm_init/start_i_844 to \inst_fsm_init/i3705
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.403             CK to Q              \inst_fsm_init/start_i_844 (from \inst_debounce1/pb1_i)
+Route         8   e 1.335                                  \inst_fsm_init/start_i
+LUT4        ---     0.448              C to Z              \inst_fsm_init/i2_3_lut_rep_169_4_lut
+Route        10   e 1.340                                  \inst_fsm_init/n9787
+LUT4        ---     0.448              A to Z              \inst_fsm_init/i2_2_lut_4_lut
+Route         1   e 0.788                                  \inst_fsm_init/n6_adj_1175
+LUT4        ---     0.448              B to Z              \inst_fsm_init/i3_4_lut
+Route        14   e 1.509                                  \inst_fsm_init/counter_i_6__N_810
+LUT4        ---     0.448              C to Z              \inst_fsm_init/counter_i_6__N_810_I_0_939_2_lut_3_lut
+Route         2   e 0.954                                  \inst_fsm_init/counter_i_6__N_867
+                  --------
+                    8.121  (27.0% logic, 73.0% route), 5 logic levels.
+
+
+Passed:  The following path meets requirements by 491.733ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3DX    CK             \inst_fsm_init/start_i_844  (from \inst_debounce1/pb1_i +)
+   Destination:    FD1S1D     CD             \inst_fsm_init/i3709  (to \inst_debounce1/pb1_i +)
+
+   Delay:                   8.121ns  (27.0% logic, 73.0% route), 5 logic levels.
+
+ Constraint Details:
+
+      8.121ns data_path \inst_fsm_init/start_i_844 to \inst_fsm_init/i3709 meets
+    500.000ns delay constraint less
+      0.146ns L_S requirement (totaling 499.854ns) by 491.733ns
+
+ Path Details: \inst_fsm_init/start_i_844 to \inst_fsm_init/i3709
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.403             CK to Q              \inst_fsm_init/start_i_844 (from \inst_debounce1/pb1_i)
+Route         8   e 1.335                                  \inst_fsm_init/start_i
+LUT4        ---     0.448              C to Z              \inst_fsm_init/i2_3_lut_rep_169_4_lut
+Route        10   e 1.340                                  \inst_fsm_init/n9787
+LUT4        ---     0.448              A to Z              \inst_fsm_init/i2_2_lut_4_lut
+Route         1   e 0.788                                  \inst_fsm_init/n6_adj_1175
+LUT4        ---     0.448              B to Z              \inst_fsm_init/i3_4_lut
+Route        14   e 1.509                                  \inst_fsm_init/counter_i_6__N_810
+LUT4        ---     0.448              C to Z              \inst_fsm_init/counter_i_6__N_810_I_0_938_2_lut_3_lut
+Route         2   e 0.954                                  \inst_fsm_init/counter_i_6__N_864
+                  --------
+                    8.121  (27.0% logic, 73.0% route), 5 logic levels.
+
+Report: 8.267 ns is the maximum delay for this constraint.
+
+
+
+================================================================================
+Constraint: create_clock -period 1000.000000 -name clk3 [get_nets clk]
+            1530 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed:  The following path meets requirements by 988.489ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3IX    CK             \inst_debounce1/count__i0  (from clk +)
+   Destination:    FD1P3IX    SP             \inst_debounce1/count__i5  (to clk +)
+
+   Delay:                  11.252ns  (31.5% logic, 68.5% route), 8 logic levels.
+
+ Constraint Details:
+
+     11.252ns data_path \inst_debounce1/count__i0 to \inst_debounce1/count__i5 meets
+    1000.000ns delay constraint less
+      0.259ns LCE_S requirement (totaling 999.741ns) by 988.489ns
+
+ Path Details: \inst_debounce1/count__i0 to \inst_debounce1/count__i5
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.403             CK to Q              \inst_debounce1/count__i0 (from clk)
+Route         2   e 1.002                                  \inst_debounce1/count[0]
+LUT4        ---     0.448              A to Z              \inst_debounce1/i4_4_lut_adj_348
+Route         1   e 0.788                                  \inst_debounce1/n10
+LUT4        ---     0.448              C to Z              \inst_debounce1/i1_4_lut_adj_347
+Route         1   e 0.788                                  \inst_debounce1/n6
+LUT4        ---     0.448              D to Z              \inst_debounce1/i4_4_lut
+Route         1   e 0.788                                  \inst_debounce1/n8297
+LUT4        ---     0.448              B to Z              \inst_debounce1/i3_3_lut
+Route         1   e 0.788                                  \inst_debounce1/n8_adj_1193
+LUT4        ---     0.448              C to Z              \inst_debounce1/i1_4_lut
+Route         1   e 0.788                                  \inst_debounce1/n8
+LUT4        ---     0.448              D to Z              \inst_debounce1/i7250_4_lut
+Route         7   e 1.255                                  \inst_debounce1/output_N_1154
+LUT4        ---     0.448              C to Z              \inst_debounce1/i1779_2_lut_rep_143_3_lut
+Route        16   e 1.516                                  \inst_debounce1/clk_enable_16
+                  --------
+                   11.252  (31.5% logic, 68.5% route), 8 logic levels.
+
+
+Passed:  The following path meets requirements by 988.489ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3IX    CK             \inst_debounce1/count__i0  (from clk +)
+   Destination:    FD1P3IX    SP             \inst_debounce1/count__i6  (to clk +)
+
+   Delay:                  11.252ns  (31.5% logic, 68.5% route), 8 logic levels.
+
+ Constraint Details:
+
+     11.252ns data_path \inst_debounce1/count__i0 to \inst_debounce1/count__i6 meets
+    1000.000ns delay constraint less
+      0.259ns LCE_S requirement (totaling 999.741ns) by 988.489ns
+
+ Path Details: \inst_debounce1/count__i0 to \inst_debounce1/count__i6
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.403             CK to Q              \inst_debounce1/count__i0 (from clk)
+Route         2   e 1.002                                  \inst_debounce1/count[0]
+LUT4        ---     0.448              A to Z              \inst_debounce1/i4_4_lut_adj_348
+Route         1   e 0.788                                  \inst_debounce1/n10
+LUT4        ---     0.448              C to Z              \inst_debounce1/i1_4_lut_adj_347
+Route         1   e 0.788                                  \inst_debounce1/n6
+LUT4        ---     0.448              D to Z              \inst_debounce1/i4_4_lut
+Route         1   e 0.788                                  \inst_debounce1/n8297
+LUT4        ---     0.448              B to Z              \inst_debounce1/i3_3_lut
+Route         1   e 0.788                                  \inst_debounce1/n8_adj_1193
+LUT4        ---     0.448              C to Z              \inst_debounce1/i1_4_lut
+Route         1   e 0.788                                  \inst_debounce1/n8
+LUT4        ---     0.448              D to Z              \inst_debounce1/i7250_4_lut
+Route         7   e 1.255                                  \inst_debounce1/output_N_1154
+LUT4        ---     0.448              C to Z              \inst_debounce1/i1779_2_lut_rep_143_3_lut
+Route        16   e 1.516                                  \inst_debounce1/clk_enable_16
+                  --------
+                   11.252  (31.5% logic, 68.5% route), 8 logic levels.
+
+
+Passed:  The following path meets requirements by 988.489ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3IX    CK             \inst_debounce1/count__i0  (from clk +)
+   Destination:    FD1P3IX    SP             \inst_debounce1/count__i7  (to clk +)
+
+   Delay:                  11.252ns  (31.5% logic, 68.5% route), 8 logic levels.
+
+ Constraint Details:
+
+     11.252ns data_path \inst_debounce1/count__i0 to \inst_debounce1/count__i7 meets
+    1000.000ns delay constraint less
+      0.259ns LCE_S requirement (totaling 999.741ns) by 988.489ns
+
+ Path Details: \inst_debounce1/count__i0 to \inst_debounce1/count__i7
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.403             CK to Q              \inst_debounce1/count__i0 (from clk)
+Route         2   e 1.002                                  \inst_debounce1/count[0]
+LUT4        ---     0.448              A to Z              \inst_debounce1/i4_4_lut_adj_348
+Route         1   e 0.788                                  \inst_debounce1/n10
+LUT4        ---     0.448              C to Z              \inst_debounce1/i1_4_lut_adj_347
+Route         1   e 0.788                                  \inst_debounce1/n6
+LUT4        ---     0.448              D to Z              \inst_debounce1/i4_4_lut
+Route         1   e 0.788                                  \inst_debounce1/n8297
+LUT4        ---     0.448              B to Z              \inst_debounce1/i3_3_lut
+Route         1   e 0.788                                  \inst_debounce1/n8_adj_1193
+LUT4        ---     0.448              C to Z              \inst_debounce1/i1_4_lut
+Route         1   e 0.788                                  \inst_debounce1/n8
+LUT4        ---     0.448              D to Z              \inst_debounce1/i7250_4_lut
+Route         7   e 1.255                                  \inst_debounce1/output_N_1154
+LUT4        ---     0.448              C to Z              \inst_debounce1/i1779_2_lut_rep_143_3_lut
+Route        16   e 1.516                                  \inst_debounce1/clk_enable_16
+                  --------
+                   11.252  (31.5% logic, 68.5% route), 8 logic levels.
+
+Report: 11.511 ns is the maximum delay for this constraint.
+
+
+
+================================================================================
+Constraint: create_clock -period 1000.000000 -name clk2 [get_nets resetroutine_go_i]
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Constraint: create_clock -period 1000.000000 -name clk1 [get_nets clk1k_i]
+            3 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed:  The following path meets requirements by 991.373ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3IX    CK             \inst_resetroutine/done_i_54  (from clk1k_i +)
+   Destination:    FD1S1D     CD             \inst_fsm_init/i3697  (to clk1k_i +)
+
+   Delay:                   8.481ns  (33.7% logic, 66.3% route), 7 logic levels.
+
+ Constraint Details:
+
+      8.481ns data_path \inst_resetroutine/done_i_54 to \inst_fsm_init/i3697 meets
+    1000.000ns delay constraint less
+      0.146ns L_S requirement (totaling 999.854ns) by 991.373ns
+
+ Path Details: \inst_resetroutine/done_i_54 to \inst_fsm_init/i3697
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.403             CK to Q              \inst_resetroutine/done_i_54 (from clk1k_i)
+Route         4   e 1.168                                  resetroutine_done_i
+LUT4        ---     0.448              A to Z              \inst_fsm_init/i1_4_lut
+Route         2   e 0.954                                  \inst_fsm_init/n4620
+LUT4        ---     0.448              A to Z              \inst_fsm_init/i7182_4_lut
+Route         1   e 0.788                                  \inst_fsm_init/n9150
+LUT4        ---     0.448              D to Z              \inst_fsm_init/i7220_3_lut_4_lut
+Route         1   e 0.020                                  \inst_fsm_init/n9152
+MUXL5       ---     0.212           ALUT to Z              \inst_fsm_init/mux_1145_i1
+Route         1   e 0.788                                  \inst_fsm_init/fsm_state_i_4__N_775
+LUT4        ---     0.448              D to Z              \inst_fsm_init/i5279_2_lut_4_lut
+Route         2   e 0.954                                  \inst_fsm_init/fsm_state_i_4__N_774
+LUT4        ---     0.448              A to Z              \inst_fsm_init/i7272_2_lut_2_lut
+Route         2   e 0.954                                  \inst_fsm_init/fsm_state_i_4__N_799
+                  --------
+                    8.481  (33.7% logic, 66.3% route), 7 logic levels.
+
+
+Passed:  The following path meets requirements by 992.377ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3IX    CK             \inst_resetroutine/done_i_54  (from clk1k_i +)
+   Destination:    FD1S1D     CD             \inst_fsm_init/i3725  (to clk1k_i +)
+
+   Delay:                   7.477ns  (35.0% logic, 65.0% route), 7 logic levels.
+
+ Constraint Details:
+
+      7.477ns data_path \inst_resetroutine/done_i_54 to \inst_fsm_init/i3725 meets
+    1000.000ns delay constraint less
+      0.146ns L_S requirement (totaling 999.854ns) by 992.377ns
+
+ Path Details: \inst_resetroutine/done_i_54 to \inst_fsm_init/i3725
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.403             CK to Q              \inst_resetroutine/done_i_54 (from clk1k_i)
+Route         4   e 1.168                                  resetroutine_done_i
+LUT4        ---     0.448              A to Z              \inst_fsm_init/i1_4_lut
+Route         2   e 0.954                                  \inst_fsm_init/n4620
+LUT4        ---     0.448              A to Z              \inst_fsm_init/n997_bdd_4_lut_7448
+Route         1   e 0.020                                  \inst_fsm_init/n9445
+MUXL5       ---     0.212           BLUT to Z              \inst_fsm_init/i7348
+Route         1   e 0.020                                  \inst_fsm_init/n9446
+MUXL5       ---     0.212             D1 to Z              \inst_fsm_init/i7352
+Route         1   e 0.788                                  \inst_fsm_init/fsm_state_i_4__N_761
+LUT4        ---     0.448              D to Z              \inst_fsm_init/i5278_2_lut_4_lut
+Route         2   e 0.954                                  \inst_fsm_init/fsm_state_i_4__N_760
+LUT4        ---     0.448              A to Z              \inst_fsm_init/i7269_2_lut_2_lut
+Route         2   e 0.954                                  \inst_fsm_init/fsm_state_i_4__N_796
+                  --------
+                    7.477  (35.0% logic, 65.0% route), 7 logic levels.
+
+
+Passed:  The following path meets requirements by 997.116ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AX    CK             \inst_resetroutine/start_i_51  (from clk1k_i +)
+   Destination:    FD1P3IX    CD             \inst_resetroutine/done_i_54  (to clk1k_i +)
+
+   Delay:                   2.738ns  (31.1% logic, 68.9% route), 2 logic levels.
+
+ Constraint Details:
+
+      2.738ns data_path \inst_resetroutine/start_i_51 to \inst_resetroutine/done_i_54 meets
+    1000.000ns delay constraint less
+      0.146ns L_S requirement (totaling 999.854ns) by 997.116ns
+
+ Path Details: \inst_resetroutine/start_i_51 to \inst_resetroutine/done_i_54
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.403             CK to Q              \inst_resetroutine/start_i_51 (from clk1k_i)
+Route         3   e 1.099                                  start_i
+LUT4        ---     0.448              B to Z              \inst_clkdivider/i1_3_lut_adj_320
+Route         1   e 0.788                                  counter_5__N_64
+                  --------
+                    2.738  (31.1% logic, 68.9% route), 2 logic levels.
+
+Report: 8.627 ns is the maximum delay for this constraint.
+
+
+
+================================================================================
+Constraint: create_clock -period 1000.000000 -name clk0 [get_nets tb_clk_c]
+            2890 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed:  The following path meets requirements by 988.209ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             \inst_commanddataarbiter/counter_1685__i5  (from tb_clk_c +)
+   Destination:    FD1S3IX    D              \inst_commanddataarbiter/counter_1685__i15  (to tb_clk_c +)
+
+   Delay:                  11.645ns  (42.4% logic, 57.6% route), 15 logic levels.
+
+ Constraint Details:
+
+     11.645ns data_path \inst_commanddataarbiter/counter_1685__i5 to \inst_commanddataarbiter/counter_1685__i15 meets
+    1000.000ns delay constraint less
+      0.146ns L_S requirement (totaling 999.854ns) by 988.209ns
+
+ Path Details: \inst_commanddataarbiter/counter_1685__i5 to \inst_commanddataarbiter/counter_1685__i15
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.403             CK to Q              \inst_commanddataarbiter/counter_1685__i5 (from tb_clk_c)
+Route         3   e 1.099                                  \inst_commanddataarbiter/counter[5]
+LUT4        ---     0.448              C to Z              \inst_commanddataarbiter/i11_4_lut_adj_352
+Route         1   e 0.788                                  \inst_commanddataarbiter/n26_adj_1203
+LUT4        ---     0.448              B to Z              \inst_commanddataarbiter/i13_4_lut
+Route         1   e 0.788                                  \inst_commanddataarbiter/n28_adj_1198
+LUT4        ---     0.448              B to Z              \inst_commanddataarbiter/i14_4_lut
+Route         5   e 1.174                                  \inst_commanddataarbiter/n113
+LUT4        ---     0.448              A to Z              \inst_commanddataarbiter/i2_3_lut_rep_151
+Route         4   e 1.120                                  n9769
+LUT4        ---     0.448              B to Z              \inst_writecommanddata/i5889_4_lut_4_lut_4_lut
+Route         1   e 0.788                                  n7793
+A1_TO_FCO   ---     0.752           B[2] to COUT           \inst_commanddataarbiter/counter_1685_add_4_1
+Route         1   e 0.020                                  \inst_commanddataarbiter/n8167
+FCI_TO_FCO  ---     0.143            CIN to COUT           \inst_commanddataarbiter/counter_1685_add_4_3
+Route         1   e 0.020                                  \inst_commanddataarbiter/n8168
+FCI_TO_FCO  ---     0.143            CIN to COUT           \inst_commanddataarbiter/counter_1685_add_4_5
+Route         1   e 0.020                                  \inst_commanddataarbiter/n8169
+FCI_TO_FCO  ---     0.143            CIN to COUT           \inst_commanddataarbiter/counter_1685_add_4_7
+Route         1   e 0.020                                  \inst_commanddataarbiter/n8170
+FCI_TO_FCO  ---     0.143            CIN to COUT           \inst_commanddataarbiter/counter_1685_add_4_9
+Route         1   e 0.020                                  \inst_commanddataarbiter/n8171
+FCI_TO_FCO  ---     0.143            CIN to COUT           \inst_commanddataarbiter/counter_1685_add_4_11
+Route         1   e 0.020                                  \inst_commanddataarbiter/n8172
+FCI_TO_FCO  ---     0.143            CIN to COUT           \inst_commanddataarbiter/counter_1685_add_4_13
+Route         1   e 0.020                                  \inst_commanddataarbiter/n8173
+FCI_TO_FCO  ---     0.143            CIN to COUT           \inst_commanddataarbiter/counter_1685_add_4_15
+Route         1   e 0.020                                  \inst_commanddataarbiter/n8174
+FCI_TO_F    ---     0.544            CIN to S[2]           \inst_commanddataarbiter/counter_1685_add_4_17
+Route         1   e 0.788                                  \inst_commanddataarbiter/n75
+                  --------
+                   11.645  (42.4% logic, 57.6% route), 15 logic levels.
+
+
+Passed:  The following path meets requirements by 988.209ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             \inst_commanddataarbiter/counter_1685__i5  (from tb_clk_c +)
+   Destination:    FD1S3IX    D              \inst_commanddataarbiter/counter_1685__i15  (to tb_clk_c +)
+
+   Delay:                  11.645ns  (42.4% logic, 57.6% route), 15 logic levels.
+
+ Constraint Details:
+
+     11.645ns data_path \inst_commanddataarbiter/counter_1685__i5 to \inst_commanddataarbiter/counter_1685__i15 meets
+    1000.000ns delay constraint less
+      0.146ns L_S requirement (totaling 999.854ns) by 988.209ns
+
+ Path Details: \inst_commanddataarbiter/counter_1685__i5 to \inst_commanddataarbiter/counter_1685__i15
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.403             CK to Q              \inst_commanddataarbiter/counter_1685__i5 (from tb_clk_c)
+Route         3   e 1.099                                  \inst_commanddataarbiter/counter[5]
+LUT4        ---     0.448              C to Z              \inst_commanddataarbiter/i11_4_lut_adj_352
+Route         1   e 0.788                                  \inst_commanddataarbiter/n26_adj_1203
+LUT4        ---     0.448              B to Z              \inst_commanddataarbiter/i13_4_lut
+Route         1   e 0.788                                  \inst_commanddataarbiter/n28_adj_1198
+LUT4        ---     0.448              B to Z              \inst_commanddataarbiter/i14_4_lut
+Route         5   e 1.174                                  \inst_commanddataarbiter/n113
+LUT4        ---     0.448              A to Z              \inst_commanddataarbiter/i2_3_lut_rep_151
+Route         4   e 1.120                                  n9769
+LUT4        ---     0.448              B to Z              \inst_writecommanddata/i2_3_lut_4_lut
+Route         1   e 0.788                                  n8255
+A1_TO_FCO   ---     0.752           D[2] to COUT           \inst_commanddataarbiter/counter_1685_add_4_1
+Route         1   e 0.020                                  \inst_commanddataarbiter/n8167
+FCI_TO_FCO  ---     0.143            CIN to COUT           \inst_commanddataarbiter/counter_1685_add_4_3
+Route         1   e 0.020                                  \inst_commanddataarbiter/n8168
+FCI_TO_FCO  ---     0.143            CIN to COUT           \inst_commanddataarbiter/counter_1685_add_4_5
+Route         1   e 0.020                                  \inst_commanddataarbiter/n8169
+FCI_TO_FCO  ---     0.143            CIN to COUT           \inst_commanddataarbiter/counter_1685_add_4_7
+Route         1   e 0.020                                  \inst_commanddataarbiter/n8170
+FCI_TO_FCO  ---     0.143            CIN to COUT           \inst_commanddataarbiter/counter_1685_add_4_9
+Route         1   e 0.020                                  \inst_commanddataarbiter/n8171
+FCI_TO_FCO  ---     0.143            CIN to COUT           \inst_commanddataarbiter/counter_1685_add_4_11
+Route         1   e 0.020                                  \inst_commanddataarbiter/n8172
+FCI_TO_FCO  ---     0.143            CIN to COUT           \inst_commanddataarbiter/counter_1685_add_4_13
+Route         1   e 0.020                                  \inst_commanddataarbiter/n8173
+FCI_TO_FCO  ---     0.143            CIN to COUT           \inst_commanddataarbiter/counter_1685_add_4_15
+Route         1   e 0.020                                  \inst_commanddataarbiter/n8174
+FCI_TO_F    ---     0.544            CIN to S[2]           \inst_commanddataarbiter/counter_1685_add_4_17
+Route         1   e 0.788                                  \inst_commanddataarbiter/n75
+                  --------
+                   11.645  (42.4% logic, 57.6% route), 15 logic levels.
+
+
+Passed:  The following path meets requirements by 988.209ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             \inst_commanddataarbiter/counter_1685__i5  (from tb_clk_c +)
+   Destination:    FD1S3IX    D              \inst_commanddataarbiter/counter_1685__i16  (to tb_clk_c +)
+
+   Delay:                  11.645ns  (42.4% logic, 57.6% route), 15 logic levels.
+
+ Constraint Details:
+
+     11.645ns data_path \inst_commanddataarbiter/counter_1685__i5 to \inst_commanddataarbiter/counter_1685__i16 meets
+    1000.000ns delay constraint less
+      0.146ns L_S requirement (totaling 999.854ns) by 988.209ns
+
+ Path Details: \inst_commanddataarbiter/counter_1685__i5 to \inst_commanddataarbiter/counter_1685__i16
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.403             CK to Q              \inst_commanddataarbiter/counter_1685__i5 (from tb_clk_c)
+Route         3   e 1.099                                  \inst_commanddataarbiter/counter[5]
+LUT4        ---     0.448              C to Z              \inst_commanddataarbiter/i11_4_lut_adj_352
+Route         1   e 0.788                                  \inst_commanddataarbiter/n26_adj_1203
+LUT4        ---     0.448              B to Z              \inst_commanddataarbiter/i13_4_lut
+Route         1   e 0.788                                  \inst_commanddataarbiter/n28_adj_1198
+LUT4        ---     0.448              B to Z              \inst_commanddataarbiter/i14_4_lut
+Route         5   e 1.174                                  \inst_commanddataarbiter/n113
+LUT4        ---     0.448              A to Z              \inst_commanddataarbiter/i2_3_lut_rep_151
+Route         4   e 1.120                                  n9769
+LUT4        ---     0.448              B to Z              \inst_writecommanddata/i5889_4_lut_4_lut_4_lut
+Route         1   e 0.788                                  n7793
+A1_TO_FCO   ---     0.752           B[2] to COUT           \inst_commanddataarbiter/counter_1685_add_4_1
+Route         1   e 0.020                                  \inst_commanddataarbiter/n8167
+FCI_TO_FCO  ---     0.143            CIN to COUT           \inst_commanddataarbiter/counter_1685_add_4_3
+Route         1   e 0.020                                  \inst_commanddataarbiter/n8168
+FCI_TO_FCO  ---     0.143            CIN to COUT           \inst_commanddataarbiter/counter_1685_add_4_5
+Route         1   e 0.020                                  \inst_commanddataarbiter/n8169
+FCI_TO_FCO  ---     0.143            CIN to COUT           \inst_commanddataarbiter/counter_1685_add_4_7
+Route         1   e 0.020                                  \inst_commanddataarbiter/n8170
+FCI_TO_FCO  ---     0.143            CIN to COUT           \inst_commanddataarbiter/counter_1685_add_4_9
+Route         1   e 0.020                                  \inst_commanddataarbiter/n8171
+FCI_TO_FCO  ---     0.143            CIN to COUT           \inst_commanddataarbiter/counter_1685_add_4_11
+Route         1   e 0.020                                  \inst_commanddataarbiter/n8172
+FCI_TO_FCO  ---     0.143            CIN to COUT           \inst_commanddataarbiter/counter_1685_add_4_13
+Route         1   e 0.020                                  \inst_commanddataarbiter/n8173
+FCI_TO_FCO  ---     0.143            CIN to COUT           \inst_commanddataarbiter/counter_1685_add_4_15
+Route         1   e 0.020                                  \inst_commanddataarbiter/n8174
+FCI_TO_F    ---     0.544            CIN to S[2]           \inst_commanddataarbiter/counter_1685_add_4_17
+Route         1   e 0.788                                  \inst_commanddataarbiter/n74
+                  --------
+                   11.645  (42.4% logic, 57.6% route), 15 logic levels.
+
+Report: 11.791 ns is the maximum delay for this constraint.
+
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 1000.000000 -name  |             |             |
+clk7 [get_nets                          |             |             |
+\inst_commanddataarbiter/clksynth_i]    |            -|            -|     0  
+                                        |             |             |
+create_clock -period 1000.000000 -name  |             |             |
+clk6 [get_nets setbacklight_go_i]       |            -|            -|     0  
+                                        |             |             |
+create_clock -period 1000.000000 -name  |             |             |
+clk5 [get_nets CH1_c]                   |            -|            -|     0  
+                                        |             |             |
+create_clock -period 1000.000000 -name  |             |             |
+clk4 [get_nets \inst_debounce1/pb1_i]   |  1000.000 ns|    16.534 ns|     5  
+                                        |             |             |
+create_clock -period 1000.000000 -name  |             |             |
+clk3 [get_nets clk]                     |  1000.000 ns|    11.511 ns|     8  
+                                        |             |             |
+create_clock -period 1000.000000 -name  |             |             |
+clk2 [get_nets resetroutine_go_i]       |            -|            -|     0  
+                                        |             |             |
+create_clock -period 1000.000000 -name  |             |             |
+clk1 [get_nets clk1k_i]                 |  1000.000 ns|     8.627 ns|     7  
+                                        |             |             |
+create_clock -period 1000.000000 -name  |             |             |
+clk0 [get_nets tb_clk_c]                |  1000.000 ns|    11.791 ns|    15  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0
+
+Constraints cover  11480 paths, 861 nets, and 2522 connections (94.7% coverage)
+
+
+Peak memory: 96272384 bytes, TRCE: 4440064 bytes, DLYMAN: 163840 bytes
+CPU_TIME_REPORT: 0 secs 

@@ -1,0 +1,12 @@
+#Start recording tcl command: 8/21/2016 11:18:05
+#Project Location: D:/Github/Lattice/Vivaz MachXO2; Project name: Vivaz_MachXO2
+prj_project open "D:/Github/Lattice/Vivaz MachXO2/Vivaz_MachXO2.ldf"
+pgr_project open "D:/Github/Lattice/Vivaz MachXO2/impl1/impl1.xcf"
+prj_run Export -impl impl1
+pgr_program run
+pgr_program run
+prj_run Export -impl impl1
+prj_run Export -impl impl1 -forceAll
+prj_project save
+prj_project close
+#Stop recording: 8/21/2016 11:25:42

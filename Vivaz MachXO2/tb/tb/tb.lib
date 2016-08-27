@@ -1,0 +1,144 @@
+timestamp=1471962591348
+
+[~A]
+ModifyID=10
+Version=73
+
+[clk_divider]
+A/beh_clk_divider=21|./../../clk_divider.vhd|18|1*270906
+BinI32/beh_clk_divider=3*64572
+I=0*37594
+I/beh_clk_divider=0*71826
+M=11|0|vc6|1471959968356|./../../clk_divider.vhd|0*37118*0xe99a0b8557119fe06ea64b116a58424bc9a0fe64|0*37508*0x5eebbfaf24833dd780412b1f91e05209
+M/beh_clk_divider=21|0|vc6|1471962434631|./../../clk_divider.vhd|0*70713*0xf08aee4740830e546d8d500c844e2f3edbb6d07c|0*71721*0x856b180bf611ec746a6bfcb1befebd18
+R=./../../clk_divider.vhd|7
+Version=10.2.3312.5682  (Windows)|00000003789cd3f5370600015b00b0|61e1fe4f517d7175b58321e1429eae1c9b1e5993e7d6c0a112f0a8ab9c74977dc99594a75531edad6b06a450cd684d40
+Version/beh_clk_divider=10.2.3312.5682  (Windows)|00000003789cd3f5370600015b00b0|e0e9bdbaf4d10a00e7b4219b1f30cb552b61724bb2d86440b7ce6e18a63f07e36f71d56358043ece17c7e0b06df256a9
+
+[commanddataarbiter]
+A/beh_commanddataarbiter=21|./../../commanddataarbiter.vhd|36|1*236245
+BinI32/beh_commanddataarbiter=3*59873
+I=0*28062
+I/beh_commanddataarbiter=0*67641
+M=11|0|vc6|1471959968276|./../../commanddataarbiter.vhd|0*26993*0x56f1f0bf7a315544ed68acae3663303337f0c715|0*27962*0x5eebbfaf24833dd780412b1f91e05209
+M/beh_commanddataarbiter=21|0|vc6|1471960550819|./../../commanddataarbiter.vhd|0*28295*0xb187154639a2fecbfea6f908e27b0e0cebaf0942|0*31415*0x856b180bf611ec746a6bfcb1befebd18
+R=./../../commanddataarbiter.vhd|7
+Version=10.2.3312.5682  (Windows)|00000003789cd3f5370600015b00b0|b02da91187ab8fc3a4133062e94017f96aca6615cc3c1de366f26b5042117aa8aa096f5f32662e24ae5e65769286e13b
+Version/beh_commanddataarbiter=10.2.3312.5682  (Windows)|00000003789cd3f5370600015b00b0|ebbb879d677f9ba8170f2a6e6bb1751b2fae813db5e283ace00398b1fdef503803d996de637da4171a75116cd65f873d
+
+[debounce]
+A/beh_debounce=21|./../../debounce.vhd|15|1*222960
+BinI32/beh_debounce=3*53804
+I=0*564
+I/beh_debounce=0*66445
+M=11|0|vc6|1471959968068|./../../debounce.vhd|0*189*0x3647cbc15dece65e332b4b8218435496e8c6372f|0*484*0x5eebbfaf24833dd780412b1f91e05209
+M/beh_debounce=21|0|vc6|1471960550585|./../../debounce.vhd|0*787*0x09a003e1e324fd82ed83d9cbec8c7a8a0c511be9|0*1247*0x856b180bf611ec746a6bfcb1befebd18
+R=./../../debounce.vhd|7
+Version=10.2.3312.5682  (Windows)|00000003789cd3f5370600015b00b0|2383c81ec9e742b193aba2367b4ffbb2b4470a4173a9ccfce999ce8608f2fc7b13f4a4dbce939436538e8fd59f45280f
+Version/beh_debounce=10.2.3312.5682  (Windows)|00000003789cd3f5370600015b00b0|f699a64ba250d92230f862f2502521fad73890170240fc5dd6c18a851c81e6cfc0abf6aaa99accf8119d91c245b08d91
+
+[fillcolor]
+A/beh_fillcolor=21|./../../fillcolor.vhd|23|1*228436
+BinI32/beh_fillcolor=3*56190
+I=0*13609
+I/beh_fillcolor=0*66917
+M=11|0|vc6|1471959968149|./../../fillcolor.vhd|0*13006*0xff3a62b6100d788aeae083c31dde92f0a941ebef|0*13527*0x5eebbfaf24833dd780412b1f91e05209
+M/beh_fillcolor=21|0|vc6|1471960550694|./../../fillcolor.vhd|0*13833*0xfa6f87e51473481a420c1c801fb8af0b2a293654|0*15810*0x856b180bf611ec746a6bfcb1befebd18
+R=./../../fillcolor.vhd|7
+Version=10.2.3312.5682  (Windows)|00000003789cd3f5370600015b00b0|33d699eac227d2c1e95d2b099108978b1e874e273e2e1516d793c3a8f89c94907d4eebd7e12303374f027b90b492cfe2
+Version/beh_fillcolor=10.2.3312.5682  (Windows)|00000003789cd3f5370600015b00b0|a8483bea82056c24434e16e5875965301950fc7c12e7531e1d807bd36aec35c960e74801b6b64dd3d92a906195ec0b1f
+
+[fsm_init]
+A/beh_fsm_init=21|./../../fsm_init.vhd|30|1*224082
+BinI32/beh_fsm_init=3*54205
+I=0*2653
+I/beh_fsm_init=0*66681
+M=11|0|vc6|1471959968095|./../../fsm_init.vhd|0*1897*0x7e533ec0f247144365696d49e6b802a0cd8bc9c1|0*2573*0x5eebbfaf24833dd780412b1f91e05209
+M/beh_fsm_init=21|0|vc6|1471960550630|./../../fsm_init.vhd|0*2876*0xe72ce2aca276122d65bc38feb8822321d4d9f52e|0*12403*0x856b180bf611ec746a6bfcb1befebd18
+R=./../../fsm_init.vhd|7
+Version=10.2.3312.5682  (Windows)|00000003789cd3f5370600015b00b0|fba2d0afb4e22c63ef885646f88537ffd87c0d9e5d47914393e583f08079e890193cb38312e501efa38f28d4452eb285
+Version/beh_fsm_init=10.2.3312.5682  (Windows)|00000003789cd3f5370600015b00b0|5f2c54ef862e42c96a1325431dc6e5ac046f23ae0502ed63b63a45fe6055113a2d8e98b44cb03db29f095c08ad49a9f7
+
+[movetopoint]
+A/beh_movetopoint=21|./../../movetopoint.vhd|25|1*233515
+BinI32/beh_movetopoint=3*58465
+I=0*21396
+I/beh_movetopoint=0*67399
+M=11|0|vc6|1471959968223|./../../movetopoint.vhd|0*20713*0xb2a35d922a3d57c45d6ef11751cede7744e51c38|0*21310*0x5eebbfaf24833dd780412b1f91e05209
+M/beh_movetopoint=21|0|vc6|1471960550772|./../../movetopoint.vhd|0*21622*0xd0c89f3d507614c794a858cf503bfc555eaa6552|0*26318*0x856b180bf611ec746a6bfcb1befebd18
+R=./../../movetopoint.vhd|7
+Version=10.2.3312.5682  (Windows)|00000003789cd3f5370600015b00b0|4907c52cd3b462c4c09e45773959ccbdaccd68668f65ec7759758262785704e33c07ad34fe650c3a26c078b3550e095c
+Version/beh_movetopoint=10.2.3312.5682  (Windows)|00000003789cd3f5370600015b00b0|d10bacfac710341048fd71cbf860849d3a996e9cf96653b13bf8d33df155b229204177fa8ecd0dfb0058a6eec3193605
+
+[reset_routine]
+A/beh_reset_routine=21|./../../reset_routine.vhd|17|1*242627
+BinI32/beh_reset_routine=3*62046
+I=0*35206
+I/beh_reset_routine=0*68153
+M=11|0|vc6|1471959968332|./../../reset_routine.vhd|0*34751*0xf1b8c0cdd3124c69bf4a486e75546a51862384d4|0*35116*0x5eebbfaf24833dd780412b1f91e05209
+M/beh_reset_routine=21|0|vc6|1471960550882|./../../reset_routine.vhd|0*35434*0x7908fecac71bdfc4b47a1e37120b3cda86d7bb23|0*36555*0x856b180bf611ec746a6bfcb1befebd18
+R=./../../reset_routine.vhd|7
+Version=10.2.3312.5682  (Windows)|00000003789cd3f5370600015b00b0|45ecd5f4cbc5ee9133a3d221b0c1bd7b50fb80b1095953495c271606c54e3724c9491bfc76bee7588d9fb9db87567f7c
+Version/beh_reset_routine=10.2.3312.5682  (Windows)|00000003789cd3f5370600015b00b0|b4185cb1fd0f520689d4dfacc420d5c640e0d016332792522cf85c89ad858f0ff7ac56981a886a48fc7d8d63d33a4689
+
+[setbacklight]
+A/beh_setbacklight=21|./../../setbacklight.vhd|22|1*231085
+BinI32/beh_setbacklight=3*57182
+I=0*17007
+I/beh_setbacklight=0*67155
+M=11|0|vc6|1471959968181|./../../setbacklight.vhd|0*16432*0x9321651f03f01a16e892aa4b6aecf85b04917e63|0*16919*0x5eebbfaf24833dd780412b1f91e05209
+M/beh_setbacklight=21|0|vc6|1471960550725|./../../setbacklight.vhd|0*17234*0xe8702a1a94e34685aab6ce096edafa65a91b1d7d|0*20083*0x856b180bf611ec746a6bfcb1befebd18
+R=./../../setbacklight.vhd|7
+Version=10.2.3312.5682  (Windows)|00000003789cd3f5370600015b00b0|11f10385fbd0b678e79b586d1fde2ba45f82fcb5ccd07602c67ad7078bd7972e9f205d735db29f1cc59a537f462b8007
+Version/beh_setbacklight=10.2.3312.5682  (Windows)|00000003789cd3f5370600015b00b0|f7fc76aee9796f77d12c2362cdaa3c58964b2815e6fe55651147c9cc4ac9fa0983aa7439c471c55c371b9f964f3a0577
+
+[testbench]
+A/behavior=21|./../../Vivaz_MachXO2_tb.vhd|28|1*276460
+BinI32/behavior=3*65394
+I=0*49910
+I/behavior=0*75298
+M=11|0|vc6|1471959968473|./../../Vivaz_MachXO2_tb.vhd|0*49627*0x45a2515c86cf268dcb0a38125b4663cda58aa864|0*49821*0x5eebbfaf24833dd780412b1f91e05209
+M/behavior=21|0|vc6|1471962591317|./../../Vivaz_MachXO2_tb.vhd|0*73796*0x05adbb6fb10b9daef16a5d1ea70bd9e4df7d9d5e|0*75197*0x856b180bf611ec746a6bfcb1befebd18
+R=./../../Vivaz_MachXO2_tb.vhd|25
+Version=10.2.3312.5682  (Windows)|00000003789cd3f5370600015b00b0|9c08cd30fe0f9550ac0d051aa32c9ba5030c5f4de3ffa3c97f58c5528f1d7913b4941d9d2138925c9bdc0a3d2cf05f0c
+Version/behavior=10.2.3312.5682  (Windows)|00000003789cd3f5370600015b00b0|f9bccf16e2dce5a640f0ad5e8eaa0283e08d679eaf1bc9de9439630905b37e5f734d963c8f9d88f88bc3d51121fcf79f
+
+[top]
+A/behaviour=21|./../../top.vhdl|67|1*246353
+BinI32/behaviour=3*63585
+I=0*40125
+I/behaviour=0*68641
+M=11|0|vc6|1471959968400|./../../top.vhdl|0*39417*0x0dbdfe35c4f99d5f1dcbe8468246a34e64ead11d|0*40054*0x5eebbfaf24833dd780412b1f91e05209
+M/behaviour=21|0|vc6|1471960551005|./../../top.vhdl|0*40406*0x3ae6fc12474f8131d63328a65dc4d57c45b9308c|0*49357*0x856b180bf611ec746a6bfcb1befebd18
+R=./../../top.vhdl|47
+Version=10.2.3312.5682  (Windows)|00000003789cd3f5370600015b00b0|f1fdecad8dc292011c024b8d633bc5c74e4e84bd6f3b38b645df26f993f13f4c
+Version/behaviour=10.2.3312.5682  (Windows)|00000003789cd3f5370600015b00b0|687e04e33736ecc2f430230a4d258cac1cf3f6da28b33b2380de57447e8243512568f59ee9db5e7bdcce6d75ac52957c
+
+[write_command_data]
+A/beh_write_command_data=21|./../../write_command_data.vhd|22|1*240089
+BinI32/beh_write_command_data=3*61266
+I=0*32719
+I/beh_write_command_data=0*67897
+M=11|0|vc6|1471959968306|./../../write_command_data.vhd|0*32070*0x7bdcfebdef422f053598e6aa1a52c914a69e57eb|0*32619*0x5eebbfaf24833dd780412b1f91e05209
+M/beh_write_command_data=21|0|vc6|1471960550850|./../../write_command_data.vhd|0*32952*0x87076234ca100fbfad7d36684e4369ac6ca82bea|0*34148*0x856b180bf611ec746a6bfcb1befebd18
+R=./../../write_command_data.vhd|7
+Version=10.2.3312.5682  (Windows)|00000003789cd3f5370600015b00b0|d2034daeea2972fe5caecf1ce2e312ec3a43e93c5db37ef21d9c9563191f727996777d20188e5a90823ef9f593933478
+Version/beh_write_command_data=10.2.3312.5682  (Windows)|00000003789cd3f5370600015b00b0|0d5e18aa9bce2b01eb417851351f10615f0fef62a23aea28f4970525877c7bcc314069624e90a902f90eca3836d50ba8
+
+[~MFT]
+0=8|0tb.mgf|75298|23695
+1=2|1tb.mgf|276460|235162
+3=2|3tb.mgf|65394|55070
+
+[~U]
+clk_divider=11|0*36912|
+commanddataarbiter=11|0*26665|
+debounce=11|0*0|
+fillcolor=11|0*12735|
+fsm_init=11|0*1579|
+movetopoint=11|0*20435|
+reset_routine=11|0*34530|
+setbacklight=11|0*16147|
+testbench=11|0*49503|
+top=11|0*39149|
+write_command_data=11|0*31797|

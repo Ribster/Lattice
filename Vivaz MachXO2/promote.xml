@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<userSetting name="Z:/GITHUB/Lattice/Vivaz MachXO2/promote.xml" version="Diamond (64-bit) 3.7.1.502" date="Thu Aug 18 20:14:18 2016" vendor="Lattice Semiconductor Corporation" >
+<userSetting name="D:/Github/Lattice/Vivaz MachXO2/promote.xml" version="Diamond (64-bit) 3.7.0.96.1" date="Tue Aug 23 16:49:11 2016" vendor="Lattice Semiconductor Corporation" >
   <msg mid="35921504" type="Info" />
+  <msg mid="35931002" type="Warning" />
+  <msg mid="35921205" type="Warning" />
   <msg mid="35921404" type="Warning" />
+  <msg mid="35921039" type="Error" />
+  <msg mid="35921549" type="Error" />
+  <msg mid="35921303" type="Warning" />
 </userSetting>

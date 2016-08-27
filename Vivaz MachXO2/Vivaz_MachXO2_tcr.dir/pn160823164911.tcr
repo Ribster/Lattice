@@ -1,0 +1,18 @@
+#Start recording tcl command: 8/23/2016 15:30:21
+#Project Location: D:/Github/Lattice/Vivaz MachXO2; Project name: Vivaz_MachXO2
+prj_project open "D:/Github/Lattice/Vivaz MachXO2/Vivaz_MachXO2.ldf"
+source "D:/Github/Lattice/Vivaz MachXO2/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "Vivaz_MachXO2_tb.vhd"
+prj_src add "D:/Github/Lattice/Vivaz MachXO2/tb/tb.spf"
+prj_run Export -impl impl1
+prj_run Export -impl impl1 -forceAll
+prj_src add "D:/Github/Lattice/Vivaz MachXO2/tb/tb.spf"
+prj_run Export -impl impl1
+prj_run Export -impl impl1 -forceAll
+prj_run Export -impl impl1
+prj_run Export -impl impl1
+prj_src add "D:/Github/Lattice/Vivaz MachXO2/tb/tb.spf"
+prj_run Export -impl impl1 -forceAll
+prj_run Export -impl impl1 -forceAll
+prj_src add "D:/Github/Lattice/Vivaz MachXO2/tb/tb.spf"
+#Stop recording: 8/23/2016 16:49:11

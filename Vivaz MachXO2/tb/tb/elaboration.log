@@ -1,0 +1,49 @@
+Active-HDL 10.2.3312.5682  2016-08-23 16:30:29
+
+Elaboration top modules:
+Architecture                  behaviour(top)
+
+
+--------------------------------------------------------------------------------------------------------------------
+Entity             | Architecture           | Library     | Info | Compiler Version          | Compilation Options
+--------------------------------------------------------------------------------------------------------------------
+top                | behaviour              | tb          |      | 10.2.3312.5682  (Windows) | -O3
+clk_divider        | beh_clk_divider        | tb          |      | 10.2.3312.5682  (Windows) | -O3
+reset_routine      | beh_reset_routine      | tb          |      | 10.2.3312.5682  (Windows) | -O3
+write_command_data | beh_write_command_data | tb          |      | 10.2.3312.5682  (Windows) | -O3
+commanddataarbiter | beh_commanddataarbiter | tb          |      | 10.2.3312.5682  (Windows) | -O3
+movetopoint        | beh_movetopoint        | tb          |      | 10.2.3312.5682  (Windows) | -O3
+setbacklight       | beh_setbacklight       | tb          |      | 10.2.3312.5682  (Windows) | -O3
+fillcolor          | beh_fillcolor          | tb          |      | 10.2.3312.5682  (Windows) | -O3
+fsm_init           | beh_fsm_init           | tb          |      | 10.2.3312.5682  (Windows) | -O3
+debounce           | beh_debounce           | tb          |      | 10.2.3312.5682  (Windows) | -O3
+--------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------
+Verilog Module                              | Library     | Info | Compiler Version          | Compilation Options
+--------------------------------------------------------------------------------------------------------------------
+OSCH                                        | ovi_machxo2 |      | 10.2.3312.5682  (Windows) | -vendor lattice -v2k
+--------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------
+VHDL Package                                | Library     | Info | Compiler Version          | Compilation Options
+--------------------------------------------------------------------------------------------------------------------
+standard                                    | std         |      |                           | <unavailable>
+TEXTIO                                      | std         |      | 10.2.3312.5682  (Windows) |  -2008
+std_logic_1164                              | ieee        |      | 10.2.3312.5682  (Windows) |  -2008
+MATH_REAL                                   | ieee        |      | 10.2.3312.5682  (Windows) | <unavailable>
+NUMERIC_STD                                 | ieee        |      | 10.2.3312.5682  (Windows) |  -2008
+std_logic_arith                             | ieee        |      | 10.2.3312.5682  (Windows) | <unavailable>
+STD_LOGIC_UNSIGNED                          | ieee        |      | 10.2.3312.5682  (Windows) | <unavailable>
+components                                  | lattice     |      | 10.2.3312.5682  (Windows) | -vendor lattice
+--------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------
+Library                                     | Comment
+--------------------------------------------------------------------------------------------------------------------
+ieee                                        | Standard IEEE packages library
+lattice                                     | LATTICE ispLEVER Classic 2.0, lattice VHDL LIBRARY
+ovi_machxo2                                 | LATTICE Diamond 3.7, MACHXO2 VERILOG LIBRARY
+std                                         | Standard VHDL library
+tb                                          | None
+--------------------------------------------------------------------------------------------------------------------

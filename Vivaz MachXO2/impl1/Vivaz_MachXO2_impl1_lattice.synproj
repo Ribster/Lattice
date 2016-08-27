@@ -30,10 +30,20 @@
 
 
 -lpf 1
--lib "work" -vhd "Z:/GITHUB/Lattice/Vivaz MachXO2/top.vhdl"
+-lib "work" -vhd "D:/Github/Lattice/Vivaz MachXO2/top.vhdl"
+"D:/Github/Lattice/Vivaz MachXO2/clk_divider.vhd"
+"D:/Github/Lattice/Vivaz MachXO2/reset_routine.vhd"
+"D:/Github/Lattice/Vivaz MachXO2/debounce.vhd"
+"D:/Github/Lattice/Vivaz MachXO2/write_command_data.vhd"
+"D:/Github/Lattice/Vivaz MachXO2/commanddataarbiter.vhd"
+"D:/Github/Lattice/Vivaz MachXO2/movetopoint.vhd"
+"D:/Github/Lattice/Vivaz MachXO2/setbacklight.vhd"
+"D:/Github/Lattice/Vivaz MachXO2/fillcolor.vhd"
+"D:/Github/Lattice/Vivaz MachXO2/fsm_init.vhd"
+-top top
 
 
--p "C:/lscc/diamond/3.7_x64/ispfpga/xo2c00/data" "Z:/GITHUB/Lattice/Vivaz MachXO2/impl1" "Z:/GITHUB/Lattice/Vivaz MachXO2"
+-p "C:/lscc/diamond/3.7_x64/ispfpga/xo2c00/data" "D:/Github/Lattice/Vivaz MachXO2/impl1" "D:/Github/Lattice/Vivaz MachXO2"
 
 -ngd "Vivaz_MachXO2_impl1.ngd"
 

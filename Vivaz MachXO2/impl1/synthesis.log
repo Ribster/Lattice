@@ -1,14 +1,14 @@
-synthesis:  version Diamond (64-bit) 3.7.1.502
+synthesis:  version Diamond (64-bit) 3.7.0.96.1
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
-Thu Aug 18 20:12:23 2016
+Tue Aug 23 16:38:43 2016
 
 
-Command Line:  synthesis -f Vivaz_MachXO2_impl1_lattice.synproj -gui -msgset Z:/GITHUB/Lattice/Vivaz MachXO2/promote.xml 
+Command Line:  synthesis -f Vivaz_MachXO2_impl1_lattice.synproj -gui -msgset D:/Github/Lattice/Vivaz MachXO2/promote.xml 
 
 Synthesis options:
 The -a option is MachXO2.
@@ -34,7 +34,7 @@ Using performance grade 5.
                                                           
 
 Optimization goal = Balanced
-The -top option is not used.
+Top-level module name = top.
 Target frequency = 1.000000 MHz.
 Maximum fanout = 1000.
 Timing path count = 3
@@ -61,10 +61,19 @@ RAM style = auto
 The -comp option is FALSE.
 The -syn option is FALSE.
 -p C:/lscc/diamond/3.7_x64/ispfpga/xo2c00/data (searchpath added)
--p Z:/GITHUB/Lattice/Vivaz MachXO2/impl1 (searchpath added)
--p Z:/GITHUB/Lattice/Vivaz MachXO2 (searchpath added)
+-p D:/Github/Lattice/Vivaz MachXO2/impl1 (searchpath added)
+-p D:/Github/Lattice/Vivaz MachXO2 (searchpath added)
 VHDL library = work
-VHDL design file = Z:/GITHUB/Lattice/Vivaz MachXO2/top.vhdl
+VHDL design file = D:/Github/Lattice/Vivaz MachXO2/top.vhdl
+VHDL design file = D:/Github/Lattice/Vivaz MachXO2/clk_divider.vhd
+VHDL design file = D:/Github/Lattice/Vivaz MachXO2/reset_routine.vhd
+VHDL design file = D:/Github/Lattice/Vivaz MachXO2/debounce.vhd
+VHDL design file = D:/Github/Lattice/Vivaz MachXO2/write_command_data.vhd
+VHDL design file = D:/Github/Lattice/Vivaz MachXO2/commanddataarbiter.vhd
+VHDL design file = D:/Github/Lattice/Vivaz MachXO2/movetopoint.vhd
+VHDL design file = D:/Github/Lattice/Vivaz MachXO2/setbacklight.vhd
+VHDL design file = D:/Github/Lattice/Vivaz MachXO2/fillcolor.vhd
+VHDL design file = D:/Github/Lattice/Vivaz MachXO2/fsm_init.vhd
 NGD file = Vivaz_MachXO2_impl1.ngd
 -sdc option: SDC file input not used.
 -lpf option: Output file option is ON.
@@ -75,18 +84,50 @@ Technology check ok...
 Analyzing Verilog file C:/lscc/diamond/3.7_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
 Compile design.
 Compile Design Begin
-WARNING - synthesis: Setting top as the top-level module. To specify the top-level module explicitly, use the -top option.
-INFO - synthesis: The default VHDL library search path is now "Z:/GITHUB/Lattice/Vivaz MachXO2/impl1". VHDL-1504
-Analyzing VHDL file z:/github/lattice/vivaz machxo2/top.vhdl. VHDL-1481
-WARNING - synthesis: z:/github/lattice/vivaz machxo2/top.vhdl(43): 'components' is not compiled in library lattice. VHDL-1240
-INFO - synthesis: z:/github/lattice/vivaz machxo2/top.vhdl(45): analyzing entity top. VHDL-1012
-Analyzing VHDL file z:/github/lattice/vivaz machxo2/top.vhdl. VHDL-1481
-WARNING - synthesis: z:/github/lattice/vivaz machxo2/top.vhdl(43): 'components' is not compiled in library lattice. VHDL-1240
-INFO - synthesis: z:/github/lattice/vivaz machxo2/top.vhdl(45): analyzing entity top. VHDL-1012
+INFO - synthesis: The default VHDL library search path is now "D:/Github/Lattice/Vivaz MachXO2/impl1". VHDL-1504
+Analyzing VHDL file d:/github/lattice/vivaz machxo2/top.vhdl. VHDL-1481
+WARNING - synthesis: d:/github/lattice/vivaz machxo2/top.vhdl(45): 'components' is not compiled in library lattice. VHDL-1240
+INFO - synthesis: d:/github/lattice/vivaz machxo2/top.vhdl(47): analyzing entity top. VHDL-1012
+INFO - synthesis: d:/github/lattice/vivaz machxo2/top.vhdl(67): analyzing architecture behaviour. VHDL-1010
+Analyzing VHDL file d:/github/lattice/vivaz machxo2/clk_divider.vhd. VHDL-1481
+INFO - synthesis: d:/github/lattice/vivaz machxo2/clk_divider.vhd(7): analyzing entity clk_divider. VHDL-1012
+INFO - synthesis: d:/github/lattice/vivaz machxo2/clk_divider.vhd(18): analyzing architecture beh_clk_divider. VHDL-1010
+Analyzing VHDL file d:/github/lattice/vivaz machxo2/reset_routine.vhd. VHDL-1481
+INFO - synthesis: d:/github/lattice/vivaz machxo2/reset_routine.vhd(7): analyzing entity reset_routine. VHDL-1012
+INFO - synthesis: d:/github/lattice/vivaz machxo2/reset_routine.vhd(17): analyzing architecture beh_reset_routine. VHDL-1010
+Analyzing VHDL file d:/github/lattice/vivaz machxo2/debounce.vhd. VHDL-1481
+INFO - synthesis: d:/github/lattice/vivaz machxo2/debounce.vhd(7): analyzing entity debounce. VHDL-1012
+INFO - synthesis: d:/github/lattice/vivaz machxo2/debounce.vhd(15): analyzing architecture beh_debounce. VHDL-1010
+Analyzing VHDL file d:/github/lattice/vivaz machxo2/write_command_data.vhd. VHDL-1481
+INFO - synthesis: d:/github/lattice/vivaz machxo2/write_command_data.vhd(7): analyzing entity write_command_data. VHDL-1012
+INFO - synthesis: d:/github/lattice/vivaz machxo2/write_command_data.vhd(22): analyzing architecture beh_write_command_data. VHDL-1010
+Analyzing VHDL file d:/github/lattice/vivaz machxo2/commanddataarbiter.vhd. VHDL-1481
+INFO - synthesis: d:/github/lattice/vivaz machxo2/commanddataarbiter.vhd(7): analyzing entity commanddataarbiter. VHDL-1012
+INFO - synthesis: d:/github/lattice/vivaz machxo2/commanddataarbiter.vhd(36): analyzing architecture beh_commanddataarbiter. VHDL-1010
+Analyzing VHDL file d:/github/lattice/vivaz machxo2/movetopoint.vhd. VHDL-1481
+INFO - synthesis: d:/github/lattice/vivaz machxo2/movetopoint.vhd(7): analyzing entity movetopoint. VHDL-1012
+INFO - synthesis: d:/github/lattice/vivaz machxo2/movetopoint.vhd(25): analyzing architecture beh_movetopoint. VHDL-1010
+Analyzing VHDL file d:/github/lattice/vivaz machxo2/setbacklight.vhd. VHDL-1481
+INFO - synthesis: d:/github/lattice/vivaz machxo2/setbacklight.vhd(7): analyzing entity setbacklight. VHDL-1012
+INFO - synthesis: d:/github/lattice/vivaz machxo2/setbacklight.vhd(22): analyzing architecture beh_setbacklight. VHDL-1010
+Analyzing VHDL file d:/github/lattice/vivaz machxo2/fillcolor.vhd. VHDL-1481
+INFO - synthesis: d:/github/lattice/vivaz machxo2/fillcolor.vhd(7): analyzing entity fillcolor. VHDL-1012
+INFO - synthesis: d:/github/lattice/vivaz machxo2/fillcolor.vhd(23): analyzing architecture beh_fillcolor. VHDL-1010
+Analyzing VHDL file d:/github/lattice/vivaz machxo2/fsm_init.vhd. VHDL-1481
+INFO - synthesis: d:/github/lattice/vivaz machxo2/fsm_init.vhd(7): analyzing entity fsm_init. VHDL-1012
+INFO - synthesis: d:/github/lattice/vivaz machxo2/fsm_init.vhd(30): analyzing architecture beh_fsm_init. VHDL-1010
 unit top is not yet analyzed. VHDL-1485
-WARNING - synthesis: z:/github/lattice/vivaz machxo2/top.vhdl(62): entity top does not have an architecture. VHDL-1404
-z:/github/lattice/vivaz machxo2/top.vhdl(45): executing top()
+d:/github/lattice/vivaz machxo2/top.vhdl(47): executing top(behaviour)
 
+WARNING - synthesis: d:/github/lattice/vivaz machxo2/top.vhdl(283): using initial value '0' for movetopoint_go_i since it is never assigned. VHDL-1303
+WARNING - synthesis: d:/github/lattice/vivaz machxo2/top.vhdl(284): using initial value "UUUUUUUUUU" for movetopoint_xstart_i since it is never assigned. VHDL-1303
+WARNING - synthesis: d:/github/lattice/vivaz machxo2/top.vhdl(285): using initial value "UUUUUUUUUU" for movetopoint_xend_i since it is never assigned. VHDL-1303
+WARNING - synthesis: d:/github/lattice/vivaz machxo2/top.vhdl(286): using initial value "UUUUUUUUU" for movetopoint_ystart_i since it is never assigned. VHDL-1303
+WARNING - synthesis: d:/github/lattice/vivaz machxo2/top.vhdl(287): using initial value "UUUUUUUUU" for movetopoint_yend_i since it is never assigned. VHDL-1303
+WARNING - synthesis: d:/github/lattice/vivaz machxo2/top.vhdl(302): using initial value '0' for fillcolor_go_i since it is never assigned. VHDL-1303
+WARNING - synthesis: d:/github/lattice/vivaz machxo2/top.vhdl(303): using initial value "UUUUUUUUUUUUUUUU" for fillcolor_color565_i since it is never assigned. VHDL-1303
+WARNING - synthesis: d:/github/lattice/vivaz machxo2/top.vhdl(304): using initial value "UUUUUUUUUUUUUUUUUU" for fillcolor_pixcount_i since it is never assigned. VHDL-1303
+WARNING - synthesis: d:/github/lattice/vivaz machxo2/top.vhdl(65): replacing existing netlist top(behaviour). VHDL-1205
 Top module name (VHDL): top
 Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
@@ -95,68 +136,61 @@ Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/or5g00/data/orc5glib.ngl'..
 Loading device for application map from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.7_x64/ispfpga.
 Package Status:                     Final          Version 1.39.
 Top-level module name = top.
-WARNING - synthesis: led30[3] is not assigned a value (floating) -- simulation mismatch possible.
-WARNING - synthesis: led30[2] is not assigned a value (floating) -- simulation mismatch possible.
-WARNING - synthesis: led30[1] is not assigned a value (floating) -- simulation mismatch possible.
-WARNING - synthesis: led30[0] is not assigned a value (floating) -- simulation mismatch possible.
-WARNING - synthesis: led67[1] is not assigned a value (floating) -- simulation mismatch possible.
-WARNING - synthesis: led67[0] is not assigned a value (floating) -- simulation mismatch possible.
-WARNING - synthesis: CH1 is not assigned a value (floating) -- simulation mismatch possible.
-WARNING - synthesis: CH2 is not assigned a value (floating) -- simulation mismatch possible.
-WARNING - synthesis: CH3 is not assigned a value (floating) -- simulation mismatch possible.
-WARNING - synthesis: CH4 is not assigned a value (floating) -- simulation mismatch possible.
-WARNING - synthesis: vivaz_RS is not assigned a value (floating) -- simulation mismatch possible.
-WARNING - synthesis: vivaz_RESET is not assigned a value (floating) -- simulation mismatch possible.
-WARNING - synthesis: vivaz_WR is not assigned a value (floating) -- simulation mismatch possible.
-WARNING - synthesis: vivaz_D015[15] is not assigned a value (floating) -- simulation mismatch possible.
-WARNING - synthesis: vivaz_D015[14] is not assigned a value (floating) -- simulation mismatch possible.
-WARNING - synthesis: vivaz_D015[13] is not assigned a value (floating) -- simulation mismatch possible.
-WARNING - synthesis: vivaz_D015[12] is not assigned a value (floating) -- simulation mismatch possible.
-WARNING - synthesis: vivaz_D015[11] is not assigned a value (floating) -- simulation mismatch possible.
-WARNING - synthesis: vivaz_D015[10] is not assigned a value (floating) -- simulation mismatch possible.
-WARNING - synthesis: vivaz_D015[9] is not assigned a value (floating) -- simulation mismatch possible.
-WARNING - synthesis: vivaz_D015[8] is not assigned a value (floating) -- simulation mismatch possible.
-WARNING - synthesis: vivaz_D015[7] is not assigned a value (floating) -- simulation mismatch possible.
-WARNING - synthesis: vivaz_D015[6] is not assigned a value (floating) -- simulation mismatch possible.
-WARNING - synthesis: vivaz_D015[5] is not assigned a value (floating) -- simulation mismatch possible.
-WARNING - synthesis: vivaz_D015[4] is not assigned a value (floating) -- simulation mismatch possible.
-WARNING - synthesis: vivaz_D015[3] is not assigned a value (floating) -- simulation mismatch possible.
-WARNING - synthesis: vivaz_D015[2] is not assigned a value (floating) -- simulation mismatch possible.
-WARNING - synthesis: vivaz_D015[1] is not assigned a value (floating) -- simulation mismatch possible.
-WARNING - synthesis: vivaz_D015[0] is not assigned a value (floating) -- simulation mismatch possible.
-######## Missing driver on net n2. Patching with GND.
-######## Missing driver on net n3. Patching with GND.
-######## Missing driver on net n4. Patching with GND.
-######## Missing driver on net n5. Patching with GND.
-######## Missing driver on net n6. Patching with GND.
-######## Missing driver on net n7. Patching with GND.
-######## Missing driver on net n8. Patching with GND.
-######## Missing driver on net n9. Patching with GND.
-######## Missing driver on net n10. Patching with GND.
-######## Missing driver on net n11. Patching with GND.
-######## Missing driver on net n12. Patching with GND.
-######## Missing driver on net n13. Patching with GND.
-######## Missing driver on net n14. Patching with GND.
-######## Missing driver on net n15. Patching with GND.
-######## Missing driver on net n16. Patching with GND.
-######## Missing driver on net n17. Patching with GND.
-######## Missing driver on net n18. Patching with GND.
-######## Missing driver on net n19. Patching with GND.
-######## Missing driver on net n20. Patching with GND.
-######## Missing driver on net n21. Patching with GND.
-######## Missing driver on net n22. Patching with GND.
-######## Missing driver on net n23. Patching with GND.
-######## Missing driver on net n24. Patching with GND.
-######## Missing driver on net n25. Patching with GND.
-######## Missing driver on net n26. Patching with GND.
-######## Missing driver on net n27. Patching with GND.
-######## Missing driver on net n28. Patching with GND.
-######## Missing driver on net n29. Patching with GND.
-######## Missing driver on net n30. Patching with GND.
+WARNING - synthesis: Initial value found on net CH1 will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net CH2 will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net CH3 will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net pb1_i_N_1 will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net vivaz_RS will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net vivaz_RESET will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net clk53_i will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net clk1k_i will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net main_reset_i will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net pb1_i will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net resetroutine_done_i will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net resetroutine_go_i will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net writecommanddataroutine_command0data1_i will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net writecommanddataroutine_done_i will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net commanddataarbiter_done_i will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net movetopoint_commanddata_i will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net movetopoint_start_i will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net setbacklight_commanddata_i will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net setbacklight_start_i will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net setbacklight_done_i will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net setbacklight_go_i will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net fillcolor_commanddata_i will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net fillcolor_start_i will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net passthrough_commanddata_i will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net passthrough_start_i will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net clk53_out will be ignored due to unrecognized driver type
+WARNING - synthesis: d:/github/lattice/vivaz machxo2/movetopoint.vhd(54): Register \inst_movetopoint/start_i_341_349 clock is stuck at Zero. VDB-5035
+WARNING - synthesis: d:/github/lattice/vivaz machxo2/fillcolor.vhd(47): Register \inst_fillcolor/start_i_112_121 clock is stuck at Zero. VDB-5035
+WARNING - synthesis: d:/github/lattice/vivaz machxo2/movetopoint.vhd(375): Register \inst_movetopoint/start_i_350 is stuck at Zero. VDB-5013
+WARNING - synthesis: d:/github/lattice/vivaz machxo2/fillcolor.vhd(130): Register \inst_fillcolor/start_i_122 is stuck at Zero. VDB-5013
 
 
 
-GSR will not be inferred because no asynchronous signal was found in the netlist.
+WARNING - synthesis: Bit 0 of Register \inst_fillcolor/valueout is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \inst_fillcolor/valueout is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \inst_fillcolor/valueout is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \inst_fillcolor/valueout is stuck at Zero
+WARNING - synthesis: Bit 4 of Register \inst_fillcolor/valueout is stuck at Zero
+WARNING - synthesis: Bit 5 of Register \inst_fillcolor/valueout is stuck at Zero
+WARNING - synthesis: Bit 6 of Register \inst_fillcolor/valueout is stuck at Zero
+WARNING - synthesis: Bit 7 of Register \inst_fillcolor/valueout is stuck at Zero
+WARNING - synthesis: Bit 8 of Register \inst_fillcolor/valueout is stuck at Zero
+WARNING - synthesis: Bit 9 of Register \inst_fillcolor/valueout is stuck at Zero
+WARNING - synthesis: Bit 11 of Register \inst_fillcolor/valueout is stuck at Zero
+WARNING - synthesis: Bit 14 of Register \inst_fillcolor/valueout is stuck at Zero
+WARNING - synthesis: Bit 15 of Register \inst_fillcolor/valueout is stuck at Zero
+WARNING - synthesis: d:/github/lattice/vivaz machxo2/setbacklight.vhd(200): Register \inst_setbacklight/valueout__i15 is stuck at Zero. VDB-5013
+WARNING - synthesis: d:/github/lattice/vivaz machxo2/write_command_data.vhd(68): Register \inst_writecommanddata/fsm_state_i__i2 is stuck at Zero. VDB-5013
+WARNING - synthesis: d:/github/lattice/vivaz machxo2/fsm_init.vhd(658): Register \inst_fsm_init/valueout_passthrough_i_i0_i8 is stuck at Zero. VDB-5013
+WARNING - synthesis: d:/github/lattice/vivaz machxo2/commanddataarbiter.vhd(148): Register \inst_commanddataarbiter/cdroutine_value_i_i0_i15 is stuck at Zero. VDB-5013
+GSR instance connected to net n3941.
+Duplicate register/latch removal. \inst_setbacklight/valueout__i7 is a one-to-one match with \inst_setbacklight/valueout__i5.
+Duplicate register/latch removal. \inst_setbacklight/valueout__i4 is a one-to-one match with \inst_setbacklight/valueout__i3.
+Duplicate register/latch removal. \inst_movetopoint/valueout_i5 is a one-to-one match with \inst_movetopoint/valueout_i3.
+Duplicate register/latch removal. \inst_movetopoint/valueout_i1 is a one-to-one match with \inst_movetopoint/valueout_i5.
 Applying 1.000000 MHz constraint to all clocks
 
 WARNING - synthesis: No user .sdc file.
@@ -165,22 +199,35 @@ Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/xo2c00a/data/xo2alib.ngl'..
 Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/or5g00/data/orc5glib.ngl'...
-WARNING - synthesis: logical net 'pb1' has no load.
-WARNING - synthesis: input pad net 'pb1' has no legal load.
 WARNING - synthesis: logical net 'pb2' has no load.
 WARNING - synthesis: input pad net 'pb2' has no legal load.
-WARNING - synthesis: logical net 'main_reset' has no load.
-WARNING - synthesis: input pad net 'main_reset' has no legal load.
 WARNING - synthesis: logical net 'vivaz_TE' has no load.
 WARNING - synthesis: input pad net 'vivaz_TE' has no legal load.
-WARNING - synthesis: DRC complete with 8 warnings.
+WARNING - synthesis: DRC complete with 4 warnings.
 All blocks are expanded and NGD expansion is successful.
 Writing NGD file Vivaz_MachXO2_impl1.ngd.
 
 ################### Begin Area Report (top)######################
-Number of register bits => 0 of 7209 (0 % )
+Number of register bits => 260 of 7209 (3 % )
+CCU2D => 65
+FD1P3AX => 48
+FD1P3AY => 3
+FD1P3IX => 104
+FD1P3JX => 2
+FD1S1D => 12
+FD1S3AX => 25
+FD1S3AY => 2
+FD1S3BX => 12
+FD1S3DX => 17
+FD1S3IX => 35
 GSR => 1
-OBZ => 29
+IB => 3
+INV => 1
+L6MUX21 => 1
+LUT4 => 430
+OB => 29
+OSCH => 1
+PFUMX => 32
 ################### End Area Report ##################
 
 ################### Begin BlackBox Report ######################
@@ -189,26 +236,93 @@ TSALL => 1
 
 ################### Begin Clock Report ######################
 Clock Nets
-Number of Clocks: 0
+Number of Clocks: 20
+  Net : tb_clk_c, loads : 190
+  Net : clk, loads : 48
+  Net : inst_commanddataarbiter/clksynth_i, loads : 3
+  Net : inst_clkdivider/clk1k_i, loads : 3
+  Net : inst_fsm_init/counter_i_6__N_847, loads : 2
+  Net : inst_fsm_init/counter_i_6__N_835, loads : 2
+  Net : inst_fsm_init/fsm_state_i_4__N_773, loads : 2
+  Net : inst_fsm_init/counter_i_6__N_831, loads : 2
+  Net : inst_fsm_init/fsm_state_i_4__N_700, loads : 2
+  Net : inst_fsm_init/counter_i_6__N_809, loads : 2
+  Net : inst_fsm_init/counter_i_6__N_839, loads : 2
+  Net : inst_fsm_init/fsm_state_i_4__N_759, loads : 2
+  Net : inst_fsm_init/counter_i_6__N_843, loads : 2
+  Net : inst_fsm_init/fsm_state_i_4__N_745, loads : 2
+  Net : inst_fsm_init/counter_i_6__N_851, loads : 2
+  Net : inst_fsm_init/fsm_state_i_4__N_731, loads : 2
+  Net : inst_debounce1/pb1_i, loads : 1
+  Net : inst_commanddataarbiter/CH1_c, loads : 1
+  Net : inst_fsm_init/setbacklight_go_i, loads : 1
+  Net : inst_fsm_init/resetroutine_go_i, loads : 1
 Clock Enable Nets
-Number of Clock Enables: 0
-Top 0 highest fanout Clock Enables:
+Number of Clock Enables: 50
+Top 10 highest fanout Clock Enables:
+  Net : inst_debounce3/output_N_1154, loads : 22
+  Net : inst_fillcolor/tb_clk_c_enable_98, loads : 18
+  Net : inst_writecommanddata/tb_clk_c_enable_58, loads : 18
+  Net : inst_writecommanddata/tb_clk_c_enable_76, loads : 16
+  Net : inst_debounce1/clk_enable_16, loads : 16
+  Net : inst_commanddataarbiter/tb_clk_c_enable_96, loads : 10
+  Net : inst_debounce1/output_N_1154, loads : 7
+  Net : inst_writecommanddata/tb_clk_c_enable_57, loads : 7
+  Net : inst_fsm_init/tb_clk_c_enable_106, loads : 5
+  Net : inst_fsm_init/tb_clk_c_enable_110, loads : 4
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : vivaz_D015[14], loads : 0
-  Net : vivaz_D015[15], loads : 0
-  Net : vivaz_WR, loads : 0
-  Net : vivaz_RESET, loads : 0
-  Net : vivaz_RS, loads : 0
-  Net : CH4, loads : 0
-  Net : CH3, loads : 0
-  Net : CH2, loads : 0
-  Net : CH1, loads : 0
-  Net : led67[0], loads : 0
+  Net : inst_fsm_init/fsm_state_i_0, loads : 48
+  Net : inst_fsm_init/fsm_state_i_1, loads : 47
+  Net : inst_commanddataarbiter/start_N_652, loads : 45
+  Net : inst_fsm_init/fsm_state_i_2, loads : 41
+  Net : inst_fsm_init/fsm_state_i_3, loads : 39
+  Net : inst_fsm_init/fsm_state_i_4, loads : 37
+  Net : inst_commanddataarbiter/fsm_state_i_1, loads : 35
+  Net : inst_clkdivider/n9775, loads : 28
+  Net : inst_fsm_init/executed_i, loads : 24
+  Net : inst_debounce3/main_reset_i, loads : 23
 ################### End Clock Report ##################
 
-Peak Memory Usage: 69.824  MB
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 1000.000000 -name  |             |             |
+clk7 [get_nets                          |             |             |
+\inst_commanddataarbiter/clksynth_i]    |            -|            -|     0  
+                                        |             |             |
+create_clock -period 1000.000000 -name  |             |             |
+clk6 [get_nets setbacklight_go_i]       |            -|            -|     0  
+                                        |             |             |
+create_clock -period 1000.000000 -name  |             |             |
+clk5 [get_nets CH1_c]                   |            -|            -|     0  
+                                        |             |             |
+create_clock -period 1000.000000 -name  |             |             |
+clk4 [get_nets \inst_debounce1/pb1_i]   |    1.000 MHz|   60.481 MHz|     5  
+                                        |             |             |
+create_clock -period 1000.000000 -name  |             |             |
+clk3 [get_nets clk]                     |    1.000 MHz|   86.873 MHz|     8  
+                                        |             |             |
+create_clock -period 1000.000000 -name  |             |             |
+clk2 [get_nets resetroutine_go_i]       |            -|            -|     0  
+                                        |             |             |
+create_clock -period 1000.000000 -name  |             |             |
+clk1 [get_nets clk1k_i]                 |    1.000 MHz|  115.915 MHz|     7  
+                                        |             |             |
+create_clock -period 1000.000000 -name  |             |             |
+clk0 [get_nets tb_clk_c]                |    1.000 MHz|   84.810 MHz|    15  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Peak Memory Usage: 92.145  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 0.764  secs
+Elapsed CPU time for LSE flow : 2.953  secs
 --------------------------------------------------------------

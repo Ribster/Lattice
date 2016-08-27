@@ -1,37 +1,40 @@
 NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
 NOTE All Rights Reserved *
-NOTE DATE CREATED: Thu Aug 18 20:12:41 2016 *
+NOTE DATE CREATED: Tue Aug 23 16:39:08 2016 *
 NOTE DESIGN NAME: top *
 NOTE DEVICE NAME: LCMXO2-7000HE-5TQFP144 *
 NOTE PIN ASSIGNMENTS *
-NOTE PINS led30[3] : 69 : out *
-NOTE PINS led30[2] : 97 : out *
-NOTE PINS led30[1] : 75 : out *
 NOTE PINS led30[0] : 83 : out *
-NOTE PINS led67[1] : 94 : out *
-NOTE PINS led67[0] : 103 : out *
-NOTE PINS CH1 : 77 : out *
-NOTE PINS CH2 : 96 : out *
-NOTE PINS CH3 : 85 : out *
-NOTE PINS CH4 : 91 : out *
-NOTE PINS vivaz_RS : 86 : out *
-NOTE PINS vivaz_RESET : 92 : out *
-NOTE PINS vivaz_WR : 99 : out *
-NOTE PINS vivaz_D015[15] : 87 : out *
-NOTE PINS vivaz_D015[14] : 78 : out *
-NOTE PINS vivaz_D015[13] : 73 : out *
-NOTE PINS vivaz_D015[12] : 100 : out *
-NOTE PINS vivaz_D015[11] : 93 : out *
-NOTE PINS vivaz_D015[10] : 74 : out *
-NOTE PINS vivaz_D015[9] : 89 : out *
-NOTE PINS vivaz_D015[8] : 82 : out *
-NOTE PINS vivaz_D015[7] : 70 : out *
-NOTE PINS vivaz_D015[6] : 76 : out *
-NOTE PINS vivaz_D015[5] : 95 : out *
-NOTE PINS vivaz_D015[4] : 84 : out *
-NOTE PINS vivaz_D015[3] : 68 : out *
-NOTE PINS vivaz_D015[2] : 81 : out *
-NOTE PINS vivaz_D015[1] : 98 : out *
-NOTE PINS vivaz_D015[0] : 71 : out *
+NOTE PINS led30[1] : 87 : out *
+NOTE PINS led30[2] : 99 : out *
+NOTE PINS led30[3] : 100 : out *
+NOTE PINS led67[1] : 107 : out *
+NOTE PINS led67[0] : 106 : out *
+NOTE PINS CH1 : 38 : out *
+NOTE PINS CH2 : 97 : out *
+NOTE PINS CH3 : 98 : out *
+NOTE PINS CH4 : 105 : out *
+NOTE PINS vivaz_RS : 48 : out *
+NOTE PINS vivaz_RESET : 50 : out *
+NOTE PINS vivaz_WR : 47 : out *
+NOTE PINS vivaz_D015[15] : 55 : out *
+NOTE PINS vivaz_D015[14] : 52 : out *
+NOTE PINS vivaz_D015[13] : 56 : out *
+NOTE PINS vivaz_D015[12] : 54 : out *
+NOTE PINS vivaz_D015[11] : 59 : out *
+NOTE PINS vivaz_D015[10] : 57 : out *
+NOTE PINS vivaz_D015[9] : 60 : out *
+NOTE PINS vivaz_D015[8] : 58 : out *
+NOTE PINS vivaz_D015[7] : 65 : out *
+NOTE PINS vivaz_D015[6] : 61 : out *
+NOTE PINS vivaz_D015[5] : 67 : out *
+NOTE PINS vivaz_D015[4] : 62 : out *
+NOTE PINS vivaz_D015[3] : 70 : out *
+NOTE PINS vivaz_D015[2] : 68 : out *
+NOTE PINS vivaz_D015[1] : 71 : out *
+NOTE PINS vivaz_D015[0] : 69 : out *
+NOTE PINS pb1 : 74 : in *
+NOTE PINS main_reset : 78 : in *
+NOTE PINS tb_clk : 49 : in *
 NOTE CONFIGURATION MODE: NONE *
 NOTE COMPRESSION: on *

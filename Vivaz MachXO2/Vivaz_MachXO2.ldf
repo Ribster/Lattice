@@ -2,8 +2,47 @@
 <BaliProject version="3.2" title="Vivaz_MachXO2" device="LCMXO2-7000HE-5TG144C" default_implementation="impl1">
     <Options/>
     <Implementation title="impl1" dir="impl1" description="impl1" synthesis="lse" default_strategy="Strategy1">
-        <Options/>
+        <Options def_top="top" top="top"/>
         <Source name="top.vhdl" type="VHDL" type_short="VHDL">
+            <Options top_module="top"/>
+        </Source>
+        <Source name="clk_divider.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="reset_routine.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="debounce.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="write_command_data.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="commanddataarbiter.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="movetopoint.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="setbacklight.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="fillcolor.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="fsm_init.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="fsm_loopcolors.vhd" type="VHDL" type_short="VHDL" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="Vivaz_MachXO2_tb.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly">
+            <Options/>
+        </Source>
+        <Source name="impl1/impl1.xcf" type="Programming Project File" type_short="Programming">
+            <Options/>
+        </Source>
+        <Source name="tb/tb.spf" type="Simulation Project File" type_short="SPF">
             <Options/>
         </Source>
         <Source name="Vivaz_MachXO2.lpf" type="Logic Preference" type_short="LPF">

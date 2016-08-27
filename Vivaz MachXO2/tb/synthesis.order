@@ -1,0 +1,13 @@
+i<>.\..\debounce.vhd
+i<>.\..\fsm_init.vhd
+i<>.\..\fillcolor.vhd
+i<>.\..\setbacklight.vhd
+i<>.\..\movetopoint.vhd
+i<>.\..\commanddataarbiter.vhd
+i<>.\..\write_command_data.vhd
+i<>.\..\reset_routine.vhd
+i<>.\..\clk_divider.vhd
+i<>.\..\top.vhdl
+i<>.\..\Vivaz_MachXO2_tb.vhd
+i<>.\..\impl1\Vivaz_MachXO2_impl1_mapvho.vho
+i<>.\..\impl1\Vivaz_MachXO2_impl1_vho.vho

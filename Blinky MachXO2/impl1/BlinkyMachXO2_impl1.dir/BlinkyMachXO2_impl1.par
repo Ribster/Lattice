@@ -4,11 +4,11 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
-Fri May 13 10:07:07 2016
+Sun Aug 21 11:25:48 2016
 
 C:/lscc/diamond/3.7_x64/ispfpga\bin\nt64\par -f BlinkyMachXO2_impl1.p2t
 BlinkyMachXO2_impl1_map.ncd BlinkyMachXO2_impl1.dir BlinkyMachXO2_impl1.prf
--gui -msgset Z:/GITHUB/Lattice/Blinky MachXO2/promote.xml
+-gui -msgset D:/Github/Lattice/Blinky MachXO2/promote.xml
 
 
 Preference file: BlinkyMachXO2_impl1.prf.
@@ -16,11 +16,11 @@ Preference file: BlinkyMachXO2_impl1.prf.
 Level/       Number       Worst        Timing       Worst        Timing       Run          NCD
 Cost [ncd]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
 ----------   --------     -----        ------       -----------  -----------  ----         ------
-5_1   *      0            -2.562       176594       0.377        0            05           Complete
+5_1   *      0            -2.562       176594       0.377        0            04           Complete
 
 
 * : Design saved.
 
-Total (real) run time for 1-seed: 5 secs 
+Total (real) run time for 1-seed: 4 secs 
 
 par done!

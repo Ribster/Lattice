@@ -1,0 +1,14 @@
+[Version]
+Version=10.2
+[Designs]
+tb=tb.adf
+[Settings]
+Active=tb
+[Expand]
+tb=1
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=

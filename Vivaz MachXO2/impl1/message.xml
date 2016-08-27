@@ -1,23 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BaliMessageLog>
+    <Task name="MapVHDLSimFile">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
     <Task name="Map">
         <Message>
             <ID>1166064</ID>
             <Severity>Warning</Severity>
             <Dynamic>input</Dynamic>
-            <Dynamic>pb1</Dynamic>
-        </Message>
-        <Message>
-            <ID>1166064</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>input</Dynamic>
             <Dynamic>pb2</Dynamic>
-        </Message>
-        <Message>
-            <ID>1166064</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>input</Dynamic>
-            <Dynamic>main_reset</Dynamic>
         </Message>
         <Message>
             <ID>1166064</ID>
@@ -28,17 +23,7 @@
         <Message>
             <ID>51001046</ID>
             <Severity>Warning</Severity>
-            <Dynamic>pb1</Dynamic>
-        </Message>
-        <Message>
-            <ID>51001046</ID>
-            <Severity>Warning</Severity>
             <Dynamic>pb2</Dynamic>
-        </Message>
-        <Message>
-            <ID>51001046</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>main_reset</Dynamic>
         </Message>
         <Message>
             <ID>51001046</ID>
@@ -52,219 +37,536 @@
             <Severity>Info</Severity>
         </Message>
         <Message>
-            <ID>35001200</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>top</Dynamic>
-        </Message>
-        <Message>
             <ID>35921504</ID>
             <Severity>Info</Severity>
             <Dynamic></Dynamic>
-            <Dynamic>Z:/GITHUB/Lattice/Vivaz MachXO2/impl1</Dynamic>
+            <Dynamic>D:/Github/Lattice/Vivaz MachXO2/impl1</Dynamic>
         </Message>
         <Message>
             <ID>35921240</ID>
             <Severity>Warning</Severity>
-            <Dynamic>z:/github/lattice/vivaz machxo2/top.vhdl(43): </Dynamic>
+            <Dynamic>d:/github/lattice/vivaz machxo2/top.vhdl(45): </Dynamic>
             <Dynamic>components</Dynamic>
             <Dynamic>lattice</Dynamic>
-            <Navigation>z:/github/lattice/vivaz machxo2/top.vhdl</Navigation>
-            <Navigation>43</Navigation>
+            <Navigation>d:/github/lattice/vivaz machxo2/top.vhdl</Navigation>
+            <Navigation>45</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
             <Severity>Info</Severity>
-            <Dynamic>z:/github/lattice/vivaz machxo2/top.vhdl(45): </Dynamic>
+            <Dynamic>d:/github/lattice/vivaz machxo2/top.vhdl(47): </Dynamic>
             <Dynamic>top</Dynamic>
-            <Navigation>z:/github/lattice/vivaz machxo2/top.vhdl</Navigation>
-            <Navigation>45</Navigation>
+            <Navigation>d:/github/lattice/vivaz machxo2/top.vhdl</Navigation>
+            <Navigation>47</Navigation>
         </Message>
         <Message>
-            <ID>35921240</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>z:/github/lattice/vivaz machxo2/top.vhdl(43): </Dynamic>
-            <Dynamic>components</Dynamic>
-            <Dynamic>lattice</Dynamic>
-            <Navigation>z:/github/lattice/vivaz machxo2/top.vhdl</Navigation>
-            <Navigation>43</Navigation>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/github/lattice/vivaz machxo2/top.vhdl(67): </Dynamic>
+            <Dynamic>behaviour</Dynamic>
+            <Navigation>d:/github/lattice/vivaz machxo2/top.vhdl</Navigation>
+            <Navigation>67</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
             <Severity>Info</Severity>
-            <Dynamic>z:/github/lattice/vivaz machxo2/top.vhdl(45): </Dynamic>
+            <Dynamic>d:/github/lattice/vivaz machxo2/clk_divider.vhd(7): </Dynamic>
+            <Dynamic>clk_divider</Dynamic>
+            <Navigation>d:/github/lattice/vivaz machxo2/clk_divider.vhd</Navigation>
+            <Navigation>7</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/github/lattice/vivaz machxo2/clk_divider.vhd(18): </Dynamic>
+            <Dynamic>beh_clk_divider</Dynamic>
+            <Navigation>d:/github/lattice/vivaz machxo2/clk_divider.vhd</Navigation>
+            <Navigation>18</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/github/lattice/vivaz machxo2/reset_routine.vhd(7): </Dynamic>
+            <Dynamic>reset_routine</Dynamic>
+            <Navigation>d:/github/lattice/vivaz machxo2/reset_routine.vhd</Navigation>
+            <Navigation>7</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/github/lattice/vivaz machxo2/reset_routine.vhd(17): </Dynamic>
+            <Dynamic>beh_reset_routine</Dynamic>
+            <Navigation>d:/github/lattice/vivaz machxo2/reset_routine.vhd</Navigation>
+            <Navigation>17</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/github/lattice/vivaz machxo2/debounce.vhd(7): </Dynamic>
+            <Dynamic>debounce</Dynamic>
+            <Navigation>d:/github/lattice/vivaz machxo2/debounce.vhd</Navigation>
+            <Navigation>7</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/github/lattice/vivaz machxo2/debounce.vhd(15): </Dynamic>
+            <Dynamic>beh_debounce</Dynamic>
+            <Navigation>d:/github/lattice/vivaz machxo2/debounce.vhd</Navigation>
+            <Navigation>15</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/github/lattice/vivaz machxo2/write_command_data.vhd(7): </Dynamic>
+            <Dynamic>write_command_data</Dynamic>
+            <Navigation>d:/github/lattice/vivaz machxo2/write_command_data.vhd</Navigation>
+            <Navigation>7</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/github/lattice/vivaz machxo2/write_command_data.vhd(22): </Dynamic>
+            <Dynamic>beh_write_command_data</Dynamic>
+            <Navigation>d:/github/lattice/vivaz machxo2/write_command_data.vhd</Navigation>
+            <Navigation>22</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/github/lattice/vivaz machxo2/commanddataarbiter.vhd(7): </Dynamic>
+            <Dynamic>commanddataarbiter</Dynamic>
+            <Navigation>d:/github/lattice/vivaz machxo2/commanddataarbiter.vhd</Navigation>
+            <Navigation>7</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/github/lattice/vivaz machxo2/commanddataarbiter.vhd(36): </Dynamic>
+            <Dynamic>beh_commanddataarbiter</Dynamic>
+            <Navigation>d:/github/lattice/vivaz machxo2/commanddataarbiter.vhd</Navigation>
+            <Navigation>36</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/github/lattice/vivaz machxo2/movetopoint.vhd(7): </Dynamic>
+            <Dynamic>movetopoint</Dynamic>
+            <Navigation>d:/github/lattice/vivaz machxo2/movetopoint.vhd</Navigation>
+            <Navigation>7</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/github/lattice/vivaz machxo2/movetopoint.vhd(25): </Dynamic>
+            <Dynamic>beh_movetopoint</Dynamic>
+            <Navigation>d:/github/lattice/vivaz machxo2/movetopoint.vhd</Navigation>
+            <Navigation>25</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/github/lattice/vivaz machxo2/setbacklight.vhd(7): </Dynamic>
+            <Dynamic>setbacklight</Dynamic>
+            <Navigation>d:/github/lattice/vivaz machxo2/setbacklight.vhd</Navigation>
+            <Navigation>7</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/github/lattice/vivaz machxo2/setbacklight.vhd(22): </Dynamic>
+            <Dynamic>beh_setbacklight</Dynamic>
+            <Navigation>d:/github/lattice/vivaz machxo2/setbacklight.vhd</Navigation>
+            <Navigation>22</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/github/lattice/vivaz machxo2/fillcolor.vhd(7): </Dynamic>
+            <Dynamic>fillcolor</Dynamic>
+            <Navigation>d:/github/lattice/vivaz machxo2/fillcolor.vhd</Navigation>
+            <Navigation>7</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/github/lattice/vivaz machxo2/fillcolor.vhd(23): </Dynamic>
+            <Dynamic>beh_fillcolor</Dynamic>
+            <Navigation>d:/github/lattice/vivaz machxo2/fillcolor.vhd</Navigation>
+            <Navigation>23</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/github/lattice/vivaz machxo2/fsm_init.vhd(7): </Dynamic>
+            <Dynamic>fsm_init</Dynamic>
+            <Navigation>d:/github/lattice/vivaz machxo2/fsm_init.vhd</Navigation>
+            <Navigation>7</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/github/lattice/vivaz machxo2/fsm_init.vhd(30): </Dynamic>
+            <Dynamic>beh_fsm_init</Dynamic>
+            <Navigation>d:/github/lattice/vivaz machxo2/fsm_init.vhd</Navigation>
+            <Navigation>30</Navigation>
+        </Message>
+        <Message>
+            <ID>35921303</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/github/lattice/vivaz machxo2/top.vhdl(283): </Dynamic>
+            <Dynamic>'0'</Dynamic>
+            <Dynamic>movetopoint_go_i</Dynamic>
+            <Navigation>d:/github/lattice/vivaz machxo2/top.vhdl</Navigation>
+            <Navigation>283</Navigation>
+        </Message>
+        <Message>
+            <ID>35921303</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/github/lattice/vivaz machxo2/top.vhdl(284): </Dynamic>
+            <Dynamic>&quot;UUUUUUUUUU&quot;</Dynamic>
+            <Dynamic>movetopoint_xstart_i</Dynamic>
+            <Navigation>d:/github/lattice/vivaz machxo2/top.vhdl</Navigation>
+            <Navigation>284</Navigation>
+        </Message>
+        <Message>
+            <ID>35921303</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/github/lattice/vivaz machxo2/top.vhdl(285): </Dynamic>
+            <Dynamic>&quot;UUUUUUUUUU&quot;</Dynamic>
+            <Dynamic>movetopoint_xend_i</Dynamic>
+            <Navigation>d:/github/lattice/vivaz machxo2/top.vhdl</Navigation>
+            <Navigation>285</Navigation>
+        </Message>
+        <Message>
+            <ID>35921303</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/github/lattice/vivaz machxo2/top.vhdl(286): </Dynamic>
+            <Dynamic>&quot;UUUUUUUUU&quot;</Dynamic>
+            <Dynamic>movetopoint_ystart_i</Dynamic>
+            <Navigation>d:/github/lattice/vivaz machxo2/top.vhdl</Navigation>
+            <Navigation>286</Navigation>
+        </Message>
+        <Message>
+            <ID>35921303</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/github/lattice/vivaz machxo2/top.vhdl(287): </Dynamic>
+            <Dynamic>&quot;UUUUUUUUU&quot;</Dynamic>
+            <Dynamic>movetopoint_yend_i</Dynamic>
+            <Navigation>d:/github/lattice/vivaz machxo2/top.vhdl</Navigation>
+            <Navigation>287</Navigation>
+        </Message>
+        <Message>
+            <ID>35921303</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/github/lattice/vivaz machxo2/top.vhdl(302): </Dynamic>
+            <Dynamic>'0'</Dynamic>
+            <Dynamic>fillcolor_go_i</Dynamic>
+            <Navigation>d:/github/lattice/vivaz machxo2/top.vhdl</Navigation>
+            <Navigation>302</Navigation>
+        </Message>
+        <Message>
+            <ID>35921303</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/github/lattice/vivaz machxo2/top.vhdl(303): </Dynamic>
+            <Dynamic>&quot;UUUUUUUUUUUUUUUU&quot;</Dynamic>
+            <Dynamic>fillcolor_color565_i</Dynamic>
+            <Navigation>d:/github/lattice/vivaz machxo2/top.vhdl</Navigation>
+            <Navigation>303</Navigation>
+        </Message>
+        <Message>
+            <ID>35921303</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/github/lattice/vivaz machxo2/top.vhdl(304): </Dynamic>
+            <Dynamic>&quot;UUUUUUUUUUUUUUUUUU&quot;</Dynamic>
+            <Dynamic>fillcolor_pixcount_i</Dynamic>
+            <Navigation>d:/github/lattice/vivaz machxo2/top.vhdl</Navigation>
+            <Navigation>304</Navigation>
+        </Message>
+        <Message>
+            <ID>35921205</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/github/lattice/vivaz machxo2/top.vhdl(65): </Dynamic>
             <Dynamic>top</Dynamic>
-            <Navigation>z:/github/lattice/vivaz machxo2/top.vhdl</Navigation>
-            <Navigation>45</Navigation>
+            <Dynamic>behaviour</Dynamic>
+            <Navigation>d:/github/lattice/vivaz machxo2/top.vhdl</Navigation>
+            <Navigation>65</Navigation>
         </Message>
         <Message>
-            <ID>35921404</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>z:/github/lattice/vivaz machxo2/top.vhdl(62): </Dynamic>
-            <Dynamic>top</Dynamic>
-            <Navigation>z:/github/lattice/vivaz machxo2/top.vhdl</Navigation>
-            <Navigation>62</Navigation>
-        </Message>
-        <Message>
-            <ID>35001757</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>led30[3]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001757</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>led30[2]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001757</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>led30[1]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001757</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>led30[0]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001757</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>led67[1]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001757</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>led67[0]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001757</ID>
+            <ID>35001771</ID>
             <Severity>Warning</Severity>
             <Dynamic>CH1</Dynamic>
         </Message>
         <Message>
-            <ID>35001757</ID>
+            <ID>35001771</ID>
             <Severity>Warning</Severity>
             <Dynamic>CH2</Dynamic>
         </Message>
         <Message>
-            <ID>35001757</ID>
+            <ID>35001771</ID>
             <Severity>Warning</Severity>
             <Dynamic>CH3</Dynamic>
         </Message>
         <Message>
-            <ID>35001757</ID>
+            <ID>35001771</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CH4</Dynamic>
+            <Dynamic>pb1_i_N_1</Dynamic>
         </Message>
         <Message>
-            <ID>35001757</ID>
+            <ID>35001771</ID>
             <Severity>Warning</Severity>
             <Dynamic>vivaz_RS</Dynamic>
         </Message>
         <Message>
-            <ID>35001757</ID>
+            <ID>35001771</ID>
             <Severity>Warning</Severity>
             <Dynamic>vivaz_RESET</Dynamic>
         </Message>
         <Message>
-            <ID>35001757</ID>
+            <ID>35001771</ID>
             <Severity>Warning</Severity>
-            <Dynamic>vivaz_WR</Dynamic>
+            <Dynamic>clk53_i</Dynamic>
         </Message>
         <Message>
-            <ID>35001757</ID>
+            <ID>35001771</ID>
             <Severity>Warning</Severity>
-            <Dynamic>vivaz_D015[15]</Dynamic>
+            <Dynamic>clk1k_i</Dynamic>
         </Message>
         <Message>
-            <ID>35001757</ID>
+            <ID>35001771</ID>
             <Severity>Warning</Severity>
-            <Dynamic>vivaz_D015[14]</Dynamic>
+            <Dynamic>main_reset_i</Dynamic>
         </Message>
         <Message>
-            <ID>35001757</ID>
+            <ID>35001771</ID>
             <Severity>Warning</Severity>
-            <Dynamic>vivaz_D015[13]</Dynamic>
+            <Dynamic>pb1_i</Dynamic>
         </Message>
         <Message>
-            <ID>35001757</ID>
+            <ID>35001771</ID>
             <Severity>Warning</Severity>
-            <Dynamic>vivaz_D015[12]</Dynamic>
+            <Dynamic>resetroutine_done_i</Dynamic>
         </Message>
         <Message>
-            <ID>35001757</ID>
+            <ID>35001771</ID>
             <Severity>Warning</Severity>
-            <Dynamic>vivaz_D015[11]</Dynamic>
+            <Dynamic>resetroutine_go_i</Dynamic>
         </Message>
         <Message>
-            <ID>35001757</ID>
+            <ID>35001771</ID>
             <Severity>Warning</Severity>
-            <Dynamic>vivaz_D015[10]</Dynamic>
+            <Dynamic>writecommanddataroutine_command0data1_i</Dynamic>
         </Message>
         <Message>
-            <ID>35001757</ID>
+            <ID>35001771</ID>
             <Severity>Warning</Severity>
-            <Dynamic>vivaz_D015[9]</Dynamic>
+            <Dynamic>writecommanddataroutine_done_i</Dynamic>
         </Message>
         <Message>
-            <ID>35001757</ID>
+            <ID>35001771</ID>
             <Severity>Warning</Severity>
-            <Dynamic>vivaz_D015[8]</Dynamic>
+            <Dynamic>commanddataarbiter_done_i</Dynamic>
         </Message>
         <Message>
-            <ID>35001757</ID>
+            <ID>35001771</ID>
             <Severity>Warning</Severity>
-            <Dynamic>vivaz_D015[7]</Dynamic>
+            <Dynamic>movetopoint_commanddata_i</Dynamic>
         </Message>
         <Message>
-            <ID>35001757</ID>
+            <ID>35001771</ID>
             <Severity>Warning</Severity>
-            <Dynamic>vivaz_D015[6]</Dynamic>
+            <Dynamic>movetopoint_start_i</Dynamic>
         </Message>
         <Message>
-            <ID>35001757</ID>
+            <ID>35001771</ID>
             <Severity>Warning</Severity>
-            <Dynamic>vivaz_D015[5]</Dynamic>
+            <Dynamic>setbacklight_commanddata_i</Dynamic>
         </Message>
         <Message>
-            <ID>35001757</ID>
+            <ID>35001771</ID>
             <Severity>Warning</Severity>
-            <Dynamic>vivaz_D015[4]</Dynamic>
+            <Dynamic>setbacklight_start_i</Dynamic>
         </Message>
         <Message>
-            <ID>35001757</ID>
+            <ID>35001771</ID>
             <Severity>Warning</Severity>
-            <Dynamic>vivaz_D015[3]</Dynamic>
+            <Dynamic>setbacklight_done_i</Dynamic>
         </Message>
         <Message>
-            <ID>35001757</ID>
+            <ID>35001771</ID>
             <Severity>Warning</Severity>
-            <Dynamic>vivaz_D015[2]</Dynamic>
+            <Dynamic>setbacklight_go_i</Dynamic>
         </Message>
         <Message>
-            <ID>35001757</ID>
+            <ID>35001771</ID>
             <Severity>Warning</Severity>
-            <Dynamic>vivaz_D015[1]</Dynamic>
+            <Dynamic>fillcolor_commanddata_i</Dynamic>
         </Message>
         <Message>
-            <ID>35001757</ID>
+            <ID>35001771</ID>
             <Severity>Warning</Severity>
-            <Dynamic>vivaz_D015[0]</Dynamic>
+            <Dynamic>fillcolor_start_i</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>passthrough_commanddata_i</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>passthrough_start_i</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>clk53_out</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935035</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/github/lattice/vivaz machxo2/movetopoint.vhd(54): </Dynamic>
+            <Dynamic>\inst_movetopoint/start_i_341_349</Dynamic>
+            <Navigation>d:/github/lattice/vivaz machxo2/movetopoint.vhd</Navigation>
+            <Navigation>54</Navigation>
+        </Message>
+        <Message>
+            <ID>35935035</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/github/lattice/vivaz machxo2/fillcolor.vhd(47): </Dynamic>
+            <Dynamic>\inst_fillcolor/start_i_112_121</Dynamic>
+            <Navigation>d:/github/lattice/vivaz machxo2/fillcolor.vhd</Navigation>
+            <Navigation>47</Navigation>
+        </Message>
+        <Message>
+            <ID>35935013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/github/lattice/vivaz machxo2/movetopoint.vhd(375): </Dynamic>
+            <Dynamic>\inst_movetopoint/start_i_350</Dynamic>
+            <Navigation>d:/github/lattice/vivaz machxo2/movetopoint.vhd</Navigation>
+            <Navigation>375</Navigation>
+        </Message>
+        <Message>
+            <ID>35935013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/github/lattice/vivaz machxo2/fillcolor.vhd(130): </Dynamic>
+            <Dynamic>\inst_fillcolor/start_i_122</Dynamic>
+            <Navigation>d:/github/lattice/vivaz machxo2/fillcolor.vhd</Navigation>
+            <Navigation>130</Navigation>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>0</Dynamic>
+            <Dynamic>\inst_fillcolor/valueout</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>1</Dynamic>
+            <Dynamic>\inst_fillcolor/valueout</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>2</Dynamic>
+            <Dynamic>\inst_fillcolor/valueout</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>3</Dynamic>
+            <Dynamic>\inst_fillcolor/valueout</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>4</Dynamic>
+            <Dynamic>\inst_fillcolor/valueout</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>5</Dynamic>
+            <Dynamic>\inst_fillcolor/valueout</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>6</Dynamic>
+            <Dynamic>\inst_fillcolor/valueout</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>7</Dynamic>
+            <Dynamic>\inst_fillcolor/valueout</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>8</Dynamic>
+            <Dynamic>\inst_fillcolor/valueout</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>9</Dynamic>
+            <Dynamic>\inst_fillcolor/valueout</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>11</Dynamic>
+            <Dynamic>\inst_fillcolor/valueout</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>14</Dynamic>
+            <Dynamic>\inst_fillcolor/valueout</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>15</Dynamic>
+            <Dynamic>\inst_fillcolor/valueout</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/github/lattice/vivaz machxo2/setbacklight.vhd(200): </Dynamic>
+            <Dynamic>\inst_setbacklight/valueout__i15</Dynamic>
+            <Navigation>d:/github/lattice/vivaz machxo2/setbacklight.vhd</Navigation>
+            <Navigation>200</Navigation>
+        </Message>
+        <Message>
+            <ID>35935013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/github/lattice/vivaz machxo2/write_command_data.vhd(68): </Dynamic>
+            <Dynamic>\inst_writecommanddata/fsm_state_i__i2</Dynamic>
+            <Navigation>d:/github/lattice/vivaz machxo2/write_command_data.vhd</Navigation>
+            <Navigation>68</Navigation>
+        </Message>
+        <Message>
+            <ID>35935013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/github/lattice/vivaz machxo2/fsm_init.vhd(658): </Dynamic>
+            <Dynamic>\inst_fsm_init/valueout_passthrough_i_i0_i8</Dynamic>
+            <Navigation>d:/github/lattice/vivaz machxo2/fsm_init.vhd</Navigation>
+            <Navigation>658</Navigation>
+        </Message>
+        <Message>
+            <ID>35935013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/github/lattice/vivaz machxo2/commanddataarbiter.vhd(148): </Dynamic>
+            <Dynamic>\inst_commanddataarbiter/cdroutine_value_i_i0_i15</Dynamic>
+            <Navigation>d:/github/lattice/vivaz machxo2/commanddataarbiter.vhd</Navigation>
+            <Navigation>148</Navigation>
         </Message>
         <Message>
             <ID>35001611</ID>
             <Severity>Warning</Severity>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>pb1</Dynamic>
-            <Navigation>pb1</Navigation>
-        </Message>
-        <Message>
-            <ID>1166064</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>input</Dynamic>
-            <Dynamic>pb1</Dynamic>
         </Message>
         <Message>
             <ID>1166052</ID>
@@ -283,19 +585,6 @@
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>main_reset</Dynamic>
-            <Navigation>main_reset</Navigation>
-        </Message>
-        <Message>
-            <ID>1166064</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>input</Dynamic>
-            <Dynamic>main_reset</Dynamic>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
             <Dynamic>vivaz_TE</Dynamic>
             <Navigation>vivaz_TE</Navigation>
         </Message>
@@ -308,7 +597,44 @@
         <Message>
             <ID>1163101</ID>
             <Severity>Warning</Severity>
-            <Dynamic>8</Dynamic>
+            <Dynamic>4</Dynamic>
+        </Message>
+    </Task>
+    <Task name="PAR">
+        <Message>
+            <ID>66011008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>
+   Signal=CH1_c loads=2 clock_loads=1
+   Signal=inst_commanddataarbiter/clksynth_i loads=3 clock_loads=3
+   Signal=inst_debounce1/pb1_i loads=2 clock_loads=1
+   Signal=clk1k_i loads=17 clock_loads=3
+   Signal=resetroutine_go_i loads=1 clock_loads=1
+   Signal=setbacklight_go_i loads=1 clock_loads=1
+   Signal=inst_fsm_init/f   ....   _i_6__N_831 loads=2 clock_loads=1
+   Signal=inst_fsm_init/counter_i_6__N_809 loads=2 clock_loads=1
+   Signal=inst_fsm_init/fsm_state_i_4__N_759 loads=2 clock_loads=1</Dynamic>
+        </Message>
+        <Message>
+            <ID>66011008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>
+   Signal=CH1_c loads=2 clock_loads=1
+   Signal=inst_commanddataarbiter/clksynth_i loads=3 clock_loads=3
+   Signal=inst_debounce1/pb1_i loads=2 clock_loads=1
+   Signal=clk1k_i loads=17 clock_loads=3
+   Signal=resetroutine_go_i loads=1 clock_loads=1
+   Signal=setbacklight_go_i loads=1 clock_loads=1
+   Signal=inst_fsm_init/f   ....   _i_6__N_831 loads=2 clock_loads=1
+   Signal=inst_fsm_init/counter_i_6__N_809 loads=2 clock_loads=1
+   Signal=inst_fsm_init/fsm_state_i_4__N_759 loads=2 clock_loads=1</Dynamic>
+        </Message>
+    </Task>
+    <Task name="TimingSimFileVHD">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
         </Message>
     </Task>
 </BaliMessageLog>

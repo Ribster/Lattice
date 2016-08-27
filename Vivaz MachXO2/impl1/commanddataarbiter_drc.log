@@ -1,0 +1,166 @@
+Results of NGD DRC are available in commanddataarbiter_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.7_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+WARNING - synthesis: logical net 'rst' has no load.
+WARNING - synthesis: input pad net 'rst' has no legal load.
+WARNING - synthesis: logical net 'clk' has no load.
+WARNING - synthesis: input pad net 'clk' has no legal load.
+WARNING - synthesis: logical net 'status_cdroutine' has no load.
+WARNING - synthesis: input pad net 'status_cdroutine' has no legal load.
+WARNING - synthesis: logical net 'commanddata_movetopoint' has no load.
+WARNING - synthesis: input pad net 'commanddata_movetopoint' has no legal load.
+WARNING - synthesis: logical net 'value_movetopoint[15]' has no load.
+WARNING - synthesis: input pad net 'value_movetopoint[15]' has no legal load.
+WARNING - synthesis: logical net 'value_movetopoint[14]' has no load.
+WARNING - synthesis: input pad net 'value_movetopoint[14]' has no legal load.
+WARNING - synthesis: logical net 'value_movetopoint[13]' has no load.
+WARNING - synthesis: input pad net 'value_movetopoint[13]' has no legal load.
+WARNING - synthesis: logical net 'value_movetopoint[12]' has no load.
+WARNING - synthesis: input pad net 'value_movetopoint[12]' has no legal load.
+WARNING - synthesis: logical net 'value_movetopoint[11]' has no load.
+WARNING - synthesis: input pad net 'value_movetopoint[11]' has no legal load.
+WARNING - synthesis: logical net 'value_movetopoint[10]' has no load.
+WARNING - synthesis: input pad net 'value_movetopoint[10]' has no legal load.
+WARNING - synthesis: logical net 'value_movetopoint[9]' has no load.
+WARNING - synthesis: input pad net 'value_movetopoint[9]' has no legal load.
+WARNING - synthesis: logical net 'value_movetopoint[8]' has no load.
+WARNING - synthesis: input pad net 'value_movetopoint[8]' has no legal load.
+WARNING - synthesis: logical net 'value_movetopoint[7]' has no load.
+WARNING - synthesis: input pad net 'value_movetopoint[7]' has no legal load.
+WARNING - synthesis: logical net 'value_movetopoint[6]' has no load.
+WARNING - synthesis: input pad net 'value_movetopoint[6]' has no legal load.
+WARNING - synthesis: logical net 'value_movetopoint[5]' has no load.
+WARNING - synthesis: input pad net 'value_movetopoint[5]' has no legal load.
+WARNING - synthesis: logical net 'value_movetopoint[4]' has no load.
+WARNING - synthesis: input pad net 'value_movetopoint[4]' has no legal load.
+WARNING - synthesis: logical net 'value_movetopoint[3]' has no load.
+WARNING - synthesis: input pad net 'value_movetopoint[3]' has no legal load.
+WARNING - synthesis: logical net 'value_movetopoint[2]' has no load.
+WARNING - synthesis: input pad net 'value_movetopoint[2]' has no legal load.
+WARNING - synthesis: logical net 'value_movetopoint[1]' has no load.
+WARNING - synthesis: input pad net 'value_movetopoint[1]' has no legal load.
+WARNING - synthesis: logical net 'value_movetopoint[0]' has no load.
+WARNING - synthesis: input pad net 'value_movetopoint[0]' has no legal load.
+WARNING - synthesis: logical net 'go_movetopoint' has no load.
+WARNING - synthesis: input pad net 'go_movetopoint' has no legal load.
+WARNING - synthesis: logical net 'commanddata_setbacklight' has no load.
+WARNING - synthesis: input pad net 'commanddata_setbacklight' has no legal load.
+WARNING - synthesis: logical net 'value_setbacklight[15]' has no load.
+WARNING - synthesis: input pad net 'value_setbacklight[15]' has no legal load.
+WARNING - synthesis: logical net 'value_setbacklight[14]' has no load.
+WARNING - synthesis: input pad net 'value_setbacklight[14]' has no legal load.
+WARNING - synthesis: logical net 'value_setbacklight[13]' has no load.
+WARNING - synthesis: input pad net 'value_setbacklight[13]' has no legal load.
+WARNING - synthesis: logical net 'value_setbacklight[12]' has no load.
+WARNING - synthesis: input pad net 'value_setbacklight[12]' has no legal load.
+WARNING - synthesis: logical net 'value_setbacklight[11]' has no load.
+WARNING - synthesis: input pad net 'value_setbacklight[11]' has no legal load.
+WARNING - synthesis: logical net 'value_setbacklight[10]' has no load.
+WARNING - synthesis: input pad net 'value_setbacklight[10]' has no legal load.
+WARNING - synthesis: logical net 'value_setbacklight[9]' has no load.
+WARNING - synthesis: input pad net 'value_setbacklight[9]' has no legal load.
+WARNING - synthesis: logical net 'value_setbacklight[8]' has no load.
+WARNING - synthesis: input pad net 'value_setbacklight[8]' has no legal load.
+WARNING - synthesis: logical net 'value_setbacklight[7]' has no load.
+WARNING - synthesis: input pad net 'value_setbacklight[7]' has no legal load.
+WARNING - synthesis: logical net 'value_setbacklight[6]' has no load.
+WARNING - synthesis: input pad net 'value_setbacklight[6]' has no legal load.
+WARNING - synthesis: logical net 'value_setbacklight[5]' has no load.
+WARNING - synthesis: input pad net 'value_setbacklight[5]' has no legal load.
+WARNING - synthesis: logical net 'value_setbacklight[4]' has no load.
+WARNING - synthesis: input pad net 'value_setbacklight[4]' has no legal load.
+WARNING - synthesis: logical net 'value_setbacklight[3]' has no load.
+WARNING - synthesis: input pad net 'value_setbacklight[3]' has no legal load.
+WARNING - synthesis: logical net 'value_setbacklight[2]' has no load.
+WARNING - synthesis: input pad net 'value_setbacklight[2]' has no legal load.
+WARNING - synthesis: logical net 'value_setbacklight[1]' has no load.
+WARNING - synthesis: input pad net 'value_setbacklight[1]' has no legal load.
+WARNING - synthesis: logical net 'value_setbacklight[0]' has no load.
+WARNING - synthesis: input pad net 'value_setbacklight[0]' has no legal load.
+WARNING - synthesis: logical net 'go_setbacklight' has no load.
+WARNING - synthesis: input pad net 'go_setbacklight' has no legal load.
+WARNING - synthesis: logical net 'commanddata_fillcolor' has no load.
+WARNING - synthesis: input pad net 'commanddata_fillcolor' has no legal load.
+WARNING - synthesis: logical net 'value_fillcolor[15]' has no load.
+WARNING - synthesis: input pad net 'value_fillcolor[15]' has no legal load.
+WARNING - synthesis: logical net 'value_fillcolor[14]' has no load.
+WARNING - synthesis: input pad net 'value_fillcolor[14]' has no legal load.
+WARNING - synthesis: logical net 'value_fillcolor[13]' has no load.
+WARNING - synthesis: input pad net 'value_fillcolor[13]' has no legal load.
+WARNING - synthesis: logical net 'value_fillcolor[12]' has no load.
+WARNING - synthesis: input pad net 'value_fillcolor[12]' has no legal load.
+WARNING - synthesis: logical net 'value_fillcolor[11]' has no load.
+WARNING - synthesis: input pad net 'value_fillcolor[11]' has no legal load.
+WARNING - synthesis: logical net 'value_fillcolor[10]' has no load.
+WARNING - synthesis: input pad net 'value_fillcolor[10]' has no legal load.
+WARNING - synthesis: logical net 'value_fillcolor[9]' has no load.
+WARNING - synthesis: input pad net 'value_fillcolor[9]' has no legal load.
+WARNING - synthesis: logical net 'value_fillcolor[8]' has no load.
+WARNING - synthesis: input pad net 'value_fillcolor[8]' has no legal load.
+WARNING - synthesis: logical net 'value_fillcolor[7]' has no load.
+WARNING - synthesis: input pad net 'value_fillcolor[7]' has no legal load.
+WARNING - synthesis: logical net 'value_fillcolor[6]' has no load.
+WARNING - synthesis: input pad net 'value_fillcolor[6]' has no legal load.
+WARNING - synthesis: logical net 'value_fillcolor[5]' has no load.
+WARNING - synthesis: input pad net 'value_fillcolor[5]' has no legal load.
+WARNING - synthesis: logical net 'value_fillcolor[4]' has no load.
+WARNING - synthesis: input pad net 'value_fillcolor[4]' has no legal load.
+WARNING - synthesis: logical net 'value_fillcolor[3]' has no load.
+WARNING - synthesis: input pad net 'value_fillcolor[3]' has no legal load.
+WARNING - synthesis: logical net 'value_fillcolor[2]' has no load.
+WARNING - synthesis: input pad net 'value_fillcolor[2]' has no legal load.
+WARNING - synthesis: logical net 'value_fillcolor[1]' has no load.
+WARNING - synthesis: input pad net 'value_fillcolor[1]' has no legal load.
+WARNING - synthesis: logical net 'value_fillcolor[0]' has no load.
+WARNING - synthesis: input pad net 'value_fillcolor[0]' has no legal load.
+WARNING - synthesis: logical net 'go_fillcolor' has no load.
+WARNING - synthesis: input pad net 'go_fillcolor' has no legal load.
+WARNING - synthesis: logical net 'commanddata_passthrough' has no load.
+WARNING - synthesis: input pad net 'commanddata_passthrough' has no legal load.
+WARNING - synthesis: logical net 'value_passthrough[15]' has no load.
+WARNING - synthesis: input pad net 'value_passthrough[15]' has no legal load.
+WARNING - synthesis: logical net 'value_passthrough[14]' has no load.
+WARNING - synthesis: input pad net 'value_passthrough[14]' has no legal load.
+WARNING - synthesis: logical net 'value_passthrough[13]' has no load.
+WARNING - synthesis: input pad net 'value_passthrough[13]' has no legal load.
+WARNING - synthesis: logical net 'value_passthrough[12]' has no load.
+WARNING - synthesis: input pad net 'value_passthrough[12]' has no legal load.
+WARNING - synthesis: logical net 'value_passthrough[11]' has no load.
+WARNING - synthesis: input pad net 'value_passthrough[11]' has no legal load.
+WARNING - synthesis: logical net 'value_passthrough[10]' has no load.
+WARNING - synthesis: input pad net 'value_passthrough[10]' has no legal load.
+WARNING - synthesis: logical net 'value_passthrough[9]' has no load.
+WARNING - synthesis: input pad net 'value_passthrough[9]' has no legal load.
+WARNING - synthesis: logical net 'value_passthrough[8]' has no load.
+WARNING - synthesis: input pad net 'value_passthrough[8]' has no legal load.
+WARNING - synthesis: logical net 'value_passthrough[7]' has no load.
+WARNING - synthesis: input pad net 'value_passthrough[7]' has no legal load.
+WARNING - synthesis: logical net 'value_passthrough[6]' has no load.
+WARNING - synthesis: input pad net 'value_passthrough[6]' has no legal load.
+WARNING - synthesis: logical net 'value_passthrough[5]' has no load.
+WARNING - synthesis: input pad net 'value_passthrough[5]' has no legal load.
+WARNING - synthesis: logical net 'value_passthrough[4]' has no load.
+WARNING - synthesis: input pad net 'value_passthrough[4]' has no legal load.
+WARNING - synthesis: logical net 'value_passthrough[3]' has no load.
+WARNING - synthesis: input pad net 'value_passthrough[3]' has no legal load.
+WARNING - synthesis: logical net 'value_passthrough[2]' has no load.
+WARNING - synthesis: input pad net 'value_passthrough[2]' has no legal load.
+WARNING - synthesis: logical net 'value_passthrough[1]' has no load.
+WARNING - synthesis: input pad net 'value_passthrough[1]' has no legal load.
+WARNING - synthesis: logical net 'value_passthrough[0]' has no load.
+WARNING - synthesis: input pad net 'value_passthrough[0]' has no legal load.
+WARNING - synthesis: logical net 'go_passthrough' has no load.
+WARNING - synthesis: input pad net 'go_passthrough' has no legal load.
+WARNING - synthesis: DRC complete with 150 warnings.
+
+Design Results:
+     23 blocks expanded
+completed the first expansion
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file Vivaz_MachXO2_impl1.ngd.

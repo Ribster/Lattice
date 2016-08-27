@@ -30,11 +30,11 @@
 
 
 -lpf 1
--lib "work" -vhd "Z:/GITHUB/Lattice/Blinky MachXO2/blinking_led.vhd"
+-lib "work" -vhd "D:/Github/Lattice/Blinky MachXO2/blinking_led.vhd"
 -top blinking_led
 
 
--p "C:/lscc/diamond/3.7_x64/ispfpga/xo2c00/data" "Z:/GITHUB/Lattice/Blinky MachXO2/impl1" "Z:/GITHUB/Lattice/Blinky MachXO2"
+-p "C:/lscc/diamond/3.7_x64/ispfpga/xo2c00/data" "D:/Github/Lattice/Blinky MachXO2/impl1" "D:/Github/Lattice/Blinky MachXO2"
 
 -ngd "BlinkyMachXO2_impl1.ngd"
 

@@ -16,36 +16,36 @@
 Command line:   map -a MachXO2 -p LCMXO2-7000HE -t TQFP144 -s 5 -oc Commercial
      Vivaz_MachXO2_impl1.ngd -o Vivaz_MachXO2_impl1_map.ncd -pr
      Vivaz_MachXO2_impl1.prf -mp Vivaz_MachXO2_impl1.mrp -lpf
-     Z:/GITHUB/Lattice/Vivaz MachXO2/impl1/Vivaz_MachXO2_impl1.lpf -lpf
-     Z:/GITHUB/Lattice/Vivaz MachXO2/Vivaz_MachXO2.lpf -c 0 -gui -msgset
-     Z:/GITHUB/Lattice/Vivaz MachXO2/promote.xml 
+     D:/Github/Lattice/Vivaz MachXO2/impl1/Vivaz_MachXO2_impl1.lpf -lpf
+     D:/Github/Lattice/Vivaz MachXO2/Vivaz_MachXO2.lpf -c 0 -gui -msgset
+     D:/Github/Lattice/Vivaz MachXO2/promote.xml 
 Target Vendor:  LATTICE
 Target Device:  LCMXO2-7000HETQFP144
 Target Performance:   5
-Mapper:  xo2c00,  version:  Diamond (64-bit) 3.7.1.502
-Mapped on:  08/18/16  20:12:25
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.7.0.96.1
+Mapped on:  08/23/16  16:38:46
 
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
-   Number of registers:      0 out of  7209 (0%)
-      PFU registers:            0 out of  6864 (0%)
+   Number of registers:    260 out of  7209 (4%)
+      PFU registers:          260 out of  6864 (4%)
       PIO registers:            0 out of   345 (0%)
-   Number of SLICEs:         1 out of  3432 (0%)
-      SLICEs as Logic/ROM:      1 out of  3432 (0%)
+   Number of SLICEs:       305 out of  3432 (9%)
+      SLICEs as Logic/ROM:    305 out of  3432 (9%)
       SLICEs as RAM:            0 out of  2574 (0%)
-      SLICEs as Carry:          0 out of  3432 (0%)
-   Number of LUT4s:          1 out of  6864 (0%)
-      Number used as logic LUTs:          1
+      SLICEs as Carry:         65 out of  3432 (2%)
+   Number of LUT4s:        581 out of  6864 (8%)
+      Number used as logic LUTs:        451
       Number used as distributed RAM:     0
-      Number used as ripple logic:        0
+      Number used as ripple logic:      130
       Number used as shift registers:     0
-   Number of PIO sites used: 29 + 4(JTAG) out of 115 (29%)
+   Number of PIO sites used: 32 + 4(JTAG) out of 115 (31%)
    Number of block RAMs:  0 out of 26 (0%)
-   Number of GSRs:  0 out of 1 (0%)
+   Number of GSRs:  1 out of 1 (100%)
    EFB used :       No
    JTAG used :      No
    Readback used :  No
-   Oscillator used :  No
+   Oscillator used :  Yes
    Startup used :   No
    POR :            On
    Bandgap :        On
@@ -64,17 +64,163 @@ Mapped on:  08/18/16  20:12:25
      distributed RAMs) + 2*(Number of ripple logic)
       2. Number of logic LUT4s does not include count of distributed RAM and
      ripple logic.
-   Number of clocks:  0
-   Number of Clock Enables:  0
-   Number of LSRs:  0
+   Number of clocks:  20
+     Net clk: 26 loads, 26 rising, 0 falling (Driver: OSCInst0 )
+     Net CH1_c: 1 loads, 1 rising, 0 falling (Driver:
 
+     inst_commanddataarbiter/cdroutine_go_i_91 )
+     Net tb_clk_c: 141 loads, 141 rising, 0 falling (Driver: PIO tb_clk )
+     Net inst_commanddataarbiter/clksynth_i: 3 loads, 3 rising, 0 falling
+     (Driver: inst_commanddataarbiter/i2_2_lut_3_lut_4_lut )
+     Net inst_debounce1/pb1_i: 1 loads, 0 rising, 1 falling (Driver:
+     inst_debounce1/output_16 )
+     Net clk1k_i: 3 loads, 3 rising, 0 falling (Driver:
+     inst_clkdivider/div53000_28 )
+     Net resetroutine_go_i: 1 loads, 1 rising, 0 falling (Driver:
+     inst_fsm_init/start_reset_i_888 )
+     Net setbacklight_go_i: 1 loads, 1 rising, 0 falling (Driver:
+     inst_fsm_init/start_setbacklight_i_892 )
+     Net inst_fsm_init/fsm_state_i_4__N_773: 1 loads, 1 rising, 0 falling
+     (Driver: inst_fsm_init/fsm_state_i_4__N_701_I_0_924_2_lut )
+     Net inst_fsm_init/counter_i_6__N_851: 1 loads, 1 rising, 0 falling (Driver:
+     inst_fsm_init/counter_i_6__N_810_I_0_934_2_lut_3_lut )
+     Net inst_fsm_init/counter_i_6__N_847: 1 loads, 1 rising, 0 falling (Driver:
+     inst_fsm_init/counter_i_6__N_810_I_0_933_2_lut_3_lut )
+     Net inst_fsm_init/counter_i_6__N_843: 1 loads, 1 rising, 0 falling (Driver:
+     inst_fsm_init/counter_i_6__N_810_I_0_932_2_lut_3_lut )
+     Net inst_fsm_init/fsm_state_i_4__N_700: 1 loads, 1 rising, 0 falling
+     (Driver: inst_fsm_init/fsm_state_i_4__I_0_913_2_lut )
+     Net inst_fsm_init/fsm_state_i_4__N_731: 1 loads, 1 rising, 0 falling
+     (Driver: inst_fsm_init/fsm_state_i_4__N_701_I_0_921_2_lut )
+     Net inst_fsm_init/fsm_state_i_4__N_745: 1 loads, 1 rising, 0 falling
+     (Driver: inst_fsm_init/fsm_state_i_4__N_701_I_0_922_2_lut )
+     Net inst_fsm_init/counter_i_6__N_839: 1 loads, 1 rising, 0 falling (Driver:
+     inst_fsm_init/counter_i_6__N_810_I_0_931_2_lut_3_lut )
+     Net inst_fsm_init/counter_i_6__N_835: 1 loads, 1 rising, 0 falling (Driver:
+     inst_fsm_init/counter_i_6__N_810_I_0_930_2_lut_3_lut )
+     Net inst_fsm_init/counter_i_6__N_831: 1 loads, 1 rising, 0 falling (Driver:
+     inst_fsm_init/counter_i_6__N_810_I_0_929_2_lut_3_lut )
+     Net inst_fsm_init/counter_i_6__N_809: 1 loads, 1 rising, 0 falling (Driver:
+     inst_fsm_init/counter_i_6__I_0_2_lut_3_lut )
+     Net inst_fsm_init/fsm_state_i_4__N_759: 1 loads, 1 rising, 0 falling
+     (Driver: inst_fsm_init/fsm_state_i_4__N_701_I_0_923_2_lut )
+   Number of Clock Enables:  50
+     Net inst_commanddataarbiter/tb_clk_c_enable_96: 9 loads, 9 LSLICEs
+     Net inst_commanddataarbiter/tb_clk_c_enable_10: 1 loads, 1 LSLICEs
+     Net inst_commanddataarbiter/tb_clk_c_enable_60: 2 loads, 2 LSLICEs
+     Net inst_commanddataarbiter/tb_clk_c_enable_81: 1 loads, 1 LSLICEs
+     Net tb_clk_c_enable_83: 1 loads, 1 LSLICEs
+     Net tb_clk_c_enable_82: 1 loads, 1 LSLICEs
+     Net inst_commanddataarbiter/tb_clk_c_enable_61: 1 loads, 1 LSLICEs
+     Net inst_debounce1/output_N_1154: 3 loads, 3 LSLICEs
+     Net inst_debounce1/clk_enable_16: 8 loads, 8 LSLICEs
+     Net inst_debounce1/clk_enable_17: 1 loads, 1 LSLICEs
+     Net tb_clk_c_enable_111: 5 loads, 5 LSLICEs
+     Net tb_clk_c_enable_89: 1 loads, 1 LSLICEs
+     Net inst_resetroutine/clk1k_i_enable_1: 1 loads, 1 LSLICEs
+     Net inst_resetroutine/clk1k_i_enable_2: 1 loads, 1 LSLICEs
+     Net inst_setbacklight/tb_clk_c_enable_100: 2 loads, 2 LSLICEs
+     Net inst_setbacklight/tb_clk_c_enable_25: 1 loads, 1 LSLICEs
+     Net inst_setbacklight/tb_clk_c_enable_99: 1 loads, 1 LSLICEs
+     Net inst_setbacklight/tb_clk_c_enable_31: 1 loads, 1 LSLICEs
+     Net inst_setbacklight/tb_clk_c_enable_104: 2 loads, 2 LSLICEs
+
+     Net inst_setbacklight/tb_clk_c_enable_87: 1 loads, 1 LSLICEs
+     Net inst_setbacklight/tb_clk_c_enable_88: 1 loads, 1 LSLICEs
+     Net inst_writecommanddata/tb_clk_c_enable_57: 4 loads, 4 LSLICEs
+     Net inst_writecommanddata/tb_clk_c_enable_7: 1 loads, 1 LSLICEs
+     Net inst_writecommanddata/tb_clk_c_enable_58: 1 loads, 1 LSLICEs
+     Net inst_writecommanddata/tb_clk_c_enable_76: 9 loads, 9 LSLICEs
+     Net inst_writecommanddata/tb_clk_c_enable_29: 1 loads, 1 LSLICEs
+     Net inst_writecommanddata/tb_clk_c_enable_102: 1 loads, 1 LSLICEs
+     Net inst_fsm_init/tb_clk_c_enable_86: 1 loads, 1 LSLICEs
+     Net inst_fsm_init/tb_clk_c_enable_19: 1 loads, 1 LSLICEs
+     Net inst_fsm_init/tb_clk_c_enable_37: 1 loads, 1 LSLICEs
+     Net inst_fsm_init/tb_clk_c_enable_35: 1 loads, 1 LSLICEs
+     Net inst_fsm_init/tb_clk_c_enable_106: 2 loads, 2 LSLICEs
+     Net inst_fsm_init/tb_clk_c_enable_38: 1 loads, 1 LSLICEs
+     Net inst_fsm_init/tb_clk_c_enable_42: 1 loads, 1 LSLICEs
+     Net inst_fsm_init/tb_clk_c_enable_90: 1 loads, 1 LSLICEs
+     Net inst_fsm_init/tb_clk_c_enable_43: 1 loads, 1 LSLICEs
+     Net inst_fsm_init/tb_clk_c_enable_110: 3 loads, 3 LSLICEs
+     Net inst_fillcolor/tb_clk_c_enable_11: 1 loads, 1 LSLICEs
+     Net inst_fillcolor/tb_clk_c_enable_14: 1 loads, 1 LSLICEs
+     Net inst_fillcolor/tb_clk_c_enable_26: 1 loads, 1 LSLICEs
+     Net inst_fillcolor/tb_clk_c_enable_91: 2 loads, 2 LSLICEs
+     Net inst_fillcolor/tb_clk_c_enable_98: 10 loads, 10 LSLICEs
+     Net inst_fillcolor/tb_clk_c_enable_84: 1 loads, 1 LSLICEs
+     Net inst_fillcolor/tb_clk_c_enable_49: 1 loads, 1 LSLICEs
+     Net inst_fillcolor/tb_clk_c_enable_97: 1 loads, 1 LSLICEs
+     Net inst_movetopoint/tb_clk_c_enable_105: 4 loads, 4 LSLICEs
+     Net inst_movetopoint/tb_clk_c_enable_85: 1 loads, 1 LSLICEs
+     Net inst_movetopoint/tb_clk_c_enable_101: 2 loads, 2 LSLICEs
+     Net inst_debounce3/output_N_1154: 11 loads, 11 LSLICEs
+     Net inst_debounce3/clk_enable_18: 1 loads, 1 LSLICEs
+   Number of LSRs:  46
+     Net inst_commanddataarbiter/n9842: 1 loads, 1 LSLICEs
+     Net movetopoint_start_i: 1 loads, 1 LSLICEs
+     Net inst_commanddataarbiter/start_i_N_279: 1 loads, 1 LSLICEs
+     Net inst_commanddataarbiter/n894: 9 loads, 9 LSLICEs
+     Net inst_commanddataarbiter/n5673: 1 loads, 1 LSLICEs
+     Net main_reset_i: 12 loads, 12 LSLICEs
+     Net inst_commanddataarbiter/n8135: 2 loads, 2 LSLICEs
+     Net inst_debounce1/n9836: 11 loads, 11 LSLICEs
+     Net inst_resetroutine/n9811: 1 loads, 1 LSLICEs
+     Net n5718: 1 loads, 1 LSLICEs
+     Net n6361: 4 loads, 4 LSLICEs
+     Net n8288: 1 loads, 1 LSLICEs
+     Net counter_5__N_64: 1 loads, 1 LSLICEs
+     Net n9775: 8 loads, 8 LSLICEs
+     Net inst_setbacklight/n9794: 1 loads, 1 LSLICEs
+     Net inst_setbacklight/n9776: 2 loads, 2 LSLICEs
+     Net inst_writecommanddata/start_i_N_167: 1 loads, 1 LSLICEs
+     Net inst_writecommanddata/tb_clk_c_enable_58: 10 loads, 10 LSLICEs
+     Net inst_fsm_init/fsm_state_i_4__N_799: 2 loads, 2 LSLICEs
+     Net inst_fsm_init/fsm_state_i_4__N_773: 1 loads, 1 LSLICEs
+     Net inst_fsm_init/counter_i_6__N_851: 1 loads, 1 LSLICEs
+     Net inst_fsm_init/counter_i_6__N_873: 2 loads, 2 LSLICEs
+     Net inst_fsm_init/counter_i_6__N_847: 1 loads, 1 LSLICEs
+     Net inst_fsm_init/fsm_state_i_4__N_796: 2 loads, 2 LSLICEs
+
+     Net inst_fsm_init/fsm_state_i_4__N_790: 2 loads, 2 LSLICEs
+     Net inst_fsm_init/start_i_N_1108: 1 loads, 1 LSLICEs
+     Net inst_fsm_init/fsm_state_i_4__N_787: 2 loads, 2 LSLICEs
+     Net inst_fsm_init/counter_i_6__N_870: 2 loads, 2 LSLICEs
+     Net inst_fsm_init/counter_i_6__N_843: 1 loads, 1 LSLICEs
+     Net inst_fsm_init/fsm_state_i_4__N_700: 1 loads, 1 LSLICEs
+     Net inst_fsm_init/fsm_state_i_4__N_731: 1 loads, 1 LSLICEs
+     Net inst_fsm_init/fsm_state_i_4__N_745: 1 loads, 1 LSLICEs
+     Net inst_fsm_init/counter_i_6__N_867: 2 loads, 2 LSLICEs
+     Net inst_fsm_init/counter_i_6__N_839: 1 loads, 1 LSLICEs
+     Net inst_fsm_init/counter_i_6__N_864: 2 loads, 2 LSLICEs
+     Net inst_fsm_init/counter_i_6__N_835: 1 loads, 1 LSLICEs
+     Net inst_fsm_init/counter_i_6__N_861: 2 loads, 2 LSLICEs
+     Net inst_fsm_init/counter_i_6__N_831: 1 loads, 1 LSLICEs
+     Net inst_fsm_init/counter_i_6__N_858: 2 loads, 2 LSLICEs
+     Net inst_fsm_init/counter_i_6__N_809: 1 loads, 1 LSLICEs
+     Net inst_fsm_init/counter_i_6__N_855: 2 loads, 2 LSLICEs
+     Net inst_fsm_init/fsm_state_i_4__N_759: 1 loads, 1 LSLICEs
+     Net inst_fsm_init/fsm_state_i_4__N_793: 2 loads, 2 LSLICEs
+     Net inst_fillcolor/n5693: 10 loads, 10 LSLICEs
+     Net inst_fillcolor/start_N_648: 1 loads, 1 LSLICEs
+     Net inst_debounce3/n9835: 11 loads, 11 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
+     Net fsm_state_i_0_adj_1220: 49 loads
+     Net fsm_state_i_1_adj_1219: 48 loads
+     Net start_N_652: 46 loads
+     Net fsm_state_i_2_adj_1218: 42 loads
+     Net fsm_state_i_3_adj_1217: 40 loads
+     Net fsm_state_i_4: 38 loads
+     Net fsm_state_i_1_adj_1207: 36 loads
+     Net executed_i_adj_1221: 25 loads
+     Net n9775: 22 loads
+     Net main_reset_i: 21 loads
 
 
 
 
-   Number of warnings:  8
+   Number of warnings:  4
    Number of errors:    0
      
 
@@ -83,15 +229,9 @@ Mapped on:  08/18/16  20:12:25
 
 <A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
 
-WARNING - map: input pad net 'pb1' has no legal load.
 WARNING - map: input pad net 'pb2' has no legal load.
-WARNING - map: input pad net 'main_reset' has no legal load.
 WARNING - map: input pad net 'vivaz_TE' has no legal load.
-WARNING - map: IO buffer missing for top level port pb1...logic will be
-     discarded.
 WARNING - map: IO buffer missing for top level port pb2...logic will be
-     discarded.
-WARNING - map: IO buffer missing for top level port main_reset...logic will be
      discarded.
 WARNING - map: IO buffer missing for top level port vivaz_TE...logic will be
      discarded.
@@ -101,16 +241,17 @@ WARNING - map: IO buffer missing for top level port vivaz_TE...logic will be
 <A name="mrp_ioa"></A><B><U><big>IO (PIO) Attributes</big></U></B>
 
 +---------------------+-----------+-----------+------------+
+
 | IO Name             | Direction | Levelmode | IO         |
 |                     |           |  IO_TYPE  | Register   |
 +---------------------+-----------+-----------+------------+
-| led30[3]            | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| led30[2]            | OUTPUT    | LVCMOS25  |            |
+| led30[0]            | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | led30[1]            | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
-| led30[0]            | OUTPUT    | LVCMOS25  |            |
+| led30[2]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led30[3]            | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | led67[1]            | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
@@ -127,7 +268,6 @@ WARNING - map: IO buffer missing for top level port vivaz_TE...logic will be
 | vivaz_RS            | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | vivaz_RESET         | OUTPUT    | LVCMOS25  |            |
-
 +---------------------+-----------+-----------+------------+
 | vivaz_WR            | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
@@ -158,19 +298,73 @@ WARNING - map: IO buffer missing for top level port vivaz_TE...logic will be
 | vivaz_D015[3]       | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | vivaz_D015[2]       | OUTPUT    | LVCMOS25  |            |
+
 +---------------------+-----------+-----------+------------+
 | vivaz_D015[1]       | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | vivaz_D015[0]       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| pb1                 | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| main_reset          | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| tb_clk              | INPUT     | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 
 
 
 <A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
 
-Block GSR_INST undriven or does not drive anything - clipped.
-Signal VCC_net undriven or does not drive anything - clipped.
-Block i36 was optimized away.
+Signal n6507 was merged into signal main_reset_i
+Signal inst_fsm_init/n9895 was merged into signal fsm_state_i_4
+Signal inst_debounce3/add_5_1/S0 undriven or does not drive anything - clipped.
+Signal inst_debounce3/add_5_1/CI undriven or does not drive anything - clipped.
+Signal inst_debounce3/add_5_21/CO undriven or does not drive anything - clipped.
+     
+Signal inst_clkdivider/counter53000_1679_1680_add_4_15/CO undriven or does not
+     drive anything - clipped.
+Signal inst_clkdivider/counter53000_1679_1680_add_4_1/S0 undriven or does not
+     drive anything - clipped.
+Signal inst_clkdivider/counter53000_1679_1680_add_4_1/CI undriven or does not
+     drive anything - clipped.
+Signal inst_fillcolor/counter_i_1684_add_4_2/S0 undriven or does not drive
+     anything - clipped.
+Signal inst_fillcolor/counter_i_1684_add_4_2/CI undriven or does not drive
+     anything - clipped.
+Signal inst_fillcolor/counter_i_1684_add_4_18/CO undriven or does not drive
+     anything - clipped.
+Signal inst_writecommanddata/add_14_1/S0 undriven or does not drive anything -
+     clipped.
+Signal inst_writecommanddata/add_14_1/CI undriven or does not drive anything -
+     clipped.
+Signal inst_writecommanddata/add_14_17/S1 undriven or does not drive anything -
+     clipped.
+Signal inst_writecommanddata/add_14_17/CO undriven or does not drive anything -
+     clipped.
+Signal inst_resetroutine/counter_1682_add_4_1/S0 undriven or does not drive
+     anything - clipped.
+Signal inst_resetroutine/counter_1682_add_4_1/CI undriven or does not drive
+     anything - clipped.
+Signal inst_resetroutine/counter_1682_add_4_7/S1 undriven or does not drive
+     anything - clipped.
+Signal inst_resetroutine/counter_1682_add_4_7/CO undriven or does not drive
+     anything - clipped.
+Signal inst_debounce1/add_5_21/CO undriven or does not drive anything - clipped.
+     
+Signal inst_debounce1/add_5_1/S0 undriven or does not drive anything - clipped.
+Signal inst_debounce1/add_5_1/CI undriven or does not drive anything - clipped.
+Signal inst_commanddataarbiter/counter_1685_add_4_1/S0 undriven or does not
+     drive anything - clipped.
+Signal inst_commanddataarbiter/counter_1685_add_4_1/CI undriven or does not
+
+     drive anything - clipped.
+Signal inst_commanddataarbiter/counter_1685_add_4_17/CO undriven or does not
+     drive anything - clipped.
+Signal add_847_1/S0 undriven or does not drive anything - clipped.
+Signal add_847_1/CI undriven or does not drive anything - clipped.
+Signal add_847_7/CO undriven or does not drive anything - clipped.
+Block inst_debounce3/i4595_1_lut was optimized away.
+Block inst_fsm_init/i1_4_lut_else_4_lut_adj_325 was optimized away.
 
 
 
@@ -179,6 +373,280 @@ Block i36 was optimized away.
 
      
 
+OSC Summary
+-----------
+
+OSC 1:                                     Pin/Node Value
+  OSC Instance Name:                                OSCInst0
+  OSC Type:                                         OSCH
+  STDBY Input:                                      NONE
+  OSC Output:                              NODE     clk
+  OSC Nominal Frequency (MHz):                      53.20
+
+
+
+<A name="mrp_asic"></A><B><U><big>ASIC Components</big></U></B>
+---------------
+
+Instance Name: OSCInst0
+         Type: OSCH
+
+
+
+<A name="mrp_gsr"></A><B><U><big>GSR Usage</big></U></B>
+---------
+
+GSR Component:
+   The Global Set Reset (GSR) resource has been used to implement a global reset
+        of the design. The reset signal used for GSR control is 'main_reset_i'.
+        
+
+     GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+        set reset while the components with GSR property set to DISABLED will
+        not.
+        
+
+     Components with disabled GSR Property
+-------------------------------------
+
+     These components have the GSR property set to DISABLED. The components will
+     not respond to the reset signal 'main_reset_i' via the GSR component.
+
+     Type and number of components of the type: 
+   Register = 186 
+
+     Type and instance name of component: 
+   Register : inst_commanddataarbiter/switchselect_i_76__i1
+
+   Register : inst_commanddataarbiter/switchselect_i_76__i0
+   Register : inst_commanddataarbiter/start_i_74_86
+   Register : inst_commanddataarbiter/counter_1685__i0
+   Register : inst_commanddataarbiter/counter_1685__i1
+   Register : inst_commanddataarbiter/counter_1685__i2
+   Register : inst_commanddataarbiter/counter_1685__i3
+   Register : inst_commanddataarbiter/counter_1685__i4
+   Register : inst_commanddataarbiter/counter_1685__i5
+   Register : inst_commanddataarbiter/counter_1685__i6
+   Register : inst_commanddataarbiter/counter_1685__i7
+   Register : inst_commanddataarbiter/counter_1685__i8
+   Register : inst_commanddataarbiter/counter_1685__i9
+   Register : inst_commanddataarbiter/counter_1685__i10
+   Register : inst_commanddataarbiter/counter_1685__i11
+   Register : inst_commanddataarbiter/counter_1685__i12
+   Register : inst_commanddataarbiter/counter_1685__i13
+   Register : inst_commanddataarbiter/counter_1685__i14
+   Register : inst_commanddataarbiter/counter_1685__i15
+   Register : inst_commanddataarbiter/counter_1685__i16
+   Register : inst_debounce1/count__i0
+   Register : inst_debounce1/inff_i0
+   Register : inst_debounce1/count__i1
+   Register : inst_debounce1/count__i2
+   Register : inst_debounce1/count__i3
+   Register : inst_debounce1/count__i4
+   Register : inst_debounce1/count__i5
+   Register : inst_debounce1/count__i6
+   Register : inst_debounce1/count__i7
+   Register : inst_debounce1/count__i8
+   Register : inst_debounce1/count__i9
+   Register : inst_debounce1/count__i10
+   Register : inst_debounce1/count__i11
+   Register : inst_debounce1/count__i12
+   Register : inst_debounce1/count__i13
+   Register : inst_debounce1/count__i14
+   Register : inst_debounce1/count__i15
+   Register : inst_debounce1/count__i16
+   Register : inst_debounce1/count__i17
+   Register : inst_debounce1/count__i18
+   Register : inst_debounce1/count__i19
+   Register : inst_debounce1/count__i20
+   Register : inst_debounce1/inff_i1
+   Register : inst_debounce1/output_16
+   Register : inst_resetroutine/start_i_51
+   Register : inst_resetroutine/start_i_45_50
+   Register : inst_resetroutine/counter_1682__i4
+   Register : inst_resetroutine/counter_1682__i3
+   Register : inst_resetroutine/counter_1682__i2
+   Register : inst_resetroutine/counter_1682__i1
+   Register : inst_resetroutine/fsm_state_i_i0_i1
+   Register : inst_resetroutine/done_i_54
+   Register : inst_resetroutine/counter_1682__i0
+   Register : inst_resetroutine/fsm_state_i_i0_i0
+   Register : inst_resetroutine/vivaz_RESET_i_56
+   Register : inst_resetroutine/counter_1682__i5
+   Register : inst_setbacklight/valueout__i7
+
+   Register : inst_setbacklight/valueout__i4
+   Register : inst_setbacklight/start_i_185_193
+   Register : inst_setbacklight/commanddata_i_201
+   Register : inst_setbacklight/valueout__i0
+   Register : inst_writecommanddata/fsm_state_i__i0
+   Register : inst_writecommanddata/start_i_43
+   Register : inst_writecommanddata/vivaz_d0_d15_i__i1
+   Register : inst_writecommanddata/fsm_state_i__i1
+   Register : inst_writecommanddata/counter_i__i0
+   Register : inst_writecommanddata/done_i_44
+   Register : inst_writecommanddata/vivaz_d0_d15_i__i8
+   Register : inst_writecommanddata/vivaz_d0_d15_i__i7
+   Register : inst_writecommanddata/vivaz_d0_d15_i__i6
+   Register : inst_writecommanddata/vivaz_d0_d15_i__i5
+   Register : inst_writecommanddata/vivaz_d0_d15_i__i4
+   Register : inst_writecommanddata/vivaz_d0_d15_i__i3
+   Register : inst_writecommanddata/vivaz_d0_d15_i__i2
+   Register : inst_writecommanddata/counter_i__i1
+   Register : inst_writecommanddata/counter_i__i2
+   Register : inst_writecommanddata/counter_i__i3
+   Register : inst_writecommanddata/counter_i__i4
+   Register : inst_writecommanddata/counter_i__i5
+   Register : inst_writecommanddata/counter_i__i6
+   Register : inst_writecommanddata/counter_i__i7
+   Register : inst_writecommanddata/counter_i__i8
+   Register : inst_writecommanddata/counter_i__i9
+   Register : inst_writecommanddata/counter_i__i10
+   Register : inst_writecommanddata/counter_i__i11
+   Register : inst_writecommanddata/counter_i__i12
+   Register : inst_writecommanddata/counter_i__i13
+   Register : inst_writecommanddata/counter_i__i14
+   Register : inst_writecommanddata/counter_i__i15
+   Register : inst_writecommanddata/vivaz_wr_i_46
+   Register : inst_fsm_init/fsm_state_i_832_i0_i0_3698_3699_reset
+   Register : inst_fsm_init/fsm_state_i_832_i0_i0_3698_3699_set
+   Register : inst_fsm_init/i3693
+   Register : inst_fsm_init/i3697
+   Register : inst_fsm_init/counter_i_i0
+   Register : inst_fsm_init/start_i_844
+   Register : inst_fsm_init/i3701
+   Register : inst_fsm_init/counter_i_841_i0_i0_3694_3695_reset
+   Register : inst_fsm_init/counter_i_841_i0_i0_3694_3695_set
+   Register : inst_fsm_init/i3705
+   Register : inst_fsm_init/i3709
+   Register : inst_fsm_init/i3713
+   Register : inst_fsm_init/i3717
+   Register : inst_fsm_init/i3721
+   Register : inst_fsm_init/i3725
+   Register : inst_fsm_init/counter_i_i1
+   Register : inst_fsm_init/counter_i_i2
+   Register : inst_fsm_init/counter_i_i3
+   Register : inst_fsm_init/counter_i_i4
+   Register : inst_fsm_init/counter_i_i5
+   Register : inst_fsm_init/counter_i_i6
+   Register : inst_fsm_init/fsm_state_i_832_i0_i4_3738_3739_reset
+   Register : inst_fsm_init/fsm_state_i_832_i0_i4_3738_3739_set
+
+   Register : inst_fsm_init/fsm_state_i_832_i0_i3_3734_3735_reset
+   Register : inst_fsm_init/fsm_state_i_832_i0_i3_3734_3735_set
+   Register : inst_fsm_init/fsm_state_i_832_i0_i2_3730_3731_reset
+   Register : inst_fsm_init/fsm_state_i_832_i0_i2_3730_3731_set
+   Register : inst_fsm_init/fsm_state_i_832_i0_i1_3726_3727_reset
+   Register : inst_fsm_init/fsm_state_i_832_i0_i1_3726_3727_set
+   Register : inst_fsm_init/counter_i_841_i0_i6_3722_3723_reset
+   Register : inst_fsm_init/counter_i_841_i0_i6_3722_3723_set
+   Register : inst_fsm_init/counter_i_841_i0_i5_3718_3719_reset
+   Register : inst_fsm_init/counter_i_841_i0_i5_3718_3719_set
+   Register : inst_fsm_init/counter_i_841_i0_i4_3714_3715_reset
+   Register : inst_fsm_init/counter_i_841_i0_i4_3714_3715_set
+   Register : inst_fsm_init/counter_i_841_i0_i3_3710_3711_reset
+   Register : inst_fsm_init/counter_i_841_i0_i3_3710_3711_set
+   Register : inst_fsm_init/counter_i_841_i0_i2_3706_3707_reset
+   Register : inst_fsm_init/counter_i_841_i0_i2_3706_3707_set
+   Register : inst_fsm_init/i3729
+   Register : inst_fsm_init/i3733
+   Register : inst_fsm_init/i3737
+   Register : inst_fsm_init/counter_i_841_i0_i1_3702_3703_reset
+   Register : inst_fsm_init/counter_i_841_i0_i1_3702_3703_set
+   Register : inst_fillcolor/valueout__i1
+   Register : inst_fillcolor/commanddata_i_129
+   Register : inst_clkdivider/counter53000_1679_1680__i1
+   Register : inst_clkdivider/div53000_28
+   Register : inst_clkdivider/counter53000_1679_1680__i2
+   Register : inst_clkdivider/counter53000_1679_1680__i3
+   Register : inst_clkdivider/counter53000_1679_1680__i4
+   Register : inst_clkdivider/counter53000_1679_1680__i5
+   Register : inst_clkdivider/counter53000_1679_1680__i6
+   Register : inst_clkdivider/counter53000_1679_1680__i7
+   Register : inst_clkdivider/counter53000_1679_1680__i8
+   Register : inst_clkdivider/counter53000_1679_1680__i9
+   Register : inst_clkdivider/counter53000_1679_1680__i10
+   Register : inst_clkdivider/counter53000_1679_1680__i11
+   Register : inst_clkdivider/counter53000_1679_1680__i12
+   Register : inst_clkdivider/counter53000_1679_1680__i13
+   Register : inst_clkdivider/counter53000_1679_1680__i14
+   Register : inst_clkdivider/counter53000_1679_1680__i15
+   Register : inst_movetopoint/fsm_state_i__i3
+   Register : inst_movetopoint/fsm_state_i__i2
+   Register : inst_movetopoint/valueout_i1
+   Register : inst_movetopoint/commanddata_i_356
+   Register : inst_movetopoint/go_i_352
+   Register : inst_movetopoint/executed_i_354
+   Register : inst_movetopoint/executing_i_357
+   Register : inst_movetopoint/fsm_state_i__i1
+   Register : inst_movetopoint/valueout_i0
+   Register : inst_movetopoint/fsm_state_i__i0
+   Register : inst_debounce3/count__i0
+   Register : inst_debounce3/inff_i0
+   Register : inst_debounce3/count__i20
+   Register : inst_debounce3/count__i19
+   Register : inst_debounce3/count__i18
+   Register : inst_debounce3/count__i17
+   Register : inst_debounce3/count__i16
+
+   Register : inst_debounce3/count__i15
+   Register : inst_debounce3/count__i14
+   Register : inst_debounce3/count__i13
+   Register : inst_debounce3/count__i12
+   Register : inst_debounce3/count__i11
+   Register : inst_debounce3/count__i10
+   Register : inst_debounce3/count__i9
+   Register : inst_debounce3/count__i8
+   Register : inst_debounce3/count__i7
+   Register : inst_debounce3/count__i6
+   Register : inst_debounce3/count__i5
+   Register : inst_debounce3/count__i4
+   Register : inst_debounce3/count__i3
+   Register : inst_debounce3/count__i2
+   Register : inst_debounce3/count__i1
+   Register : inst_debounce3/inff_i1
+   Register : inst_debounce3/output_16
+
+     Components with synchronous local reset also reset by asynchronous GSR
+----------------------------------------------------------------------
+
+     These components have the GSR property set to ENABLED and the local reset
+     is synchronous. The components will respond to the synchronous local reset
+     and to the unrelated asynchronous reset signal 'main_reset_i' via the GSR
+     component.
+
+     Type and number of components of the type: 
+   Register = 24 
+
+     Type and instance name of component: 
+   Register : inst_commanddataarbiter/cdroutine_value_i_i0_i2
+   Register : inst_commanddataarbiter/cdroutine_value_i_i0_i4
+   Register : inst_commanddataarbiter/cdroutine_value_i_i0_i7
+   Register : inst_setbacklight/fsm_state_i_i1
+   Register : inst_setbacklight/fsm_state_i_i2
+   Register : inst_fillcolor/counter_i_1684__i17
+   Register : inst_fillcolor/counter_i_1684__i16
+   Register : inst_fillcolor/counter_i_1684__i15
+   Register : inst_fillcolor/counter_i_1684__i14
+   Register : inst_fillcolor/counter_i_1684__i13
+   Register : inst_fillcolor/counter_i_1684__i12
+   Register : inst_fillcolor/counter_i_1684__i11
+   Register : inst_fillcolor/counter_i_1684__i10
+   Register : inst_fillcolor/counter_i_1684__i9
+   Register : inst_fillcolor/counter_i_1684__i8
+   Register : inst_fillcolor/counter_i_1684__i7
+   Register : inst_fillcolor/counter_i_1684__i6
+   Register : inst_fillcolor/counter_i_1684__i5
+   Register : inst_fillcolor/counter_i_1684__i4
+   Register : inst_fillcolor/counter_i_1684__i3
+   Register : inst_fillcolor/counter_i_1684__i2
+   Register : inst_fillcolor/counter_i_1684__i1
+   Register : inst_fillcolor/go_i_125
+   Register : inst_fillcolor/counter_i_1684__i0
+
+
+
 
 
 <A name="mrp_runtime"></A><B><U><big>Run Time and Memory Usage</big></U></B>
@@ -186,8 +654,59 @@ Block i36 was optimized away.
 
    Total CPU Time: 0 secs  
    Total REAL Time: 0 secs  
-   Peak Memory Usage: 32 MB
+   Peak Memory Usage: 61 MB
         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
